@@ -167,8 +167,9 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "94b9eda805cdcea5",
+  "active": "648809c7a6ca75e7",
   "lastOpenFiles": [
+    "Odoo 18/Core/Processes/Accounting/Index.md",
     "Odoo 18/Core/Master Data/res_company.md",
     "Odoo 18/Core/Architecture.md",
     "Odoo 19/Enterprise Addons/Customer Experience/appointments_enterprise.md",
@@ -203,7 +204,6 @@
     "issue_19_body.md",
     "issue_18_body.md",
     "issue_17_body.md",
-    "issue_16_body.md",
-    "issue_15.md"
+    "issue_16_body.md"
   ]
 }

@@ -165,8 +165,9 @@
       "bases:Create new base": false
     }
   },
-  "active": "db70695cb14d0789",
+  "active": "648809c7a6ca75e7",
   "lastOpenFiles": [
+    "README.md",
     "check_ascii.py",
     "strip_bom.py",
     "Odoo 18/Core/Master Data/res_partner.md",

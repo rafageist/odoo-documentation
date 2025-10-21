@@ -169,6 +169,7 @@
   },
   "active": "648809c7a6ca75e7",
   "lastOpenFiles": [
+    "Odoo 18/Core/Processes/HR/Index.md",
     "Odoo 18/Core/Processes/Projects/Index.md",
     "Odoo 18/Core/Processes/Purchasing/Index.md",
     "Odoo 18/Core/Processes/Inventory/Index.md",
@@ -203,7 +204,6 @@
     "issue_24_body.md",
     "issue_23_body.md",
     "issue_22_body.md",
-    "issue_21_body.md",
-    "issue_20_body.md"
+    "issue_21_body.md"
   ]
 }

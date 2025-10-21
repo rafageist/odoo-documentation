@@ -5,6 +5,7 @@ status: seed
 # Odoo 18 Core
 
 ## Key areas
+- Core architecture overview -> `[[Odoo 18/Core/Architecture.md]]`
 - Base framework (`base`, `web`, `mail`) -> `[[Odoo 18/Core/Framework/Index]]`
 - Master models (`partner`, `product`, `uom`, `company`) -> `[[Odoo 18/Core/Master Data/Index]]`
 - Backbone processes (`account`, `stock`, `project`, `hr`) -> `[[Odoo 18/Core/Processes/Index]]`

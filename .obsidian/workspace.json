@@ -169,6 +169,8 @@
   },
   "active": "648809c7a6ca75e7",
   "lastOpenFiles": [
+    "Odoo 18/Core/Processes/Manufacturing/Index.md",
+    "Odoo 18/Core/Processes/Manufacturing",
     "Odoo 18/Core/Processes/HR/Index.md",
     "Odoo 18/Core/Processes/Projects/Index.md",
     "Odoo 18/Core/Processes/Purchasing/Index.md",
@@ -197,13 +199,11 @@
     "issue_29_body.md",
     "issue_29_title.txt",
     "issue_28_body.md",
-    "issue_28_title.txt",
     "issue_27_body.md",
     "issue_26_body.md",
     "issue_25_body.md",
     "issue_24_body.md",
     "issue_23_body.md",
-    "issue_22_body.md",
-    "issue_21_body.md"
+    "issue_22_body.md"
   ]
 }

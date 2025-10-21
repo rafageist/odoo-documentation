@@ -1,0 +1,206 @@
+{
+  "main": {
+    "id": "4d3ae8050b9466da",
+    "type": "split",
+    "children": [
+      {
+        "id": "ec9af9f19ea78c27",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "db70695cb14d0789",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "7bc08348e94abd77",
+    "type": "split",
+    "children": [
+      {
+        "id": "58d42d1cc0f5f008",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "648809c7a6ca75e7",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "018e7989c445a57d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "d802c70ed42b0232",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "ec9073cdec22fbc2",
+    "type": "split",
+    "children": [
+      {
+        "id": "49a84d15a5fc8800",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b9c284e451fe0e8f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Welcome.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Welcome"
+            }
+          },
+          {
+            "id": "bb572dbde584af85",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Welcome.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Welcome"
+            }
+          },
+          {
+            "id": "d6af5d1fce3f4bd4",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "cfd47dd45e438d11",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Welcome.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Welcome"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "db70695cb14d0789",
+  "lastOpenFiles": [
+    "check_ascii.py",
+    "strip_bom.py",
+    "Odoo 18/Core/Master Data/res_partner.md",
+    "Odoo 18/Core/Master Data/res_partner_category.md",
+    "Documentation Playbook.md",
+    "Odoo 19/Core/Integrations/Index.md",
+    "Odoo 19/Core/Integrations",
+    "Odoo 18/Core/Master Data/res_users.md",
+    "Welcome.md",
+    "Odoo 18/Core/Index.md",
+    "Odoo 19/Community Addons/Digital/email_marketing.md",
+    "list_nonascii.py",
+    "check_nonascii.py",
+    "check_nulls.py",
+    "__pycache__/cgi.cpython-314.pyc",
+    "__pycache__",
+    "translate_docs.py",
+    "cgi.py",
+    "Comparisons/Sales v18-v19.md",
+    "Comparisons/Services v18-v19.md",
+    "Comparisons/HR v18-v19.md",
+    "Comparisons/Manufacturing v18-v19.md",
+    "Comparisons/Inventory v18-v19.md",
+    "Comparisons/Enterprise Finance v18-v19.md",
+    "Comparisons/Accounting v18-v19.md",
+    "Roadmap/Migrations 18 to 19.md",
+    "Licensing/Enterprise Guide.md",
+    "Odoo 18/Core/Integrations/Payments.md",
+    "Odoo 18/Core/Integrations/External Systems.md",
+    "Odoo 19/Core/Infrastructure/Security.md",
+    "Odoo 19/Core/Infrastructure/Reports.md",
+    "Odoo 19/Core/Infrastructure/Files.md",
+    "Odoo 18/Core/Infrastructure/Security.md",
+    "Odoo 18/Core/Infrastructure/Reports.md",
+    "Odoo 18/Core/Infrastructure/Files.md"
+  ]
+}

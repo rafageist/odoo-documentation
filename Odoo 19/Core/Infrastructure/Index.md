@@ -1,0 +1,35 @@
+---
+tags: [v19, core, infrastructure]
+status: seed
+---
+# Core Infrastructure v19
+
+## Components
+- ORM updated -> `[[Odoo 19/Core/Infrastructure/ORM.md]]`
+- Reporteria -> `[[Odoo 19/Core/Infrastructure/Reportes.md]]`
+- Bus/events -> `[[Odoo 19/Core/Infrastructure/Bus.md]]`
+- Security -> `[[Odoo 19/Core/Infrastructure/Seguridad.md]]`
+- Files -> `[[Odoo 19/Core/Infrastructure/Files.md]]`
+
+```plantuml
+@startmindmap
+* Infrastructure v19
+** ORM
+** Reportes
+** Bus
+** Seguridad
+** Files
+@endmindmap
+```
+
+## Priorities
+- Catalog ORM changes and caching.
+- Document new reporting capabilities.
+- Analyze improvements in security and compliance.
+
+
+
+
+
+
+

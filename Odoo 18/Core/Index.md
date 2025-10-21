@@ -1,0 +1,47 @@
+---
+tags: [v18, core, map]
+status: seed
+---
+# Odoo 18 Core
+
+## Key areas
+- Base framework (`base`, `web`, `mail`) -> `[[Odoo 18/Core/Framework/Index]]`
+- Master models (`partner`, `product`, `uom`, `company`) -> `[[Odoo 18/Core/Master Data/Index]]`
+- Backbone processes (`account`, `stock`, `project`, `hr`) -> `[[Odoo 18/Core/Processes/Index]]`
+- Technical infrastructure (ORM, bus, reports) -> `[[Odoo 18/Core/Infrastructure/Index]]`
+- Platform-level integrations -> `[[Odoo 18/Core/Integrations/Index]]`
+
+```plantuml
+@startuml
+package "Core 18" {
+  [Framework] --> [Master Data]
+  [Master Data] --> [Processes]
+  [Framework] --> [Infrastructure]
+  [Processes] --> [Integrations]
+}
+@enduml
+```
+
+## Initial checklist
+- [ ] Catalog all core modules with their `technical_name`.
+- [ ] Create UML diagrams of the most popular models.
+- [ ] Document key ORM adaptations.
+
+## Next suggested notes
+- `[[Odoo 18/Core/Framework/Base.md]]`
+- `[[Odoo 18/Core/Framework/Web.md]]`
+- `[[Odoo 18/Core/Master Data/res_partner.md]]`
+- `[[Odoo 18/Core/Infrastructure/ORM.md]]`
+- `[[Odoo 18/Core/Integrations/Web Services.md]]`
+
+## Navigation
+- **Parent**: `[[Odoo 18/Index]]`
+- **Children**:
+  - `[[Odoo 18/Core/Framework/Index]]`
+  - `[[Odoo 18/Core/Master Data/Index]]`
+  - `[[Odoo 18/Core/Processes/Index]]`
+  - `[[Odoo 18/Core/Infrastructure/Index]]`
+  - `[[Odoo 18/Core/Integrations/Index]]`
+
+
+

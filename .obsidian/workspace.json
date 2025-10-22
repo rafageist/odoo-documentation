@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "020341c8c6f2dd38",
+        "id": "28df8a9f7eb928b0",
         "type": "tabs",
         "children": [
           {
-            "id": "94b9eda805cdcea5",
+            "id": "6c063f03ae0e4166",
             "type": "leaf",
             "state": {
-              "type": "graph",
+              "type": "empty",
               "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -167,8 +167,10 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "648809c7a6ca75e7",
+  "active": "6c063f03ae0e4166",
   "lastOpenFiles": [
+    "Comparisons/Core ORM.md",
+    "Comparisons/Index.md",
     "Odoo 18/Core/Processes/Manufacturing/Index.md",
     "Odoo 18/Core/Processes/Manufacturing",
     "Odoo 18/Core/Processes/HR/Index.md",
@@ -202,8 +204,6 @@
     "issue_27_body.md",
     "issue_26_body.md",
     "issue_25_body.md",
-    "issue_24_body.md",
-    "issue_23_body.md",
-    "issue_22_body.md"
+    "issue_24_body.md"
   ]
 }

@@ -1,6 +1,6 @@
 ---
 tags: [comparison, migration]
-status: seed
+status: draft
 ---
 # Comparisons v18 vs v19
 
@@ -15,26 +15,23 @@ status: seed
 - [[Comparisons/Enterprise Finance v18-v19]]
 - [[Comparisons/Manufacturing v18-v19]]
 
-`plantuml
+```plantuml
 @startmindmap
 * Comparisons
-**Core
-**Accounting
-**Inventory
+** Core
+** Accounting
+** Inventory
 ** Sales
 ** Services
-**HR
-**Marketing
-**Enterprise Finance
-**Manufacturing
-@endmindmap
-`
+** HR
+** Marketing
+** Enterprise Finance
+** Manufacturing
+@enduml
+```
 
 ## Suggestions
 - Use the [[Templates/Cross-Version Diff Template]] template.
 - Add tables describing field and flow changes.
 - Document recommended migration scripts.
-
-
-
-
+- Cross-link to core/process notes where deltas were observed.

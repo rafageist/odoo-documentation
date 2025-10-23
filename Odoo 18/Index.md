@@ -44,3 +44,4 @@ status: seed
   - `[[Odoo 18/Community Addons/Index]]`
   - `[[Odoo 18/Enterprise Addons/Index]]`
   - `[[Comparisons/Index]]`
+

@@ -103,6 +103,6 @@ stop
 - [ ] Add examples of security rule impacts (record rules restricting cross-company access).
 
 ## Navigation
-- **Parent:** `[[Odoo 18/Core/Master Data/Index]]`
+- **Parent:** `[[Odoo 18/Core/Master Data]]`
 - **Related:** `[[Odoo 18/Core/Master Data/res_partner.md]]`, `[[Odoo 18/Core/Master Data/res_users.md]]`, `[[Odoo 18/Core/Architecture.md]]`
 - **Issue:** #2 `Docs: Odoo 18 - res.company`

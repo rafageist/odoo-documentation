@@ -73,10 +73,10 @@ Lead -> Order : action_new_quotation() (optional)
 - Activity reporting uses `crm.activity.report` to ensure timely follow-ups.
 
 ## 7. Cross-links
-- `[[Odoo 18/Core/Processes/Sales/Index]]` – opportunities feed sales orders.
-- `[[Odoo 18/Core/Master Data/res_partner.md]]` – partner matching, warnings.
-- `[[Odoo 18/Core/Master Data/res_users.md]]` – sales teams and user permissions.
-- Marketing modules under `[[Odoo 18/Community Addons/Marketing/Index]]` for campaigns and automation.
+- `[[Odoo 18/Core/Processes/Sales]]`  opportunities feed sales orders.
+- `[[Odoo 18/Core/Master Data/res_partner.md]]`  partner matching, warnings.
+- `[[Odoo 18/Core/Master Data/res_users.md]]`  sales teams and user permissions.
+- Marketing modules under `[[Odoo 18/Community Addons/Marketing]]` for campaigns and automation.
 
 ## 8. To-do (Issue #18)
 - [ ] Document lead enrichment/IAP integration steps.
@@ -84,6 +84,6 @@ Lead -> Order : action_new_quotation() (optional)
 - [ ] Link to website form generation once documented.
 
 ## Navigation
-- **Parent:** `[[Odoo 18/Community Addons/Sales/Index]]`
-- **Related:** `[[Odoo 18/Core/Processes/Sales/Index]]`, `[[Odoo 18/Community Addons/Sales/sale_management.md]]`, `[[Odoo 18/Community Addons/Marketing/Index]]`
+- **Parent:** `[[Odoo 18/Community Addons/Sales]]`
+- **Related:** `[[Odoo 18/Core/Processes/Sales]]`, `[[Odoo 18/Community Addons/Sales/sale_management.md]]`, `[[Odoo 18/Community Addons/Marketing]]`
 - **Issue:** #18 `Docs: Odoo 18 - Community Sales suite`

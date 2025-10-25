@@ -34,7 +34,7 @@ status: seed
 
 
 ## Navigation
-- **Parent:** [[Odoo 18/Community Addons/Index]]
+- **Parent:** [[Odoo 18/Community Addons]]
 
 
 ## Children

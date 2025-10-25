@@ -5,7 +5,7 @@ status: draft
 
 # Stock Module (`stock`)
 
-> **Summary:** Core inventory module providing pickings, stock moves, locations, quants, routes, and procurement triggers. Refer to `[[Odoo 18/Core/Processes/Inventory/Index]]` for the overarching flow; this note focuses on module-specific configuration and extensions.
+> **Summary:** Core inventory module providing pickings, stock moves, locations, quants, routes, and procurement triggers. Refer to `[[Odoo 18/Core/Processes/Inventory]]` for the overarching flow; this note focuses on module-specific configuration and extensions.
 
 ## 1. Principal models
 
@@ -40,7 +40,7 @@ status: draft
 - Negative stock allowed per location (`allow_negative_stock`).
 
 ## 5. Integration points
-- **Sales:** `sale_stock` auto-creates delivery pickings, updates delivered quantities. See `[[Odoo 18/Core/Processes/Sales/Index]]`.
+- **Sales:** `sale_stock` auto-creates delivery pickings, updates delivered quantities. See `[[Odoo 18/Core/Processes/Sales]]`.
 - **Purchases:** `purchase_stock` generates incoming receipts.
 - **Accounting:** `stock_account` ensures valuation entries.
 - **Manufacturing:** `mrp` relies on stock routes for component consumption/production.
@@ -56,6 +56,6 @@ status: draft
 - [ ] Link to barcode/wave picking modules when documented.
 
 ## Navigation
-- **Parent:** `[[Odoo 18/Community Addons/Inventory/Index]]`
-- **Related:** `[[Odoo 18/Core/Processes/Inventory/Index]]`, `[[Odoo 18/Core/Processes/Sales/Index]]`, `[[Odoo 18/Community Addons/Inventory/stock_account.md]]`
+- **Parent:** `[[Odoo 18/Community Addons/Inventory]]`
+- **Related:** `[[Odoo 18/Core/Processes/Inventory]]`, `[[Odoo 18/Core/Processes/Sales]]`, `[[Odoo 18/Community Addons/Inventory/stock_account.md]]`
 - **Issue:** #20 `Docs: Odoo 18 - Community Operations suite`

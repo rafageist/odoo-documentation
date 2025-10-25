@@ -84,10 +84,10 @@ ORM --> Client : attachment id + access token
 - When building integrations, respect checksum reuse to keep dedup effective; store remote object identifiers in custom metadata fields.
 
 ## Related notes
-- `[[Odoo 18/Core/Infrastructure/Index.md]]`
+- `[[Odoo 18/Core/Infrastructure]]`
 - `[[Odoo 18/Core/Infrastructure/ORM.md]]`
 - `[[Odoo 18/Core/Infrastructure/Security.md]]`
 
 
 ## Navigation
-- **Parent:** [[Odoo 18/Core/Infrastructure/Index]]
+- **Parent:** [[Odoo 18/Core/Infrastructure]]

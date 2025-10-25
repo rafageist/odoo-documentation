@@ -106,6 +106,6 @@ RPC --> Component : update state / render
 - [ ] Reference v19 frontend changes (Owl v2) in `[[Comparisons/Core ORM]]` follow-up note.
 
 ## Navigation
-- **Parent:** `[[Odoo 18/Core/Framework/Index]]`
-- **Related:** `[[Odoo 18/Core/Processes/Sales/Index]]`, `[[Odoo 18/Core/Infrastructure/Index]]`, `[[Odoo 18/Core/Architecture.md]]`
+- **Parent:** `[[Odoo 18/Core/Framework]]`
+- **Related:** `[[Odoo 18/Core/Processes/Sales]]`, `[[Odoo 18/Core/Infrastructure]]`, `[[Odoo 18/Core/Architecture.md]]`
 - **Issue:** #17 `Docs: Odoo 18 - Framework overview`

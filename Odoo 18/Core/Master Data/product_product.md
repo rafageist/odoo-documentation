@@ -13,7 +13,7 @@ status: draft
   - `product_tmpl_id`: parent template.
   - `attribute_value_ids`: ordered set of selected attribute values.
   - `default_code`, `barcode`: SKU identifiers used across inventory and PoS.
-  - `qty_available`, `virtual_available`, `incoming_qty`, `outgoing_qty`: computed quantities fed by `stock.quant` and `stock.move` (see `[[Odoo 18/Core/Processes/Inventory/Index.md]]`).
+  - `qty_available`, `virtual_available`, `incoming_qty`, `outgoing_qty`: computed quantities fed by `stock.quant` and `stock.move` (see `[[Odoo 18/Core/Processes/Inventory]]`).
   - `valuation_layer_ids`: linkage to valuation history and cost layers.
 
 ## Synchronisation with templates
@@ -36,8 +36,8 @@ status: draft
 - Template definition: `[[Odoo 18/Core/Master Data/product_template.md]]`
 - Units of measure: `[[Odoo 18/Core/Master Data/uom_uom.md]]`
 - Accounting entry impact: `[[Odoo 18/Core/Processes/Accounting/account_move.md]]`
-- Inventory execution: `[[Odoo 18/Core/Processes/Inventory/Index.md]]`
+- Inventory execution: `[[Odoo 18/Core/Processes/Inventory]]`
 
 
 ## Navigation
-- **Parent:** [[Odoo 18/Core/Master Data/Index]]
+- **Parent:** [[Odoo 18/Core/Master Data]]

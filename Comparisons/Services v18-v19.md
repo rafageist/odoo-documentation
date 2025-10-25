@@ -4,7 +4,7 @@ status: draft
 ---
 # Services (Project) v18 vs v19
 
-> **Summary:** Captures the main changes to project management between v18 and v19. Cross-reference the Odoo 18 project notes (`[[Odoo 18/Core/Processes/Projects/Index.md]]`).
+> **Summary:** Captures the main changes to project management between v18 and v19. Cross-reference the Odoo 18 project notes (`[[Odoo 18/Core/Processes/Projects]]`).
 
 ## Key observations so far
 - Project models adopt explicit names (`ProjectProject`) and rely on `Domain` helpers and new read-group utilities when counting tasks/templates.
@@ -27,4 +27,4 @@ status: draft
 
 
 ## Navigation
-- **Parent:** [[Comparisons/Index]]
+- **Parent:** [[Comparisons]]

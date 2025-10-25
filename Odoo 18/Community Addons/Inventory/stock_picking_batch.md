@@ -53,6 +53,6 @@ Batch -> Picking : call button_validate() per picking
 - [ ] Add reference to Enterprise features (wave picking) if extended modules present.
 
 ## Navigation
-- **Parent:** `[[Odoo 18/Community Addons/Inventory/Index]]`
-- **Related:** `[[Odoo 18/Core/Processes/Inventory/Index]]`, `[[Odoo 18/Community Addons/Inventory/stock.md]]`
+- **Parent:** `[[Odoo 18/Community Addons/Inventory]]`
+- **Related:** `[[Odoo 18/Core/Processes/Inventory]]`, `[[Odoo 18/Community Addons/Inventory/stock.md]]`
 - **Issue:** #20 `Docs: Odoo 18 - Community Operations suite`

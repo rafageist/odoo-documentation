@@ -12,7 +12,7 @@ status: draft
 | Model | File | Responsibilities |
 |-------|------|------------------|
 | `account.analytic.line` | `addons/hr_timesheet/models/account_analytic_line.py` | Stores timesheet entries (employee, task, date, hours). |
-| `hr.timesheet.sheet` | (Enterprise) – not in CE. | Keep aware for references. |
+| `hr.timesheet.sheet` | (Enterprise)  not in CE. | Keep aware for references. |
 | In CE: `project.task` linking timesheets. |
 
 ## 2. Timesheet recording
@@ -41,6 +41,6 @@ status: draft
 - [ ] Link to payroll integration (Enterprise) if relevant.
 
 ## Navigation
-- **Parent:** `[[Odoo 18/Community Addons/Services/Index]]`
-- **Related:** `[[Odoo 18/Core/Processes/Projects/Index]]`, `[[Odoo 18/Community Addons/Sales/sale_project.md]]`, `[[Odoo 18/Core/Master Data/res_users.md]]`
+- **Parent:** `[[Odoo 18/Community Addons/Services]]`
+- **Related:** `[[Odoo 18/Core/Processes/Projects]]`, `[[Odoo 18/Community Addons/Sales/sale_project.md]]`, `[[Odoo 18/Core/Master Data/res_users.md]]`
 - **Issue:** #21 `Docs: Odoo 18 - Community Services suite`

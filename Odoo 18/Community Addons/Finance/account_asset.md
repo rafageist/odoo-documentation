@@ -50,7 +50,7 @@ Accountant -> Asset : dispose/close asset
 - Assets created from invoices: product template has `asset_category_id` or category defined on account.
 
 ## 4. Integration
-- **Accounting:** every posted depreciation creates `account.move` lines (expense + accumulated depreciation). Works with `[[Odoo 18/Core/Processes/Accounting/Index]]`.
+- **Accounting:** every posted depreciation creates `account.move` lines (expense + accumulated depreciation). Works with `[[Odoo 18/Core/Processes/Accounting]]`.
 - **Purchasing:** vendor bills automatically create assets; purchase order lines can pass category.
 - **Reporting:** asset analysis via `account.asset.report` (Pivot/Graph); integration with financial statements (balance sheet).
 - **Disposal:** integration with sales (selling asset) creates revenue move lines.
@@ -61,6 +61,6 @@ Accountant -> Asset : dispose/close asset
 - [ ] Include disposal flow once note on accounting adjustments exists.
 
 ## Navigation
-- **Parent:** `[[Odoo 18/Community Addons/Finance/Index]]`
-- **Related:** `[[Odoo 18/Core/Processes/Accounting/Index]]`, `[[Odoo 18/Core/Master Data/res_company.md]]`, `[[Odoo 18/Community Addons/Finance/account.md]]`
+- **Parent:** `[[Odoo 18/Community Addons/Finance]]`
+- **Related:** `[[Odoo 18/Core/Processes/Accounting]]`, `[[Odoo 18/Core/Master Data/res_company.md]]`, `[[Odoo 18/Community Addons/Finance/account.md]]`
 - **Issue:** #19 `Docs: Odoo 18 - Community Finance suite`

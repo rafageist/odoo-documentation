@@ -5,7 +5,7 @@ status: draft
 
 # Project Module (Community)
 
-> **Summary:** Community `project` app delivers collaborative project/task management. It complements the core process note (`[[Odoo 18/Core/Processes/Projects/Index]]`) with module-specific features, views, and settings.
+> **Summary:** Community `project` app delivers collaborative project/task management. It complements the core process note (`[[Odoo 18/Core/Processes/Projects]]`) with module-specific features, views, and settings.
 
 ## 1. Models and structure
 
@@ -51,6 +51,6 @@ status: draft
 - [ ] Document recurring tasks once feature note exists.
 
 ## Navigation
-- **Parent:** `[[Odoo 18/Community Addons/Services/Index]]`
-- **Related:** `[[Odoo 18/Core/Processes/Projects/Index]]`, `[[Odoo 18/Community Addons/Sales/sale_project.md]]`, `[[Odoo 18/Core/Master Data/res_users.md]]`
+- **Parent:** `[[Odoo 18/Community Addons/Services]]`
+- **Related:** `[[Odoo 18/Core/Processes/Projects]]`, `[[Odoo 18/Community Addons/Sales/sale_project.md]]`, `[[Odoo 18/Core/Master Data/res_users.md]]`
 - **Issue:** #21 `Docs: Odoo 18 - Community Services suite`

@@ -16,8 +16,8 @@ status: seed
 
 ## References
 -Enterprise Agreement.
-- [[Odoo 18/Enterprise Addons/Index]]
-- [[Odoo 19/Enterprise Addons/Index]]
+- [[Odoo 18/Enterprise Addons]]
+- [[Odoo 19/Enterprise Addons]]
 
 
 

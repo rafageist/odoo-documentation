@@ -8,5 +8,5 @@ status: todo
 Will document partner tagging logic, including the many-to-many relationship with `res.partner`, in a future iteration.
 
 ## Navigation
-- **Parent:** `[[Odoo 18/Core/Master Data/Index]]`
+- **Parent:** `[[Odoo 18/Core/Master Data]]`
 - **Related:** `[[Odoo 18/Core/Master Data/res_partner.md]]`

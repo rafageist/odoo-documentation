@@ -96,10 +96,10 @@ end
 - Document every sudo call in code comments and consider dedicated helper methods that encapsulate privileged actions.
 
 ## Related notes
-- `[[Odoo 18/Core/Infrastructure/Index.md]]`
+- `[[Odoo 18/Core/Infrastructure]]`
 - `[[Odoo 18/Core/Infrastructure/ORM.md]]`
 - `[[Odoo 18/Core/Framework/Web.md]]`
 
 
 ## Navigation
-- **Parent:** [[Odoo 18/Core/Infrastructure/Index]]
+- **Parent:** [[Odoo 18/Core/Infrastructure]]

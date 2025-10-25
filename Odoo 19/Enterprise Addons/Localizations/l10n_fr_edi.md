@@ -18,4 +18,4 @@ status: backlog
 
 
 ## Navigation
-- **Parent:** [[Odoo 19/Enterprise Addons/Localizations/Index]]
+- **Parent:** [[Odoo 19/Enterprise Addons/Localizations]]

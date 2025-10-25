@@ -52,6 +52,6 @@ Accountant -> Statement : validate & post differences (write-off)
 - [ ] Reference bank synchronization (Enterprise) when documented.
 
 ## Navigation
-- **Parent:** `[[Odoo 18/Community Addons/Finance/Index]]`
-- **Related:** `[[Odoo 18/Community Addons/Finance/account_payment.md]]`, `[[Odoo 18/Community Addons/Finance/account.md]]`, `[[Odoo 18/Core/Processes/Accounting/Index]]`
+- **Parent:** `[[Odoo 18/Community Addons/Finance]]`
+- **Related:** `[[Odoo 18/Community Addons/Finance/account_payment.md]]`, `[[Odoo 18/Community Addons/Finance/account.md]]`, `[[Odoo 18/Core/Processes/Accounting]]`
 - **Issue:** #19 `Docs: Odoo 18 - Community Finance suite`

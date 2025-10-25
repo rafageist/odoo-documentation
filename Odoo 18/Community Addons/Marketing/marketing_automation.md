@@ -18,4 +18,4 @@ status: backlog
 
 
 ## Navigation
-- **Parent:** [[Odoo 18/Community Addons/Marketing/Index]]
+- **Parent:** [[Odoo 18/Community Addons/Marketing]]

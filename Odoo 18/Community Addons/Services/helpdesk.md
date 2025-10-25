@@ -39,7 +39,7 @@ Agent -> Ticket : close (solved/refused)
 - Multi-channel intake: email aliases, website form, portal submission.
 - SLA: response time tracking (`helpdesk.sla`) with automated failure actions (e.g., escalation). Stage-based policies.
 - Knowledge integration (`knowledge` module) optional references for solutions.
-- Satisfaction surveys (Enterprise) – mention as optional extension.
+- Satisfaction surveys (Enterprise)  mention as optional extension.
 
 ## 3. Configuration
 - Teams configure channels, default stages, email alias, portal settings.
@@ -62,6 +62,6 @@ Agent -> Ticket : close (solved/refused)
 - [ ] Clarify interplay with Enterprise features (knowledge, field service) in dedicated notes.
 
 ## Navigation
-- **Parent:** `[[Odoo 18/Community Addons/Services/Index]]`
-- **Related:** `[[Odoo 18/Community Addons/Services/project.md]]`, `[[Odoo 18/Core/Master Data/res_users.md]]`, `[[Odoo 18/Core/Processes/Projects/Index]]`
+- **Parent:** `[[Odoo 18/Community Addons/Services]]`
+- **Related:** `[[Odoo 18/Community Addons/Services/project.md]]`, `[[Odoo 18/Core/Master Data/res_users.md]]`, `[[Odoo 18/Core/Processes/Projects]]`
 - **Issue:** #21 `Docs: Odoo 18 - Community Services suite`

@@ -9,9 +9,9 @@ status: active
 Welcome to the permanent knowledge repository for Odoo 18 and Odoo 19. The goal is to build a deeply interlinked, code-driven knowledge graph that captures both technical implementation details and business intent.
 
 ## How it is organized
-- `[[Odoo 18/Index]]` and its children cover the Community + Enterprise edition for v18.
-- `[[Odoo 19/Index]]` mirrors the structure for v19.
-- `[[Comparisons/Index]]` records cross-version gaps.
+- `[[Odoo 18]]` and its children cover the Community + Enterprise edition for v18.
+- `[[Odoo 19]]` mirrors the structure for v19.
+- `[[Comparisons]]` records cross-version gaps.
 - `[[Roadmap/Migrations 18 to 19]]` drives migration planning.
 - `[[Licensing/Enterprise Guide]]` documents compliance concerns.
 - `[[Templates/Module Documentation Template]]` and peers keep notes consistent.
@@ -32,9 +32,9 @@ Welcome to the permanent knowledge repository for Odoo 18 and Odoo 19. The goal 
 
 ## Navigation
 - **Children**
-  - `[[Odoo 18/Index]]`
-  - `[[Odoo 19/Index]]`
-  - `[[Comparisons/Index]]`
+  - `[[Odoo 18]]`
+  - `[[Odoo 19]]`
+  - `[[Comparisons]]`
   - `[[Roadmap/Migrations 18 to 19]]`
   - `[[Licensing/Enterprise Guide]]`
   - `[[Templates/Module Documentation Template]]`

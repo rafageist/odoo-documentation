@@ -16,7 +16,7 @@ status: active
 4. **Narrative drafting** - describe business context, invariants, and cross-module effects.
 5. **Visualisation** - add at least one diagram explaining structure or sequence.
 6. **Linking** - connect to parent index, sibling modules, and related concepts.
-7. **Review** - update `[[Changelog]]` and, when appropriate, `[[Comparisons/Index]]`.
+7. **Review** - update `[[Changelog]]` and, when appropriate, `[[Comparisons]]`.
 
 ## Conventions
 - **Tags:** use `#v18`, `#v19`, `#core`, `#community`, `#enterprise`, `#business`, `#technical` as relevant.
@@ -28,10 +28,10 @@ status: active
 | Phase | Focus | Representative notes |
 |-------|-------|-----------------------|
 | Wave 1 | Core master data (`res.partner`, `res.company`, `res.users`) | `[[Odoo 18/Core/Master Data/res_partner.md]]` |
-| Wave 2 | Core processes (Sales, Accounting, Inventory) | `[[Odoo 18/Core/Processes/Index]]` |
+| Wave 2 | Core processes (Sales, Accounting, Inventory) | `[[Odoo 18/Core/Processes]]` |
 | Wave 3 | Community modules with heavy inheritance (CRM, Account) | TODO |
 | Wave 4 | Enterprise exclusives (Advanced Finance, Operations) | TODO |
-| Wave 5 | Cross-version deltas and migration scripts | `[[Comparisons/Index]]` |
+| Wave 5 | Cross-version deltas and migration scripts | `[[Comparisons]]` |
 
 ## Quality gates
 - Cross-check that every method documented cites its source file.

@@ -118,13 +118,13 @@ Partner --> Users : user_ids
 
 ## Related notes
 - Infrastructure: [[Odoo 18/Core/Infrastructure/Security.md]], [[Odoo 18/Core/Infrastructure/Files.md]], [[Odoo 18/Core/Infrastructure/ORM.md]]
-- Processes: [[Odoo 18/Core/Processes/Sales/Index.md]], [[Odoo 18/Core/Processes/Accounting/Index.md]]
+- Processes: [[Odoo 18/Core/Processes/Sales]], [[Odoo 18/Core/Processes/Accounting]]
 - Variant data: [[Odoo 18/Core/Master Data/product_template.md]], [[Odoo 18/Core/Master Data/product_product.md]]
 
 ## Navigation
-- **Parent:** `[[Odoo 18/Core/Master Data/Index]]`
+- **Parent:** `[[Odoo 18/Core/Master Data]]`
 - **Sibling models:** `[[Odoo 18/Core/Master Data/res_company.md]]`, `[[Odoo 18/Core/Master Data/product_template.md]]`
-- **Downstream modules:** `[[Odoo 18/Community Addons/Sales/Index]]`, `[[Odoo 18/Community Addons/Finance/Index]]`, `[[Odoo 18/Community Addons/Services/Index]]`
+- **Downstream modules:** `[[Odoo 18/Community Addons/Sales]]`, `[[Odoo 18/Community Addons/Finance]]`, `[[Odoo 18/Community Addons/Services]]`
 
 ## To-do for full coverage
 - Document each warning field (`sale_warn`, `purchase_warn`, etc.) and reference the modules that consume them.

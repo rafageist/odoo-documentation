@@ -4,7 +4,7 @@ status: draft
 ---
 # Inventory v18 vs v19
 
-> **Summary:** Highlights structural updates in stock operations between v18 and v19, referencing the core process notes (`[[Odoo 18/Core/Processes/Inventory/Index.md]]`).
+> **Summary:** Highlights structural updates in stock operations between v18 and v19, referencing the core process notes (`[[Odoo 18/Core/Processes/Inventory]]`).
 
 ## Key observations so far
 - Models renamed to explicit prefixes (`StockPickingType`, `StockPicking`) and constraints/indexes now use `models.Constraint` / `models.Index` wrappers.
@@ -27,4 +27,4 @@ status: draft
 
 
 ## Navigation
-- **Parent:** [[Comparisons/Index]]
+- **Parent:** [[Comparisons]]

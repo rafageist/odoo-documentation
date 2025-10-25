@@ -17,27 +17,27 @@ awesome_subscription/
 +-- __manifest__.py
 +-- __init__.py
 +-- security/
-¦   +-- ir.model.access.csv
-¦   +-- subscription_security.xml
+   +-- ir.model.access.csv
+   +-- subscription_security.xml
 +-- models/
-¦   +-- __init__.py
-¦   +-- sale_subscription.py
-¦   +-- subscription_health.py
+   +-- __init__.py
+   +-- sale_subscription.py
+   +-- subscription_health.py
 +-- data/
-¦   +-- subscription_stage.xml
-¦   +-- ir_cron.xml
+   +-- subscription_stage.xml
+   +-- ir_cron.xml
 +-- views/
-¦   +-- sale_subscription_views.xml
-¦   +-- subscription_health_views.xml
-¦   +-- templates.xml
+   +-- sale_subscription_views.xml
+   +-- subscription_health_views.xml
+   +-- templates.xml
 +-- static/
-¦   +-- src/
-¦       +-- js/
-¦       ¦   +-- subscription_dashboard.js
-¦       +-- scss/
-¦       ¦   +-- subscription_dashboard.scss
-¦       +-- xml/
-¦           +-- subscription_dashboard.xml
+   +-- src/
+       +-- js/
+          +-- subscription_dashboard.js
+       +-- scss/
+          +-- subscription_dashboard.scss
+       +-- xml/
+           +-- subscription_dashboard.xml
 +-- tests/
     +-- test_subscription_health.py
 ```
@@ -251,7 +251,7 @@ class TestSubscriptionHealth(TransactionCase):
 ```
 
 ## 10. Walkthrough
-1. Install module; new stage “Nurturing” added via data file.
+1. Install module; new stage Nurturing added via data file.
 2. Confirm sale order with recurring product ? subscription created.
 3. Health tab displays score; button generates project automatically.
 4. Dashboard action shows Owl widget with aggregated metrics.
@@ -261,7 +261,7 @@ class TestSubscriptionHealth(TransactionCase):
 - ORM usage: `[[Odoo 18/Core/Infrastructure/ORM.md]]`
 - Web assets & Owl: `[[Odoo 18/Core/Framework/Web.md]]`
 - Subscription process: `[[Odoo 18/Community Addons/Sales/sale_subscription.md]]`
-- Projects integration: `[[Odoo 18/Core/Processes/Projects/Index]]`
+- Projects integration: `[[Odoo 18/Core/Processes/Projects]]`
 
 ## 12. To-do
 - [ ] Provide downloadable code snippet repository.
@@ -269,5 +269,5 @@ class TestSubscriptionHealth(TransactionCase):
 - [ ] Document translation/i18n extraction for JS strings.
 
 ## Navigation
-- **Parent:** `[[Odoo 18/Examples/Index]]`
-- **Related:** `[[Odoo 18/Core/Framework/Web.md]]`, `[[Odoo 18/Core/Processes/Sales/Index]]`, `[[Odoo 18/Community Addons/Sales/sale_subscription.md]]`
+- **Parent:** `[[Odoo 18/Examples]]`
+- **Related:** `[[Odoo 18/Core/Framework/Web.md]]`, `[[Odoo 18/Core/Processes/Sales]]`, `[[Odoo 18/Community Addons/Sales/sale_subscription.md]]`

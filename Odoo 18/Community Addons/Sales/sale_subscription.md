@@ -52,7 +52,7 @@ SalesRep -> Subscription : upsell / close / renew actions
 - Dashboards highlight `MRR`, `NRR`, `Churn Rate`; Kanban for stage visuals.
 
 ## 5. Integrations
-- **Accounting:** Invoices posted to `account.move`; auto-payment possible with payment providers; see `[[Odoo 18/Core/Processes/Accounting/Index]]`.
+- **Accounting:** Invoices posted to `account.move`; auto-payment possible with payment providers; see `[[Odoo 18/Core/Processes/Accounting]]`.
 - **Projects/Timesheets:** Optionally link to `project.project`/`task` for service delivery; integration with `sale_timesheet` for subscription projects.
 - **Portal:** Customers manage subscriptions via portal (`sale_subscription_portal`).
 - **Helpdesk:** `helpdesk_sale_subscription` connects support contracts to subscriptions for SLA.
@@ -69,6 +69,6 @@ SalesRep -> Subscription : upsell / close / renew actions
 - [ ] Describe integration with payment tokens (if enterprise modules allow autopay).
 
 ## Navigation
-- **Parent:** `[[Odoo 18/Community Addons/Sales/Index]]`
-- **Related:** `[[Odoo 18/Core/Processes/Sales/Index]]`, `[[Odoo 18/Community Addons/Sales/sale_management.md]]`, `[[Odoo 18/Core/Processes/Accounting/Index]]`
+- **Parent:** `[[Odoo 18/Community Addons/Sales]]`
+- **Related:** `[[Odoo 18/Core/Processes/Sales]]`, `[[Odoo 18/Community Addons/Sales/sale_management.md]]`, `[[Odoo 18/Core/Processes/Accounting]]`
 - **Issue:** #18 `Docs: Odoo 18 - Community Sales suite`

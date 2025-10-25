@@ -96,10 +96,10 @@ Client --> User : Download dialog / inline viewer
 - Use `report.paperformat` per company or per action to deliver localized stationery (e.g., US Letter vs A4, specific margin requirements).
 
 ## Related notes
-- `[[Odoo 18/Core/Infrastructure/Index.md]]`
+- `[[Odoo 18/Core/Infrastructure]]`
 - `[[Odoo 18/Core/Framework/Web.md]]`
 - `[[Odoo 18/Examples/Service Subscription Example.md]]` (extend with invoicing report walkthrough later)
 
 
 ## Navigation
-- **Parent:** [[Odoo 18/Core/Infrastructure/Index]]
+- **Parent:** [[Odoo 18/Core/Infrastructure]]

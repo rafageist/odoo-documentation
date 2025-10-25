@@ -49,7 +49,7 @@ product_template "1" -- "*" product_product : product_variant_ids
 - **Type (`type`):** stockable, consumable, service; influences reservation and procurement.
 - **Routes & rules:** `route_ids` and `property_stock_*` fields map into pull/push rules executed by `stock.rule`.
 - **Packaging:** `packaging_ids` connect to shipping dimensions and barcode packaging flows.
-- **Reordering:** buffer controls (`orderpoint_ids`) feed MTO/MTS flows within `[[Odoo 18/Core/Processes/Inventory/Index.md]]`.
+- **Reordering:** buffer controls (`orderpoint_ids`) feed MTO/MTS flows within `[[Odoo 18/Core/Processes/Inventory]]`.
 
 ## Related notes
 - Variants: `[[Odoo 18/Core/Master Data/product_product.md]]`
@@ -59,4 +59,4 @@ product_template "1" -- "*" product_product : product_variant_ids
 
 
 ## Navigation
-- **Parent:** [[Odoo 18/Core/Master Data/Index]]
+- **Parent:** [[Odoo 18/Core/Master Data]]

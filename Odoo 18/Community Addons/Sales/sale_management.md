@@ -5,7 +5,7 @@ status: draft
 
 # Sales Management Module (Odoo 18)
 
-> **Summary:** `sale_management` delivers the core sales order features beyond CRM: quotations, pricing, invoicing triggers, and delivery coordination. It extends the core sales process described in `[[Odoo 18/Core/Processes/Sales/Index]]` with UI, wizards, and reporting.
+> **Summary:** `sale_management` delivers the core sales order features beyond CRM: quotations, pricing, invoicing triggers, and delivery coordination. It extends the core sales process described in `[[Odoo 18/Core/Processes/Sales]]` with UI, wizards, and reporting.
 
 ## 1. Principal models & components
 
@@ -36,8 +36,8 @@ status: draft
 - KPI dashboards: per salesperson/team, pipeline values via CRM integration.
 
 ## 5. Integration highlights
-- **Inventory:** delivered qty computed via stock moves; returns handled via `stock.return.picking`. Documented in `[[Odoo 18/Core/Processes/Inventory/Index]]`.
-- **Accounting:** invoice policies and down payments link to `account.move`. See `[[Odoo 18/Core/Processes/Accounting/Index]]`.
+- **Inventory:** delivered qty computed via stock moves; returns handled via `stock.return.picking`. Documented in `[[Odoo 18/Core/Processes/Inventory]]`.
+- **Accounting:** invoice policies and down payments link to `account.move`. See `[[Odoo 18/Core/Processes/Accounting]]`.
 - **Projects/Subscriptions:** `sale_project`, `sale_subscription` rely on fields like `service_tracking` and `recurrence_id` to extend order lines.
 - **Portal:** `sale_portal` exposes quotations/orders on website, allowing acceptance/refusal, signature.
 
@@ -53,6 +53,6 @@ status: draft
 
 ## Navigation
 - Flow overview: [[Odoo 18/Community Addons/Sales/lead_to_cash.md]]
-- **Parent:** `[[Odoo 18/Community Addons/Sales/Index]]`
-- **Related:** `[[Odoo 18/Core/Processes/Sales/Index]]`, `[[Odoo 18/Community Addons/Sales/crm.md]]`, `[[Odoo 18/Community Addons/Sales/sale_project.md]]`
+- **Parent:** `[[Odoo 18/Community Addons/Sales]]`
+- **Related:** `[[Odoo 18/Core/Processes/Sales]]`, `[[Odoo 18/Community Addons/Sales/crm.md]]`, `[[Odoo 18/Community Addons/Sales/sale_project.md]]`
 - **Issue:** #18 `Docs: Odoo 18 - Community Sales suite`

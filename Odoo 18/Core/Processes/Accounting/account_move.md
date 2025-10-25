@@ -52,11 +52,11 @@ AccountMove --> AccountMove : action_post()
 - Reconciliation widgets consume move lines via RPC routes (`/accounting/reconciliation`).
 
 ## Related notes
-- Journals: `[[Odoo 18/Core/Processes/Accounting/Index.md]]`
+- Journals: `[[Odoo 18/Core/Processes/Accounting]]`
 - Partners: `[[Odoo 18/Core/Master Data/res_partner.md]]`
 - Products & taxes: `[[Odoo 18/Core/Master Data/product_template.md]]`, `[[Odoo 18/Core/Master Data/product_product.md]]`
-- Odoo 19 comparison placeholder: `[[Comparisons/Index]]`
+- Odoo 19 comparison placeholder: `[[Comparisons]]`
 
 
 ## Navigation
-- **Parent:** [[Odoo 18/Core/Processes/Accounting/Index]]
+- **Parent:** [[Odoo 18/Core/Processes/Accounting]]

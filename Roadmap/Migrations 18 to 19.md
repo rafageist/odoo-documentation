@@ -27,7 +27,7 @@ stop
 ```
 
 ## References
-- `[[Comparisons/Index]]`
+- `[[Comparisons]]`
 - `[[Templates/Cross-Version Diff Template]]`
 
 

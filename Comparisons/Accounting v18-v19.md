@@ -47,4 +47,4 @@ status: draft
 
 
 ## Navigation
-- **Parent:** [[Comparisons/Index]]
+- **Parent:** [[Comparisons]]

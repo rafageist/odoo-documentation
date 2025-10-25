@@ -50,11 +50,11 @@ Reconciliation -> Invoice : Settle / residuals
 - Real-time alerts: follow-ups trigger bus notifications (`[[Odoo 18/Core/Infrastructure/Bus.md]]`).
 
 ## Related documentation
-- `[[Odoo 18/Core/Processes/Accounting/Index.md]]`
+- `[[Odoo 18/Core/Processes/Accounting]]`
 - `[[Odoo 18/Community Addons/Finance/account.md]]`
 - `[[Odoo 18/Community Addons/Sales/lead_to_cash.md]]`
 - `[[Odoo 18/Community Addons/Finance/account_payment.md]]`
 
 
 ## Navigation
-- **Parent:** [[Odoo 18/Community Addons/Finance/Index]]
+- **Parent:** [[Odoo 18/Community Addons/Finance]]

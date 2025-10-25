@@ -18,4 +18,4 @@ status: backlog
 
 
 ## Navigation
-- **Parent:** [[Odoo 19/Enterprise Addons/Operations/Index]]
+- **Parent:** [[Odoo 19/Enterprise Addons/Operations]]

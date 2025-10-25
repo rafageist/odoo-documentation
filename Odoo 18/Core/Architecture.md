@@ -122,11 +122,11 @@ _Related notes_: `[[Odoo 18/Core/Master Data/res_partner.md]]`, `[[Odoo 18/Core/
 
 | Area | Notes |
 |------|-------|
-| Framework | `[[Odoo 18/Core/Framework/Index]]` (Base/Web/Mail/Auth) |
-| Master Data | `[[Odoo 18/Core/Master Data/Index]]` (partners, products, users, companies, currency) |
-| Processes | `[[Odoo 18/Core/Processes/Index]]` (Accounting, Inventory, Sales, Purchasing, Projects, HR, Manufacturing) |
-| Infrastructure | `[[Odoo 18/Core/Infrastructure/Index]]` (ORM internals, reports, files, bus, security) |
-| Integrations | `[[Odoo 18/Core/Integrations/Index]]` (Mail, Web Services, Payments, External Systems) |
+| Framework | `[[Odoo 18/Core/Framework]]` (Base/Web/Mail/Auth) |
+| Master Data | `[[Odoo 18/Core/Master Data]]` (partners, products, users, companies, currency) |
+| Processes | `[[Odoo 18/Core/Processes]]` (Accounting, Inventory, Sales, Purchasing, Projects, HR, Manufacturing) |
+| Infrastructure | `[[Odoo 18/Core/Infrastructure]]` (ORM internals, reports, files, bus, security) |
+| Integrations | `[[Odoo 18/Core/Integrations]]` (Mail, Web Services, Payments, External Systems) |
 
 Every folder has its own `Index.md`, and each note ends with a `## Navigation` block to help Obsidian’s graph display parent/child relationships.
 
@@ -136,6 +136,6 @@ Every folder has its own `Index.md`, and each note ends with a `## Navigation` b
 - Capture how enterprise web client assets modify base behaviour (see Odoo 18 Enterprise Digital notes).
 
 ## Navigation
-- **Parent:** `[[Odoo 18/Core/Index]]`
-- **Related:** `[[Odoo 18/Core/Framework/Index]]`, `[[Odoo 18/Core/Master Data/Index]]`, `[[Odoo 18/Core/Processes/Index]]`, `[[Odoo 18/Core/Infrastructure/Index]]`, `[[Odoo 18/Core/Integrations/Index]]`
+- **Parent:** `[[Odoo 18/Core]]`
+- **Related:** `[[Odoo 18/Core/Framework]]`, `[[Odoo 18/Core/Master Data]]`, `[[Odoo 18/Core/Processes]]`, `[[Odoo 18/Core/Infrastructure]]`, `[[Odoo 18/Core/Integrations]]`
 - **Issue:** #16 `Docs: Odoo 18 - Core architecture overview`

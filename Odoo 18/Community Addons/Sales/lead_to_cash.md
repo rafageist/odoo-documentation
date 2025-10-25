@@ -57,11 +57,11 @@ Lead -> ACC : Pay / reconcile
 - Security: record rules govern salesperson visibility (`[[Odoo 18/Core/Infrastructure/Security.md]]`).
 
 ## Related documentation
-- `[[Odoo 18/Core/Processes/Sales/Index.md]]`
+- `[[Odoo 18/Core/Processes/Sales]]`
 - `[[Odoo 18/Community Addons/Sales/sale_management.md]]`
 - `[[Odoo 18/Community Addons/Finance/invoice_to_cash.md]]`
-- `[[Odoo 18/Community Addons/Inventory/Index.md]]`
+- `[[Odoo 18/Community Addons/Inventory]]`
 
 
 ## Navigation
-- **Parent:** [[Odoo 18/Community Addons/Sales/Index]]
+- **Parent:** [[Odoo 18/Community Addons/Sales]]

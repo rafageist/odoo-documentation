@@ -48,7 +48,7 @@ StockAccount -> Journal : create entries (stock valuation)
 - Manual revaluation wizard (`stock.valuation.layer.revaluation`) adjusts cost and records gain/loss.
 
 ## 5. Integration
-- **Accounting:** Links to `account.move` and company fiscal settings. Cross-reference with `[[Odoo 18/Core/Processes/Accounting/Index]]`.
+- **Accounting:** Links to `account.move` and company fiscal settings. Cross-reference with `[[Odoo 18/Core/Processes/Accounting]]`.
 - **Manufacturing:** Work orders create consumption/production moves posting valuation entries per BOM cost.
 - **Sales/Purchase:** Delivery and receipt flows create COGS and inventory value entries corresponding to invoice flows.
 
@@ -63,6 +63,6 @@ StockAccount -> Journal : create entries (stock valuation)
 - [ ] Link to cost analysis reports when created.
 
 ## Navigation
-- **Parent:** `[[Odoo 18/Community Addons/Inventory/Index]]`
-- **Related:** `[[Odoo 18/Community Addons/Inventory/stock.md]]`, `[[Odoo 18/Core/Processes/Inventory/Index]]`, `[[Odoo 18/Core/Processes/Accounting/Index]]`
+- **Parent:** `[[Odoo 18/Community Addons/Inventory]]`
+- **Related:** `[[Odoo 18/Community Addons/Inventory/stock.md]]`, `[[Odoo 18/Core/Processes/Inventory]]`, `[[Odoo 18/Core/Processes/Accounting]]`
 - **Issue:** #20 `Docs: Odoo 18 - Community Operations suite`

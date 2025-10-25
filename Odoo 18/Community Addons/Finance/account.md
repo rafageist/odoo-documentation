@@ -18,7 +18,7 @@ status: draft
 | `account.payment` (in base) | `addons/account/models/account_payment.py` | Payment documents (mostly extended by `account_payment` module). |
 | Reconciliation models | `addons/account/models/account_reconcile_model.py` | Auto reconciliation templates.
 
-**Note:** See `[[Odoo 18/Core/Processes/Accounting/Index]]` for process-level overview.
+**Note:** See `[[Odoo 18/Core/Processes/Accounting]]` for process-level overview.
 
 ## 2. Chart of accounts & configuration
 - Loaded via chart templates (`account.chart.template`) per localisation. Install wizard asks for template and fiscal settings.
@@ -79,6 +79,6 @@ Move -> Line : ready for reconciliation
 
 ## Navigation
 - Flow overview: [[Odoo 18/Community Addons/Finance/invoice_to_cash.md]]
-- **Parent:** `[[Odoo 18/Community Addons/Finance/Index]]`
-- **Related:** `[[Odoo 18/Core/Processes/Accounting/Index]]`, `[[Odoo 18/Core/Master Data/res_company.md]]`, `[[Odoo 18/Core/Processes/Sales/Index]]`
+- **Parent:** `[[Odoo 18/Community Addons/Finance]]`
+- **Related:** `[[Odoo 18/Core/Processes/Accounting]]`, `[[Odoo 18/Core/Master Data/res_company.md]]`, `[[Odoo 18/Core/Processes/Sales]]`
 - **Issue:** #19 `Docs: Odoo 18 - Community Finance suite`

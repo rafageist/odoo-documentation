@@ -41,6 +41,6 @@ status: draft
 - [ ] Highlight scenarios where standard scheduler is preferred.
 
 ## Navigation
-- **Parent:** `[[Odoo 18/Community Addons/Inventory/Index]]`
-- **Related:** `[[Odoo 18/Core/Processes/Inventory/Index]]`, `[[Odoo 18/Core/Processes/Purchasing/Index]]`, `[[Odoo 18/Core/Processes/Manufacturing/Index]]`
+- **Parent:** `[[Odoo 18/Community Addons/Inventory]]`
+- **Related:** `[[Odoo 18/Core/Processes/Inventory]]`, `[[Odoo 18/Core/Processes/Purchasing]]`, `[[Odoo 18/Core/Processes/Manufacturing]]`
 - **Issue:** #20 `Docs: Odoo 18 - Community Operations suite`

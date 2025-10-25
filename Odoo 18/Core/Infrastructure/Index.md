@@ -1,4 +1,4 @@
----
+﻿---
 tags: [v18, core, infrastructure]
 status: in-progress
 ---
@@ -10,7 +10,7 @@ status: in-progress
 - ORM & meta models *(analysis in progress)* -> `[[Odoo 18/Core/Infrastructure/ORM.md]]`
 - Reporting stack (QWeb, PDF, assets) *(draft)* -> `[[Odoo 18/Core/Infrastructure/Reports.md]]`
 - Real-time bus & queues *(draft ready)* -> `[[Odoo 18/Core/Infrastructure/Bus.md]]`
-- Security internals *(todo)* -> `[[Odoo 18/Core/Infrastructure/Seguridad.md]]`
+- Security internals *(draft)* -> `[[Odoo 18/Core/Infrastructure/Security.md]]`
 - File storage & attachments *(todo)* -> `[[Odoo 18/Core/Infrastructure/Files.md]]`
 
 ```plantuml

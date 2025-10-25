@@ -4,28 +4,19 @@ status: draft
 ---
 # Core ORM v18 vs v19
 
-## Detected changes (high-level)
+> **Summary:** Tracks structural changes in the ORM between Odoo 18 and 19 so migration tasks can reference the detailed architecture note `[[Odoo 18/Core/Infrastructure/ORM.md]]`.
 
-| Area | v18 | v19 | Notes |
-|------|-----|-----|-------|
-| ORM public API | Stable decorators (`@api.model`, `@api.depends`, etc.). | Same API; investigate additions (e.g., autovacuum helpers). | Detailed diff pending. |
-| Prefetch/flush | Prefetch behaviour as in previous versions; batched invalidation. | Need verification for new cache invalidations. | Placeholder for analysis. |
-| View integration | QWeb forms interact via RPC. | OWL refactor doesn’t alter ORM but ensure context compatibility. | |
+## Areas to verify
+- **Prefetch & caching:** confirm whether v19 introduces new lazy-loading strategies that affect computed field invalidation.
+- **Onchange/Command API:** review `odoo/fields.py` for additions to `Command` helpers or onchange payloads.
+- **Queueing & autovacuum:** compare decorators (`@api.autovacuum`) and background hooks.
+- **Security integration:** ensure `_check_access` contract matches the updates documented in `[[Odoo 18/Core/Infrastructure/Security.md]]`.
 
-## Impact
-- No breaking changes identified yet; extensions targeting `models.Model` should remain compatible.
-- Monitor new helpers/decorators when planning migrations.
+## Links
+- v18 reference: `[[Odoo 18/Core/Infrastructure/ORM.md]]`
+- v19 reference placeholder: `[[Odoo 19/Core/Infrastructure/ORM.md]]` (to be created)
 
-## Diagram
-```plantuml
-@startuml
-class BaseModel_v18
-class BaseModel_v19
-BaseModel_v19 --> BaseModel_v18 : conceptual inheritance
-@enduml
-```
-
-## Tasks
-- Analyze ORM commits.
-- Document new decorators.
-- Record breaking changes.
+## Next steps
+- Produce diff of `odoo/models.py` `_check_access` and `write` flows.
+- Document migration guidelines for custom computed fields.
+- Update this note once v19 reference docs are imported.

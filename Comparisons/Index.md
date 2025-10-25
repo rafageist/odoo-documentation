@@ -31,6 +31,7 @@ status: draft
 ```
 
 ## Suggestions
+- Baseline docs: [[Odoo 18/Core/Master Data/res_partner.md]], [[Odoo 18/Core/Master Data/product_template.md]], [[Odoo 18/Core/Processes/Accounting/account_move.md]], [[Odoo 18/Community Addons/Sales/lead_to_cash.md]], [[Odoo 18/Community Addons/Finance/invoice_to_cash.md]]
 - Use the [[Templates/Cross-Version Diff Template]] template.
 - Add tables describing field and flow changes.
 - Document recommended migration scripts.

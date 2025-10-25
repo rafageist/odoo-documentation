@@ -1,26 +1,32 @@
 ---
-tags: [comparison, backlog]
-status: backlog
+tags: [comparison, sales]
+status: draft
 ---
-# Sales v18-v19
+# Sales v18 vs v19
 
-## Functional changes
--
+> **Summary:** Tracks functional and technical differences across CRM and Sales Order flows between v18 and v19. Use together with `[[Odoo 18/Community Addons/Sales/lead_to_cash.md]]` and core process documentation.
 
-## Technical changes
--
+## Topics to analyse
+- CRM pipeline: new stages, scoring, or activity automation in v19.
+- Quotation editor: UX changes, inline product configurator updates.
+- Pricing/pricelist calculations: additional discount rules or currency handling.
+- Delivery & invoicing policies: confirm whether the step configuration changed.
 
-## Migration plan
--
+## Data sources
+- v18 reference: `[[Odoo 18/Community Addons/Sales/sale_management.md]]`
+- v19 reference placeholder: `[[Odoo 19/Community Addons/Sales/sale_management.md]]`
+- Supporting modules: `crm`, `sale_project`, `sale_subscription`.
 
-## Diagrams```plantuml
-@startuml
-start
-:Map changes;
-stop
-@enduml
+## Next steps
+- Pull diff of `addons/sale/models/sale_order.py` and CRM models.
+- Validate portal acceptance/signature workflow changes.
+- Update this note once v19 behaviour is verified.
+
+```plantuml
+@startmindmap
+* Sales Comparison
+** CRM
+** Quotations
+** Delivery & Billing
+@endmindmap
 ```
-
-
-
-

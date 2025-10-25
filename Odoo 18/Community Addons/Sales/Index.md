@@ -1,10 +1,12 @@
 ---
 tags: [v18, community, sales]
-status: seed
+status: in-progress
 ---
 # Sales and CRM v18
 
 ## Modules
+- `[[Odoo 18/Community Addons/Sales/lead_to_cash.md]]` (flow overview)
+
 - `[[Odoo 18/Community Addons/Sales/crm.md]]`
 - `[[Odoo 18/Community Addons/Sales/sale_management.md]]`
 - `[[Odoo 18/Community Addons/Sales/sale_subscription.md]]`
@@ -14,9 +16,9 @@ status: seed
 @startmindmap
 * Sales v18
 ** CRM
-** Sales
-** Suscripciones
-** Projects vinculados
+** Sales Orders
+** Subscriptions
+** Project-based delivery
 @endmindmap
 ```
 

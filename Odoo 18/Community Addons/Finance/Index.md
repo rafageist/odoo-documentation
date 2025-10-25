@@ -1,10 +1,12 @@
 ---
 tags: [v18, community, finance]
-status: seed
+status: in-progress
 ---
 # BasicFinance v18
 
 ## Modules
+- `[[Odoo 18/Community Addons/Finance/invoice_to_cash.md]]` (flow overview)
+
 - `[[Odoo 18/Community Addons/Finance/account.md]]`
 - `[[Odoo 18/Community Addons/Finance/account_accountant.md]]`
 - `[[Odoo 18/Community Addons/Finance/account_asset.md]]`

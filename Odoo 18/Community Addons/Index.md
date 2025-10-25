@@ -1,6 +1,6 @@
 ---
 tags: [v18, community, map]
-status: seed
+status: in-progress
 ---
 # Odoo 18 Community Addons
 
@@ -41,6 +41,10 @@ status: seed
 
 
 
+
+## Navigation
+- Sales lead-to-cash flow -> `[[Odoo 18/Community Addons/Sales/lead_to_cash.md]]`
+- Finance invoice-to-cash flow -> `[[Odoo 18/Community Addons/Finance/invoice_to_cash.md]]`
 
 ## Navigation
 - **Parent**: [[Odoo 18/Index]]`n- **Children**:

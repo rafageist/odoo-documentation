@@ -18,7 +18,7 @@ status: draft
 | Wizards (`project.task.create.timesheet`, etc.) | various | Generate timesheets or convert issues to tasks. |
 
 ## 2. Project types & privacy
-- `privacy_visibility`: `portal`, `employees`, `followers` – controls who can access tasks.
+- `privacy_visibility`: `portal`, `employees`, `followers`  controls who can access tasks.
 - Projects may have `allow_timesheets`, `allow_billable`, `allow_subtasks` toggles.
 - `analytic_account_id` automatically created (if optional apps installed) to collect timesheet costs (see `account.analytic.account`).
 
@@ -79,3 +79,7 @@ Task -> Timesheet : create analytic line
 - **Parent:** `[[Odoo 18/Core/Processes/Index]]`
 - **Related:** `[[Odoo 18/Core/Processes/Sales/Index]]`, `[[Odoo 18/Community Addons/Services/Index]]`, `[[Odoo 18/Core/Master Data/res_users.md]]`
 - **Issue:** #11 `Docs: Odoo 18 Core Process - Projects`
+
+
+## Children
+- (none)

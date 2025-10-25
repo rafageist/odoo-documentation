@@ -99,3 +99,7 @@ end
 - `[[Odoo 18/Core/Infrastructure/Index.md]]`
 - `[[Odoo 18/Core/Infrastructure/ORM.md]]`
 - `[[Odoo 18/Core/Framework/Web.md]]`
+
+
+## Navigation
+- **Parent:** [[Odoo 18/Core/Infrastructure/Index]]

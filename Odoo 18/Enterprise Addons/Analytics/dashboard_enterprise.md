@@ -13,3 +13,7 @@ status: backlog
 - Dashboard update flowchart.
 
 
+
+
+## Navigation
+- **Parent:** [[Odoo 18/Enterprise Addons/Analytics/Index]]

@@ -24,3 +24,7 @@ status: draft
 - Diff `stock.move.line` and barcode components for UI/UX changes.
 - Validate how the new package tracking fields surface in reports.
 - Update migration scripts once v19 reference docs are imported.
+
+
+## Navigation
+- **Parent:** [[Comparisons/Index]]

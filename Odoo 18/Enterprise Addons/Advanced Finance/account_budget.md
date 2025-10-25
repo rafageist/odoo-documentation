@@ -13,3 +13,7 @@ status: backlog
 -Budget update sequence.
 
 
+
+
+## Navigation
+- **Parent:** [[Odoo 18/Enterprise Addons/Advanced Finance/Index]]

@@ -39,3 +39,7 @@ Welcome to the permanent knowledge repository for Odoo 18 and Odoo 19. The goal 
   - `[[Licensing/Enterprise Guide]]`
   - `[[Templates/Module Documentation Template]]`
   - `[[Documentation Playbook]]`
+
+
+## Navigation
+- **Parent:** [[README]]

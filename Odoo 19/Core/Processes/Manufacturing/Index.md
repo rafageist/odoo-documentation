@@ -20,3 +20,11 @@ status: seed
 
 
 
+
+
+## Navigation
+- **Parent:** [[Odoo 19/Core/Processes/Index]]
+
+
+## Children
+- (none)

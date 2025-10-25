@@ -41,3 +41,13 @@ product_product --> product_template
 
 
 
+
+
+## Children
+- [[Odoo 18/Core/Master Data/product_product]]
+- [[Odoo 18/Core/Master Data/product_template]]
+- [[Odoo 18/Core/Master Data/res_company]]
+- [[Odoo 18/Core/Master Data/res_partner]]
+- [[Odoo 18/Core/Master Data/res_partner_category]]
+- [[Odoo 18/Core/Master Data/res_users]]
+- [[Odoo 18/Core/Master Data/uom_uom]]

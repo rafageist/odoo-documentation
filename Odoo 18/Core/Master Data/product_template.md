@@ -56,3 +56,7 @@ product_template "1" -- "*" product_product : product_variant_ids
 - Partners & vendors: `[[Odoo 18/Core/Master Data/res_partner.md]]`
 - Accounting flows: `[[Odoo 18/Core/Processes/Accounting/account_move.md]]` (to be created)
 - Infrastructure: `[[Odoo 18/Core/Infrastructure/Files.md]]`, `[[Odoo 18/Core/Infrastructure/Reports.md]]`
+
+
+## Navigation
+- **Parent:** [[Odoo 18/Core/Master Data/Index]]

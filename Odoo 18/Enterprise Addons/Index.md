@@ -38,3 +38,12 @@ rectangle "Enterprise v18" {
 ## Navigation
 - **Parent**: [[Odoo 18/Index]]`n- **Children**:
   - [[Odoo 18/Enterprise Addons/Advanced Finance/Index]]`n  - [[Odoo 18/Enterprise Addons/Advanced Services/Index]]`n  - [[Odoo 18/Enterprise Addons/Manufacturing/Index]]`n  - [[Odoo 18/Enterprise Addons/Digital/Index]]`n  - [[Odoo 18/Enterprise Addons/Localizations/Index]]`n  - [[Odoo 18/Enterprise Addons/Analytics/Index]]`n
+
+
+## Children
+- [[Odoo 18/Enterprise Addons/Advanced Finance/Index]]
+- [[Odoo 18/Enterprise Addons/Advanced Services/Index]]
+- [[Odoo 18/Enterprise Addons/Analytics/Index]]
+- [[Odoo 18/Enterprise Addons/Digital/Index]]
+- [[Odoo 18/Enterprise Addons/Localizations/Index]]
+- [[Odoo 18/Enterprise Addons/Manufacturing/Index]]

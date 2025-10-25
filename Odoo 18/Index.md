@@ -45,3 +45,10 @@ status: seed
   - `[[Odoo 18/Enterprise Addons/Index]]`
   - `[[Comparisons/Index]]`
 
+
+
+## Children
+- [[Odoo 18/Community Addons/Index]]
+- [[Odoo 18/Core/Index]]
+- [[Odoo 18/Enterprise Addons/Index]]
+- [[Odoo 18/Examples/Index]]

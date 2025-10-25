@@ -15,3 +15,7 @@ status: backlog
 
 
 
+
+
+## Navigation
+- **Parent:** [[Odoo 18/Enterprise Addons/Advanced Services/Index]]

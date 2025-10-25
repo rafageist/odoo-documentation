@@ -15,3 +15,7 @@ status: backlog
 
 
 
+
+
+## Navigation
+- **Parent:** [[Odoo 19/Enterprise Addons/Customer Experience/Index]]

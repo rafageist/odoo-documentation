@@ -54,3 +54,7 @@ Reconciliation -> Invoice : Settle / residuals
 - `[[Odoo 18/Community Addons/Finance/account.md]]`
 - `[[Odoo 18/Community Addons/Sales/lead_to_cash.md]]`
 - `[[Odoo 18/Community Addons/Finance/account_payment.md]]`
+
+
+## Navigation
+- **Parent:** [[Odoo 18/Community Addons/Finance/Index]]

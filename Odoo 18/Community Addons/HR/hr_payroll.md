@@ -13,3 +13,7 @@ status: backlog
 - Monthly payroll cycle sequence.
 
 
+
+
+## Navigation
+- **Parent:** [[Odoo 18/Community Addons/HR/Index]]

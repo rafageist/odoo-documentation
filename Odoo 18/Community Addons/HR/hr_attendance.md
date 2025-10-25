@@ -13,3 +13,7 @@ status: backlog
 - Check-in/out sequence.
 
 
+
+
+## Navigation
+- **Parent:** [[Odoo 18/Community Addons/HR/Index]]

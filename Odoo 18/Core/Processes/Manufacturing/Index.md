@@ -72,3 +72,7 @@ MO -> MO : done state
 - **Parent:** `[[Odoo 18/Core/Processes/Index]]`
 - **Related:** `[[Odoo 18/Core/Processes/Inventory/Index]]`, `[[Odoo 18/Core/Processes/Accounting/Index]]`, `[[Odoo 18/Enterprise Addons/Manufacturing/Index]]`
 - **Issue:** #13 `Docs: Odoo 18 Core Process - Manufacturing`
+
+
+## Children
+- (none)

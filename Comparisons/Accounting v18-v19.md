@@ -44,3 +44,7 @@ status: draft
 ** Payments
 @endmindmap
 ```
+
+
+## Navigation
+- **Parent:** [[Comparisons/Index]]

@@ -96,3 +96,7 @@ UI --> User: feedback
 
 ---
 > Use this template as a starting point and duplicate the note inside the relevant folder before populating it.
+
+
+## Navigation
+- **Parent:** [[Welcome]]

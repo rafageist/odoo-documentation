@@ -33,3 +33,16 @@ status: seed
 
 
 
+
+
+## Navigation
+- **Parent:** [[Odoo 19/Core/Index]]
+
+
+## Children
+- [[Odoo 19/Core/Master Data/mail_alias]]
+- [[Odoo 19/Core/Master Data/product_product]]
+- [[Odoo 19/Core/Master Data/product_template]]
+- [[Odoo 19/Core/Master Data/res_company]]
+- [[Odoo 19/Core/Master Data/res_partner]]
+- [[Odoo 19/Core/Master Data/uom_uom]]

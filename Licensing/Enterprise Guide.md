@@ -22,3 +22,7 @@ status: seed
 
 
 
+
+
+## Navigation
+- **Parent:** [[Welcome]]

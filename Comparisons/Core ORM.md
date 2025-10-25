@@ -36,3 +36,7 @@ status: draft
 - Produce diff of `odoo/models.py` `_check_access` and `write` flows.
 - Document migration guidelines for custom computed fields.
 - Update this note once v19 reference docs are imported.
+
+
+## Navigation
+- **Parent:** [[Comparisons/Index]]

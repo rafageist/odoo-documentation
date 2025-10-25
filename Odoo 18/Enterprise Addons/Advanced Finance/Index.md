@@ -29,3 +29,15 @@ status: seed
 
 
 
+
+
+## Navigation
+- **Parent:** [[Odoo 18/Enterprise Addons/Index]]
+
+
+## Children
+- [[Odoo 18/Enterprise Addons/Advanced Finance/account_budget]]
+- [[Odoo 18/Enterprise Addons/Advanced Finance/account_consolidation]]
+- [[Odoo 18/Enterprise Addons/Advanced Finance/account_followup]]
+- [[Odoo 18/Enterprise Addons/Advanced Finance/account_reports]]
+- [[Odoo 18/Enterprise Addons/Advanced Finance/documents_accounting]]

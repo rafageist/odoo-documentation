@@ -28,3 +28,15 @@ status: seed
 -Analyze advanced costing.
 
 
+
+
+## Navigation
+- **Parent:** [[Odoo 18/Enterprise Addons/Index]]
+
+
+## Children
+- [[Odoo 18/Enterprise Addons/Manufacturing/maintenance_enterprise]]
+- [[Odoo 18/Enterprise Addons/Manufacturing/mrp_account_enterprise]]
+- [[Odoo 18/Enterprise Addons/Manufacturing/mrp_plm]]
+- [[Odoo 18/Enterprise Addons/Manufacturing/mrp_workorder]]
+- [[Odoo 18/Enterprise Addons/Manufacturing/quality_control]]

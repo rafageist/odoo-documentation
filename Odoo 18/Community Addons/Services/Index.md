@@ -29,3 +29,14 @@ status: seed
 
 
 
+
+
+## Navigation
+- **Parent:** [[Odoo 18/Community Addons/Index]]
+
+
+## Children
+- [[Odoo 18/Community Addons/Services/fieldservice]]
+- [[Odoo 18/Community Addons/Services/helpdesk]]
+- [[Odoo 18/Community Addons/Services/project]]
+- [[Odoo 18/Community Addons/Services/timesheet]]

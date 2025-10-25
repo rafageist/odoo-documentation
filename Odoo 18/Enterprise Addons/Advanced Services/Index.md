@@ -29,3 +29,15 @@ status: seed
 
 
 
+
+
+## Navigation
+- **Parent:** [[Odoo 18/Enterprise Addons/Index]]
+
+
+## Children
+- [[Odoo 18/Enterprise Addons/Advanced Services/fieldservice_enterprise]]
+- [[Odoo 18/Enterprise Addons/Advanced Services/helpdesk_sla]]
+- [[Odoo 18/Enterprise Addons/Advanced Services/planning_sheet]]
+- [[Odoo 18/Enterprise Addons/Advanced Services/project_forecast]]
+- [[Odoo 18/Enterprise Addons/Advanced Services/project_timesheet_holidays]]

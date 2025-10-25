@@ -84,3 +84,7 @@ Tab -> Tab : owl EventBus emits to subscribers
 ## Related notes
 - Links: `[[Odoo 18/Core/Framework/Web.md]]`, `[[Odoo 18/Core/Infrastructure/ORM.md]]`, `[[Odoo 18/Examples/Service Subscription Example.md]]`
 - Issues: ensure an Obsidian link back from `[[Odoo 18/Core/Infrastructure/Index.md]]` stays synchronized when the status of this topic changes.
+
+
+## Navigation
+- **Parent:** [[Odoo 18/Core/Infrastructure/Index]]

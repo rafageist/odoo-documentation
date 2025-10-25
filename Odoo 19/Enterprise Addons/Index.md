@@ -32,3 +32,15 @@ rectangle "Enterprise v19" {
 - `[[Odoo 19/Index]]`
 - `[[Comparisons/Index]]`
 - `[[Licensing/Enterprise Guide]]`
+
+
+## Navigation
+- **Parent:** [[Odoo 19/Index]]
+
+
+## Children
+- [[Odoo 19/Enterprise Addons/Advanced Finance/Index]]
+- [[Odoo 19/Enterprise Addons/Analytics/Index]]
+- [[Odoo 19/Enterprise Addons/Customer Experience/Index]]
+- [[Odoo 19/Enterprise Addons/Localizations/Index]]
+- [[Odoo 19/Enterprise Addons/Operations/Index]]

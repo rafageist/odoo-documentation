@@ -99,3 +99,7 @@ Client --> User : Download dialog / inline viewer
 - `[[Odoo 18/Core/Infrastructure/Index.md]]`
 - `[[Odoo 18/Core/Framework/Web.md]]`
 - `[[Odoo 18/Examples/Service Subscription Example.md]]` (extend with invoicing report walkthrough later)
+
+
+## Navigation
+- **Parent:** [[Odoo 18/Core/Infrastructure/Index]]

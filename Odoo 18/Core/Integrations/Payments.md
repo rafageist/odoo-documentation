@@ -13,3 +13,7 @@ status: backlog
 - Payment sequence in ecommerce.
 
 
+
+
+## Navigation
+- **Parent:** [[Odoo 18/Core/Integrations/Index]]

@@ -34,3 +34,15 @@ status: seed
 
 
 
+
+
+## Navigation
+- **Parent:** [[Odoo 19/Community Addons/Index]]
+
+
+## Children
+- [[Odoo 19/Community Addons/Finance/account]]
+- [[Odoo 19/Community Addons/Finance/account_accountant]]
+- [[Odoo 19/Community Addons/Finance/account_asset]]
+- [[Odoo 19/Community Addons/Finance/account_bank_statement_import]]
+- [[Odoo 19/Community Addons/Finance/account_payment]]

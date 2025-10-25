@@ -49,3 +49,12 @@ status: in-progress
 ## Navigation
 - **Parent**: [[Odoo 18/Index]]`n- **Children**:
   - [[Odoo 18/Community Addons/Sales/Index]]`n  - [[Odoo 18/Community Addons/Inventory/Index]]`n  - [[Odoo 18/Community Addons/Finance/Index]]`n  - [[Odoo 18/Community Addons/Services/Index]]`n  - [[Odoo 18/Community Addons/HR/Index]]`n  - [[Odoo 18/Community Addons/Marketing/Index]]`n
+
+
+## Children
+- [[Odoo 18/Community Addons/Finance/Index]]
+- [[Odoo 18/Community Addons/HR/Index]]
+- [[Odoo 18/Community Addons/Inventory/Index]]
+- [[Odoo 18/Community Addons/Marketing/Index]]
+- [[Odoo 18/Community Addons/Sales/Index]]
+- [[Odoo 18/Community Addons/Services/Index]]

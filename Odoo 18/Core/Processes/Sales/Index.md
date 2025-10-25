@@ -71,7 +71,7 @@ Invoice -> Lines : reconciled via payments
 ### Inventory integration
 - Stockable products: `route_ids`, `procure_method`, and `warehouse_id` determine pickings.
 - Drop-shipping/Make-to-order rely on procurement rules; `sale_stock` module adds `_action_launch_stock_rule` logic.
-- Delivered quantities update based on completed pickings (`_compute_qty_delivered`) – use move lines or manual for services.
+- Delivered quantities update based on completed pickings (`_compute_qty_delivered`)  use move lines or manual for services.
 
 ### Services / Projects
 - Products with `service_tracking` create tasks or projects (`sale_project`, `sale_timesheet`). `_create_project` and `_timesheet_service_generation` handle that flow.
@@ -109,3 +109,7 @@ Invoice -> Lines : reconciled via payments
 - **Parent:** `[[Odoo 18/Core/Processes/Index]]`
 - **Related:** `[[Odoo 18/Core/Processes/Accounting/Index]]`, `[[Odoo 18/Community Addons/Inventory/Index]]`, `[[Odoo 18/Core/Master Data/res_partner.md]]`
 - **Issue:** #7 `Docs: Odoo 18 Core Process - Sales`
+
+
+## Children
+- (none)

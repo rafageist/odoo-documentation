@@ -33,3 +33,15 @@ status: seed
 
 
 
+
+
+## Navigation
+- **Parent:** [[Odoo 19/Community Addons/Index]]
+
+
+## Children
+- [[Odoo 19/Community Addons/Supply Chain/delivery]]
+- [[Odoo 19/Community Addons/Supply Chain/mrp]]
+- [[Odoo 19/Community Addons/Supply Chain/purchase]]
+- [[Odoo 19/Community Addons/Supply Chain/stock]]
+- [[Odoo 19/Community Addons/Supply Chain/stock_barcode]]

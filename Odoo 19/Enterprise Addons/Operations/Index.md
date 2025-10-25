@@ -30,3 +30,15 @@ status: seed
 
 
 
+
+
+## Navigation
+- **Parent:** [[Odoo 19/Enterprise Addons/Index]]
+
+
+## Children
+- [[Odoo 19/Enterprise Addons/Operations/iot_enterprise]]
+- [[Odoo 19/Enterprise Addons/Operations/maintenance_enterprise]]
+- [[Odoo 19/Enterprise Addons/Operations/mrp_plm]]
+- [[Odoo 19/Enterprise Addons/Operations/mrp_workorder]]
+- [[Odoo 19/Enterprise Addons/Operations/quality_control]]

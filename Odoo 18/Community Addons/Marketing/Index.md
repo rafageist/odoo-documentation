@@ -28,3 +28,15 @@ status: seed
 - Identify KPIs and dashboards.
 
 
+
+
+## Navigation
+- **Parent:** [[Odoo 18/Community Addons/Index]]
+
+
+## Children
+- [[Odoo 18/Community Addons/Marketing/email_marketing]]
+- [[Odoo 18/Community Addons/Marketing/marketing_automation]]
+- [[Odoo 18/Community Addons/Marketing/social_marketing]]
+- [[Odoo 18/Community Addons/Marketing/website]]
+- [[Odoo 18/Community Addons/Marketing/website_sale]]

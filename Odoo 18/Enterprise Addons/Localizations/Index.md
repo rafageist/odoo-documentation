@@ -29,3 +29,15 @@ status: seed
 
 
 
+
+
+## Navigation
+- **Parent:** [[Odoo 18/Enterprise Addons/Index]]
+
+
+## Children
+- [[Odoo 18/Enterprise Addons/Localizations/l10n_es_edi]]
+- [[Odoo 18/Enterprise Addons/Localizations/l10n_generic_coa]]
+- [[Odoo 18/Enterprise Addons/Localizations/l10n_latam_base]]
+- [[Odoo 18/Enterprise Addons/Localizations/l10n_latam_invoice]]
+- [[Odoo 18/Enterprise Addons/Localizations/l10n_mx_edi]]

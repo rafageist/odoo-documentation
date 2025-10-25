@@ -13,3 +13,7 @@ status: backlog
 - Electronic receipt issuance sequence.
 
 
+
+
+## Navigation
+- **Parent:** [[Odoo 18/Enterprise Addons/Localizations/Index]]

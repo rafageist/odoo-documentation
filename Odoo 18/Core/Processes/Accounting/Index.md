@@ -27,3 +27,7 @@ status: seed
 ## Navigation
 - **Parent:** `[[Odoo 18/Core/Processes/Index.md]]`
 - **Siblings:** `[[Odoo 18/Core/Processes/Sales/Index.md]]`, `[[Odoo 18/Core/Processes/Purchasing/Index.md]]`, `[[Odoo 18/Core/Processes/Inventory/Index.md]]`
+
+
+## Children
+- [[Odoo 18/Core/Processes/Accounting/account_move]]

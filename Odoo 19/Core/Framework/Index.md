@@ -35,3 +35,15 @@ status: seed
 
 
 
+
+
+## Navigation
+- **Parent:** [[Odoo 19/Core/Index]]
+
+
+## Children
+- [[Odoo 19/Core/Framework/auth]]
+- [[Odoo 19/Core/Framework/base]]
+- [[Odoo 19/Core/Framework/http]]
+- [[Odoo 19/Core/Framework/mail]]
+- [[Odoo 19/Core/Framework/web]]

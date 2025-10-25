@@ -33,3 +33,15 @@ status: seed
 
 
 
+
+
+## Navigation
+- **Parent:** [[Odoo 19/Core/Index]]
+
+
+## Children
+- [[Odoo 19/Core/Infrastructure/Bus]]
+- [[Odoo 19/Core/Infrastructure/Files]]
+- [[Odoo 19/Core/Infrastructure/ORM]]
+- [[Odoo 19/Core/Infrastructure/Reports]]
+- [[Odoo 19/Core/Infrastructure/Security]]

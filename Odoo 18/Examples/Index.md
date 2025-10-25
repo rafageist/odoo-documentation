@@ -13,3 +13,11 @@ status: draft
 - Read alongside core docs (ORM, Web, Processes).
 - Each example includes architecture, file tree, and code annotations.
 
+
+
+## Navigation
+- **Parent:** [[Odoo 18/Index]]
+
+
+## Children
+- [[Odoo 18/Examples/Service Subscription Example]]

@@ -46,3 +46,11 @@ package "Core 19" {
 
 
 
+
+
+## Children
+- [[Odoo 19/Core/Framework/Index]]
+- [[Odoo 19/Core/Infrastructure/Index]]
+- [[Odoo 19/Core/Integrations/Index]]
+- [[Odoo 19/Core/Master Data/Index]]
+- [[Odoo 19/Core/Processes/Index]]

@@ -76,10 +76,10 @@ Bill -> Bill : action_post()
 - Incoterms, shipping addresses, lead times configured on partners/products.
 
 ## 7. Cross-links
-- `[[Odoo 18/Core/Processes/Inventory/Index]]` – receipts & stock valuation.
-- `[[Odoo 18/Core/Processes/Accounting/Index]]` – vendor bills & payments.
-- `[[Odoo 18/Core/Master Data/res_partner.md]]` – vendor warnings, payment terms.
-- `[[Odoo 18/Community Addons/Inventory/Index]]` – drop-shipping, cross-docks.
+- `[[Odoo 18/Core/Processes/Inventory/Index]]`  receipts & stock valuation.
+- `[[Odoo 18/Core/Processes/Accounting/Index]]`  vendor bills & payments.
+- `[[Odoo 18/Core/Master Data/res_partner.md]]`  vendor warnings, payment terms.
+- `[[Odoo 18/Community Addons/Inventory/Index]]`  drop-shipping, cross-docks.
 
 ## 8. To-do (Issue #10)
 - [ ] Document approval rules & double validation thresholds.
@@ -90,3 +90,7 @@ Bill -> Bill : action_post()
 - **Parent:** `[[Odoo 18/Core/Processes/Index]]`
 - **Related:** `[[Odoo 18/Core/Processes/Inventory/Index]]`, `[[Odoo 18/Core/Processes/Accounting/Index]]`, `[[Odoo 18/Core/Master Data/res_partner.md]]`
 - **Issue:** #10 `Docs: Odoo 18 Core Process - Purchasing`
+
+
+## Children
+- (none)

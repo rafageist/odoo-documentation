@@ -42,3 +42,9 @@ status: seed
   - `[[Odoo 19/Community Addons/Index]]`
   - `[[Odoo 19/Enterprise Addons/Index]]`
   - `[[Roadmap/Migrations 18 to 19]]`
+
+
+## Children
+- [[Odoo 19/Community Addons/Index]]
+- [[Odoo 19/Core/Index]]
+- [[Odoo 19/Enterprise Addons/Index]]

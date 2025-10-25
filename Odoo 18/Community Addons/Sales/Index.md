@@ -29,3 +29,15 @@ status: in-progress
 
 
 
+
+
+## Navigation
+- **Parent:** [[Odoo 18/Community Addons/Index]]
+
+
+## Children
+- [[Odoo 18/Community Addons/Sales/crm]]
+- [[Odoo 18/Community Addons/Sales/lead_to_cash]]
+- [[Odoo 18/Community Addons/Sales/sale_management]]
+- [[Odoo 18/Community Addons/Sales/sale_project]]
+- [[Odoo 18/Community Addons/Sales/sale_subscription]]

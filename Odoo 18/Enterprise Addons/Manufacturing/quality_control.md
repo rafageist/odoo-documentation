@@ -13,3 +13,7 @@ status: backlog
 - Quality control sequence in production order.
 
 
+
+
+## Navigation
+- **Parent:** [[Odoo 18/Enterprise Addons/Manufacturing/Index]]

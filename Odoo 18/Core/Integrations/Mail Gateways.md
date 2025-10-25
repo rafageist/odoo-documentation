@@ -11,3 +11,7 @@ status: backlog
 
 ## Diagrams
 - Mail input sequence to `mail.mail`.
+
+
+## Navigation
+- **Parent:** [[Odoo 18/Core/Integrations/Index]]

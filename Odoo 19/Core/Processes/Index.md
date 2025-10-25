@@ -30,3 +30,17 @@ status: seed
 - New workflows and states across major applications.
 - OWL-based UI enhancements for kanban and list views.
 - Performance improvements for bulk validations.
+
+
+## Navigation
+- **Parent:** [[Odoo 19/Core/Index]]
+
+
+## Children
+- [[Odoo 19/Core/Processes/Accounting/Index]]
+- [[Odoo 19/Core/Processes/HR/Index]]
+- [[Odoo 19/Core/Processes/Inventory/Index]]
+- [[Odoo 19/Core/Processes/Manufacturing/Index]]
+- [[Odoo 19/Core/Processes/Projects/Index]]
+- [[Odoo 19/Core/Processes/Purchasing/Index]]
+- [[Odoo 19/Core/Processes/Sales/Index]]

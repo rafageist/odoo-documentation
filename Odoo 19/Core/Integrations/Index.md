@@ -9,3 +9,7 @@ status: seed
 
 ## Navigation
 - **Parent**: [[Odoo 19/Core/Index]]`n- **Related**: [[Odoo 19/Core/Infrastructure/Index]]`n
+
+
+## Children
+- (none)

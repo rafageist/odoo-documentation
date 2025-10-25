@@ -34,3 +34,15 @@ status: seed
 
 
 
+
+
+## Navigation
+- **Parent:** [[Odoo 19/Community Addons/Index]]
+
+
+## Children
+- [[Odoo 19/Community Addons/HR/hr]]
+- [[Odoo 19/Community Addons/HR/hr_attendance]]
+- [[Odoo 19/Community Addons/HR/hr_holidays]]
+- [[Odoo 19/Community Addons/HR/hr_payroll]]
+- [[Odoo 19/Community Addons/HR/hr_recruitment]]

@@ -13,3 +13,7 @@ status: backlog
 - Post-production costing sequence.
 
 
+
+
+## Navigation
+- **Parent:** [[Odoo 18/Enterprise Addons/Manufacturing/Index]]

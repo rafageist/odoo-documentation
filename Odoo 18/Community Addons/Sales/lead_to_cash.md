@@ -61,3 +61,7 @@ Lead -> ACC : Pay / reconcile
 - `[[Odoo 18/Community Addons/Sales/sale_management.md]]`
 - `[[Odoo 18/Community Addons/Finance/invoice_to_cash.md]]`
 - `[[Odoo 18/Community Addons/Inventory/Index.md]]`
+
+
+## Navigation
+- **Parent:** [[Odoo 18/Community Addons/Sales/Index]]

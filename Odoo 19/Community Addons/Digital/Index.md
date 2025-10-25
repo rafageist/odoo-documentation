@@ -33,3 +33,15 @@ status: seed
 
 
 
+
+
+## Navigation
+- **Parent:** [[Odoo 19/Community Addons/Index]]
+
+
+## Children
+- [[Odoo 19/Community Addons/Digital/email_marketing]]
+- [[Odoo 19/Community Addons/Digital/marketing_automation]]
+- [[Odoo 19/Community Addons/Digital/social_marketing]]
+- [[Odoo 19/Community Addons/Digital/website]]
+- [[Odoo 19/Community Addons/Digital/website_sale]]

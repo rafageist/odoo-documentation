@@ -79,3 +79,7 @@ Employee -> EmployeeModel : update own info (if allowed)
 - **Parent:** `[[Odoo 18/Core/Processes/Index]]`
 - **Related:** `[[Odoo 18/Core/Master Data/res_users.md]]`, `[[Odoo 18/Core/Master Data/res_company.md]]`, `[[Odoo 18/Community Addons/Services/Index]]`
 - **Issue:** #12 `Docs: Odoo 18 Core Process - HR`
+
+
+## Children
+- (none)

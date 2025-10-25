@@ -16,3 +16,7 @@ status: active
 
 
 
+
+
+## Navigation
+- **Parent:** [[Welcome]]

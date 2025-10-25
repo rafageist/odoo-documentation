@@ -28,3 +28,15 @@ status: seed
 - Identify improvements to Community.
 
 
+
+
+## Navigation
+- **Parent:** [[Odoo 18/Enterprise Addons/Index]]
+
+
+## Children
+- [[Odoo 18/Enterprise Addons/Digital/livechat_enterprise]]
+- [[Odoo 18/Enterprise Addons/Digital/survey_enterprise]]
+- [[Odoo 18/Enterprise Addons/Digital/website_builder_enterprise]]
+- [[Odoo 18/Enterprise Addons/Digital/website_helpdesk_form]]
+- [[Odoo 18/Enterprise Addons/Digital/website_studio]]

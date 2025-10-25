@@ -45,3 +45,7 @@ status: draft
 ** Delivery & Billing
 @endmindmap
 ```
+
+
+## Navigation
+- **Parent:** [[Comparisons/Index]]

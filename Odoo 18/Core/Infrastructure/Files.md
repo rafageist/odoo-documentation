@@ -87,3 +87,7 @@ ORM --> Client : attachment id + access token
 - `[[Odoo 18/Core/Infrastructure/Index.md]]`
 - `[[Odoo 18/Core/Infrastructure/ORM.md]]`
 - `[[Odoo 18/Core/Infrastructure/Security.md]]`
+
+
+## Navigation
+- **Parent:** [[Odoo 18/Core/Infrastructure/Index]]

@@ -37,3 +37,7 @@ status: draft
 - Units of measure: `[[Odoo 18/Core/Master Data/uom_uom.md]]`
 - Accounting entry impact: `[[Odoo 18/Core/Processes/Accounting/account_move.md]]`
 - Inventory execution: `[[Odoo 18/Core/Processes/Inventory/Index.md]]`
+
+
+## Navigation
+- **Parent:** [[Odoo 18/Core/Master Data/Index]]

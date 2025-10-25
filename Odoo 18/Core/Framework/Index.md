@@ -86,3 +86,10 @@ Auth --> ORM
   - `[[Odoo 18/Core/Framework/Auth.md]]`
 - **Issue:** #17 `Docs: Odoo 18 - Framework overview`
 
+
+
+## Children
+- [[Odoo 18/Core/Framework/Auth]]
+- [[Odoo 18/Core/Framework/Base]]
+- [[Odoo 18/Core/Framework/Mail]]
+- [[Odoo 18/Core/Framework/Web]]

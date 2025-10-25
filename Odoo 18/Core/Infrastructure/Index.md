@@ -29,3 +29,15 @@ status: in-progress
 - Capture the access-control stack (ACLs, record rules, sudo) in the security note.
 - Document binary storage, attachment lifecycle, and external storage hooks in the files note.
 - Cross-link module-specific usages (e.g., `mail`, `queue_job`) back into the bus note as those module docs are drafted.
+
+
+## Navigation
+- **Parent:** [[Odoo 18/Core/Index]]
+
+
+## Children
+- [[Odoo 18/Core/Infrastructure/Bus]]
+- [[Odoo 18/Core/Infrastructure/Files]]
+- [[Odoo 18/Core/Infrastructure/ORM]]
+- [[Odoo 18/Core/Infrastructure/Reports]]
+- [[Odoo 18/Core/Infrastructure/Security]]

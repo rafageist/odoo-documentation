@@ -48,11 +48,11 @@ Move -> Valuation : _create_account_move_line() (if automated valuation)
 ```
 
 ### Key methods
-- `stock.picking.action_confirm()` – sets moves to `confirmed`, creates procurement if needed.
-- `stock.move._action_assign()` – reserves quants; uses `stock.quant` to check availability; may create move lines.
-- `stock.picking.button_validate()` – orchestrates checks (pack operations, immediate transfer wizard). Calls `_action_done()` on move lines.
-- `stock.move._action_done()` – finalises move, updates quants, writes done quantities, triggers valuation.
-- `stock.quant._update_available_quantity()` – adjusts quantities; ensures no negative stock unless allowed.
+- `stock.picking.action_confirm()`  sets moves to `confirmed`, creates procurement if needed.
+- `stock.move._action_assign()`  reserves quants; uses `stock.quant` to check availability; may create move lines.
+- `stock.picking.button_validate()`  orchestrates checks (pack operations, immediate transfer wizard). Calls `_action_done()` on move lines.
+- `stock.move._action_done()`  finalises move, updates quants, writes done quantities, triggers valuation.
+- `stock.quant._update_available_quantity()`  adjusts quantities; ensures no negative stock unless allowed.
 
 ## 4. Valuation & accounting (see also `[[Odoo 18/Core/Processes/Accounting/Index]]`)
 - Determined by product category (`inventory_valuation`, `costing_method`).
@@ -67,7 +67,7 @@ Move -> Valuation : _create_account_move_line() (if automated valuation)
 
 ## 6. Inventory adjustments
 - `stock.inventory` (in v18 replaced by inventory adjustments on locations) uses `stock.quant` count mode.
-- Express via operations: `action_set_quantities_to_zero`, `action_view_inventory…`.
+- Express via operations: `action_set_quantities_to_zero`, `action_view_inventory`.
 - Negative quants require enabling `allow_negative_stock` on locations.
 
 ## 7. Cross-module integration
@@ -94,3 +94,7 @@ Move -> Valuation : _create_account_move_line() (if automated valuation)
 - **Parent:** `[[Odoo 18/Core/Processes/Index]]`
 - **Related:** `[[Odoo 18/Core/Processes/Accounting/Index]]`, `[[Odoo 18/Core/Processes/Sales/Index]]`, `[[Odoo 18/Core/Master Data/res_company.md]]`
 - **Issue:** #9 `Docs: Odoo 18 Core Process - Inventory`
+
+
+## Children
+- (none)

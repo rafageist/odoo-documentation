@@ -41,3 +41,16 @@ status: seed
 
 
 
+
+
+## Navigation
+- **Parent:** [[Odoo 19/Index]]
+
+
+## Children
+- [[Odoo 19/Community Addons/Digital/Index]]
+- [[Odoo 19/Community Addons/Finance/Index]]
+- [[Odoo 19/Community Addons/HR/Index]]
+- [[Odoo 19/Community Addons/Sales/Index]]
+- [[Odoo 19/Community Addons/Services/Index]]
+- [[Odoo 19/Community Addons/Supply Chain/Index]]

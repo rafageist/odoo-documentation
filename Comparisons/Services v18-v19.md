@@ -24,3 +24,7 @@ status: draft
 - Review `project.task` changes (recurrence, assignees) for service delivery flows.
 - Check how rating fields moved to dedicated modules and adjust overrides accordingly.
 - Document portal/project collaborator updates once v19 docs are available.
+
+
+## Navigation
+- **Parent:** [[Comparisons/Index]]

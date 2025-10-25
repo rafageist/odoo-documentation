@@ -56,3 +56,7 @@ AccountMove --> AccountMove : action_post()
 - Partners: `[[Odoo 18/Core/Master Data/res_partner.md]]`
 - Products & taxes: `[[Odoo 18/Core/Master Data/product_template.md]]`, `[[Odoo 18/Core/Master Data/product_product.md]]`
 - Odoo 19 comparison placeholder: `[[Comparisons/Index]]`
+
+
+## Navigation
+- **Parent:** [[Odoo 18/Core/Processes/Accounting/Index]]

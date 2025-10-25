@@ -29,3 +29,15 @@ status: seed
 
 
 
+
+
+## Navigation
+- **Parent:** [[Odoo 18/Community Addons/Index]]
+
+
+## Children
+- [[Odoo 18/Community Addons/Inventory/mrp]]
+- [[Odoo 18/Community Addons/Inventory/procurement_jit]]
+- [[Odoo 18/Community Addons/Inventory/stock]]
+- [[Odoo 18/Community Addons/Inventory/stock_account]]
+- [[Odoo 18/Community Addons/Inventory/stock_picking_batch]]

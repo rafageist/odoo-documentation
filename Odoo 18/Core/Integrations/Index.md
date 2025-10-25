@@ -32,3 +32,10 @@ status: seed
   - `[[Odoo 18/Core/Integrations/Web Services.md]]`
   - `[[Odoo 18/Core/Integrations/Payments.md]]`
   - `[[Odoo 18/Core/Integrations/External Systems.md]]`
+
+
+## Children
+- [[Odoo 18/Core/Integrations/External Systems]]
+- [[Odoo 18/Core/Integrations/Mail Gateways]]
+- [[Odoo 18/Core/Integrations/Payments]]
+- [[Odoo 18/Core/Integrations/Web Services]]

@@ -35,3 +35,16 @@ status: in-progress
 
 
 
+
+
+## Navigation
+- **Parent:** [[Odoo 18/Community Addons/Index]]
+
+
+## Children
+- [[Odoo 18/Community Addons/Finance/account]]
+- [[Odoo 18/Community Addons/Finance/account_accountant]]
+- [[Odoo 18/Community Addons/Finance/account_asset]]
+- [[Odoo 18/Community Addons/Finance/account_bank_statement_import]]
+- [[Odoo 18/Community Addons/Finance/account_payment]]
+- [[Odoo 18/Community Addons/Finance/invoice_to_cash]]

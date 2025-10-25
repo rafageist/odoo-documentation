@@ -45,3 +45,7 @@ stop
 - `[[Related Module]]`
 - Code: `path/to/file.py:123`
 - External documentation:
+
+
+## Navigation
+- **Parent:** [[Welcome]]

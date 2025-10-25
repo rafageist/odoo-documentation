@@ -13,3 +13,7 @@ status: backlog
 - Editing and publishing flow.
 
 
+
+
+## Navigation
+- **Parent:** [[Odoo 18/Enterprise Addons/Digital/Index]]

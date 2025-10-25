@@ -30,3 +30,15 @@ status: seed
 
 
 
+
+
+## Navigation
+- **Parent:** [[Odoo 19/Enterprise Addons/Index]]
+
+
+## Children
+- [[Odoo 19/Enterprise Addons/Customer Experience/appointments_enterprise]]
+- [[Odoo 19/Enterprise Addons/Customer Experience/hr_referrals]]
+- [[Odoo 19/Enterprise Addons/Customer Experience/loyalty_enterprise]]
+- [[Odoo 19/Enterprise Addons/Customer Experience/sign_enterprise]]
+- [[Odoo 19/Enterprise Addons/Customer Experience/website_helpdesk_livechat]]

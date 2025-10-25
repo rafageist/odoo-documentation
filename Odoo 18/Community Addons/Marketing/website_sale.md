@@ -13,3 +13,7 @@ status: backlog
 - Online checkout sequence.
 
 
+
+
+## Navigation
+- **Parent:** [[Odoo 18/Community Addons/Marketing/Index]]

@@ -12,10 +12,11 @@ status: draft
 - Picking types gain package options (`set_package_type`) and reuse action helpers that set domains contextually for incoming/outgoing/internal views.
 - Pickings expose `reference_ids`, package history, and warning text; partner country cached via `partner_country_id` for logistics filters.
 - Stock moves drop implicit procurement group defaults, store JSON `procurement_values`, add package tracking helpers, and tweak state labels (`Waiting Availability` → `Waiting`).
+- Stock move lines adopt the new package models (`stock.package`, `stock.package.history`), compute allowed UoMs, surface destination names, and switch searches to `Domain` helpers.
 - Package/lot UI logic now checks state and user groups, ensuring combo and package updates keep sequencing consistent.
 
 ## Migration hints
-- Replace manual tuple domains in overrides with `Domain` operations to stay compatible with v19 helpers.
+- Replace manual tuple domains in overrides with `Domain` operations (move, picking, move line) to stay compatible with v19 helpers.
 - Review custom code accessing `group_id`, `move_ids_without_package`, or `move_line_ids_without_package`; equivalent data now exposed via reference/package helper fields.
 - Update security-related domains (`groups_id`) to use `all_group_ids` on responsible/reservable user fields.
 - If extending picking actions, account for `_get_code_report_name` and `_get_action` helpers that customize views per operation code.

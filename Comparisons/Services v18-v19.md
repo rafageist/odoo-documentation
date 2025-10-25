@@ -12,6 +12,9 @@ status: draft
 - Task domains combine closed/template flags, and manager domain uses bypass search access with emoji fallback (`👤 Unassigned`) for empty assignments.
 - Privacy settings introduce `invited_users` visibility, aligning with portal sharing improvements.
 - Feature toggles (`allow_task_dependencies`, `allow_milestones`, `allow_recurring_tasks`) now rely on inverse methods instead of defaulting to user groups.
+- Priority scale now offers four levels (low/medium/high/urgent) and stage colors propagate through `stage_id_color`.
+- Tasks gain partner phone syncing, access tokens/URLs, and mail customer threads enabled by default.
+- Personal stages now use new search/group_expand helpers and expose `personal_stage_id` for grouping.
 - Project date constraint defined via `models.Constraint`; milestone computations leverage read-group data for performance.
 
 ## Migration hints
@@ -19,6 +22,7 @@ status: draft
 - When extending task counts, account for template filtering differences (template counts are excluded from active projects).
 - Replace direct references to `_systray_view` or legacy constraint declarations with the new APIs.
 - Ensure privacy-related customizations handle the new `invited_users` visibility option.
+- When overriding recurring logic, respect the new `allow_recurring_tasks` project toggle and indexed `recurrence_id`.
 
 ## Next steps
 - Review `project.task` changes (recurrence, assignees) for service delivery flows.

@@ -11,6 +11,13 @@ status: draft
 - Taxes and fiscal positions: compare configuration defaults and report structures.
 - Payments and reconciliation: identify UI or API changes in `account.payment` and bank statement widgets.
 
+## Preliminary findings
+- v19 moves `account.move` onto the new `account.document.import.mixin`, enabling document ingestion alignment with Sales.
+- New adjusting-entry helpers (`adjusting_entry_origin_move_ids`, counters) support automated closing adjustments.
+- Journal line subsets via `journal_line_ids` expose non-section lines separately.
+- The `checked`/`no_followup` fields now compute/inverse, refining follow-up exclusions.
+- Domain helper import (`Domain`) and removal of deprecated index helpers reflect the ORM refactor.
+
 ## Data points to capture
 - Fields added/removed between versions.
 - Behaviour toggles or new settings in `res.config.settings`.

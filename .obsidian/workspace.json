@@ -11,10 +11,10 @@
             "id": "6c063f03ae0e4166",
             "type": "leaf",
             "state": {
-              "type": "empty",
+              "type": "graph",
               "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -169,6 +169,9 @@
   },
   "active": "6c063f03ae0e4166",
   "lastOpenFiles": [
+    "Odoo 18/Community Addons/Finance/invoice_to_cash.md",
+    "Odoo 18/Community Addons/Sales/lead_to_cash.md",
+    "Odoo 18/Core/Processes/Accounting/account_move.md",
     "Comparisons/Core ORM.md",
     "Comparisons/Index.md",
     "Odoo 18/Core/Processes/Manufacturing/Index.md",
@@ -201,9 +204,6 @@
     "issue_29_body.md",
     "issue_29_title.txt",
     "issue_28_body.md",
-    "issue_27_body.md",
-    "issue_26_body.md",
-    "issue_25_body.md",
-    "issue_24_body.md"
+    "issue_27_body.md"
   ]
 }

@@ -11,7 +11,7 @@ status: in-progress
 - Reporting stack (QWeb, PDF, assets) *(draft)* -> `[[Odoo 18/Core/Infrastructure/Reports.md]]`
 - Real-time bus & queues *(draft ready)* -> `[[Odoo 18/Core/Infrastructure/Bus.md]]`
 - Security internals *(draft)* -> `[[Odoo 18/Core/Infrastructure/Security.md]]`
-- File storage & attachments *(todo)* -> `[[Odoo 18/Core/Infrastructure/Files.md]]`
+- File storage & attachments *(draft)* -> `[[Odoo 18/Core/Infrastructure/Files.md]]`
 
 ```plantuml
 @startmindmap

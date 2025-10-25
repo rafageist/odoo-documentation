@@ -1,6 +1,6 @@
 ---
 tags: [v18, core, master_data]
-status: seed
+status: in-progress
 ---
 # Core Master Data v18
 
@@ -11,6 +11,7 @@ status: seed
 - `[[Odoo 18/Core/Master Data/uom_uom.md]]`
 - `[[Odoo 18/Core/Master Data/res_company.md]]`
 - `[[Odoo 18/Core/Master Data/res_users.md]]`
+- `[[Odoo 18/Core/Processes/Accounting/account_move.md]]` (entry consumer)
 
 ```plantuml
 @startuml

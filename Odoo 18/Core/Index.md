@@ -24,7 +24,7 @@ package "Core 18" {
 ```
 
 ## Initial checklist
-- [ ] Catalog all core modules with their `technical_name`.
+- [x] Catalog master data essentials (`res.partner`, `product.template`, `account.move`).
 - [ ] Create UML diagrams of the most popular models.
 - [ ] Document key ORM adaptations.
 

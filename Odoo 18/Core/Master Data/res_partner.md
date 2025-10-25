@@ -116,6 +116,11 @@ Partner --> Users : user_ids
 @enduml
 ```
 
+## Related notes
+- Infrastructure: [[Odoo 18/Core/Infrastructure/Security.md]], [[Odoo 18/Core/Infrastructure/Files.md]], [[Odoo 18/Core/Infrastructure/ORM.md]]
+- Processes: [[Odoo 18/Core/Processes/Sales/Index.md]], [[Odoo 18/Core/Processes/Accounting/Index.md]]
+- Variant data: [[Odoo 18/Core/Master Data/product_template.md]], [[Odoo 18/Core/Master Data/product_product.md]]
+
 ## Navigation
 - **Parent:** `[[Odoo 18/Core/Master Data/Index]]`
 - **Sibling models:** `[[Odoo 18/Core/Master Data/res_company.md]]`, `[[Odoo 18/Core/Master Data/product_template.md]]`

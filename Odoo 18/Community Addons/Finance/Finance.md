@@ -38,9 +38,7 @@ status: in-progress
 
 
 ## Navigation
-- **Parent:** [[Odoo 18/Community Addons]]
-
-
+- **Parent:** [[Odoo 18/Community Addons/Community Addons]]
 ## Children
 - [[Odoo 18/Community Addons/Finance/account]]
 - [[Odoo 18/Community Addons/Finance/account_accountant]]

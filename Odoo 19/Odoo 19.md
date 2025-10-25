@@ -35,16 +35,8 @@ status: seed
 - Enterprise: no notes yet.
 
 ## Navigation
-- **Parent**: `[[Welcome]]`
-- **Peers**: `[[Odoo 18]]`
-- **Children**:
-  - `[[Odoo 19/Core]]`
-  - `[[Odoo 19/Community Addons]]`
-  - `[[Odoo 19/Enterprise Addons]]`
-  - `[[Roadmap/Migrations 18 to 19]]`
-
-
+- **Parent:** [[Welcome]]
 ## Children
-- [[Odoo 19/Community Addons]]
-- [[Odoo 19/Core]]
-- [[Odoo 19/Enterprise Addons]]
+- [[Odoo 19/Community Addons/Community Addons]]
+- [[Odoo 19/Core/Core]]
+- [[Odoo 19/Enterprise Addons/Enterprise Addons]]

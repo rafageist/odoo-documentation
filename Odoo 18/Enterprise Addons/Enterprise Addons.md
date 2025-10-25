@@ -36,14 +36,11 @@ rectangle "Enterprise v18" {
 - `[[Licensing/Enterprise Guide]]`
 
 ## Navigation
-- **Parent**: [[Odoo 18]]`n- **Children**:
-  - [[Odoo 18/Enterprise Addons/Advanced Finance]]`n  - [[Odoo 18/Enterprise Addons/Advanced Services]]`n  - [[Odoo 18/Enterprise Addons/Manufacturing]]`n  - [[Odoo 18/Enterprise Addons/Digital]]`n  - [[Odoo 18/Enterprise Addons/Localizations]]`n  - [[Odoo 18/Enterprise Addons/Analytics]]`n
-
-
+- **Parent:** [[Odoo 18/Odoo 18]]
 ## Children
-- [[Odoo 18/Enterprise Addons/Advanced Finance]]
-- [[Odoo 18/Enterprise Addons/Advanced Services]]
-- [[Odoo 18/Enterprise Addons/Analytics]]
-- [[Odoo 18/Enterprise Addons/Digital]]
-- [[Odoo 18/Enterprise Addons/Localizations]]
-- [[Odoo 18/Enterprise Addons/Manufacturing]]
+- [[Odoo 18/Enterprise Addons/Advanced Finance/Advanced Finance]]
+- [[Odoo 18/Enterprise Addons/Advanced Services/Advanced Services]]
+- [[Odoo 18/Enterprise Addons/Analytics/Analytics]]
+- [[Odoo 18/Enterprise Addons/Digital/Digital]]
+- [[Odoo 18/Enterprise Addons/Localizations/Localizations]]
+- [[Odoo 18/Enterprise Addons/Manufacturing/Manufacturing]]

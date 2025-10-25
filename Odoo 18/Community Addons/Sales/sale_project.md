@@ -57,6 +57,4 @@ SOL --> Timesheet : delivered qty via timesheets
 - [ ] Link to timesheet billing notes once drafted.
 
 ## Navigation
-- **Parent:** `[[Odoo 18/Community Addons/Sales]]`
-- **Related:** `[[Odoo 18/Core/Processes/Sales]]`, `[[Odoo 18/Core/Processes/Projects]]`, `[[Odoo 18/Community Addons/Services]]`
-- **Issue:** #18 `Docs: Odoo 18 - Community Sales suite`
+- **Parent:** [[Odoo 18/Community Addons/Sales/Sales]]

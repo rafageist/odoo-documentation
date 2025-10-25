@@ -63,6 +63,4 @@ Payment -> Reconcile : reconcile invoice lines
 - [ ] Link to bank statement reconciliation once note exists.
 
 ## Navigation
-- **Parent:** `[[Odoo 18/Community Addons/Finance]]`
-- **Related:** `[[Odoo 18/Core/Processes/Accounting]]`, `[[Odoo 18/Community Addons/Finance/account_bank_statement_import.md]]`, `[[Odoo 18/Community Addons/Finance/account.md]]`
-- **Issue:** #19 `Docs: Odoo 18 - Community Finance suite`
+- **Parent:** [[Odoo 18/Community Addons/Finance/Finance]]

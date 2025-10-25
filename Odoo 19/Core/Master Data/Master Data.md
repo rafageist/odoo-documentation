@@ -36,9 +36,7 @@ status: seed
 
 
 ## Navigation
-- **Parent:** [[Odoo 19/Core]]
-
-
+- **Parent:** [[Odoo 19/Core/Core]]
 ## Children
 - [[Odoo 19/Core/Master Data/mail_alias]]
 - [[Odoo 19/Core/Master Data/product_product]]

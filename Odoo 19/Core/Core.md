@@ -33,24 +33,10 @@ package "Core 19" {
 - [ ] Map new bus/event capabilities.
 
 ## Navigation
-- **Parent**: `[[Odoo 19]]`
-- **Children**:
-  - `[[Odoo 19/Core/Framework]]`
-  - `[[Odoo 19/Core/Master Data]]`
-  - `[[Odoo 19/Core/Processes]]`
-  - `[[Odoo 19/Core/Infrastructure]]`
-  - `[[Odoo 19/Core/Integrations]]`
-
-
-
-
-
-
-
-
+- **Parent:** [[Odoo 19/Odoo 19]]
 ## Children
-- [[Odoo 19/Core/Framework]]
-- [[Odoo 19/Core/Infrastructure]]
-- [[Odoo 19/Core/Integrations]]
-- [[Odoo 19/Core/Master Data]]
-- [[Odoo 19/Core/Processes]]
+- [[Odoo 19/Core/Framework/Framework]]
+- [[Odoo 19/Core/Infrastructure/Infrastructure]]
+- [[Odoo 19/Core/Integrations/Integrations]]
+- [[Odoo 19/Core/Master Data/Master Data]]
+- [[Odoo 19/Core/Processes/Processes]]

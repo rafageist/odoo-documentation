@@ -19,4 +19,4 @@ status: backlog
 
 
 ## Navigation
-- **Parent:** [[Odoo 18/Community Addons/Inventory]]
+- **Parent:** [[Odoo 18/Community Addons/Inventory/Inventory]]

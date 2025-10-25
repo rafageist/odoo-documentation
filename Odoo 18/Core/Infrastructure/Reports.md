@@ -102,4 +102,4 @@ Client --> User : Download dialog / inline viewer
 
 
 ## Navigation
-- **Parent:** [[Odoo 18/Core/Infrastructure]]
+- **Parent:** [[Odoo 18/Core/Infrastructure/Infrastructure]]

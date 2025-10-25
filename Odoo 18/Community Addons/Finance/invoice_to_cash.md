@@ -57,4 +57,4 @@ Reconciliation -> Invoice : Settle / residuals
 
 
 ## Navigation
-- **Parent:** [[Odoo 18/Community Addons/Finance]]
+- **Parent:** [[Odoo 18/Community Addons/Finance/Finance]]

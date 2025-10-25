@@ -37,9 +37,7 @@ status: seed
 
 
 ## Navigation
-- **Parent:** [[Odoo 19/Community Addons]]
-
-
+- **Parent:** [[Odoo 19/Community Addons/Community Addons]]
 ## Children
 - [[Odoo 19/Community Addons/Sales/crm]]
 - [[Odoo 19/Community Addons/Sales/pos_sale]]

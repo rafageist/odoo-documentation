@@ -26,14 +26,7 @@ status: seed
 - Register recurring extension points.
 
 ## Navigation
-- **Parent**: `[[Odoo 18/Core]]`
-- **Children**:
-  - `[[Odoo 18/Core/Integrations/Mail Gateways.md]]`
-  - `[[Odoo 18/Core/Integrations/Web Services.md]]`
-  - `[[Odoo 18/Core/Integrations/Payments.md]]`
-  - `[[Odoo 18/Core/Integrations/External Systems.md]]`
-
-
+- **Parent:** [[Odoo 18/Core/Core]]
 ## Children
 - [[Odoo 18/Core/Integrations/External Systems]]
 - [[Odoo 18/Core/Integrations/Mail Gateways]]

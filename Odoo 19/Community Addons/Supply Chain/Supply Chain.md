@@ -36,9 +36,7 @@ status: seed
 
 
 ## Navigation
-- **Parent:** [[Odoo 19/Community Addons]]
-
-
+- **Parent:** [[Odoo 19/Community Addons/Community Addons]]
 ## Children
 - [[Odoo 19/Community Addons/Supply Chain/delivery]]
 - [[Odoo 19/Community Addons/Supply Chain/mrp]]

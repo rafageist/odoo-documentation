@@ -76,10 +76,6 @@ Employee -> EmployeeModel : update own info (if allowed)
 - [ ] Document interaction with `resource.calendar` (schedules) and `resource.resource`.
 
 ## Navigation
-- **Parent:** `[[Odoo 18/Core/Processes]]`
-- **Related:** `[[Odoo 18/Core/Master Data/res_users.md]]`, `[[Odoo 18/Core/Master Data/res_company.md]]`, `[[Odoo 18/Community Addons/Services]]`
-- **Issue:** #12 `Docs: Odoo 18 Core Process - HR`
-
-
+- **Parent:** [[Odoo 18/Core/Processes/Processes]]
 ## Children
 - (none)

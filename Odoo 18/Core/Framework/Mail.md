@@ -19,4 +19,4 @@ status: backlog
 
 
 ## Navigation
-- **Parent:** [[Odoo 18/Core/Framework]]
+- **Parent:** [[Odoo 18/Core/Framework/Framework]]

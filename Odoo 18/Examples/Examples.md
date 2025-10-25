@@ -16,8 +16,6 @@ status: draft
 
 
 ## Navigation
-- **Parent:** [[Odoo 18]]
-
-
+- **Parent:** [[Odoo 18/Odoo 18]]
 ## Children
 - [[Odoo 18/Examples/Service Subscription Example]]

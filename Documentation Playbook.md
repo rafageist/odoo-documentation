@@ -22,8 +22,8 @@ status: active
 - **Tags:** use `#v18`, `#v19`, `#core`, `#community`, `#enterprise`, `#business`, `#technical` as relevant.
 - **References:** prefer the format `` `odoo/addons/base/models/res_partner.py:798` `` for code.
 - **Linking:** when a note mentions another concept, ensure a `[[wikilink]]` exists (create stubs if needed).
-- **Sections:** finish each index or model note with a `## Navigation` block (parent + children + peers).
-
+- **Sections:** finish each index or model note with a `## Navigation
+- **Parent:** [[Welcome]]
 ## Iteration roadmap
 | Phase | Focus | Representative notes |
 |-------|-------|-----------------------|
@@ -39,5 +39,4 @@ status: active
 - Capture open questions in each note to drive follow-up sprints.
 
 ## Navigation
-- **Parent:** `[[Welcome]]`
-- **Related:** `[[Templates/Module Documentation Template]]`, `[[Changelog]]`
+- **Parent:** [[Welcome]]

@@ -106,10 +106,6 @@ Invoice -> Lines : reconciled via payments
 - [ ] Add example JSON for `sale.order` creation via RPC + response flow.
 
 ## Navigation
-- **Parent:** `[[Odoo 18/Core/Processes]]`
-- **Related:** `[[Odoo 18/Core/Processes/Accounting]]`, `[[Odoo 18/Community Addons/Inventory]]`, `[[Odoo 18/Core/Master Data/res_partner.md]]`
-- **Issue:** #7 `Docs: Odoo 18 Core Process - Sales`
-
-
+- **Parent:** [[Odoo 18/Core/Processes/Processes]]
 ## Children
 - (none)

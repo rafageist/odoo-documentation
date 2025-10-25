@@ -77,5 +77,4 @@ Model -> Model : _create_post(vals)
 - [ ] Compare with v19 ORM changes once diff completed; update `[[Comparisons/Core ORM]]`.
 
 ## Navigation
-- **Parent:** `[[Odoo 18/Core/Infrastructure]]`
-- **Related:** `[[Odoo 18/Core/Architecture.md]]`, `[[Odoo 18/Core/Master Data/res_partner.md]]`, `[[Comparisons/Core ORM]]`
+- **Parent:** [[Odoo 18/Core/Infrastructure/Infrastructure]]

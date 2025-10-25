@@ -40,8 +40,6 @@ status: draft
 
 ## Navigation
 - **Parent:** [[Welcome]]
-
-
 ## Children
 - [[Comparisons/Accounting v18-v19]]
 - [[Comparisons/Core ORM]]

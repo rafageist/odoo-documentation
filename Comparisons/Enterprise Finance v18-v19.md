@@ -27,4 +27,4 @@ stop
 
 
 ## Navigation
-- **Parent:** [[Comparisons]]
+- **Parent:** [[Comparisons/Comparisons]]

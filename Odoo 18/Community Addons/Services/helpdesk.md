@@ -62,6 +62,4 @@ Agent -> Ticket : close (solved/refused)
 - [ ] Clarify interplay with Enterprise features (knowledge, field service) in dedicated notes.
 
 ## Navigation
-- **Parent:** `[[Odoo 18/Community Addons/Services]]`
-- **Related:** `[[Odoo 18/Community Addons/Services/project.md]]`, `[[Odoo 18/Core/Master Data/res_users.md]]`, `[[Odoo 18/Core/Processes/Projects]]`
-- **Issue:** #21 `Docs: Odoo 18 - Community Services suite`
+- **Parent:** [[Odoo 18/Community Addons/Services/Services]]

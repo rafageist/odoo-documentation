@@ -91,10 +91,6 @@ Move -> Valuation : _create_account_move_line() (if automated valuation)
 - [ ] Reference barcode/quality modules when their notes are ready.
 
 ## Navigation
-- **Parent:** `[[Odoo 18/Core/Processes]]`
-- **Related:** `[[Odoo 18/Core/Processes/Accounting]]`, `[[Odoo 18/Core/Processes/Sales]]`, `[[Odoo 18/Core/Master Data/res_company.md]]`
-- **Issue:** #9 `Docs: Odoo 18 Core Process - Inventory`
-
-
+- **Parent:** [[Odoo 18/Core/Processes/Processes]]
 ## Children
 - (none)

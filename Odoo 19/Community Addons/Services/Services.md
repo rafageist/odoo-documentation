@@ -37,9 +37,7 @@ status: seed
 
 
 ## Navigation
-- **Parent:** [[Odoo 19/Community Addons]]
-
-
+- **Parent:** [[Odoo 19/Community Addons/Community Addons]]
 ## Children
 - [[Odoo 19/Community Addons/Services/fieldservice]]
 - [[Odoo 19/Community Addons/Services/helpdesk]]

@@ -31,15 +31,6 @@ Welcome to the permanent knowledge repository for Odoo 18 and Odoo 19. The goal 
 > **Tip:** maintain the running `[[Changelog]]` so documentation decisions remain auditable.
 
 ## Navigation
-- **Children**
-  - `[[Odoo 18]]`
-  - `[[Odoo 19]]`
-  - `[[Comparisons]]`
-  - `[[Roadmap/Migrations 18 to 19]]`
-  - `[[Licensing/Enterprise Guide]]`
-  - `[[Templates/Module Documentation Template]]`
-  - `[[Documentation Playbook]]`
-
-
+- **Parent:** [[README]]
 ## Navigation
 - **Parent:** [[README]]

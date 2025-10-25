@@ -33,14 +33,12 @@ status: seed
 
 
 ## Navigation
-- **Parent:** [[Odoo 19/Core]]
-
-
+- **Parent:** [[Odoo 19/Core/Core]]
 ## Children
-- [[Odoo 19/Core/Processes/Accounting]]
-- [[Odoo 19/Core/Processes/HR]]
-- [[Odoo 19/Core/Processes/Inventory]]
-- [[Odoo 19/Core/Processes/Manufacturing]]
-- [[Odoo 19/Core/Processes/Projects]]
-- [[Odoo 19/Core/Processes/Purchasing]]
-- [[Odoo 19/Core/Processes/Sales]]
+- [[Odoo 19/Core/Processes/Accounting/Accounting]]
+- [[Odoo 19/Core/Processes/HR/HR]]
+- [[Odoo 19/Core/Processes/Inventory/Inventory]]
+- [[Odoo 19/Core/Processes/Manufacturing/Manufacturing]]
+- [[Odoo 19/Core/Processes/Projects/Projects]]
+- [[Odoo 19/Core/Processes/Purchasing/Purchasing]]
+- [[Odoo 19/Core/Processes/Sales/Sales]]

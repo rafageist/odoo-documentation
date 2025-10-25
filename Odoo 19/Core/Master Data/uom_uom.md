@@ -18,4 +18,4 @@ status: backlog
 
 
 ## Navigation
-- **Parent:** [[Odoo 19/Core/Master Data]]
+- **Parent:** [[Odoo 19/Core/Master Data/Master Data]]

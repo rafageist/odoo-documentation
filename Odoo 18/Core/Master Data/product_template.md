@@ -59,4 +59,4 @@ product_template "1" -- "*" product_product : product_variant_ids
 
 
 ## Navigation
-- **Parent:** [[Odoo 18/Core/Master Data]]
+- **Parent:** [[Odoo 18/Core/Master Data/Master Data]]

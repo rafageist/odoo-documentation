@@ -30,19 +30,7 @@ product_product --> product_template
 - Analyze multi-company and multi-currency policies.
 
 ## Navigation
-- **Parent**: `[[Odoo 18/Core]]`
-- **Children**:
-  - `[[Odoo 18/Core/Master Data/res_partner.md]]`
-  - `[[Odoo 18/Core/Master Data/product_template.md]]`
-  - `[[Odoo 18/Core/Master Data/product_product.md]]`
-  - `[[Odoo 18/Core/Master Data/uom_uom.md]]`
-  - `[[Odoo 18/Core/Master Data/res_company.md]]`
-
-
-
-
-
-
+- **Parent:** [[Odoo 18/Core/Core]]
 ## Children
 - [[Odoo 18/Core/Master Data/product_product]]
 - [[Odoo 18/Core/Master Data/product_template]]

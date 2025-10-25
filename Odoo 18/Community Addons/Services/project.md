@@ -51,6 +51,4 @@ status: draft
 - [ ] Document recurring tasks once feature note exists.
 
 ## Navigation
-- **Parent:** `[[Odoo 18/Community Addons/Services]]`
-- **Related:** `[[Odoo 18/Core/Processes/Projects]]`, `[[Odoo 18/Community Addons/Sales/sale_project.md]]`, `[[Odoo 18/Core/Master Data/res_users.md]]`
-- **Issue:** #21 `Docs: Odoo 18 - Community Services suite`
+- **Parent:** [[Odoo 18/Community Addons/Services/Services]]

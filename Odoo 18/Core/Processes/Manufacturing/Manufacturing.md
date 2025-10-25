@@ -69,10 +69,6 @@ MO -> MO : done state
 - [ ] Provide cost roll-up example referencing BoM cost method.
 
 ## Navigation
-- **Parent:** `[[Odoo 18/Core/Processes]]`
-- **Related:** `[[Odoo 18/Core/Processes/Inventory]]`, `[[Odoo 18/Core/Processes/Accounting]]`, `[[Odoo 18/Enterprise Addons/Manufacturing]]`
-- **Issue:** #13 `Docs: Odoo 18 Core Process - Manufacturing`
-
-
+- **Parent:** [[Odoo 18/Core/Processes/Processes]]
 ## Children
 - (none)

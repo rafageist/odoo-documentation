@@ -21,4 +21,4 @@ status: backlog
 
 
 ## Navigation
-- **Parent:** [[Odoo 19/Community Addons/Sales]]
+- **Parent:** [[Odoo 19/Community Addons/Sales/Sales]]

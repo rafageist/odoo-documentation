@@ -32,9 +32,7 @@ status: seed
 
 
 ## Navigation
-- **Parent:** [[Odoo 18/Community Addons]]
-
-
+- **Parent:** [[Odoo 18/Community Addons/Community Addons]]
 ## Children
 - [[Odoo 18/Community Addons/Inventory/mrp]]
 - [[Odoo 18/Community Addons/Inventory/procurement_jit]]

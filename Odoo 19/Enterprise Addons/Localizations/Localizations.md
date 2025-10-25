@@ -36,9 +36,7 @@ status: seed
 
 
 ## Navigation
-- **Parent:** [[Odoo 19/Enterprise Addons]]
-
-
+- **Parent:** [[Odoo 19/Enterprise Addons/Enterprise Addons]]
 ## Children
 - [[Odoo 19/Enterprise Addons/Localizations/l10n_es_edi]]
 - [[Odoo 19/Enterprise Addons/Localizations/l10n_fr_edi]]

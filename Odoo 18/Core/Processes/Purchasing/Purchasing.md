@@ -87,10 +87,6 @@ Bill -> Bill : action_post()
 - [ ] Cover landed cost flows when `stock_landed_costs` note exists.
 
 ## Navigation
-- **Parent:** `[[Odoo 18/Core/Processes]]`
-- **Related:** `[[Odoo 18/Core/Processes/Inventory]]`, `[[Odoo 18/Core/Processes/Accounting]]`, `[[Odoo 18/Core/Master Data/res_partner.md]]`
-- **Issue:** #10 `Docs: Odoo 18 Core Process - Purchasing`
-
-
+- **Parent:** [[Odoo 18/Core/Processes/Processes]]
 ## Children
 - (none)

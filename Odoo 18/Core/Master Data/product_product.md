@@ -40,4 +40,4 @@ status: draft
 
 
 ## Navigation
-- **Parent:** [[Odoo 18/Core/Master Data]]
+- **Parent:** [[Odoo 18/Core/Master Data/Master Data]]

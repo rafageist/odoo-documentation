@@ -64,4 +64,4 @@ Lead -> ACC : Pay / reconcile
 
 
 ## Navigation
-- **Parent:** [[Odoo 18/Community Addons/Sales]]
+- **Parent:** [[Odoo 18/Community Addons/Sales/Sales]]

@@ -59,4 +59,4 @@ AccountMove --> AccountMove : action_post()
 
 
 ## Navigation
-- **Parent:** [[Odoo 18/Core/Processes/Accounting]]
+- **Parent:** [[Odoo 18/Core/Processes/Accounting/Accounting]]

@@ -27,4 +27,4 @@ status: draft
 
 
 ## Navigation
-- **Parent:** [[Comparisons]]
+- **Parent:** [[Comparisons/Comparisons]]

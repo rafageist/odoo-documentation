@@ -20,4 +20,4 @@ status: backlog
 
 
 ## Navigation
-- **Parent:** [[Odoo 18/Enterprise Addons/Digital]]
+- **Parent:** [[Odoo 18/Enterprise Addons/Digital/Digital]]

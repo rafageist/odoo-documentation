@@ -18,4 +18,11 @@ status: backlog
 
 
 ## Navigation
-- **Parent:** [[Odoo 18/Community Addons/HR]]
+- **Parent:** [[Odoo 18/Community Addons/Community Addons]]
+
+## Children
+- [[Odoo 18/Community Addons/HR/hr_attendance]]
+- [[Odoo 18/Community Addons/HR/hr_holidays]]
+- [[Odoo 18/Community Addons/HR/hr_payroll]]
+- [[Odoo 18/Community Addons/HR/hr_skills]]
+- [[Odoo 18/Community Addons/HR/Index]]

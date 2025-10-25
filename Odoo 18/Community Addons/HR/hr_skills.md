@@ -20,4 +20,4 @@ status: backlog
 
 
 ## Navigation
-- **Parent:** [[Odoo 18/Community Addons/HR]]
+- **Parent:** [[Odoo 18/Community Addons/HR/HR]]

@@ -87,4 +87,4 @@ Tab -> Tab : owl EventBus emits to subscribers
 
 
 ## Navigation
-- **Parent:** [[Odoo 18/Core/Infrastructure]]
+- **Parent:** [[Odoo 18/Core/Infrastructure/Infrastructure]]

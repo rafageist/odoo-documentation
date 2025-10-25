@@ -20,4 +20,4 @@ status: backlog
 
 
 ## Navigation
-- **Parent:** [[Odoo 18/Enterprise Addons/Manufacturing]]
+- **Parent:** [[Odoo 18/Enterprise Addons/Manufacturing/Manufacturing]]

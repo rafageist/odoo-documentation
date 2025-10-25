@@ -269,5 +269,4 @@ class TestSubscriptionHealth(TransactionCase):
 - [ ] Document translation/i18n extraction for JS strings.
 
 ## Navigation
-- **Parent:** `[[Odoo 18/Examples]]`
-- **Related:** `[[Odoo 18/Core/Framework/Web.md]]`, `[[Odoo 18/Core/Processes/Sales]]`, `[[Odoo 18/Community Addons/Sales/sale_subscription.md]]`
+- **Parent:** [[Odoo 18/Examples/Examples]]

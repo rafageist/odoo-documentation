@@ -76,10 +76,6 @@ Task -> Timesheet : create analytic line
 - [ ] Reference QA/maintenance modules once documented.
 
 ## Navigation
-- **Parent:** `[[Odoo 18/Core/Processes]]`
-- **Related:** `[[Odoo 18/Core/Processes/Sales]]`, `[[Odoo 18/Community Addons/Services]]`, `[[Odoo 18/Core/Master Data/res_users.md]]`
-- **Issue:** #11 `Docs: Odoo 18 Core Process - Projects`
-
-
+- **Parent:** [[Odoo 18/Core/Processes/Processes]]
 ## Children
 - (none)

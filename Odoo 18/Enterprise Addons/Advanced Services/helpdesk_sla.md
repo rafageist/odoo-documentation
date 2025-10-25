@@ -18,4 +18,4 @@ status: backlog
 
 
 ## Navigation
-- **Parent:** [[Odoo 18/Enterprise Addons/Advanced Services]]
+- **Parent:** [[Odoo 18/Enterprise Addons/Advanced Services/Advanced Services]]

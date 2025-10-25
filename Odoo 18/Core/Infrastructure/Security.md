@@ -102,4 +102,4 @@ end
 
 
 ## Navigation
-- **Parent:** [[Odoo 18/Core/Infrastructure]]
+- **Parent:** [[Odoo 18/Core/Infrastructure/Infrastructure]]

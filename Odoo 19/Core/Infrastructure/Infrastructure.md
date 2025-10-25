@@ -36,9 +36,7 @@ status: seed
 
 
 ## Navigation
-- **Parent:** [[Odoo 19/Core]]
-
-
+- **Parent:** [[Odoo 19/Core/Core]]
 ## Children
 - [[Odoo 19/Core/Infrastructure/Bus]]
 - [[Odoo 19/Core/Infrastructure/Files]]

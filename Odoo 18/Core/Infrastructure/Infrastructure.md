@@ -32,9 +32,7 @@ status: in-progress
 
 
 ## Navigation
-- **Parent:** [[Odoo 18/Core]]
-
-
+- **Parent:** [[Odoo 18/Core/Core]]
 ## Children
 - [[Odoo 18/Core/Infrastructure/Bus]]
 - [[Odoo 18/Core/Infrastructure/Files]]

@@ -14,4 +14,4 @@ status: backlog
 
 
 ## Navigation
-- **Parent:** [[Odoo 18/Core/Integrations]]
+- **Parent:** [[Odoo 18/Core/Integrations/Integrations]]

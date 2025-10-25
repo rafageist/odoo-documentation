@@ -35,12 +35,10 @@ rectangle "Enterprise v19" {
 
 
 ## Navigation
-- **Parent:** [[Odoo 19]]
-
-
+- **Parent:** [[Odoo 19/Odoo 19]]
 ## Children
-- [[Odoo 19/Enterprise Addons/Advanced Finance]]
-- [[Odoo 19/Enterprise Addons/Analytics]]
-- [[Odoo 19/Enterprise Addons/Customer Experience]]
-- [[Odoo 19/Enterprise Addons/Localizations]]
-- [[Odoo 19/Enterprise Addons/Operations]]
+- [[Odoo 19/Enterprise Addons/Advanced Finance/Advanced Finance]]
+- [[Odoo 19/Enterprise Addons/Analytics/Analytics]]
+- [[Odoo 19/Enterprise Addons/Customer Experience/Customer Experience]]
+- [[Odoo 19/Enterprise Addons/Localizations/Localizations]]
+- [[Odoo 19/Enterprise Addons/Operations/Operations]]

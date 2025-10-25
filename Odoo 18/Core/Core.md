@@ -36,22 +36,11 @@ package "Core 18" {
 - `[[Odoo 18/Core/Integrations/Web Services.md]]`
 
 ## Navigation
-- **Parent**: `[[Odoo 18]]`
-- **Children**:
-  - `[[Odoo 18/Core/Framework]]`
-  - `[[Odoo 18/Core/Master Data]]`
-  - `[[Odoo 18/Core/Processes]]`
-  - `[[Odoo 18/Core/Infrastructure]]`
-  - `[[Odoo 18/Core/Integrations]]`
-
-
-
-
-
+- **Parent:** [[Odoo 18/Odoo 18]]
 ## Children
 - [[Odoo 18/Core/Architecture]]
-- [[Odoo 18/Core/Framework]]
-- [[Odoo 18/Core/Infrastructure]]
-- [[Odoo 18/Core/Integrations]]
-- [[Odoo 18/Core/Master Data]]
-- [[Odoo 18/Core/Processes]]
+- [[Odoo 18/Core/Framework/Framework]]
+- [[Odoo 18/Core/Infrastructure/Infrastructure]]
+- [[Odoo 18/Core/Integrations/Integrations]]
+- [[Odoo 18/Core/Master Data/Master Data]]
+- [[Odoo 18/Core/Processes/Processes]]

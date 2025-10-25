@@ -122,12 +122,8 @@ Partner --> Users : user_ids
 - Variant data: [[Odoo 18/Core/Master Data/product_template.md]], [[Odoo 18/Core/Master Data/product_product.md]]
 
 ## Navigation
-- **Parent:** `[[Odoo 18/Core/Master Data]]`
-- **Sibling models:** `[[Odoo 18/Core/Master Data/res_company.md]]`, `[[Odoo 18/Core/Master Data/product_template.md]]`
-- **Downstream modules:** `[[Odoo 18/Community Addons/Sales]]`, `[[Odoo 18/Community Addons/Finance]]`, `[[Odoo 18/Community Addons/Services]]`
-
+- **Parent:** [[Odoo 18/Core/Master Data/Master Data]]
 ## To-do for full coverage
 - Document each warning field (`sale_warn`, `purchase_warn`, etc.) and reference the modules that consume them.
 - Create dedicated notes for `res.partner.bank` and other partner-related models.
 - Map the XML view inheritance chain (form view, portal profile, website signup) with diagrams.
-

@@ -84,6 +84,4 @@ Lead -> Order : action_new_quotation() (optional)
 - [ ] Link to website form generation once documented.
 
 ## Navigation
-- **Parent:** `[[Odoo 18/Community Addons/Sales]]`
-- **Related:** `[[Odoo 18/Core/Processes/Sales]]`, `[[Odoo 18/Community Addons/Sales/sale_management.md]]`, `[[Odoo 18/Community Addons/Marketing]]`
-- **Issue:** #18 `Docs: Odoo 18 - Community Sales suite`
+- **Parent:** [[Odoo 18/Community Addons/Sales/Sales]]

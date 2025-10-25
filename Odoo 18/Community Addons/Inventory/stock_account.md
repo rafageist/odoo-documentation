@@ -63,6 +63,4 @@ StockAccount -> Journal : create entries (stock valuation)
 - [ ] Link to cost analysis reports when created.
 
 ## Navigation
-- **Parent:** `[[Odoo 18/Community Addons/Inventory]]`
-- **Related:** `[[Odoo 18/Community Addons/Inventory/stock.md]]`, `[[Odoo 18/Core/Processes/Inventory]]`, `[[Odoo 18/Core/Processes/Accounting]]`
-- **Issue:** #20 `Docs: Odoo 18 - Community Operations suite`
+- **Parent:** [[Odoo 18/Community Addons/Inventory/Inventory]]

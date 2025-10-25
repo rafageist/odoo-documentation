@@ -37,9 +37,7 @@ status: seed
 
 
 ## Navigation
-- **Parent:** [[Odoo 19/Community Addons]]
-
-
+- **Parent:** [[Odoo 19/Community Addons/HR/HR]]
 ## Children
 - [[Odoo 19/Community Addons/HR/hr]]
 - [[Odoo 19/Community Addons/HR/hr_attendance]]

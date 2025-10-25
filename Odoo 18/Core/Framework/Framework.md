@@ -78,16 +78,7 @@ Auth --> ORM
 - [ ] Compare v18 vs v19 framework changes in `[[Comparisons/Core ORM]]`.
 
 ## Navigation
-- **Parent:** `[[Odoo 18/Core]]`
-- **Children:**
-  - `[[Odoo 18/Core/Framework/Base.md]]`
-  - `[[Odoo 18/Core/Framework/Web.md]]`
-  - `[[Odoo 18/Core/Framework/Mail.md]]`
-  - `[[Odoo 18/Core/Framework/Auth.md]]`
-- **Issue:** #17 `Docs: Odoo 18 - Framework overview`
-
-
-
+- **Parent:** [[Odoo 18/Core/Core]]
 ## Children
 - [[Odoo 18/Core/Framework/Auth]]
 - [[Odoo 18/Core/Framework/Base]]

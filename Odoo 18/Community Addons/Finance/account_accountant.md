@@ -52,6 +52,4 @@ Widget -> Partial : create reconciliation entries
 - [ ] Describe manual entry templates (recurring entries) in detail.
 
 ## Navigation
-- **Parent:** `[[Odoo 18/Community Addons/Finance]]`
-- **Related:** `[[Odoo 18/Community Addons/Finance/account.md]]`, `[[Odoo 18/Core/Processes/Accounting]]`
-- **Issue:** #19 `Docs: Odoo 18 - Community Finance suite`
+- **Parent:** [[Odoo 18/Community Addons/Finance/Finance]]

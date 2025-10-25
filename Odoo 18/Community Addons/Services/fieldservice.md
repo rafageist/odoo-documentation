@@ -38,6 +38,4 @@ status: draft
 - [ ] Provide example of inventory consumption from service order.
 
 ## Navigation
-- **Parent:** `[[Odoo 18/Community Addons/Services]]`
-- **Related:** `[[Odoo 18/Core/Processes/Projects]]`, `[[Odoo 18/Community Addons/Services/helpdesk.md]]`
-- **Issue:** #21 `Docs: Odoo 18 - Community Services suite`
+- **Parent:** [[Odoo 18/Community Addons/Services/Services]]

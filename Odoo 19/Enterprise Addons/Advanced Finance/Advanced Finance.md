@@ -39,9 +39,7 @@ status: seed
 
 
 ## Navigation
-- **Parent:** [[Odoo 19/Enterprise Addons]]
-
-
+- **Parent:** [[Odoo 19/Enterprise Addons/Enterprise Addons]]
 ## Children
 - [[Odoo 19/Enterprise Addons/Advanced Finance/account_budget]]
 - [[Odoo 19/Enterprise Addons/Advanced Finance/account_consolidation]]

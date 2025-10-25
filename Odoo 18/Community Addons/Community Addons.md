@@ -43,18 +43,13 @@ status: in-progress
 
 
 ## Navigation
-- Sales lead-to-cash flow -> `[[Odoo 18/Community Addons/Sales/lead_to_cash.md]]`
-- Finance invoice-to-cash flow -> `[[Odoo 18/Community Addons/Finance/invoice_to_cash.md]]`
-
+- **Parent:** [[Odoo 18/Odoo 18]]
 ## Navigation
-- **Parent**: [[Odoo 18]]`n- **Children**:
-  - [[Odoo 18/Community Addons/Sales]]`n  - [[Odoo 18/Community Addons/Inventory]]`n  - [[Odoo 18/Community Addons/Finance]]`n  - [[Odoo 18/Community Addons/Services]]`n  - [[Odoo 18/Community Addons/HR]]`n  - [[Odoo 18/Community Addons/Marketing]]`n
-
-
+- **Parent:** [[Odoo 18/Odoo 18]]
 ## Children
-- [[Odoo 18/Community Addons/Finance]]
-- [[Odoo 18/Community Addons/HR]]
-- [[Odoo 18/Community Addons/Inventory]]
-- [[Odoo 18/Community Addons/Marketing]]
-- [[Odoo 18/Community Addons/Sales]]
-- [[Odoo 18/Community Addons/Services]]
+- [[Odoo 18/Community Addons/Finance/Finance]]
+- [[Odoo 18/Community Addons/HR/HR]]
+- [[Odoo 18/Community Addons/Inventory/Inventory]]
+- [[Odoo 18/Community Addons/Marketing/Marketing]]
+- [[Odoo 18/Community Addons/Sales/Sales]]
+- [[Odoo 18/Community Addons/Services/Services]]

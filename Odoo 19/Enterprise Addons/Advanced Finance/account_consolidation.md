@@ -18,4 +18,4 @@ status: backlog
 
 
 ## Navigation
-- **Parent:** [[Odoo 19/Enterprise Addons/Advanced Finance]]
+- **Parent:** [[Odoo 19/Enterprise Addons/Advanced Finance/Advanced Finance]]

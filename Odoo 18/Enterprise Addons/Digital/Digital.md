@@ -31,9 +31,7 @@ status: seed
 
 
 ## Navigation
-- **Parent:** [[Odoo 18/Enterprise Addons]]
-
-
+- **Parent:** [[Odoo 18/Enterprise Addons/Enterprise Addons]]
 ## Children
 - [[Odoo 18/Enterprise Addons/Digital/livechat_enterprise]]
 - [[Odoo 18/Enterprise Addons/Digital/survey_enterprise]]

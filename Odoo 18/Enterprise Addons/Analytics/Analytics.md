@@ -30,9 +30,7 @@ status: seed
 
 
 ## Navigation
-- **Parent:** [[Odoo 18/Enterprise Addons]]
-
-
+- **Parent:** [[Odoo 18/Enterprise Addons/Enterprise Addons]]
 ## Children
 - [[Odoo 18/Enterprise Addons/Analytics/dashboard_enterprise]]
 - [[Odoo 18/Enterprise Addons/Analytics/data_cleaning]]

@@ -18,4 +18,4 @@ status: backlog
 
 
 ## Navigation
-- **Parent:** [[Odoo 19/Community Addons/Supply Chain]]
+- **Parent:** [[Odoo 19/Community Addons/Supply Chain/Supply Chain]]

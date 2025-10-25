@@ -56,6 +56,4 @@ status: draft
 - [ ] Link to barcode/wave picking modules when documented.
 
 ## Navigation
-- **Parent:** `[[Odoo 18/Community Addons/Inventory]]`
-- **Related:** `[[Odoo 18/Core/Processes/Inventory]]`, `[[Odoo 18/Core/Processes/Sales]]`, `[[Odoo 18/Community Addons/Inventory/stock_account.md]]`
-- **Issue:** #20 `Docs: Odoo 18 - Community Operations suite`
+- **Parent:** [[Odoo 18/Community Addons/Inventory/Inventory]]

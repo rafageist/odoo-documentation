@@ -25,9 +25,6 @@ status: seed
 - Document closing process (lock dates, electronic invoicing).
 
 ## Navigation
-- **Parent:** `[[Odoo 18/Core/Processes]]`
-- **Siblings:** `[[Odoo 18/Core/Processes/Sales]]`, `[[Odoo 18/Core/Processes/Purchasing]]`, `[[Odoo 18/Core/Processes/Inventory]]`
-
-
+- **Parent:** [[Odoo 18/Core/Processes/Processes]]
 ## Children
 - [[Odoo 18/Core/Processes/Accounting/account_move]]

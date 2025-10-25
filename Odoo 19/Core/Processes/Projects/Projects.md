@@ -26,8 +26,6 @@ status: seed
 
 
 ## Navigation
-- **Parent:** [[Odoo 19/Core/Processes]]
-
-
+- **Parent:** [[Odoo 19/Core/Processes/Processes]]
 ## Children
 - (none)

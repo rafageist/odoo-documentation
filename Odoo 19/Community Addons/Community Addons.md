@@ -44,13 +44,11 @@ status: seed
 
 
 ## Navigation
-- **Parent:** [[Odoo 19]]
-
-
+- **Parent:** [[Odoo 19/Odoo 19]]
 ## Children
-- [[Odoo 19/Community Addons/Digital]]
-- [[Odoo 19/Community Addons/Finance]]
-- [[Odoo 19/Community Addons/HR]]
-- [[Odoo 19/Community Addons/Sales]]
-- [[Odoo 19/Community Addons/Services]]
-- [[Odoo 19/Community Addons/Supply Chain]]
+- [[Odoo 19/Community Addons/Digital/Digital]]
+- [[Odoo 19/Community Addons/Finance/Finance]]
+- [[Odoo 19/Community Addons/HR/HR]]
+- [[Odoo 19/Community Addons/Sales/Sales]]
+- [[Odoo 19/Community Addons/Services/Services]]
+- [[Odoo 19/Community Addons/Supply Chain/Supply Chain]]

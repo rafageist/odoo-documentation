@@ -126,6 +126,4 @@ Http --> User : session cookie + redirect
 - [ ] Document user preference storage (`res.users.settings`) and web client personalization hooks.
 
 ## Navigation
-- **Parent:** `[[Odoo 18/Core/Master Data]]`
-- **Related:** `[[Odoo 18/Core/Master Data/res_partner.md]]`, `[[Odoo 18/Core/Master Data/res_company.md]]`, `[[Odoo 18/Core/Framework/Auth.md]]`, `[[Odoo 18/Core/Architecture.md]]`
-- **Issue:** #3 `Docs: Odoo 18 - res.users`
+- **Parent:** [[Odoo 18/Core/Master Data/Master Data]]

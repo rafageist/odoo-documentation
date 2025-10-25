@@ -128,14 +128,12 @@ _Related notes_: `[[Odoo 18/Core/Master Data/res_partner.md]]`, `[[Odoo 18/Core/
 | Infrastructure | `[[Odoo 18/Core/Infrastructure]]` (ORM internals, reports, files, bus, security) |
 | Integrations | `[[Odoo 18/Core/Integrations]]` (Mail, Web Services, Payments, External Systems) |
 
-Every folder has its own `Index.md`, and each note ends with a `## Navigation` block to help Obsidian’s graph display parent/child relationships.
-
+Every folder has its own `Index.md`, and each note ends with a `## Navigation
+- **Parent:** [[Odoo 18/Core/Core]]
 ## 7. Open questions
 - Document the exact registry loading order (hook sequencing) – to be covered under `Odoo 18/Core/Infrastructure/Index`.
 - Benchmark worker configurations (multiprocessing vs threading) – add to a future `Ops` note.
 - Capture how enterprise web client assets modify base behaviour (see Odoo 18 Enterprise Digital notes).
 
 ## Navigation
-- **Parent:** `[[Odoo 18/Core]]`
-- **Related:** `[[Odoo 18/Core/Framework]]`, `[[Odoo 18/Core/Master Data]]`, `[[Odoo 18/Core/Processes]]`, `[[Odoo 18/Core/Infrastructure]]`, `[[Odoo 18/Core/Integrations]]`
-- **Issue:** #16 `Docs: Odoo 18 - Core architecture overview`
+- **Parent:** [[Odoo 18/Core/Core]]

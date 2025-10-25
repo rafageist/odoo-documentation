@@ -69,6 +69,4 @@ SalesRep -> Subscription : upsell / close / renew actions
 - [ ] Describe integration with payment tokens (if enterprise modules allow autopay).
 
 ## Navigation
-- **Parent:** `[[Odoo 18/Community Addons/Sales]]`
-- **Related:** `[[Odoo 18/Core/Processes/Sales]]`, `[[Odoo 18/Community Addons/Sales/sale_management.md]]`, `[[Odoo 18/Core/Processes/Accounting]]`
-- **Issue:** #18 `Docs: Odoo 18 - Community Sales suite`
+- **Parent:** [[Odoo 18/Community Addons/Sales/Sales]]

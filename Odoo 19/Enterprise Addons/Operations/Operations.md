@@ -33,9 +33,7 @@ status: seed
 
 
 ## Navigation
-- **Parent:** [[Odoo 19/Enterprise Addons]]
-
-
+- **Parent:** [[Odoo 19/Enterprise Addons/Enterprise Addons]]
 ## Children
 - [[Odoo 19/Enterprise Addons/Operations/iot_enterprise]]
 - [[Odoo 19/Enterprise Addons/Operations/maintenance_enterprise]]

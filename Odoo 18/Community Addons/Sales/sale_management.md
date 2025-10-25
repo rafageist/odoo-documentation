@@ -52,7 +52,4 @@ status: draft
 - [ ] Add sample RPC payload for confirmation and invoicing.
 
 ## Navigation
-- Flow overview: [[Odoo 18/Community Addons/Sales/lead_to_cash.md]]
-- **Parent:** `[[Odoo 18/Community Addons/Sales]]`
-- **Related:** `[[Odoo 18/Core/Processes/Sales]]`, `[[Odoo 18/Community Addons/Sales/crm.md]]`, `[[Odoo 18/Community Addons/Sales/sale_project.md]]`
-- **Issue:** #18 `Docs: Odoo 18 - Community Sales suite`
+- **Parent:** [[Odoo 18/Community Addons/Sales/Sales]]

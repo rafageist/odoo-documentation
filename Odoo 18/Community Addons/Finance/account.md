@@ -78,7 +78,4 @@ Move -> Line : ready for reconciliation
 - [ ] Provide snippet of JSON RPC for invoice creation and posting.
 
 ## Navigation
-- Flow overview: [[Odoo 18/Community Addons/Finance/invoice_to_cash.md]]
-- **Parent:** `[[Odoo 18/Community Addons/Finance]]`
-- **Related:** `[[Odoo 18/Core/Processes/Accounting]]`, `[[Odoo 18/Core/Master Data/res_company.md]]`, `[[Odoo 18/Core/Processes/Sales]]`
-- **Issue:** #19 `Docs: Odoo 18 - Community Finance suite`
+- **Parent:** [[Odoo 18/Community Addons/Finance/Finance]]

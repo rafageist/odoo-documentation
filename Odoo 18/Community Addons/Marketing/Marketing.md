@@ -31,9 +31,7 @@ status: seed
 
 
 ## Navigation
-- **Parent:** [[Odoo 18/Community Addons]]
-
-
+- **Parent:** [[Odoo 18/Community Addons/Community Addons]]
 ## Children
 - [[Odoo 18/Community Addons/Marketing/email_marketing]]
 - [[Odoo 18/Community Addons/Marketing/marketing_automation]]

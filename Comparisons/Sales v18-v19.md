@@ -23,6 +23,14 @@ status: draft
 - Security tweaks use `all_group_ids` domains and add groups on transactions/tags, aligning with new security refinements (see `[[Odoo 18/Core/Infrastructure/Security.md]]`).
 - ORM API usage updated: constraints and indexes declared via `models.Constraint` / `models.Index`, context access through `env.context`.
 - Additional helpers: imports `Domain`, `OrderedSet`, and `str2bool` to support richer search/payment features.
+- Combo handling refined: variant lines now reuse linked combo item lines and keep quantities/discounts in sync; non-selected combos no longer duplicate sequencing logic.
+- Messaging churn reduced: v19 stops auto-subscribing partner followers on write/confirm, relying on portal/email flows instead.
+- Wizard updates: discount wizard is `@api.readonly`, and sending quotations hides template management options, using new 'Send' action label.
+
+## Migration hints
+- Update custom domains referencing `groups_id` or manual salesperson searches to the new `all_group_ids` convention.
+- Replace direct context access (`self._context`) with `self.env.context` to align with v19 idioms.
+- When overriding order line combo logic, account for the new update path that keeps combo item lines synchronized.
 
 ## Next steps
 - Pull diff of `addons/sale/models/sale_order.py` and CRM models.

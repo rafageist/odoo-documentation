@@ -38,3 +38,29 @@ status: seed
 - [[Odoo 18/Community Addons/Marketing/social_marketing]]
 - [[Odoo 18/Community Addons/Marketing/website]]
 - [[Odoo 18/Community Addons/Marketing/website_sale]]
+<!-- GENERATED:CATEGORY -->
+---
+tags: [odoo, v18, community, index, category]
+---
+
+# Marketing
+
+Modules: 16
+
+- [[Odoo 18/Community Addons/digest/digest|digest]]
+- [[Odoo 18/Community Addons/event/event|event]]
+- [[Odoo 18/Community Addons/event_booth/event_booth|event_booth]]
+- [[Odoo 18/Community Addons/event_booth_sale/event_booth_sale|event_booth_sale]]
+- [[Odoo 18/Community Addons/event_crm/event_crm|event_crm]]
+- [[Odoo 18/Community Addons/event_crm_sale/event_crm_sale|event_crm_sale]]
+- [[Odoo 18/Community Addons/event_product/event_product|event_product]]
+- [[Odoo 18/Community Addons/event_sale/event_sale|event_sale]]
+- [[Odoo 18/Community Addons/event_sms/event_sms|event_sms]]
+- [[Odoo 18/Community Addons/link_tracker/link_tracker|link_tracker]]
+- [[Odoo 18/Community Addons/marketing_card/marketing_card|marketing_card]]
+- [[Odoo 18/Community Addons/mass_mailing/mass_mailing|mass_mailing]]
+- [[Odoo 18/Community Addons/mass_mailing_sms/mass_mailing_sms|mass_mailing_sms]]
+- [[Odoo 18/Community Addons/mass_mailing_themes/mass_mailing_themes|mass_mailing_themes]]
+- [[Odoo 18/Community Addons/survey/survey|survey]]
+- [[Odoo 18/Community Addons/utm/utm|utm]]
+<!-- GENERATED:CATEGORY -->

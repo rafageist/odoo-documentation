@@ -1,0 +1,45 @@
+<!-- GENERATED:MODULE -->
+---
+tags: [odoo, v19, enterprise, module]
+---
+
+# Sendcould Locations for Website Delivery
+
+- Version: v19
+- Category: enterprise
+- Source: enterprise19/website_delivery_sendcloud
+- Dependencies: [[Odoo 19/Enterprise Addons/delivery_sendcloud/delivery_sendcloud|delivery_sendcloud]], [[Odoo 19/Community Addons/website_sale/website_sale|website_sale]]
+
+## Summary
+
+Allows website customers to choose delivery pick-up points
+
+## XML Artifacts (detected)
+
+- Views: 1
+- Actions: 0
+- Menus: 0
+- Rules (ir.rule): 0
+- Access CSV entries: 0
+
+## Detected Models
+
+- `DeliveryCarrier`
+
+
+```plantuml
+@startuml
+!include ../../../Templates/DiagramStyles.puml
+title Sendcould Locations for Website Delivery - Models and Relations
+class DeliveryCarrier
+class "uom.uom" as uom_uom
+DeliveryCarrier --> uom_uom : many2one
+@enduml
+```
+
+## Navigation
+
+- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../../Odoo 19/Odoo 19|Back to version]]
+
+<!-- GENERATED:MODULE -->

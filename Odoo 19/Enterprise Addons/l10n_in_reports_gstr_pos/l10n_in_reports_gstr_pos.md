@@ -1,0 +1,38 @@
+<!-- GENERATED:MODULE -->
+---
+tags: [odoo, v19, enterprise, module]
+---
+
+# Indian - GSTR India eFiling with POS
+
+- Version: v19
+- Category: enterprise
+- Source: enterprise19/l10n_in_reports_gstr_pos
+- Dependencies: [[Odoo 19/Enterprise Addons/l10n_in_reports/l10n_in_reports|l10n_in_reports]], [[Odoo 19/Community Addons/point_of_sale/point_of_sale|point_of_sale]]
+## XML Artifacts (detected)
+
+- Views: 0
+- Actions: 0
+- Menus: 0
+- Rules (ir.rule): 0
+- Access CSV entries: 0
+
+## Detected Models
+
+- `AccountReturn`
+
+
+```plantuml
+@startuml
+!include ../../../Templates/DiagramStyles.puml
+title Indian - GSTR India eFiling with POS - Models and Relations
+class AccountReturn
+@enduml
+```
+
+## Navigation
+
+- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../../Odoo 19/Odoo 19|Back to version]]
+
+<!-- GENERATED:MODULE -->

@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "28df8a9f7eb928b0",
+        "id": "29f775a554fe0dba",
         "type": "tabs",
         "children": [
           {
-            "id": "6c063f03ae0e4166",
+            "id": "ea3c4920142ebb0e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Odoo 18/Community Addons/Community Addons.md",
+                "file": "Odoo 18/Core/Framework/Auth.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Community Addons"
+              "title": "Auth"
             }
           }
         ]
@@ -171,43 +171,43 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "6c063f03ae0e4166",
+  "active": "ea3c4920142ebb0e",
   "lastOpenFiles": [
-    "Odoo 18/Community Addons/Community Addons.md",
-    "Odoo 19/Enterprise Addons/Operations/Operations.md",
-    "Odoo 19/Core/Processes/Sales/Sales.md",
-    "Odoo 19/Core/Processes/Purchasing/Purchasing.md",
-    "Odoo 19/Core/Processes/Projects/Projects.md",
-    "Odoo 19/Core/Processes/Manufacturing/Manufacturing.md",
-    "Odoo 19/Core/Processes/Inventory/Inventory.md",
-    "Odoo 19/Core/Processes/HR/HR.md",
-    "Odoo 19/Core/Processes/Accounting/Accounting.md",
-    "Odoo 19/Core/Processes/Processes.md",
-    "Odoo 19/Community Addons/Supply Chain/Supply Chain.md",
-    "Odoo 19/Community Addons/Services/Services.md",
-    "Odoo 18/Examples/Examples.md",
-    "Odoo 18/Enterprise Addons/Manufacturing/Manufacturing.md",
-    "Odoo 18/Enterprise Addons/Localizations/Localizations.md",
-    "Odoo 18/Enterprise Addons/Digital/Digital.md",
-    "Odoo 18/Enterprise Addons/Analytics/Analytics.md",
-    "Odoo 18/Core/Master Data/Master Data.md",
-    "Odoo 18/Core/Integrations/Integrations.md",
-    "Odoo 18/Community Addons/Services/Services.md",
-    "Odoo 18/Community Addons/Sales/Sales.md",
-    "Odoo 18/Community Addons/Marketing/Marketing.md",
-    "Odoo 18/Community Addons/Inventory/Inventory.md",
-    "Odoo 18/Community Addons/Finance/Finance.md",
-    "Odoo 18/Core/Infrastructure/Infrastructure.md",
-    "Odoo 18/Core/Framework/Framework.md",
-    "Odoo 18/Core/Processes/Manufacturing",
-    "issue_37_title.txt",
-    "issue_36_title.txt",
-    "issue_35_title.txt",
-    "issue_34_title.txt",
-    "issue_33_title.txt",
-    "issue_32_title.txt",
-    "issue_31_title.txt",
-    "issue_30_title.txt",
-    "issue_29_title.txt"
+    "odoo-documentation/Odoo 19/Enterprise Addons/README.md",
+    "odoo-documentation/Odoo 19/Core/README.md",
+    "odoo-documentation/Odoo 18/Enterprise Addons/README.md",
+    "odoo-documentation/Odoo 19/Community Addons/README.md",
+    "odoo-documentation/Odoo 18/Core/README.md",
+    "odoo-documentation/Odoo 18/Community Addons/README.md",
+    "odoo-documentation/_templates/Service.md",
+    "odoo-documentation/_templates/README.md",
+    "odoo-documentation/_templates/Module.md",
+    "odoo-documentation/_templates/Model.md",
+    "odoo-documentation/tools/generate_from_sources.py",
+    "odoo-documentation/_templates/DiagramStyles.puml",
+    "odoo-documentation/_templates/BusinessProcess.md",
+    "odoo-documentation/Odoo 19/README.md",
+    "odoo-documentation/Odoo 19/Enterprise Addons",
+    "odoo-documentation/Odoo 19/Core",
+    "odoo-documentation/Odoo 19/Community Addons",
+    "odoo-documentation/Odoo 18/README.md",
+    "odoo-documentation/Odoo 18/Enterprise Addons",
+    "odoo-documentation/Odoo 18/Core",
+    "odoo-documentation/Odoo 18/Community Addons",
+    "odoo-documentation/Comparisons/README.md",
+    "odoo-documentation/Comparisons/Modules Changes.md",
+    "odoo-documentation/Comparisons/Migration Guide.md",
+    "odoo-documentation/Comparisons/Core Differences.md",
+    "odoo-documentation/_templates",
+    "odoo-documentation/tools",
+    "odoo-documentation/TAGS.md",
+    "odoo-documentation/README.md",
+    "odoo-documentation/Index.md",
+    "odoo-documentation/CONFIG.md",
+    "Odoo 19/Enterprise Addons/Website/Website.md",
+    "Odoo 19/Enterprise Addons/Sales/Sales.md",
+    "Odoo 19/Enterprise Addons/HR/HR.md",
+    "Odoo 19/Community Addons/Marketing/Marketing.md",
+    "Odoo 19/Community Addons/Localizations/Localizations.md"
   ]
 }

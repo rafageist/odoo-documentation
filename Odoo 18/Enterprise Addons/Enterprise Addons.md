@@ -44,3 +44,21 @@ rectangle "Enterprise v18" {
 - [[Odoo 18/Enterprise Addons/Digital/Digital]]
 - [[Odoo 18/Enterprise Addons/Localizations/Localizations]]
 - [[Odoo 18/Enterprise Addons/Manufacturing/Manufacturing]]
+<!-- GENERATED:CATEGORIES -->
+## Categories
+
+- [[Odoo 18/Enterprise Addons/Communication/Communication|Communication]] (2)
+- [[Odoo 18/Enterprise Addons/Finance/Finance|Finance]] (45)
+- [[Odoo 18/Enterprise Addons/HR/HR|HR]] (52)
+- [[Odoo 18/Enterprise Addons/Inventory/Inventory|Inventory]] (54)
+- [[Odoo 18/Enterprise Addons/Localizations/Localizations|Localizations]] (259)
+- [[Odoo 18/Enterprise Addons/Marketing/Marketing|Marketing]] (16)
+- [[Odoo 18/Enterprise Addons/Misc/Misc|Misc]] (53)
+- [[Odoo 18/Enterprise Addons/Payments/Payments|Payments]] (1)
+- [[Odoo 18/Enterprise Addons/Point of Sale/Point of Sale|Point of Sale]] (29)
+- [[Odoo 18/Enterprise Addons/Sales/Sales|Sales]] (36)
+- [[Odoo 18/Enterprise Addons/Services/Services|Services]] (76)
+- [[Odoo 18/Enterprise Addons/Technical/Technical|Technical]] (7)
+- [[Odoo 18/Enterprise Addons/Website/Website|Website]] (33)
+
+<!-- GENERATED:CATEGORIES -->

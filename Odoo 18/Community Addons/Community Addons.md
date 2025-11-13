@@ -53,3 +53,22 @@ status: in-progress
 - [[Odoo 18/Community Addons/Marketing/Marketing]]
 - [[Odoo 18/Community Addons/Sales/Sales]]
 - [[Odoo 18/Community Addons/Services/Services]]
+<!-- GENERATED:CATEGORIES -->
+## Categories
+
+- [[Odoo 18/Community Addons/Communication/Communication|Communication]] (7)
+- [[Odoo 18/Community Addons/Finance/Finance|Finance]] (19)
+- [[Odoo 18/Community Addons/HR/HR|HR]] (33)
+- [[Odoo 18/Community Addons/Inventory/Inventory|Inventory]] (32)
+- [[Odoo 18/Community Addons/IoT/IoT|IoT]] (3)
+- [[Odoo 18/Community Addons/Localizations/Localizations|Localizations]] (207)
+- [[Odoo 18/Community Addons/Marketing/Marketing|Marketing]] (16)
+- [[Odoo 18/Community Addons/Misc/Misc|Misc]] (93)
+- [[Odoo 18/Community Addons/Payments/Payments|Payments]] (17)
+- [[Odoo 18/Community Addons/Point of Sale/Point of Sale|Point of Sale]] (33)
+- [[Odoo 18/Community Addons/Sales/Sales|Sales]] (46)
+- [[Odoo 18/Community Addons/Services/Services|Services]] (25)
+- [[Odoo 18/Community Addons/Technical/Technical|Technical]] (7)
+- [[Odoo 18/Community Addons/Website/Website|Website]] (58)
+
+<!-- GENERATED:CATEGORIES -->

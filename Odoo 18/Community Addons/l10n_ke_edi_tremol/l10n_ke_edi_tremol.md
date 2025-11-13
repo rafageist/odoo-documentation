@@ -1,0 +1,47 @@
+<!-- GENERATED:MODULE -->
+---
+tags: [odoo, v18, community, module]
+---
+
+# Kenya Tremol Device EDI Integration
+
+- Version: v18
+- Category: community
+- Source: odoo/addons/l10n_ke_edi_tremol
+- Dependencies: [[Odoo 18/Community Addons/l10n_ke/l10n_ke|l10n_ke]]
+
+## Summary
+
+Kenya Tremol Device EDI Integration
+
+## XML Artifacts (detected)
+
+- Views: 5
+- Actions: 1
+- Menus: 0
+- Rules (ir.rule): 0
+- Access CSV entries: 0
+
+## Detected Models
+
+- `AccountMove`
+- `ResCompany`
+- `ResPartner`
+
+
+```plantuml
+@startuml
+!include ../../../Templates/DiagramStyles.puml
+title Kenya Tremol Device EDI Integration - Models and Relations
+class AccountMove
+class ResCompany
+class ResPartner
+@enduml
+```
+
+## Navigation
+
+- [[../Community Addons/Community Addons|Back to category]]
+- [[../../Odoo 18/Odoo 18|Back to version]]
+
+<!-- GENERATED:MODULE -->

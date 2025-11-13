@@ -1,0 +1,54 @@
+<!-- GENERATED:MODULE -->
+---
+tags: [odoo, v19, community, module]
+---
+
+# HTML Editor
+
+- Version: v19
+- Category: community
+- Source: odoo19/addons/html_editor
+- Dependencies: base (not documented), [[Odoo 19/Community Addons/bus/bus|bus]], [[Odoo 19/Community Addons/web/web|web]]
+
+## Summary
+
+
+        A Html Editor component and plugin system
+    
+
+## XML Artifacts (detected)
+
+- Views: 0
+- Actions: 0
+- Menus: 0
+- Rules (ir.rule): 0
+- Access CSV entries: 2
+
+## Detected Models
+
+- `IrAttachment`
+- `IrUiView`
+- `html_editor.converter.test`
+- `html_editor.converter.test.sub`
+
+
+```plantuml
+@startuml
+!include ../../../Templates/DiagramStyles.puml
+title HTML Editor - Models and Relations
+class IrAttachment
+class IrUiView
+class "html_editor.converter.test" as html_editor_converter_test
+class "html_editor.converter.test.sub" as html_editor_converter_test_sub
+class "ir.attachment" as ir_attachment
+IrAttachment --> ir_attachment : many2one
+html_editor_converter_test --> html_editor_converter_test_sub : many2one
+@enduml
+```
+
+## Navigation
+
+- [[../Community Addons/Community Addons|Back to category]]
+- [[../../Odoo 19/Odoo 19|Back to version]]
+
+<!-- GENERATED:MODULE -->

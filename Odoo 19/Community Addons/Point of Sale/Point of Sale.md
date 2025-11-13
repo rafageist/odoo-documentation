@@ -1,0 +1,44 @@
+<!-- GENERATED:CATEGORY -->
+---
+tags: [odoo, v19, community, index, category]
+---
+
+# Point of Sale
+
+Modules: 34
+
+- [[Odoo 19/Community Addons/pos_account_tax_python/pos_account_tax_python|pos_account_tax_python]]
+- [[Odoo 19/Community Addons/pos_adyen/pos_adyen|pos_adyen]]
+- [[Odoo 19/Community Addons/pos_discount/pos_discount|pos_discount]]
+- [[Odoo 19/Community Addons/pos_event/pos_event|pos_event]]
+- [[Odoo 19/Community Addons/pos_event_sale/pos_event_sale|pos_event_sale]]
+- [[Odoo 19/Community Addons/pos_glory_cash/pos_glory_cash|pos_glory_cash]]
+- [[Odoo 19/Community Addons/pos_hr/pos_hr|pos_hr]]
+- [[Odoo 19/Community Addons/pos_hr_restaurant/pos_hr_restaurant|pos_hr_restaurant]]
+- [[Odoo 19/Community Addons/pos_loyalty/pos_loyalty|pos_loyalty]]
+- [[Odoo 19/Community Addons/pos_mercado_pago/pos_mercado_pago|pos_mercado_pago]]
+- [[Odoo 19/Community Addons/pos_mrp/pos_mrp|pos_mrp]]
+- [[Odoo 19/Community Addons/pos_online_payment/pos_online_payment|pos_online_payment]]
+- [[Odoo 19/Community Addons/pos_online_payment_self_order/pos_online_payment_self_order|pos_online_payment_self_order]]
+- [[Odoo 19/Community Addons/pos_pine_labs/pos_pine_labs|pos_pine_labs]]
+- [[Odoo 19/Community Addons/pos_qfpay/pos_qfpay|pos_qfpay]]
+- [[Odoo 19/Community Addons/pos_razorpay/pos_razorpay|pos_razorpay]]
+- [[Odoo 19/Community Addons/pos_repair/pos_repair|pos_repair]]
+- [[Odoo 19/Community Addons/pos_restaurant/pos_restaurant|pos_restaurant]]
+- [[Odoo 19/Community Addons/pos_restaurant_adyen/pos_restaurant_adyen|pos_restaurant_adyen]]
+- [[Odoo 19/Community Addons/pos_restaurant_loyalty/pos_restaurant_loyalty|pos_restaurant_loyalty]]
+- [[Odoo 19/Community Addons/pos_restaurant_stripe/pos_restaurant_stripe|pos_restaurant_stripe]]
+- [[Odoo 19/Community Addons/pos_sale/pos_sale|pos_sale]]
+- [[Odoo 19/Community Addons/pos_sale_loyalty/pos_sale_loyalty|pos_sale_loyalty]]
+- [[Odoo 19/Community Addons/pos_sale_margin/pos_sale_margin|pos_sale_margin]]
+- [[Odoo 19/Community Addons/pos_self_order/pos_self_order|pos_self_order]]
+- [[Odoo 19/Community Addons/pos_self_order_adyen/pos_self_order_adyen|pos_self_order_adyen]]
+- [[Odoo 19/Community Addons/pos_self_order_pine_labs/pos_self_order_pine_labs|pos_self_order_pine_labs]]
+- [[Odoo 19/Community Addons/pos_self_order_qfpay/pos_self_order_qfpay|pos_self_order_qfpay]]
+- [[Odoo 19/Community Addons/pos_self_order_razorpay/pos_self_order_razorpay|pos_self_order_razorpay]]
+- [[Odoo 19/Community Addons/pos_self_order_sale/pos_self_order_sale|pos_self_order_sale]]
+- [[Odoo 19/Community Addons/pos_self_order_stripe/pos_self_order_stripe|pos_self_order_stripe]]
+- [[Odoo 19/Community Addons/pos_sms/pos_sms|pos_sms]]
+- [[Odoo 19/Community Addons/pos_stripe/pos_stripe|pos_stripe]]
+- [[Odoo 19/Community Addons/pos_viva_com/pos_viva_com|pos_viva_com]]
+<!-- GENERATED:CATEGORY -->

@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # PoS Pricer
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/pos_pricer
 - Dependencies: [[Odoo 19/Community Addons/product/product|product]], [[Odoo 19/Community Addons/point_of_sale/point_of_sale|point_of_sale]]
 
@@ -30,7 +30,6 @@ Display and change your products information on electronic Pricer tags
 - `ProductProduct`
 - `ProductTemplate`
 - `StockMove`
-
 
 ```plantuml
 @startuml
@@ -56,7 +55,8 @@ ProductProduct --> product_pricelist : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

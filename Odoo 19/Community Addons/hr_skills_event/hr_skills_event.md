@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Skills Events
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/hr_skills_event
 - Dependencies: [[Odoo 19/Community Addons/hr_skills/hr_skills|hr_skills]], [[Odoo 19/Community Addons/event/event|event]]
 
@@ -26,7 +26,6 @@ Link training events to resume of your employees
 
 - `HrResumeLine`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -39,7 +38,9 @@ HrResumeLine --> event_event : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

@@ -1,21 +1,23 @@
 ---
-tags: [v19, core, framework, base]
+tags: [odoo, v19, core, framework, base]
 status: backlog
 ---
-# base (Core Framework v19)
 
-## Points of interest
-- Review of changes in fundamental models.
-- New configuration parameters and defaults.
-- Hooks or decorators introduced in v19.
+# base
 
-## PlantUML pending
-- Comparative UML BaseModel v18 vs v19 (`[[Comparisons/Core ORM]]`).
+## Focus
+- Base module responsibilities that define the runtime foundation for Odoo 19
+- Core model behavior, registry startup assumptions, configuration defaults, and shared services
 
+## Source areas
+- `odoo19/odoo/models.py`
+- `odoo19/odoo/fields.py`
+- `odoo19/addons/base`
 
-
-
-
+## Notes to develop
+- Environment and registry lifecycle
+- Model inheritance and metadata conventions
+- Shared services exposed by `base`
 
 ## Navigation
 - **Parent:** [[Odoo 19/Core/Framework/Framework]]

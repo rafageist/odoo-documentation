@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Odoo Mexico Localization for Stock/Landing
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/l10n_mx_edi_landing
 - Dependencies: [[Odoo 19/Community Addons/stock_landed_costs/stock_landed_costs|stock_landed_costs]], [[Odoo 19/Community Addons/sale_management/sale_management|sale_management]], [[Odoo 19/Community Addons/sale_stock/sale_stock|sale_stock]], [[Odoo 19/Enterprise Addons/l10n_mx_edi_extended/l10n_mx_edi_extended|l10n_mx_edi_extended]]
 
@@ -33,7 +33,6 @@ Generate Electronic Invoice with custom numbers
 - `StockMoveLine`
 - `StockQuant`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -53,7 +52,8 @@ StockLot --> stock_landed_cost : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

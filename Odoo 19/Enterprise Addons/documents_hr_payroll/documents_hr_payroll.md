@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Documents - Payroll
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/documents_hr_payroll
 - Dependencies: [[Odoo 19/Enterprise Addons/documents_hr/documents_hr|documents_hr]], [[Odoo 19/Enterprise Addons/hr_payroll/hr_payroll|hr_payroll]]
 
@@ -29,7 +29,6 @@ Store employee payslips in the Document app
 - `hr.payslip`
 - `ResCompany`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -48,7 +47,9 @@ ResCompany --> documents_document : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Spain - Amazon Connector
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/l10n_es_sale_amazon
 - Dependencies: [[Odoo 19/Enterprise Addons/sale_amazon/sale_amazon|sale_amazon]], [[Odoo 19/Community Addons/l10n_es/l10n_es|l10n_es]]
 
@@ -26,7 +26,6 @@ Bridge module between the Spanish localization and Amazon
 
 - `AccountMove`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -37,7 +36,8 @@ class AccountMove
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

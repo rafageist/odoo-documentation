@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Website Partner
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/website_partner
 - Dependencies: [[Odoo 19/Community Addons/website/website|website]]
 
@@ -26,7 +26,6 @@ Partner module for website
 
 - `res.partner`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -37,7 +36,8 @@ class "res.partner" as res_partner
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

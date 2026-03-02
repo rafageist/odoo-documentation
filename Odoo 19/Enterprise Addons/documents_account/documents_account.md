@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Documents - Accounting
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/documents_account
 - Dependencies: [[Odoo 19/Enterprise Addons/documents/documents|documents]], [[Odoo 19/Enterprise Addons/account_reports/account_reports|account_reports]]
 
@@ -32,7 +32,6 @@ Invoices from Documents
 - `IrActionsServer`
 - `IrAttachment`
 - `ResCompany`
-
 
 ```plantuml
 @startuml
@@ -64,7 +63,8 @@ ResCompany --> documents_document : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

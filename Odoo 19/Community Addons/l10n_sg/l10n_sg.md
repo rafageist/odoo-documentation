@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Singapore - Accounting
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/l10n_sg
 - Dependencies: [[Odoo 19/Community Addons/account_qr_code_emv/account_qr_code_emv|account_qr_code_emv]], [[Odoo 19/Community Addons/account/account|account]]
+
 ## XML Artifacts (detected)
 
 - Views: 4
@@ -24,7 +25,6 @@ tags: [odoo, v19, community, module]
 - `res.company`
 - `ResPartner`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -38,7 +38,9 @@ class ResPartner
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

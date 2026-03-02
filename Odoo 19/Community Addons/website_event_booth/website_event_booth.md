@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Online Event Booths
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/website_event_booth
 - Dependencies: [[Odoo 19/Community Addons/website_event/website_event|website_event]], [[Odoo 19/Community Addons/event_booth/event_booth|event_booth]]
 
@@ -28,7 +28,6 @@ Events, display your booths on your website
 - `EventType`
 - `WebsiteEventMenu`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -43,7 +42,8 @@ EventEvent --|> website_event_menu : one2many
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

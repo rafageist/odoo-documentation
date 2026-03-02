@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Inter Company Module for Sale/Purchase Orders and Invoices
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/sale_purchase_inter_company_rules
 - Dependencies: [[Odoo 19/Community Addons/sale_management/sale_management|sale_management]], [[Odoo 19/Community Addons/purchase/purchase|purchase]], [[Odoo 19/Enterprise Addons/account_inter_company_rules/account_inter_company_rules|account_inter_company_rules]]
 
@@ -28,7 +28,6 @@ Intercompany SO/PO/INV rules
 - `ResCompany`
 - `SaleOrder`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -45,7 +44,8 @@ SaleOrder --> purchase_order : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

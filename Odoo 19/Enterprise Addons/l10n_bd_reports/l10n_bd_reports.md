@@ -6,9 +6,10 @@ tags: [odoo, v19, enterprise, module]
 # Bangladesh - Accounting Reports
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/l10n_bd_reports
 - Dependencies: [[Odoo 19/Enterprise Addons/account_reports/account_reports|account_reports]], [[Odoo 19/Community Addons/l10n_bd/l10n_bd|l10n_bd]]
+
 ## XML Artifacts (detected)
 
 - Views: 1
@@ -20,7 +21,6 @@ tags: [odoo, v19, enterprise, module]
 ## Detected Models
 
 - `ResCompany`
-
 
 ```plantuml
 @startuml
@@ -35,7 +35,8 @@ ResCompany --> account_account : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

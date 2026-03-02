@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Expense cards
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/hr_expense_stripe
 - Dependencies: [[Odoo 19/Community Addons/hr_expense/hr_expense|hr_expense]], [[Odoo 19/Community Addons/certificate/certificate|certificate]]
 
@@ -35,7 +35,6 @@ Create and manage company expense cards via Stripe
 - `ProductProduct`
 - `ResCompany`
 - `ResUsers`
-
 
 ```plantuml
 @startuml
@@ -88,7 +87,8 @@ ResUsers --|> hr_expense_stripe_card : one2many
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

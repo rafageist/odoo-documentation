@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Sale Purchase Project
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/sale_purchase_project
 - Dependencies: [[Odoo 19/Community Addons/sale_purchase/sale_purchase|sale_purchase]], [[Odoo 19/Community Addons/project_purchase/project_purchase|project_purchase]], [[Odoo 19/Community Addons/sale_project/sale_project|sale_project]]
 
@@ -26,7 +26,6 @@ Technical Bridge
 
 - `SaleOrderLine`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -37,7 +36,8 @@ class SaleOrderLine
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

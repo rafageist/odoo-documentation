@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Social Demo Module
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/social_demo
 - Dependencies: [[Odoo 19/Enterprise Addons/social/social|social]], [[Odoo 19/Enterprise Addons/social_facebook/social_facebook|social_facebook]], [[Odoo 19/Enterprise Addons/social_twitter/social_twitter|social_twitter]], [[Odoo 19/Enterprise Addons/social_linkedin/social_linkedin|social_linkedin]], [[Odoo 19/Enterprise Addons/social_youtube/social_youtube|social_youtube]], [[Odoo 19/Enterprise Addons/social_instagram/social_instagram|social_instagram]], [[Odoo 19/Community Addons/product/product|product]]
 
@@ -31,7 +31,6 @@ Get demo data for the social module
 - `SocialStreamPost`
 - `UtmCampaign`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -47,7 +46,8 @@ class UtmCampaign
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

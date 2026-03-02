@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Colombia - Accounting
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/l10n_co
 - Dependencies: [[Odoo 19/Community Addons/account_debit_note/account_debit_note|account_debit_note]], [[Odoo 19/Community Addons/l10n_latam_base/l10n_latam_base|l10n_latam_base]], [[Odoo 19/Community Addons/account/account|account]]
+
 ## XML Artifacts (detected)
 
 - Views: 0
@@ -21,7 +22,6 @@ tags: [odoo, v19, community, module]
 
 - `L10n_LatamIdentificationType`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -32,7 +32,9 @@ class L10n_LatamIdentificationType
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

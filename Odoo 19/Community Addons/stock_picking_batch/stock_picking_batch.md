@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Warehouse Management: Batch Transfer
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/stock_picking_batch
 - Dependencies: [[Odoo 19/Community Addons/stock/stock|stock]]
+
 ## XML Artifacts (detected)
 
 - Views: 22
@@ -25,7 +26,6 @@ tags: [odoo, v19, community, module]
 - `StockPicking`
 - `stock.picking.batch`
 - `StockWarehouse`
-
 
 ```plantuml
 @startuml
@@ -62,7 +62,8 @@ stock_picking_batch --> stock_warehouse : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

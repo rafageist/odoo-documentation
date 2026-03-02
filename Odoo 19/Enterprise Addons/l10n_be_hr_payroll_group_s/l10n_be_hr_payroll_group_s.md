@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Belgium - Payroll - Export to Group S
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/l10n_be_hr_payroll_group_s
 - Dependencies: [[Odoo 19/Enterprise Addons/l10n_be_hr_payroll/l10n_be_hr_payroll|l10n_be_hr_payroll]]
 
@@ -31,7 +31,6 @@ Export Work Entries to Group S
 - `HrWorkEntryType`
 - `ResCompany`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -49,7 +48,8 @@ l10n_be_hr_payroll_export_group_s_employee --> l10n_be_hr_payroll_export_group_s
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

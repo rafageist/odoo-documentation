@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Phone Numbers Validation
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/phone_validation
 - Dependencies: base (not documented), [[Odoo 19/Community Addons/mail/mail|mail]]
 
@@ -28,7 +28,6 @@ Validate and format phone numbers
 - `res.partner`
 - `ResUsers`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -41,7 +40,9 @@ class ResUsers
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

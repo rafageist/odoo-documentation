@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Newsletter Subscribe SMS Template
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/website_mass_mailing_sms
 - Dependencies: [[Odoo 19/Community Addons/website_mass_mailing/website_mass_mailing|website_mass_mailing]], [[Odoo 19/Community Addons/mass_mailing_sms/mass_mailing_sms|mass_mailing_sms]]
 
@@ -24,7 +24,8 @@ Attract visitors to subscribe to mailing lists
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

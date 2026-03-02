@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # OAuth2 Authentication
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/auth_oauth
 - Dependencies: base (not documented), [[Odoo 19/Community Addons/web/web|web]], [[Odoo 19/Community Addons/base_setup/base_setup|base_setup]], [[Odoo 19/Community Addons/auth_signup/auth_signup|auth_signup]]
+
 ## XML Artifacts (detected)
 
 - Views: 3
@@ -23,7 +24,6 @@ tags: [odoo, v19, community, module]
 - `IrConfig_Parameter`
 - `ResUsers`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -37,7 +37,9 @@ ResUsers --> auth_oauth_provider : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

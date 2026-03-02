@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Web
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/web
 - Dependencies: base (not documented)
+
 ## XML Artifacts (detected)
 
 - Views: 2
@@ -28,7 +29,6 @@ tags: [odoo, v19, community, module]
 - `ResUsers`
 - `ResUsersSettings`
 - `res.users.settings.embedded.action`
-
 
 ```plantuml
 @startuml
@@ -53,7 +53,8 @@ res_users_settings_embedded_action --> ir_actions_act_window : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

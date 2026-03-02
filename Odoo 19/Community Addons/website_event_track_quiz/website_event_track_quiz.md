@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Quizzes on Tracks
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/website_event_track_quiz
 - Dependencies: [[Odoo 19/Community Addons/website_profile/website_profile|website_profile]], [[Odoo 19/Community Addons/website_event_track/website_event_track|website_event_track]]
 
@@ -30,7 +30,6 @@ Quizzes on tracks
 - `event.quiz.answer`
 - `EventTrack`
 - `EventTrackVisitor`
-
 
 ```plantuml
 @startuml
@@ -58,7 +57,8 @@ EventTrack --|> event_quiz : one2many
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

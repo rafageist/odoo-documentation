@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Quiz on Live Event Tracks
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/website_event_track_live_quiz
 - Dependencies: [[Odoo 19/Community Addons/website_event_track_live/website_event_track_live|website_event_track_live]], [[Odoo 19/Community Addons/website_event_track_quiz/website_event_track_quiz|website_event_track_quiz]]
 
@@ -24,7 +24,8 @@ Bridge module to support quiz features during "live" tracks.
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

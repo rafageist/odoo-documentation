@@ -1,36 +1,23 @@
 ---
-tags: [v19, core, processes]
-status: seed
+tags: [odoo, v19, core, process, index]
+status: active
 ---
-# Core Processes v19
 
-## Core flows
-- Accounting -> `[[Odoo 19/Core/Processes/Accounting]]`
-- Inventory -> `[[Odoo 19/Core/Processes/Inventory]]`
-- Sales -> `[[Odoo 19/Core/Processes/Sales]]`
-- Purchasing -> `[[Odoo 19/Core/Processes/Purchasing]]`
-- Projects -> `[[Odoo 19/Core/Processes/Projects]]`
-- HR -> `[[Odoo 19/Core/Processes/HR]]`
-- Manufacturing -> `[[Odoo 19/Core/Processes/Manufacturing]]`
+# Business Processes
 
-```plantuml
-@startmindmap
-* Processes v19
-** Accounting
-** Inventory
-** Sales
-** Purchasing
-** Projects
-** HR
-** Manufacturing
-@endmindmap
-```
+## Topics
+- `[[Odoo 19/Core/Processes/Sales/Sales]]`
+- `[[Odoo 19/Core/Processes/Purchasing/Purchasing]]`
+- `[[Odoo 19/Core/Processes/Inventory/Inventory]]`
+- `[[Odoo 19/Core/Processes/Manufacturing/Manufacturing]]`
+- `[[Odoo 19/Core/Processes/Projects/Projects]]`
+- `[[Odoo 19/Core/Processes/HR/HR]]`
+- `[[Odoo 19/Core/Processes/Accounting/Accounting]]`
 
-## Key changes
-- New workflows and states across major applications.
-- OWL-based UI enhancements for kanban and list views.
-- Performance improvements for bulk validations.
-
+## Focus
+- End-to-end business flows that span multiple addons
+- Main actors, triggers, checkpoints, and reporting consequences
+- Where the process crosses core models, views, security, and automation
 
 ## Navigation
 - **Parent:** [[Odoo 19/Core/Core]]

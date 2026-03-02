@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Data Recycle
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/data_recycle
 - Dependencies: [[Odoo 19/Community Addons/mail/mail|mail]]
 
@@ -26,7 +26,6 @@ Find old records and archive/delete them
 
 - `data_recycle.model`
 - `data_recycle.record`
-
 
 ```plantuml
 @startuml
@@ -49,7 +48,9 @@ data_recycle_record --> res_company : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

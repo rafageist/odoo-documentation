@@ -1,3 +1,4 @@
+
 <!-- GENERATED:MODULE -->
 ---
 tags: [odoo, v19, enterprise, module]
@@ -6,9 +7,10 @@ tags: [odoo, v19, enterprise, module]
 # Belgium - Import Bank CODA Statements
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/l10n_be_coda
 - Dependencies: [[Odoo 19/Enterprise Addons/account_accountant/account_accountant|account_accountant]], [[Odoo 19/Community Addons/l10n_be/l10n_be|l10n_be]], [[Odoo 19/Enterprise Addons/account_bank_statement_import/account_bank_statement_import|account_bank_statement_import]], [[Odoo 19/Community Addons/base_iban/base_iban|base_iban]]
+
 ## XML Artifacts (detected)
 
 - Views: 1
@@ -21,7 +23,6 @@ tags: [odoo, v19, enterprise, module]
 
 - `AccountJournal`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -32,7 +33,7 @@ class AccountJournal
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->

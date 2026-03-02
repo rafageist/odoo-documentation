@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Canadian Checks Layout
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/l10n_ca_check_printing
 - Dependencies: [[Odoo 19/Community Addons/account_check_printing/account_check_printing|account_check_printing]], [[Odoo 19/Community Addons/l10n_ca/l10n_ca|l10n_ca]]
 
@@ -26,7 +26,6 @@ Print CA Checks
 
 - `ResCompany`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -37,7 +36,8 @@ class ResCompany
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

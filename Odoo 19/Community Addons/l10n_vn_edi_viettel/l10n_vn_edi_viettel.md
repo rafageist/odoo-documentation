@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Vietnam - E-invoicing
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/l10n_vn_edi_viettel
 - Dependencies: [[Odoo 19/Community Addons/l10n_vn/l10n_vn|l10n_vn]]
 
@@ -29,7 +29,6 @@ E-invoicing using SInvoice by Viettel
 - `ResPartner`
 - `l10n_vn_edi_viettel.sinvoice.template`
 - `l10n_vn_edi_viettel.sinvoice.symbol`
-
 
 ```plantuml
 @startuml
@@ -55,7 +54,9 @@ l10n_vn_edi_viettel_sinvoice_symbol --> l10n_vn_edi_viettel_sinvoice_template : 
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Import/Export Invoices From XML/PDF
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/account_edi
 - Dependencies: [[Odoo 19/Community Addons/account/account|account]]
+
 ## XML Artifacts (detected)
 
 - Views: 8
@@ -25,7 +26,6 @@ tags: [odoo, v19, community, module]
 - `AccountMove`
 - `IrActionsReport`
 - `IrAttachment`
-
 
 ```plantuml
 @startuml
@@ -50,7 +50,9 @@ AccountMove --|> account_edi_document : one2many
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Spreadsheet Accounting Formulas
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/spreadsheet_account
 - Dependencies: [[Odoo 19/Community Addons/spreadsheet/spreadsheet|spreadsheet]], [[Odoo 19/Community Addons/account/account|account]]
 
@@ -27,7 +27,6 @@ Spreadsheet Accounting formulas
 - `AccountAccount`
 - `ResCompany`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -39,7 +38,9 @@ class ResCompany
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

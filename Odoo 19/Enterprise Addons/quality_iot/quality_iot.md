@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Quality Steps with IoT
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/quality_iot
 - Dependencies: [[Odoo 19/Enterprise Addons/iot/iot|iot]], [[Odoo 19/Enterprise Addons/quality/quality|quality]]
 
@@ -28,7 +28,6 @@ Quality steps and IoT devices
 - `QualityPoint`
 - `QualityCheck`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -45,7 +44,9 @@ QualityPoint --> iot_device : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

@@ -1,28 +1,24 @@
 ---
-tags: [v19, core, processes, hr]
-status: seed
+tags: [odoo, v19, core, process, hr]
+status: backlog
 ---
-# HR Core v19
 
-## Modules
-- `[[Odoo 19/Community Addons/HR/hr.md]]`
-- `[[Odoo 19/Enterprise Addons/Customer Experience/hr_referrals.md]]`
-- `[[Comparisons/HR v18-v19]]`
+# HR Process
 
-## Changes
-- Improvements in onboarding and signatures.
-- New talent dashboards.
-- Integration with e-learning.
+## Focus
+- Map the employee lifecycle as represented by Odoo 19 HR, attendance, time off, recruitment, and skills modules
+- Identify shared master data and enterprise-only extensions
 
-## Diagrams
-- Multi-module onboarding sequence v19.
+## Primary modules
+- `[[Odoo 19/Community Addons/hr_attendance/hr_attendance]]`
+- `[[Odoo 19/Community Addons/hr_holidays/hr_holidays]]`
+- `[[Odoo 19/Community Addons/hr_recruitment/hr_recruitment]]`
+- `[[Odoo 19/Enterprise Addons/hr_payroll/hr_payroll]]`
 
-
-
-
-
+## Notes to develop
+- Employee profile and organization structure
+- Attendance and time off interplay
+- Recruitment to onboarding handoff
 
 ## Navigation
 - **Parent:** [[Odoo 19/Core/Processes/Processes]]
-## Children
-- (none)

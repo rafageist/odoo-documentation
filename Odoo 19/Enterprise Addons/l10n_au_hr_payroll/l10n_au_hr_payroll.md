@@ -6,9 +6,10 @@ tags: [odoo, v19, enterprise, module]
 # Australia - Payroll
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/l10n_au_hr_payroll
 - Dependencies: [[Odoo 19/Enterprise Addons/hr_payroll/hr_payroll|hr_payroll]], [[Odoo 19/Community Addons/hr_work_entry_holidays/hr_work_entry_holidays|hr_work_entry_holidays]], [[Odoo 19/Enterprise Addons/hr_payroll_holidays/hr_payroll_holidays|hr_payroll_holidays]], [[Odoo 19/Community Addons/base_address_extended/base_address_extended|base_address_extended]]
+
 ## XML Artifacts (detected)
 
 - Views: 17
@@ -33,7 +34,6 @@ tags: [odoo, v19, enterprise, module]
 - `l10n_au.super.account`
 - `l10n_au.super.fund`
 - `ResCompany`
-
 
 ```plantuml
 @startuml
@@ -82,7 +82,8 @@ l10n_au_super_fund --> res_partner : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

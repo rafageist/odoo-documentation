@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Iap Extract
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/iap_extract
 - Dependencies: base (not documented), [[Odoo 19/Community Addons/iap/iap|iap]], [[Odoo 19/Community Addons/mail/mail|mail]], [[Odoo 19/Community Addons/iap_mail/iap_mail|iap_mail]]
 
@@ -24,7 +24,8 @@ Common module for requesting data from the extract server
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Employees on Appointments
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/appointment_hr
 - Dependencies: [[Odoo 19/Enterprise Addons/appointment/appointment|appointment]], [[Odoo 19/Community Addons/hr/hr|hr]]
 
@@ -27,7 +27,6 @@ Manage Appointments with Employees
 - `AppointmentType`
 - `CalendarEvent`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -39,7 +38,8 @@ class CalendarEvent
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

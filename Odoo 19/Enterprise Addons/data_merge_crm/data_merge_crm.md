@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # CRM Deduplication
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/data_merge_crm
 - Dependencies: [[Odoo 19/Enterprise Addons/data_cleaning/data_cleaning|data_cleaning]], [[Odoo 19/Community Addons/crm/crm|crm]]
 
@@ -26,7 +26,6 @@ Find duplicate records and merge them
 
 - `CrmLead`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -37,7 +36,8 @@ class CrmLead
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

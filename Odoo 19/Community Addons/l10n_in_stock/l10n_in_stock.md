@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Indian - Stock Report(GST)
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/l10n_in_stock
 - Dependencies: [[Odoo 19/Community Addons/l10n_in/l10n_in|l10n_in]], [[Odoo 19/Community Addons/stock/stock|stock]]
+
 ## XML Artifacts (detected)
 
 - Views: 0
@@ -22,7 +23,6 @@ tags: [odoo, v19, community, module]
 - `StockMove`
 - `StockPicking`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -34,7 +34,9 @@ class StockPicking
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

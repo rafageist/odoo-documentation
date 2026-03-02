@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Remote Work
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/hr_homeworking
 - Dependencies: [[Odoo 19/Community Addons/hr/hr|hr]]
+
 ## XML Artifacts (detected)
 
 - Views: 5
@@ -25,7 +26,6 @@ tags: [odoo, v19, community, module]
 - `HrWorkLocation`
 - `ResPartner`
 - `ResUsers`
-
 
 ```plantuml
 @startuml
@@ -68,7 +68,9 @@ ResUsers --> hr_work_location : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

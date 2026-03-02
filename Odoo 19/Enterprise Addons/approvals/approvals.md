@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Approvals
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/approvals
 - Dependencies: [[Odoo 19/Community Addons/mail/mail|mail]], [[Odoo 19/Community Addons/hr/hr|hr]], [[Odoo 19/Community Addons/product/product|product]]
 
@@ -32,7 +32,6 @@ Create and validate approvals requests
 - `IrAttachment`
 - `MailActivity`
 - `MailActivityType`
-
 
 ```plantuml
 @startuml
@@ -81,7 +80,8 @@ MailActivity --> approval_approver : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

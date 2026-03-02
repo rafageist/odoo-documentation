@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # WhatsApp Tests
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/test_whatsapp
 - Dependencies: [[Odoo 19/Community Addons/contacts/contacts|contacts]], [[Odoo 19/Community Addons/mail/mail|mail]], [[Odoo 19/Community Addons/portal/portal|portal]], [[Odoo 19/Enterprise Addons/whatsapp/whatsapp|whatsapp]]
 
@@ -30,7 +30,6 @@ WhatsApp Tests
 - `whatsapp.test.responsible`
 - `whatsapp.test.selection`
 - `whatsapp.test.timezone`
-
 
 ```plantuml
 @startuml
@@ -62,7 +61,8 @@ whatsapp_test_responsible .. res_users : many2many
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

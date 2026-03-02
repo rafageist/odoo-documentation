@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Mass Mail Tests
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/test_mass_mailing
 - Dependencies: [[Odoo 19/Community Addons/mass_mailing/mass_mailing|mass_mailing]], [[Odoo 19/Community Addons/mass_mailing_sms/mass_mailing_sms|mass_mailing_sms]], [[Odoo 19/Community Addons/sms_twilio/sms_twilio|sms_twilio]], [[Odoo 19/Community Addons/test_mail/test_mail|test_mail]], [[Odoo 19/Community Addons/test_mail_sms/test_mail_sms|test_mail_sms]]
 
@@ -35,7 +35,6 @@ Mass Mail Tests: feature and performance tests for mass mailing
 - `mailing.test.partner.unstored`
 - `utm.test.source.mixin`
 - `utm.test.source.mixin.other`
-
 
 ```plantuml
 @startuml
@@ -69,7 +68,8 @@ mailing_test_partner_unstored --> res_partner : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

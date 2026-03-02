@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Argentina - Payment Withholdings
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/l10n_ar_withholding
 - Dependencies: [[Odoo 19/Community Addons/l10n_ar/l10n_ar|l10n_ar]], [[Odoo 19/Community Addons/l10n_latam_check/l10n_latam_check|l10n_latam_check]]
+
 ## XML Artifacts (detected)
 
 - Views: 7
@@ -27,7 +28,6 @@ tags: [odoo, v19, community, module]
 - `l10n_ar.partner.tax`
 - `ResCompany`
 - `ResPartner`
-
 
 ```plantuml
 @startuml
@@ -64,7 +64,9 @@ ResPartner --|> l10n_ar_partner_tax : one2many
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

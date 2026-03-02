@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # PoS IoT Worldline
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/pos_iot_worldline
 - Dependencies: [[Odoo 19/Enterprise Addons/pos_iot/pos_iot|pos_iot]]
 
@@ -26,7 +26,6 @@ Integrate your POS with an Worldline payment terminal through IoT
 
 - `PosPaymentMethod`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -37,7 +36,8 @@ class PosPaymentMethod
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

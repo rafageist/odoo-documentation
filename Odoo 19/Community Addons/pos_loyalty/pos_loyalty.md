@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Point of Sale - Coupons & Loyalty
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/pos_loyalty
 - Dependencies: [[Odoo 19/Community Addons/loyalty/loyalty|loyalty]], [[Odoo 19/Community Addons/point_of_sale/point_of_sale|point_of_sale]]
 
@@ -37,7 +37,6 @@ Use Coupons, Gift Cards and Loyalty programs in Point of Sale
 - `ProductProduct`
 - `ProductTemplate`
 - `ResPartner`
-
 
 ```plantuml
 @startuml
@@ -74,7 +73,9 @@ PosOrderLine --> loyalty_card : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

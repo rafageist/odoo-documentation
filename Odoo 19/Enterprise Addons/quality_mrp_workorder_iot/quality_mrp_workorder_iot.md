@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # MRP features for Quality Control with IoT
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/quality_mrp_workorder_iot
 - Dependencies: [[Odoo 19/Enterprise Addons/quality_mrp_workorder/quality_mrp_workorder|quality_mrp_workorder]], [[Odoo 19/Enterprise Addons/quality_control_iot/quality_control_iot|quality_control_iot]], [[Odoo 19/Enterprise Addons/mrp_workorder_iot/mrp_workorder_iot|mrp_workorder_iot]]
 
@@ -26,7 +26,6 @@ Quality Management with MRP and IoT
 
 - `IotTrigger`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -37,7 +36,8 @@ class IotTrigger
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

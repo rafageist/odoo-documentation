@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Poland - Accounting
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/l10n_pl
 - Dependencies: [[Odoo 19/Community Addons/base_iban/base_iban|base_iban]], [[Odoo 19/Community Addons/base_vat/base_vat|base_vat]], [[Odoo 19/Community Addons/account/account|account]], [[Odoo 19/Community Addons/account_edi_ubl_cii/account_edi_ubl_cii|account_edi_ubl_cii]]
+
 ## XML Artifacts (detected)
 
 - Views: 4
@@ -25,7 +26,6 @@ tags: [odoo, v19, community, module]
 - `ResCompany`
 - `ResPartner`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -41,7 +41,9 @@ ResCompany --> l10n_pl_l10n_pl_tax_office : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

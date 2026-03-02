@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Expenses
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/hr_expense
 - Dependencies: [[Odoo 19/Community Addons/account/account|account]], [[Odoo 19/Community Addons/web_tour/web_tour|web_tour]], [[Odoo 19/Community Addons/hr/hr|hr]]
 
@@ -38,7 +38,6 @@ Submit, validate and reinvoice employee expenses
 - `ProductProduct`
 - `ProductTemplate`
 - `ResCompany`
-
 
 ```plantuml
 @startuml
@@ -102,7 +101,9 @@ ResCompany .. account_payment_method_line : many2many
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

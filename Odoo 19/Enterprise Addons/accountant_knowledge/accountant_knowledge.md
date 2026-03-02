@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Audit Reports
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/accountant_knowledge
 - Dependencies: [[Odoo 19/Enterprise Addons/accountant/accountant|accountant]], [[Odoo 19/Enterprise Addons/knowledge/knowledge|knowledge]], [[Odoo 19/Enterprise Addons/sign/sign|sign]]
 
@@ -28,7 +28,6 @@ Create Audit Reports with Knowledge
 - `IrActionsReport`
 - `knowledge.article`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -49,7 +48,8 @@ knowledge_article --|> audit_report : one2many
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

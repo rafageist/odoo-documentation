@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Collect & Wishlist
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/website_sale_collect_wishlist
 - Dependencies: [[Odoo 19/Community Addons/website_sale_wishlist/website_sale_wishlist|website_sale_wishlist]], [[Odoo 19/Community Addons/website_sale_collect/website_sale_collect|website_sale_collect]]
 
@@ -24,7 +24,8 @@ Bridge module between Click & Collect and Wishlist
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

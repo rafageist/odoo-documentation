@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Dashboards
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/board
 - Dependencies: [[Odoo 19/Community Addons/spreadsheet_dashboard/spreadsheet_dashboard|spreadsheet_dashboard]]
 
@@ -24,7 +24,9 @@ Build your own dashboards
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

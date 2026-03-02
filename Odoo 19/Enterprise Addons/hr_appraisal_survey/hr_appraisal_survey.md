@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Appraisal - Survey
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/hr_appraisal_survey
 - Dependencies: [[Odoo 19/Enterprise Addons/hr_appraisal/hr_appraisal|hr_appraisal]], [[Odoo 19/Community Addons/survey/survey|survey]]
 
@@ -29,7 +29,6 @@ tags: [odoo, v19, enterprise, module]
 - `SurveySurvey`
 - `SurveyUser_Input`
 - `SurveyQuestionAnswer`
-
 
 ```plantuml
 @startuml
@@ -55,7 +54,8 @@ SurveyQuestionAnswer --> survey_survey : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

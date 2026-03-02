@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # POS Pine Labs
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/pos_pine_labs
 - Dependencies: [[Odoo 19/Community Addons/point_of_sale/point_of_sale|point_of_sale]]
 
@@ -27,7 +27,6 @@ Integrate your POS with Pine Labs payment terminals
 - `PosPayment`
 - `PosPaymentMethod`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -39,7 +38,9 @@ class PosPaymentMethod
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

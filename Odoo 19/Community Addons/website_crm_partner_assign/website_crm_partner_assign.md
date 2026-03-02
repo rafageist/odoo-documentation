@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Resellers
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/website_crm_partner_assign
 - Dependencies: [[Odoo 19/Community Addons/base_geolocalize/base_geolocalize|base_geolocalize]], [[Odoo 19/Community Addons/crm/crm|crm]], [[Odoo 19/Community Addons/account/account|account]], [[Odoo 19/Community Addons/partnership/partnership|partnership]], [[Odoo 19/Community Addons/website_partner/website_partner|website_partner]], [[Odoo 19/Community Addons/website_google_map/website_google_map|website_google_map]], [[Odoo 19/Community Addons/portal/portal|portal]]
 
@@ -30,7 +30,6 @@ Publish your resellers/partners and forward leads to them
 - `res.partner.grade`
 - `Website`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -51,7 +50,8 @@ ResPartner --|> res_partner : one2many
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

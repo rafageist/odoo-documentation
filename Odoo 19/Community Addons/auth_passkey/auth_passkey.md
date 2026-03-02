@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Passkeys
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/auth_passkey
 - Dependencies: [[Odoo 19/Community Addons/base_setup/base_setup|base_setup]], [[Odoo 19/Community Addons/web/web|web]]
 
@@ -27,7 +27,6 @@ Log in with a Passkey
 - `auth.passkey.key`
 - `ResUsers`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -42,7 +41,9 @@ ResUsers --|> auth_passkey_key : one2many
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

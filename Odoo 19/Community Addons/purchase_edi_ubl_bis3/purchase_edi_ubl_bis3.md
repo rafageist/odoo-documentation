@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Import/Export electronic orders with UBL
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/purchase_edi_ubl_bis3
 - Dependencies: [[Odoo 19/Community Addons/purchase/purchase|purchase]], [[Odoo 19/Community Addons/account_edi_ubl_cii/account_edi_ubl_cii|account_edi_ubl_cii]]
+
 ## XML Artifacts (detected)
 
 - Views: 0
@@ -21,7 +22,6 @@ tags: [odoo, v19, community, module]
 
 - `PurchaseOrder`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -32,7 +32,9 @@ class PurchaseOrder
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

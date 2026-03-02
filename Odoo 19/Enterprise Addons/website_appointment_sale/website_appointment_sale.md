@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Pay to Book with eCommerce
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/website_appointment_sale
 - Dependencies: [[Odoo 19/Enterprise Addons/website_appointment_account_payment/website_appointment_account_payment|website_appointment_account_payment]], [[Odoo 19/Community Addons/website_sale/website_sale|website_sale]]
 
@@ -30,7 +30,6 @@ eCommerce on appointments
 - `SaleOrder`
 - `SaleOrderLine`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -52,7 +51,8 @@ SaleOrderLine --> calendar_event : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

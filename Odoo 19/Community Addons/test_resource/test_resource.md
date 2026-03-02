@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Test - Resource
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/test_resource
 - Dependencies: [[Odoo 19/Community Addons/resource/resource|resource]]
+
 ## XML Artifacts (detected)
 
 - Views: 0
@@ -21,7 +22,6 @@ tags: [odoo, v19, community, module]
 
 - `resource.test`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -32,7 +32,8 @@ class "resource.test" as resource_test
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

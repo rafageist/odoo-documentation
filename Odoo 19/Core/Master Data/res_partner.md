@@ -1,21 +1,22 @@
 ---
-tags: [v19, core, master_data, res_partner]
+tags: [odoo, v19, core, masterdata, partner]
 status: backlog
 ---
-# res.partner v19
 
-## Changes vs v18
-- New fields for compliance or KYC.
-- Adjustments in synchronization with portals.
-- Extra APIs for marketing automation.
+# res.partner
 
-## Diagrams
-- Comparative UML with v18 (`[[Comparisons/Partners v18-v19]]`).
+## Focus
+- Shared partner model used by CRM, Sales, Accounting, Contacts, and Website flows in Odoo 19
+- Important identity, company, address, and commercial fields that drive behavior across modules
 
+## Source areas
+- `odoo19/addons/base/models/res_partner.py`
+- `odoo19/addons/contacts`
 
-
-
-
+## Notes to develop
+- Commercial partner logic
+- Address and company-dependent behavior
+- Downstream effects in sales, invoices, and portal access
 
 ## Navigation
 - **Parent:** [[Odoo 19/Core/Master Data/Master Data]]

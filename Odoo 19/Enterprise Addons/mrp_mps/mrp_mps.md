@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Master Production Schedule
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/mrp_mps
 - Dependencies: [[Odoo 19/Community Addons/base_import/base_import|base_import]], [[Odoo 19/Community Addons/mrp/mrp|mrp]], [[Odoo 19/Community Addons/purchase_stock/purchase_stock|purchase_stock]]
 
@@ -32,7 +32,6 @@ Master Production Schedule
 - `PurchaseOrder`
 - `ResCompany`
 - `StockRule`
-
 
 ```plantuml
 @startuml
@@ -67,7 +66,8 @@ mrp_product_forecast --> mrp_production_schedule : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

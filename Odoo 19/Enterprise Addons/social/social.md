@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Social Marketing
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/social
 - Dependencies: [[Odoo 19/Community Addons/web/web|web]], [[Odoo 19/Community Addons/mail/mail|mail]], [[Odoo 19/Community Addons/iap/iap|iap]], [[Odoo 19/Community Addons/link_tracker/link_tracker|link_tracker]]
 
@@ -36,7 +36,6 @@ Manage your social media and website visitors
 - `UtmCampaign`
 - `UtmMedium`
 - `UtmSource`
-
 
 ```plantuml
 @startuml
@@ -90,7 +89,8 @@ UtmCampaign --|> social_post : one2many
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

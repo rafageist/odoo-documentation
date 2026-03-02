@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Delivery - Stock
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/stock_delivery
 - Dependencies: [[Odoo 19/Community Addons/sale_stock/sale_stock|sale_stock]], [[Odoo 19/Community Addons/delivery/delivery|delivery]]
+
 ## XML Artifacts (detected)
 
 - Views: 16
@@ -29,7 +30,6 @@ tags: [odoo, v19, community, module]
 - `StockPackage`
 - `StockPackageType`
 - `StockPicking`
-
 
 ```plantuml
 @startuml
@@ -59,7 +59,9 @@ StockPicking --|> ir_attachment : one2many
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

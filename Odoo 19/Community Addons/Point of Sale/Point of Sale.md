@@ -1,11 +1,13 @@
-<!-- GENERATED:CATEGORY -->
 ---
 tags: [odoo, v19, community, index, category]
 ---
 
 # Point of Sale
 
-Modules: 34
+- Scope: Community Addons
+- Modules: 34
+
+## Modules
 
 - [[Odoo 19/Community Addons/pos_account_tax_python/pos_account_tax_python|pos_account_tax_python]]
 - [[Odoo 19/Community Addons/pos_adyen/pos_adyen|pos_adyen]]
@@ -41,4 +43,8 @@ Modules: 34
 - [[Odoo 19/Community Addons/pos_sms/pos_sms|pos_sms]]
 - [[Odoo 19/Community Addons/pos_stripe/pos_stripe|pos_stripe]]
 - [[Odoo 19/Community Addons/pos_viva_com/pos_viva_com|pos_viva_com]]
-<!-- GENERATED:CATEGORY -->
+
+## Navigation
+
+- [[../Community Addons|Back to scope]]
+- [[../../Odoo 19/Odoo 19|Back to version]]

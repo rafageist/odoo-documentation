@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Account Fiscal Report
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/account_fiscal_categories
 - Dependencies: [[Odoo 19/Enterprise Addons/account_reports/account_reports|account_reports]]
 
@@ -16,7 +16,7 @@ Account Fiscal Report
 
 ## XML Artifacts (detected)
 
-- Views: 5
+- Views: 6
 - Actions: 2
 - Menus: 2
 - Rules (ir.rule): 1
@@ -27,7 +27,6 @@ Account Fiscal Report
 - `AccountAccount`
 - `account.account.fiscal.rate`
 - `account.fiscal.category`
-
 
 ```plantuml
 @startuml
@@ -49,7 +48,8 @@ account_fiscal_category --|> account_account : one2many
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

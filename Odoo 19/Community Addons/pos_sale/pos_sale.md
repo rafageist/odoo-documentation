@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # POS - Sales
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/pos_sale
 - Dependencies: [[Odoo 19/Community Addons/point_of_sale/point_of_sale|point_of_sale]], [[Odoo 19/Community Addons/sale_management/sale_management|sale_management]]
 
@@ -35,7 +35,6 @@ Link module between Point of Sale and Sales
 - `sale.order`
 - `sale.order.line`
 - `StockPicking`
-
 
 ```plantuml
 @startuml
@@ -70,7 +69,9 @@ sale_order_line --|> pos_order_line : one2many
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

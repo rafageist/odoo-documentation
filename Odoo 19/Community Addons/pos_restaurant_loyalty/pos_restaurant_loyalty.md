@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # POS - Restaurant Loyality
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/pos_restaurant_loyalty
 - Dependencies: [[Odoo 19/Community Addons/pos_restaurant/pos_restaurant|pos_restaurant]], [[Odoo 19/Community Addons/pos_loyalty/pos_loyalty|pos_loyalty]]
 
@@ -24,7 +24,9 @@ Link module between pos_restaurant and pos_loyalty
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

@@ -6,9 +6,10 @@ tags: [odoo, v19, enterprise, module]
 # Avatax Brazil
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/l10n_br_avatax
 - Dependencies: [[Odoo 19/Community Addons/iap/iap|iap]], [[Odoo 19/Community Addons/l10n_br/l10n_br|l10n_br]], [[Odoo 19/Enterprise Addons/account_external_tax/account_external_tax|account_external_tax]]
+
 ## XML Artifacts (detected)
 
 - Views: 16
@@ -31,7 +32,6 @@ tags: [odoo, v19, enterprise, module]
 - `ProductTemplate`
 - `ResCompany`
 - `ResPartner`
-
 
 ```plantuml
 @startuml
@@ -65,7 +65,8 @@ ResCompany --> l10n_br_cnae_code : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

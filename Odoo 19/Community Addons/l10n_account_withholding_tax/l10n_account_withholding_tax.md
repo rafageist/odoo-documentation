@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Withholding Tax on Payment
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/l10n_account_withholding_tax
 - Dependencies: [[Odoo 19/Community Addons/account/account|account]]
+
 ## XML Artifacts (detected)
 
 - Views: 4
@@ -24,7 +25,6 @@ tags: [odoo, v19, community, module]
 - `AccountTax`
 - `ProductTemplate`
 - `ResCompany`
-
 
 ```plantuml
 @startuml
@@ -47,7 +47,9 @@ ResCompany --> account_account : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

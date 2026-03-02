@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Indian - Accounting
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/l10n_in
 - Dependencies: [[Odoo 19/Community Addons/account_tax_python/account_tax_python|account_tax_python]], [[Odoo 19/Community Addons/base_vat/base_vat|base_vat]], [[Odoo 19/Community Addons/account_debit_note/account_debit_note|account_debit_note]], [[Odoo 19/Community Addons/account/account|account]], [[Odoo 19/Community Addons/iap/iap|iap]]
+
 ## XML Artifacts (detected)
 
 - Views: 27
@@ -34,7 +35,6 @@ tags: [odoo, v19, community, module]
 - `ResCountryState`
 - `ResPartner`
 - `UomUom`
-
 
 ```plantuml
 @startuml
@@ -86,7 +86,9 @@ ResPartner --> l10n_in_pan_entity : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

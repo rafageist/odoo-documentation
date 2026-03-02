@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Equity
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/equity
 - Dependencies: [[Odoo 19/Community Addons/portal/portal|portal]]
 
@@ -30,7 +30,6 @@ Manage securities, transactions, and cap tables.
 - `equity.ubo`
 - `equity.valuation`
 - `res.partner`
-
 
 ```plantuml
 @startuml
@@ -62,6 +61,7 @@ equity_valuation --> res_currency : many2one
 equity_valuation --|> ir_attachment : one2many
 res_partner --|> equity_transaction : one2many
 res_partner --> res_currency : many2one
+res_partner --|> equity_valuation : one2many
 res_partner --|> equity_ubo : one2many
 res_partner --|> equity_ubo : one2many
 @enduml
@@ -69,7 +69,8 @@ res_partner --|> equity_ubo : one2many
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

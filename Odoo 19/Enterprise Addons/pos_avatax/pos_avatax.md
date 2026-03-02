@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # POS Avatax
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/pos_avatax
 - Dependencies: [[Odoo 19/Community Addons/point_of_sale/point_of_sale|point_of_sale]], [[Odoo 19/Enterprise Addons/account_avatax/account_avatax|account_avatax]]
 
@@ -26,7 +26,6 @@ Add Avatax support to POS
 
 - `pos.order`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -37,7 +36,8 @@ class "pos.order" as pos_order
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # eCommerce Rental with Planning
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/website_sale_renting_planning
 - Dependencies: [[Odoo 19/Enterprise Addons/website_sale_renting/website_sale_renting|website_sale_renting]], [[Odoo 19/Enterprise Addons/sale_renting_planning/sale_renting_planning|sale_renting_planning]]
 
@@ -26,7 +26,6 @@ Sell rental products on your eCommerce and plan your material resources
 
 - `ProductTemplate`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -37,7 +36,8 @@ class ProductTemplate
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

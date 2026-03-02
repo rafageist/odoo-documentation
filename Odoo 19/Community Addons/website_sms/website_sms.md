@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Send SMS to Visitor
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/website_sms
 - Dependencies: [[Odoo 19/Community Addons/website/website|website]], [[Odoo 19/Community Addons/sms/sms|sms]]
 
@@ -26,7 +26,6 @@ Allows to send sms to website visitor
 
 - `WebsiteVisitor`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -37,7 +36,8 @@ class WebsiteVisitor
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

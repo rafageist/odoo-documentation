@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Products Expiration Date
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/product_expiry
 - Dependencies: [[Odoo 19/Community Addons/stock/stock|stock]]
+
 ## XML Artifacts (detected)
 
 - Views: 14
@@ -28,7 +29,6 @@ tags: [odoo, v19, community, module]
 - `StockQuant`
 - `StockRule`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -46,7 +46,9 @@ class StockRule
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

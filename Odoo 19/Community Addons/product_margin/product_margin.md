@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Margins by Products
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/product_margin
 - Dependencies: [[Odoo 19/Community Addons/account/account|account]]
+
 ## XML Artifacts (detected)
 
 - Views: 4
@@ -21,7 +22,6 @@ tags: [odoo, v19, community, module]
 
 - `ProductProduct`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -32,7 +32,9 @@ class ProductProduct
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

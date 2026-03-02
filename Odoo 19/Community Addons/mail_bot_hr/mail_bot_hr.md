@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # OdooBot - HR
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/mail_bot_hr
 - Dependencies: [[Odoo 19/Community Addons/mail_bot/mail_bot|mail_bot]], [[Odoo 19/Community Addons/hr/hr|hr]]
 
@@ -24,7 +24,9 @@ Bridge module between hr and mailbot.
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # IoT for Event/Sale
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/event_sale_iot
 - Dependencies: [[Odoo 19/Enterprise Addons/iot/iot|iot]], [[Odoo 19/Community Addons/event_sale/event_sale|event_sale]]
 
@@ -24,7 +24,8 @@ Use IoT device integrations for events
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

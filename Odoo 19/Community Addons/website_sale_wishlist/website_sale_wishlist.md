@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Shopper's Wishlist
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/website_sale_wishlist
 - Dependencies: [[Odoo 19/Community Addons/website_sale/website_sale|website_sale]]
 
@@ -30,7 +30,6 @@ Allow shoppers to enlist products
 - `ProductProduct`
 - `ResUsers`
 - `Website`
-
 
 ```plantuml
 @startuml
@@ -58,7 +57,8 @@ ResPartner --|> product_wishlist : one2many
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

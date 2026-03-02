@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Spreadsheet Documents
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/spreadsheet_dashboard_documents
 - Dependencies: [[Odoo 19/Enterprise Addons/spreadsheet_dashboard_edition/spreadsheet_dashboard_edition|spreadsheet_dashboard_edition]], [[Odoo 19/Enterprise Addons/documents_spreadsheet/documents_spreadsheet|documents_spreadsheet]]
 
@@ -27,7 +27,6 @@ Spreadsheet Documents
 - `DocumentsDocument`
 - `SpreadsheetDashboard`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -39,7 +38,8 @@ class SpreadsheetDashboard
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

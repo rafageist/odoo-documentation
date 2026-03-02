@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Extended Addresses
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/base_address_extended
 - Dependencies: base (not documented), [[Odoo 19/Community Addons/contacts/contacts|contacts]]
 
@@ -28,7 +28,6 @@ Add extra fields on addresses
 - `ResCountry`
 - `ResPartner`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -46,7 +45,9 @@ ResPartner --> res_city : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

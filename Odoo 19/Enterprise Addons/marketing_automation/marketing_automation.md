@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Marketing Automation
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/marketing_automation
 - Dependencies: [[Odoo 19/Community Addons/mass_mailing/mass_mailing|mass_mailing]]
 
@@ -32,7 +32,6 @@ Build automated mailing campaigns
 - `marketing.trace`
 - `UtmCampaign`
 - `UtmSource`
-
 
 ```plantuml
 @startuml
@@ -83,7 +82,8 @@ marketing_trace --|> mailing_trace : one2many
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # IoT Box Image Build Tools
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/iot_box_image
 - Dependencies: none
 
@@ -24,7 +24,9 @@ Build tools for the IoT Box image
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

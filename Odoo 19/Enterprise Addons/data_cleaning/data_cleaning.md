@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Data Cleaning
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/data_cleaning
 - Dependencies: [[Odoo 19/Community Addons/data_recycle/data_recycle|data_recycle]], [[Odoo 19/Community Addons/phone_validation/phone_validation|phone_validation]], [[Odoo 19/Community Addons/mail/mail|mail]]
 
@@ -33,7 +33,6 @@ Easily format text data across multiple records. Find duplicate records and easi
 - `data_merge.rule`
 - `IrModel`
 - `ResPartner`
-
 
 ```plantuml
 @startuml
@@ -79,7 +78,8 @@ IrModel --> ir_actions_server : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

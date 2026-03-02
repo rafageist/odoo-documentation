@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Belgian POS Restaurant Localization
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/l10n_be_pos_restaurant
 - Dependencies: [[Odoo 19/Community Addons/pos_restaurant/pos_restaurant|pos_restaurant]], [[Odoo 19/Community Addons/l10n_be/l10n_be|l10n_be]]
+
 ## XML Artifacts (detected)
 
 - Views: 0
@@ -21,7 +22,6 @@ tags: [odoo, v19, community, module]
 
 - `PosConfig`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -32,7 +32,9 @@ class PosConfig
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

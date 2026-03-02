@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Recruitment
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/hr_recruitment
 - Dependencies: [[Odoo 19/Community Addons/hr/hr|hr]], [[Odoo 19/Community Addons/calendar/calendar|calendar]], [[Odoo 19/Community Addons/utm/utm|utm]], [[Odoo 19/Community Addons/attachment_indexation/attachment_indexation|attachment_indexation]], [[Odoo 19/Community Addons/web_tour/web_tour|web_tour]], [[Odoo 19/Community Addons/digest/digest|digest]]
 
@@ -45,7 +45,6 @@ Track your recruitment pipeline
 - `ResUsers`
 - `UtmCampaign`
 - `UtmSource`
-
 
 ```plantuml
 @startuml
@@ -129,7 +128,9 @@ ResPartner --|> hr_applicant : one2many
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

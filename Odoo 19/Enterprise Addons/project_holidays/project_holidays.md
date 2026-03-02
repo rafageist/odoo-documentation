@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Project Time Off
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/project_holidays
 - Dependencies: [[Odoo 19/Enterprise Addons/project_enterprise/project_enterprise|project_enterprise]], [[Odoo 19/Enterprise Addons/hr_holidays_gantt/hr_holidays_gantt|hr_holidays_gantt]]
 
@@ -26,7 +26,6 @@ Project and task integration with holidays
 
 - `ProjectTask`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -37,7 +36,8 @@ class ProjectTask
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

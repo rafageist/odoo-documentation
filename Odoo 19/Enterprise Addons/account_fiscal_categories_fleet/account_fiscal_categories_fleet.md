@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Fiscal Categories on Fleets
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/account_fiscal_categories_fleet
 - Dependencies: [[Odoo 19/Enterprise Addons/account_accountant_fleet/account_accountant_fleet|account_accountant_fleet]], [[Odoo 19/Enterprise Addons/account_fiscal_categories/account_fiscal_categories|account_fiscal_categories]]
 
@@ -29,7 +29,6 @@ Manage fiscal categories with fleets
 - `FleetVehicle`
 - `fleet.disallowed.expenses.rate`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -48,7 +47,8 @@ fleet_disallowed_expenses_rate --> res_company : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

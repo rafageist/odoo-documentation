@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # WMS Accounting Merge
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/data_merge_stock_account
 - Dependencies: [[Odoo 19/Enterprise Addons/data_cleaning/data_cleaning|data_cleaning]], [[Odoo 19/Community Addons/stock_account/stock_account|stock_account]]
 
@@ -26,7 +26,6 @@ Warn user in case of products merging
 
 - `Data_MergeModel`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -37,7 +36,8 @@ class Data_MergeModel
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

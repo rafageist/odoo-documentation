@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Lead Generation
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/crm_iap_mine
 - Dependencies: [[Odoo 19/Community Addons/iap_crm/iap_crm|iap_crm]], [[Odoo 19/Community Addons/iap_mail/iap_mail|iap_mail]]
 
@@ -30,7 +30,6 @@ Generate Leads/Opportunities based on country, industries, size, etc.
 - `crm.iap.lead.role`
 - `crm.iap.lead.seniority`
 - `CrmLead`
-
 
 ```plantuml
 @startuml
@@ -65,7 +64,9 @@ CrmLead --> crm_iap_lead_mining_request : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

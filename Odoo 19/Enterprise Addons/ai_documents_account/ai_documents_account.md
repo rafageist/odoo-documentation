@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # AI Documents Account
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/ai_documents_account
 - Dependencies: [[Odoo 19/Enterprise Addons/ai_documents/ai_documents|ai_documents]], [[Odoo 19/Enterprise Addons/documents_account/documents_account|documents_account]]
 
@@ -27,7 +27,6 @@ AI Documents Account
 - `DocumentsDocument`
 - `IrActionsServer`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -41,7 +40,9 @@ DocumentsDocument --> res_company : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

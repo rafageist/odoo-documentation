@@ -6,9 +6,10 @@ tags: [odoo, v19, enterprise, module]
 # Time Off in Payslips
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/hr_payroll_holidays
 - Dependencies: [[Odoo 19/Enterprise Addons/hr_holidays_gantt/hr_holidays_gantt|hr_holidays_gantt]], [[Odoo 19/Community Addons/hr_work_entry_holidays/hr_work_entry_holidays|hr_work_entry_holidays]], [[Odoo 19/Enterprise Addons/hr_payroll/hr_payroll|hr_payroll]]
+
 ## XML Artifacts (detected)
 
 - Views: 4
@@ -26,7 +27,6 @@ tags: [odoo, v19, enterprise, module]
 - `MailActivity`
 - `MailActivityType`
 - `ResCompany`
-
 
 ```plantuml
 @startuml
@@ -48,7 +48,8 @@ ResCompany --> res_users : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

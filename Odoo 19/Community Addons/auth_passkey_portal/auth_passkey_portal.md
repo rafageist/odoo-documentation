@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Passkeys Portal
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/auth_passkey_portal
 - Dependencies: [[Odoo 19/Community Addons/auth_passkey/auth_passkey|auth_passkey]], [[Odoo 19/Community Addons/portal/portal|portal]]
 
@@ -24,7 +24,9 @@ Passkeys for portal users
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

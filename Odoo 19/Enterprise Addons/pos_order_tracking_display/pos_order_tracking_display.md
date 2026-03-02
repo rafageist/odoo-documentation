@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # PoS Order Tracking Customer Display
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/pos_order_tracking_display
 - Dependencies: [[Odoo 19/Enterprise Addons/pos_enterprise/pos_enterprise|pos_enterprise]], [[Odoo 19/Community Addons/pos_self_order/pos_self_order|pos_self_order]]
 
@@ -27,7 +27,6 @@ Display customer's order status
 - `PosPrepDisplay`
 - `PosPreparationState`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -39,7 +38,8 @@ class PosPreparationState
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

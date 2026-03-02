@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Discuss
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/mail
 - Dependencies: base (not documented), [[Odoo 19/Community Addons/base_setup/base_setup|base_setup]], [[Odoo 19/Community Addons/bus/bus|bus]], [[Odoo 19/Community Addons/web_tour/web_tour|web_tour]], [[Odoo 19/Community Addons/html_editor/html_editor|html_editor]]
 
@@ -76,7 +76,6 @@ Chat, mail gateway and private channels
 - `MailMessage`
 - `ResGroups`
 - `ResPartner`
-
 
 ```plantuml
 @startuml
@@ -281,7 +280,9 @@ ResPartner --|> discuss_channel_rtc_session : one2many
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

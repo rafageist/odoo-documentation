@@ -1,28 +1,24 @@
 ---
-tags: [v19, core, processes, manufactura]
-status: seed
+tags: [odoo, v19, core, process, manufacturing]
+status: backlog
 ---
-# Manufacturing Core v19
 
-## Modules
-- `[[Odoo 19/Community Addons/Supply Chain/mrp.md]]`
-- `[[Odoo 19/Enterprise Addons/Operations/mrp_workorder.md]]`
-- `[[Comparisons/Manufacturing v18-v19]]`
+# Manufacturing Process
 
-## Changes
-- Workcenter UI improvements.
-- Automations with IoT.
-- Integration with quality and maintenance.
+## Focus
+- Document how BOMs, work orders, routings, and quality checkpoints interact in Odoo 19
+- Distinguish community manufacturing flow from enterprise workorder and PLM extensions
 
-## Diagrams
-- Production order sequence v19.
+## Primary modules
+- `[[Odoo 19/Community Addons/mrp/mrp]]`
+- `[[Odoo 19/Community Addons/mrp_subcontracting/mrp_subcontracting]]`
+- `[[Odoo 19/Enterprise Addons/mrp_workorder/mrp_workorder]]`
+- `[[Odoo 19/Enterprise Addons/mrp_plm/mrp_plm]]`
 
-
-
-
-
+## Notes to develop
+- Manufacturing order lifecycle
+- Work center execution
+- Quality and maintenance touchpoints
 
 ## Navigation
 - **Parent:** [[Odoo 19/Core/Processes/Processes]]
-## Children
-- (none)

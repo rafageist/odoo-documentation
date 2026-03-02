@@ -1,3 +1,4 @@
+
 <!-- GENERATED:MODULE -->
 ---
 tags: [odoo, v19, enterprise, module]
@@ -6,7 +7,7 @@ tags: [odoo, v19, enterprise, module]
 # Inter Company Module for Sale/Purchase Orders (with Inventory link)
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/sale_purchase_stock_inter_company_rules
 - Dependencies: [[Odoo 19/Community Addons/sale_stock/sale_stock|sale_stock]], [[Odoo 19/Community Addons/purchase_stock/purchase_stock|purchase_stock]], [[Odoo 19/Enterprise Addons/sale_purchase_inter_company_rules/sale_purchase_inter_company_rules|sale_purchase_inter_company_rules]]
 
@@ -30,7 +31,6 @@ Intercompany SO/PO
 - `SaleOrderLine`
 - `StockPicking`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -49,7 +49,7 @@ ResCompany --> stock_picking_type : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->

@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Romania - E-invoicing
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/l10n_ro_edi
 - Dependencies: [[Odoo 19/Community Addons/account_edi_ubl_cii/account_edi_ubl_cii|account_edi_ubl_cii]], [[Odoo 19/Community Addons/l10n_ro/l10n_ro|l10n_ro]]
 
@@ -29,7 +29,6 @@ E-Invoice implementation for Romania
 - `ResCompany`
 - `ResPartner`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -48,7 +47,9 @@ ResCompany --> account_journal : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

@@ -6,9 +6,10 @@ tags: [odoo, v19, enterprise, module]
 # Automation Rules based on Employee Contracts
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/base_automation_hr
 - Dependencies: [[Odoo 19/Community Addons/base_automation/base_automation|base_automation]], [[Odoo 19/Community Addons/hr/hr|hr]]
+
 ## XML Artifacts (detected)
 
 - Views: 1
@@ -20,7 +21,6 @@ tags: [odoo, v19, enterprise, module]
 ## Detected Models
 
 - `BaseAutomation`
-
 
 ```plantuml
 @startuml
@@ -34,7 +34,8 @@ BaseAutomation --> ir_model_fields : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

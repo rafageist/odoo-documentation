@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Partnership / Membership
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/partnership
 - Dependencies: [[Odoo 19/Community Addons/crm/crm|crm]], [[Odoo 19/Community Addons/sale/sale|sale]]
+
 ## XML Artifacts (detected)
 
 - Views: 9
@@ -25,7 +26,6 @@ tags: [odoo, v19, community, module]
 - `ResPartner`
 - `res.partner.grade`
 - `SaleOrder`
-
 
 ```plantuml
 @startuml
@@ -49,7 +49,9 @@ SaleOrder --> res_partner_grade : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

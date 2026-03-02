@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Payment Provider: Mercado Pago
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/payment_mercado_pago
 - Dependencies: [[Odoo 19/Community Addons/payment/payment|payment]]
 
@@ -28,7 +28,6 @@ A payment provider covering several countries in Latin America.
 - `PaymentToken`
 - `PaymentTransaction`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -43,7 +42,9 @@ PaymentProvider --> res_country : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

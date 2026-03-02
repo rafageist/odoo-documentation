@@ -6,9 +6,10 @@ tags: [odoo, v19, enterprise, module]
 # Website Appointments
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/website_appointment
 - Dependencies: [[Odoo 19/Enterprise Addons/appointment/appointment|appointment]], [[Odoo 19/Enterprise Addons/website_enterprise/website_enterprise|website_enterprise]], [[Odoo 19/Community Addons/website_partner/website_partner|website_partner]], [[Odoo 19/Community Addons/html_builder/html_builder|html_builder]]
+
 ## XML Artifacts (detected)
 
 - Views: 10
@@ -25,7 +26,6 @@ tags: [odoo, v19, enterprise, module]
 - `Website`
 - `WebsiteSnippetFilter`
 - `WebsiteVisitor`
-
 
 ```plantuml
 @startuml
@@ -46,7 +46,8 @@ WebsiteVisitor --|> calendar_event : one2many
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

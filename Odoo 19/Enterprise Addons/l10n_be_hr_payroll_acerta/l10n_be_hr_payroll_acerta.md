@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Belgium - Payroll - Export to Acerta
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/l10n_be_hr_payroll_acerta
 - Dependencies: [[Odoo 19/Enterprise Addons/l10n_be_hr_payroll/l10n_be_hr_payroll|l10n_be_hr_payroll]]
 
@@ -30,7 +30,6 @@ Export Work Entries to Acerta
 - `HrWorkEntryType`
 - `ResCompany`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -47,7 +46,8 @@ l10n_be_hr_payroll_export_acerta_employee --> l10n_be_hr_payroll_export_acerta :
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

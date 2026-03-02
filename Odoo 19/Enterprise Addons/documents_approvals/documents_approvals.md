@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Documents - Approvals
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/documents_approvals
 - Dependencies: [[Odoo 19/Enterprise Addons/documents/documents|documents]], [[Odoo 19/Enterprise Addons/approvals/approvals|approvals]]
 
@@ -27,7 +27,6 @@ Approval from documents
 - `approval.request`
 - `ResCompany`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -43,7 +42,8 @@ ResCompany .. documents_tag : many2many
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

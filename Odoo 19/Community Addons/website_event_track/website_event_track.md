@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Advanced Events
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/website_event_track
 - Dependencies: [[Odoo 19/Community Addons/website_event/website_event|website_event]]
 
@@ -36,7 +36,6 @@ Sponsors, Tracks, Agenda, Event News
 - `WebsiteEventMenu`
 - `WebsiteMenu`
 - `WebsiteVisitor`
-
 
 ```plantuml
 @startuml
@@ -89,7 +88,8 @@ WebsiteVisitor .. event_track : many2many
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

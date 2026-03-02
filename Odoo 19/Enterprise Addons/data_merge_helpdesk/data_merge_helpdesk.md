@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Helpdesk Merge action
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/data_merge_helpdesk
 - Dependencies: [[Odoo 19/Enterprise Addons/data_cleaning/data_cleaning|data_cleaning]], [[Odoo 19/Enterprise Addons/helpdesk/helpdesk|helpdesk]]
 
@@ -26,7 +26,6 @@ Add Merge action in contextual menu of helpdesk ticket model.
 
 - `HelpdeskTicket`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -37,7 +36,8 @@ class HelpdeskTicket
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

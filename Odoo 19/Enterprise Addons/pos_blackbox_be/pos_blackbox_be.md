@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Belgian Registered Cash Register
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/pos_blackbox_be
 - Dependencies: [[Odoo 19/Enterprise Addons/pos_iot/pos_iot|pos_iot]], [[Odoo 19/Community Addons/l10n_be/l10n_be|l10n_be]], [[Odoo 19/Enterprise Addons/web_enterprise/web_enterprise|web_enterprise]], [[Odoo 19/Community Addons/pos_hr/pos_hr|pos_hr]], [[Odoo 19/Community Addons/pos_restaurant/pos_restaurant|pos_restaurant]], [[Odoo 19/Community Addons/pos_discount/pos_discount|pos_discount]], [[Odoo 19/Community Addons/pos_self_order/pos_self_order|pos_self_order]], [[Odoo 19/Enterprise Addons/pos_urban_piper/pos_urban_piper|pos_urban_piper]]
 
@@ -36,7 +36,6 @@ Implements the registered cash system, adhering to guidelines by FPS Finance.
 - `PosSession`
 - `ProductTemplate`
 - `ResUsers`
-
 
 ```plantuml
 @startuml
@@ -69,7 +68,8 @@ ResUsers .. pos_session : many2many
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

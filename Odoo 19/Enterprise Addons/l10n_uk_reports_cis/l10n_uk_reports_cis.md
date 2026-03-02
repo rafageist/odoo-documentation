@@ -6,9 +6,10 @@ tags: [odoo, v19, enterprise, module]
 # UK - Construction Industry Scheme
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/l10n_uk_reports_cis
 - Dependencies: [[Odoo 19/Enterprise Addons/l10n_uk_reports/l10n_uk_reports|l10n_uk_reports]], [[Odoo 19/Enterprise Addons/l10n_uk_hmrc/l10n_uk_hmrc|l10n_uk_hmrc]]
+
 ## XML Artifacts (detected)
 
 - Views: 3
@@ -24,7 +25,6 @@ tags: [odoo, v19, enterprise, module]
 - `HmrcTransaction`
 - `ResPartner`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -38,7 +38,8 @@ class ResPartner
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

@@ -1,11 +1,13 @@
-<!-- GENERATED:CATEGORY -->
 ---
 tags: [odoo, v19, enterprise, index, category]
 ---
 
 # Finance
 
-Modules: 50
+- Scope: Enterprise Addons
+- Modules: 50
+
+## Modules
 
 - [[Odoo 19/Enterprise Addons/account_3way_match/account_3way_match|account_3way_match]]
 - [[Odoo 19/Enterprise Addons/account_accountant/account_accountant|account_accountant]]
@@ -57,4 +59,8 @@ Modules: 50
 - [[Odoo 19/Enterprise Addons/equity/equity|equity]]
 - [[Odoo 19/Enterprise Addons/product_unspsc/product_unspsc|product_unspsc]]
 - [[Odoo 19/Enterprise Addons/snailmail_account_followup/snailmail_account_followup|snailmail_account_followup]]
-<!-- GENERATED:CATEGORY -->
+
+## Navigation
+
+- [[../Enterprise Addons|Back to scope]]
+- [[../../Odoo 19/Odoo 19|Back to version]]

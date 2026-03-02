@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Documents
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/documents
 - Dependencies: base (not documented), [[Odoo 19/Community Addons/mail/mail|mail]], [[Odoo 19/Community Addons/portal/portal|portal]], [[Odoo 19/Enterprise Addons/web_enterprise/web_enterprise|web_enterprise]], [[Odoo 19/Community Addons/attachment_indexation/attachment_indexation|attachment_indexation]], [[Odoo 19/Community Addons/digest/digest|digest]]
 
@@ -37,7 +37,6 @@ Collect, organize and share documents.
 - `Company`
 - `ResPartner`
 - `ResUsers`
-
 
 ```plantuml
 @startuml
@@ -97,7 +96,8 @@ ResPartner --|> documents_document : one2many
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

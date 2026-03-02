@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Timesheet when on Time Off
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/project_timesheet_holidays
 - Dependencies: [[Odoo 19/Community Addons/hr_timesheet/hr_timesheet|hr_timesheet]], [[Odoo 19/Community Addons/hr_holidays/hr_holidays|hr_holidays]]
 
@@ -30,7 +30,6 @@ Schedule timesheet when on time off
 - `ProjectTask`
 - `ResourceCalendarLeaves`
 - `ResCompany`
-
 
 ```plantuml
 @startuml
@@ -56,7 +55,9 @@ ResCompany --> project_task : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

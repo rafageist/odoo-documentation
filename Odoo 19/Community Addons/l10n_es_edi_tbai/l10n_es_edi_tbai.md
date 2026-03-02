@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Spain - TicketBAI
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/l10n_es_edi_tbai
 - Dependencies: [[Odoo 19/Community Addons/l10n_es/l10n_es|l10n_es]], [[Odoo 19/Community Addons/certificate/certificate|certificate]]
+
 ## XML Artifacts (detected)
 
 - Views: 6
@@ -24,7 +25,6 @@ tags: [odoo, v19, community, module]
 - `CertificateCertificate`
 - `l10n_es_edi_tbai.document`
 - `ResCompany`
-
 
 ```plantuml
 @startuml
@@ -53,7 +53,9 @@ ResCompany --> ir_sequence : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

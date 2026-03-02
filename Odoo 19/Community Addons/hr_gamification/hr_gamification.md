@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # HR Gamification
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/hr_gamification
 - Dependencies: [[Odoo 19/Community Addons/gamification/gamification|gamification]], [[Odoo 19/Community Addons/hr/hr|hr]]
+
 ## XML Artifacts (detected)
 
 - Views: 6
@@ -24,7 +25,6 @@ tags: [odoo, v19, community, module]
 - `HrEmployee`
 - `HrEmployeePublic`
 - `ResUsers`
-
 
 ```plantuml
 @startuml
@@ -50,7 +50,9 @@ ResUsers --|> gamification_badge_user : one2many
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

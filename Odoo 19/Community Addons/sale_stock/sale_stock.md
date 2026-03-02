@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Sales and Warehouse Management
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/sale_stock
 - Dependencies: [[Odoo 19/Community Addons/sale/sale|sale]], [[Odoo 19/Community Addons/stock_account/stock_account|stock_account]]
 
@@ -38,7 +38,6 @@ Quotation, Sales Orders, Delivery & Invoicing Control
 - `StockPicking`
 - `StockLot`
 - `StockReference`
-
 
 ```plantuml
 @startuml
@@ -83,7 +82,8 @@ StockReference .. sale_order : many2many
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

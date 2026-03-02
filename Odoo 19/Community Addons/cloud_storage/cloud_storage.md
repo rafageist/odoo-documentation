@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Cloud Storage
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/cloud_storage
 - Dependencies: [[Odoo 19/Community Addons/base_setup/base_setup|base_setup]], [[Odoo 19/Community Addons/mail/mail|mail]]
 
@@ -26,7 +26,6 @@ Store chatter attachments in the cloud
 
 - `IrAttachment`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -37,7 +36,9 @@ class IrAttachment
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

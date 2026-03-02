@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Kenya ETIMS EDI Stock Integration
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/l10n_ke_edi_oscu_stock
 - Dependencies: [[Odoo 19/Enterprise Addons/l10n_ke_edi_oscu/l10n_ke_edi_oscu|l10n_ke_edi_oscu]], [[Odoo 19/Community Addons/sale_management/sale_management|sale_management]], [[Odoo 19/Community Addons/purchase_stock/purchase_stock|purchase_stock]], [[Odoo 19/Community Addons/sale_stock/sale_stock|sale_stock]]
 
@@ -37,7 +37,6 @@ tags: [odoo, v19, enterprise, module]
 - `StockMove`
 - `StockPicking`
 - `StockQuant`
-
 
 ```plantuml
 @startuml
@@ -76,7 +75,8 @@ PurchaseOrder --|> l10n_ke_edi_customs_import : one2many
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

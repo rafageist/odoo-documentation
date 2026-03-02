@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # 2FA Invite mail
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/auth_totp_mail
 - Dependencies: [[Odoo 19/Community Addons/auth_totp/auth_totp|auth_totp]], [[Odoo 19/Community Addons/mail/mail|mail]]
+
 ## XML Artifacts (detected)
 
 - Views: 3
@@ -22,7 +23,6 @@ tags: [odoo, v19, community, module]
 - `Auth_TotpDevice`
 - `ResUsers`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -34,7 +34,9 @@ class ResUsers
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

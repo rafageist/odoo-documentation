@@ -6,9 +6,10 @@ tags: [odoo, v19, enterprise, module]
 # Avatax for Inventory
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/account_avatax_stock
 - Dependencies: [[Odoo 19/Enterprise Addons/account_avatax_sale/account_avatax_sale|account_avatax_sale]], [[Odoo 19/Community Addons/stock/stock|stock]]
+
 ## XML Artifacts (detected)
 
 - Views: 0
@@ -22,7 +23,6 @@ tags: [odoo, v19, enterprise, module]
 - `AccountMove`
 - `SaleOrder`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -34,7 +34,8 @@ class SaleOrder
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

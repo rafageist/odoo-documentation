@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # l10n_be_pos_sale
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/l10n_be_pos_sale
 - Dependencies: [[Odoo 19/Community Addons/pos_sale/pos_sale|pos_sale]], [[Odoo 19/Community Addons/l10n_be/l10n_be|l10n_be]]
 
@@ -26,7 +26,6 @@ Link module between pos_sale and l10n_be
 
 - `PosConfig`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -37,7 +36,9 @@ class PosConfig
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Web Gantt Tests
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/test_web_gantt
 - Dependencies: [[Odoo 19/Enterprise Addons/web_gantt/web_gantt|web_gantt]]
 
@@ -26,7 +26,6 @@ Web Gantt Tests: Tests specific to the gantt view
 
 - `test.web.gantt.pill`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -40,7 +39,8 @@ test_web_gantt_pill --> test_web_gantt_pill : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

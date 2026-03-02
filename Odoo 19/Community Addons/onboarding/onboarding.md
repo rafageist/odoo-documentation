@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Onboarding Toolbox
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/onboarding
 - Dependencies: [[Odoo 19/Community Addons/web/web|web]]
+
 ## XML Artifacts (detected)
 
 - Views: 4
@@ -23,7 +24,6 @@ tags: [odoo, v19, community, module]
 - `onboarding.onboarding.step`
 - `onboarding.progress`
 - `onboarding.progress.step`
-
 
 ```plantuml
 @startuml
@@ -51,7 +51,9 @@ onboarding_progress_step --> res_company : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

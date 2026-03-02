@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Sale Project Stock Account
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/sale_project_stock_account
 - Dependencies: [[Odoo 19/Community Addons/sale_project/sale_project|sale_project]], [[Odoo 19/Community Addons/project_stock_account/project_stock_account|project_stock_account]]
 
@@ -26,7 +26,6 @@ Technical Bridge
 
 - `StockMove`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -37,7 +36,8 @@ class StockMove
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

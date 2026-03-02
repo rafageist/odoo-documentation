@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # AI Livechat
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/ai_livechat
 - Dependencies: [[Odoo 19/Enterprise Addons/ai_app/ai_app|ai_app]], [[Odoo 19/Community Addons/im_livechat/im_livechat|im_livechat]]
 
@@ -33,7 +33,6 @@ tags: [odoo, v19, enterprise, module]
 - `ImLivechatChannelMemberHistory`
 - `Im_LivechatChannelRule`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -57,7 +56,8 @@ Im_LivechatChannelRule --> ai_agent : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

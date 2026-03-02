@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Website Payment
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/website_payment
 - Dependencies: [[Odoo 19/Community Addons/website/website|website]], [[Odoo 19/Community Addons/account_payment/account_payment|account_payment]], [[Odoo 19/Community Addons/portal/portal|portal]]
 
@@ -28,7 +28,6 @@ Payment integration with website
 - `PaymentProvider`
 - `PaymentTransaction`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -43,7 +42,8 @@ PaymentProvider --> website : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

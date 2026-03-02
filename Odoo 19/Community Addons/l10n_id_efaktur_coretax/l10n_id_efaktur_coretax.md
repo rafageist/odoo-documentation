@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Indonesia E-faktur (Coretax)
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/l10n_id_efaktur_coretax
 - Dependencies: [[Odoo 19/Community Addons/l10n_id/l10n_id|l10n_id]]
+
 ## XML Artifacts (detected)
 
 - Views: 10
@@ -27,7 +28,6 @@ tags: [odoo, v19, community, module]
 - `Partner`
 - `l10n_id_efaktur_coretax.uom.code`
 - `Uom`
-
 
 ```plantuml
 @startuml
@@ -55,7 +55,9 @@ Uom --> l10n_id_efaktur_coretax_uom_code : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # CRM in marketing automation
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/marketing_automation_crm
 - Dependencies: [[Odoo 19/Enterprise Addons/marketing_automation/marketing_automation|marketing_automation]], [[Odoo 19/Community Addons/crm/crm|crm]]
 
@@ -26,7 +26,6 @@ CRM in marketing automation
 
 - `MarketingCampaign`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -37,7 +36,8 @@ class MarketingCampaign
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

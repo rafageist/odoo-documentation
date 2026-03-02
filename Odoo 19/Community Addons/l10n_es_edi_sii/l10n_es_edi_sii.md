@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Spain - SII EDI Suministro de Libros
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/l10n_es_edi_sii
 - Dependencies: [[Odoo 19/Community Addons/certificate/certificate|certificate]], [[Odoo 19/Community Addons/l10n_es/l10n_es|l10n_es]], [[Odoo 19/Community Addons/account_edi/account_edi|account_edi]]
+
 ## XML Artifacts (detected)
 
 - Views: 4
@@ -23,7 +24,6 @@ tags: [odoo, v19, community, module]
 - `AccountMove`
 - `CertificateCertificate`
 - `ResCompany`
-
 
 ```plantuml
 @startuml
@@ -41,7 +41,9 @@ ResCompany --|> certificate_certificate : one2many
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

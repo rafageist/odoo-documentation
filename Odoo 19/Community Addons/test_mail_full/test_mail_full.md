@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Mail Tests (Full)
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/test_mail_full
 - Dependencies: [[Odoo 19/Community Addons/mail/mail|mail]], [[Odoo 19/Community Addons/mail_bot/mail_bot|mail_bot]], [[Odoo 19/Community Addons/portal/portal|portal]], [[Odoo 19/Community Addons/rating/rating|rating]], [[Odoo 19/Community Addons/mass_mailing/mass_mailing|mass_mailing]], [[Odoo 19/Community Addons/mass_mailing_sms/mass_mailing_sms|mass_mailing_sms]], [[Odoo 19/Community Addons/phone_validation/phone_validation|phone_validation]], [[Odoo 19/Community Addons/sms/sms|sms]], [[Odoo 19/Community Addons/test_mail/test_mail|test_mail]], [[Odoo 19/Community Addons/test_mail_sms/test_mail_sms|test_mail_sms]], [[Odoo 19/Community Addons/test_mass_mailing/test_mass_mailing|test_mass_mailing]]
 
@@ -30,7 +30,6 @@ Mail Tests: performances and tests specific to mail with all sub-modules
 - `mail.test.rating`
 - `mail.test.rating.thread`
 - `mail.test.rating.thread.read`
-
 
 ```plantuml
 @startuml
@@ -57,7 +56,8 @@ mail_test_rating_thread --> res_users : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

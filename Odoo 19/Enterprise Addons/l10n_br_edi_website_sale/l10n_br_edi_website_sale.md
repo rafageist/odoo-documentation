@@ -6,9 +6,10 @@ tags: [odoo, v19, enterprise, module]
 # Brazilian Accounting EDI for eCommerce
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/l10n_br_edi_website_sale
 - Dependencies: [[Odoo 19/Enterprise Addons/l10n_br_edi_sale/l10n_br_edi_sale|l10n_br_edi_sale]], [[Odoo 19/Enterprise Addons/website_sale_external_tax/website_sale_external_tax|website_sale_external_tax]]
+
 ## XML Artifacts (detected)
 
 - Views: 1
@@ -21,7 +22,6 @@ tags: [odoo, v19, enterprise, module]
 
 - `DeliveryCarrier`
 - `SaleOrder`
-
 
 ```plantuml
 @startuml
@@ -36,7 +36,8 @@ DeliveryCarrier --> res_partner : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

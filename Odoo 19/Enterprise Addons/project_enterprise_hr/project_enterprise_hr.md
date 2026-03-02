@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Project Enterprise HR
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/project_enterprise_hr
 - Dependencies: [[Odoo 19/Enterprise Addons/project_enterprise/project_enterprise|project_enterprise]], [[Odoo 19/Community Addons/hr/hr|hr]]
 
@@ -27,7 +27,6 @@ Bridge module for project_enterprise and hr
 - `ProjectTask`
 - `ResUsers`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -39,7 +38,8 @@ class ResUsers
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

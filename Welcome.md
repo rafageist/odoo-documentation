@@ -1,36 +1,29 @@
 ---
-tags: [overview, odoodocs]
+tags: [overview, odoo, v19]
 status: active
 ---
 
-# Odoo Knowledge Vault
-#overview #odoo
+# Odoo 19 Knowledge Vault
 
-Welcome to the permanent knowledge repository for Odoo 18 and Odoo 19. The goal is to build a deeply interlinked, code-driven knowledge graph that captures both technical implementation details and business intent.
+This vault documents Odoo 19 only. The goal is to keep a single, code-backed source of truth for core internals, community addons, and enterprise addons.
 
-## How it is organized
-- `[[Odoo 18]]` and its children cover the Community + Enterprise edition for v18.
-- `[[Odoo 19]]` mirrors the structure for v19.
-- `[[Comparisons]]` records cross-version gaps.
-- `[[Roadmap/Migrations 18 to 19]]` drives migration planning.
-- `[[Licensing/Enterprise Guide]]` documents compliance concerns.
-- `[[Templates/Module Documentation Template]]` and peers keep notes consistent.
+## Start here
+- `[[Index]]` for the repository map
+- `[[Odoo 19/Odoo 19]]` for the product-level entry point
+- `[[Documentation Playbook]]` for the writing workflow
+- `[[CONFIG]]` for local source paths and generator usage
+- `[[Templates/Module Documentation Template]]` for canonical module notes
 
-## Guiding principles
-1. **Trace everything to code** - provide file+line references and behavioural evidence.
-2. **Model relationships visually** - UML/PlantUML/Mermaid diagrams are the default.
-3. **Document interplay** - always explain how models, services, and views influence each other.
-4. **Link relentlessly** - prefer `[[wikilinks]]` over plain text; every concept should have an addressable note.
-5. **Capture business impact** - describe who cares, why it matters, and which KPIs move.
+## Working principles
+- Every important claim should point back to Python, XML, CSV, tests, or manifests.
+- Category pages organize modules; module notes hold the real documentation.
+- Generated material is welcome, but hand-written interpretation should explain why the code matters.
+- `odoo-skills` is a reference source for examples, patterns, and vocabulary, not a replacement for reading the actual module code.
 
-## Suggested next steps
-1. For each folder, ensure the local `Index` note lists its children and links back to the parent.
-2. Expand module notes using the templates, dissecting every model/method/view.
-3. Record diagrams that explain non-trivial flows (sequence, class, component).
+## Supporting spaces
+- `[[Licensing/Enterprise Guide]]`
+- `[[TAGS]]`
+- `[[Changelog]]`
 
-> **Tip:** maintain the running `[[Changelog]]` so documentation decisions remain auditable.
-
-## Navigation
-- **Parent:** [[README]]
 ## Navigation
 - **Parent:** [[README]]

@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Electronic invoicing for Colombia with Carvajal
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/l10n_co_edi
 - Dependencies: [[Odoo 19/Community Addons/account_edi/account_edi|account_edi]], [[Odoo 19/Community Addons/l10n_co/l10n_co|l10n_co]], [[Odoo 19/Enterprise Addons/product_unspsc/product_unspsc|product_unspsc]], [[Odoo 19/Community Addons/base_address_extended/base_address_extended|base_address_extended]]
 
@@ -39,7 +39,6 @@ Colombian Localization for EDI documents
 - `l10n_co_edi.tax.type`
 - `l10n_co_edi.type_code`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -66,7 +65,8 @@ ResPartner .. l10n_co_edi_type_code : many2many
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

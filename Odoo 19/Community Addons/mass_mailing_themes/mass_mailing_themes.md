@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Mass Mailing Themes
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/mass_mailing_themes
 - Dependencies: [[Odoo 19/Community Addons/mass_mailing/mass_mailing|mass_mailing]]
 
@@ -24,7 +24,9 @@ Design gorgeous mails
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

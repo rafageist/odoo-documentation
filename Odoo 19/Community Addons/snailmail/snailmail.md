@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Snail Mail
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/snailmail
 - Dependencies: [[Odoo 19/Community Addons/iap_mail/iap_mail|iap_mail]], [[Odoo 19/Community Addons/mail/mail|mail]]
+
 ## XML Artifacts (detected)
 
 - Views: 2
@@ -25,7 +26,6 @@ tags: [odoo, v19, community, module]
 - `ResCompany`
 - `ResPartner`
 - `snailmail.letter`
-
 
 ```plantuml
 @startuml
@@ -62,7 +62,8 @@ snailmail_letter --> res_country : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

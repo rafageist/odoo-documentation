@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Tours
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/web_tour
 - Dependencies: [[Odoo 19/Community Addons/web/web|web]]
+
 ## XML Artifacts (detected)
 
 - Views: 3
@@ -22,7 +23,6 @@ tags: [odoo, v19, community, module]
 - `ResUsers`
 - `web_tour.tour`
 - `web_tour.tour.step`
-
 
 ```plantuml
 @startuml
@@ -40,7 +40,8 @@ web_tour_tour_step --> web_tour_tour : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

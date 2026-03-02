@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Field Service Repair
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/industry_fsm_repair
 - Dependencies: [[Odoo 19/Enterprise Addons/industry_fsm_stock/industry_fsm_stock|industry_fsm_stock]], [[Odoo 19/Community Addons/repair/repair|repair]]
 
@@ -26,7 +26,6 @@ Allow user without repair right to access fsm stock.picking
 
 - `StockMove`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -37,7 +36,8 @@ class StockMove
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

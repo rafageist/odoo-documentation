@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Recruitment Integration website
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/hr_recruitment_integration_website
 - Dependencies: [[Odoo 19/Enterprise Addons/hr_recruitment_integration_base/hr_recruitment_integration_base|hr_recruitment_integration_base]], [[Odoo 19/Community Addons/website_hr_recruitment/website_hr_recruitment|website_hr_recruitment]]
 
@@ -27,7 +27,6 @@ Manage Job board integrations with website
 - `HrJob`
 - `HrJobPost`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -39,7 +38,8 @@ class HrJobPost
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Hr Expense Predict product
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/hr_expense_predict_product
 - Dependencies: [[Odoo 19/Community Addons/hr_expense/hr_expense|hr_expense]]
 
@@ -26,7 +26,6 @@ predict the product from the expense description based on old ones
 
 - `HrExpense`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -37,7 +36,8 @@ class HrExpense
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

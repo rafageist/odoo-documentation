@@ -6,9 +6,10 @@ tags: [odoo, v19, enterprise, module]
 # Payroll Accounting
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/hr_payroll_account
 - Dependencies: [[Odoo 19/Enterprise Addons/hr_payroll/hr_payroll|hr_payroll]], [[Odoo 19/Enterprise Addons/accountant/accountant|accountant]], [[Odoo 19/Community Addons/base_iban/base_iban|base_iban]]
+
 ## XML Artifacts (detected)
 
 - Views: 12
@@ -31,7 +32,6 @@ tags: [odoo, v19, enterprise, module]
 - `hr.version`
 - `ResCompany`
 - `ResPartnerBank`
-
 
 ```plantuml
 @startuml
@@ -72,7 +72,8 @@ hr_salary_rule .. account_account_tag : many2many
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

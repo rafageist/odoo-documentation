@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Employee Presence Control
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/hr_presence
 - Dependencies: [[Odoo 19/Community Addons/hr/hr|hr]], [[Odoo 19/Community Addons/hr_holidays/hr_holidays|hr_holidays]], [[Odoo 19/Community Addons/sms/sms|sms]]
+
 ## XML Artifacts (detected)
 
 - Views: 1
@@ -24,7 +25,6 @@ tags: [odoo, v19, community, module]
 - `ResCompany`
 - `ResUsersLog`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -38,7 +38,9 @@ class ResUsersLog
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

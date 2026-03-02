@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # UPS: Bill My Account
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/website_sale_ups
 - Dependencies: [[Odoo 19/Enterprise Addons/delivery_ups/delivery_ups|delivery_ups]], [[Odoo 19/Community Addons/website_sale/website_sale|website_sale]]
 
@@ -26,7 +26,6 @@ Bill to your UPS account number
 
 - `SaleOrder`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -37,7 +36,8 @@ class SaleOrder
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

@@ -1,3 +1,4 @@
+
 <!-- GENERATED:MODULE -->
 ---
 tags: [odoo, v19, enterprise, module]
@@ -6,7 +7,7 @@ tags: [odoo, v19, enterprise, module]
 # Work Entries - Attendance
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/hr_work_entry_attendance
 - Dependencies: [[Odoo 19/Community Addons/hr_work_entry/hr_work_entry|hr_work_entry]], [[Odoo 19/Community Addons/hr_attendance/hr_attendance|hr_attendance]]
 
@@ -32,7 +33,6 @@ Create work entries from the employee's attendances
 - `HrVersion`
 - `HrWorkEntry`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -55,7 +55,7 @@ HrWorkEntry --> hr_attendance_overtime_line : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->

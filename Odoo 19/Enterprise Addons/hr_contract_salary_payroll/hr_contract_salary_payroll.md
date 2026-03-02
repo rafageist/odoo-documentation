@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Salary Configurator - Payroll
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/hr_contract_salary_payroll
 - Dependencies: [[Odoo 19/Enterprise Addons/hr_contract_salary/hr_contract_salary|hr_contract_salary]], [[Odoo 19/Enterprise Addons/hr_payroll/hr_payroll|hr_payroll]]
 
@@ -33,7 +33,6 @@ Adds a Gross to Net Salary Simulaton
 - `HrPayslipWorkedDays`
 - `HrVersion`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -59,7 +58,8 @@ HrContractSalaryOffer --> hr_employee : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

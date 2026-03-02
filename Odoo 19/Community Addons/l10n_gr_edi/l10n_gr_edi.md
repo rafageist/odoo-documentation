@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Greece - myDATA
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/l10n_gr_edi
 - Dependencies: [[Odoo 19/Community Addons/l10n_gr/l10n_gr|l10n_gr]]
 
@@ -33,7 +33,6 @@ Connect to myDATA API implementation for Greece
 - `ProductTemplate`
 - `ResCompany`
 - `ResPartner`
-
 
 ```plantuml
 @startuml
@@ -66,7 +65,9 @@ ProductTemplate --|> l10n_gr_edi_preferred_classification : one2many
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

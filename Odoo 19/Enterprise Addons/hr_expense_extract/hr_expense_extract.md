@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Hr Expense Extract
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/hr_expense_extract
 - Dependencies: [[Odoo 19/Community Addons/hr_expense/hr_expense|hr_expense]], [[Odoo 19/Enterprise Addons/iap_extract/iap_extract|iap_extract]], [[Odoo 19/Community Addons/iap_mail/iap_mail|iap_mail]], [[Odoo 19/Enterprise Addons/mail_enterprise/mail_enterprise|mail_enterprise]], [[Odoo 19/Enterprise Addons/hr_expense_predict_product/hr_expense_predict_product|hr_expense_predict_product]]
 
@@ -27,7 +27,6 @@ Extract data from expense scans to fill them automatically
 - `hr.expense`
 - `ResCompany`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -39,7 +38,8 @@ class ResCompany
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # AI Website Livechat Integration
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/ai_website_livechat
 - Dependencies: [[Odoo 19/Enterprise Addons/ai_website/ai_website|ai_website]], [[Odoo 19/Enterprise Addons/ai_livechat/ai_livechat|ai_livechat]], [[Odoo 19/Community Addons/html_builder/html_builder|html_builder]]
 
@@ -26,7 +26,6 @@ AI website livechat components for web builder
 
 - `AIAgent`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -37,7 +36,8 @@ class AIAgent
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

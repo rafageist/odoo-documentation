@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Restaurant
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/pos_restaurant
 - Dependencies: [[Odoo 19/Community Addons/point_of_sale/point_of_sale|point_of_sale]]
 
@@ -33,7 +33,6 @@ Restaurant extensions for the Point of Sale
 - `restaurant.table`
 - `PosSession`
 - `restaurant.order.course`
-
 
 ```plantuml
 @startuml
@@ -66,7 +65,9 @@ restaurant_order_course --|> pos_order_line : one2many
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

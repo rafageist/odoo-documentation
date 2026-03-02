@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Worksheet for Maintenance
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/maintenance_worksheet
 - Dependencies: [[Odoo 19/Community Addons/maintenance/maintenance|maintenance]], [[Odoo 19/Enterprise Addons/worksheet/worksheet|worksheet]]
 
@@ -27,7 +27,6 @@ Create custom worksheets for Maintenance
 - `MaintenanceRequest`
 - `WorksheetTemplate`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -41,7 +40,8 @@ MaintenanceRequest --> worksheet_template : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

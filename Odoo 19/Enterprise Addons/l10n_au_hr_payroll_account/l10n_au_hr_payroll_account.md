@@ -6,9 +6,10 @@ tags: [odoo, v19, enterprise, module]
 # Australia - Payroll with Accounting
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/l10n_au_hr_payroll_account
 - Dependencies: [[Odoo 19/Enterprise Addons/l10n_au_hr_payroll/l10n_au_hr_payroll|l10n_au_hr_payroll]], [[Odoo 19/Enterprise Addons/hr_payroll_account/hr_payroll_account|hr_payroll_account]], [[Odoo 19/Community Addons/l10n_au/l10n_au|l10n_au]], [[Odoo 19/Enterprise Addons/l10n_au_aba/l10n_au_aba|l10n_au_aba]]
+
 ## XML Artifacts (detected)
 
 - Views: 27
@@ -38,7 +39,6 @@ tags: [odoo, v19, enterprise, module]
 - `l10n_au.super.stream.line`
 - `ResCompany`
 - `ResPartner`
-
 
 ```plantuml
 @startuml
@@ -118,7 +118,8 @@ ResCompany --> hr_employee : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Argentina - Accounting
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/l10n_ar
 - Dependencies: [[Odoo 19/Community Addons/l10n_latam_invoice_document/l10n_latam_invoice_document|l10n_latam_invoice_document]], [[Odoo 19/Community Addons/l10n_latam_base/l10n_latam_base|l10n_latam_base]], [[Odoo 19/Community Addons/account/account|account]]
+
 ## XML Artifacts (detected)
 
 - Views: 20
@@ -33,7 +34,6 @@ tags: [odoo, v19, community, module]
 - `ResPartner`
 - `ResPartnerBank`
 - `UomUom`
-
 
 ```plantuml
 @startuml
@@ -64,7 +64,9 @@ ResPartner --> l10n_ar_afip_responsibility_type : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

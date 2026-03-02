@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Click & Collect
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/website_sale_collect
 - Dependencies: [[Odoo 19/Community Addons/base_geolocalize/base_geolocalize|base_geolocalize]], [[Odoo 19/Community Addons/payment_custom/payment_custom|payment_custom]], [[Odoo 19/Community Addons/website_sale_stock/website_sale_stock|website_sale_stock]]
+
 ## XML Artifacts (detected)
 
 - Views: 4
@@ -26,7 +27,6 @@ tags: [odoo, v19, community, module]
 - `SaleOrder`
 - `StockWarehouse`
 - `Website`
-
 
 ```plantuml
 @startuml
@@ -50,7 +50,8 @@ Website --> delivery_carrier : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

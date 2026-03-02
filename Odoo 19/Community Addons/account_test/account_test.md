@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Accounting Consistency Tests
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/account_test
 - Dependencies: [[Odoo 19/Community Addons/account/account|account]]
+
 ## XML Artifacts (detected)
 
 - Views: 3
@@ -21,7 +22,6 @@ tags: [odoo, v19, community, module]
 
 - `accounting.assert.test`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -32,7 +32,9 @@ class "accounting.assert.test" as accounting_assert_test
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

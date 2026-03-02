@@ -6,9 +6,10 @@ tags: [odoo, v19, enterprise, module]
 # Belgium - Disallowed Expenses Fleet
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/l10n_be_fiscal_categories_fleet
 - Dependencies: [[Odoo 19/Enterprise Addons/account_fiscal_categories_fleet/account_fiscal_categories_fleet|account_fiscal_categories_fleet]], [[Odoo 19/Enterprise Addons/l10n_be_fiscal_categories/l10n_be_fiscal_categories|l10n_be_fiscal_categories]], [[Odoo 19/Enterprise Addons/l10n_be_hr_payroll_fleet/l10n_be_hr_payroll_fleet|l10n_be_hr_payroll_fleet]]
+
 ## XML Artifacts (detected)
 
 - Views: 2
@@ -22,7 +23,6 @@ tags: [odoo, v19, enterprise, module]
 - `FleetVehicle`
 - `fleet.disallowed.expenses.rate`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -34,7 +34,8 @@ class "fleet.disallowed.expenses.rate" as fleet_disallowed_expenses_rate
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Google Address Autocomplete
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/google_address_autocomplete
 - Dependencies: [[Odoo 19/Community Addons/web/web|web]]
 
@@ -24,7 +24,9 @@ Assist with automatic completion & suggestions when filling address
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

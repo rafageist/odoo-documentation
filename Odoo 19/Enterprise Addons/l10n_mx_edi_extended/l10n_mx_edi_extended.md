@@ -6,9 +6,10 @@ tags: [odoo, v19, enterprise, module]
 # EDI for Mexico (Advanced Features)
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/l10n_mx_edi_extended
 - Dependencies: [[Odoo 19/Enterprise Addons/l10n_mx_edi/l10n_mx_edi|l10n_mx_edi]], [[Odoo 19/Community Addons/base_address_extended/base_address_extended|base_address_extended]]
+
 ## XML Artifacts (detected)
 
 - Views: 9
@@ -30,7 +31,6 @@ tags: [odoo, v19, enterprise, module]
 - `ResCompany`
 - `ResPartner`
 - `UomUom`
-
 
 ```plantuml
 @startuml
@@ -64,7 +64,8 @@ ResPartner --> l10n_mx_edi_res_locality : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

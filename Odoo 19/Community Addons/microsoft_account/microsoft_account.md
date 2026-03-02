@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Microsoft Users
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/microsoft_account
 - Dependencies: [[Odoo 19/Community Addons/base_setup/base_setup|base_setup]]
+
 ## XML Artifacts (detected)
 
 - Views: 0
@@ -21,7 +22,6 @@ tags: [odoo, v19, community, module]
 
 - `ResUsers`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -32,7 +32,9 @@ class ResUsers
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Purchase Stock
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/purchase_stock
 - Dependencies: [[Odoo 19/Community Addons/stock_account/stock_account|stock_account]], [[Odoo 19/Community Addons/purchase/purchase|purchase]]
 
@@ -40,7 +40,6 @@ Purchase Orders, Receipts, Vendor Bills for Stock
 - `StockMove`
 - `StockReference`
 - `StockRule`
-
 
 ```plantuml
 @startuml
@@ -97,7 +96,9 @@ StockReference .. purchase_order : many2many
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

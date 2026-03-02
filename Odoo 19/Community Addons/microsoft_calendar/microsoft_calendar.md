@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Outlook Calendar
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/microsoft_calendar
 - Dependencies: [[Odoo 19/Community Addons/microsoft_account/microsoft_account|microsoft_account]], [[Odoo 19/Community Addons/calendar/calendar|calendar]]
+
 ## XML Artifacts (detected)
 
 - Views: 4
@@ -25,7 +26,6 @@ tags: [odoo, v19, community, module]
 - `ResUsers`
 - `ResUsersSettings`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -40,7 +40,9 @@ class ResUsersSettings
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

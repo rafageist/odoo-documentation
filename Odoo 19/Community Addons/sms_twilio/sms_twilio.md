@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Twilio SMS
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/sms_twilio
 - Dependencies: [[Odoo 19/Community Addons/sms/sms|sms]]
 
@@ -30,7 +30,6 @@ Send SMS messages using Twilio
 - `SmsTracker`
 - `sms.twilio.number`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -51,7 +50,8 @@ sms_twilio_number --> res_country : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

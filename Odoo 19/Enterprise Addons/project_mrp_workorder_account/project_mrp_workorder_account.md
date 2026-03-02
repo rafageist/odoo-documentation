@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # MRP Workorder Project Account
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/project_mrp_workorder_account
 - Dependencies: [[Odoo 19/Enterprise Addons/mrp_workorder_hr_account/mrp_workorder_hr_account|mrp_workorder_hr_account]], [[Odoo 19/Community Addons/project_mrp_account/project_mrp_account|project_mrp_account]]
 
@@ -28,7 +28,6 @@ Technical Bridge
 - `MrpWorkcenterProductivity`
 - `MrpWorkorder`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -41,7 +40,8 @@ class MrpWorkorder
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

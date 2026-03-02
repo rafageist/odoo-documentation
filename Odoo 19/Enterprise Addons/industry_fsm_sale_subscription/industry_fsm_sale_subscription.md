@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Field Service - Sale Subscription
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/industry_fsm_sale_subscription
 - Dependencies: [[Odoo 19/Enterprise Addons/industry_fsm_sale/industry_fsm_sale|industry_fsm_sale]], [[Odoo 19/Enterprise Addons/project_sale_subscription/project_sale_subscription|project_sale_subscription]]
 
@@ -26,7 +26,6 @@ Technical Bridge
 
 - `ProjectTask`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -37,7 +36,8 @@ class ProjectTask
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

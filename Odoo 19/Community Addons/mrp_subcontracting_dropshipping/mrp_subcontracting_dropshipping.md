@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Dropship and Subcontracting Management
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/mrp_subcontracting_dropshipping
 - Dependencies: [[Odoo 19/Community Addons/mrp_subcontracting/mrp_subcontracting|mrp_subcontracting]], [[Odoo 19/Community Addons/stock_dropshipping/stock_dropshipping|stock_dropshipping]]
+
 ## XML Artifacts (detected)
 
 - Views: 1
@@ -26,7 +27,6 @@ tags: [odoo, v19, community, module]
 - `StockPicking`
 - `StockRule`
 - `StockWarehouse`
-
 
 ```plantuml
 @startuml
@@ -48,7 +48,9 @@ StockWarehouse --> stock_rule : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

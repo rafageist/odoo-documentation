@@ -1,3 +1,4 @@
+
 <!-- GENERATED:MODULE -->
 ---
 tags: [odoo, v19, enterprise, module]
@@ -6,7 +7,7 @@ tags: [odoo, v19, enterprise, module]
 # Website Helpdesk
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/website_helpdesk
 - Dependencies: [[Odoo 19/Enterprise Addons/helpdesk/helpdesk|helpdesk]], [[Odoo 19/Community Addons/website/website|website]]
 
@@ -28,7 +29,7 @@ Bridge module for helpdesk modules using the website.
 - `HelpdeskTicket`
 - `Website`
 - `WebsiteMenu`
-
+- `WebsitePage`
 
 ```plantuml
 @startuml
@@ -38,6 +39,7 @@ class "helpdesk.team" as helpdesk_team
 class HelpdeskTicket
 class Website
 class WebsiteMenu
+class WebsitePage
 class website
 helpdesk_team --> website : many2one
 class "website.menu" as website_menu
@@ -49,7 +51,7 @@ helpdesk_team --> ir_ui_view : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->

@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Online Bank Statement Synchronization
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/account_online_synchronization
 - Dependencies: [[Odoo 19/Enterprise Addons/account_accountant/account_accountant|account_accountant]]
 
@@ -30,7 +30,6 @@ This module is used for Online bank synchronization.
 - `account.online.link`
 - `ResCompany`
 - `ResPartner`
-
 
 ```plantuml
 @startuml
@@ -61,7 +60,8 @@ account_online_link --|> account_journal : one2many
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

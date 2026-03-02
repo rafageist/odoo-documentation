@@ -6,9 +6,10 @@ tags: [odoo, v19, enterprise, module]
 # Approvals - Purchase
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/approvals_purchase
 - Dependencies: [[Odoo 19/Enterprise Addons/approvals/approvals|approvals]], [[Odoo 19/Community Addons/purchase/purchase|purchase]]
+
 ## XML Artifacts (detected)
 
 - Views: 3
@@ -24,7 +25,6 @@ tags: [odoo, v19, enterprise, module]
 - `ApprovalRequest`
 - `PurchaseOrder`
 - `ResPartner`
-
 
 ```plantuml
 @startuml
@@ -44,7 +44,8 @@ ApprovalProductLine --> product_supplierinfo : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

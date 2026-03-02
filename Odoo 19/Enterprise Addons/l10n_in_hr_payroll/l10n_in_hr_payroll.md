@@ -6,9 +6,10 @@ tags: [odoo, v19, enterprise, module]
 # Indian Payroll
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/l10n_in_hr_payroll
 - Dependencies: [[Odoo 19/Enterprise Addons/hr_payroll_holidays/hr_payroll_holidays|hr_payroll_holidays]], [[Odoo 19/Enterprise Addons/hr_payroll/hr_payroll|hr_payroll]]
+
 ## XML Artifacts (detected)
 
 - Views: 15
@@ -27,7 +28,6 @@ tags: [odoo, v19, enterprise, module]
 - `l10n_in_hr_payroll.salary.statement`
 - `ResCompany`
 - `ResUsers`
-
 
 ```plantuml
 @startuml
@@ -48,7 +48,8 @@ HrVersion --> hr_rule_parameter : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

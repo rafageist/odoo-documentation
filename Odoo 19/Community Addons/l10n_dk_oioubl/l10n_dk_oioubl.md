@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Denmark - E-invoicing
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/l10n_dk_oioubl
 - Dependencies: [[Odoo 19/Community Addons/account_edi_ubl_cii/account_edi_ubl_cii|account_edi_ubl_cii]], [[Odoo 19/Community Addons/l10n_dk/l10n_dk|l10n_dk]]
 
@@ -27,7 +27,6 @@ E-Invoicing, Offentlig Information Online Universal Business Language
 - `AccountMove`
 - `ResPartner`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -39,7 +38,9 @@ class ResPartner
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

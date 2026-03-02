@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # EDI for Mexico
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/l10n_mx_edi
 - Dependencies: [[Odoo 19/Enterprise Addons/account_accountant/account_accountant|account_accountant]], [[Odoo 19/Community Addons/l10n_mx/l10n_mx|l10n_mx]], [[Odoo 19/Community Addons/base_vat/base_vat|base_vat]], [[Odoo 19/Enterprise Addons/product_unspsc/product_unspsc|product_unspsc]], [[Odoo 19/Community Addons/certificate/certificate|certificate]]
 
@@ -38,7 +38,6 @@ Mexican Localization for EDI documents
 - `ResCountry`
 - `ResCurrency`
 - `ResPartner`
-
 
 ```plantuml
 @startuml
@@ -81,7 +80,8 @@ ResPartner --> l10n_mx_edi_payment_method : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

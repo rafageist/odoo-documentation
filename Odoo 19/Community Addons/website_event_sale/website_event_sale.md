@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Online Event Ticketing
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/website_event_sale
 - Dependencies: [[Odoo 19/Community Addons/website_event/website_event|website_event]], [[Odoo 19/Community Addons/event_sale/event_sale|event_sale]], [[Odoo 19/Community Addons/website_sale/website_sale|website_sale]]
 
@@ -30,7 +30,6 @@ Sell event tickets online
 - `SaleOrder`
 - `SaleOrderLine`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -47,7 +46,8 @@ ProductProduct --|> event_event_ticket : one2many
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # MRP Project
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/project_mrp
 - Dependencies: [[Odoo 19/Community Addons/mrp/mrp|mrp]], [[Odoo 19/Community Addons/project/project|project]]
 
@@ -30,7 +30,6 @@ Monitor MRP using project
 - `StockRule`
 - `StockMove`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -48,7 +47,9 @@ MrpProduction --> project_project : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

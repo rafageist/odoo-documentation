@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Salary Configurator - Holidays
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/hr_contract_salary_holidays
 - Dependencies: [[Odoo 19/Enterprise Addons/hr_contract_salary/hr_contract_salary|hr_contract_salary]], [[Odoo 19/Community Addons/hr_holidays/hr_holidays|hr_holidays]]
 
@@ -27,7 +27,6 @@ Automatically creates extra time-off on contract signature
 - `HrVersion`
 - `ResCompany`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -43,7 +42,9 @@ ResCompany --> hr_leave_type : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

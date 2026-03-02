@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Project - SMS
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/project_sms
 - Dependencies: [[Odoo 19/Community Addons/project/project|project]], [[Odoo 19/Community Addons/sms/sms|sms]]
 
@@ -29,7 +29,6 @@ Send text messages when project/task stage move
 - `ProjectTask`
 - `ProjectTaskType`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -46,7 +45,9 @@ ProjectTaskType --> sms_template : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Third Party and Deferred/Electronic Checks Management
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/l10n_latam_check
 - Dependencies: [[Odoo 19/Community Addons/account/account|account]], [[Odoo 19/Community Addons/base_vat/base_vat|base_vat]]
 
@@ -30,7 +30,6 @@ Checks Management
 - `AccountPayment`
 - `AccountPaymentMethod`
 - `l10n_latam.check`
-
 
 ```plantuml
 @startuml
@@ -59,7 +58,9 @@ l10n_latam_check --> account_move_line : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

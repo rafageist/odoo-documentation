@@ -6,9 +6,10 @@ tags: [odoo, v19, enterprise, module]
 # CFDI 4.0 fields for sale orders
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/l10n_mx_edi_sale
 - Dependencies: [[Odoo 19/Community Addons/sale/sale|sale]], [[Odoo 19/Enterprise Addons/l10n_mx_edi/l10n_mx_edi|l10n_mx_edi]]
+
 ## XML Artifacts (detected)
 
 - Views: 1
@@ -21,7 +22,6 @@ tags: [odoo, v19, enterprise, module]
 
 - `SaleOrder`
 - `SaleOrderLine`
-
 
 ```plantuml
 @startuml
@@ -36,7 +36,8 @@ SaleOrder --> l10n_mx_edi_payment_method : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

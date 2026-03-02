@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Mail Group
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/mail_group
 - Dependencies: [[Odoo 19/Community Addons/mail/mail|mail]], [[Odoo 19/Community Addons/portal/portal|portal]]
 
@@ -28,7 +28,6 @@ Manage your mailing lists
 - `mail.group.member`
 - `mail.group.message`
 - `mail.group.moderation`
-
 
 ```plantuml
 @startuml
@@ -61,7 +60,9 @@ mail_group_moderation --> mail_group : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

@@ -6,9 +6,10 @@ tags: [odoo, v19, enterprise, module]
 # Belgium - Payroll - Dimona
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/l10n_be_hr_payroll_dimona
 - Dependencies: [[Odoo 19/Enterprise Addons/l10n_be_hr_payroll/l10n_be_hr_payroll|l10n_be_hr_payroll]]
+
 ## XML Artifacts (detected)
 
 - Views: 2
@@ -22,7 +23,6 @@ tags: [odoo, v19, enterprise, module]
 - `HrEmployee`
 - `HrVersion`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -34,7 +34,8 @@ class HrVersion
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Accounting/Fleet bridge
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/account_fleet
 - Dependencies: [[Odoo 19/Community Addons/fleet/fleet|fleet]], [[Odoo 19/Community Addons/account/account|account]]
 
@@ -28,7 +28,6 @@ Manage accounting with fleets
 - `AccountMoveLine`
 - `FleetVehicle`
 - `FleetVehicleLogServices`
-
 
 ```plantuml
 @startuml
@@ -52,7 +51,9 @@ FleetVehicleLogServices --> fleet_vehicle : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Schedule push notifications on attendees
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/website_event_social
 - Dependencies: [[Odoo 19/Community Addons/website_event/website_event|website_event]], [[Odoo 19/Enterprise Addons/social_push_notifications/social_push_notifications|social_push_notifications]]
 
@@ -27,7 +27,6 @@ Bridge module to push notifications to event attendees
 - `EventEvent`
 - `ResPartner`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -41,7 +40,8 @@ ResPartner --|> event_registration : one2many
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

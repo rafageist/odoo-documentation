@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # AI Documents Source
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/ai_documents_source
 - Dependencies: [[Odoo 19/Enterprise Addons/ai/ai|ai]], [[Odoo 19/Enterprise Addons/documents/documents|documents]]
 
@@ -27,7 +27,6 @@ Add documents to AI agents as sources.
 - `ai.agent.source`
 - `DocumentsDocument`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -41,7 +40,8 @@ ai_agent_source --> documents_document : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

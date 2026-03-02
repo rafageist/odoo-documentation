@@ -1,13 +1,17 @@
 ---
-tags: [v19, core, integrations, map]
-status: seed
+tags: [odoo, v19, core, integrations, index]
+status: active
 ---
-# Core Integrations v19
 
-## Streams
-- Messaging & bus -> [[Odoo 19/Core/Infrastructure/Bus.md]]`n- RPC / Controllers -> [[Odoo 19/Core/Framework/http.md]]`n- External connectors -> TODO.
+# Integrations
+
+## Scope
+- External systems touched by Odoo 19 core services
+- Payment, mail, RPC, HTTP, and provider-facing contracts
+- Shared expectations for authentication, callbacks, and payload handling
+
+## Initial coverage
+- `[[Odoo 19/Core/Integrations/Integrations]]` serves as the umbrella note until deeper topic notes are added.
 
 ## Navigation
 - **Parent:** [[Odoo 19/Core/Core]]
-## Children
-- (none)

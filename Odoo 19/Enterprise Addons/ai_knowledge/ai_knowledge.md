@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # AI Text Draft - Knowledge
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/ai_knowledge
 - Dependencies: [[Odoo 19/Enterprise Addons/ai/ai|ai]], [[Odoo 19/Enterprise Addons/knowledge/knowledge|knowledge]]
 
@@ -28,7 +28,6 @@ AI text draft integration with knowledge
 - `ai.composer`
 - `KnowledgeArticle`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -43,7 +42,8 @@ ai_agent_source --> knowledge_article : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

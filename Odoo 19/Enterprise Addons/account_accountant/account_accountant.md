@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Invoicing
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/account_accountant
 - Dependencies: [[Odoo 19/Community Addons/account/account|account]], [[Odoo 19/Enterprise Addons/mail_enterprise/mail_enterprise|mail_enterprise]], [[Odoo 19/Community Addons/web_tour/web_tour|web_tour]]
 
@@ -16,7 +16,7 @@ Invoices, Payments, Follow-ups & Bank synchronization (Enterprise)
 
 ## XML Artifacts (detected)
 
-- Views: 32
+- Views: 33
 - Actions: 14
 - Menus: 5
 - Rules (ir.rule): 0
@@ -36,11 +36,8 @@ Invoices, Payments, Follow-ups & Bank synchronization (Enterprise)
 - `AccountReconcileModelLine`
 - `AccountTax`
 - `DigestDigest`
-- `IrModel`
 - `IrUiMenu`
 - `ResCompany`
-- `ResCurrency`
-
 
 ```plantuml
 @startuml
@@ -58,10 +55,8 @@ class AccountReconcileModel
 class AccountReconcileModelLine
 class AccountTax
 class DigestDigest
-class IrModel
 class IrUiMenu
 class ResCompany
-class ResCurrency
 class "ir.attachment" as ir_attachment
 account_bank_statement_line --|> ir_attachment : one2many
 account_bank_statement_line --|> ir_attachment : one2many
@@ -85,7 +80,8 @@ ResCompany --> account_account : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

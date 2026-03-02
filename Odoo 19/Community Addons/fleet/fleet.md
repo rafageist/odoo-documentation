@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Fleet
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/fleet
 - Dependencies: base (not documented), [[Odoo 19/Community Addons/mail/mail|mail]]
 
@@ -36,7 +36,6 @@ Manage your fleet and track car costs
 - `fleet.vehicle.state`
 - `fleet.vehicle.tag`
 - `MailActivityType`
-
 
 ```plantuml
 @startuml
@@ -103,7 +102,9 @@ fleet_vehicle_odometer --> res_partner : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

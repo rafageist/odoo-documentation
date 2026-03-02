@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # IoT for Events
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/event_iot
 - Dependencies: [[Odoo 19/Enterprise Addons/iot/iot|iot]], [[Odoo 19/Community Addons/event/event|event]]
 
@@ -27,7 +27,6 @@ Use IoT device integrations for events
 - `EventEvent`
 - `EventRegistration`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -39,7 +38,8 @@ class EventRegistration
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

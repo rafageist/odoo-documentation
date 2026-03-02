@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Sales Expense
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/sale_expense
 - Dependencies: [[Odoo 19/Community Addons/sale_management/sale_management|sale_management]], [[Odoo 19/Community Addons/hr_expense/hr_expense|hr_expense]]
 
@@ -31,7 +31,6 @@ Quotation, Sales Orders, Delivery & Invoicing Control
 - `SaleOrder`
 - `SaleOrderLine`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -54,7 +53,8 @@ SaleOrderLine --|> hr_expense : one2many
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

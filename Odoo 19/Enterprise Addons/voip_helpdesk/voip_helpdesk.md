@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Phone - Helpdesk
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/voip_helpdesk
 - Dependencies: [[Odoo 19/Enterprise Addons/voip/voip|voip]], [[Odoo 19/Enterprise Addons/helpdesk/helpdesk|helpdesk]]
 
@@ -27,7 +27,6 @@ Phone integration with Helpdesk module.
 - `ResPartner`
 - `VoipCall`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -41,7 +40,8 @@ ResPartner --|> helpdesk_ticket : one2many
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

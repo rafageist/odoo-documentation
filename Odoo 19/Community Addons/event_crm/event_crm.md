@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Event CRM
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/event_crm
 - Dependencies: [[Odoo 19/Community Addons/event/event|event]], [[Odoo 19/Community Addons/crm/crm|crm]]
+
 ## XML Artifacts (detected)
 
 - Views: 8
@@ -25,7 +26,6 @@ tags: [odoo, v19, community, module]
 - `event.lead.rule`
 - `EventQuestionAnswer`
 - `EventRegistration`
-
 
 ```plantuml
 @startuml
@@ -64,7 +64,9 @@ EventRegistration .. crm_lead : many2many
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

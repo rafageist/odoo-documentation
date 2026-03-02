@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Project Sales Subscription
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/project_sale_subscription
 - Dependencies: [[Odoo 19/Community Addons/sale_project/sale_project|sale_project]], [[Odoo 19/Enterprise Addons/sale_subscription/sale_subscription|sale_subscription]]
 
@@ -29,7 +29,6 @@ Project sales subscriptions
 - `SaleOrder`
 - `SaleOrderLine`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -45,7 +44,8 @@ AccountAnalyticAccount --|> sale_order : one2many
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

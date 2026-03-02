@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # OdooBot
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/mail_bot
 - Dependencies: [[Odoo 19/Community Addons/mail/mail|mail]]
 
@@ -27,7 +27,6 @@ Add OdooBot in discussions
 - `DiscussChannel`
 - `ResUsers`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -39,7 +38,9 @@ class ResUsers
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

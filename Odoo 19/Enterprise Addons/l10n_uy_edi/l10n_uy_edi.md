@@ -6,9 +6,10 @@ tags: [odoo, v19, enterprise, module]
 # Uruguay - Electronic Invoice
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/l10n_uy_edi
 - Dependencies: [[Odoo 19/Community Addons/l10n_uy/l10n_uy|l10n_uy]]
+
 ## XML Artifacts (detected)
 
 - Views: 11
@@ -27,7 +28,6 @@ tags: [odoo, v19, enterprise, module]
 - `l10n_uy_edi.document`
 - `ResCompany`
 - `ResPartner`
-
 
 ```plantuml
 @startuml
@@ -51,13 +51,19 @@ l10n_uy_edi_addenda --> res_company : many2one
 class "account.move" as account_move
 l10n_uy_edi_document --> account_move : many2one
 l10n_uy_edi_document --> ir_attachment : many2one
+class "l10n_latam.document.type" as l10n_latam_document_type
+l10n_uy_edi_document --> l10n_latam_document_type : many2one
+l10n_uy_edi_document --> res_company : many2one
+class "res.partner" as res_partner
+l10n_uy_edi_document --> res_partner : many2one
 ResCompany --|> l10n_uy_edi_addenda : one2many
 @enduml
 ```
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

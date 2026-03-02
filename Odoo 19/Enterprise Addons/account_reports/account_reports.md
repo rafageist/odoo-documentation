@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Accounting Reports
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/account_reports
 - Dependencies: [[Odoo 19/Enterprise Addons/account_accountant/account_accountant|account_accountant]]
 
@@ -20,7 +20,7 @@ View and create reports
 - Actions: 36
 - Menus: 27
 - Rules (ir.rule): 3
-- Access CSV entries: 33
+- Access CSV entries: 36
 
 ## Detected Models
 
@@ -52,7 +52,6 @@ View and create reports
 - `ResCompany`
 - `ResPartner`
 - `ResUsers`
-
 
 ```plantuml
 @startuml
@@ -157,7 +156,8 @@ ResPartner --|> res_company : one2many
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

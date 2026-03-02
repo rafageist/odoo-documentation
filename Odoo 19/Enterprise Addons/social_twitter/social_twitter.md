@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Social X
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/social_twitter
 - Dependencies: [[Odoo 19/Enterprise Addons/social/social|social]], [[Odoo 19/Community Addons/iap/iap|iap]]
 
@@ -33,7 +33,6 @@ Manage your X accounts and schedule posts
 - `SocialStreamPost`
 - `social.twitter.account`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -56,7 +55,8 @@ social_twitter_account --> social_account : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

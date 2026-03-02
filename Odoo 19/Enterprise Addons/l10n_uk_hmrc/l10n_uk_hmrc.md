@@ -6,9 +6,10 @@ tags: [odoo, v19, enterprise, module]
 # UK - HMRC API
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/l10n_uk_hmrc
 - Dependencies: [[Odoo 19/Community Addons/l10n_uk/l10n_uk|l10n_uk]]
+
 ## XML Artifacts (detected)
 
 - Views: 2
@@ -22,7 +23,6 @@ tags: [odoo, v19, enterprise, module]
 - `l10n_uk.hmrc.transaction`
 - `ResCompany`
 - `ResPartner`
-
 
 ```plantuml
 @startuml
@@ -40,7 +40,8 @@ l10n_uk_hmrc_transaction --> res_company : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

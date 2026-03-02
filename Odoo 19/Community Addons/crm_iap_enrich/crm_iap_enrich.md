@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Lead Enrichment
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/crm_iap_enrich
 - Dependencies: [[Odoo 19/Community Addons/iap_crm/iap_crm|iap_crm]], [[Odoo 19/Community Addons/iap_mail/iap_mail|iap_mail]]
 
@@ -26,7 +26,6 @@ Enrich Leads/Opportunities using email address domain
 
 - `CrmLead`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -37,7 +36,9 @@ class CrmLead
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

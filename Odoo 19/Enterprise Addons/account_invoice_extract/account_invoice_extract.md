@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Account Invoice Extract
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/account_invoice_extract
 - Dependencies: [[Odoo 19/Enterprise Addons/account_extract/account_extract|account_extract]]
 
@@ -29,7 +29,6 @@ Extract data from invoice scans to fill them automatically
 - `ResCompany`
 - `ResPartner`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -43,7 +42,8 @@ class ResPartner
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

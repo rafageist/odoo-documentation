@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Recruitment tracking on appointments
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/appointment_hr_recruitment
 - Dependencies: [[Odoo 19/Enterprise Addons/appointment/appointment|appointment]], [[Odoo 19/Community Addons/hr_recruitment/hr_recruitment|hr_recruitment]]
 
@@ -27,7 +27,6 @@ Keep track of recruitment appointments
 - `AppointmentInvite`
 - `Applicant`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -39,7 +38,8 @@ class Applicant
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

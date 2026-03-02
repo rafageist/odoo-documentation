@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # ESG Project
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/esg_project
 - Dependencies: [[Odoo 19/Enterprise Addons/esg/esg|esg]], [[Odoo 19/Enterprise Addons/project_enterprise/project_enterprise|project_enterprise]]
 
@@ -26,7 +26,6 @@ Create and manage ESG initiatives to act on your impact.
 
 - `ProjectProject`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -37,7 +36,8 @@ class ProjectProject
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

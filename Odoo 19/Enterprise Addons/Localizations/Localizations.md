@@ -1,63 +1,20 @@
 ---
-tags: [v19, enterprise, localizations]
-status: seed
----
-# Locations v19
-
-## Modules
-- `[[Odoo 19/Enterprise Addons/Localizations/l10n_latam_base.md]]`
-- `[[Odoo 19/Enterprise Addons/Localizations/l10n_latam_invoice.md]]`
-- `[[Odoo 19/Enterprise Addons/Localizations/l10n_es_edi.md]]`
-- `[[Odoo 19/Enterprise Addons/Localizations/l10n_mx_edi.md]]`
-- `[[Odoo 19/Enterprise Addons/Localizations/l10n_generic_coa.md]]`
-- `[[Odoo 19/Enterprise Addons/Localizations/l10n_fr_edi.md]]`
-
-```plantuml
-@startmindmap
-* Localizations v19
-** LATAM base
-** LATAM invoice
-** Spain EDI
-** Mexico EDI
-** Generic CoA
-** France EDI
-@endmindmap
-```
-
-## Changes vs v18
-- New tax obligations incorporated.
-- Electronic updates (CFDI 4.0, SII).
-- Integrations with external services.
-
-
-
-
-
-
-
-## Navigation
-- **Parent:** [[Odoo 19/Enterprise Addons/Enterprise Addons]]
-## Children
-- [[Odoo 19/Enterprise Addons/Localizations/l10n_es_edi]]
-- [[Odoo 19/Enterprise Addons/Localizations/l10n_fr_edi]]
-- [[Odoo 19/Enterprise Addons/Localizations/l10n_generic_coa]]
-- [[Odoo 19/Enterprise Addons/Localizations/l10n_latam_base]]
-- [[Odoo 19/Enterprise Addons/Localizations/l10n_latam_invoice]]
-- [[Odoo 19/Enterprise Addons/Localizations/l10n_mx_edi]]
-<!-- GENERATED:CATEGORY -->
----
 tags: [odoo, v19, enterprise, index, category]
 ---
 
 # Localizations
 
-Modules: 271
+- Scope: Enterprise Addons
+- Modules: 285
+
+## Modules
 
 - [[Odoo 19/Enterprise Addons/l10n_ae_hr_payroll/l10n_ae_hr_payroll|l10n_ae_hr_payroll]]
 - [[Odoo 19/Enterprise Addons/l10n_ae_hr_payroll_account/l10n_ae_hr_payroll_account|l10n_ae_hr_payroll_account]]
 - [[Odoo 19/Enterprise Addons/l10n_ae_reports/l10n_ae_reports|l10n_ae_reports]]
 - [[Odoo 19/Enterprise Addons/l10n_ar_edi/l10n_ar_edi|l10n_ar_edi]]
 - [[Odoo 19/Enterprise Addons/l10n_ar_reports/l10n_ar_reports|l10n_ar_reports]]
+- [[Odoo 19/Enterprise Addons/l10n_ar_reports_simple/l10n_ar_reports_simple|l10n_ar_reports_simple]]
 - [[Odoo 19/Enterprise Addons/l10n_at_pos/l10n_at_pos|l10n_at_pos]]
 - [[Odoo 19/Enterprise Addons/l10n_at_reports/l10n_at_reports|l10n_at_reports]]
 - [[Odoo 19/Enterprise Addons/l10n_at_saft/l10n_at_saft|l10n_at_saft]]
@@ -71,6 +28,7 @@ Modules: 271
 - [[Odoo 19/Enterprise Addons/l10n_bd_reports/l10n_bd_reports|l10n_bd_reports]]
 - [[Odoo 19/Enterprise Addons/l10n_be_coda/l10n_be_coda|l10n_be_coda]]
 - [[Odoo 19/Enterprise Addons/l10n_be_codabox/l10n_be_codabox|l10n_be_codabox]]
+- [[Odoo 19/Enterprise Addons/l10n_be_codaclean/l10n_be_codaclean|l10n_be_codaclean]]
 - [[Odoo 19/Enterprise Addons/l10n_be_fiscal_categories/l10n_be_fiscal_categories|l10n_be_fiscal_categories]]
 - [[Odoo 19/Enterprise Addons/l10n_be_fiscal_categories_fleet/l10n_be_fiscal_categories_fleet|l10n_be_fiscal_categories_fleet]]
 - [[Odoo 19/Enterprise Addons/l10n_be_hr_contract_salary/l10n_be_hr_contract_salary|l10n_be_hr_contract_salary]]
@@ -79,14 +37,17 @@ Modules: 271
 - [[Odoo 19/Enterprise Addons/l10n_be_hr_payroll_acerta/l10n_be_hr_payroll_acerta|l10n_be_hr_payroll_acerta]]
 - [[Odoo 19/Enterprise Addons/l10n_be_hr_payroll_attendance/l10n_be_hr_payroll_attendance|l10n_be_hr_payroll_attendance]]
 - [[Odoo 19/Enterprise Addons/l10n_be_hr_payroll_dimona/l10n_be_hr_payroll_dimona|l10n_be_hr_payroll_dimona]]
+- [[Odoo 19/Enterprise Addons/l10n_be_hr_payroll_dimona_auto/l10n_be_hr_payroll_dimona_auto|l10n_be_hr_payroll_dimona_auto]]
 - [[Odoo 19/Enterprise Addons/l10n_be_hr_payroll_fleet/l10n_be_hr_payroll_fleet|l10n_be_hr_payroll_fleet]]
 - [[Odoo 19/Enterprise Addons/l10n_be_hr_payroll_group_s/l10n_be_hr_payroll_group_s|l10n_be_hr_payroll_group_s]]
 - [[Odoo 19/Enterprise Addons/l10n_be_hr_payroll_partena/l10n_be_hr_payroll_partena|l10n_be_hr_payroll_partena]]
 - [[Odoo 19/Enterprise Addons/l10n_be_hr_payroll_prisma/l10n_be_hr_payroll_prisma|l10n_be_hr_payroll_prisma]]
 - [[Odoo 19/Enterprise Addons/l10n_be_hr_payroll_sd_worx/l10n_be_hr_payroll_sd_worx|l10n_be_hr_payroll_sd_worx]]
 - [[Odoo 19/Enterprise Addons/l10n_be_hr_payroll_ucm/l10n_be_hr_payroll_ucm|l10n_be_hr_payroll_ucm]]
+- [[Odoo 19/Enterprise Addons/l10n_be_intervat/l10n_be_intervat|l10n_be_intervat]]
 - [[Odoo 19/Enterprise Addons/l10n_be_intrastat/l10n_be_intrastat|l10n_be_intrastat]]
 - [[Odoo 19/Enterprise Addons/l10n_be_reports/l10n_be_reports|l10n_be_reports]]
+- [[Odoo 19/Enterprise Addons/l10n_be_reports_client_nihil/l10n_be_reports_client_nihil|l10n_be_reports_client_nihil]]
 - [[Odoo 19/Enterprise Addons/l10n_be_reports_hr_payroll/l10n_be_reports_hr_payroll|l10n_be_reports_hr_payroll]]
 - [[Odoo 19/Enterprise Addons/l10n_be_reports_sms/l10n_be_reports_sms|l10n_be_reports_sms]]
 - [[Odoo 19/Enterprise Addons/l10n_be_soda/l10n_be_soda|l10n_be_soda]]
@@ -113,6 +74,7 @@ Modules: 271
 - [[Odoo 19/Enterprise Addons/l10n_cg_reports/l10n_cg_reports|l10n_cg_reports]]
 - [[Odoo 19/Enterprise Addons/l10n_ch_hr_payroll/l10n_ch_hr_payroll|l10n_ch_hr_payroll]]
 - [[Odoo 19/Enterprise Addons/l10n_ch_hr_payroll_account/l10n_ch_hr_payroll_account|l10n_ch_hr_payroll_account]]
+- [[Odoo 19/Enterprise Addons/l10n_ch_hr_payroll_elm_transmission_5_3/l10n_ch_hr_payroll_elm_transmission_5_3|l10n_ch_hr_payroll_elm_transmission_5_3]]
 - [[Odoo 19/Enterprise Addons/l10n_ch_reports/l10n_ch_reports|l10n_ch_reports]]
 - [[Odoo 19/Enterprise Addons/l10n_ci_reports/l10n_ci_reports|l10n_ci_reports]]
 - [[Odoo 19/Enterprise Addons/l10n_cl_edi/l10n_cl_edi|l10n_cl_edi]]
@@ -155,9 +117,11 @@ Modules: 271
 - [[Odoo 19/Enterprise Addons/l10n_eg_hr_payroll_account/l10n_eg_hr_payroll_account|l10n_eg_hr_payroll_account]]
 - [[Odoo 19/Enterprise Addons/l10n_eg_reports/l10n_eg_reports|l10n_eg_reports]]
 - [[Odoo 19/Enterprise Addons/l10n_employment_hero/l10n_employment_hero|l10n_employment_hero]]
+- [[Odoo 19/Enterprise Addons/l10n_es_intrastat/l10n_es_intrastat|l10n_es_intrastat]]
 - [[Odoo 19/Enterprise Addons/l10n_es_real_estates/l10n_es_real_estates|l10n_es_real_estates]]
 - [[Odoo 19/Enterprise Addons/l10n_es_reports/l10n_es_reports|l10n_es_reports]]
 - [[Odoo 19/Enterprise Addons/l10n_es_reports_2024/l10n_es_reports_2024|l10n_es_reports_2024]]
+- [[Odoo 19/Enterprise Addons/l10n_es_reports_2025/l10n_es_reports_2025|l10n_es_reports_2025]]
 - [[Odoo 19/Enterprise Addons/l10n_es_sale_amazon/l10n_es_sale_amazon|l10n_es_sale_amazon]]
 - [[Odoo 19/Enterprise Addons/l10n_et_reports/l10n_et_reports|l10n_et_reports]]
 - [[Odoo 19/Enterprise Addons/l10n_eu_iot_scale_cert/l10n_eu_iot_scale_cert|l10n_eu_iot_scale_cert]]
@@ -176,6 +140,7 @@ Modules: 271
 - [[Odoo 19/Enterprise Addons/l10n_gw_reports/l10n_gw_reports|l10n_gw_reports]]
 - [[Odoo 19/Enterprise Addons/l10n_hk_hr_payroll/l10n_hk_hr_payroll|l10n_hk_hr_payroll]]
 - [[Odoo 19/Enterprise Addons/l10n_hk_hr_payroll_account/l10n_hk_hr_payroll_account|l10n_hk_hr_payroll_account]]
+- [[Odoo 19/Enterprise Addons/l10n_hk_hr_payroll_empf/l10n_hk_hr_payroll_empf|l10n_hk_hr_payroll_empf]]
 - [[Odoo 19/Enterprise Addons/l10n_hk_reports/l10n_hk_reports|l10n_hk_reports]]
 - [[Odoo 19/Enterprise Addons/l10n_hr_intrastat/l10n_hr_intrastat|l10n_hr_intrastat]]
 - [[Odoo 19/Enterprise Addons/l10n_hr_kuna_reports/l10n_hr_kuna_reports|l10n_hr_kuna_reports]]
@@ -213,6 +178,7 @@ Modules: 271
 - [[Odoo 19/Enterprise Addons/l10n_km_reports/l10n_km_reports|l10n_km_reports]]
 - [[Odoo 19/Enterprise Addons/l10n_kr_reports/l10n_kr_reports|l10n_kr_reports]]
 - [[Odoo 19/Enterprise Addons/l10n_kz_reports/l10n_kz_reports|l10n_kz_reports]]
+- [[Odoo 19/Enterprise Addons/l10n_lk_reports/l10n_lk_reports|l10n_lk_reports]]
 - [[Odoo 19/Enterprise Addons/l10n_lt_hr_payroll/l10n_lt_hr_payroll|l10n_lt_hr_payroll]]
 - [[Odoo 19/Enterprise Addons/l10n_lt_hr_payroll_account/l10n_lt_hr_payroll_account|l10n_lt_hr_payroll_account]]
 - [[Odoo 19/Enterprise Addons/l10n_lt_intrastat/l10n_lt_intrastat|l10n_lt_intrastat]]
@@ -275,6 +241,7 @@ Modules: 271
 - [[Odoo 19/Enterprise Addons/l10n_pt_reports/l10n_pt_reports|l10n_pt_reports]]
 - [[Odoo 19/Enterprise Addons/l10n_ro_hr_payroll/l10n_ro_hr_payroll|l10n_ro_hr_payroll]]
 - [[Odoo 19/Enterprise Addons/l10n_ro_hr_payroll_account/l10n_ro_hr_payroll_account|l10n_ro_hr_payroll_account]]
+- [[Odoo 19/Enterprise Addons/l10n_ro_intrastat/l10n_ro_intrastat|l10n_ro_intrastat]]
 - [[Odoo 19/Enterprise Addons/l10n_ro_reports/l10n_ro_reports|l10n_ro_reports]]
 - [[Odoo 19/Enterprise Addons/l10n_ro_saft/l10n_ro_saft|l10n_ro_saft]]
 - [[Odoo 19/Enterprise Addons/l10n_ro_saft_import/l10n_ro_saft_import|l10n_ro_saft_import]]
@@ -286,6 +253,7 @@ Modules: 271
 - [[Odoo 19/Enterprise Addons/l10n_se_bban/l10n_se_bban|l10n_se_bban]]
 - [[Odoo 19/Enterprise Addons/l10n_se_pos/l10n_se_pos|l10n_se_pos]]
 - [[Odoo 19/Enterprise Addons/l10n_se_reports/l10n_se_reports|l10n_se_reports]]
+- [[Odoo 19/Enterprise Addons/l10n_se_returns/l10n_se_returns|l10n_se_returns]]
 - [[Odoo 19/Enterprise Addons/l10n_se_sie4_export/l10n_se_sie4_export|l10n_se_sie4_export]]
 - [[Odoo 19/Enterprise Addons/l10n_se_sie4_import/l10n_se_sie4_import|l10n_se_sie4_import]]
 - [[Odoo 19/Enterprise Addons/l10n_se_sie_import/l10n_se_sie_import|l10n_se_sie_import]]
@@ -314,14 +282,20 @@ Modules: 271
 - [[Odoo 19/Enterprise Addons/l10n_uk_reports_cis/l10n_uk_reports_cis|l10n_uk_reports_cis]]
 - [[Odoo 19/Enterprise Addons/l10n_us_1099/l10n_us_1099|l10n_us_1099]]
 - [[Odoo 19/Enterprise Addons/l10n_us_check_printing/l10n_us_check_printing|l10n_us_check_printing]]
+- [[Odoo 19/Enterprise Addons/l10n_us_direct_deposit/l10n_us_direct_deposit|l10n_us_direct_deposit]]
 - [[Odoo 19/Enterprise Addons/l10n_us_hr_payroll/l10n_us_hr_payroll|l10n_us_hr_payroll]]
 - [[Odoo 19/Enterprise Addons/l10n_us_hr_payroll_account/l10n_us_hr_payroll_account|l10n_us_hr_payroll_account]]
 - [[Odoo 19/Enterprise Addons/l10n_us_hr_payroll_adp/l10n_us_hr_payroll_adp|l10n_us_hr_payroll_adp]]
 - [[Odoo 19/Enterprise Addons/l10n_us_payment_nacha/l10n_us_payment_nacha|l10n_us_payment_nacha]]
 - [[Odoo 19/Enterprise Addons/l10n_us_reports/l10n_us_reports|l10n_us_reports]]
 - [[Odoo 19/Enterprise Addons/l10n_uy_edi/l10n_uy_edi|l10n_uy_edi]]
+- [[Odoo 19/Enterprise Addons/l10n_uy_edi_stock/l10n_uy_edi_stock|l10n_uy_edi_stock]]
 - [[Odoo 19/Enterprise Addons/l10n_uy_reports/l10n_uy_reports|l10n_uy_reports]]
 - [[Odoo 19/Enterprise Addons/l10n_vn_reports/l10n_vn_reports|l10n_vn_reports]]
 - [[Odoo 19/Enterprise Addons/l10n_za_reports/l10n_za_reports|l10n_za_reports]]
 - [[Odoo 19/Enterprise Addons/l10n_zm_reports/l10n_zm_reports|l10n_zm_reports]]
-<!-- GENERATED:CATEGORY -->
+
+## Navigation
+
+- [[../Enterprise Addons|Back to scope]]
+- [[../../Odoo 19/Odoo 19|Back to version]]

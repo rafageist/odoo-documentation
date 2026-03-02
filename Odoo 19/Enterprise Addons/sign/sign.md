@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Sign
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/sign
 - Dependencies: [[Odoo 19/Community Addons/mail/mail|mail]], [[Odoo 19/Community Addons/attachment_indexation/attachment_indexation|attachment_indexation]], [[Odoo 19/Community Addons/portal/portal|portal]], [[Odoo 19/Community Addons/sms/sms|sms]], [[Odoo 19/Community Addons/certificate/certificate|certificate]]
 
@@ -19,7 +19,7 @@ Send and request electronic signatures.
 - Views: 31
 - Actions: 13
 - Menus: 11
-- Rules (ir.rule): 23
+- Rules (ir.rule): 25
 - Access CSV entries: 19
 
 ## Detected Models
@@ -41,7 +41,6 @@ Send and request electronic signatures.
 - `sign.request.item.value`
 - `sign.template`
 - `sign.template.tag`
-
 
 ```plantuml
 @startuml
@@ -122,7 +121,8 @@ sign_template --> ir_model : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

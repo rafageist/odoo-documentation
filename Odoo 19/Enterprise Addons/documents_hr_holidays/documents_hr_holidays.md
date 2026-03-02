@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Documents - Time Off
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/documents_hr_holidays
 - Dependencies: [[Odoo 19/Enterprise Addons/documents_hr/documents_hr|documents_hr]], [[Odoo 19/Community Addons/hr_holidays/hr_holidays|hr_holidays]]
 
@@ -26,7 +26,6 @@ Store employee's time off documents in the Document app
 
 - `hr.leave`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -37,7 +36,8 @@ class "hr.leave" as hr_leave
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

@@ -1,3 +1,4 @@
+
 <!-- GENERATED:MODULE -->
 ---
 tags: [odoo, v19, community, module]
@@ -6,7 +7,7 @@ tags: [odoo, v19, community, module]
 # Sales - Project
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/sale_project
 - Dependencies: [[Odoo 19/Community Addons/sale_management/sale_management|sale_management]], [[Odoo 19/Community Addons/sale_service/sale_service|sale_service]], [[Odoo 19/Community Addons/project_account/project_account|project_account]]
 
@@ -37,7 +38,6 @@ Task Generation from Sales Orders
 - `SaleOrder`
 - `SaleOrderLine`
 - `SaleOrderTemplateLine`
-
 
 ```plantuml
 @startuml
@@ -83,7 +83,7 @@ SaleOrderLine --|> project_milestone : one2many
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->

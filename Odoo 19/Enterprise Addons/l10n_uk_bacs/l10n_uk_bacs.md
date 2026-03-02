@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # UK BACS Payment Files
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/l10n_uk_bacs
 - Dependencies: [[Odoo 19/Enterprise Addons/account_batch_payment/account_batch_payment|account_batch_payment]], [[Odoo 19/Community Addons/base_iban/base_iban|base_iban]], [[Odoo 19/Community Addons/l10n_uk/l10n_uk|l10n_uk]]
 
@@ -32,7 +32,6 @@ Export payments as BACS Direct Debit and Direct Credit files
 - `bacs.ddi`
 - `ResCompany`
 - `ResPartnerBank`
-
 
 ```plantuml
 @startuml
@@ -66,7 +65,8 @@ bacs_ddi .. account_journal : many2many
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

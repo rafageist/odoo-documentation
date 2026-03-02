@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Cloudflare Turnstile
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/website_cf_turnstile
 - Dependencies: [[Odoo 19/Community Addons/website/website|website]]
+
 ## XML Artifacts (detected)
 
 - Views: 1
@@ -19,7 +20,8 @@ tags: [odoo, v19, community, module]
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

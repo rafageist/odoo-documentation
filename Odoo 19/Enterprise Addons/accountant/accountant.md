@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Accounting
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/accountant
 - Dependencies: [[Odoo 19/Enterprise Addons/account_reports/account_reports|account_reports]]
 
@@ -26,7 +26,6 @@ Manage financial and analytic accounting
 
 - `AccountMove`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -37,7 +36,8 @@ class AccountMove
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

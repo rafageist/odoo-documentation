@@ -6,9 +6,10 @@ tags: [odoo, v19, enterprise, module]
 # Compare timesheets and forecast for your projects
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/project_timesheet_forecast_sale
 - Dependencies: [[Odoo 19/Enterprise Addons/project_timesheet_forecast/project_timesheet_forecast|project_timesheet_forecast]], [[Odoo 19/Community Addons/sale_timesheet/sale_timesheet|sale_timesheet]], [[Odoo 19/Enterprise Addons/sale_project_forecast/sale_project_forecast|sale_project_forecast]]
+
 ## XML Artifacts (detected)
 
 - Views: 5
@@ -24,7 +25,6 @@ tags: [odoo, v19, enterprise, module]
 - `ProjectProject`
 - `SaleOrderLine`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -38,7 +38,8 @@ class SaleOrderLine
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

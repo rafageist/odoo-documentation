@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Ecuadorian Accounting
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/l10n_ec
 - Dependencies: base (not documented), [[Odoo 19/Community Addons/base_iban/base_iban|base_iban]], [[Odoo 19/Community Addons/account_debit_note/account_debit_note|account_debit_note]], [[Odoo 19/Community Addons/l10n_latam_invoice_document/l10n_latam_invoice_document|l10n_latam_invoice_document]], [[Odoo 19/Community Addons/l10n_latam_base/l10n_latam_base|l10n_latam_base]], [[Odoo 19/Community Addons/account/account|account]]
+
 ## XML Artifacts (detected)
 
 - Views: 7
@@ -27,7 +28,6 @@ tags: [odoo, v19, community, module]
 - `L10n_LatamDocumentType`
 - `ResCompany`
 - `ResPartner`
-
 
 ```plantuml
 @startuml
@@ -49,7 +49,9 @@ AccountMove --> l10n_ec_sri_payment : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

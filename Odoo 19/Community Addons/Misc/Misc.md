@@ -1,11 +1,13 @@
-<!-- GENERATED:CATEGORY -->
 ---
 tags: [odoo, v19, community, index, category]
 ---
 
 # Misc
 
-Modules: 62
+- Scope: Community Addons
+- Modules: 62
+
+## Modules
 
 - [[Odoo 19/Community Addons/api_doc/api_doc|api_doc]]
 - [[Odoo 19/Community Addons/attachment_indexation/attachment_indexation|attachment_indexation]]
@@ -69,4 +71,8 @@ Modules: 62
 - [[Odoo 19/Community Addons/test_website_slides_full/test_website_slides_full|test_website_slides_full]]
 - [[Odoo 19/Community Addons/theme_default/theme_default|theme_default]]
 - [[Odoo 19/Community Addons/transifex/transifex|transifex]]
-<!-- GENERATED:CATEGORY -->
+
+## Navigation
+
+- [[../Community Addons|Back to scope]]
+- [[../../Odoo 19/Odoo 19|Back to version]]

@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Forum
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/website_forum
 - Dependencies: [[Odoo 19/Community Addons/auth_signup/auth_signup|auth_signup]], [[Odoo 19/Community Addons/website_mail/website_mail|website_mail]], [[Odoo 19/Community Addons/website_profile/website_profile|website_profile]]
 
@@ -34,7 +34,6 @@ Manage a forum with FAQ and Q&A
 - `IrAttachment`
 - `ResUsers`
 - `Website`
-
 
 ```plantuml
 @startuml
@@ -81,7 +80,8 @@ forum_tag .. forum_post : many2many
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

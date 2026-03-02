@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Sale - SMS
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/sale_sms
 - Dependencies: [[Odoo 19/Community Addons/sale/sale|sale]], [[Odoo 19/Community Addons/sms/sms|sms]]
 
@@ -24,7 +24,9 @@ Ease SMS integration with sales capabilities
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

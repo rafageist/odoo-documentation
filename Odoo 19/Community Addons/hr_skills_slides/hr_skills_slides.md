@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Skills e-learning
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/hr_skills_slides
 - Dependencies: [[Odoo 19/Community Addons/hr_skills/hr_skills|hr_skills]], [[Odoo 19/Community Addons/website_slides/website_slides|website_slides]]
 
@@ -30,7 +30,6 @@ Add completed courses to resume of your employees
 - `SlideChannelPartner`
 - `SlideChannel`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -48,7 +47,9 @@ HrResumeLine --> slide_channel : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # India Sales and Warehouse Management
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/l10n_in_sale_stock
 - Dependencies: [[Odoo 19/Community Addons/l10n_in_sale/l10n_in_sale|l10n_in_sale]], [[Odoo 19/Community Addons/l10n_in_stock/l10n_in_stock|l10n_in_stock]], [[Odoo 19/Community Addons/sale_stock/sale_stock|sale_stock]]
 
@@ -28,7 +28,6 @@ Get warehouse address if the invoice is created from Sale Order
 - `StockMove`
 - `StockPicking`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -41,7 +40,9 @@ class StockPicking
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # United States - Payroll - Export to ADP
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/l10n_us_hr_payroll_adp
 - Dependencies: [[Odoo 19/Enterprise Addons/l10n_us_hr_payroll/l10n_us_hr_payroll|l10n_us_hr_payroll]]
 
@@ -28,7 +28,6 @@ Export Work Entries to ADP
 - `l10n.us.adp.export`
 - `ResCompany`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -47,7 +46,8 @@ l10n_us_adp_export .. hr_work_entry : many2many
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

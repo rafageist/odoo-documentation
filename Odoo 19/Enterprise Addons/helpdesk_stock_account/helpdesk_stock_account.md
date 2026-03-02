@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Helpdesk Stock Account
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/helpdesk_stock_account
 - Dependencies: [[Odoo 19/Enterprise Addons/helpdesk_stock/helpdesk_stock|helpdesk_stock]], [[Odoo 19/Enterprise Addons/helpdesk_account/helpdesk_account|helpdesk_account]]
 
@@ -24,7 +24,8 @@ Helpdesk, Stock, Account
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

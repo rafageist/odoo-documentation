@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Helpdesk: Help Center
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/website_helpdesk_forum
 - Dependencies: [[Odoo 19/Community Addons/website_forum/website_forum|website_forum]], [[Odoo 19/Enterprise Addons/website_helpdesk/website_helpdesk|website_helpdesk]]
 
@@ -28,7 +28,6 @@ Help Center for helpdesk based on Odoo Forum
 - `ForumPost`
 - `HelpdeskTeam`
 - `HelpdeskTicket`
-
 
 ```plantuml
 @startuml
@@ -52,7 +51,8 @@ HelpdeskTicket .. forum_post : many2many
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

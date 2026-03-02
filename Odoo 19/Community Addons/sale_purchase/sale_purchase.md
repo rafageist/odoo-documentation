@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Sale Purchase
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/sale_purchase
 - Dependencies: [[Odoo 19/Community Addons/sale/sale|sale]], [[Odoo 19/Community Addons/purchase/purchase|purchase]]
 
@@ -30,7 +30,6 @@ Sale based on service outsourcing.
 - `SaleOrder`
 - `SaleOrderLine`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -49,7 +48,9 @@ SaleOrderLine --|> purchase_order_line : one2many
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

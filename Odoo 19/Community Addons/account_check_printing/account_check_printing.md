@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Check Printing Base
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/account_check_printing
 - Dependencies: [[Odoo 19/Community Addons/account/account|account]]
 
@@ -29,7 +29,6 @@ Check printing basic features
 - `AccountPaymentMethod`
 - `ResCompany`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -45,7 +44,9 @@ AccountJournal --> ir_sequence : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

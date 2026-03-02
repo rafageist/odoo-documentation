@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Customer References
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/website_customer
 - Dependencies: [[Odoo 19/Community Addons/website_crm_partner_assign/website_crm_partner_assign|website_crm_partner_assign]], [[Odoo 19/Community Addons/website_partner/website_partner|website_partner]], [[Odoo 19/Community Addons/website_google_map/website_google_map|website_google_map]]
 
@@ -28,7 +28,6 @@ Publish your customer references
 - `res.partner.tag`
 - `Website`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -44,7 +43,8 @@ res_partner_tag .. res_partner : many2many
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

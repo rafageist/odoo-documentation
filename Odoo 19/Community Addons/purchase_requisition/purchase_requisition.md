@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Purchase Agreements
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/purchase_requisition
 - Dependencies: [[Odoo 19/Community Addons/purchase/purchase|purchase]]
+
 ## XML Artifacts (detected)
 
 - Views: 12
@@ -26,7 +27,6 @@ tags: [odoo, v19, community, module]
 - `PurchaseOrderLine`
 - `purchase.requisition`
 - `purchase.requisition.line`
-
 
 ```plantuml
 @startuml
@@ -70,7 +70,9 @@ purchase_requisition_line --|> product_supplierinfo : one2many
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

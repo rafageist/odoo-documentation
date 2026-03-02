@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Mass mailing on track speakers
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/mass_mailing_event_track
 - Dependencies: [[Odoo 19/Community Addons/website_event_track/website_event_track|website_event_track]], [[Odoo 19/Community Addons/mass_mailing/mass_mailing|mass_mailing]]
+
 ## XML Artifacts (detected)
 
 - Views: 1
@@ -22,7 +23,6 @@ tags: [odoo, v19, community, module]
 - `EventEvent`
 - `EventTrack`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -34,7 +34,9 @@ class EventTrack
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

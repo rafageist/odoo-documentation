@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # ESG HR Fleet
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/esg_hr_fleet
 - Dependencies: [[Odoo 19/Enterprise Addons/esg/esg|esg]], [[Odoo 19/Community Addons/hr_fleet/hr_fleet|hr_fleet]]
 
@@ -28,7 +28,6 @@ Measure fleet emissions based on your employees' commuting distance and vehicle 
 - `FleetVehicleAssignationLog`
 - `ResCompany`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -43,7 +42,8 @@ FleetVehicleAssignationLog --> res_company : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

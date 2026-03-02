@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # KPI Digests
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/digest
 - Dependencies: [[Odoo 19/Community Addons/mail/mail|mail]], [[Odoo 19/Community Addons/portal/portal|portal]], [[Odoo 19/Community Addons/resource/resource|resource]]
+
 ## XML Artifacts (detected)
 
 - Views: 7
@@ -22,7 +23,6 @@ tags: [odoo, v19, community, module]
 - `digest.digest`
 - `digest.tip`
 - `ResUsers`
-
 
 ```plantuml
 @startuml
@@ -43,7 +43,9 @@ digest_tip --> res_groups : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

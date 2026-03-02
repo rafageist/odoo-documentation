@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Time off Gantt
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/hr_holidays_gantt
 - Dependencies: [[Odoo 19/Community Addons/hr_holidays/hr_holidays|hr_holidays]], [[Odoo 19/Enterprise Addons/hr_gantt/hr_gantt|hr_gantt]]
 
@@ -26,7 +26,6 @@ Gantt view for Time Off Dashboard
 
 - `HrLeave`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -37,7 +36,8 @@ class HrLeave
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

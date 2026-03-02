@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Events Organization
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/event
 - Dependencies: [[Odoo 19/Community Addons/barcodes/barcodes|barcodes]], [[Odoo 19/Community Addons/base_setup/base_setup|base_setup]], [[Odoo 19/Community Addons/mail/mail|mail]], [[Odoo 19/Community Addons/phone_validation/phone_validation|phone_validation]], [[Odoo 19/Community Addons/portal/portal|portal]], [[Odoo 19/Community Addons/utm/utm|utm]]
 
@@ -42,7 +42,6 @@ Trainings, Conferences, Meetings, Exhibitions, Registrations
 - `event.type.ticket`
 - `MailTemplate`
 - `ResPartner`
-
 
 ```plantuml
 @startuml
@@ -136,7 +135,9 @@ event_type_ticket --> event_type : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

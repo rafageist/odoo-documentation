@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Point of Sale
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/point_of_sale
 - Dependencies: [[Odoo 19/Community Addons/resource/resource|resource]], [[Odoo 19/Community Addons/stock_account/stock_account|stock_account]], [[Odoo 19/Community Addons/barcodes/barcodes|barcodes]], [[Odoo 19/Community Addons/html_editor/html_editor|html_editor]], [[Odoo 19/Community Addons/digest/digest|digest]], [[Odoo 19/Community Addons/phone_validation/phone_validation|phone_validation]], [[Odoo 19/Community Addons/partner_autocomplete/partner_autocomplete|partner_autocomplete]], [[Odoo 19/Community Addons/iot_base/iot_base|iot_base]], [[Odoo 19/Community Addons/google_address_autocomplete/google_address_autocomplete|google_address_autocomplete]]
 
@@ -80,7 +80,6 @@ Handle checkouts and payments for shops and restaurants.
 - `StockReference`
 - `StockWarehouse`
 - `uom.uom`
-
 
 ```plantuml
 @startuml
@@ -282,7 +281,9 @@ StockWarehouse --> stock_picking_type : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

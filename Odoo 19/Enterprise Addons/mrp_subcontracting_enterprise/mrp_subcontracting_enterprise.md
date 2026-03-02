@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # MRP Subcontracting Enterprise
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/mrp_subcontracting_enterprise
 - Dependencies: [[Odoo 19/Community Addons/mrp_subcontracting/mrp_subcontracting|mrp_subcontracting]]
 
@@ -24,7 +24,8 @@ Bridge module for MRP subcontracting and enterprise to avoid some conflicts with
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

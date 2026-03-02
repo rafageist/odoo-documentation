@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Salary Configurator (Belgium)
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/l10n_be_hr_contract_salary
 - Dependencies: [[Odoo 19/Enterprise Addons/hr_contract_salary_payroll/hr_contract_salary_payroll|hr_contract_salary_payroll]], [[Odoo 19/Enterprise Addons/l10n_be_hr_payroll_fleet/l10n_be_hr_payroll_fleet|l10n_be_hr_payroll_fleet]]
 
@@ -16,7 +16,7 @@ Salary Package Configurator
 
 ## XML Artifacts (detected)
 
-- Views: 10
+- Views: 11
 - Actions: 1
 - Menus: 2
 - Rules (ir.rule): 0
@@ -31,7 +31,6 @@ Salary Package Configurator
 - `HrJob`
 - `HrPayslip`
 - `HrVersion`
-
 
 ```plantuml
 @startuml
@@ -55,7 +54,8 @@ HrVersion --> hr_contract_type : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

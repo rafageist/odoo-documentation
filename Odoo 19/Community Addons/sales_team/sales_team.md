@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Sales Teams
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/sales_team
 - Dependencies: base (not documented), [[Odoo 19/Community Addons/mail/mail|mail]]
 
@@ -28,7 +28,6 @@ Sales Teams
 - `crm.team`
 - `crm.team.member`
 - `ResUsers`
-
 
 ```plantuml
 @startuml
@@ -62,7 +61,8 @@ ResUsers --> crm_team : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

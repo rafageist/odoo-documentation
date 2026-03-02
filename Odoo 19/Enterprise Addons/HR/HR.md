@@ -1,11 +1,13 @@
-<!-- GENERATED:CATEGORY -->
 ---
 tags: [odoo, v19, enterprise, index, category]
 ---
 
 # HR
 
-Modules: 53
+- Scope: Enterprise Addons
+- Modules: 54
+
+## Modules
 
 - [[Odoo 19/Enterprise Addons/approvals/approvals|approvals]]
 - [[Odoo 19/Enterprise Addons/approvals_purchase/approvals_purchase|approvals_purchase]]
@@ -39,6 +41,7 @@ Modules: 53
 - [[Odoo 19/Enterprise Addons/hr_payroll_holidays/hr_payroll_holidays|hr_payroll_holidays]]
 - [[Odoo 19/Enterprise Addons/hr_payroll_planning/hr_payroll_planning|hr_payroll_planning]]
 - [[Odoo 19/Enterprise Addons/hr_payroll_sale_commission/hr_payroll_sale_commission|hr_payroll_sale_commission]]
+- [[Odoo 19/Enterprise Addons/hr_recruitment_ai/hr_recruitment_ai|hr_recruitment_ai]]
 - [[Odoo 19/Enterprise Addons/hr_recruitment_extract/hr_recruitment_extract|hr_recruitment_extract]]
 - [[Odoo 19/Enterprise Addons/hr_recruitment_integration_base/hr_recruitment_integration_base|hr_recruitment_integration_base]]
 - [[Odoo 19/Enterprise Addons/hr_recruitment_integration_monster/hr_recruitment_integration_monster|hr_recruitment_integration_monster]]
@@ -60,4 +63,8 @@ Modules: 53
 - [[Odoo 19/Enterprise Addons/voip_hr/voip_hr|voip_hr]]
 - [[Odoo 19/Enterprise Addons/voip_hr_recruitment/voip_hr_recruitment|voip_hr_recruitment]]
 - [[Odoo 19/Enterprise Addons/whatsapp_hr_referral/whatsapp_hr_referral|whatsapp_hr_referral]]
-<!-- GENERATED:CATEGORY -->
+
+## Navigation
+
+- [[../Enterprise Addons|Back to scope]]
+- [[../../Odoo 19/Odoo 19|Back to version]]

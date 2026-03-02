@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Commission in Payslips
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/hr_payroll_sale_commission
 - Dependencies: [[Odoo 19/Enterprise Addons/sale_commission/sale_commission|sale_commission]], [[Odoo 19/Enterprise Addons/hr_payroll/hr_payroll|hr_payroll]]
 
@@ -27,7 +27,6 @@ Autofill employee commission
 - `SaleCommissionPlan`
 - `HrPayslip`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -41,7 +40,9 @@ SaleCommissionPlan --> hr_payslip_input_type : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

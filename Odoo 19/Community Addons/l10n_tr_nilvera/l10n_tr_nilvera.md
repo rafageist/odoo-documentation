@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Türkiye - Nilvera
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/l10n_tr_nilvera
 - Dependencies: [[Odoo 19/Community Addons/l10n_tr/l10n_tr|l10n_tr]]
+
 ## XML Artifacts (detected)
 
 - Views: 2
@@ -24,7 +25,6 @@ tags: [odoo, v19, community, module]
 - `ResCompany`
 - `res.partner`
 - `Uom`
-
 
 ```plantuml
 @startuml
@@ -45,7 +45,9 @@ res_partner --|> l10n_tr_nilvera_alias : one2many
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

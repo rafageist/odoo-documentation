@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Lead Generation From Website Visits
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/website_crm_iap_reveal
 - Dependencies: [[Odoo 19/Community Addons/iap_crm/iap_crm|iap_crm]], [[Odoo 19/Community Addons/iap_mail/iap_mail|iap_mail]], [[Odoo 19/Community Addons/crm_iap_mine/crm_iap_mine|crm_iap_mine]], [[Odoo 19/Community Addons/website_crm/website_crm|website_crm]]
 
@@ -27,7 +27,6 @@ Generate Leads/Opportunities from your website's traffic
 - `CrmLead`
 - `crm.reveal.rule`
 - `crm.reveal.view`
-
 
 ```plantuml
 @startuml
@@ -64,7 +63,8 @@ crm_reveal_view --> crm_reveal_rule : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

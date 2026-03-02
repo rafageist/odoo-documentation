@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Appraisal - Skills
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/hr_appraisal_skills
 - Dependencies: [[Odoo 19/Enterprise Addons/hr_appraisal/hr_appraisal|hr_appraisal]], [[Odoo 19/Community Addons/hr_skills/hr_skills|hr_skills]]
 
@@ -28,7 +28,6 @@ Manage skills of your employees during an appraisal process
 - `HrAppraisalGoal`
 - `hr.appraisal.goal.skill`
 - `hr.appraisal.skill`
-
 
 ```plantuml
 @startuml
@@ -59,7 +58,8 @@ hr_appraisal_skill .. hr_appraisal_goal : many2many
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

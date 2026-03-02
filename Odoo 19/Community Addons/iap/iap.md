@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # In-App Purchases
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/iap
 - Dependencies: [[Odoo 19/Community Addons/web/web|web]], [[Odoo 19/Community Addons/base_setup/base_setup|base_setup]]
 
@@ -27,7 +27,6 @@ Basic models and helpers to support In-App purchases.
 - `iap.account`
 - `iap.service`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -44,7 +43,9 @@ iap_account .. res_users : many2many
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # pos_account_reports
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/pos_account_reports
 - Dependencies: [[Odoo 19/Community Addons/point_of_sale/point_of_sale|point_of_sale]], [[Odoo 19/Enterprise Addons/account_reports/account_reports|account_reports]]
 
@@ -24,7 +24,8 @@ Bridge module between point_of_sale and account_reports, for tax reporting.
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

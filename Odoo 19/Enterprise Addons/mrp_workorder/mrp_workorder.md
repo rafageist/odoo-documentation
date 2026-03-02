@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # MRP II
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/mrp_workorder
 - Dependencies: [[Odoo 19/Enterprise Addons/quality/quality|quality]], [[Odoo 19/Community Addons/mrp/mrp|mrp]], [[Odoo 19/Community Addons/barcodes/barcodes|barcodes]], [[Odoo 19/Enterprise Addons/web_gantt/web_gantt|web_gantt]], [[Odoo 19/Community Addons/web_tour/web_tour|web_tour]], [[Odoo 19/Community Addons/hr_hourly_cost/hr_hourly_cost|hr_hourly_cost]]
 
@@ -38,7 +38,6 @@ Work Orders, Planning, Stock Reports.
 - `StockMove`
 - `StockMoveLine`
 - `StockPickingType`
-
 
 ```plantuml
 @startuml
@@ -113,7 +112,8 @@ StockMove --|> stock_move_line : one2many
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

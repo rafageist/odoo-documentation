@@ -1,11 +1,13 @@
-<!-- GENERATED:CATEGORY -->
 ---
 tags: [odoo, v19, enterprise, index, category]
 ---
 
 # Marketing
 
-Modules: 22
+- Scope: Enterprise Addons
+- Modules: 22
+
+## Modules
 
 - [[Odoo 19/Enterprise Addons/appointment_account_payment/appointment_account_payment|appointment_account_payment]]
 - [[Odoo 19/Enterprise Addons/event_enterprise/event_enterprise|event_enterprise]]
@@ -29,4 +31,8 @@ Modules: 22
 - [[Odoo 19/Enterprise Addons/social_youtube/social_youtube|social_youtube]]
 - [[Odoo 19/Enterprise Addons/whatsapp_account_followup/whatsapp_account_followup|whatsapp_account_followup]]
 - [[Odoo 19/Enterprise Addons/whatsapp_event/whatsapp_event|whatsapp_event]]
-<!-- GENERATED:CATEGORY -->
+
+## Navigation
+
+- [[../Enterprise Addons|Back to scope]]
+- [[../../Odoo 19/Odoo 19|Back to version]]

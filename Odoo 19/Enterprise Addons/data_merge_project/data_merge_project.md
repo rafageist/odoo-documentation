@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Project Merge action
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/data_merge_project
 - Dependencies: [[Odoo 19/Enterprise Addons/data_cleaning/data_cleaning|data_cleaning]], [[Odoo 19/Community Addons/project/project|project]]
 
@@ -24,7 +24,8 @@ Add Merge action in contextual menu of project task and tag models.
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

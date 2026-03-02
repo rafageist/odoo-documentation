@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Product Availability Notifications
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/website_sale_stock_wishlist
 - Dependencies: [[Odoo 19/Community Addons/website_sale_stock/website_sale_stock|website_sale_stock]], [[Odoo 19/Community Addons/website_sale_wishlist/website_sale_wishlist|website_sale_wishlist]]
 
@@ -27,7 +27,6 @@ Notify the user when a product is back in stock
 - `ProductTemplate`
 - `ProductWishlist`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -39,7 +38,8 @@ class ProductWishlist
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

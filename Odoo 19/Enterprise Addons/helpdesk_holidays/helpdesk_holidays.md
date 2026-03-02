@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Helpdesk Time Off
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/helpdesk_holidays
 - Dependencies: [[Odoo 19/Enterprise Addons/helpdesk/helpdesk|helpdesk]], [[Odoo 19/Enterprise Addons/hr_holidays_gantt/hr_holidays_gantt|hr_holidays_gantt]]
 
@@ -26,7 +26,6 @@ Helpdesk integration with holidays
 
 - `ResUsers`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -37,7 +36,8 @@ class ResUsers
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

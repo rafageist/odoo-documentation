@@ -6,9 +6,10 @@ tags: [odoo, v19, enterprise, module]
 # Brazilian Accounting EDI for POS
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/l10n_br_edi_pos
 - Dependencies: [[Odoo 19/Enterprise Addons/l10n_br_edi/l10n_br_edi|l10n_br_edi]], [[Odoo 19/Community Addons/point_of_sale/point_of_sale|point_of_sale]]
+
 ## XML Artifacts (detected)
 
 - Views: 5
@@ -29,7 +30,6 @@ tags: [odoo, v19, enterprise, module]
 - `ProductTemplate`
 - `ResCompany`
 - `ResPartner`
-
 
 ```plantuml
 @startuml
@@ -52,7 +52,8 @@ pos_order --> res_users : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

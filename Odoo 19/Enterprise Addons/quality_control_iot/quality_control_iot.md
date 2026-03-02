@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Quality checks with IoT
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/quality_control_iot
 - Dependencies: [[Odoo 19/Enterprise Addons/quality_control/quality_control|quality_control]], [[Odoo 19/Enterprise Addons/quality_iot/quality_iot|quality_iot]]
 
@@ -24,7 +24,8 @@ Control the quality of your products with IoT devices
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

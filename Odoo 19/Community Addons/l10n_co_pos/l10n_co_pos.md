@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Colombian - Point of Sale
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/l10n_co_pos
 - Dependencies: [[Odoo 19/Community Addons/l10n_co/l10n_co|l10n_co]], [[Odoo 19/Community Addons/point_of_sale/point_of_sale|point_of_sale]]
+
 ## XML Artifacts (detected)
 
 - Views: 0
@@ -21,7 +22,6 @@ tags: [odoo, v19, community, module]
 
 - `PosOrder`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -32,7 +32,9 @@ class PosOrder
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

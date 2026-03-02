@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # eCommerce Rental with Stock Management
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/website_sale_stock_renting
 - Dependencies: [[Odoo 19/Enterprise Addons/website_sale_renting/website_sale_renting|website_sale_renting]], [[Odoo 19/Community Addons/website_sale_stock/website_sale_stock|website_sale_stock]], [[Odoo 19/Enterprise Addons/sale_stock_renting/sale_stock_renting|sale_stock_renting]]
 
@@ -30,7 +30,6 @@ Sell rental products on your eCommerce and manage stock
 - `SaleOrderLine`
 - `Website`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -45,7 +44,9 @@ class Website
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

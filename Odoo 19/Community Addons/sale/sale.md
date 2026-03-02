@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Sales
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/sale
 - Dependencies: [[Odoo 19/Community Addons/sales_team/sales_team|sales_team]], [[Odoo 19/Community Addons/account_payment/account_payment|account_payment]], [[Odoo 19/Community Addons/utm/utm|utm]]
 
@@ -43,7 +43,6 @@ Sales internal machinery
 - `sale.order`
 - `sale.order.line`
 - `UtmCampaign`
-
 
 ```plantuml
 @startuml
@@ -144,7 +143,9 @@ UtmCampaign --> res_currency : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

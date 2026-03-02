@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Argentinean eCommerce
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/l10n_ar_website_sale
 - Dependencies: [[Odoo 19/Community Addons/website_sale/website_sale|website_sale]], [[Odoo 19/Community Addons/l10n_ar/l10n_ar|l10n_ar]]
+
 ## XML Artifacts (detected)
 
 - Views: 1
@@ -22,7 +23,6 @@ tags: [odoo, v19, community, module]
 - `ProductTemplate`
 - `Website`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -34,7 +34,9 @@ class Website
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

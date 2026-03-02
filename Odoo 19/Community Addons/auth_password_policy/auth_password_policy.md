@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Password Policy
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/auth_password_policy
 - Dependencies: [[Odoo 19/Community Addons/base_setup/base_setup|base_setup]], [[Odoo 19/Community Addons/web/web|web]]
 
@@ -26,7 +26,6 @@ Implement basic password policy configuration & check
 
 - `ResUsers`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -37,7 +36,9 @@ class ResUsers
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

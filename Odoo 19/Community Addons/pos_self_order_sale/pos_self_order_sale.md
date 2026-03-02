@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # POS Self Order Sale
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/pos_self_order_sale
 - Dependencies: [[Odoo 19/Community Addons/pos_sale/pos_sale|pos_sale]], [[Odoo 19/Community Addons/pos_self_order/pos_self_order|pos_self_order]]
+
 ## XML Artifacts (detected)
 
 - Views: 1
@@ -19,7 +20,9 @@ tags: [odoo, v19, community, module]
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

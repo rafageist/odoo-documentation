@@ -6,9 +6,10 @@ tags: [odoo, v19, enterprise, module]
 # France - Accounting Reports
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/l10n_fr_reports
 - Dependencies: [[Odoo 19/Community Addons/l10n_fr_account/l10n_fr_account|l10n_fr_account]], [[Odoo 19/Enterprise Addons/account_reports/account_reports|account_reports]]
+
 ## XML Artifacts (detected)
 
 - Views: 5
@@ -23,7 +24,6 @@ tags: [odoo, v19, enterprise, module]
 - `account.report.async.export`
 - `AccountReturn`
 - `ResCompany`
-
 
 ```plantuml
 @startuml
@@ -42,7 +42,8 @@ account_report_async_export --|> account_report_async_document : one2many
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

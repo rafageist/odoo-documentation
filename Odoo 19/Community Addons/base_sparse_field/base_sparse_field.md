@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Sparse Fields
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/base_sparse_field
 - Dependencies: base (not documented)
 
@@ -26,7 +26,6 @@ Implementation of sparse fields.
 
 - `IrModelFields`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -39,7 +38,9 @@ IrModelFields --> ir_model_fields : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

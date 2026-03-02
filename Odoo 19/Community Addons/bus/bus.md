@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # IM Bus
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/bus
 - Dependencies: base (not documented), [[Odoo 19/Community Addons/web/web|web]]
+
 ## XML Artifacts (detected)
 
 - Views: 0
@@ -27,7 +28,6 @@ tags: [odoo, v19, community, module]
 - `res.users`
 - `res.users.settings`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -44,7 +44,9 @@ class "res.users.settings" as res_users_settings
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

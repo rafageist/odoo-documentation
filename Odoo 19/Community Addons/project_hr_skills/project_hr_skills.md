@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Project - Skills
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/project_hr_skills
 - Dependencies: [[Odoo 19/Community Addons/project/project|project]], [[Odoo 19/Community Addons/hr_skills/hr_skills|hr_skills]]
 
@@ -27,7 +27,6 @@ Project skills
 - `ProjectTask`
 - `ResUsers`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -41,7 +40,9 @@ ProjectTask --|> hr_employee_skill : one2many
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

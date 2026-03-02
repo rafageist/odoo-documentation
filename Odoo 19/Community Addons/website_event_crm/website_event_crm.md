@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Website Events CRM
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/website_event_crm
 - Dependencies: [[Odoo 19/Community Addons/event_crm/event_crm|event_crm]], [[Odoo 19/Community Addons/website_event/website_event|website_event]]
+
 ## XML Artifacts (detected)
 
 - Views: 2
@@ -21,7 +22,6 @@ tags: [odoo, v19, community, module]
 
 - `EventRegistration`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -32,7 +32,8 @@ class EventRegistration
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

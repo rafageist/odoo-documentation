@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Account - Allow updating tax grids
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/account_update_tax_tags
 - Dependencies: [[Odoo 19/Community Addons/account/account|account]]
 
@@ -24,7 +24,9 @@ Allow updating tax grids on existing entries
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

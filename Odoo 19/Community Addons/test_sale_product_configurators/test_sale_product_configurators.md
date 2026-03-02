@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Sale Product Configurators Tests
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/test_sale_product_configurators
 - Dependencies: [[Odoo 19/Community Addons/event_sale/event_sale|event_sale]], [[Odoo 19/Community Addons/sale_management/sale_management|sale_management]], [[Odoo 19/Community Addons/sale_product_matrix/sale_product_matrix|sale_product_matrix]]
 
@@ -24,7 +24,8 @@ Test Suite for Sale Product Configurator
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

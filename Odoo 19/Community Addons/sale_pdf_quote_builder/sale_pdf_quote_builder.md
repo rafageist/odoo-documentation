@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Sales PDF Quotation Builder
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/sale_pdf_quote_builder
 - Dependencies: [[Odoo 19/Community Addons/sale_management/sale_management|sale_management]]
+
 ## XML Artifacts (detected)
 
 - Views: 10
@@ -26,7 +27,6 @@ tags: [odoo, v19, community, module]
 - `SaleOrderLine`
 - `SaleOrderTemplate`
 - `sale.pdf.form.field`
-
 
 ```plantuml
 @startuml
@@ -58,7 +58,8 @@ sale_pdf_form_field .. quotation_document : many2many
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

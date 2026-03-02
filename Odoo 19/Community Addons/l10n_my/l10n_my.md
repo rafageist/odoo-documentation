@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Malaysia - Accounting
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/l10n_my
 - Dependencies: [[Odoo 19/Community Addons/account/account|account]], [[Odoo 19/Community Addons/account_tax_python/account_tax_python|account_tax_python]]
+
 ## XML Artifacts (detected)
 
 - Views: 1
@@ -21,7 +22,6 @@ tags: [odoo, v19, community, module]
 
 - `ProductTemplate`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -32,7 +32,9 @@ class ProductTemplate
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

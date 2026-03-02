@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Italy - Declaration of Intent
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/l10n_it_edi_doi
 - Dependencies: [[Odoo 19/Community Addons/l10n_it_edi/l10n_it_edi|l10n_it_edi]], [[Odoo 19/Community Addons/sale/sale|sale]]
+
 ## XML Artifacts (detected)
 
 - Views: 11
@@ -26,7 +27,6 @@ tags: [odoo, v19, community, module]
 - `ResCompany`
 - `ResPartner`
 - `SaleOrder`
-
 
 ```plantuml
 @startuml
@@ -61,7 +61,9 @@ SaleOrder --> l10n_it_edi_doi_declaration_of_intent : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

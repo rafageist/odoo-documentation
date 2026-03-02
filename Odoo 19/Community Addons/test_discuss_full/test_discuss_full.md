@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Test Discuss (full)
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/test_discuss_full
 - Dependencies: [[Odoo 19/Community Addons/calendar/calendar|calendar]], [[Odoo 19/Community Addons/crm/crm|crm]], [[Odoo 19/Community Addons/crm_livechat/crm_livechat|crm_livechat]], [[Odoo 19/Community Addons/hr_attendance/hr_attendance|hr_attendance]], [[Odoo 19/Community Addons/hr_fleet/hr_fleet|hr_fleet]], [[Odoo 19/Community Addons/hr_holidays/hr_holidays|hr_holidays]], [[Odoo 19/Community Addons/hr_homeworking/hr_homeworking|hr_homeworking]], [[Odoo 19/Community Addons/im_livechat/im_livechat|im_livechat]], [[Odoo 19/Community Addons/mail/mail|mail]], [[Odoo 19/Community Addons/mail_bot/mail_bot|mail_bot]], [[Odoo 19/Community Addons/project_todo/project_todo|project_todo]], [[Odoo 19/Community Addons/website_livechat/website_livechat|website_livechat]], [[Odoo 19/Community Addons/website_sale/website_sale|website_sale]], [[Odoo 19/Community Addons/website_slides/website_slides|website_slides]]
 
@@ -24,7 +24,8 @@ Test of Discuss with all possible overrides installed.
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

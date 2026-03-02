@@ -6,9 +6,9 @@ tags: [odoo, v19, enterprise, module]
 # Test Hong Kong Payroll
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/test_l10n_hk_hr_payroll_account
-- Dependencies: [[Odoo 19/Enterprise Addons/l10n_hk_hr_payroll_account/l10n_hk_hr_payroll_account|l10n_hk_hr_payroll_account]], [[Odoo 19/Enterprise Addons/documents_l10n_hk_hr_payroll/documents_l10n_hk_hr_payroll|documents_l10n_hk_hr_payroll]]
+- Dependencies: [[Odoo 19/Enterprise Addons/l10n_hk_hr_payroll_account/l10n_hk_hr_payroll_account|l10n_hk_hr_payroll_account]], [[Odoo 19/Enterprise Addons/documents_l10n_hk_hr_payroll/documents_l10n_hk_hr_payroll|documents_l10n_hk_hr_payroll]], [[Odoo 19/Enterprise Addons/l10n_hk_hr_payroll_empf/l10n_hk_hr_payroll_empf|l10n_hk_hr_payroll_empf]]
 
 ## Summary
 
@@ -24,7 +24,9 @@ Test Hong Kong Payroll
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

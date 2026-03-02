@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Attendances - Planning
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/hr_work_entry_planning_attendance
 - Dependencies: [[Odoo 19/Enterprise Addons/hr_work_entry_planning/hr_work_entry_planning|hr_work_entry_planning]], [[Odoo 19/Enterprise Addons/hr_work_entry_attendance/hr_work_entry_attendance|hr_work_entry_attendance]]
 
@@ -27,7 +27,6 @@ Create work entries from attendances based on employee's planning
 - `hr.attendance.overtime.rule`
 - `hr.version`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -39,7 +38,8 @@ class "hr.version" as hr_version
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Survey CRM
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/survey_crm
 - Dependencies: [[Odoo 19/Community Addons/survey/survey|survey]], [[Odoo 19/Community Addons/crm/crm|crm]]
 
@@ -31,7 +31,6 @@ Generate leads from surveys
 - `SurveySurvey`
 - `SurveyUser_Input`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -55,7 +54,8 @@ SurveyUser_Input --> crm_lead : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

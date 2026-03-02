@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Purchase Requisition Stock
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/purchase_requisition_stock
 - Dependencies: [[Odoo 19/Community Addons/purchase_requisition/purchase_requisition|purchase_requisition]], [[Odoo 19/Community Addons/purchase_stock/purchase_stock|purchase_stock]]
+
 ## XML Artifacts (detected)
 
 - Views: 3
@@ -25,7 +26,6 @@ tags: [odoo, v19, community, module]
 - `PurchaseRequisitionLine`
 - `StockRule`
 - `StockMove`
-
 
 ```plantuml
 @startuml
@@ -50,7 +50,9 @@ StockMove --|> purchase_requisition_line : one2many
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

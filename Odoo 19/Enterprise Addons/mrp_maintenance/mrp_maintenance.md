@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Maintenance - MRP
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/mrp_maintenance
 - Dependencies: [[Odoo 19/Enterprise Addons/mrp_workorder/mrp_workorder|mrp_workorder]], [[Odoo 19/Community Addons/stock_maintenance/stock_maintenance|stock_maintenance]]
 
@@ -30,7 +30,6 @@ Schedule and manage maintenance on machine and tools.
 - `MaintenanceRequest`
 - `MrpProduction`
 - `MrpWorkorder`
-
 
 ```plantuml
 @startuml
@@ -60,7 +59,8 @@ MrpProduction --|> maintenance_request : one2many
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

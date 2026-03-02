@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # HTML Builder
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/html_builder
 - Dependencies: base (not documented), [[Odoo 19/Community Addons/html_editor/html_editor|html_editor]], [[Odoo 19/Community Addons/mail/mail|mail]]
 
@@ -24,7 +24,9 @@ Generic html builder
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

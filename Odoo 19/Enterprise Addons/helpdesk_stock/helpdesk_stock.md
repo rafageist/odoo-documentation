@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Helpdesk Stock
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/helpdesk_stock
 - Dependencies: [[Odoo 19/Enterprise Addons/helpdesk_sale/helpdesk_sale|helpdesk_sale]], [[Odoo 19/Community Addons/stock/stock|stock]]
 
@@ -26,7 +26,6 @@ Project, Tasks, Stock
 
 - `HelpdeskTicket`
 - `StockPicking`
-
 
 ```plantuml
 @startuml
@@ -48,7 +47,8 @@ StockPicking --> helpdesk_ticket : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

@@ -6,13 +6,14 @@ tags: [odoo, v19, enterprise, module]
 # Mexico - Payroll CFDI
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/l10n_mx_hr_payroll_account_edi
 - Dependencies: [[Odoo 19/Enterprise Addons/l10n_mx_hr_payroll_account/l10n_mx_hr_payroll_account|l10n_mx_hr_payroll_account]], [[Odoo 19/Enterprise Addons/l10n_mx_edi/l10n_mx_edi|l10n_mx_edi]]
+
 ## XML Artifacts (detected)
 
-- Views: 10
-- Actions: 1
+- Views: 11
+- Actions: 2
 - Menus: 2
 - Rules (ir.rule): 0
 - Access CSV entries: 2
@@ -22,13 +23,13 @@ tags: [odoo, v19, enterprise, module]
 - `HrEmployee`
 - `HrPayrollStructure`
 - `HrPayslip`
+- `HrPayslipRun`
 - `HrSalaryRule`
 - `HrVersion`
 - `HrWorkEntryType`
 - `l10n.mx.concept`
 - `L10nMxEdiDocument`
 - `ResCompany`
-
 
 ```plantuml
 @startuml
@@ -37,6 +38,7 @@ title Mexico - Payroll CFDI - Models and Relations
 class HrEmployee
 class HrPayrollStructure
 class HrPayslip
+class HrPayslipRun
 class HrSalaryRule
 class HrVersion
 class HrWorkEntryType
@@ -56,7 +58,8 @@ L10nMxEdiDocument --> hr_payslip : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

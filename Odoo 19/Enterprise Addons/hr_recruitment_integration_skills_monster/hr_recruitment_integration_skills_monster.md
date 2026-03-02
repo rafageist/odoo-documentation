@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Job Board - Monster.com (Skills)
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/hr_recruitment_integration_skills_monster
 - Dependencies: [[Odoo 19/Community Addons/hr_recruitment_skills/hr_recruitment_skills|hr_recruitment_skills]], [[Odoo 19/Enterprise Addons/hr_recruitment_integration_monster/hr_recruitment_integration_monster|hr_recruitment_integration_monster]]
 
@@ -24,7 +24,8 @@ Manage Monster Job board integrations with skills
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

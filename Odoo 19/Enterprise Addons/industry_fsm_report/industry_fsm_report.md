@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Field Service Reports
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/industry_fsm_report
 - Dependencies: [[Odoo 19/Enterprise Addons/worksheet/worksheet|worksheet]], [[Odoo 19/Enterprise Addons/industry_fsm/industry_fsm|industry_fsm]], [[Odoo 19/Enterprise Addons/web_studio/web_studio|web_studio]]
 
@@ -24,16 +24,17 @@ Create Reports for Field service technicians
 
 ## Detected Models
 
+- `IrModel`
 - `ProjectProject`
 - `ProjectTask`
 - `ProjectTaskRecurrence`
 - `WorksheetTemplate`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
 title Field Service Reports - Models and Relations
+class IrModel
 class ProjectProject
 class ProjectTask
 class ProjectTaskRecurrence
@@ -46,7 +47,8 @@ ProjectTask --> worksheet_template : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

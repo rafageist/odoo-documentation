@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Sales Timesheet: Invoicing
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/sale_timesheet_enterprise
 - Dependencies: [[Odoo 19/Community Addons/sale_timesheet/sale_timesheet|sale_timesheet]], [[Odoo 19/Enterprise Addons/timesheet_grid/timesheet_grid|timesheet_grid]]
 
@@ -35,7 +35,6 @@ Configure timesheet invoicing
 - `ResCompany`
 - `sale.order.line`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -55,7 +54,9 @@ class "sale.order.line" as sale_order_line
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

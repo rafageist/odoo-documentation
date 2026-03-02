@@ -1,30 +1,24 @@
 ---
-tags: [v19, core, processes, Purchasing]
-status: seed
+tags: [odoo, v19, core, process, purchasing]
+status: backlog
 ---
-# ShoppingCore v19
 
-## Modules
-- `[[Odoo 19/Community Addons/Supply Chain/purchase.md]]`
-- `[[Comparisons/Purchases v18-v19]]`
+# Purchasing Process
 
-## Changes
-- Better replenishment panels.
-- Automation of RFQ and approvals.
-- Integration with logistics providers.
+## Focus
+- Trace purchase requisition, RFQ, order, receipt, and vendor bill touchpoints in Odoo 19
+- Explain where purchasing depends on stock, accounting, and approvals
 
-## Diagrams
-- RFQ sequence -> Purchase order v19.
+## Primary modules
+- `[[Odoo 19/Community Addons/purchase/purchase]]`
+- `[[Odoo 19/Community Addons/purchase_stock/purchase_stock]]`
+- `[[Odoo 19/Enterprise Addons/approvals_purchase/approvals_purchase]]`
+- `[[Odoo 19/Enterprise Addons/purchase_intrastat/purchase_intrastat]]`
 
-
-
-
-
-
-
-
+## Notes to develop
+- RFQ to PO flow
+- Receipt and valuation consequences
+- Approval and compliance checkpoints
 
 ## Navigation
 - **Parent:** [[Odoo 19/Core/Processes/Processes]]
-## Children
-- (none)

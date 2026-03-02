@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Website Studio
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/website_studio
 - Dependencies: [[Odoo 19/Enterprise Addons/web_studio/web_studio|web_studio]], [[Odoo 19/Community Addons/website/website|website]]
 
@@ -26,7 +26,6 @@ Display Website Elements in Studio
 
 - `website.controller.page`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -37,7 +36,8 @@ class "website.controller.page" as website_controller_page
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

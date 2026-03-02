@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # POS Self Order Pine Labs
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/pos_self_order_pine_labs
 - Dependencies: [[Odoo 19/Community Addons/pos_pine_labs/pos_pine_labs|pos_pine_labs]], [[Odoo 19/Community Addons/pos_self_order/pos_self_order|pos_self_order]]
 
@@ -26,7 +26,6 @@ An addon for the Self Order App (KIOSK) that allows customers to pay using the P
 
 - `PosPaymentMethod`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -37,7 +36,9 @@ class PosPaymentMethod
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

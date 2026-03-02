@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Employees cost registration on production
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/mrp_workorder_hr_account
 - Dependencies: [[Odoo 19/Enterprise Addons/mrp_workorder/mrp_workorder|mrp_workorder]], [[Odoo 19/Enterprise Addons/mrp_account_enterprise/mrp_account_enterprise|mrp_account_enterprise]]
 
@@ -16,7 +16,7 @@ Analytic cost of employee work in manufacturing
 
 ## XML Artifacts (detected)
 
-- Views: 0
+- Views: 2
 - Actions: 0
 - Menus: 0
 - Rules (ir.rule): 0
@@ -27,7 +27,6 @@ Analytic cost of employee work in manufacturing
 - `AccountAnalyticLine`
 - `MrpWorkcenterProductivity`
 - `MrpWorkorder`
-
 
 ```plantuml
 @startuml
@@ -45,7 +44,8 @@ MrpWorkorder .. account_analytic_line : many2many
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

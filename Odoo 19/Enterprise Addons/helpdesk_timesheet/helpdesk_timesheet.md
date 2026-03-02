@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Helpdesk Timesheet
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/helpdesk_timesheet
 - Dependencies: [[Odoo 19/Enterprise Addons/timesheet_grid/timesheet_grid|timesheet_grid]], [[Odoo 19/Enterprise Addons/project_helpdesk/project_helpdesk|project_helpdesk]]
 
@@ -28,7 +28,6 @@ Project, Tasks, Timesheet
 - `HelpdeskTeam`
 - `helpdesk.ticket`
 - `ProjectProject`
-
 
 ```plantuml
 @startuml
@@ -56,7 +55,8 @@ ProjectProject --|> helpdesk_team : one2many
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

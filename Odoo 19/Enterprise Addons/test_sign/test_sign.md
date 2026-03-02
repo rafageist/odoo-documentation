@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Test Sign
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/test_sign
 - Dependencies: [[Odoo 19/Enterprise Addons/sign/sign|sign]], [[Odoo 19/Community Addons/sale/sale|sale]], [[Odoo 19/Community Addons/crm/crm|crm]], [[Odoo 19/Community Addons/mrp/mrp|mrp]], [[Odoo 19/Community Addons/hr_expense/hr_expense|hr_expense]]
 
@@ -24,7 +24,8 @@ Sign Test case
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

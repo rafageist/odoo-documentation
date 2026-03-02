@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Project - Sale - Expense
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/project_sale_expense
 - Dependencies: [[Odoo 19/Community Addons/sale_project/sale_project|sale_project]], [[Odoo 19/Community Addons/sale_expense/sale_expense|sale_expense]], [[Odoo 19/Community Addons/project_hr_expense/project_hr_expense|project_hr_expense]]
+
 ## XML Artifacts (detected)
 
 - Views: 0
@@ -23,7 +24,6 @@ tags: [odoo, v19, community, module]
 - `HrExpense`
 - `ProjectProject`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -36,7 +36,9 @@ class ProjectProject
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

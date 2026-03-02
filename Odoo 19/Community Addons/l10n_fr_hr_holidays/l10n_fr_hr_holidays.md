@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # France - Time Off
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/l10n_fr_hr_holidays
 - Dependencies: [[Odoo 19/Community Addons/hr_holidays/hr_holidays|hr_holidays]]
 
@@ -27,7 +27,6 @@ Management of leaves for part-time workers in France
 - `HrLeave`
 - `ResCompany`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -41,7 +40,9 @@ ResCompany --> hr_leave_type : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Kuwait - Accounting
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/l10n_kw
 - Dependencies: [[Odoo 19/Community Addons/account/account|account]], [[Odoo 19/Community Addons/l10n_gcc_invoice/l10n_gcc_invoice|l10n_gcc_invoice]]
+
 ## XML Artifacts (detected)
 
 - Views: 0
@@ -19,7 +20,9 @@ tags: [odoo, v19, community, module]
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

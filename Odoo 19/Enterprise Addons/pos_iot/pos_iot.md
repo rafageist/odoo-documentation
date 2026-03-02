@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # IoT for PoS
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/pos_iot
 - Dependencies: [[Odoo 19/Community Addons/point_of_sale/point_of_sale|point_of_sale]], [[Odoo 19/Enterprise Addons/iot/iot|iot]]
 
@@ -30,7 +30,6 @@ Use IoT Devices in the PoS
 - `PosPaymentMethod`
 - `PosPrinter`
 - `PosSession`
-
 
 ```plantuml
 @startuml
@@ -58,7 +57,8 @@ PosPrinter --> iot_device : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

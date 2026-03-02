@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # POS Restaurant Adyen
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/pos_restaurant_adyen
 - Dependencies: [[Odoo 19/Community Addons/pos_adyen/pos_adyen|pos_adyen]], [[Odoo 19/Community Addons/pos_restaurant/pos_restaurant|pos_restaurant]], [[Odoo 19/Community Addons/payment_adyen/payment_adyen|payment_adyen]]
 
@@ -28,7 +28,6 @@ Adds American style tipping to Adyen
 - `PosPayment`
 - `PosPaymentMethod`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -41,7 +40,9 @@ class PosPaymentMethod
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Opportunity to Quotation
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/sale_crm
 - Dependencies: [[Odoo 19/Community Addons/sale/sale|sale]], [[Odoo 19/Community Addons/crm/crm|crm]]
+
 ## XML Artifacts (detected)
 
 - Views: 4
@@ -22,7 +23,6 @@ tags: [odoo, v19, community, module]
 - `CrmLead`
 - `CrmTeam`
 - `SaleOrder`
-
 
 ```plantuml
 @startuml
@@ -40,7 +40,8 @@ SaleOrder --> crm_lead : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

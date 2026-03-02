@@ -6,9 +6,10 @@ tags: [odoo, v19, enterprise, module]
 # Electronic Exports of Goods for Chile
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/l10n_cl_edi_exports
 - Dependencies: [[Odoo 19/Enterprise Addons/l10n_cl_edi/l10n_cl_edi|l10n_cl_edi]]
+
 ## XML Artifacts (detected)
 
 - Views: 3
@@ -21,7 +22,6 @@ tags: [odoo, v19, enterprise, module]
 
 - `AccountMove`
 - `l10n_cl.customs_port`
-
 
 ```plantuml
 @startuml
@@ -39,7 +39,8 @@ l10n_cl_customs_port --> res_country : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

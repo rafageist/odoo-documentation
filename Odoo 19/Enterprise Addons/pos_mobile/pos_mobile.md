@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Point of Sale Mobile
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/pos_mobile
 - Dependencies: [[Odoo 19/Enterprise Addons/pos_enterprise/pos_enterprise|pos_enterprise]], [[Odoo 19/Enterprise Addons/web_mobile/web_mobile|web_mobile]]
 
@@ -24,7 +24,8 @@ Odoo Mobile Point of Sale module
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

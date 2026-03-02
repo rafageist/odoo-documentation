@@ -1,3 +1,4 @@
+
 <!-- GENERATED:MODULE -->
 ---
 tags: [odoo, v19, community, module]
@@ -6,9 +7,10 @@ tags: [odoo, v19, community, module]
 # Sales Expense Margin
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/sale_expense_margin
 - Dependencies: [[Odoo 19/Community Addons/sale_expense/sale_expense|sale_expense]], [[Odoo 19/Community Addons/sale_margin/sale_margin|sale_margin]]
+
 ## XML Artifacts (detected)
 
 - Views: 0
@@ -21,7 +23,6 @@ tags: [odoo, v19, community, module]
 
 - `AccountMoveLine`
 - `SaleOrderLine`
-
 
 ```plantuml
 @startuml
@@ -36,7 +37,7 @@ SaleOrderLine --> hr_expense : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->

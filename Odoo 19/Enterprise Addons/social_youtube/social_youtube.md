@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Social YouTube
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/social_youtube
 - Dependencies: [[Odoo 19/Enterprise Addons/social/social|social]], [[Odoo 19/Community Addons/iap/iap|iap]]
 
@@ -32,7 +32,6 @@ Manage your YouTube videos and schedule video uploads
 - `SocialStream`
 - `SocialStreamPost`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -49,7 +48,8 @@ class SocialStreamPost
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

@@ -1,29 +1,25 @@
 ---
-tags: [v19, core, processes, Accounting]
-status: seed
+tags: [odoo, v19, core, process, accounting]
+status: backlog
 ---
-# Accounting Core v19
 
-## Key modules
-- `[[Odoo 19/Community Addons/Finance/account.md]]`
-- `[[Odoo 19/Enterprise Addons/Advanced Finance/account_reports.md]]`
-- `[[Comparisons/Accounting v18-v19]]`
+# Accounting Process
 
-## Relevant changes
-- New reconciliation assistants.
-- UI and performance improvements in mass notes.
-- Adjusted multi-currency flows.
+## Focus
+- Quote the end-to-end accounting flow as implemented in Odoo 19 core and finance addons
+- Clarify how invoices, payments, journals, taxes, and reports connect
+- Track which responsibilities live in `account` and which are enterprise extensions
 
-## Diagrams
-- Customer invoice sequence in v19.
+## Primary modules
+- `[[Odoo 19/Community Addons/account/account]]`
+- `[[Odoo 19/Community Addons/account_payment/account_payment]]`
+- `[[Odoo 19/Enterprise Addons/account_accountant/account_accountant]]`
+- `[[Odoo 19/Enterprise Addons/account_reports/account_reports]]`
 
-
-
-
-
-
+## Notes to develop
+- Journal entry lifecycle
+- Reconciliation checkpoints
+- Reporting and period close touchpoints
 
 ## Navigation
 - **Parent:** [[Odoo 19/Core/Processes/Processes]]
-## Children
-- (none)

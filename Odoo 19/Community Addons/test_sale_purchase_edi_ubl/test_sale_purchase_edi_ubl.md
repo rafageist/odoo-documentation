@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Test - Sale & Purchase Order EDI
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/test_sale_purchase_edi_ubl
 - Dependencies: [[Odoo 19/Community Addons/purchase_edi_ubl_bis3/purchase_edi_ubl_bis3|purchase_edi_ubl_bis3]], [[Odoo 19/Community Addons/sale_edi_ubl/sale_edi_ubl|sale_edi_ubl]]
 
@@ -24,7 +24,8 @@ Sale & Purchase Order EDI Tests: Ensure Flow Robustness
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

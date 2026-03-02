@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Cash Basis Accounting Reports
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/account_reports_cash_basis
 - Dependencies: [[Odoo 19/Enterprise Addons/account_reports/account_reports|account_reports]]
 
@@ -28,7 +28,6 @@ Add cash basis functionality for reports
 - `AccountMoveLine`
 - `AccountReport`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -41,7 +40,8 @@ class AccountReport
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

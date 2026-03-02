@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Purchase
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/purchase
 - Dependencies: [[Odoo 19/Community Addons/account/account|account]]
 
@@ -38,7 +38,6 @@ Purchase orders, tenders and agreements
 - `purchase.order.line`
 - `ResCompany`
 - `ResPartner`
-
 
 ```plantuml
 @startuml
@@ -119,7 +118,9 @@ ResPartner --> res_users : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

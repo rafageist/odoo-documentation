@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Website IM Livechat HR Recruitment
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/website_hr_recruitment_livechat
 - Dependencies: [[Odoo 19/Community Addons/website_hr_recruitment/website_hr_recruitment|website_hr_recruitment]], [[Odoo 19/Community Addons/im_livechat/im_livechat|im_livechat]]
 
@@ -24,7 +24,8 @@ Chatbot for the HR Recruitment
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

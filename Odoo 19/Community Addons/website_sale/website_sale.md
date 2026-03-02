@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # eCommerce
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/website_sale
 - Dependencies: [[Odoo 19/Community Addons/website/website|website]], [[Odoo 19/Community Addons/sale/sale|sale]], [[Odoo 19/Community Addons/website_payment/website_payment|website_payment]], [[Odoo 19/Community Addons/website_mail/website_mail|website_mail]], [[Odoo 19/Community Addons/portal_rating/portal_rating|portal_rating]], [[Odoo 19/Community Addons/digest/digest|digest]], [[Odoo 19/Community Addons/delivery/delivery|delivery]], [[Odoo 19/Community Addons/html_builder/html_builder|html_builder]]
 
@@ -54,7 +54,6 @@ Sell your products online
 - `WebsiteSnippetFilter`
 - `WebsiteTrack`
 - `WebsiteVisitor`
-
 
 ```plantuml
 @startuml
@@ -141,7 +140,8 @@ WebsiteVisitor .. product_product : many2many
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # MRP features for Quality Control
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/quality_mrp
 - Dependencies: [[Odoo 19/Enterprise Addons/quality_control/quality_control|quality_control]], [[Odoo 19/Community Addons/mrp/mrp|mrp]]
 
@@ -16,7 +16,7 @@ Quality Management with MRP
 
 ## XML Artifacts (detected)
 
-- Views: 3
+- Views: 2
 - Actions: 2
 - Menus: 0
 - Rules (ir.rule): 0
@@ -30,7 +30,6 @@ Quality Management with MRP
 - `QualityAlert`
 - `StockMove`
 - `StockMoveLine`
-
 
 ```plantuml
 @startuml
@@ -54,7 +53,8 @@ QualityAlert --> mrp_production : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

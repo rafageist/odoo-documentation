@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Google places autocompletion
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/website_sale_autocomplete
 - Dependencies: [[Odoo 19/Community Addons/website_sale/website_sale|website_sale]], [[Odoo 19/Community Addons/google_address_autocomplete/google_address_autocomplete|google_address_autocomplete]]
 
@@ -26,7 +26,6 @@ Assist your users with automatic completion & suggestions when filling their add
 
 - `Website`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -37,7 +36,8 @@ class Website
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

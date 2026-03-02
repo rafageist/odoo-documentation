@@ -6,9 +6,10 @@ tags: [odoo, v19, enterprise, module]
 # Spain - Real Estates
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/l10n_es_real_estates
 - Dependencies: [[Odoo 19/Enterprise Addons/l10n_es_reports/l10n_es_reports|l10n_es_reports]]
+
 ## XML Artifacts (detected)
 
 - Views: 4
@@ -22,7 +23,6 @@ tags: [odoo, v19, enterprise, module]
 - `AccountMove`
 - `AccountMoveLine`
 - `l10n_es_reports.real.estate`
-
 
 ```plantuml
 @startuml
@@ -39,7 +39,9 @@ l10n_es_reports_real_estate --|> account_move : one2many
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

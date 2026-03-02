@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Customer Rating
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/rating
 - Dependencies: [[Odoo 19/Community Addons/mail/mail|mail]]
+
 ## XML Artifacts (detected)
 
 - Views: 9
@@ -21,7 +22,6 @@ tags: [odoo, v19, community, module]
 
 - `MailMessage`
 - `rating.rating`
-
 
 ```plantuml
 @startuml
@@ -44,7 +44,9 @@ rating_rating --> mail_message : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

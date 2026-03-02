@@ -1,3 +1,4 @@
+
 <!-- GENERATED:MODULE -->
 ---
 tags: [odoo, v19, enterprise, module]
@@ -6,7 +7,7 @@ tags: [odoo, v19, enterprise, module]
 # Web Cohort Tests
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/test_web_cohort
 - Dependencies: [[Odoo 19/Enterprise Addons/web_cohort/web_cohort|web_cohort]]
 
@@ -27,7 +28,6 @@ Web cohort Test
 - `web.cohort.simple.model`
 - `web.cohort.type`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -40,7 +40,7 @@ web_cohort_simple_model --> web_cohort_type : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->

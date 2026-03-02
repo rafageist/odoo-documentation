@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # LATAM Document
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/l10n_latam_invoice_document
 - Dependencies: [[Odoo 19/Community Addons/account/account|account]], [[Odoo 19/Community Addons/account_debit_note/account_debit_note|account_debit_note]]
 
@@ -30,7 +30,6 @@ LATAM Document Types
 - `l10n_latam.document.type`
 - `ResCompany`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -49,7 +48,9 @@ l10n_latam_document_type --> res_country : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

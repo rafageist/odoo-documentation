@@ -6,9 +6,10 @@ tags: [odoo, v19, enterprise, module]
 # Belgium - Payroll
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/l10n_be_hr_payroll
 - Dependencies: [[Odoo 19/Community Addons/certificate/certificate|certificate]], [[Odoo 19/Enterprise Addons/hr_payroll/hr_payroll|hr_payroll]], [[Odoo 19/Community Addons/hr_work_entry_holidays/hr_work_entry_holidays|hr_work_entry_holidays]], [[Odoo 19/Enterprise Addons/hr_payroll_holidays/hr_payroll_holidays|hr_payroll_holidays]]
+
 ## XML Artifacts (detected)
 
 - Views: 48
@@ -48,7 +49,6 @@ tags: [odoo, v19, enterprise, module]
 - `l10n_be.schedule.change.allocation`
 - `ResourceCalendar`
 - `ResCompany`
-
 
 ```plantuml
 @startuml
@@ -130,7 +130,8 @@ ResCompany --> hr_leave_type : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

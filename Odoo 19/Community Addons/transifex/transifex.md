@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Transifex integration
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/transifex
 - Dependencies: base (not documented), [[Odoo 19/Community Addons/web/web|web]]
 
@@ -26,7 +26,6 @@ Add a link to edit a translation in Transifex
 
 - `transifex.code.translation`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -37,7 +36,9 @@ class "transifex.code.translation" as transifex_code_translation
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

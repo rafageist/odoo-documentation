@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Documents - Expense
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/documents_hr_expense
 - Dependencies: [[Odoo 19/Enterprise Addons/documents/documents|documents]], [[Odoo 19/Enterprise Addons/hr_expense_extract/hr_expense_extract|hr_expense_extract]]
 
@@ -27,7 +27,6 @@ Store expense documents in the Document app
 - `DocumentsDocument`
 - `hr.expense`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -39,7 +38,8 @@ class "hr.expense" as hr_expense
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

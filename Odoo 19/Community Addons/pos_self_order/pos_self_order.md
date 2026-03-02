@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # POS Self Order
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/pos_self_order
 - Dependencies: [[Odoo 19/Community Addons/pos_restaurant/pos_restaurant|pos_restaurant]], [[Odoo 19/Community Addons/http_routing/http_routing|http_routing]], [[Odoo 19/Community Addons/link_tracker/link_tracker|link_tracker]]
 
@@ -40,7 +40,6 @@ Addon for the POS App that allows customers to view the menu on their smartphone
 - `ProductTag`
 - `res.country`
 - `ResPartner`
-
 
 ```plantuml
 @startuml
@@ -83,7 +82,9 @@ pos_self_order_custom_link .. pos_config : many2many
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

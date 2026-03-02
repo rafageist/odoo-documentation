@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # France - Factur-X integration with Chorus Pro
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/l10n_fr_facturx_chorus_pro
 - Dependencies: [[Odoo 19/Community Addons/account/account|account]], [[Odoo 19/Community Addons/account_edi_ubl_cii/account_edi_ubl_cii|account_edi_ubl_cii]], [[Odoo 19/Community Addons/l10n_fr_account/l10n_fr_account|l10n_fr_account]]
+
 ## XML Artifacts (detected)
 
 - Views: 1
@@ -21,7 +22,6 @@ tags: [odoo, v19, community, module]
 
 - `AccountMove`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -32,7 +32,9 @@ class AccountMove
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

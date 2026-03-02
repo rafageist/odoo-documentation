@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Lunch
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/lunch
 - Dependencies: [[Odoo 19/Community Addons/mail/mail|mail]]
 
@@ -34,7 +34,6 @@ Handle lunch orders of your employees
 - `lunch.topping`
 - `ResCompany`
 - `ResUsers`
-
 
 ```plantuml
 @startuml
@@ -97,7 +96,9 @@ ResUsers .. lunch_product : many2many
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

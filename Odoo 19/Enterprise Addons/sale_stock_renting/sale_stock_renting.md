@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Rental Stock Management
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/sale_stock_renting
 - Dependencies: [[Odoo 19/Enterprise Addons/sale_renting/sale_renting|sale_renting]], [[Odoo 19/Community Addons/sale_stock/sale_stock|sale_stock]]
 
@@ -34,8 +34,8 @@ Allows use of stock application to manage rentals inventory
 - `StockLot`
 - `StockMove`
 - `StockWarehouseOrderpoint`
+- `StockPicking`
 - `StockWarehouse`
-
 
 ```plantuml
 @startuml
@@ -51,6 +51,7 @@ class SaleOrderLine
 class StockLot
 class StockMove
 class StockWarehouseOrderpoint
+class StockPicking
 class StockWarehouse
 class "stock.location" as stock_location
 ResCompany --> stock_location : many2one
@@ -64,7 +65,8 @@ SaleOrderLine .. stock_lot : many2many
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

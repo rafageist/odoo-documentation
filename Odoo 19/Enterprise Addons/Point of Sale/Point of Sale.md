@@ -1,11 +1,13 @@
-<!-- GENERATED:CATEGORY -->
 ---
 tags: [odoo, v19, enterprise, index, category]
 ---
 
 # Point of Sale
 
-Modules: 29
+- Scope: Enterprise Addons
+- Modules: 29
+
+## Modules
 
 - [[Odoo 19/Enterprise Addons/pos_account_reports/pos_account_reports|pos_account_reports]]
 - [[Odoo 19/Enterprise Addons/pos_appointment/pos_appointment|pos_appointment]]
@@ -36,4 +38,8 @@ Modules: 29
 - [[Odoo 19/Enterprise Addons/pos_urban_piper/pos_urban_piper|pos_urban_piper]]
 - [[Odoo 19/Enterprise Addons/pos_urban_piper_enhancements/pos_urban_piper_enhancements|pos_urban_piper_enhancements]]
 - [[Odoo 19/Enterprise Addons/pos_urban_piper_ubereats/pos_urban_piper_ubereats|pos_urban_piper_ubereats]]
-<!-- GENERATED:CATEGORY -->
+
+## Navigation
+
+- [[../Enterprise Addons|Back to scope]]
+- [[../../Odoo 19/Odoo 19|Back to version]]

@@ -1,42 +1,28 @@
 ---
-tags: [v19, map, content]
-status: seed
+tags: [odoo, v19, index]
+status: active
 ---
-# Odoo 19 - Global Map
 
-## Main structure
-- `[[Odoo 19/Core]]` -> renewed technical base and framework improvements.
-- `[[Odoo 19/Community Addons]]` -> standard capabilities in CE 19.
-- `[[Odoo 19/Enterprise Addons]]` -> premium features for version 19.
+# Odoo 19
 
-```plantuml
-@startmindmap
-* Odoo 19
-** Core
-*** ORM changes
-*** Performance
-** Community Addons
-*** New modules
-*** Redesigned modules
-** Enterprise Addons
-*** Benchmarks
-*** Integrations
-@endmindmap
-```
+## Main branches
+- `[[Odoo 19/Core/Core]]` for framework, master data, infrastructure, and transversal processes
+- `[[Odoo 19/Community Addons/Community Addons]]` for standard addons shipped with Odoo 19
+- `[[Odoo 19/Enterprise Addons/Enterprise Addons]]` for enterprise-only addons and extensions
 
-## Baseline comparison
-- Document changes vs v18 in `[[Comparisons]]`.
-- Flag deprecated or renamed modules.
-- Register user experience and API improvements.
+## Source alignment
+- Community source root: `odoo19`
+- Enterprise source root: `enterprise-cache/3ff6ea5148ee9e3209f05e677ba8fff51fc44d0d`
+- Supporting examples and explanations: `odoo-skills`
 
-## Progress status
-- Core: no notes yet.
-- Community: no notes yet.
-- Enterprise: no notes yet.
+## Documentation rules
+- Keep one canonical note per module.
+- Use category pages to group modules, not to duplicate them.
+- Prefer code-backed descriptions over release-style marketing summaries.
 
 ## Navigation
 - **Parent:** [[Welcome]]
 ## Children
-- [[Odoo 19/Community Addons/Community Addons]]
 - [[Odoo 19/Core/Core]]
+- [[Odoo 19/Community Addons/Community Addons]]
 - [[Odoo 19/Enterprise Addons/Enterprise Addons]]

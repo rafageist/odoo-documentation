@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # CRM Mail Plugin
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/crm_mail_plugin
 - Dependencies: [[Odoo 19/Community Addons/crm/crm|crm]], [[Odoo 19/Community Addons/mail_plugin/mail_plugin|mail_plugin]]
 
@@ -26,7 +26,6 @@ Turn emails received in your mailbox into leads and log their content as interna
 
 - `CrmLead`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -37,7 +36,9 @@ class CrmLead
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

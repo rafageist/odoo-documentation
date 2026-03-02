@@ -1,11 +1,13 @@
-<!-- GENERATED:CATEGORY -->
 ---
 tags: [odoo, v19, community, index, category]
 ---
 
 # Inventory
 
-Modules: 35
+- Scope: Community Addons
+- Modules: 35
+
+## Modules
 
 - [[Odoo 19/Community Addons/barcodes/barcodes|barcodes]]
 - [[Odoo 19/Community Addons/barcodes_gs1_nomenclature/barcodes_gs1_nomenclature|barcodes_gs1_nomenclature]]
@@ -42,4 +44,8 @@ Modules: 35
 - [[Odoo 19/Community Addons/stock_maintenance/stock_maintenance|stock_maintenance]]
 - [[Odoo 19/Community Addons/stock_picking_batch/stock_picking_batch|stock_picking_batch]]
 - [[Odoo 19/Community Addons/stock_sms/stock_sms|stock_sms]]
-<!-- GENERATED:CATEGORY -->
+
+## Navigation
+
+- [[../Community Addons|Back to scope]]
+- [[../../Odoo 19/Odoo 19|Back to version]]

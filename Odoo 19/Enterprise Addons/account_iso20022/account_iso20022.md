@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # SEPA Credit Transfer / ISO20022
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/account_iso20022
 - Dependencies: [[Odoo 19/Enterprise Addons/account_batch_payment/account_batch_payment|account_batch_payment]], [[Odoo 19/Community Addons/base_iban/base_iban|base_iban]]
 
@@ -32,7 +32,6 @@ Export payments as SEPA Credit Transfer or ISO20022 files
 - `ResCompany`
 - `ResPartner`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -49,7 +48,8 @@ class ResPartner
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

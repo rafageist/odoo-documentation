@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Marketing Automation Tests
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/test_marketing_automation
 - Dependencies: [[Odoo 19/Enterprise Addons/marketing_automation/marketing_automation|marketing_automation]], [[Odoo 19/Enterprise Addons/marketing_automation_sms/marketing_automation_sms|marketing_automation_sms]], [[Odoo 19/Enterprise Addons/marketing_automation_whatsapp/marketing_automation_whatsapp|marketing_automation_whatsapp]], [[Odoo 19/Community Addons/test_mail/test_mail|test_mail]], [[Odoo 19/Enterprise Addons/test_mail_enterprise/test_mail_enterprise|test_mail_enterprise]], [[Odoo 19/Community Addons/test_mail_full/test_mail_full|test_mail_full]], [[Odoo 19/Community Addons/test_mail_sms/test_mail_sms|test_mail_sms]], [[Odoo 19/Community Addons/test_mass_mailing/test_mass_mailing|test_mass_mailing]]
 
@@ -29,7 +29,6 @@ Test Suite for Automated Marketing Campaigns
 - `marketing.test.utm`
 - `marketing.test.sms`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -50,7 +49,8 @@ marketing_test_sms --> res_partner : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

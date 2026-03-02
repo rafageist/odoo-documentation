@@ -1,11 +1,13 @@
-<!-- GENERATED:CATEGORY -->
 ---
 tags: [odoo, v19, community, index, category]
 ---
 
 # Payments
 
-Modules: 20
+- Scope: Community Addons
+- Modules: 20
+
+## Modules
 
 - [[Odoo 19/Community Addons/payment_adyen/payment_adyen|payment_adyen]]
 - [[Odoo 19/Community Addons/payment_aps/payment_aps|payment_aps]]
@@ -27,4 +29,8 @@ Modules: 20
 - [[Odoo 19/Community Addons/payment_stripe/payment_stripe|payment_stripe]]
 - [[Odoo 19/Community Addons/payment_worldline/payment_worldline|payment_worldline]]
 - [[Odoo 19/Community Addons/payment_xendit/payment_xendit|payment_xendit]]
-<!-- GENERATED:CATEGORY -->
+
+## Navigation
+
+- [[../Community Addons|Back to scope]]
+- [[../../Odoo 19/Odoo 19|Back to version]]

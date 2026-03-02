@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Skills Certification
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/hr_skills_survey
 - Dependencies: [[Odoo 19/Community Addons/hr_skills/hr_skills|hr_skills]], [[Odoo 19/Community Addons/survey/survey|survey]]
 
@@ -28,7 +28,6 @@ Add certification to resume of your employees
 - `SurveySurvey`
 - `SurveyUser_Input`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -43,7 +42,9 @@ HrResumeLine --> survey_survey : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # SMS Tests
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/test_mail_sms
 - Dependencies: [[Odoo 19/Community Addons/mail/mail|mail]], [[Odoo 19/Community Addons/sms/sms|sms]], [[Odoo 19/Community Addons/sms_twilio/sms_twilio|sms_twilio]], test_orm (not documented)
 
@@ -31,7 +31,6 @@ SMS Tests: performances and tests specific to SMS
 - `mail.test.sms.partner`
 - `mail.test.sms.partner.2many`
 - `sms.test.nothread`
-
 
 ```plantuml
 @startuml
@@ -61,7 +60,9 @@ sms_test_nothread --> res_partner : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

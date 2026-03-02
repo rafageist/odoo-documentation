@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # WhatsApp in Marketing Automation
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/marketing_automation_whatsapp
 - Dependencies: [[Odoo 19/Enterprise Addons/marketing_automation/marketing_automation|marketing_automation]], [[Odoo 19/Enterprise Addons/whatsapp/whatsapp|whatsapp]]
 
@@ -33,7 +33,6 @@ Integrate WhatsApp in marketing campaigns
 - `WhatsappTemplate`
 - `WhatsappTemplateButton`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -58,7 +57,8 @@ WhatsappMessage --|> marketing_trace : one2many
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

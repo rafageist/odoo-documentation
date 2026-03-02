@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Social Tests (Full)
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/social_test_full
 - Dependencies: [[Odoo 19/Enterprise Addons/social_facebook/social_facebook|social_facebook]], [[Odoo 19/Enterprise Addons/social_instagram/social_instagram|social_instagram]], [[Odoo 19/Enterprise Addons/social_linkedin/social_linkedin|social_linkedin]], [[Odoo 19/Enterprise Addons/social_push_notifications/social_push_notifications|social_push_notifications]], [[Odoo 19/Enterprise Addons/social_twitter/social_twitter|social_twitter]], [[Odoo 19/Enterprise Addons/social_youtube/social_youtube|social_youtube]], [[Odoo 19/Enterprise Addons/social_crm/social_crm|social_crm]]
 
@@ -24,7 +24,8 @@ Social Tests: tests specific to social with all sub-modules
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

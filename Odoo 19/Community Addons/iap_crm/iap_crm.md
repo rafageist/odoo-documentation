@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # IAP / CRM
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/iap_crm
 - Dependencies: [[Odoo 19/Community Addons/crm/crm|crm]], [[Odoo 19/Community Addons/iap_mail/iap_mail|iap_mail]]
 
@@ -26,7 +26,6 @@ Bridge between IAP and CRM
 
 - `CrmLead`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -37,7 +36,9 @@ class CrmLead
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

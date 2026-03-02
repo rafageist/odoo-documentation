@@ -6,9 +6,10 @@ tags: [odoo, v19, enterprise, module]
 # French Payroll
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/l10n_fr_hr_payroll
 - Dependencies: [[Odoo 19/Enterprise Addons/hr_payroll/hr_payroll|hr_payroll]]
+
 ## XML Artifacts (detected)
 
 - Views: 3
@@ -23,7 +24,6 @@ tags: [odoo, v19, enterprise, module]
 - `HrVersion`
 - `HrPayslip`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -36,7 +36,8 @@ class HrPayslip
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

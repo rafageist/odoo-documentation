@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # POS - HR
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/pos_hr
 - Dependencies: [[Odoo 19/Community Addons/point_of_sale/point_of_sale|point_of_sale]], [[Odoo 19/Community Addons/hr/hr|hr]]
 
@@ -32,7 +32,6 @@ Link module between Point of Sale and HR
 - `PosSession`
 - `ProductProduct`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -56,7 +55,9 @@ PosSession --> hr_employee : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

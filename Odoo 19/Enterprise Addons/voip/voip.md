@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Phone
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/voip
 - Dependencies: base (not documented), [[Odoo 19/Community Addons/mail/mail|mail]], [[Odoo 19/Community Addons/phone_validation/phone_validation|phone_validation]], [[Odoo 19/Community Addons/web/web|web]], [[Odoo 19/Enterprise Addons/web_mobile/web_mobile|web_mobile]]
 
@@ -20,23 +20,24 @@ Make and receive phone calls from within Odoo.
 - Actions: 3
 - Menus: 5
 - Rules (ir.rule): 4
-- Access CSV entries: 5
+- Access CSV entries: 6
 
 ## Detected Models
 
 - `mail.activity`
+- `ResCountry`
 - `res.partner`
 - `ResUsers`
 - `ResUsersSettings`
 - `voip.call`
 - `voip.provider`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
 title Phone - Models and Relations
 class "mail.activity" as mail_activity
+class ResCountry
 class "res.partner" as res_partner
 class ResUsers
 class ResUsersSettings
@@ -57,7 +58,8 @@ voip_provider --> res_company : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

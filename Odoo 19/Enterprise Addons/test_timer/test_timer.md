@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Timer Tests
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/test_timer
 - Dependencies: [[Odoo 19/Enterprise Addons/timer/timer|timer]]
 
@@ -27,7 +27,6 @@ Timer Tests: feature and performance tests for timer
 - `timer.test`
 - `interruption.timer.test`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -39,7 +38,8 @@ class "interruption.timer.test" as interruption_timer_test
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

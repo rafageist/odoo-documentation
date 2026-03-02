@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Expenses in Payslips
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/hr_payroll_expense
 - Dependencies: [[Odoo 19/Community Addons/hr_expense/hr_expense|hr_expense]], [[Odoo 19/Enterprise Addons/hr_payroll_account/hr_payroll_account|hr_payroll_account]]
 
@@ -29,7 +29,6 @@ Submit, validate and reinvoice employee expenses
 - `HrPayrollStructure`
 - `HrPayslip`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -47,7 +46,8 @@ HrPayslip --|> hr_expense : one2many
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

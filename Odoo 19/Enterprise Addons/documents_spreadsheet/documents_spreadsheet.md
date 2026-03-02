@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Documents Spreadsheet
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/documents_spreadsheet
 - Dependencies: [[Odoo 19/Enterprise Addons/documents/documents|documents]], [[Odoo 19/Enterprise Addons/spreadsheet_edition/spreadsheet_edition|spreadsheet_edition]], [[Odoo 19/Community Addons/base_import/base_import|base_import]]
 
@@ -30,7 +30,6 @@ Documents Spreadsheet
 - `spreadsheet.contributor`
 - `spreadsheet.template`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -50,7 +49,8 @@ spreadsheet_contributor --> res_users : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Contact Form
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/website_crm
 - Dependencies: [[Odoo 19/Community Addons/website/website|website]], [[Odoo 19/Community Addons/crm/crm|crm]]
 
@@ -28,7 +28,6 @@ Generate leads from a contact form
 - `Website`
 - `WebsiteVisitor`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -49,7 +48,8 @@ WebsiteVisitor .. crm_lead : many2many
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

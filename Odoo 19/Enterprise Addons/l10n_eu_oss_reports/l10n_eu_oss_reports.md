@@ -6,9 +6,10 @@ tags: [odoo, v19, enterprise, module]
 # EU One Stop Shop (OSS) Reports
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/l10n_eu_oss_reports
 - Dependencies: [[Odoo 19/Enterprise Addons/account_reports/account_reports|account_reports]], [[Odoo 19/Community Addons/l10n_eu_oss/l10n_eu_oss|l10n_eu_oss]]
+
 ## XML Artifacts (detected)
 
 - Views: 3
@@ -24,7 +25,6 @@ tags: [odoo, v19, enterprise, module]
 - `AccountReturn`
 - `ResCompany`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -38,7 +38,8 @@ class ResCompany
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

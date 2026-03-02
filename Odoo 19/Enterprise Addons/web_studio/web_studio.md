@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Studio
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/web_studio
 - Dependencies: [[Odoo 19/Community Addons/base_automation/base_automation|base_automation]], [[Odoo 19/Community Addons/base_import_module/base_import_module|base_import_module]], [[Odoo 19/Community Addons/mail/mail|mail]], [[Odoo 19/Community Addons/web/web|web]], [[Odoo 19/Enterprise Addons/web_enterprise/web_enterprise|web_enterprise]], [[Odoo 19/Community Addons/html_editor/html_editor|html_editor]], [[Odoo 19/Enterprise Addons/web_map/web_map|web_map]], [[Odoo 19/Enterprise Addons/web_gantt/web_gantt|web_gantt]], [[Odoo 19/Enterprise Addons/web_cohort/web_cohort|web_cohort]], [[Odoo 19/Community Addons/sms/sms|sms]]
 
@@ -50,7 +50,6 @@ Create and customize your Odoo apps
 - `studio.approval.entry`
 - `studio.approval.request`
 - `studio.export.model`
-
 
 ```plantuml
 @startuml
@@ -106,7 +105,8 @@ studio_export_model .. ir_model_fields : many2many
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

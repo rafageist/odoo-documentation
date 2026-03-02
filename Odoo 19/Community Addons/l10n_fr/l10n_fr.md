@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # France - Localizations
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/l10n_fr
 - Dependencies: base (not documented)
+
 ## XML Artifacts (detected)
 
 - Views: 2
@@ -21,7 +22,6 @@ tags: [odoo, v19, community, module]
 
 - `ResCompany`
 - `ResPartner`
-
 
 ```plantuml
 @startuml
@@ -36,7 +36,9 @@ ResCompany --> ir_sequence : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

@@ -1,11 +1,13 @@
-<!-- GENERATED:CATEGORY -->
 ---
 tags: [odoo, v19, enterprise, index, category]
 ---
 
 # Sales
 
-Modules: 42
+- Scope: Enterprise Addons
+- Modules: 42
+
+## Modules
 
 - [[Odoo 19/Enterprise Addons/contacts_enterprise/contacts_enterprise|contacts_enterprise]]
 - [[Odoo 19/Enterprise Addons/crm_enterprise/crm_enterprise|crm_enterprise]]
@@ -49,4 +51,8 @@ Modules: 42
 - [[Odoo 19/Enterprise Addons/voip_crm/voip_crm|voip_crm]]
 - [[Odoo 19/Enterprise Addons/voip_sale_subscription/voip_sale_subscription|voip_sale_subscription]]
 - [[Odoo 19/Enterprise Addons/voip_sms/voip_sms|voip_sms]]
-<!-- GENERATED:CATEGORY -->
+
+## Navigation
+
+- [[../Enterprise Addons|Back to scope]]
+- [[../../Odoo 19/Odoo 19|Back to version]]

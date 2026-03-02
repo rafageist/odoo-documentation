@@ -1,3 +1,4 @@
+
 <!-- GENERATED:MODULE -->
 ---
 tags: [odoo, v19, enterprise, module]
@@ -6,7 +7,7 @@ tags: [odoo, v19, enterprise, module]
 # Social LinkedIn
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/social_linkedin
 - Dependencies: [[Odoo 19/Enterprise Addons/social/social|social]], [[Odoo 19/Community Addons/iap/iap|iap]]
 
@@ -32,7 +33,6 @@ Manage your LinkedIn accounts and schedule posts
 - `SocialStream`
 - `SocialStreamPost`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -51,7 +51,7 @@ SocialPostTemplate .. ir_attachment : many2many
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->

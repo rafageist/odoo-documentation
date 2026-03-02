@@ -1,57 +1,13 @@
 ---
-tags: [v19, community, sales]
-status: seed
----
-# Sales and CRM v19
-
-## Modules
-- `[[Odoo 19/Community Addons/Sales/crm.md]]`
-- `[[Odoo 19/Community Addons/Sales/sale_management.md]]`
-- `[[Odoo 19/Community Addons/Sales/sale_subscription.md]]`
-- `[[Odoo 19/Community Addons/Sales/sale_project.md]]`
-- `[[Odoo 19/Community Addons/Sales/pos_sale.md]]`
-
-```plantuml
-@startmindmap
-* Sales v19
-** CRM
-** Sales
-** Suscripciones
-** Projects
-** Punto de venta
-@endmindmap
-```
-
-## Changes vs v18
-- New pipeline widgets.
-- Close integration with Sign and Documents.
-- Renewal automations.
-
-## References
-- `[[Comparisons/Sales v18-v19]]`
-
-
-
-
-
-
-
-## Navigation
-- **Parent:** [[Odoo 19/Community Addons/Community Addons]]
-## Children
-- [[Odoo 19/Community Addons/Sales/crm]]
-- [[Odoo 19/Community Addons/Sales/pos_sale]]
-- [[Odoo 19/Community Addons/Sales/sale_management]]
-- [[Odoo 19/Community Addons/Sales/sale_project]]
-- [[Odoo 19/Community Addons/Sales/sale_subscription]]
-<!-- GENERATED:CATEGORY -->
----
 tags: [odoo, v19, community, index, category]
 ---
 
 # Sales
 
-Modules: 49
+- Scope: Community Addons
+- Modules: 49
+
+## Modules
 
 - [[Odoo 19/Community Addons/base_address_extended/base_address_extended|base_address_extended]]
 - [[Odoo 19/Community Addons/base_automation/base_automation|base_automation]]
@@ -102,4 +58,8 @@ Modules: 49
 - [[Odoo 19/Community Addons/sales_team/sales_team|sales_team]]
 - [[Odoo 19/Community Addons/sms/sms|sms]]
 - [[Odoo 19/Community Addons/uom/uom|uom]]
-<!-- GENERATED:CATEGORY -->
+
+## Navigation
+
+- [[../Community Addons|Back to scope]]
+- [[../../Odoo 19/Odoo 19|Back to version]]

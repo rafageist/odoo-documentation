@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Email Marketing
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/mass_mailing
 - Dependencies: [[Odoo 19/Community Addons/contacts/contacts|contacts]], [[Odoo 19/Community Addons/mail/mail|mail]], [[Odoo 19/Community Addons/html_builder/html_builder|html_builder]], [[Odoo 19/Community Addons/utm/utm|utm]], [[Odoo 19/Community Addons/link_tracker/link_tracker|link_tracker]], [[Odoo 19/Community Addons/social_media/social_media|social_media]], [[Odoo 19/Community Addons/web_tour/web_tour|web_tour]], [[Odoo 19/Community Addons/digest/digest|digest]]
 
@@ -43,7 +43,6 @@ Design, send and track emails
 - `UtmCampaign`
 - `UtmMedium`
 - `UtmSource`
-
 
 ```plantuml
 @startuml
@@ -116,7 +115,9 @@ UtmCampaign --> mailing_mailing : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

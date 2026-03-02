@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Mass mailing sms on lead / opportunities
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/mass_mailing_crm_sms
 - Dependencies: [[Odoo 19/Community Addons/mass_mailing_crm/mass_mailing_crm|mass_mailing_crm]], [[Odoo 19/Community Addons/mass_mailing_sms/mass_mailing_sms|mass_mailing_sms]]
 
@@ -26,7 +26,6 @@ Add lead / opportunities info on mass mailing sms
 
 - `UtmCampaign`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -37,7 +36,9 @@ class UtmCampaign
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

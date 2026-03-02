@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Pay to Book
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/appointment_account_payment
 - Dependencies: [[Odoo 19/Enterprise Addons/appointment/appointment|appointment]], [[Odoo 19/Community Addons/account_payment/account_payment|account_payment]]
 
@@ -31,7 +31,6 @@ Up-front payment on bookings
 - `calendar.booking.line`
 - `ProductProduct`
 - `ProductTemplate`
-
 
 ```plantuml
 @startuml
@@ -74,7 +73,8 @@ calendar_booking_line --> calendar_booking : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

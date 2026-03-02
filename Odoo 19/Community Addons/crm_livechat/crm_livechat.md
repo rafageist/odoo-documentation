@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # CRM Livechat
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/crm_livechat
 - Dependencies: [[Odoo 19/Community Addons/crm/crm|crm]], [[Odoo 19/Community Addons/im_livechat/im_livechat|im_livechat]]
 
@@ -30,7 +30,6 @@ Create lead from livechat conversation
 - `DiscussChannel`
 - `ResUsers`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -51,7 +50,9 @@ DiscussChannel --|> crm_lead : one2many
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

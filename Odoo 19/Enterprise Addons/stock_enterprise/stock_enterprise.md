@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Stock enterprise
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/stock_enterprise
 - Dependencies: [[Odoo 19/Community Addons/stock/stock|stock]], [[Odoo 19/Enterprise Addons/web_cohort/web_cohort|web_cohort]], [[Odoo 19/Enterprise Addons/web_map/web_map|web_map]]
 
@@ -26,7 +26,6 @@ Advanced features for Stock
 
 - `ResCompany`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -37,7 +36,8 @@ class ResCompany
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

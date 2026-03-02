@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Field Service - Sale
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/industry_fsm_sale
 - Dependencies: [[Odoo 19/Enterprise Addons/industry_fsm/industry_fsm|industry_fsm]], [[Odoo 19/Enterprise Addons/sale_timesheet_enterprise/sale_timesheet_enterprise|sale_timesheet_enterprise]]
 
@@ -33,7 +33,6 @@ Schedule and track onsite operations, invoice time and material
 - `SaleOrder`
 - `SaleOrderLine`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -59,7 +58,8 @@ SaleOrder --> project_task : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

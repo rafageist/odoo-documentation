@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Website IM Livechat Helpdesk
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/website_helpdesk_livechat
 - Dependencies: [[Odoo 19/Enterprise Addons/website_helpdesk/website_helpdesk|website_helpdesk]], [[Odoo 19/Community Addons/website_livechat/website_livechat|website_livechat]]
 
@@ -31,7 +31,6 @@ Ticketing, Support, Livechat
 - `HelpdeskTicket`
 - `ResUsers`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -53,7 +52,9 @@ HelpdeskTicket --> discuss_channel : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

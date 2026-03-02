@@ -6,9 +6,10 @@ tags: [odoo, v19, enterprise, module]
 # Test AI Field
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/test_ai_fields
 - Dependencies: [[Odoo 19/Enterprise Addons/ai_fields/ai_fields|ai_fields]]
+
 ## XML Artifacts (detected)
 
 - Views: 0
@@ -24,7 +25,6 @@ tags: [odoo, v19, enterprise, module]
 - `test.ai.fields.definition`
 - `test.ai.fields.no.ai`
 - `test.ai.read.model`
-
 
 ```plantuml
 @startuml
@@ -46,7 +46,8 @@ test_ai_read_model --> res_currency : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

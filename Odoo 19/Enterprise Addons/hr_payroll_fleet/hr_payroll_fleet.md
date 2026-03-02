@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Payroll - Fleet
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/hr_payroll_fleet
 - Dependencies: [[Odoo 19/Enterprise Addons/hr_payroll/hr_payroll|hr_payroll]], [[Odoo 19/Community Addons/hr_fleet/hr_fleet|hr_fleet]]
 
@@ -24,7 +24,8 @@ Integration between Payroll and Fleet.
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

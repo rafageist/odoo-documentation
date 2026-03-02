@@ -1,3 +1,4 @@
+
 <!-- GENERATED:MODULE -->
 ---
 tags: [odoo, v19, enterprise, module]
@@ -6,7 +7,7 @@ tags: [odoo, v19, enterprise, module]
 # POS Self-Order / Online Payment / Preparation Display
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/pos_online_payment_self_order_preparation_display
 - Dependencies: [[Odoo 19/Community Addons/pos_online_payment_self_order/pos_online_payment_self_order|pos_online_payment_self_order]], [[Odoo 19/Enterprise Addons/pos_enterprise/pos_enterprise|pos_enterprise]]
 
@@ -22,9 +23,21 @@ Link between self orders paid online and the preparation display
 - Rules (ir.rule): 0
 - Access CSV entries: 0
 
+## Detected Models
+
+- `PaymentTransaction`
+
+```plantuml
+@startuml
+!include ../../../Templates/DiagramStyles.puml
+title POS Self-Order / Online Payment / Preparation Display - Models and Relations
+class PaymentTransaction
+@enduml
+```
+
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->

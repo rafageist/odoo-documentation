@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Skills Management
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/hr_skills
 - Dependencies: [[Odoo 19/Community Addons/hr/hr|hr]]
 
@@ -35,7 +35,6 @@ Manage skills, knowledge and resume of your employees
 - `hr.skill.level`
 - `hr.skill.type`
 - `ResourceResource`
-
 
 ```plantuml
 @startuml
@@ -79,7 +78,9 @@ hr_skill_type --|> hr_skill_level : one2many
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

@@ -6,9 +6,10 @@ tags: [odoo, v19, enterprise, module]
 # Payment Follow-up Management
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/account_followup
 - Dependencies: [[Odoo 19/Community Addons/mail/mail|mail]], [[Odoo 19/Community Addons/sms/sms|sms]], [[Odoo 19/Enterprise Addons/account_reports/account_reports|account_reports]]
+
 ## XML Artifacts (detected)
 
 - Views: 11
@@ -23,7 +24,6 @@ tags: [odoo, v19, enterprise, module]
 - `AccountMoveLine`
 - `IrActionsReport`
 - `ResPartner`
-
 
 ```plantuml
 @startuml
@@ -55,7 +55,9 @@ ResPartner --> res_users : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

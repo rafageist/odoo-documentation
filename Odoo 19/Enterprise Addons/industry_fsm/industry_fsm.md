@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Field Service
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/industry_fsm
 - Dependencies: [[Odoo 19/Enterprise Addons/project_enterprise/project_enterprise|project_enterprise]], [[Odoo 19/Enterprise Addons/timesheet_grid/timesheet_grid|timesheet_grid]], [[Odoo 19/Community Addons/base_geolocalize/base_geolocalize|base_geolocalize]]
 
@@ -35,7 +35,6 @@ Schedule and track onsite operations, time and material
 - `ResCompany`
 - `ResPartner`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -61,7 +60,8 @@ RatingRating --> project_project : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

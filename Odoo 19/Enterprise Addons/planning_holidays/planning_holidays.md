@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Planning Time Off
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/planning_holidays
 - Dependencies: [[Odoo 19/Enterprise Addons/planning/planning|planning]], [[Odoo 19/Enterprise Addons/hr_holidays_gantt/hr_holidays_gantt|hr_holidays_gantt]]
 
@@ -28,7 +28,6 @@ Planning integration with holidays
 - `ResourceCalendarInherit`
 - `ResourceCalendarLeaves`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -41,7 +40,8 @@ class ResourceCalendarLeaves
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

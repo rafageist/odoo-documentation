@@ -6,9 +6,10 @@ tags: [odoo, v19, enterprise, module]
 # Italy - Point of Sale
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/l10n_it_pos
 - Dependencies: [[Odoo 19/Community Addons/l10n_it/l10n_it|l10n_it]], [[Odoo 19/Community Addons/point_of_sale/point_of_sale|point_of_sale]]
+
 ## XML Artifacts (detected)
 
 - Views: 2
@@ -26,7 +27,6 @@ tags: [odoo, v19, enterprise, module]
 - `PosOrderLine`
 - `PosPaymentMethod`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -42,7 +42,8 @@ class PosPaymentMethod
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

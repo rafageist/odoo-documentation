@@ -6,9 +6,10 @@ tags: [odoo, v19, enterprise, module]
 # United States - Payroll
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/l10n_us_hr_payroll
 - Dependencies: [[Odoo 19/Enterprise Addons/hr_payroll/hr_payroll|hr_payroll]], [[Odoo 19/Community Addons/hr_work_entry_holidays/hr_work_entry_holidays|hr_work_entry_holidays]], [[Odoo 19/Enterprise Addons/hr_payroll_holidays/hr_payroll_holidays|hr_payroll_holidays]], [[Odoo 19/Community Addons/base_address_extended/base_address_extended|base_address_extended]], [[Odoo 19/Community Addons/l10n_us/l10n_us|l10n_us]]
+
 ## XML Artifacts (detected)
 
 - Views: 12
@@ -29,7 +30,6 @@ tags: [odoo, v19, enterprise, module]
 - `l10n.us.w2`
 - `l10n.us.worker.compensation`
 - `ResCompany`
-
 
 ```plantuml
 @startuml
@@ -66,7 +66,8 @@ ResCompany --> hr_employee : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

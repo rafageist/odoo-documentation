@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Sales
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/sale_management
 - Dependencies: [[Odoo 19/Community Addons/sale/sale|sale]], [[Odoo 19/Community Addons/digest/digest|digest]]
 
@@ -30,7 +30,6 @@ From quotations to invoices
 - `SaleOrderLine`
 - `sale.order.template`
 - `sale.order.template.line`
-
 
 ```plantuml
 @startuml
@@ -63,7 +62,9 @@ sale_order_template_line --> sale_order_template_line : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

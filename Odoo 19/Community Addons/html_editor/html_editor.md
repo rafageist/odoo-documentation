@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # HTML Editor
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/html_editor
 - Dependencies: base (not documented), [[Odoo 19/Community Addons/bus/bus|bus]], [[Odoo 19/Community Addons/web/web|web]]
 
@@ -31,7 +31,6 @@ tags: [odoo, v19, community, module]
 - `html_editor.converter.test`
 - `html_editor.converter.test.sub`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -48,7 +47,9 @@ html_editor_converter_test --> html_editor_converter_test_sub : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

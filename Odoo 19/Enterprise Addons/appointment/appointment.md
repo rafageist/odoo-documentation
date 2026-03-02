@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Appointments
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/appointment
 - Dependencies: [[Odoo 19/Community Addons/calendar/calendar|calendar]], [[Odoo 19/Community Addons/phone_validation/phone_validation|phone_validation]], [[Odoo 19/Community Addons/portal/portal|portal]], [[Odoo 19/Community Addons/resource/resource|resource]], [[Odoo 19/Enterprise Addons/web_gantt/web_gantt|web_gantt]]
 
@@ -37,7 +37,6 @@ Allow people to book meetings in your agenda
 - `CalendarEvent`
 - `ResPartner`
 - `AppointmentType`
-
 
 ```plantuml
 @startuml
@@ -116,7 +115,8 @@ ResPartner .. calendar_event : many2many
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

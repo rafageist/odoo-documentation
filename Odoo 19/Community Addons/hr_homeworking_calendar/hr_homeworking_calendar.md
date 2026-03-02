@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Remote Work with calendar
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/hr_homeworking_calendar
 - Dependencies: [[Odoo 19/Community Addons/hr_homeworking/hr_homeworking|hr_homeworking]], [[Odoo 19/Community Addons/calendar/calendar|calendar]]
+
 ## XML Artifacts (detected)
 
 - Views: 1
@@ -22,7 +23,6 @@ tags: [odoo, v19, community, module]
 - `HrEmployee`
 - `ResPartner`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -34,7 +34,9 @@ class ResPartner
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

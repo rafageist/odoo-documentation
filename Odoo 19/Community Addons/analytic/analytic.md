@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Analytic Accounting
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/analytic
 - Dependencies: base (not documented), [[Odoo 19/Community Addons/mail/mail|mail]], [[Odoo 19/Community Addons/uom/uom|uom]]
+
 ## XML Artifacts (detected)
 
 - Views: 15
@@ -24,7 +25,6 @@ tags: [odoo, v19, community, module]
 - `account.analytic.line`
 - `account.analytic.plan`
 - `account.analytic.applicability`
-
 
 ```plantuml
 @startuml
@@ -64,7 +64,9 @@ account_analytic_applicability --> res_company : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

@@ -6,9 +6,10 @@ tags: [odoo, v19, enterprise, module]
 # Product Barcode Lookup
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/product_barcodelookup
 - Dependencies: [[Odoo 19/Community Addons/product/product|product]]
+
 ## XML Artifacts (detected)
 
 - Views: 3
@@ -23,7 +24,6 @@ tags: [odoo, v19, enterprise, module]
 - `ProductProduct`
 - `ProductTemplate`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -36,7 +36,8 @@ class ProductTemplate
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

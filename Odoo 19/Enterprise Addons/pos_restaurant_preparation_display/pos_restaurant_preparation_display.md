@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # PoS Preparation Display Restaurant
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/pos_restaurant_preparation_display
 - Dependencies: [[Odoo 19/Community Addons/pos_restaurant/pos_restaurant|pos_restaurant]], [[Odoo 19/Enterprise Addons/pos_enterprise/pos_enterprise|pos_enterprise]]
 
@@ -30,7 +30,6 @@ Display Orders for Preparation stage.
 - `PosPrepOrder`
 - `RestaurantOrderCourse`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -47,7 +46,8 @@ PosPrepOrder --> restaurant_order_course : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

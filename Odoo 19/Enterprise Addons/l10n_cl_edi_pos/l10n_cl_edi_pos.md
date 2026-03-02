@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Chilean module for Point of Sale
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/l10n_cl_edi_pos
 - Dependencies: [[Odoo 19/Enterprise Addons/l10n_cl_edi/l10n_cl_edi|l10n_cl_edi]], [[Odoo 19/Community Addons/point_of_sale/point_of_sale|point_of_sale]]
 
@@ -34,7 +34,6 @@ Chilean module for Point of Sale
 - `ResCompany`
 - `ResPartner`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -55,7 +54,8 @@ PosConfig --> account_journal : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Events Sales
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/event_sale
 - Dependencies: [[Odoo 19/Community Addons/event_product/event_product|event_product]], [[Odoo 19/Community Addons/sale_management/sale_management|sale_management]]
+
 ## XML Artifacts (detected)
 
 - Views: 12
@@ -25,7 +26,6 @@ tags: [odoo, v19, community, module]
 - `ProductTemplate`
 - `SaleOrder`
 - `SaleOrderLine`
-
 
 ```plantuml
 @startuml
@@ -55,7 +55,9 @@ SaleOrderLine --|> event_registration : one2many
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

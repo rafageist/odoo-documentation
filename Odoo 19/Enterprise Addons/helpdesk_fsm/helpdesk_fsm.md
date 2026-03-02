@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Helpdesk FSM
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/helpdesk_fsm
 - Dependencies: [[Odoo 19/Enterprise Addons/project_helpdesk/project_helpdesk|project_helpdesk]], [[Odoo 19/Enterprise Addons/industry_fsm/industry_fsm|industry_fsm]]
 
@@ -28,7 +28,6 @@ Allow generating fsm tasks from ticket
 - `HelpdeskTicket`
 - `ProjectTask`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -47,7 +46,8 @@ ProjectTask --> helpdesk_ticket : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

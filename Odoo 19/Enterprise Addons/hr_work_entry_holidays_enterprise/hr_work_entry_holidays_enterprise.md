@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Time Off in Payslips Enterprise
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/hr_work_entry_holidays_enterprise
 - Dependencies: [[Odoo 19/Community Addons/hr_work_entry_holidays/hr_work_entry_holidays|hr_work_entry_holidays]]
 
@@ -24,7 +24,8 @@ Manage Time Off in Payslips Enterprise
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

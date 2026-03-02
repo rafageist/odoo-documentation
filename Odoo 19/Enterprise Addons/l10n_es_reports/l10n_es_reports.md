@@ -6,9 +6,10 @@ tags: [odoo, v19, enterprise, module]
 # Spain - Accounting (PGCE 2008) Reports
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/l10n_es_reports
 - Dependencies: [[Odoo 19/Community Addons/l10n_es/l10n_es|l10n_es]], [[Odoo 19/Enterprise Addons/account_reports/account_reports|account_reports]]
+
 ## XML Artifacts (detected)
 
 - Views: 10
@@ -20,15 +21,16 @@ tags: [odoo, v19, enterprise, module]
 ## Detected Models
 
 - `AccountMove`
+- `AccountReturn`
 - `AccountReport`
 - `ResCompany`
-
 
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
 title Spain - Accounting (PGCE 2008) Reports - Models and Relations
 class AccountMove
+class AccountReturn
 class AccountReport
 class ResCompany
 @enduml
@@ -36,7 +38,8 @@ class ResCompany
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

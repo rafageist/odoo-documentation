@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Timesheets And Timeoff
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/timesheet_grid_holidays
 - Dependencies: [[Odoo 19/Community Addons/project_timesheet_holidays/project_timesheet_holidays|project_timesheet_holidays]], [[Odoo 19/Enterprise Addons/timesheet_grid/timesheet_grid|timesheet_grid]]
 
@@ -26,7 +26,7 @@ Link between timesheet and time off
 
 - `AccountAnalyticLine`
 - `HrEmployee`
-
+- `Company`
 
 ```plantuml
 @startuml
@@ -34,12 +34,14 @@ Link between timesheet and time off
 title Timesheets And Timeoff - Models and Relations
 class AccountAnalyticLine
 class HrEmployee
+class Company
 @enduml
 ```
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

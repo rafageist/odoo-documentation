@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Job Board - Monster.com
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/hr_recruitment_integration_monster
 - Dependencies: [[Odoo 19/Enterprise Addons/hr_recruitment_integration_base/hr_recruitment_integration_base|hr_recruitment_integration_base]], [[Odoo 19/Enterprise Addons/hr_recruitment_extract/hr_recruitment_extract|hr_recruitment_extract]]
 
@@ -31,7 +31,6 @@ Allow user to share job positions on Monster Job board
 - `ResCurrency`
 - `ResPartnerIndustry`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -47,7 +46,8 @@ class ResPartnerIndustry
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

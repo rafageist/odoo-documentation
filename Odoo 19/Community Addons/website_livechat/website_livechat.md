@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Website Live Chat
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/website_livechat
 - Dependencies: [[Odoo 19/Community Addons/website/website|website]], [[Odoo 19/Community Addons/im_livechat/im_livechat|im_livechat]]
 
@@ -31,7 +31,6 @@ Chat with your website visitors
 - `Website`
 - `WebsiteVisitor`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -55,7 +54,8 @@ WebsiteVisitor --|> discuss_channel : one2many
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

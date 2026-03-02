@@ -6,9 +6,10 @@ tags: [odoo, v19, enterprise, module]
 # Kenya - Point of Sale
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/l10n_ke_edi_oscu_pos
 - Dependencies: [[Odoo 19/Enterprise Addons/l10n_ke_edi_oscu_stock/l10n_ke_edi_oscu_stock|l10n_ke_edi_oscu_stock]], [[Odoo 19/Community Addons/point_of_sale/point_of_sale|point_of_sale]]
+
 ## XML Artifacts (detected)
 
 - Views: 6
@@ -30,7 +31,6 @@ tags: [odoo, v19, enterprise, module]
 - `StockMove`
 - `StockPicking`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -51,7 +51,8 @@ PosOrder --> l10n_ke_edi_oscu_code : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

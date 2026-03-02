@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Maintenance - HR
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/hr_maintenance
 - Dependencies: [[Odoo 19/Community Addons/hr/hr|hr]], [[Odoo 19/Community Addons/maintenance/maintenance|maintenance]]
 
@@ -29,7 +29,6 @@ Equipment, Assets, Internal Hardware, Allocation Tracking
 - `HrEmployee`
 - `HrEmployeePublic`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -50,7 +49,9 @@ HrEmployee --|> maintenance_equipment : one2many
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

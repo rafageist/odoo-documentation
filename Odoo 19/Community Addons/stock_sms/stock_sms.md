@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Stock - SMS
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/stock_sms
 - Dependencies: [[Odoo 19/Community Addons/stock/stock|stock]], [[Odoo 19/Community Addons/sms/sms|sms]]
 
@@ -27,7 +27,6 @@ Send text messages when final stock move
 - `ResCompany`
 - `StockPicking`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -41,7 +40,8 @@ ResCompany --> sms_template : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

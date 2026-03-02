@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # MTO Sale <-> Purchase
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/sale_purchase_stock
 - Dependencies: [[Odoo 19/Community Addons/sale_stock/sale_stock|sale_stock]], [[Odoo 19/Community Addons/purchase_stock/purchase_stock|purchase_stock]], [[Odoo 19/Community Addons/sale_purchase/sale_purchase|sale_purchase]]
 
@@ -30,7 +30,6 @@ SO/PO relation in case of MTO
 - `StockMove`
 - `StockRule`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -45,7 +44,8 @@ class StockRule
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

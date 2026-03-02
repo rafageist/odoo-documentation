@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Events Booths
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/event_booth
 - Dependencies: [[Odoo 19/Community Addons/event/event|event]]
 
@@ -29,7 +29,6 @@ Manage event booths
 - `EventEvent`
 - `EventType`
 - `event.type.booth`
-
 
 ```plantuml
 @startuml
@@ -57,7 +56,9 @@ event_type_booth --> event_booth_category : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

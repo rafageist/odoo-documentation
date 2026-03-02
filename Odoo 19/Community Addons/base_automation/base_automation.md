@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Automation Rules
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/base_automation
 - Dependencies: base (not documented), [[Odoo 19/Community Addons/digest/digest|digest]], [[Odoo 19/Community Addons/resource/resource|resource]], [[Odoo 19/Community Addons/mail/mail|mail]], [[Odoo 19/Community Addons/sms/sms|sms]]
+
 ## XML Artifacts (detected)
 
 - Views: 5
@@ -22,7 +23,6 @@ tags: [odoo, v19, community, module]
 - `base.automation`
 - `IrActionsServer`
 - `IrCron`
-
 
 ```plantuml
 @startuml
@@ -49,7 +49,9 @@ IrActionsServer --> base_automation : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

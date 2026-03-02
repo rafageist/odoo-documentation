@@ -1,3 +1,4 @@
+
 <!-- GENERATED:MODULE -->
 ---
 tags: [odoo, v19, enterprise, module]
@@ -6,9 +7,10 @@ tags: [odoo, v19, enterprise, module]
 # Batch Payment
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/account_batch_payment
 - Dependencies: [[Odoo 19/Community Addons/account/account|account]]
+
 ## XML Artifacts (detected)
 
 - Views: 12
@@ -23,7 +25,6 @@ tags: [odoo, v19, enterprise, module]
 - `AccountJournal`
 - `AccountPayment`
 - `AccountPaymentMethod`
-
 
 ```plantuml
 @startuml
@@ -44,13 +45,15 @@ account_batch_payment --> res_currency : many2one
 class "account.payment.method" as account_payment_method
 account_batch_payment --> account_payment_method : many2one
 account_batch_payment .. account_payment_method : many2many
+class "res.partner" as res_partner
+account_batch_payment .. res_partner : many2many
 AccountPayment --> account_batch_payment : many2one
 @enduml
 ```
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->

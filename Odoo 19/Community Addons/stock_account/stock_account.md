@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # WMS Accounting
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/stock_account
 - Dependencies: [[Odoo 19/Community Addons/stock/stock|stock]], [[Odoo 19/Community Addons/account/account|account]]
 
@@ -41,7 +41,6 @@ Inventory, Logistic, Valuation, Accounting
 - `StockPicking`
 - `StockPickingType`
 - `StockQuant`
-
 
 ```plantuml
 @startuml
@@ -105,7 +104,9 @@ StockQuant --> res_currency : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

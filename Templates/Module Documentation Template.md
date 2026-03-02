@@ -1,102 +1,65 @@
 ---
-tags: [template, module, documentation]
-version: v18|v19
-category: core|community|enterprise
+tags: [template, module, documentation, v19]
+version: v19
+scope: community|enterprise|core
 status: draft
 ---
-# {{Module name}} (`{{technical_name}}`)
 
-## Executive summary
-- **Functional domain**:
-- **Business objective**:
-- **Key impact**:
-- **Primary dependencies**: `[[{{dependency}}]]`
+# {{Display Name}} (`{{technical_name}}`)
 
-```plantuml
-@startmindmap
-* Key objects {{technical_name}}
-** Main use cases
-***
-** Stakeholders
-***
-** External systems
-***
-@endmindmap
-```
+- Scope: `{{scope}}`
+- Source: `{{source_path}}`
+- Dependencies: `{{dependencies}}`
 
-## Business canvas #business #{{domain_tag}}
-- **Involved roles**:
-- **Affected KPIs**:
-- **Critical business rules**:
+## Summary
+- Functional purpose:
+- Business value:
+- Main entry points:
 
-## Functional architecture
-### Models and entities #model
-- `res.company`: description / customizations
-- ...
+## Why it exists
+- Actors:
+- Operational pain point solved:
+- KPIs or workflows affected:
+
+## Main models
+- `{{model_1}}`
+- `{{model_2}}`
 
 ```plantuml
 @startuml
-skinparam classAttributeIconSize 0
-class {{primary_model}} {
-  +field_a: type
-  ..
-  +key_method()
-}
-{{primary_model}} --> {{related_model}} : relationship
+!include DiagramStyles.puml
+title {{technical_name}} - Main Models
+class {{model_1}}
+class {{model_2}}
+{{model_1}} --> {{model_2}} : relation
 @enduml
 ```
 
-### Services and data flow #service
-1. Trigger event
-2. Validations
-3. Follow-up actions
+## UI surface
+- Views:
+- Actions:
+- Menus:
+- Reports or wizards:
 
-```plantuml
-@startuml
-actor User
-participant "UI {{view}}" as UI
-participant "{{model}}" as Model
-database "External Data" as Ext
-User -> UI: main action
-UI -> Model: call method
-Model -> Ext: synchronize
-Ext --> Model: response
-Model --> UI: result
-UI --> User: feedback
-@enduml
-```
+## Security and automation
+- Groups:
+- ACLs / record rules:
+- Cron jobs / mail templates / server actions:
 
-## Technical depth
-- **Models**: overridden classes and mixins
-- **Key fields**: required, computed, inverse
-- **Critical methods**: scenarios, signature, side effects
-- **Views**: form, tree, kanban, constraints
-- **Security**: access rules, record rules, groups
-- **Automations**: cron, server actions, bus, mail templates
-- **Tests**: location, coverage, gaps
+## Integrations
+- External systems:
+- RPC / HTTP / webhooks:
 
-## Data and migrations
-- Most relevant XML/CSV references
-- Changes between v18 and v19 impacting data
+## Code references
+- `{{source_file}}:{{line}}`
+- `{{test_file}}:{{line}}`
 
-## Integrations and APIs
-- REST/Odoo RPC endpoints
-- Webhooks and flows with external services
+## Notes and risks
+- Extension points:
+- Known constraints:
+- Open questions:
 
-## Risks and technical debt
--
-
-## Open questions
--
-
-## Cross references
-- Code: `path/to/file.py:123`
-- Related documents: `[[Another Note]]`
-- Issues/Tasks:
-
----
-> Use this template as a starting point and duplicate the note inside the relevant folder before populating it.
-
-
-## Navigation
-- **Parent:** [[Welcome]]
+## Related material
+- `[[Related Note]]`
+- `[[Templates/Model Documentation Template]]`
+- `[[Templates/Service Documentation Template]]`

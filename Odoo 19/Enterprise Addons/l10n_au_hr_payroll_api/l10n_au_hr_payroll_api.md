@@ -6,9 +6,10 @@ tags: [odoo, v19, enterprise, module]
 # Australia - Payroll with API
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/l10n_au_hr_payroll_api
 - Dependencies: [[Odoo 19/Enterprise Addons/l10n_au_hr_payroll_account/l10n_au_hr_payroll_account|l10n_au_hr_payroll_account]], [[Odoo 19/Community Addons/account_edi_proxy_client/account_edi_proxy_client|account_edi_proxy_client]], [[Odoo 19/Community Addons/auth_timeout/auth_timeout|auth_timeout]]
+
 ## XML Artifacts (detected)
 
 - Views: 12
@@ -33,7 +34,6 @@ tags: [odoo, v19, enterprise, module]
 - `res.groups`
 - `res.partner.bank`
 - `res.users`
-
 
 ```plantuml
 @startuml
@@ -66,7 +66,8 @@ res_company --> l10n_au_employer_registration : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

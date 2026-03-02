@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # LNE electronic scale certification for PoS
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/l10n_eu_iot_scale_cert
 - Dependencies: [[Odoo 19/Enterprise Addons/pos_iot/pos_iot|pos_iot]]
 
@@ -26,7 +26,6 @@ Ensure scale measurements conform to EU certification standards.
 
 - `PosConfig`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -37,7 +36,8 @@ class PosConfig
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

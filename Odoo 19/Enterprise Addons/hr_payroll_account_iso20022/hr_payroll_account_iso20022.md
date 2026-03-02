@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # SEPA Payments for Payroll
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/hr_payroll_account_iso20022
 - Dependencies: [[Odoo 19/Enterprise Addons/hr_payroll_account/hr_payroll_account|hr_payroll_account]], [[Odoo 19/Enterprise Addons/account_iso20022/account_iso20022|account_iso20022]]
 
@@ -28,7 +28,6 @@ Pay your employees with SEPA payment.
 - `HrPayslip`
 - `HrPayslipRun`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -41,7 +40,8 @@ class HrPayslipRun
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

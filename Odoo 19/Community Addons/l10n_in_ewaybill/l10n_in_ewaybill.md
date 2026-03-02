@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Indian - E-waybill
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/l10n_in_ewaybill
 - Dependencies: [[Odoo 19/Community Addons/l10n_in/l10n_in|l10n_in]]
+
 ## XML Artifacts (detected)
 
 - Views: 5
@@ -24,7 +25,6 @@ tags: [odoo, v19, community, module]
 - `IrAttachment`
 - `l10n.in.ewaybill`
 - `ResCompany`
-
 
 ```plantuml
 @startuml
@@ -54,7 +54,9 @@ l10n_in_ewaybill --> ir_attachment : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

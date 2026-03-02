@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Sales Timesheet
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/sale_timesheet
 - Dependencies: [[Odoo 19/Community Addons/sale_project/sale_project|sale_project]], [[Odoo 19/Community Addons/hr_timesheet/hr_timesheet|hr_timesheet]]
 
@@ -35,7 +35,6 @@ Sell based on timesheets
 - `ProjectTask`
 - `SaleOrder`
 - `SaleOrderLine`
-
 
 ```plantuml
 @startuml
@@ -83,7 +82,8 @@ SaleOrderLine --|> account_analytic_line : one2many
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

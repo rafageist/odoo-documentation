@@ -1,29 +1,24 @@
 ---
-tags: [v19, core, processes, Inventory]
-status: seed
+tags: [odoo, v19, core, process, inventory]
+status: backlog
 ---
-# InventoryCore v19
 
-## Related modules
-- `[[Odoo 19/Community Addons/Supply Chain/stock.md]]`
-- `[[Odoo 19/Community Addons/Supply Chain/mrp.md]]`
-- `[[Comparisons/Inventory v18-v19]]`
+# Inventory Process
 
-## Changes
-- Improvements in automatic reservations.
-- New picking UI.
-- Integration with logistics providers.
+## Focus
+- Explain stock moves, reservations, replenishment, and valuation from the Odoo 19 core model
+- Track how delivery, barcode, and warehouse behaviors hang together
 
-## Diagrams
-- PlantUML flow picking v19.
+## Primary modules
+- `[[Odoo 19/Community Addons/stock/stock]]`
+- `[[Odoo 19/Community Addons/stock_account/stock_account]]`
+- `[[Odoo 19/Community Addons/delivery/delivery]]`
+- `[[Odoo 19/Enterprise Addons/stock_barcode/stock_barcode]]`
 
-
-
-
-
-
+## Notes to develop
+- Picking lifecycle
+- Reservation and replenishment rules
+- Accounting impacts of stock operations
 
 ## Navigation
 - **Parent:** [[Odoo 19/Core/Processes/Processes]]
-## Children
-- (none)

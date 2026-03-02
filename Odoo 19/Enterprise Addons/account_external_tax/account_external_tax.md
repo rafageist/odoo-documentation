@@ -6,9 +6,10 @@ tags: [odoo, v19, enterprise, module]
 # 3rd Party Tax Calculation
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/account_external_tax
 - Dependencies: [[Odoo 19/Community Addons/account/account|account]], [[Odoo 19/Community Addons/payment/payment|payment]]
+
 ## XML Artifacts (detected)
 
 - Views: 1
@@ -22,7 +23,6 @@ tags: [odoo, v19, enterprise, module]
 - `account.move`
 - `AccountTax`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -34,7 +34,8 @@ class AccountTax
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

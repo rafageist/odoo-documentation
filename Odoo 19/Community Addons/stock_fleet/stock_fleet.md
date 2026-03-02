@@ -1,3 +1,4 @@
+
 <!-- GENERATED:MODULE -->
 ---
 tags: [odoo, v19, community, module]
@@ -6,7 +7,7 @@ tags: [odoo, v19, community, module]
 # Stock Transport
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/stock_fleet
 - Dependencies: [[Odoo 19/Community Addons/stock_picking_batch/stock_picking_batch|stock_picking_batch]], [[Odoo 19/Community Addons/fleet/fleet|fleet]]
 
@@ -29,7 +30,6 @@ Stock Transport: Dispatch Management System
 - `StockPicking`
 - `StockPickingBatch`
 - `StockWarehouse`
-
 
 ```plantuml
 @startuml
@@ -54,7 +54,7 @@ StockPickingBatch --> res_partner : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->

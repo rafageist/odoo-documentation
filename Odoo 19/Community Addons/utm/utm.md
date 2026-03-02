@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # UTM Trackers
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/utm
 - Dependencies: base (not documented), [[Odoo 19/Community Addons/web/web|web]]
+
 ## XML Artifacts (detected)
 
 - Views: 14
@@ -24,7 +25,6 @@ tags: [odoo, v19, community, module]
 - `utm.source`
 - `utm.stage`
 - `utm.tag`
-
 
 ```plantuml
 @startuml
@@ -44,7 +44,8 @@ utm_campaign .. utm_tag : many2many
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

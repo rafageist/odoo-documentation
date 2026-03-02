@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Shopee Connector
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/sale_shopee
 - Dependencies: [[Odoo 19/Community Addons/sale_management/sale_management|sale_management]], [[Odoo 19/Community Addons/stock_delivery/stock_delivery|stock_delivery]]
 
@@ -32,7 +32,6 @@ Import Shopee orders and sync deliveries
 - `shopee.shop`
 - `StockMove`
 - `StockPicking`
-
 
 ```plantuml
 @startuml
@@ -67,7 +66,8 @@ shopee_shop --> stock_location : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Sale Commission: Subscription
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/sale_commission_subscription
 - Dependencies: [[Odoo 19/Enterprise Addons/sale_commission/sale_commission|sale_commission]], [[Odoo 19/Enterprise Addons/sale_subscription/sale_subscription|sale_subscription]]
 
@@ -24,7 +24,8 @@ Manage your salespersons' commissions
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

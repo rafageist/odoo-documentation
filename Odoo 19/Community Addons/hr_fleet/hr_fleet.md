@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Fleet History
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/hr_fleet
 - Dependencies: [[Odoo 19/Community Addons/hr/hr|hr]], [[Odoo 19/Community Addons/fleet/fleet|fleet]]
 
@@ -34,7 +34,6 @@ Get history of driven cars by employees
 - `IrAttachment`
 - `MailActivityPlanTemplate`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -60,7 +59,9 @@ FleetVehicleLogServices --> hr_employee : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

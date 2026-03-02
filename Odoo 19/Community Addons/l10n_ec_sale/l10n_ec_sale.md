@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Ecuador - Sale
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/l10n_ec_sale
 - Dependencies: [[Odoo 19/Community Addons/l10n_ec/l10n_ec|l10n_ec]], [[Odoo 19/Community Addons/sale/sale|sale]]
+
 ## XML Artifacts (detected)
 
 - Views: 2
@@ -21,7 +22,6 @@ tags: [odoo, v19, community, module]
 
 - `PaymentMethod`
 - `SaleOrder`
-
 
 ```plantuml
 @startuml
@@ -37,7 +37,9 @@ SaleOrder --> l10n_ec_sri_payment : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

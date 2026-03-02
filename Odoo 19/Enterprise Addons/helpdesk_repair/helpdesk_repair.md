@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Helpdesk Repair
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/helpdesk_repair
 - Dependencies: [[Odoo 19/Enterprise Addons/helpdesk_stock/helpdesk_stock|helpdesk_stock]], [[Odoo 19/Community Addons/repair/repair|repair]]
 
@@ -27,7 +27,6 @@ Project, Tasks, Repair
 - `HelpdeskTicket`
 - `RepairOrder`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -43,7 +42,8 @@ RepairOrder --> helpdesk_ticket : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

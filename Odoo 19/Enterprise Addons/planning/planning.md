@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Planning
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/planning
 - Dependencies: [[Odoo 19/Community Addons/hr/hr|hr]], [[Odoo 19/Community Addons/hr_hourly_cost/hr_hourly_cost|hr_hourly_cost]], [[Odoo 19/Enterprise Addons/web_gantt/web_gantt|web_gantt]], [[Odoo 19/Community Addons/digest/digest|digest]]
 
@@ -34,7 +34,6 @@ Manage your employees' schedule
 - `planning.slot.template`
 - `ResourceResource`
 - `ResCompany`
-
 
 ```plantuml
 @startuml
@@ -78,7 +77,8 @@ ResourceResource --> planning_role : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

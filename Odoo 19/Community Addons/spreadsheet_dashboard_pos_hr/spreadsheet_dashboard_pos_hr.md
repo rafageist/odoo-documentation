@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Spreadsheet dashboard for point of sale
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/spreadsheet_dashboard_pos_hr
 - Dependencies: [[Odoo 19/Community Addons/spreadsheet_dashboard/spreadsheet_dashboard|spreadsheet_dashboard]], [[Odoo 19/Community Addons/pos_hr/pos_hr|pos_hr]]
 
@@ -24,7 +24,8 @@ Spreadsheet
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Marketing Card
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/marketing_card
 - Dependencies: [[Odoo 19/Community Addons/link_tracker/link_tracker|link_tracker]], [[Odoo 19/Community Addons/mass_mailing/mass_mailing|mass_mailing]], [[Odoo 19/Community Addons/website/website|website]]
 
@@ -31,7 +31,6 @@ Generate dynamic shareable cards
 - `IrModel`
 - `MailingMailing`
 - `UtmSource`
-
 
 ```plantuml
 @startuml
@@ -60,7 +59,9 @@ MailingMailing --> card_campaign : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

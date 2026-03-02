@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Website profile
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/website_profile
 - Dependencies: [[Odoo 19/Community Addons/html_editor/html_editor|html_editor]], [[Odoo 19/Community Addons/website_partner/website_partner|website_partner]], [[Odoo 19/Community Addons/gamification/gamification|gamification]]
 
@@ -28,7 +28,6 @@ Access the website profile of the users
 - `ResUsers`
 - `Website`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -41,7 +40,8 @@ class Website
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

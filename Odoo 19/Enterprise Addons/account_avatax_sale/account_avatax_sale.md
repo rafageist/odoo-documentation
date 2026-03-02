@@ -6,9 +6,10 @@ tags: [odoo, v19, enterprise, module]
 # Avatax for SO
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/account_avatax_sale
 - Dependencies: [[Odoo 19/Enterprise Addons/sale_external_tax/sale_external_tax|sale_external_tax]], [[Odoo 19/Enterprise Addons/account_avatax/account_avatax|account_avatax]], [[Odoo 19/Community Addons/sale/sale|sale]]
+
 ## XML Artifacts (detected)
 
 - Views: 1
@@ -21,7 +22,6 @@ tags: [odoo, v19, enterprise, module]
 
 - `sale.order`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -32,7 +32,8 @@ class "sale.order" as sale_order
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

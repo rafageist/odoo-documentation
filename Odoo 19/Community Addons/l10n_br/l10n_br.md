@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Brazilian - Accounting
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/l10n_br
 - Dependencies: [[Odoo 19/Community Addons/account/account|account]], [[Odoo 19/Community Addons/account_qr_code_emv/account_qr_code_emv|account_qr_code_emv]], [[Odoo 19/Community Addons/base_address_extended/base_address_extended|base_address_extended]], [[Odoo 19/Community Addons/l10n_latam_base/l10n_latam_base|l10n_latam_base]], [[Odoo 19/Community Addons/l10n_latam_invoice_document/l10n_latam_invoice_document|l10n_latam_invoice_document]]
+
 ## XML Artifacts (detected)
 
 - Views: 7
@@ -28,7 +29,6 @@ tags: [odoo, v19, community, module]
 - `ResCompany`
 - `ResPartner`
 - `ResPartnerBank`
-
 
 ```plantuml
 @startuml
@@ -51,7 +51,9 @@ ResCity --|> l10n_br_zip_range : one2many
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

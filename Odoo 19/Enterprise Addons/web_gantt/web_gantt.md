@@ -6,9 +6,10 @@ tags: [odoo, v19, enterprise, module]
 # Web Gantt
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/web_gantt
 - Dependencies: [[Odoo 19/Community Addons/web/web|web]]
+
 ## XML Artifacts (detected)
 
 - Views: 0
@@ -22,7 +23,6 @@ tags: [odoo, v19, enterprise, module]
 - `IrActionsAct_WindowView`
 - `IrUiView`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -34,7 +34,8 @@ class IrUiView
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Documents Project Sign
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/documents_project_sign
 - Dependencies: [[Odoo 19/Enterprise Addons/documents_project/documents_project|documents_project]], [[Odoo 19/Enterprise Addons/documents_sign/documents_sign|documents_sign]]
 
@@ -24,7 +24,8 @@ Sign documents attached to tasks
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

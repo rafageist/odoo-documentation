@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Saudi Arabia - Point of Sale
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/l10n_sa_pos
 - Dependencies: [[Odoo 19/Community Addons/l10n_gcc_pos/l10n_gcc_pos|l10n_gcc_pos]], [[Odoo 19/Community Addons/l10n_sa/l10n_sa|l10n_sa]]
+
 ## XML Artifacts (detected)
 
 - Views: 0
@@ -22,7 +23,6 @@ tags: [odoo, v19, community, module]
 - `PosConfig`
 - `PosOrder`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -34,7 +34,9 @@ class PosOrder
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

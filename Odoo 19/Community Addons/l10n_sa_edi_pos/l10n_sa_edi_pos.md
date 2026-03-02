@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Saudi Arabia - E-invoicing (Simplified)
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/l10n_sa_edi_pos
 - Dependencies: [[Odoo 19/Community Addons/l10n_sa_pos/l10n_sa_pos|l10n_sa_pos]], [[Odoo 19/Community Addons/l10n_sa_edi/l10n_sa_edi|l10n_sa_edi]]
 
@@ -30,7 +30,6 @@ tags: [odoo, v19, community, module]
 - `PosOrder`
 - `ResCompany`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -43,7 +42,9 @@ class ResCompany
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

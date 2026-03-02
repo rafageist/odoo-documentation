@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # PoS IoT Adam Equipment Scales
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/pos_iot_adam_scale
 - Dependencies: [[Odoo 19/Enterprise Addons/pos_iot/pos_iot|pos_iot]]
 
@@ -24,7 +24,8 @@ Adds an IoT driver for Adam Equipment Scales
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

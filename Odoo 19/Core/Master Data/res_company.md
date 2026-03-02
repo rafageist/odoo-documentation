@@ -1,21 +1,22 @@
 ---
-tags: [v19, core, master_data, res_company]
+tags: [odoo, v19, core, masterdata, company]
 status: backlog
 ---
-# res.company v19
 
-## Changes
-- Multi-company improvements and access rules.
-- New tax and compliance parameters.
-- Configuration for shared enterprise modules.
+# res.company
 
-## Diagrams
-- Company change sequence vs v18.
+## Focus
+- Company configuration that shapes accounting, stock valuation, users, and multi-company behavior in Odoo 19
+- Shared defaults and cross-company boundaries
 
+## Source areas
+- `odoo19/addons/base/models/res_company.py`
+- `odoo19/addons/account`
 
-
-
-
+## Notes to develop
+- Multi-company isolation
+- Company defaults consumed by business modules
+- Accounting and reporting side effects
 
 ## Navigation
 - **Parent:** [[Odoo 19/Core/Master Data/Master Data]]

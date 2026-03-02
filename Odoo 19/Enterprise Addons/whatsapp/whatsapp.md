@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # WhatsApp Messaging
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/whatsapp
 - Dependencies: [[Odoo 19/Community Addons/mail/mail|mail]], [[Odoo 19/Community Addons/phone_validation/phone_validation|phone_validation]]
 
@@ -35,7 +35,6 @@ Text your Contacts on WhatsApp
 - `whatsapp.template`
 - `whatsapp.template.button`
 - `whatsapp.template.variable`
-
 
 ```plantuml
 @startuml
@@ -86,7 +85,8 @@ whatsapp_template_variable --> whatsapp_template : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

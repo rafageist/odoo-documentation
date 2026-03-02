@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Mandate invoicing for Colombia
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/l10n_co_edi_mandate
 - Dependencies: [[Odoo 19/Enterprise Addons/l10n_co_dian/l10n_co_dian|l10n_co_dian]]
 
@@ -27,7 +27,6 @@ Colombian EDI Mandate Invoicing extension
 - `AccountMove`
 - `ProductTemplate`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -41,7 +40,8 @@ AccountMove --> res_partner : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

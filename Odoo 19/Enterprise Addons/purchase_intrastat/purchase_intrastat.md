@@ -6,9 +6,10 @@ tags: [odoo, v19, enterprise, module]
 # Purchase Intrastat
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/purchase_intrastat
 - Dependencies: [[Odoo 19/Community Addons/purchase/purchase|purchase]], [[Odoo 19/Enterprise Addons/account_intrastat/account_intrastat|account_intrastat]]
+
 ## XML Artifacts (detected)
 
 - Views: 0
@@ -21,7 +22,6 @@ tags: [odoo, v19, enterprise, module]
 
 - `PurchaseOrder`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -32,7 +32,8 @@ class PurchaseOrder
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

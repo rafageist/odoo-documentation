@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Resellers Commissions For Subscription
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/partner_commission
 - Dependencies: [[Odoo 19/Community Addons/purchase/purchase|purchase]], [[Odoo 19/Enterprise Addons/sale_subscription_partnership/sale_subscription_partnership|sale_subscription_partnership]], [[Odoo 19/Community Addons/website_crm_partner_assign/website_crm_partner_assign|website_crm_partner_assign]]
 
@@ -35,7 +35,6 @@ Configure resellers commissions on subscription sale
 - `ResPartner`
 - `SaleOrder`
 - `SaleOrderLine`
-
 
 ```plantuml
 @startuml
@@ -78,7 +77,8 @@ SaleOrder --> commission_plan : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

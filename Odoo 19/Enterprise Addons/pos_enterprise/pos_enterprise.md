@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Point of Sale enterprise
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/pos_enterprise
 - Dependencies: [[Odoo 19/Enterprise Addons/web_enterprise/web_enterprise|web_enterprise]], [[Odoo 19/Community Addons/point_of_sale/point_of_sale|point_of_sale]]
 
@@ -37,9 +37,9 @@ Advanced features for PoS
 - `PosSession`
 - `product.attribute`
 - `product.template.attribute.value`
+- `product.attribute.custom.value`
 - `ProductProduct`
 - `ResourceCalendarAttendance`
-
 
 ```plantuml
 @startuml
@@ -58,6 +58,7 @@ class PosPreset
 class PosSession
 class "product.attribute" as product_attribute
 class "product.template.attribute.value" as product_template_attribute_value
+class "product.attribute.custom.value" as product_attribute_custom_value
 class ProductProduct
 class ResourceCalendarAttendance
 class "res.company" as res_company
@@ -86,7 +87,8 @@ pos_prep_state --> pos_prep_stage : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

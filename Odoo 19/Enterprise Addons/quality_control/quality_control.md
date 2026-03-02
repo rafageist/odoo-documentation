@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Quality
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/quality_control
 - Dependencies: [[Odoo 19/Enterprise Addons/quality/quality|quality]], [[Odoo 19/Enterprise Addons/spreadsheet_edition/spreadsheet_edition|spreadsheet_edition]]
 
@@ -35,7 +35,6 @@ Control the quality of your products
 - `StockMove`
 - `StockMoveLine`
 - `StockPicking`
-
 
 ```plantuml
 @startuml
@@ -74,7 +73,8 @@ StockPicking --|> quality_alert : one2many
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

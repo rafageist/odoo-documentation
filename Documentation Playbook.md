@@ -1,42 +1,52 @@
 ---
-tags: [meta, playbook]
+tags: [meta, playbook, v19]
 status: active
 ---
+
 # Documentation Playbook
 
-## Objectives
-- Keep notes stylistically consistent.
-- Ground every statement in source code and data artefacts.
-- Encourage deliberate use of diagrams (PlantUML, Mermaid) to capture structure and flow.
+## Objective
+Build reliable Odoo 19 documentation that stays close to the codebase and avoids duplicated notes.
 
-## Workflow
-1. **Scope selection** - start from a folder index and ensure its children are linked.
-2. **Template instantiation** - duplicate the relevant template in `[[Templates/]]`.
-3. **Code excavation** - review Python, XML, CSV, and test assets; capture file+line references.
-4. **Narrative drafting** - describe business context, invariants, and cross-module effects.
-5. **Visualisation** - add at least one diagram explaining structure or sequence.
-6. **Linking** - connect to parent index, sibling modules, and related concepts.
-7. **Review** - update `[[Changelog]]` and, when appropriate, `[[Comparisons]]`.
+## Source hierarchy
+1. Odoo 19 community source in `C:\Users\RafaelRodríguez\sources\repos\odoo19`
+2. Odoo 19 enterprise source in `C:\Users\RafaelRodríguez\sources\repos\docker\odoo19-enterprise-sync\enterprise-cache\3ff6ea5148ee9e3209f05e677ba8fff51fc44d0d`
+3. Tests, demo data, and manifests inside those same modules
+4. `C:\Users\RafaelRodríguez\sources\repos\odoo-skills` for example patterns and explanation angles
 
-## Conventions
-- **Tags:** use `#v18`, `#v19`, `#core`, `#community`, `#enterprise`, `#business`, `#technical` as relevant.
-- **References:** prefer the format `` `odoo/addons/base/models/res_partner.py:798` `` for code.
-- **Linking:** when a note mentions another concept, ensure a `[[wikilink]]` exists (create stubs if needed).
-- **Sections:** finish each index or model note with a `## Navigation
-- **Parent:** [[Welcome]]
-## Iteration roadmap
-| Phase | Focus | Representative notes |
-|-------|-------|-----------------------|
-| Wave 1 | Core master data (`res.partner`, `res.company`, `res.users`) | `[[Odoo 18/Core/Master Data/res_partner.md]]` |
-| Wave 2 | Core processes (Sales, Accounting, Inventory) | `[[Odoo 18/Core/Processes]]` |
-| Wave 3 | Community modules with heavy inheritance (CRM, Account) | TODO |
-| Wave 4 | Enterprise exclusives (Advanced Finance, Operations) | TODO |
-| Wave 5 | Cross-version deltas and migration scripts | `[[Comparisons]]` |
+## Structure rules
+- Canonical module notes live at `Odoo 19/<Community Addons|Enterprise Addons>/<technical_name>/<technical_name>.md`.
+- Category folders such as `Finance`, `HR`, `Sales`, or `Operations` contain only index notes.
+- Core notes live under `Odoo 19/Core/` and should document framework behavior, shared models, and transversal processes.
+- Avoid creating a second note for the same module inside a category folder.
 
-## Quality gates
-- Cross-check that every method documented cites its source file.
-- Run supporting tests or note missing coverage when behaviour is critical.
-- Capture open questions in each note to drive follow-up sprints.
+## Writing workflow
+1. Start from the relevant index page and confirm the target note does not already exist elsewhere.
+2. Read the manifest, models, views, security files, data files, and tests before drafting.
+3. Capture concrete evidence: source paths, model names, XML ids, menu/actions, and side effects.
+4. Use the closest template from `[[Templates]]`.
+5. Add the interpretation layer: business purpose, extension points, risks, and module interactions.
+6. Link related modules, core topics, and category indexes with `[[wikilinks]]`.
+7. Update `[[Changelog]]` when the repository structure or writing rules change.
+
+## Minimum standard for module notes
+- Purpose and business value
+- Dependencies and important reverse dependencies when relevant
+- Main models and relationships
+- UI surface: views, actions, menus, reports, wizards
+- Security footprint: groups, ACLs, record rules
+- Integrations, automations, or external services
+- Code references for critical behavior
+
+## Evidence rules
+- Prefer repository-relative source references such as `odoo19/addons/sale/models/sale_order.py`.
+- Mention tests when behavior is non-trivial or risky.
+- If a conclusion is inferred rather than directly stated in code, say so explicitly.
+
+## Enrichment guidance
+- Use `odoo-skills` to improve examples, terminology, and learning paths.
+- Do not copy a skill verbatim into the docs; adapt it to the actual Odoo 19 module being documented.
+- Favor short diagrams that explain real relationships over decorative diagrams.
 
 ## Navigation
 - **Parent:** [[Welcome]]

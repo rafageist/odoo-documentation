@@ -6,13 +6,14 @@ tags: [odoo, v19, enterprise, module]
 # Denmark - Accounting Reports
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/l10n_dk_reports
 - Dependencies: [[Odoo 19/Community Addons/l10n_dk/l10n_dk|l10n_dk]], [[Odoo 19/Enterprise Addons/account_reports/account_reports|account_reports]], [[Odoo 19/Enterprise Addons/account_saft/account_saft|account_saft]], [[Odoo 19/Enterprise Addons/documents_account/documents_account|documents_account]]
+
 ## XML Artifacts (detected)
 
 - Views: 5
-- Actions: 2
+- Actions: 3
 - Menus: 1
 - Rules (ir.rule): 0
 - Access CSV entries: 5
@@ -22,7 +23,6 @@ tags: [odoo, v19, enterprise, module]
 - `AccountJournal`
 - `AccountReturn`
 - `AccountReturnType`
-
 
 ```plantuml
 @startuml
@@ -36,7 +36,8 @@ class AccountReturnType
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

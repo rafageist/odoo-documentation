@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Two-Factor Authentication (TOTP)
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/auth_totp
 - Dependencies: [[Odoo 19/Community Addons/web/web|web]]
+
 ## XML Artifacts (detected)
 
 - Views: 4
@@ -22,7 +23,6 @@ tags: [odoo, v19, community, module]
 - `auth_totp.device`
 - `ResUsers`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -35,7 +35,9 @@ ResUsers --|> auth_totp_device : one2many
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

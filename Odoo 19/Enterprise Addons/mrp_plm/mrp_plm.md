@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Product Lifecycle Management (PLM)
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/mrp_plm
 - Dependencies: [[Odoo 19/Community Addons/mrp/mrp|mrp]]
 
@@ -40,7 +40,6 @@ Manage engineering change orders on products, bills of material
 - `ProductTemplate`
 - `ProductProduct`
 - `ProductDocument`
-
 
 ```plantuml
 @startuml
@@ -130,7 +129,8 @@ ProductDocument --> ir_attachment : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

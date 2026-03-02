@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Uruguay - Accounting
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/l10n_uy
 - Dependencies: [[Odoo 19/Community Addons/account/account|account]], [[Odoo 19/Community Addons/l10n_latam_invoice_document/l10n_latam_invoice_document|l10n_latam_invoice_document]], [[Odoo 19/Community Addons/l10n_latam_base/l10n_latam_base|l10n_latam_base]]
+
 ## XML Artifacts (detected)
 
 - Views: 1
@@ -26,7 +27,6 @@ tags: [odoo, v19, community, module]
 - `ResCompany`
 - `ResPartner`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -42,7 +42,9 @@ class ResPartner
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Mexico - Accounting
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/l10n_mx
 - Dependencies: [[Odoo 19/Community Addons/account/account|account]]
+
 ## XML Artifacts (detected)
 
 - Views: 7
@@ -25,7 +26,6 @@ tags: [odoo, v19, community, module]
 - `ResBank`
 - `ResPartnerBank`
 - `ResCompany`
-
 
 ```plantuml
 @startuml
@@ -45,7 +45,9 @@ ResCompany --> account_account : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

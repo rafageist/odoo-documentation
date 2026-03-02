@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Payment - Account
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/account_payment
 - Dependencies: [[Odoo 19/Community Addons/account/account|account]], [[Odoo 19/Community Addons/payment/payment|payment]]
 
@@ -31,7 +31,6 @@ Enable customers to pay invoices on the portal and post payments when transactio
 - `AccountPaymentMethodLine`
 - `PaymentProvider`
 - `PaymentTransaction`
-
 
 ```plantuml
 @startuml
@@ -65,7 +64,9 @@ PaymentTransaction .. account_move : many2many
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

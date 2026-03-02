@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Test - Base Automation
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/test_base_automation
 - Dependencies: [[Odoo 19/Community Addons/base_automation/base_automation|base_automation]]
 
@@ -35,7 +35,6 @@ Base Automation Tests: Ensure Flow Robustness
 - `test_base_automation.tag`
 - `base.automation.model.with.recname.char`
 - `base.automation.model.with.recname.m2o`
-
 
 ```plantuml
 @startuml
@@ -76,7 +75,8 @@ base_automation_model_with_recname_m2o --> base_automation_model_with_recname_ch
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

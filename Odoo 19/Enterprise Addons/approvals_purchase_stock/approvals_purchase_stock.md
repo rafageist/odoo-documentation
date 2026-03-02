@@ -6,9 +6,10 @@ tags: [odoo, v19, enterprise, module]
 # Approvals - Purchase - Stock
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/approvals_purchase_stock
 - Dependencies: [[Odoo 19/Enterprise Addons/approvals_purchase/approvals_purchase|approvals_purchase]], [[Odoo 19/Community Addons/purchase_stock/purchase_stock|purchase_stock]]
+
 ## XML Artifacts (detected)
 
 - Views: 3
@@ -21,7 +22,6 @@ tags: [odoo, v19, enterprise, module]
 
 - `ApprovalProductLine`
 - `ApprovalRequest`
-
 
 ```plantuml
 @startuml
@@ -36,7 +36,8 @@ ApprovalProductLine --> stock_warehouse : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

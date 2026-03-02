@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Surveys
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/survey
 - Dependencies: [[Odoo 19/Community Addons/auth_signup/auth_signup|auth_signup]], [[Odoo 19/Community Addons/http_routing/http_routing|http_routing]], [[Odoo 19/Community Addons/mail/mail|mail]], [[Odoo 19/Community Addons/web_tour/web_tour|web_tour]], [[Odoo 19/Community Addons/gamification/gamification|gamification]]
 
@@ -34,7 +34,6 @@ Send your surveys or share them live.
 - `survey.user_input`
 - `survey.user_input.line`
 - `SurveySurvey`
-
 
 ```plantuml
 @startuml
@@ -94,7 +93,8 @@ survey_user_input_line --> survey_question_answer : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Barcode for Batch Transfer
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/stock_barcode_picking_batch
 - Dependencies: [[Odoo 19/Enterprise Addons/stock_barcode/stock_barcode|stock_barcode]], [[Odoo 19/Community Addons/stock_picking_batch/stock_picking_batch|stock_picking_batch]]
 
@@ -29,7 +29,6 @@ Add the support of batch transfers into the barcode view
 - `StockPickingType`
 - `StockPickingBatch`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -43,7 +42,8 @@ class StockPickingBatch
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

@@ -6,14 +6,15 @@ tags: [odoo, v19, enterprise, module]
 # Switzerland - Swissdec Certified ELM 5.0 - Payroll
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/l10n_ch_hr_payroll
 - Dependencies: [[Odoo 19/Enterprise Addons/hr_payroll/hr_payroll|hr_payroll]], [[Odoo 19/Community Addons/hr_work_entry_holidays/hr_work_entry_holidays|hr_work_entry_holidays]], [[Odoo 19/Enterprise Addons/hr_payroll_holidays/hr_payroll_holidays|hr_payroll_holidays]], [[Odoo 19/Community Addons/iap/iap|iap]]
+
 ## XML Artifacts (detected)
 
-- Views: 77
-- Actions: 31
-- Menus: 32
+- Views: 78
+- Actions: 33
+- Menus: 34
 - Rules (ir.rule): 18
 - Access CSV entries: 54
 
@@ -79,7 +80,6 @@ tags: [odoo, v19, enterprise, module]
 - `l10n.ch.swissdec.job.result`
 - `l10n.ch.swiss.wage.component`
 - `ResCompany`
-
 
 ```plantuml
 @startuml
@@ -303,7 +303,8 @@ ResCompany --> res_country : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

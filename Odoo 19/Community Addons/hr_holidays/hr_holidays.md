@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Time Off
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/hr_holidays
 - Dependencies: [[Odoo 19/Community Addons/hr/hr|hr]], [[Odoo 19/Community Addons/calendar/calendar|calendar]], [[Odoo 19/Community Addons/resource/resource|resource]]
 
@@ -42,7 +42,6 @@ Allocate time off and follow leave requests
 - `ResourceResource`
 - `ResPartner`
 - `ResUsers`
-
 
 ```plantuml
 @startuml
@@ -119,7 +118,9 @@ ResourceCalendarLeaves --> hr_leave : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

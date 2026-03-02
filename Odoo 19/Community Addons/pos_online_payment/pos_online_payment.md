@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Point of Sale online payment
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/pos_online_payment
 - Dependencies: [[Odoo 19/Community Addons/point_of_sale/point_of_sale|point_of_sale]], [[Odoo 19/Community Addons/account_payment/account_payment|account_payment]]
+
 ## XML Artifacts (detected)
 
 - Views: 6
@@ -26,7 +27,6 @@ tags: [odoo, v19, community, module]
 - `PosPayment`
 - `PosPaymentMethod`
 - `PosSession`
-
 
 ```plantuml
 @startuml
@@ -53,7 +53,9 @@ PosPaymentMethod .. payment_provider : many2many
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

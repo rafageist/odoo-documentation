@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Invoicing
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/account
 - Dependencies: [[Odoo 19/Community Addons/base_setup/base_setup|base_setup]], [[Odoo 19/Community Addons/onboarding/onboarding|onboarding]], [[Odoo 19/Community Addons/product/product|product]], [[Odoo 19/Community Addons/analytic/analytic|analytic]], [[Odoo 19/Community Addons/portal/portal|portal]], [[Odoo 19/Community Addons/digest/digest|digest]]
 
@@ -84,7 +84,6 @@ Invoices & Payments
 - `res.partner.bank`
 - `ResGroups`
 - `UomUom`
-
 
 ```plantuml
 @startuml
@@ -450,7 +449,9 @@ res_partner_bank .. res_partner : many2many
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Spreadsheet dashboard for payroll
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/spreadsheet_dashboard_hr_payroll
 - Dependencies: [[Odoo 19/Community Addons/spreadsheet_dashboard/spreadsheet_dashboard|spreadsheet_dashboard]], [[Odoo 19/Enterprise Addons/hr_payroll/hr_payroll|hr_payroll]]
 
@@ -24,7 +24,8 @@ Spreadsheet
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

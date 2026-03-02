@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Coupons, Promotions, Gift Card and Loyalty for eCommerce
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/website_sale_loyalty
 - Dependencies: [[Odoo 19/Community Addons/website_sale/website_sale|website_sale]], [[Odoo 19/Community Addons/website_links/website_links|website_links]], [[Odoo 19/Community Addons/sale_loyalty/sale_loyalty|sale_loyalty]]
 
@@ -31,7 +31,6 @@ Use coupon, promotion, gift cards and loyalty programs in your eCommerce store
 - `SaleOrder`
 - `SaleOrderLine`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -49,7 +48,8 @@ SaleOrder .. loyalty_reward : many2many
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

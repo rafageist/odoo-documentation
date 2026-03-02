@@ -6,9 +6,10 @@ tags: [odoo, v19, enterprise, module]
 # Avatax
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/account_avatax
 - Dependencies: [[Odoo 19/Community Addons/payment/payment|payment]], [[Odoo 19/Enterprise Addons/account_external_tax/account_external_tax|account_external_tax]]
+
 ## XML Artifacts (detected)
 
 - Views: 13
@@ -28,7 +29,6 @@ tags: [odoo, v19, enterprise, module]
 - `ProductProduct`
 - `ResCompany`
 - `res.partner`
-
 
 ```plantuml
 @startuml
@@ -59,7 +59,8 @@ res_partner --> avatax_exemption : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

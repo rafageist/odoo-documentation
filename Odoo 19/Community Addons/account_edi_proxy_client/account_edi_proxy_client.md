@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Proxy features for account_edi
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/account_edi_proxy_client
 - Dependencies: [[Odoo 19/Community Addons/account/account|account]], [[Odoo 19/Community Addons/certificate/certificate|certificate]]
+
 ## XML Artifacts (detected)
 
 - Views: 2
@@ -22,7 +23,6 @@ tags: [odoo, v19, community, module]
 - `account_edi_proxy_client.user`
 - `CertificateKey`
 - `ResCompany`
-
 
 ```plantuml
 @startuml
@@ -41,7 +41,9 @@ ResCompany --|> account_edi_proxy_client_user : one2many
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # POS - Sales Loyality
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/pos_sale_loyalty
 - Dependencies: [[Odoo 19/Community Addons/pos_sale/pos_sale|pos_sale]], [[Odoo 19/Community Addons/pos_loyalty/pos_loyalty|pos_loyalty]]
 
@@ -26,7 +26,6 @@ Link module between pos_sale and pos_loyalty
 
 - `SaleOrderLine`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -37,7 +36,9 @@ class SaleOrderLine
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Import/Export electronic invoices with UBL/CII
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/account_edi_ubl_cii
 - Dependencies: [[Odoo 19/Community Addons/account/account|account]]
+
 ## XML Artifacts (detected)
 
 - Views: 2
@@ -23,7 +24,6 @@ tags: [odoo, v19, community, module]
 - `AccountTax`
 - `IrActionsReport`
 - `ResPartner`
-
 
 ```plantuml
 @startuml
@@ -40,7 +40,9 @@ AccountMove --> ir_attachment : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

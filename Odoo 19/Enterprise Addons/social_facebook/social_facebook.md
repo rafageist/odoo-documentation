@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Social Facebook
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/social_facebook
 - Dependencies: [[Odoo 19/Enterprise Addons/social/social|social]]
 
@@ -32,7 +32,6 @@ Manage your Facebook pages and schedule posts
 - `SocialStream`
 - `SocialStreamPost`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -51,7 +50,8 @@ SocialPostTemplate .. ir_attachment : many2many
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Social Media
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/social_media
 - Dependencies: base (not documented)
 
@@ -26,7 +26,6 @@ Social media connectors for company settings.
 
 - `ResCompany`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -37,7 +36,8 @@ class ResCompany
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

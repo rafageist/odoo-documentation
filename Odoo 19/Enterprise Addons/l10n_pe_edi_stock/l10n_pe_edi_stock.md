@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Peruvian - Electronic Delivery Note
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/l10n_pe_edi_stock
 - Dependencies: [[Odoo 19/Community Addons/stock_delivery/stock_delivery|stock_delivery]], [[Odoo 19/Enterprise Addons/l10n_pe_edi/l10n_pe_edi|l10n_pe_edi]]
 
@@ -30,7 +30,6 @@ Electronic Delivery Note for Peru (OSE method) and UBL 2.1
 - `ResPartner`
 - `StockPicking`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -51,7 +50,9 @@ StockPicking --> res_partner : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

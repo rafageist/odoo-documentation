@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Website Test
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/test_website
 - Dependencies: [[Odoo 19/Community Addons/web_unsplash/web_unsplash|web_unsplash]], [[Odoo 19/Community Addons/website/website|website]], [[Odoo 19/Community Addons/theme_default/theme_default|theme_default]]
 
@@ -31,7 +31,6 @@ Website Test, mainly for module install/uninstall tests
 - `test.model.multi.website`
 - `test.model.exposed`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -53,7 +52,9 @@ test_model_multi_website --> website : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

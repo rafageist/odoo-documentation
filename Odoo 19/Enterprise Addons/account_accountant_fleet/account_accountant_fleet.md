@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Accounting/Fleet bridge
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/account_accountant_fleet
 - Dependencies: [[Odoo 19/Community Addons/account_fleet/account_fleet|account_fleet]], [[Odoo 19/Enterprise Addons/account_accountant/account_accountant|account_accountant]]
 
@@ -24,20 +24,22 @@ Manage accounting with fleet features
 
 ## Detected Models
 
+- `AccountMoveLine`
 - `AccountTax`
-
 
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
 title Accounting/Fleet bridge - Models and Relations
+class AccountMoveLine
 class AccountTax
 @enduml
 ```
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

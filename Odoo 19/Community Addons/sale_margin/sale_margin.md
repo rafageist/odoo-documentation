@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Margins in Sales Orders
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/sale_margin
 - Dependencies: [[Odoo 19/Community Addons/sale_management/sale_management|sale_management]]
+
 ## XML Artifacts (detected)
 
 - Views: 3
@@ -22,7 +23,6 @@ tags: [odoo, v19, community, module]
 - `SaleOrder`
 - `SaleOrderLine`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -34,7 +34,8 @@ class SaleOrderLine
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

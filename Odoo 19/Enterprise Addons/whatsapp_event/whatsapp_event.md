@@ -6,9 +6,10 @@ tags: [odoo, v19, enterprise, module]
 # WhatsApp-Website-Events
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/whatsapp_event
 - Dependencies: [[Odoo 19/Community Addons/event/event|event]], [[Odoo 19/Enterprise Addons/whatsapp/whatsapp|whatsapp]]
+
 ## XML Artifacts (detected)
 
 - Views: 0
@@ -25,7 +26,6 @@ tags: [odoo, v19, enterprise, module]
 - `EventTypeMail`
 - `WhatsappTemplate`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -40,7 +40,8 @@ class WhatsappTemplate
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

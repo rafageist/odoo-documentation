@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Purchase Matrix
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/purchase_product_matrix
 - Dependencies: [[Odoo 19/Community Addons/purchase/purchase|purchase]], [[Odoo 19/Community Addons/product_matrix/product_matrix|product_matrix]]
 
@@ -27,7 +27,6 @@ Add variants to your purchase orders through an Order Grid Entry.
 - `PurchaseOrder`
 - `PurchaseOrderLine`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -44,7 +43,9 @@ PurchaseOrderLine .. product_template_attribute_value : many2many
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

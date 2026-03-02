@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Product Comparison
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/website_sale_comparison
 - Dependencies: [[Odoo 19/Community Addons/website_sale/website_sale|website_sale]]
 
@@ -29,7 +29,6 @@ Allow shoppers to compare products based on their attributes
 - `ProductProduct`
 - `ProductTemplateAttributeLine`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -46,7 +45,8 @@ product_attribute_category --|> product_attribute : one2many
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

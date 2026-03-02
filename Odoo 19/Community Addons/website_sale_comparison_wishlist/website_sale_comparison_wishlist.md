@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Product Availability Notifications
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/website_sale_comparison_wishlist
 - Dependencies: [[Odoo 19/Community Addons/website_sale_comparison/website_sale_comparison|website_sale_comparison]], [[Odoo 19/Community Addons/website_sale_wishlist/website_sale_wishlist|website_sale_wishlist]]
 
@@ -24,7 +24,8 @@ Bridge module for Website sale comparison and wishlist
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

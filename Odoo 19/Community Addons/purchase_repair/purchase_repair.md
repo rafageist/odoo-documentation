@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Purchase Repair
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/purchase_repair
 - Dependencies: [[Odoo 19/Community Addons/repair/repair|repair]], [[Odoo 19/Community Addons/purchase_stock/purchase_stock|purchase_stock]]
 
@@ -27,7 +27,6 @@ Keep track of linked purchase and repair orders
 - `PurchaseOrder`
 - `RepairOrder`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -39,7 +38,9 @@ class RepairOrder
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

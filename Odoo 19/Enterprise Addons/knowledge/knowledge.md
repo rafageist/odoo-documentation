@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Knowledge
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/knowledge
 - Dependencies: [[Odoo 19/Community Addons/web/web|web]], [[Odoo 19/Community Addons/digest/digest|digest]], [[Odoo 19/Community Addons/html_editor/html_editor|html_editor]], [[Odoo 19/Community Addons/mail/mail|mail]], [[Odoo 19/Community Addons/portal/portal|portal]], [[Odoo 19/Community Addons/web_unsplash/web_unsplash|web_unsplash]], [[Odoo 19/Community Addons/web_hierarchy/web_hierarchy|web_hierarchy]]
 
@@ -34,7 +34,6 @@ Centralize, manage, share and grow your knowledge library
 - `knowledge.cover`
 - `ResPartner`
 - `ResUsers`
-
 
 ```plantuml
 @startuml
@@ -77,7 +76,8 @@ knowledge_cover --|> knowledge_article : one2many
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

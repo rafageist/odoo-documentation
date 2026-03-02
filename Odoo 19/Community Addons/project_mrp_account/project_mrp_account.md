@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # MRP Account Project
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/project_mrp_account
 - Dependencies: [[Odoo 19/Community Addons/mrp_account/mrp_account|mrp_account]], [[Odoo 19/Community Addons/project_mrp/project_mrp|project_mrp]]
 
@@ -30,7 +30,6 @@ Monitor MRP account using project
 - `StockMove`
 - `StockRule`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -45,7 +44,9 @@ class StockRule
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Work Entries
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/hr_work_entry
 - Dependencies: [[Odoo 19/Community Addons/hr/hr|hr]]
 
@@ -32,7 +32,6 @@ Manage work entries
 - `ResourceCalendar`
 - `ResourceCalendarAttendance`
 - `ResourceCalendarLeaves`
-
 
 ```plantuml
 @startuml
@@ -68,7 +67,9 @@ ResourceCalendarLeaves --> hr_work_entry_type : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

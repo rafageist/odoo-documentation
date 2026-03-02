@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Germany - Certification for Point of Sale
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/l10n_de_pos_cert
 - Dependencies: [[Odoo 19/Community Addons/l10n_de/l10n_de|l10n_de]], [[Odoo 19/Community Addons/point_of_sale/point_of_sale|point_of_sale]], [[Odoo 19/Community Addons/iap/iap|iap]]
 
@@ -33,7 +33,6 @@ Germany TSS Regulation
 - `PosSession`
 - `ResCompany`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -55,7 +54,8 @@ l10n_de_pos_dsfinvk_export --> res_company : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

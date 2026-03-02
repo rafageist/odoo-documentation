@@ -1,41 +1,22 @@
 ---
-tags: [v19, core, framework, map]
-status: seed
+tags: [odoo, v19, core, framework, index]
+status: active
 ---
-# Core Framework v19
 
-## Prioritized modules
-- `[[Odoo 19/Core/Framework/base.md]]`
-- `[[Odoo 19/Core/Framework/web.md]]`
-- `[[Odoo 19/Core/Framework/mail.md]]`
-- `[[Odoo 19/Core/Framework/auth.md]]`
-- `[[Odoo 19/Core/Framework/http.md]]`
+# Core Framework
 
-```plantuml
-@startmindmap
-* Framework v19
-** Base
-** Web (OWL)
-** Mail
-** Auth
-** HTTP
-@endmindmap
-```
+## Topics
+- `[[Odoo 19/Core/Framework/base]]`
+- `[[Odoo 19/Core/Framework/web]]`
+- `[[Odoo 19/Core/Framework/mail]]`
+- `[[Odoo 19/Core/Framework/auth]]`
+- `[[Odoo 19/Core/Framework/http]]`
 
-## Changes vs v18
-- OWL 2 and component composition.
--Asset bundler settings.
-- Improvements in authentication and security.
-
-## Tasks
-- Document new JS APIs and hooks.
-- Compare ORM v19 vs v18.
-- Record breaking changes detected.
-
-
-
-
-
+## Focus
+- ORM and base model behavior
+- Web client and OWL-facing framework pieces
+- Authentication, session, and request lifecycle
+- Mail stack as shared platform infrastructure
 
 ## Navigation
 - **Parent:** [[Odoo 19/Core/Core]]

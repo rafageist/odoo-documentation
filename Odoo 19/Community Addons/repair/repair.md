@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Repairs
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/repair
 - Dependencies: [[Odoo 19/Community Addons/sale_stock/sale_stock|sale_stock]], [[Odoo 19/Community Addons/sale_management/sale_management|sale_management]]
 
@@ -36,7 +36,6 @@ Repair damaged products
 - `StockPickingType`
 - `StockPicking`
 - `StockWarehouse`
-
 
 ```plantuml
 @startuml
@@ -106,7 +105,9 @@ StockWarehouse --> stock_rule : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

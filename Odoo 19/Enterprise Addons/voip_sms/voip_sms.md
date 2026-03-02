@@ -6,9 +6,10 @@ tags: [odoo, v19, enterprise, module]
 # Phone - SMS
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/voip_sms
 - Dependencies: [[Odoo 19/Enterprise Addons/voip/voip|voip]], [[Odoo 19/Community Addons/sms/sms|sms]]
+
 ## XML Artifacts (detected)
 
 - Views: 0
@@ -19,7 +20,8 @@ tags: [odoo, v19, enterprise, module]
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

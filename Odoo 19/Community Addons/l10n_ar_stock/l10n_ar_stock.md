@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Argentinean - Stock
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/l10n_ar_stock
 - Dependencies: [[Odoo 19/Community Addons/l10n_ar/l10n_ar|l10n_ar]], [[Odoo 19/Community Addons/stock_account/stock_account|stock_account]]
+
 ## XML Artifacts (detected)
 
 - Views: 2
@@ -21,7 +22,6 @@ tags: [odoo, v19, community, module]
 
 - `StockPicking`
 - `StockPickingType`
-
 
 ```plantuml
 @startuml
@@ -38,7 +38,9 @@ StockPickingType --> ir_sequence : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

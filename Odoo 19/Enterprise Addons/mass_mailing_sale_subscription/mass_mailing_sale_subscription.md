@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Mass mailing on sale subscriptions
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/mass_mailing_sale_subscription
 - Dependencies: [[Odoo 19/Community Addons/mass_mailing_sale/mass_mailing_sale|mass_mailing_sale]], [[Odoo 19/Enterprise Addons/sale_subscription/sale_subscription|sale_subscription]]
 
@@ -26,7 +26,6 @@ Add sale subscription support in mass mailing
 
 - `SaleOrder`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -37,7 +36,8 @@ class SaleOrder
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Test - Import & Export
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/test_import_export
 - Dependencies: [[Odoo 19/Community Addons/web/web|web]], [[Odoo 19/Community Addons/base_import/base_import|base_import]], [[Odoo 19/Community Addons/website/website|website]]
 
@@ -60,7 +60,6 @@ Base Import & Export Tests: Ensure Flow Robustness
 - `import.properties`
 - `PropertyInherits`
 - `PathToProperty`
-
 
 ```plantuml
 @startuml
@@ -140,7 +139,9 @@ PathToProperty .. import_properties : many2many
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

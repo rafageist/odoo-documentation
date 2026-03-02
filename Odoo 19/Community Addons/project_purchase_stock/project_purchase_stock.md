@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Project - Purchase - Stock
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/project_purchase_stock
 - Dependencies: [[Odoo 19/Community Addons/project_purchase/project_purchase|project_purchase]], [[Odoo 19/Community Addons/project_stock/project_stock|project_stock]]
+
 ## XML Artifacts (detected)
 
 - Views: 0
@@ -22,7 +23,6 @@ tags: [odoo, v19, community, module]
 - `PurchaseOrder`
 - `StockRule`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -34,7 +34,9 @@ class StockRule
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Maintenance
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/maintenance
 - Dependencies: [[Odoo 19/Community Addons/mail/mail|mail]]
 
@@ -29,7 +29,6 @@ Track equipment and manage maintenance requests
 - `maintenance.equipment`
 - `maintenance.request`
 - `maintenance.team`
-
 
 ```plantuml
 @startuml
@@ -68,7 +67,9 @@ maintenance_team --|> maintenance_request : one2many
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

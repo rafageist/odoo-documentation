@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # United States - Accounting
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/l10n_us_account
 - Dependencies: [[Odoo 19/Community Addons/l10n_us/l10n_us|l10n_us]], [[Odoo 19/Community Addons/account/account|account]]
+
 ## XML Artifacts (detected)
 
 - Views: 1
@@ -20,7 +21,6 @@ tags: [odoo, v19, community, module]
 ## Detected Models
 
 - `ResBank`
-
 
 ```plantuml
 @startuml
@@ -34,7 +34,9 @@ ResBank --> res_bank : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

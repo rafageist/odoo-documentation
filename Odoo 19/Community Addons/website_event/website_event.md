@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Events
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/website_event
 - Dependencies: [[Odoo 19/Community Addons/event/event|event]], [[Odoo 19/Community Addons/website/website|website]], [[Odoo 19/Community Addons/website_partner/website_partner|website_partner]], [[Odoo 19/Community Addons/website_mail/website_mail|website_mail]], [[Odoo 19/Community Addons/html_builder/html_builder|html_builder]]
 
@@ -34,7 +34,6 @@ Publish events, sell tickets
 - `WebsiteMenu`
 - `WebsiteSnippetFilter`
 - `WebsiteVisitor`
-
 
 ```plantuml
 @startuml
@@ -70,7 +69,8 @@ WebsiteVisitor .. event_event : many2many
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

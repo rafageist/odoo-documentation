@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Website Mail Group
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/website_mail_group
 - Dependencies: [[Odoo 19/Community Addons/mail_group/mail_group|mail_group]], [[Odoo 19/Community Addons/website/website|website]]
 
@@ -26,7 +26,6 @@ Add a website snippet for the mail groups.
 
 - `MailGroup`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -37,7 +36,8 @@ class MailGroup
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

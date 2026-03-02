@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Project Accounting Assets
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/project_account_asset
 - Dependencies: [[Odoo 19/Community Addons/project/project|project]], [[Odoo 19/Enterprise Addons/account_asset/account_asset|account_asset]]
 
@@ -26,7 +26,6 @@ Project accounting assets
 
 - `ProjectProject`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -37,7 +36,8 @@ class ProjectProject
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

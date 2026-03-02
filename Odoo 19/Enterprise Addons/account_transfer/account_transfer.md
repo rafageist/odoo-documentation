@@ -6,9 +6,10 @@ tags: [odoo, v19, enterprise, module]
 # Account Transfers
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/account_transfer
 - Dependencies: [[Odoo 19/Enterprise Addons/account_accountant/account_accountant|account_accountant]]
+
 ## XML Artifacts (detected)
 
 - Views: 4
@@ -24,7 +25,6 @@ tags: [odoo, v19, enterprise, module]
 - `AccountMoveLine`
 - `account.transfer.model`
 - `account.transfer.model.line`
-
 
 ```plantuml
 @startuml
@@ -52,7 +52,8 @@ account_transfer_model_line --> account_account : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

@@ -1,50 +1,16 @@
 ---
-tags: [v19, enterprise, map]
-status: seed
+tags: [odoo, v19, enterprise, index]
+status: active
 ---
-# Odoo 19 Enterprise Addons
 
-## Portfolio
-- Extended Finance -> `[[Odoo 19/Enterprise Addons/Advanced Finance]]`
-- Smart Operations -> `[[Odoo 19/Enterprise Addons/Operations]]`
-- Customer Experience -> `[[Odoo 19/Enterprise Addons/Customer Experience]]`
-- Data Intelligence -> `[[Odoo 19/Enterprise Addons/Analytics]]`
-- Localizations and Compliance -> `[[Odoo 19/Enterprise Addons/Localizations]]`
+# Enterprise Addons
 
-```plantuml
-@startuml
-rectangle "Enterprise v19" {
-  [Advanced Finance]
-  [Operations]
-  [Customer Experience]
-  [Analytics]
-  [Localizations]
-}
-@enduml
-```
+## Scope
+- Canonical addon notes live in technical-name folders.
+- Category folders organize the portfolio and should not duplicate module notes.
+- Content is generated from the enterprise cache snapshot used in this workspace and then curated by hand.
 
-## Research questions
-- What Enterprise improvements justify migrations from v18?
-- Which modules change data models or flows?
-- What new external integrations are introduced in v19?
-
-## Connections
-- `[[Odoo 19]]`
-- `[[Comparisons]]`
-- `[[Licensing/Enterprise Guide]]`
-
-
-## Navigation
-- **Parent:** [[Odoo 19/Odoo 19]]
-## Children
-- [[Odoo 19/Enterprise Addons/Advanced Finance/Advanced Finance]]
-- [[Odoo 19/Enterprise Addons/Analytics/Analytics]]
-- [[Odoo 19/Enterprise Addons/Customer Experience/Customer Experience]]
-- [[Odoo 19/Enterprise Addons/Localizations/Localizations]]
-- [[Odoo 19/Enterprise Addons/Operations/Operations]]
-<!-- GENERATED:CATEGORIES -->
 ## Categories
-
 - [[Odoo 19/Enterprise Addons/Communication/Communication|Communication]] (2)
 - [[Odoo 19/Enterprise Addons/Finance/Finance|Finance]] (50)
 - [[Odoo 19/Enterprise Addons/HR/HR|HR]] (53)
@@ -59,4 +25,8 @@ rectangle "Enterprise v19" {
 - [[Odoo 19/Enterprise Addons/Technical/Technical|Technical]] (8)
 - [[Odoo 19/Enterprise Addons/Website/Website|Website]] (33)
 
-<!-- GENERATED:CATEGORIES -->
+## Supporting note
+- `[[Licensing/Enterprise Guide]]`
+
+## Navigation
+- **Parent:** [[Odoo 19/Odoo 19]]

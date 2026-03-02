@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # France - Work Entries Time Off
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/l10n_fr_hr_work_entry_holidays
 - Dependencies: [[Odoo 19/Community Addons/l10n_fr_hr_holidays/l10n_fr_hr_holidays|l10n_fr_hr_holidays]], [[Odoo 19/Community Addons/hr_work_entry_holidays/hr_work_entry_holidays|hr_work_entry_holidays]]
 
@@ -27,7 +27,6 @@ Management of leaves for part-time workers in France
 - `HrVersion`
 - `HrWorkEntry`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -39,7 +38,9 @@ class HrWorkEntry
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

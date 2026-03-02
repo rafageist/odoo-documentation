@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Repair features for Quality Control
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/quality_repair
 - Dependencies: [[Odoo 19/Enterprise Addons/quality_control/quality_control|quality_control]], [[Odoo 19/Community Addons/repair/repair|repair]]
 
@@ -29,7 +29,6 @@ Quality Management with Repair
 - `QualityAlert`
 - `RepairOrder`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -50,7 +49,8 @@ RepairOrder --|> quality_alert : one2many
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

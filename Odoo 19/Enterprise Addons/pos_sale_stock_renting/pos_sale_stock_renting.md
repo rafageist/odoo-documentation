@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Point of Sale Rental Stock
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/pos_sale_stock_renting
 - Dependencies: [[Odoo 19/Community Addons/pos_sale/pos_sale|pos_sale]], [[Odoo 19/Enterprise Addons/sale_stock_renting/sale_stock_renting|sale_stock_renting]]
 
@@ -25,21 +25,21 @@ Link between PoS and Stock Rental.
 ## Detected Models
 
 - `PosOrder`
-- `RentalOrderLine`
-
+- `SaleOrderLine`
 
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
 title Point of Sale Rental Stock - Models and Relations
 class PosOrder
-class RentalOrderLine
+class SaleOrderLine
 @enduml
 ```
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

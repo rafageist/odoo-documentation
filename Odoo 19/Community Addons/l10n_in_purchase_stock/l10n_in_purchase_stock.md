@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # India Purchase and Warehouse Management
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/l10n_in_purchase_stock
 - Dependencies: [[Odoo 19/Community Addons/l10n_in_stock/l10n_in_stock|l10n_in_stock]], [[Odoo 19/Community Addons/purchase_stock/purchase_stock|purchase_stock]]
 
@@ -28,7 +28,6 @@ Get warehouse address if the bill is created from Purchase Order
 - `StockMove`
 - `StockPicking`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -41,7 +40,9 @@ class StockPicking
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # POS Restaurant Stripe
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/pos_restaurant_stripe
 - Dependencies: [[Odoo 19/Community Addons/pos_stripe/pos_stripe|pos_stripe]], [[Odoo 19/Community Addons/pos_restaurant/pos_restaurant|pos_restaurant]], [[Odoo 19/Community Addons/payment_stripe/payment_stripe|payment_stripe]]
 
@@ -26,7 +26,6 @@ Adds American style tipping to Stripe
 
 - `PosPayment`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -37,7 +36,9 @@ class PosPayment
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

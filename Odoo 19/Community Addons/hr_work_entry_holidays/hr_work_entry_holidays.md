@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Time Off in Payslips
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/hr_work_entry_holidays
 - Dependencies: [[Odoo 19/Community Addons/hr_holidays/hr_holidays|hr_holidays]], [[Odoo 19/Community Addons/hr_work_entry/hr_work_entry|hr_work_entry]]
 
@@ -30,7 +30,6 @@ Manage Time Off in Payslips
 - `HrWorkEntry`
 - `HrWorkEntryType`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -51,7 +50,9 @@ HrWorkEntryType --|> hr_leave_type : one2many
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

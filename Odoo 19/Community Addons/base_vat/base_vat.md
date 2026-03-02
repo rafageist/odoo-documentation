@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # VAT Number Validation
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/base_vat
 - Dependencies: [[Odoo 19/Community Addons/account/account|account]]
+
 ## XML Artifacts (detected)
 
 - Views: 2
@@ -23,7 +24,6 @@ tags: [odoo, v19, community, module]
 - `ResCountry`
 - `ResPartner`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -36,7 +36,9 @@ class ResPartner
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

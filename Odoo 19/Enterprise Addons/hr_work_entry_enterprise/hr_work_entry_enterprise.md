@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Work Entries - Enterprise
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/hr_work_entry_enterprise
 - Dependencies: [[Odoo 19/Community Addons/hr_work_entry/hr_work_entry|hr_work_entry]], [[Odoo 19/Enterprise Addons/hr_gantt/hr_gantt|hr_gantt]]
 
@@ -26,7 +26,6 @@ Manage work entries
 
 - `HrWorkEntry`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -37,7 +36,8 @@ class HrWorkEntry
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

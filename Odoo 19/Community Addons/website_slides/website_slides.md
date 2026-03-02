@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # eLearning
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/website_slides
 - Dependencies: [[Odoo 19/Community Addons/portal_rating/portal_rating|portal_rating]], [[Odoo 19/Community Addons/website/website|website]], [[Odoo 19/Community Addons/website_mail/website_mail|website_mail]], [[Odoo 19/Community Addons/website_profile/website_profile|website_profile]]
 
@@ -42,7 +42,6 @@ Manage and publish an eLearning platform
 - `slide.slide.resource`
 - `slide.tag`
 - `Website`
-
 
 ```plantuml
 @startuml
@@ -124,7 +123,8 @@ slide_slide_resource --> slide_slide : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

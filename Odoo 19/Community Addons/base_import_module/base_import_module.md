@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Base import module
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/base_import_module
 - Dependencies: [[Odoo 19/Community Addons/web/web|web]]
+
 ## XML Artifacts (detected)
 
 - Views: 5
@@ -22,7 +23,6 @@ tags: [odoo, v19, community, module]
 - `IrModuleModule`
 - `IrUiView`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -34,7 +34,9 @@ class IrUiView
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

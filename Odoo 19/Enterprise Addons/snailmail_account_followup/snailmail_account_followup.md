@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Snail Mail Follow-Up
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/snailmail_account_followup
 - Dependencies: [[Odoo 19/Community Addons/snailmail_account/snailmail_account|snailmail_account]], [[Odoo 19/Enterprise Addons/account_followup/account_followup|account_followup]]
 
@@ -26,7 +26,7 @@ Extension to send follow-up documents by post
 
 - `Account_FollowupFollowupLine`
 - `ResPartner`
-
+- `SnailmailLetter`
 
 ```plantuml
 @startuml
@@ -34,12 +34,14 @@ Extension to send follow-up documents by post
 title Snail Mail Follow-Up - Models and Relations
 class Account_FollowupFollowupLine
 class ResPartner
+class SnailmailLetter
 @enduml
 ```
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

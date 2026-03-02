@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # WhatsApp - Employee Referral
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/whatsapp_hr_referral
 - Dependencies: [[Odoo 19/Enterprise Addons/hr_referral/hr_referral|hr_referral]], [[Odoo 19/Enterprise Addons/whatsapp/whatsapp|whatsapp]]
 
@@ -26,7 +26,6 @@ Let your employees share job positions and refer their friends by WhatsApp
 
 - `HrJob`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -37,7 +36,8 @@ class HrJob
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Payroll
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/hr_payroll
 - Dependencies: [[Odoo 19/Enterprise Addons/hr_work_entry_enterprise/hr_work_entry_enterprise|hr_work_entry_enterprise]], [[Odoo 19/Community Addons/mail/mail|mail]], [[Odoo 19/Community Addons/html_editor/html_editor|html_editor]]
 
@@ -16,7 +16,7 @@ Manage your employee payroll
 
 ## XML Artifacts (detected)
 
-- Views: 86
+- Views: 87
 - Actions: 52
 - Menus: 28
 - Rules (ir.rule): 16
@@ -49,7 +49,6 @@ Manage your employee payroll
 - `HrWorkEntryType`
 - `hr.payroll.note`
 - `ResCompany`
-
 
 ```plantuml
 @startuml
@@ -174,7 +173,8 @@ hr_payroll_note --> res_company : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

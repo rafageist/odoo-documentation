@@ -1,11 +1,13 @@
-<!-- GENERATED:CATEGORY -->
 ---
 tags: [odoo, v19, community, index, category]
 ---
 
 # Marketing
 
-Modules: 28
+- Scope: Community Addons
+- Modules: 28
+
+## Modules
 
 - [[Odoo 19/Community Addons/digest/digest|digest]]
 - [[Odoo 19/Community Addons/event/event|event]]
@@ -35,4 +37,8 @@ Modules: 28
 - [[Odoo 19/Community Addons/survey_crm/survey_crm|survey_crm]]
 - [[Odoo 19/Community Addons/test_mass_mailing/test_mass_mailing|test_mass_mailing]]
 - [[Odoo 19/Community Addons/utm/utm|utm]]
-<!-- GENERATED:CATEGORY -->
+
+## Navigation
+
+- [[../Community Addons|Back to scope]]
+- [[../../Odoo 19/Odoo 19|Back to version]]

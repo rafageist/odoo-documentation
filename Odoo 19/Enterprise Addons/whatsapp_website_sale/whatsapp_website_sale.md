@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # WhatsApp-eCommerce
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/whatsapp_website_sale
 - Dependencies: [[Odoo 19/Community Addons/website_sale/website_sale|website_sale]], [[Odoo 19/Enterprise Addons/whatsapp/whatsapp|whatsapp]]
 
@@ -27,7 +27,6 @@ This module integrates website sale with WhatsApp
 - `SaleOrder`
 - `Website`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -41,7 +40,8 @@ Website --> whatsapp_template : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

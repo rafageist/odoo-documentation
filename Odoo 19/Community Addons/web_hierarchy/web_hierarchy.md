@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Web Hierarchy
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/web_hierarchy
 - Dependencies: [[Odoo 19/Community Addons/web/web|web]]
+
 ## XML Artifacts (detected)
 
 - Views: 0
@@ -22,7 +23,6 @@ tags: [odoo, v19, community, module]
 - `IrActionsAct_WindowView`
 - `IrUiView`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -34,7 +34,8 @@ class IrUiView
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

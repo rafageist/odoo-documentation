@@ -6,9 +6,10 @@ tags: [odoo, v19, enterprise, module]
 # Web Enterprise
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/web_enterprise
 - Dependencies: [[Odoo 19/Community Addons/web/web|web]], [[Odoo 19/Community Addons/base_setup/base_setup|base_setup]]
+
 ## XML Artifacts (detected)
 
 - Views: 2
@@ -22,7 +23,6 @@ tags: [odoo, v19, enterprise, module]
 - `ResUsers`
 - `ResUsersSettings`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -34,7 +34,8 @@ class ResUsersSettings
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

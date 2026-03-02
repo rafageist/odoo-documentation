@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Spreadsheet dashboard
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/spreadsheet_dashboard
 - Dependencies: [[Odoo 19/Community Addons/spreadsheet/spreadsheet|spreadsheet]]
 
@@ -27,7 +27,6 @@ Spreadsheet
 - `spreadsheet.dashboard`
 - `spreadsheet.dashboard.group`
 - `spreadsheet.dashboard.share`
-
 
 ```plantuml
 @startuml
@@ -53,7 +52,8 @@ spreadsheet_dashboard_share --> spreadsheet_dashboard : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

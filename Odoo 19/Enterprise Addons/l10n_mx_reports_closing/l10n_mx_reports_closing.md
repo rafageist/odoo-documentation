@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Mexico - Month 13 Trial Balance
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/l10n_mx_reports_closing
 - Dependencies: [[Odoo 19/Enterprise Addons/l10n_mx_reports/l10n_mx_reports|l10n_mx_reports]]
 
@@ -26,7 +26,6 @@ Mexico Month 13 Trial Balance Report
 
 - `AccountMove`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -37,7 +36,8 @@ class AccountMove
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

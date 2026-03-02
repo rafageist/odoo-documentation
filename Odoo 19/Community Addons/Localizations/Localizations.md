@@ -1,11 +1,13 @@
-<!-- GENERATED:CATEGORY -->
 ---
 tags: [odoo, v19, community, index, category]
 ---
 
 # Localizations
 
-Modules: 201
+- Scope: Community Addons
+- Modules: 201
+
+## Modules
 
 - [[Odoo 19/Community Addons/l10n_account_edi_ubl_cii_tests/l10n_account_edi_ubl_cii_tests|l10n_account_edi_ubl_cii_tests]]
 - [[Odoo 19/Community Addons/l10n_account_withholding_tax/l10n_account_withholding_tax|l10n_account_withholding_tax]]
@@ -208,4 +210,8 @@ Modules: 201
 - [[Odoo 19/Community Addons/l10n_vn_edi_viettel/l10n_vn_edi_viettel|l10n_vn_edi_viettel]]
 - [[Odoo 19/Community Addons/l10n_za/l10n_za|l10n_za]]
 - [[Odoo 19/Community Addons/l10n_zm_account/l10n_zm_account|l10n_zm_account]]
-<!-- GENERATED:CATEGORY -->
+
+## Navigation
+
+- [[../Community Addons|Back to scope]]
+- [[../../Odoo 19/Odoo 19|Back to version]]

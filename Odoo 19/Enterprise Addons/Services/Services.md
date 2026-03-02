@@ -1,11 +1,13 @@
-<!-- GENERATED:CATEGORY -->
 ---
 tags: [odoo, v19, enterprise, index, category]
 ---
 
 # Services
 
-Modules: 95
+- Scope: Enterprise Addons
+- Modules: 96
+
+## Modules
 
 - [[Odoo 19/Enterprise Addons/appointment/appointment|appointment]]
 - [[Odoo 19/Enterprise Addons/appointment_crm/appointment_crm|appointment_crm]]
@@ -22,6 +24,7 @@ Modules: 95
 - [[Odoo 19/Enterprise Addons/data_merge_project/data_merge_project|data_merge_project]]
 - [[Odoo 19/Enterprise Addons/data_merge_stock_account/data_merge_stock_account|data_merge_stock_account]]
 - [[Odoo 19/Enterprise Addons/data_merge_utm/data_merge_utm|data_merge_utm]]
+- [[Odoo 19/Enterprise Addons/databases/databases|databases]]
 - [[Odoo 19/Enterprise Addons/documents/documents|documents]]
 - [[Odoo 19/Enterprise Addons/documents_account/documents_account|documents_account]]
 - [[Odoo 19/Enterprise Addons/documents_account_peppol/documents_account_peppol|documents_account_peppol]]
@@ -102,4 +105,8 @@ Modules: 95
 - [[Odoo 19/Enterprise Addons/voip_ai/voip_ai|voip_ai]]
 - [[Odoo 19/Enterprise Addons/voip_onsip/voip_onsip|voip_onsip]]
 - [[Odoo 19/Enterprise Addons/whatsapp/whatsapp|whatsapp]]
-<!-- GENERATED:CATEGORY -->
+
+## Navigation
+
+- [[../Enterprise Addons|Back to scope]]
+- [[../../Odoo 19/Odoo 19|Back to version]]

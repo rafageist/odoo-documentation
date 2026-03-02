@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Delivery Costs
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/delivery
 - Dependencies: [[Odoo 19/Community Addons/sale/sale|sale]], [[Odoo 19/Community Addons/payment_custom/payment_custom|payment_custom]]
+
 ## XML Artifacts (detected)
 
 - Views: 12
@@ -29,7 +30,6 @@ tags: [odoo, v19, community, module]
 - `ResPartner`
 - `SaleOrder`
 - `SaleOrderLine`
-
 
 ```plantuml
 @startuml
@@ -66,7 +66,9 @@ SaleOrder --> delivery_carrier : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

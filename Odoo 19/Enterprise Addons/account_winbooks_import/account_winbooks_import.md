@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Account Winbooks Import
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/account_winbooks_import
 - Dependencies: [[Odoo 19/Enterprise Addons/account_accountant/account_accountant|account_accountant]], [[Odoo 19/Community Addons/base_vat/base_vat|base_vat]], [[Odoo 19/Enterprise Addons/account_base_import/account_base_import|account_base_import]]
 
@@ -25,23 +25,21 @@ Import Data From Winbooks
 ## Detected Models
 
 - `AccountMoveLine`
-- `AccountTaxGroup`
 - `ResCompany`
-
 
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
 title Account Winbooks Import - Models and Relations
 class AccountMoveLine
-class AccountTaxGroup
 class ResCompany
 @enduml
 ```
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

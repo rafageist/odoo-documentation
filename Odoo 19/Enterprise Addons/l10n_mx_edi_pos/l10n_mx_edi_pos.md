@@ -6,9 +6,10 @@ tags: [odoo, v19, enterprise, module]
 # Mexican Localization for the Point of Sale
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/l10n_mx_edi_pos
 - Dependencies: [[Odoo 19/Enterprise Addons/l10n_mx_edi/l10n_mx_edi|l10n_mx_edi]], [[Odoo 19/Community Addons/point_of_sale/point_of_sale|point_of_sale]]
+
 ## XML Artifacts (detected)
 
 - Views: 5
@@ -27,7 +28,6 @@ tags: [odoo, v19, enterprise, module]
 - `PosOrderLine`
 - `PosPaymentMethod`
 - `ResPartner`
-
 
 ```plantuml
 @startuml
@@ -55,7 +55,8 @@ PosPaymentMethod --> l10n_mx_edi_payment_method : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

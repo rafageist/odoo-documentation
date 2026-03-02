@@ -6,13 +6,14 @@ tags: [odoo, v19, enterprise, module]
 # Starshipit Shipping
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/delivery_starshipit
 - Dependencies: [[Odoo 19/Community Addons/stock_delivery/stock_delivery|stock_delivery]]
+
 ## XML Artifacts (detected)
 
 - Views: 5
-- Actions: 0
+- Actions: 1
 - Menus: 0
 - Rules (ir.rule): 0
 - Access CSV entries: 2
@@ -22,7 +23,6 @@ tags: [odoo, v19, enterprise, module]
 - `DeliveryCarrier`
 - `StockPackageType`
 - `StockPicking`
-
 
 ```plantuml
 @startuml
@@ -40,7 +40,8 @@ DeliveryCarrier --> res_partner : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

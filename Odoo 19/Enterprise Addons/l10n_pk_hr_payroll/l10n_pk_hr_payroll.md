@@ -6,9 +6,10 @@ tags: [odoo, v19, enterprise, module]
 # Pakistan - Payroll
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/l10n_pk_hr_payroll
 - Dependencies: [[Odoo 19/Enterprise Addons/hr_payroll/hr_payroll|hr_payroll]]
+
 ## XML Artifacts (detected)
 
 - Views: 0
@@ -20,19 +21,21 @@ tags: [odoo, v19, enterprise, module]
 ## Detected Models
 
 - `HrPayrollStructureType`
-
+- `HrPayslip`
 
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
 title Pakistan - Payroll - Models and Relations
 class HrPayrollStructureType
+class HrPayslip
 @enduml
 ```
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

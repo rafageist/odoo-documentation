@@ -1,28 +1,23 @@
 ---
-tags: [licensing, enterprise]
-status: seed
+tags: [licensing, enterprise, v19]
+status: active
 ---
-# EnterpriseGuide
 
-## Licensing models
-- Named user.
-- Additional applications.
-- Odoo.sh versus on-premise infrastructure.
+# Enterprise Guide
 
-## Compliance considerations
-- Track active users.
--Audit rules.
-- Contracts and SLAs.
+## Scope
+- Enterprise licensing and compliance considerations relevant to the Odoo 19 documentation set
+- How to document enterprise-only behavior without losing track of contractual or deployment constraints
+
+## Points to document
+- Named-user licensing assumptions
+- Enterprise-only applications and feature boundaries
+- Odoo.sh versus self-hosted operational implications
+- Auditability of enterprise-only flows, reports, and integrations
 
 ## References
--Enterprise Agreement.
-- [[Odoo 18/Enterprise Addons]]
-- [[Odoo 19/Enterprise Addons]]
-
-
-
-
-
+- Enterprise agreement and commercial terms used by the project team
+- `[[Odoo 19/Enterprise Addons/Enterprise Addons]]`
 
 ## Navigation
 - **Parent:** [[Welcome]]

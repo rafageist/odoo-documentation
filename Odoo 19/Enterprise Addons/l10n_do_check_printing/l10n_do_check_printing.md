@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Dominican Republic - Checks Layout
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/l10n_do_check_printing
 - Dependencies: [[Odoo 19/Community Addons/account_check_printing/account_check_printing|account_check_printing]], [[Odoo 19/Community Addons/l10n_do/l10n_do|l10n_do]]
 
@@ -27,7 +27,6 @@ Print Dominican Republic Checks
 - `AccountPayment`
 - `Company`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -39,7 +38,8 @@ class Company
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

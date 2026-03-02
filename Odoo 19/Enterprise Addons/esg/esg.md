@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # ESG
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/esg
 - Dependencies: [[Odoo 19/Enterprise Addons/account_reports/account_reports|account_reports]], [[Odoo 19/Community Addons/web_hierarchy/web_hierarchy|web_hierarchy]]
 
@@ -24,6 +24,7 @@ Calculate and report your company's Environmental, Social, and Governance impact
 
 ## Detected Models
 
+- `AccountAccount`
 - `AccountMove`
 - `AccountMoveLine`
 - `esg.activity.type`
@@ -35,11 +36,11 @@ Calculate and report your company's Environmental, Social, and Governance impact
 - `esg.gas`
 - `esg.other.emission`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
 title ESG - Models and Relations
+class AccountAccount
 class AccountMove
 class AccountMoveLine
 class "esg.activity.type" as esg_activity_type
@@ -86,7 +87,8 @@ esg_other_emission --> res_currency : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

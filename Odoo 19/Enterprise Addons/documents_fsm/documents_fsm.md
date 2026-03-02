@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Documents - FSM
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/documents_fsm
 - Dependencies: [[Odoo 19/Enterprise Addons/documents_project/documents_project|documents_project]], [[Odoo 19/Enterprise Addons/industry_fsm/industry_fsm|industry_fsm]]
 
@@ -26,7 +26,6 @@ Avoid auto-enabling the documents feature on fsm projects
 
 - `DocumentsDocument`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -37,7 +36,8 @@ class DocumentsDocument
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

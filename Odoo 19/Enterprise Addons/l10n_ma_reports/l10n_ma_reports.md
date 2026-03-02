@@ -6,9 +6,10 @@ tags: [odoo, v19, enterprise, module]
 # Morocco - Accounting Reports
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/l10n_ma_reports
 - Dependencies: [[Odoo 19/Community Addons/l10n_ma/l10n_ma|l10n_ma]], [[Odoo 19/Enterprise Addons/account_reports/account_reports|account_reports]]
+
 ## XML Artifacts (detected)
 
 - Views: 4
@@ -23,7 +24,6 @@ tags: [odoo, v19, enterprise, module]
 - `AccountPayment`
 - `ResPartner`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -36,7 +36,8 @@ class ResPartner
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

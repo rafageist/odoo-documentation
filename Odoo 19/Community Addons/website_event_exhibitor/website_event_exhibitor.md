@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Event Exhibitors
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/website_event_exhibitor
 - Dependencies: [[Odoo 19/Community Addons/website_event/website_event|website_event]]
 
@@ -30,7 +30,6 @@ Event: manage sponsors and exhibitors
 - `EventType`
 - `Website`
 - `WebsiteEventMenu`
-
 
 ```plantuml
 @startuml
@@ -57,7 +56,9 @@ event_sponsor --> res_country : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

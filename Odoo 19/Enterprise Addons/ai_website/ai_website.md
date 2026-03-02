@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # AI Website Integration
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/ai_website
 - Dependencies: [[Odoo 19/Enterprise Addons/ai/ai|ai]], [[Odoo 19/Community Addons/website/website|website]]
 
@@ -26,7 +26,6 @@ AI website integration
 
 - `website.page`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -37,7 +36,8 @@ class "website.page" as website_page
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

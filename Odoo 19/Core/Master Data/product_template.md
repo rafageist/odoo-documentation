@@ -1,21 +1,23 @@
 ---
-tags: [v19, core, master_data, product_template]
+tags: [odoo, v19, core, masterdata, product]
 status: backlog
 ---
-# product.template v19
 
-## Changes
--Improved variant configuration.
-- Fields for logistics providers.
-- Support for new prices and discounts.
+# product.template
 
-## Diagrams
-- Product creation sequence vs v18.
+## Focus
+- Product definition layer shared across sales, inventory, purchasing, manufacturing, and accounting
+- Variant generation, policies, and commercial fields in Odoo 19
 
+## Source areas
+- `odoo19/addons/product/models/product_template.py`
+- `odoo19/addons/sale`
+- `odoo19/addons/stock`
 
-
-
-
+## Notes to develop
+- Variant strategy and attribute impact
+- Inventory and procurement configuration
+- Downstream reporting and valuation behavior
 
 ## Navigation
 - **Parent:** [[Odoo 19/Core/Master Data/Master Data]]

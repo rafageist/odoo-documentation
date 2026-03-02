@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Event Social
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/event_social
 - Dependencies: [[Odoo 19/Community Addons/event/event|event]], [[Odoo 19/Enterprise Addons/social/social|social]]
 
@@ -28,7 +28,6 @@ Publish on social account from Event
 - `EventTypeMail`
 - `SocialPostTemplate`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -41,7 +40,8 @@ class SocialPostTemplate
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

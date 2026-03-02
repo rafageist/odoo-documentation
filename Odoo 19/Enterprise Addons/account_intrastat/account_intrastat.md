@@ -6,9 +6,10 @@ tags: [odoo, v19, enterprise, module]
 # Intrastat Reports
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/account_intrastat
 - Dependencies: [[Odoo 19/Enterprise Addons/account_reports/account_reports|account_reports]]
+
 ## XML Artifacts (detected)
 
 - Views: 22
@@ -27,7 +28,6 @@ tags: [odoo, v19, enterprise, module]
 - `ProductTemplate`
 - `ProductProduct`
 - `ResCompany`
-
 
 ```plantuml
 @startuml
@@ -61,7 +61,8 @@ ResCompany --> account_intrastat_code : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

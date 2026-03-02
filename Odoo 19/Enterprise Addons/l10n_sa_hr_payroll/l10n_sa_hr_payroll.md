@@ -6,13 +6,14 @@ tags: [odoo, v19, enterprise, module]
 # Saudi Arabia - Payroll
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/l10n_sa_hr_payroll
 - Dependencies: [[Odoo 19/Enterprise Addons/hr_payroll/hr_payroll|hr_payroll]], [[Odoo 19/Community Addons/hr_work_entry_holidays/hr_work_entry_holidays|hr_work_entry_holidays]]
+
 ## XML Artifacts (detected)
 
 - Views: 9
-- Actions: 1
+- Actions: 2
 - Menus: 0
 - Rules (ir.rule): 0
 - Access CSV entries: 0
@@ -28,7 +29,6 @@ tags: [odoo, v19, enterprise, module]
 - `HrVersion`
 - `ResBank`
 - `ResCompany`
-
 
 ```plantuml
 @startuml
@@ -52,7 +52,8 @@ ResCompany --> hr_leave_type : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

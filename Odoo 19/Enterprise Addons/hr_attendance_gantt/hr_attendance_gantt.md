@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Attendance Gantt
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/hr_attendance_gantt
 - Dependencies: [[Odoo 19/Community Addons/hr_attendance/hr_attendance|hr_attendance]], [[Odoo 19/Enterprise Addons/hr_gantt/hr_gantt|hr_gantt]]
 
@@ -26,7 +26,6 @@ Gantt view for Attendance
 
 - `HrAttendance`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -37,7 +36,8 @@ class HrAttendance
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Link Tracker
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/link_tracker
 - Dependencies: [[Odoo 19/Community Addons/utm/utm|utm]], [[Odoo 19/Community Addons/mail/mail|mail]]
+
 ## XML Artifacts (detected)
 
 - Views: 10
@@ -23,7 +24,6 @@ tags: [odoo, v19, community, module]
 - `link.tracker.code`
 - `link.tracker.click`
 - `UtmCampaign`
-
 
 ```plantuml
 @startuml
@@ -46,7 +46,9 @@ link_tracker_click --> res_country : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

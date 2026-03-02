@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Odoo Mexican XML Polizas Export
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/l10n_mx_xml_polizas
 - Dependencies: [[Odoo 19/Enterprise Addons/l10n_mx_reports/l10n_mx_reports|l10n_mx_reports]], [[Odoo 19/Enterprise Addons/l10n_mx_edi/l10n_mx_edi|l10n_mx_edi]]
 
@@ -24,7 +24,8 @@ XML Export of the Journal Entries for the Mexican Tax Authorities for a compulso
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

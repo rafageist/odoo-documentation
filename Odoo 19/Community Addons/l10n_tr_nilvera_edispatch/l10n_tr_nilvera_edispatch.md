@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Türkiye - e-Irsaliye (e-Dispatch)
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/l10n_tr_nilvera_edispatch
 - Dependencies: [[Odoo 19/Community Addons/l10n_tr_nilvera/l10n_tr_nilvera|l10n_tr_nilvera]], [[Odoo 19/Community Addons/stock/stock|stock]]
+
 ## XML Artifacts (detected)
 
 - Views: 5
@@ -23,7 +24,6 @@ tags: [odoo, v19, community, module]
 - `ResPartner`
 - `StockPicking`
 - `StockPickingType`
-
 
 ```plantuml
 @startuml
@@ -46,7 +46,9 @@ StockPicking .. res_partner : many2many
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

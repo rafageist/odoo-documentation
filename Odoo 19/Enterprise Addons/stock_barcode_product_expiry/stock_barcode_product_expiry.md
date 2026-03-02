@@ -6,9 +6,10 @@ tags: [odoo, v19, enterprise, module]
 # Barcode Expiry
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/stock_barcode_product_expiry
 - Dependencies: [[Odoo 19/Enterprise Addons/stock_barcode/stock_barcode|stock_barcode]], [[Odoo 19/Community Addons/product_expiry/product_expiry|product_expiry]]
+
 ## XML Artifacts (detected)
 
 - Views: 1
@@ -23,7 +24,6 @@ tags: [odoo, v19, enterprise, module]
 - `StockLot`
 - `StockMoveLine`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -36,7 +36,8 @@ class StockMoveLine
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

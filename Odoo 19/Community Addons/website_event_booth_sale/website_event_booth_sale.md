@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Online Event Booth Sale
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/website_event_booth_sale
 - Dependencies: [[Odoo 19/Community Addons/event_booth_sale/event_booth_sale|event_booth_sale]], [[Odoo 19/Community Addons/website_event_booth/website_event_booth|website_event_booth]], [[Odoo 19/Community Addons/website_sale/website_sale|website_sale]]
 
@@ -28,7 +28,6 @@ Events, sell your booths online
 - `SaleOrder`
 - `SaleOrderLine`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -41,7 +40,8 @@ class SaleOrderLine
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

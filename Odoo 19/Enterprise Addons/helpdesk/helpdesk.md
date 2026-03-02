@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Helpdesk
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/helpdesk
 - Dependencies: [[Odoo 19/Community Addons/base_setup/base_setup|base_setup]], [[Odoo 19/Community Addons/mail/mail|mail]], [[Odoo 19/Community Addons/utm/utm|utm]], [[Odoo 19/Community Addons/rating/rating|rating]], [[Odoo 19/Community Addons/web_tour/web_tour|web_tour]], [[Odoo 19/Enterprise Addons/web_cohort/web_cohort|web_cohort]], [[Odoo 19/Community Addons/resource/resource|resource]], [[Odoo 19/Community Addons/portal/portal|portal]], [[Odoo 19/Community Addons/digest/digest|digest]]
 
@@ -39,7 +39,6 @@ Track, prioritize, and solve customer tickets
 - `ResCompany`
 - `ResPartner`
 - `ResUsers`
-
 
 ```plantuml
 @startuml
@@ -102,7 +101,8 @@ ResPartner .. helpdesk_sla : many2many
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

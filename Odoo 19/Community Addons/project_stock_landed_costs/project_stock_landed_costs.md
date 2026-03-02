@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Project Stock Landed Costs
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/project_stock_landed_costs
 - Dependencies: [[Odoo 19/Community Addons/project_stock_account/project_stock_account|project_stock_account]], [[Odoo 19/Community Addons/stock_landed_costs/stock_landed_costs|stock_landed_costs]]
 
@@ -26,7 +26,6 @@ Technical Bridge
 
 - `StockValuationAdjustmentLines`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -37,7 +36,9 @@ class StockValuationAdjustmentLines
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Live Chat
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/im_livechat
 - Dependencies: [[Odoo 19/Community Addons/mail/mail|mail]], [[Odoo 19/Community Addons/rating/rating|rating]], [[Odoo 19/Community Addons/digest/digest|digest]], [[Odoo 19/Community Addons/utm/utm|utm]]
 
@@ -44,7 +44,6 @@ Chat with your website visitors
 - `ResPartner`
 - `ResUsers`
 - `ResUsersSettings`
-
 
 ```plantuml
 @startuml
@@ -143,7 +142,9 @@ ResUsersSettings .. im_livechat_expertise : many2many
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

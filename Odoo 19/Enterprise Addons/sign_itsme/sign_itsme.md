@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Sign itsme
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/sign_itsme
 - Dependencies: [[Odoo 19/Enterprise Addons/sign/sign|sign]], [[Odoo 19/Community Addons/iap/iap|iap]]
 
@@ -28,7 +28,6 @@ Sign documents with itsme® identification
 - `SignRequest`
 - `SignRequestItem`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -41,7 +40,8 @@ class SignRequestItem
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

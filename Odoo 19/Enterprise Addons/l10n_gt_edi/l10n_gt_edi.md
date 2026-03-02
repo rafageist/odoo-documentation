@@ -6,9 +6,10 @@ tags: [odoo, v19, enterprise, module]
 # Guatemala - E-Invoicing
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/l10n_gt_edi
 - Dependencies: [[Odoo 19/Community Addons/account_debit_note/account_debit_note|account_debit_note]], [[Odoo 19/Community Addons/account_tax_python/account_tax_python|account_tax_python]], [[Odoo 19/Community Addons/l10n_gt/l10n_gt|l10n_gt]], [[Odoo 19/Community Addons/l10n_latam_base/l10n_latam_base|l10n_latam_base]]
+
 ## XML Artifacts (detected)
 
 - Views: 10
@@ -25,7 +26,6 @@ tags: [odoo, v19, enterprise, module]
 - `l10n_gt_edi.phrase`
 - `ResCompany`
 - `ResPartner`
-
 
 ```plantuml
 @startuml
@@ -52,7 +52,8 @@ ResPartner .. l10n_gt_edi_phrase : many2many
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

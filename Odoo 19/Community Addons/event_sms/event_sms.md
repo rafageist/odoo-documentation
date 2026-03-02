@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # SMS on Events
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/event_sms
 - Dependencies: [[Odoo 19/Community Addons/event/event|event]], [[Odoo 19/Community Addons/sms/sms|sms]]
+
 ## XML Artifacts (detected)
 
 - Views: 0
@@ -24,7 +25,6 @@ tags: [odoo, v19, community, module]
 - `EventTypeMail`
 - `SmsTemplate`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -38,7 +38,9 @@ class SmsTemplate
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

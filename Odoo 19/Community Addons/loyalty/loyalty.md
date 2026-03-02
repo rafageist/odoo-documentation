@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Coupons & Loyalty
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/loyalty
 - Dependencies: [[Odoo 19/Community Addons/product/product|product]], [[Odoo 19/Community Addons/portal/portal|portal]], [[Odoo 19/Community Addons/account/account|account]]
 
@@ -34,7 +34,6 @@ Use discounts, gift card, eWallets and loyalty programs in different sales chann
 - `ProductProduct`
 - `ProductTemplate`
 - `ResPartner`
-
 
 ```plantuml
 @startuml
@@ -93,7 +92,9 @@ loyalty_rule --> product_tag : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

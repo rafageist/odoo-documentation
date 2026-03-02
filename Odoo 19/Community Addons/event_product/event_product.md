@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Events Product
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/event_product
 - Dependencies: [[Odoo 19/Community Addons/event/event|event]], [[Odoo 19/Community Addons/product/product|product]], [[Odoo 19/Community Addons/account/account|account]]
+
 ## XML Artifacts (detected)
 
 - Views: 9
@@ -25,7 +26,6 @@ tags: [odoo, v19, community, module]
 - `EventTypeTicket`
 - `ProductProduct`
 - `ProductTemplate`
-
 
 ```plantuml
 @startuml
@@ -48,7 +48,9 @@ ProductProduct --|> event_event_ticket : one2many
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

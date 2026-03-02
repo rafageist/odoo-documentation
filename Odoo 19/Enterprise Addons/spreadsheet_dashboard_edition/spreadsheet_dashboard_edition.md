@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Spreadsheet dashboard edition
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/spreadsheet_dashboard_edition
 - Dependencies: [[Odoo 19/Community Addons/spreadsheet_dashboard/spreadsheet_dashboard|spreadsheet_dashboard]], [[Odoo 19/Enterprise Addons/spreadsheet_edition/spreadsheet_edition|spreadsheet_edition]]
 
@@ -27,7 +27,6 @@ Spreadsheet Dashboard edition
 - `SpreadsheetCellThread`
 - `spreadsheet.dashboard`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -40,7 +39,8 @@ SpreadsheetCellThread --> spreadsheet_dashboard : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

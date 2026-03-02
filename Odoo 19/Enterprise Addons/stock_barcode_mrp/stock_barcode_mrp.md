@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # MRP Barcode
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/stock_barcode_mrp
 - Dependencies: [[Odoo 19/Enterprise Addons/stock_barcode/stock_barcode|stock_barcode]], [[Odoo 19/Community Addons/mrp/mrp|mrp]]
 
@@ -31,7 +31,6 @@ Process Manufacturing Orders from the barcode application
 - `StockPicking`
 - `StockPickingType`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -50,7 +49,8 @@ MrpProduction --|> stock_move_line : one2many
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

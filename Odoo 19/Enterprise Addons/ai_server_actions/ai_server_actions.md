@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # ai_server_actions
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/ai_server_actions
 - Dependencies: [[Odoo 19/Enterprise Addons/ai_fields/ai_fields|ai_fields]]
 
@@ -26,7 +26,6 @@ Implementation of AI server actions
 
 - `IrActionsServer`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -37,7 +36,8 @@ class IrActionsServer
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

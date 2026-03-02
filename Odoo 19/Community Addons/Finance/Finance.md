@@ -1,57 +1,13 @@
 ---
-tags: [v19, community, finance]
-status: seed
----
-# Finance v19
-
-## Modules
-- `[[Odoo 19/Community Addons/Finance/account.md]]`
-- `[[Odoo 19/Community Addons/Finance/account_accountant.md]]`
-- `[[Odoo 19/Community Addons/Finance/account_payment.md]]`
-- `[[Odoo 19/Community Addons/Finance/account_bank_statement_import.md]]`
-- `[[Odoo 19/Community Addons/Finance/account_asset.md]]`
-
-```plantuml
-@startmindmap
-* Finance 19
-** account
-** accountant
-** payment
-** bank import
-** asset
-@endmindmap
-```
-
-## Changes
-- New accounting UI.
-- AI automations for reconciliation.
-- Integration with Documents and Excel.
-
-## References
-- `[[Comparisons/Accounting v18-v19]]`
-
-
-
-
-
-
-
-## Navigation
-- **Parent:** [[Odoo 19/Community Addons/Community Addons]]
-## Children
-- [[Odoo 19/Community Addons/Finance/account]]
-- [[Odoo 19/Community Addons/Finance/account_accountant]]
-- [[Odoo 19/Community Addons/Finance/account_asset]]
-- [[Odoo 19/Community Addons/Finance/account_bank_statement_import]]
-- [[Odoo 19/Community Addons/Finance/account_payment]]
-<!-- GENERATED:CATEGORY -->
----
 tags: [odoo, v19, community, index, category]
 ---
 
 # Finance
 
-Modules: 20
+- Scope: Community Addons
+- Modules: 20
+
+## Modules
 
 - [[Odoo 19/Community Addons/account/account|account]]
 - [[Odoo 19/Community Addons/account_check_printing/account_check_printing|account_check_printing]]
@@ -73,4 +29,8 @@ Modules: 20
 - [[Odoo 19/Community Addons/base_vat/base_vat|base_vat]]
 - [[Odoo 19/Community Addons/product_email_template/product_email_template|product_email_template]]
 - [[Odoo 19/Community Addons/spreadsheet_account/spreadsheet_account|spreadsheet_account]]
-<!-- GENERATED:CATEGORY -->
+
+## Navigation
+
+- [[../Community Addons|Back to scope]]
+- [[../../Odoo 19/Odoo 19|Back to version]]

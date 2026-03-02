@@ -1,51 +1,50 @@
 ---
-tags: [template, process, business]
+tags: [template, process, business, v19]
 area:
-version: v18|v19|both
+version: v19
 ---
+
 # Process {{name}}
 
 ## Overview
-- **Objective**:
-- **Actors**:
-- **Triggers**:
-- **Key metrics**:
+- Objective:
+- Actors:
+- Triggers:
+- Output:
 
 ```plantuml
 @startuml
 title Process flow {{name}}
 start
-:Step 1;
+:Trigger;
+:Main business step;
 if (Decision?) then (Yes)
-  :Step 2A;
+  :Branch A;
 else (No)
-  :Step 2B;
+  :Branch B;
 endif
+:Outcome;
 stop
 @enduml
 ```
 
-## Artifact inventory
-- Involved models:
-- Business rules:
-- Forms/views:
+## Modules involved
+- `[[Related Module 1]]`
+- `[[Related Module 2]]`
+
+## Evidence
+- Models:
+- Views:
+- Security:
 - Reports:
 - Automations:
+- Tests:
 
-## Risk analysis
--
+## Operational risks
+- Failure points:
+- Manual workarounds:
+- Audit or compliance concerns:
 
-## Improvement opportunities
--
-
-## Roadmap and backlog
--
-
-## Cross references
-- `[[Related Module]]`
-- Code: `path/to/file.py:123`
-- External documentation:
-
-
-## Navigation
-- **Parent:** [[Welcome]]
+## Follow-up
+- Gaps in current documentation:
+- Next notes to create:

@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Contract - Signature
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/hr_sign
 - Dependencies: [[Odoo 19/Community Addons/hr/hr|hr]], [[Odoo 19/Enterprise Addons/sign/sign|sign]]
 
@@ -29,7 +29,6 @@ Manage your documents to sign in contracts
 - `HrVersion`
 - `MailActivityPlanTemplate`
 - `ResUsers`
-
 
 ```plantuml
 @startuml
@@ -54,7 +53,8 @@ MailActivityPlanTemplate .. sign_item_role : many2many
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

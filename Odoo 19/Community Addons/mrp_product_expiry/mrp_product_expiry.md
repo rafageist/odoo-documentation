@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Manufacturing Expiry
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/mrp_product_expiry
 - Dependencies: [[Odoo 19/Community Addons/mrp/mrp|mrp]], [[Odoo 19/Community Addons/product_expiry/product_expiry|product_expiry]]
 
@@ -26,7 +26,6 @@ Manufacturing Expiry
 
 - `MrpProduction`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -37,7 +36,9 @@ class MrpProduction
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

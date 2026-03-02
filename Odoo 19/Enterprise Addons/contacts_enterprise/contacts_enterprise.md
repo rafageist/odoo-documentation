@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Contacts Enterprise
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/contacts_enterprise
 - Dependencies: [[Odoo 19/Community Addons/contacts/contacts|contacts]], [[Odoo 19/Enterprise Addons/web_map/web_map|web_map]]
 
@@ -24,7 +24,8 @@ Enterprise features on contacts
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # POS - Event
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/pos_event
 - Dependencies: [[Odoo 19/Community Addons/point_of_sale/point_of_sale|point_of_sale]], [[Odoo 19/Community Addons/event_product/event_product|event_product]]
 
@@ -36,7 +36,6 @@ Link module between Point of Sale and Event
 - `PosOrderLine`
 - `PosSession`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -61,7 +60,9 @@ PosOrderLine --|> event_registration : one2many
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

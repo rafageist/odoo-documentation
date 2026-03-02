@@ -6,9 +6,10 @@ tags: [odoo, v19, enterprise, module]
 # Egypt - Payroll
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/l10n_eg_hr_payroll
 - Dependencies: [[Odoo 19/Enterprise Addons/hr_payroll/hr_payroll|hr_payroll]], [[Odoo 19/Enterprise Addons/hr_payroll_holidays/hr_payroll_holidays|hr_payroll_holidays]]
+
 ## XML Artifacts (detected)
 
 - Views: 3
@@ -24,7 +25,6 @@ tags: [odoo, v19, enterprise, module]
 - `HrPayslip`
 - `HrVersion`
 - `ResCompany`
-
 
 ```plantuml
 @startuml
@@ -42,7 +42,8 @@ ResCompany --> hr_leave_type : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

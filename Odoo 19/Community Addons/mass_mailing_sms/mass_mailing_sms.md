@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # SMS Marketing
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/mass_mailing_sms
 - Dependencies: [[Odoo 19/Community Addons/portal/portal|portal]], [[Odoo 19/Community Addons/mass_mailing/mass_mailing|mass_mailing]], [[Odoo 19/Community Addons/sms/sms|sms]]
 
@@ -33,7 +33,6 @@ Design, send and track SMS
 - `SmsTracker`
 - `UtmCampaign`
 - `UtmMedium`
-
 
 ```plantuml
 @startuml
@@ -65,7 +64,9 @@ UtmCampaign --|> mailing_mailing : one2many
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

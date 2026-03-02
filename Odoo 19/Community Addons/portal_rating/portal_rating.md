@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Portal Rating
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/portal_rating
 - Dependencies: [[Odoo 19/Community Addons/portal/portal|portal]], [[Odoo 19/Community Addons/rating/rating|rating]]
+
 ## XML Artifacts (detected)
 
 - Views: 1
@@ -21,7 +22,6 @@ tags: [odoo, v19, community, module]
 
 - `MailMessage`
 - `RatingRating`
-
 
 ```plantuml
 @startuml
@@ -36,7 +36,9 @@ RatingRating --> res_partner : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

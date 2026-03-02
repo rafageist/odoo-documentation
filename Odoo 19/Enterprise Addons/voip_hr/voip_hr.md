@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Phone - Human Resources
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/voip_hr
 - Dependencies: [[Odoo 19/Enterprise Addons/voip/voip|voip]], [[Odoo 19/Community Addons/hr/hr|hr]]
 
@@ -26,7 +26,6 @@ Phone integration with Human Resources module.
 
 - `VoipCall`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -37,7 +36,8 @@ class VoipCall
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

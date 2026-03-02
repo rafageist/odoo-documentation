@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Rental/Planning Bridge
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/sale_renting_planning
 - Dependencies: [[Odoo 19/Enterprise Addons/sale_planning/sale_planning|sale_planning]], [[Odoo 19/Enterprise Addons/sale_renting/sale_renting|sale_renting]]
 
@@ -29,7 +29,6 @@ This module Integrate Planning with Rental
 - `SaleOrder`
 - `SaleOrderLine`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -43,7 +42,8 @@ class SaleOrderLine
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

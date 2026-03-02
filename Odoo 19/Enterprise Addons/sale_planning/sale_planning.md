@@ -6,9 +6,10 @@ tags: [odoo, v19, enterprise, module]
 # Sale Planning
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/sale_planning
 - Dependencies: [[Odoo 19/Community Addons/sale_management/sale_management|sale_management]], [[Odoo 19/Community Addons/sale_service/sale_service|sale_service]], [[Odoo 19/Enterprise Addons/planning/planning|planning]]
+
 ## XML Artifacts (detected)
 
 - Views: 16
@@ -25,7 +26,6 @@ tags: [odoo, v19, enterprise, module]
 - `SaleOrder`
 - `SaleOrderLine`
 - `UomUom`
-
 
 ```plantuml
 @startuml
@@ -56,7 +56,8 @@ SaleOrderLine --|> planning_slot : one2many
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

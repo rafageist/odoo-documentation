@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Sales and MRP Management
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/sale_mrp
 - Dependencies: [[Odoo 19/Community Addons/mrp/mrp|mrp]], [[Odoo 19/Community Addons/sale_stock/sale_stock|sale_stock]]
+
 ## XML Artifacts (detected)
 
 - Views: 2
@@ -26,7 +27,6 @@ tags: [odoo, v19, community, module]
 - `SaleOrderLine`
 - `StockMoveLine`
 - `StockRule`
-
 
 ```plantuml
 @startuml
@@ -48,7 +48,8 @@ SaleOrder .. mrp_production : many2many
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

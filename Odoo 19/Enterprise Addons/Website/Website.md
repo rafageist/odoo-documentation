@@ -1,11 +1,13 @@
-<!-- GENERATED:CATEGORY -->
 ---
 tags: [odoo, v19, enterprise, index, category]
 ---
 
 # Website
 
-Modules: 33
+- Scope: Enterprise Addons
+- Modules: 33
+
+## Modules
 
 - [[Odoo 19/Enterprise Addons/crm_enterprise_partner_assign/crm_enterprise_partner_assign|crm_enterprise_partner_assign]]
 - [[Odoo 19/Enterprise Addons/website_appointment/website_appointment|website_appointment]]
@@ -40,4 +42,8 @@ Modules: 33
 - [[Odoo 19/Enterprise Addons/website_sale_subscription/website_sale_subscription|website_sale_subscription]]
 - [[Odoo 19/Enterprise Addons/website_sale_ups/website_sale_ups|website_sale_ups]]
 - [[Odoo 19/Enterprise Addons/website_studio/website_studio|website_studio]]
-<!-- GENERATED:CATEGORY -->
+
+## Navigation
+
+- [[../Enterprise Addons|Back to scope]]
+- [[../../Odoo 19/Odoo 19|Back to version]]

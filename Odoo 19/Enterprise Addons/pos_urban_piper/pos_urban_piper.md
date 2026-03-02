@@ -6,9 +6,10 @@ tags: [odoo, v19, enterprise, module]
 # Point of Sale - UrbanPiper
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/pos_urban_piper
 - Dependencies: [[Odoo 19/Enterprise Addons/pos_enterprise/pos_enterprise|pos_enterprise]], [[Odoo 19/Community Addons/pos_discount/pos_discount|pos_discount]]
+
 ## XML Artifacts (detected)
 
 - Views: 7
@@ -20,6 +21,7 @@ tags: [odoo, v19, enterprise, module]
 ## Detected Models
 
 - `IrConfig_Parameter`
+- `PosCategory`
 - `PosConfig`
 - `pos.delivery.provider`
 - `PosOrder`
@@ -33,12 +35,12 @@ tags: [odoo, v19, enterprise, module]
 - `product.urban.piper.status`
 - `ResCompany`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
 title Point of Sale - UrbanPiper - Models and Relations
 class IrConfig_Parameter
+class PosCategory
 class PosConfig
 class "pos.delivery.provider" as pos_delivery_provider
 class PosOrder
@@ -74,7 +76,8 @@ product_urban_piper_status --> product_template : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

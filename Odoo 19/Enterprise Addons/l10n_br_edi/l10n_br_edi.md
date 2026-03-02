@@ -6,9 +6,10 @@ tags: [odoo, v19, enterprise, module]
 # Brazilian Accounting EDI
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/l10n_br_edi
 - Dependencies: [[Odoo 19/Enterprise Addons/l10n_br_avatax/l10n_br_avatax|l10n_br_avatax]]
+
 ## XML Artifacts (detected)
 
 - Views: 7
@@ -24,7 +25,6 @@ tags: [odoo, v19, enterprise, module]
 - `L10n_BrOperationType`
 - `PaymentMethod`
 - `ResCountry`
-
 
 ```plantuml
 @startuml
@@ -44,7 +44,8 @@ AccountMove --> ir_attachment : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

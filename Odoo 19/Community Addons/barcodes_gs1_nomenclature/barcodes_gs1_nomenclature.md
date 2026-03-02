@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Barcode - GS1 Nomenclature
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/barcodes_gs1_nomenclature
 - Dependencies: [[Odoo 19/Community Addons/barcodes/barcodes|barcodes]], [[Odoo 19/Community Addons/uom/uom|uom]]
 
@@ -27,7 +27,6 @@ Parse barcodes according to the GS1-128 specifications
 - `BarcodeNomenclature`
 - `BarcodeRule`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -41,7 +40,9 @@ BarcodeRule --> uom_uom : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

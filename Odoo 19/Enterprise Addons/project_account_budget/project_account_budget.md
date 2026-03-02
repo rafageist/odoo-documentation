@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Project Budget
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/project_account_budget
 - Dependencies: [[Odoo 19/Enterprise Addons/account_budget/account_budget|account_budget]], [[Odoo 19/Enterprise Addons/project_enterprise/project_enterprise|project_enterprise]]
 
@@ -29,7 +29,6 @@ Project account budget
 - `ProjectProject`
 - `ProjectUpdate`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -43,7 +42,8 @@ class ProjectUpdate
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

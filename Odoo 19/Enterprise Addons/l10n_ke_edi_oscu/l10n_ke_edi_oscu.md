@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Kenya eTIMS EDI Integration
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/l10n_ke_edi_oscu
 - Dependencies: [[Odoo 19/Community Addons/l10n_ke/l10n_ke|l10n_ke]], [[Odoo 19/Enterprise Addons/product_unspsc/product_unspsc|product_unspsc]]
 
@@ -38,7 +38,6 @@ tags: [odoo, v19, enterprise, module]
 - `ResPartner`
 - `ResUsers`
 - `UomUom`
-
 
 ```plantuml
 @startuml
@@ -73,7 +72,8 @@ UomUom --> l10n_ke_edi_oscu_code : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

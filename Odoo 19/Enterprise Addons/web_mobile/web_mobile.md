@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Mobile
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/web_mobile
 - Dependencies: [[Odoo 19/Enterprise Addons/web_enterprise/web_enterprise|web_enterprise]]
 
@@ -26,7 +26,6 @@ Odoo Mobile Core module
 
 - `ResPartner`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -37,7 +36,8 @@ class ResPartner
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

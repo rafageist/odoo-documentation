@@ -1,11 +1,13 @@
-<!-- GENERATED:CATEGORY -->
 ---
 tags: [odoo, v19, enterprise, index, category]
 ---
 
 # Inventory
 
-Modules: 29
+- Scope: Enterprise Addons
+- Modules: 30
+
+## Modules
 
 - [[Odoo 19/Enterprise Addons/maintenance_worksheet/maintenance_worksheet|maintenance_worksheet]]
 - [[Odoo 19/Enterprise Addons/mrp_account_enterprise/mrp_account_enterprise|mrp_account_enterprise]]
@@ -21,6 +23,7 @@ Modules: 29
 - [[Odoo 19/Enterprise Addons/mrp_workorder_hr_account/mrp_workorder_hr_account|mrp_workorder_hr_account]]
 - [[Odoo 19/Enterprise Addons/mrp_workorder_iot/mrp_workorder_iot|mrp_workorder_iot]]
 - [[Odoo 19/Enterprise Addons/mrp_workorder_plm/mrp_workorder_plm|mrp_workorder_plm]]
+- [[Odoo 19/Enterprise Addons/purchase_accountant/purchase_accountant|purchase_accountant]]
 - [[Odoo 19/Enterprise Addons/purchase_intrastat/purchase_intrastat|purchase_intrastat]]
 - [[Odoo 19/Enterprise Addons/purchase_mrp_workorder_quality/purchase_mrp_workorder_quality|purchase_mrp_workorder_quality]]
 - [[Odoo 19/Enterprise Addons/stock_accountant/stock_accountant|stock_accountant]]
@@ -36,4 +39,8 @@ Modules: 29
 - [[Odoo 19/Enterprise Addons/stock_enterprise/stock_enterprise|stock_enterprise]]
 - [[Odoo 19/Enterprise Addons/stock_fleet_enterprise/stock_fleet_enterprise|stock_fleet_enterprise]]
 - [[Odoo 19/Enterprise Addons/stock_intrastat/stock_intrastat|stock_intrastat]]
-<!-- GENERATED:CATEGORY -->
+
+## Navigation
+
+- [[../Enterprise Addons|Back to scope]]
+- [[../../Odoo 19/Odoo 19|Back to version]]

@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Mail Plugin
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/mail_plugin
 - Dependencies: [[Odoo 19/Community Addons/web/web|web]], [[Odoo 19/Community Addons/contacts/contacts|contacts]], [[Odoo 19/Community Addons/iap/iap|iap]]
 
@@ -27,7 +27,6 @@ Allows integration with mail plugins.
 - `ResPartner`
 - `res.partner.iap`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -41,7 +40,9 @@ res_partner_iap --> res_partner : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

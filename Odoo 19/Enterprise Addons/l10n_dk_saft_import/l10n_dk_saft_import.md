@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Denmark - SAF-T Import
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/l10n_dk_saft_import
 - Dependencies: [[Odoo 19/Enterprise Addons/account_saft_import/account_saft_import|account_saft_import]], [[Odoo 19/Community Addons/l10n_dk/l10n_dk|l10n_dk]]
 
@@ -24,7 +24,8 @@ Import Accounting Data from SAF-T files
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

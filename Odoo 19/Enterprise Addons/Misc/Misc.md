@@ -1,11 +1,13 @@
-<!-- GENERATED:CATEGORY -->
 ---
 tags: [odoo, v19, enterprise, index, category]
 ---
 
 # Misc
 
-Modules: 75
+- Scope: Enterprise Addons
+- Modules: 75
+
+## Modules
 
 - [[Odoo 19/Enterprise Addons/ai/ai|ai]]
 - [[Odoo 19/Enterprise Addons/ai_account/ai_account|ai_account]]
@@ -43,7 +45,6 @@ Modules: 75
 - [[Odoo 19/Enterprise Addons/esg_hr_fleet/esg_hr_fleet|esg_hr_fleet]]
 - [[Odoo 19/Enterprise Addons/esg_project/esg_project|esg_project]]
 - [[Odoo 19/Enterprise Addons/iap_extract/iap_extract|iap_extract]]
-- [[Odoo 19/Enterprise Addons/iot/iot|iot]]
 - [[Odoo 19/Enterprise Addons/quality/quality|quality]]
 - [[Odoo 19/Enterprise Addons/quality_control/quality_control|quality_control]]
 - [[Odoo 19/Enterprise Addons/quality_control_iot/quality_control_iot|quality_control_iot]]
@@ -79,7 +80,12 @@ Modules: 75
 - [[Odoo 19/Enterprise Addons/whatsapp_payment/whatsapp_payment|whatsapp_payment]]
 - [[Odoo 19/Enterprise Addons/whatsapp_pos/whatsapp_pos|whatsapp_pos]]
 - [[Odoo 19/Enterprise Addons/whatsapp_sale/whatsapp_sale|whatsapp_sale]]
+- [[Odoo 19/Enterprise Addons/whatsapp_sign/whatsapp_sign|whatsapp_sign]]
 - [[Odoo 19/Enterprise Addons/whatsapp_stock/whatsapp_stock|whatsapp_stock]]
 - [[Odoo 19/Enterprise Addons/whatsapp_website_sale/whatsapp_website_sale|whatsapp_website_sale]]
 - [[Odoo 19/Enterprise Addons/worksheet/worksheet|worksheet]]
-<!-- GENERATED:CATEGORY -->
+
+## Navigation
+
+- [[../Enterprise Addons|Back to scope]]
+- [[../../Odoo 19/Odoo 19|Back to version]]

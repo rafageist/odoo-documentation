@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # LATAM Localization Base
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/l10n_latam_base
 - Dependencies: [[Odoo 19/Community Addons/contacts/contacts|contacts]], [[Odoo 19/Community Addons/base_vat/base_vat|base_vat]]
 
@@ -28,7 +28,6 @@ LATAM Identification Types
 - `ResCompany`
 - `ResPartner`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -44,7 +43,9 @@ ResPartner --> l10n_latam_identification_type : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

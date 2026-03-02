@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Account Invoice Extract Purchase
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/account_invoice_extract_purchase
 - Dependencies: [[Odoo 19/Enterprise Addons/account_invoice_extract/account_invoice_extract|account_invoice_extract]], [[Odoo 19/Community Addons/purchase/purchase|purchase]]
 
@@ -26,7 +26,6 @@ Automatically finds the purchase order linked to a vendor bill when using invoic
 
 - `AccountMove`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -37,7 +36,8 @@ class AccountMove
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

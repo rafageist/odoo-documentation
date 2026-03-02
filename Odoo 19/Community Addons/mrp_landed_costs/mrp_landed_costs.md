@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Landed Costs On MO
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/mrp_landed_costs
 - Dependencies: [[Odoo 19/Community Addons/stock_landed_costs/stock_landed_costs|stock_landed_costs]], [[Odoo 19/Community Addons/mrp/mrp|mrp]]
 
@@ -26,7 +26,6 @@ Landed Costs on Manufacturing Order
 
 - `StockLandedCost`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -39,7 +38,9 @@ StockLandedCost .. mrp_production : many2many
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

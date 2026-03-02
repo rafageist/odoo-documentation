@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Payment Provider: Paypal
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/payment_paypal
 - Dependencies: [[Odoo 19/Community Addons/payment/payment|payment]]
 
@@ -27,7 +27,6 @@ An American payment provider for online payments all over the world.
 - `PaymentProvider`
 - `PaymentTransaction`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -39,7 +38,9 @@ class PaymentTransaction
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

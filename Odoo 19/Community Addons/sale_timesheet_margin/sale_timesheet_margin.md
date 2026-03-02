@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Service Margins in Sales Orders
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/sale_timesheet_margin
 - Dependencies: [[Odoo 19/Community Addons/sale_margin/sale_margin|sale_margin]], [[Odoo 19/Community Addons/sale_timesheet/sale_timesheet|sale_timesheet]]
 
@@ -26,7 +26,6 @@ Bridge module between Sales Margin and Sales Timesheet
 
 - `SaleOrderLine`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -37,7 +36,8 @@ class SaleOrderLine
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Project Purchase
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/project_purchase
 - Dependencies: [[Odoo 19/Community Addons/purchase/purchase|purchase]], [[Odoo 19/Community Addons/project_account/project_account|project_account]]
 
@@ -28,7 +28,6 @@ Monitor purchase in project
 - `PurchaseOrder`
 - `PurchaseOrderLine`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -43,7 +42,9 @@ PurchaseOrder --> project_project : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

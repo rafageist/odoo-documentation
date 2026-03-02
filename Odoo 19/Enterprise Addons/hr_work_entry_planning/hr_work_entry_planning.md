@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Work Entries - Planning
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/hr_work_entry_planning
 - Dependencies: [[Odoo 19/Enterprise Addons/hr_work_entry_enterprise/hr_work_entry_enterprise|hr_work_entry_enterprise]], [[Odoo 19/Enterprise Addons/planning/planning|planning]]
 
@@ -28,7 +28,6 @@ Create work entries from the employee's planning
 - `HrWorkEntry`
 - `PlanningSlot`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -43,7 +42,8 @@ HrWorkEntry --> planning_slot : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Sale Loyalty - Delivery
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/sale_loyalty_delivery
 - Dependencies: [[Odoo 19/Community Addons/sale_loyalty/sale_loyalty|sale_loyalty]], [[Odoo 19/Community Addons/delivery/delivery|delivery]]
 
@@ -28,7 +28,6 @@ Adds free shipping mechanism in sales orders
 - `LoyaltyReward`
 - `SaleOrder`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -41,7 +40,8 @@ class SaleOrder
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Task Logs
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/hr_timesheet
 - Dependencies: [[Odoo 19/Community Addons/hr/hr|hr]], [[Odoo 19/Community Addons/hr_hourly_cost/hr_hourly_cost|hr_hourly_cost]], [[Odoo 19/Community Addons/analytic/analytic|analytic]], [[Odoo 19/Community Addons/project/project|project]], [[Odoo 19/Community Addons/uom/uom|uom]]
 
@@ -36,7 +36,6 @@ Track employee time on tasks
 - `ProjectUpdate`
 - `ResCompany`
 - `UomUom`
-
 
 ```plantuml
 @startuml
@@ -86,7 +85,9 @@ ResCompany --> project_project : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

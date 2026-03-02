@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # MRP Project Sale
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/project_mrp_sale
 - Dependencies: [[Odoo 19/Community Addons/project_mrp/project_mrp|project_mrp]], [[Odoo 19/Community Addons/sale_mrp/sale_mrp|sale_mrp]], [[Odoo 19/Community Addons/sale_project/sale_project|sale_project]]
 
@@ -24,7 +24,9 @@ Technical Bridge
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

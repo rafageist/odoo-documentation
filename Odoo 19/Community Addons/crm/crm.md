@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # CRM
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/crm
 - Dependencies: [[Odoo 19/Community Addons/base_setup/base_setup|base_setup]], [[Odoo 19/Community Addons/sales_team/sales_team|sales_team]], [[Odoo 19/Community Addons/mail/mail|mail]], [[Odoo 19/Community Addons/calendar/calendar|calendar]], [[Odoo 19/Community Addons/resource/resource|resource]], [[Odoo 19/Community Addons/utm/utm|utm]], [[Odoo 19/Community Addons/web_tour/web_tour|web_tour]], [[Odoo 19/Community Addons/contacts/contacts|contacts]], [[Odoo 19/Community Addons/digest/digest|digest]], [[Odoo 19/Community Addons/phone_validation/phone_validation|phone_validation]]
 
@@ -39,7 +39,6 @@ Track leads and close opportunities
 - `ResPartner`
 - `ResUsers`
 - `UtmCampaign`
-
 
 ```plantuml
 @startuml
@@ -96,7 +95,9 @@ ResPartner --|> crm_lead : one2many
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

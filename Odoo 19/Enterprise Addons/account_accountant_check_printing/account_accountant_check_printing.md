@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Account accountant check printing
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/account_accountant_check_printing
 - Dependencies: [[Odoo 19/Enterprise Addons/account_accountant/account_accountant|account_accountant]], [[Odoo 19/Community Addons/account_check_printing/account_check_printing|account_check_printing]]
 
@@ -26,7 +26,6 @@ Allows using Reconciliation with the account check printing.
 
 - `AccountMoveLine`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -37,7 +36,8 @@ class AccountMoveLine
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

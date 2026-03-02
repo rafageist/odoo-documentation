@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Debit Notes
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/account_debit_note
 - Dependencies: [[Odoo 19/Community Addons/account/account|account]]
 
@@ -27,7 +27,6 @@ Debit Notes
 - `AccountJournal`
 - `AccountMove`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -42,7 +41,9 @@ AccountMove --|> account_move : one2many
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

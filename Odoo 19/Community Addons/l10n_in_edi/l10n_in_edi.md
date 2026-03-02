@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Indian - E-invoicing
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/l10n_in_edi
 - Dependencies: [[Odoo 19/Community Addons/account_edi/account_edi|account_edi]], [[Odoo 19/Community Addons/l10n_in/l10n_in|l10n_in]]
+
 ## XML Artifacts (detected)
 
 - Views: 6
@@ -24,7 +25,6 @@ tags: [odoo, v19, community, module]
 - `IrAttachment`
 - `ResCompany`
 - `ResPartner`
-
 
 ```plantuml
 @startuml
@@ -42,7 +42,9 @@ AccountMove --> ir_attachment : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

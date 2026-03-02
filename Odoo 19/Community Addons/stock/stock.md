@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Inventory
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/stock
 - Dependencies: [[Odoo 19/Community Addons/product/product|product]], [[Odoo 19/Community Addons/barcodes_gs1_nomenclature/barcodes_gs1_nomenclature|barcodes_gs1_nomenclature]], [[Odoo 19/Community Addons/digest/digest|digest]]
 
@@ -54,7 +54,6 @@ Manage your stock and logistics activities
 - `stock.storage.category`
 - `stock.storage.category.capacity`
 - `stock.warehouse`
-
 
 ```plantuml
 @startuml
@@ -335,7 +334,8 @@ stock_warehouse --|> stock_route : one2many
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

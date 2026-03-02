@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # SEPA Direct Debit
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/account_sepa_direct_debit
 - Dependencies: [[Odoo 19/Community Addons/base_iban/base_iban|base_iban]], [[Odoo 19/Enterprise Addons/account_batch_payment/account_batch_payment|account_batch_payment]], [[Odoo 19/Community Addons/account/account|account]]
 
@@ -33,7 +33,6 @@ Collect payments from your customers through SEPA direct debit.
 - `ResPartner`
 - `ResPartnerBank`
 - `sdd.mandate`
-
 
 ```plantuml
 @startuml
@@ -67,7 +66,9 @@ sdd_mandate --|> account_payment : one2many
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

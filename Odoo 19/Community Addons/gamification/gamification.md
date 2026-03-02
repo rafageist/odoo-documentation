@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Gamification
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/gamification
 - Dependencies: [[Odoo 19/Community Addons/mail/mail|mail]]
+
 ## XML Artifacts (detected)
 
 - Views: 26
@@ -28,7 +29,6 @@ tags: [odoo, v19, community, module]
 - `gamification.karma.rank`
 - `gamification.karma.tracking`
 - `ResUsers`
-
 
 ```plantuml
 @startuml
@@ -94,7 +94,9 @@ ResUsers --> gamification_karma_rank : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

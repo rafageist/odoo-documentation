@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Field Service Reports - Sale
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/industry_fsm_sale_report
 - Dependencies: [[Odoo 19/Enterprise Addons/industry_fsm_sale/industry_fsm_sale|industry_fsm_sale]], [[Odoo 19/Enterprise Addons/industry_fsm_report/industry_fsm_report|industry_fsm_report]]
 
@@ -30,7 +30,6 @@ Create Reports for Field service technicians
 - `ProjectTask`
 - `SaleOrderLine`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -47,7 +46,9 @@ ProductTemplate --> worksheet_template : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

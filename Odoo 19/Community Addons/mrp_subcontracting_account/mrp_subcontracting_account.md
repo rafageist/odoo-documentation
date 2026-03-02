@@ -6,9 +6,10 @@ tags: [odoo, v19, community, module]
 # Subcontracting Management with Stock Valuation
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/mrp_subcontracting_account
 - Dependencies: [[Odoo 19/Community Addons/mrp_subcontracting/mrp_subcontracting|mrp_subcontracting]], [[Odoo 19/Community Addons/mrp_account/mrp_account|mrp_account]]
+
 ## XML Artifacts (detected)
 
 - Views: 0
@@ -22,7 +23,6 @@ tags: [odoo, v19, community, module]
 - `MrpProduction`
 - `ProductProduct`
 
-
 ```plantuml
 @startuml
 !include ../../../Templates/DiagramStyles.puml
@@ -34,7 +34,9 @@ class ProductProduct
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+
+

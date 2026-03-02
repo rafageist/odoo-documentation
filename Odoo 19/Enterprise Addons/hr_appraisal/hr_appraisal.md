@@ -6,7 +6,7 @@ tags: [odoo, v19, enterprise, module]
 # Appraisals
 
 - Version: v19
-- Category: enterprise
+- Scope: Enterprise Addons
 - Source: enterprise19/hr_appraisal
 - Dependencies: [[Odoo 19/Community Addons/calendar/calendar|calendar]], [[Odoo 19/Enterprise Addons/hr_gantt/hr_gantt|hr_gantt]]
 
@@ -35,7 +35,6 @@ Assess your employees
 - `MailTemplate`
 - `ResCompany`
 - `ResUsers`
-
 
 ```plantuml
 @startuml
@@ -97,7 +96,8 @@ ResCompany --> mail_template : many2one
 
 ## Navigation
 
-- [[../Enterprise Addons/Enterprise Addons|Back to category]]
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

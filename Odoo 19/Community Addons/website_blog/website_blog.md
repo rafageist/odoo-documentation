@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Blog
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/website_blog
 - Dependencies: [[Odoo 19/Community Addons/website_mail/website_mail|website_mail]], [[Odoo 19/Community Addons/website_partner/website_partner|website_partner]], [[Odoo 19/Community Addons/html_builder/html_builder|html_builder]]
 
@@ -30,7 +30,6 @@ Publish blog posts, announces, news
 - `blog.tag`
 - `blog.post`
 - `WebsiteSnippetFilter`
-
 
 ```plantuml
 @startuml
@@ -58,7 +57,8 @@ blog_post --> res_users : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

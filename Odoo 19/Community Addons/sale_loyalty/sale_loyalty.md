@@ -6,7 +6,7 @@ tags: [odoo, v19, community, module]
 # Sale Loyalty
 
 - Version: v19
-- Category: community
+- Scope: Community Addons
 - Source: odoo19/addons/sale_loyalty
 - Dependencies: [[Odoo 19/Community Addons/sale/sale|sale]], [[Odoo 19/Community Addons/loyalty/loyalty|loyalty]]
 
@@ -31,7 +31,6 @@ Use discounts and loyalty programs in sales orders
 - `SaleOrder`
 - `sale.order.coupon.points`
 - `SaleOrderLine`
-
 
 ```plantuml
 @startuml
@@ -63,7 +62,8 @@ SaleOrderLine --> loyalty_card : many2one
 
 ## Navigation
 
-- [[../Community Addons/Community Addons|Back to category]]
+- [[../Community Addons/Community Addons|Back to scope]]
 - [[../../Odoo 19/Odoo 19|Back to version]]
 
 <!-- GENERATED:MODULE -->
+

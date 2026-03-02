@@ -11,6 +11,7 @@ status: active
 - Odoo 18, migration-oriented material, and duplicate category stubs removed.
 - Entry-point docs, templates, and generator workflow rewritten for the Odoo 19 source repos in this workspace.
 - Templates now define optional sections, generated-note editing rules, and reusable diagram examples.
+- Odoo 19 root and scope indexes now include a runtime map, navigation context, and follow-up core tickets.
 
 ## Navigation
 - **Parent:** [[Welcome]]

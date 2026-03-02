@@ -21,10 +21,11 @@ tags: [odoo, index, v19]
 - `[[Templates/Model Documentation Template]]`
 - `[[Templates/Service Documentation Template]]`
 - `[[Templates/Business Process Template]]`
+- `[[Templates/Diagram Examples]]`
 - `[[Licensing/Enterprise Guide]]`
 - `[[Changelog]]`
 
 ## Local source repositories
-- `C:\Users\RafaelRodríguez\sources\repos\odoo19`
-- `C:\Users\RafaelRodríguez\sources\repos\docker\odoo19-enterprise-sync\enterprise-cache\3ff6ea5148ee9e3209f05e677ba8fff51fc44d0d`
-- `C:\Users\RafaelRodríguez\sources\repos\odoo-skills`
+- `<workspace>/odoo19`
+- `<workspace>/docker/odoo19-enterprise-sync/enterprise-cache/<snapshot>`
+- `<workspace>/odoo-skills`

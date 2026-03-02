@@ -5,10 +5,15 @@ status: active
 
 # Enterprise Addons
 
-## Scope
+## How to use this index
 - Canonical addon notes live in technical-name folders.
 - Category folders organize the portfolio and should not duplicate module notes.
 - Content is generated from the enterprise cache snapshot used in this workspace and then curated by hand.
+
+## Relationship with core and community
+- Start from `[[Odoo 19/Core/Core]]` when the topic depends on shared runtime services or master data that enterprise only extends.
+- Link back to community notes when an enterprise module layers on top of a community dependency such as `account`, `project`, `stock`, or `website`.
+- Keep licensing or deployment constraints separate from runtime behavior so module notes stay implementation-focused.
 
 ## Categories
 - [[Odoo 19/Enterprise Addons/Communication/Communication|Communication]] (2)
@@ -27,6 +32,11 @@ status: active
 
 ## Supporting note
 - `[[Licensing/Enterprise Guide]]`
+
+## Context links
+- Version map: `[[Odoo 19/Odoo 19]]`
+- Shared runtime and master data: `[[Odoo 19/Core/Core]]`
+- Community base modules: `[[Odoo 19/Community Addons/Community Addons]]`
 
 ## Navigation
 - **Parent:** [[Odoo 19/Odoo 19]]

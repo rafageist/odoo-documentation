@@ -5,6 +5,10 @@ status: draft
 
 # Service `{{service_name}}`
 
+## Template usage
+- Use this for controllers, cron services, import/export pipelines, or reusable service objects.
+- Prefer sequence diagrams when ordering matters and a short Mermaid flowchart when branching matters.
+
 - Module: `{{module_name}}`
 - Entry point: `{{source_path}}`
 
@@ -37,6 +41,11 @@ Service --> Caller: output
 ## Dependencies
 - Internal modules:
 - External services:
+
+## Observability
+- Logs or chatter traces:
+- Recovery path:
+- Test coverage:
 
 ## Risks
 - Failure modes:

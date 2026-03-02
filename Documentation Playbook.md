@@ -9,16 +9,17 @@ status: active
 Build reliable Odoo 19 documentation that stays close to the codebase and avoids duplicated notes.
 
 ## Source hierarchy
-1. Odoo 19 community source in `C:\Users\RafaelRodríguez\sources\repos\odoo19`
-2. Odoo 19 enterprise source in `C:\Users\RafaelRodríguez\sources\repos\docker\odoo19-enterprise-sync\enterprise-cache\3ff6ea5148ee9e3209f05e677ba8fff51fc44d0d`
+1. Odoo 19 community source in `<workspace>/odoo19`
+2. Odoo 19 enterprise source in `<workspace>/docker/odoo19-enterprise-sync/enterprise-cache/<snapshot>`
 3. Tests, demo data, and manifests inside those same modules
-4. `C:\Users\RafaelRodríguez\sources\repos\odoo-skills` for example patterns and explanation angles
+4. `<workspace>/odoo-skills` for example patterns and explanation angles
 
 ## Structure rules
 - Canonical module notes live at `Odoo 19/<Community Addons|Enterprise Addons>/<technical_name>/<technical_name>.md`.
 - Category folders such as `Finance`, `HR`, `Sales`, or `Operations` contain only index notes.
 - Core notes live under `Odoo 19/Core/` and should document framework behavior, shared models, and transversal processes.
 - Avoid creating a second note for the same module inside a category folder.
+- Generated module content stays inside the `<!-- GENERATED:MODULE -->` block; manual analysis should be added before or after it.
 
 ## Writing workflow
 1. Start from the relevant index page and confirm the target note does not already exist elsewhere.
@@ -28,6 +29,13 @@ Build reliable Odoo 19 documentation that stays close to the codebase and avoids
 5. Add the interpretation layer: business purpose, extension points, risks, and module interactions.
 6. Link related modules, core topics, and category indexes with `[[wikilinks]]`.
 7. Update `[[Changelog]]` when the repository structure or writing rules change.
+
+## Template set
+- `[[Templates/Module Documentation Template]]` for canonical addon notes.
+- `[[Templates/Model Documentation Template]]` for models that deserve their own explanation.
+- `[[Templates/Service Documentation Template]]` for controllers, import/export services, and jobs.
+- `[[Templates/Business Process Template]]` for end-to-end operational flows.
+- `[[Templates/Diagram Examples]]` for reusable PlantUML, Mermaid, and cross-link snippets.
 
 ## Minimum standard for module notes
 - Purpose and business value
@@ -42,6 +50,18 @@ Build reliable Odoo 19 documentation that stays close to the codebase and avoids
 - Prefer repository-relative source references such as `odoo19/addons/sale/models/sale_order.py`.
 - Mention tests when behavior is non-trivial or risky.
 - If a conclusion is inferred rather than directly stated in code, say so explicitly.
+
+## Cross-link conventions
+- Link the parent scope note and the Odoo 19 root note in every canonical page.
+- Link module notes by technical name and show the functional label in the alias when useful.
+- Use relative wikilinks only when they stay readable; otherwise prefer full vault paths.
+- When legacy Odoo 18 material is mentioned for context, mark it as retired instead of reopening a parallel note tree.
+
+## Diagram conventions
+- Use PlantUML for model relations and sequence flows that need stable styling.
+- Use Mermaid for quick flowcharts in process notes or ADR-style explanations.
+- Keep diagrams under 12 nodes when possible and split complex flows into multiple diagrams.
+- Store reusable snippets in `[[Templates/Diagram Examples]]` instead of duplicating boilerplate.
 
 ## Enrichment guidance
 - Use `odoo-skills` to improve examples, terminology, and learning paths.

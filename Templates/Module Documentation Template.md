@@ -7,6 +7,11 @@ status: draft
 
 # {{Display Name}} (`{{technical_name}}`)
 
+## Template usage
+- Use this for canonical module notes under `Odoo 19/<scope>/<technical_name>/<technical_name>.md`.
+- If the note is generated, keep manual analysis outside the `<!-- GENERATED:MODULE -->` block.
+- Remove optional sections that do not add signal.
+
 - Scope: `{{scope}}`
 - Source: `{{source_path}}`
 - Dependencies: `{{dependencies}}`
@@ -46,9 +51,19 @@ class {{model_2}}
 - ACLs / record rules:
 - Cron jobs / mail templates / server actions:
 
+## Data and configuration
+- Demo or seed data:
+- Company or journal settings:
+- Localization hooks or fiscal mappings:
+
 ## Integrations
 - External systems:
 - RPC / HTTP / webhooks:
+
+## Upgrade and rollout notes
+- Pre-configuration required:
+- Data migration concerns:
+- Backward-compatibility risks:
 
 ## Code references
 - `{{source_file}}:{{line}}`
@@ -63,3 +78,4 @@ class {{model_2}}
 - `[[Related Note]]`
 - `[[Templates/Model Documentation Template]]`
 - `[[Templates/Service Documentation Template]]`
+- `[[Templates/Diagram Examples]]`

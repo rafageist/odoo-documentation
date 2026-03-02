@@ -10,6 +10,7 @@ status: active
 - Nested duplicate scaffold consolidated into the root structure.
 - Odoo 18, migration-oriented material, and duplicate category stubs removed.
 - Entry-point docs, templates, and generator workflow rewritten for the Odoo 19 source repos in this workspace.
+- Templates now define optional sections, generated-note editing rules, and reusable diagram examples.
 
 ## Navigation
 - **Parent:** [[Welcome]]

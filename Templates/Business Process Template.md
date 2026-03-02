@@ -2,9 +2,15 @@
 tags: [template, process, business, v19]
 area:
 version: v19
+status: draft
 ---
 
 # Process {{name}}
+
+## Template usage
+- Use this note for cross-module flows such as invoice validation, replenishment, or lead-to-order.
+- Keep the diagram small and move implementation details to linked module or model notes.
+- Optional sections can be removed when the process is simple.
 
 ## Overview
 - Objective:
@@ -32,6 +38,11 @@ stop
 - `[[Related Module 1]]`
 - `[[Related Module 2]]`
 
+## System touchpoints
+- Entry views or actions:
+- Automated jobs:
+- External services or file exchanges:
+
 ## Evidence
 - Models:
 - Views:
@@ -44,6 +55,11 @@ stop
 - Failure points:
 - Manual workarounds:
 - Audit or compliance concerns:
+
+## Cross-links
+- Parent index:
+- Related process:
+- Related service or model note:
 
 ## Follow-up
 - Gaps in current documentation:

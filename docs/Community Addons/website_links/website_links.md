@@ -13,25 +13,67 @@ tags: [odoo, community, module]
 
 Generate trackable & short URLs
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 1
+- XML files with UI/data artifacts: 1
 - Views: 1
 - Actions: 0
 - Menus: 1
 - Rules (ir.rule): 0
 - Access CSV entries: 3
+- Controller units: 0
+- Frontend asset files: 7
 
-## Detected Models
-
-- `LinkTracker`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Link Tracker - Models and Relations
-class LinkTracker
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Link Tracker - Generated Coverage
+component "Module Overview" as overview
+component "Models\n1" as models
+component "Views / XML\n1 views\n1 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n7 files" as frontend
+component "Security / Data\n0 rules\n3 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/website_links/Models|Models]] (1)
+- Views and XML: [[docs/Community Addons/website_links/Views|Views]] (1 files)
+- Frontend: [[docs/Community Addons/website_links/Frontend|Frontend]] (7 files)
+
+## Key models
+
+- `link.tracker`
 
 ## Navigation
 
@@ -39,6 +81,7 @@ class LinkTracker
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

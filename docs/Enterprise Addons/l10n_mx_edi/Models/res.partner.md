@@ -1,0 +1,74 @@
+<!-- GENERATED:MODEL -->
+---
+tags: [odoo, enterprise, generated, model]
+---
+
+# res.partner
+
+- Module: [[docs/Enterprise Addons/l10n_mx_edi/l10n_mx_edi|l10n_mx_edi]]
+- Scope: Enterprise Addons
+- Defined in module: extension only
+- Source files: `models/res_partner.py`
+- Python classes: `ResPartner`
+
+## Field footprint
+
+- Detected fields: 6
+- Field types: `Boolean` x 1, `Many2many` x 1, `Many2one` x 1, `Selection` x 3
+- Relation fields: 2
+
+## Sample fields
+
+- `l10n_mx_edi_addenda_ids`: `Many2many` (comodel `l10n_mx_edi.addenda`)
+- `l10n_mx_edi_fiscal_regime`: `Selection` (compute `_compute_l10n_mx_edi_fiscal_regime`, store `True`)
+- `l10n_mx_edi_ieps_breakdown`: `Boolean`
+- `l10n_mx_edi_payment_method_id`: `Many2one` (comodel `l10n_mx_edi.payment.method`)
+- `l10n_mx_edi_payment_policy`: `Selection`
+- `l10n_mx_edi_usage`: `Selection`
+
+## Method hints
+
+- Detected methods: 5
+- Action methods: none
+- Compute methods: `_compute_l10n_mx_edi_fiscal_regime`
+- Onchange methods: none
+
+## Direct relation diagram
+
+```plantuml
+@startuml
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title res.partner - Direct Relations
+class "res.partner" as res_partner
+class "l10n_mx_edi.addenda" as l10n_mx_edi_addenda
+class "l10n_mx_edi.payment.method" as l10n_mx_edi_payment_method
+res_partner .. l10n_mx_edi_addenda : l10n_mx_edi_addenda_ids
+res_partner --> l10n_mx_edi_payment_method : l10n_mx_edi_payment_method_id
+@enduml
+```
+
+## Navigation
+
+- **Parent:** [[docs/Enterprise Addons/l10n_mx_edi/Models]]
+
+<!-- GENERATED:MODEL -->

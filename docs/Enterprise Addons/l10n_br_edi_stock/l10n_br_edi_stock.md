@@ -10,36 +10,69 @@ tags: [odoo, enterprise, module]
 - Source: enterprise/l10n_br_edi_stock
 - Dependencies: [[docs/Enterprise Addons/l10n_br_edi/l10n_br_edi|l10n_br_edi]], [[docs/Community Addons/sale_stock/sale_stock|sale_stock]]
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 4
+- XML files with UI/data artifacts: 2
 - Views: 2
 - Actions: 0
 - Menus: 0
 - Rules (ir.rule): 0
 - Access CSV entries: 0
+- Controller units: 0
+- Frontend asset files: 0
 
-## Detected Models
-
-- `AccountMove`
-- `SaleOrder`
-- `StockPackage`
-- `StockPackageType`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Brazilian Accounting EDI for stock - Models and Relations
-class AccountMove
-class SaleOrder
-class StockPackage
-class StockPackageType
-class "stock.package" as stock_package
-AccountMove .. stock_package : many2many
-AccountMove --|> stock_package : one2many
-class "account.move" as account_move
-StockPackage --> account_move : many2one
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Brazilian Accounting EDI for stock - Generated Coverage
+component "Module Overview" as overview
+component "Models\n4" as models
+component "Views / XML\n2 views\n2 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n0 files" as frontend
+component "Security / Data\n0 rules\n0 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Enterprise Addons/l10n_br_edi_stock/Models|Models]] (4)
+- Views and XML: [[docs/Enterprise Addons/l10n_br_edi_stock/Views|Views]] (2 files)
+
+## Key models
+
+- `account.move`
+- `sale.order`
+- `stock.package`
+- `stock.package.type`
 
 ## Navigation
 
@@ -47,4 +80,5 @@ StockPackage --> account_move : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 

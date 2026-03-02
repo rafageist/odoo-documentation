@@ -1,0 +1,23 @@
+<!-- GENERATED:FRONTEND -->
+---
+tags: [odoo, community, generated, frontend]
+---
+
+# static/src/app/screens/feedback_screen/feedback_screen.js
+
+- Module: [[docs/Community Addons/point_of_sale/point_of_sale|point_of_sale]]
+- Scope: Community Addons
+- Asset kind: `js`
+- Source file: `static/src/app/screens/feedback_screen/feedback_screen.js`
+
+## Detected frontend signals
+
+- Component classes: `FeedbackScreen`
+- Registry entries: `pos_pages:FeedbackScreen`
+- Templates: none
+
+## Navigation
+
+- **Parent:** [[docs/Community Addons/point_of_sale/Frontend]]
+
+<!-- GENERATED:FRONTEND -->

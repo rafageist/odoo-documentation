@@ -9,50 +9,71 @@ tags: [odoo, enterprise, module]
 - Source: enterprise/l10n_be_hr_payroll_dimona_auto
 - Dependencies: [[docs/Enterprise Addons/l10n_be_hr_payroll_dimona/l10n_be_hr_payroll_dimona|l10n_be_hr_payroll_dimona]], [[docs/Enterprise Addons/l10n_be_hr_payroll/l10n_be_hr_payroll|l10n_be_hr_payroll]]
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 6
+- XML files with UI/data artifacts: 6
 - Views: 12
 - Actions: 10
 - Menus: 3
 - Rules (ir.rule): 3
 - Access CSV entries: 3
+- Controller units: 0
+- Frontend asset files: 0
 
-## Detected Models
-
-- `HrEmployee`
-- `HrVersion`
-- `l10n.be.dimona.declaration`
-- `l10n.be.dimona.period`
-- `l10n.be.dimona.relation`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Belgium - Payroll - Dimona - Automation - Models and Relations
-class HrEmployee
-class HrVersion
-class "l10n.be.dimona.declaration" as l10n_be_dimona_declaration
-class "l10n.be.dimona.period" as l10n_be_dimona_period
-class "l10n.be.dimona.relation" as l10n_be_dimona_relation
-HrEmployee --> l10n_be_dimona_relation : many2one
-HrVersion --> l10n_be_dimona_declaration : many2one
-HrVersion --> l10n_be_dimona_declaration : many2one
-class "res.company" as res_company
-l10n_be_dimona_declaration --> res_company : many2one
-class "hr.employee" as hr_employee
-l10n_be_dimona_declaration --> hr_employee : many2one
-class "hr.version" as hr_version
-l10n_be_dimona_declaration --> hr_version : many2one
-l10n_be_dimona_declaration --> l10n_be_dimona_period : many2one
-l10n_be_dimona_period --> res_company : many2one
-l10n_be_dimona_period --> l10n_be_dimona_relation : many2one
-l10n_be_dimona_period --|> l10n_be_dimona_declaration : one2many
-l10n_be_dimona_period --> hr_employee : many2one
-l10n_be_dimona_relation --> res_company : many2one
-l10n_be_dimona_relation --|> l10n_be_dimona_period : one2many
-l10n_be_dimona_relation --> hr_employee : many2one
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Belgium - Payroll - Dimona - Automation - Generated Coverage
+component "Module Overview" as overview
+component "Models\n6" as models
+component "Views / XML\n12 views\n6 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n0 files" as frontend
+component "Security / Data\n3 rules\n3 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Enterprise Addons/l10n_be_hr_payroll_dimona_auto/Models|Models]] (6)
+- Views and XML: [[docs/Enterprise Addons/l10n_be_hr_payroll_dimona_auto/Views|Views]] (6 files)
+
+## Key models
+
+- `hr.employee`
+- `hr.version`
+- `l10n.be.dimona.declaration`
+- `l10n.be.dimona.period`
+- `l10n.be.dimona.relation`
+- `l10n.be.dimona.wizard`
 
 ## Navigation
 
@@ -60,5 +81,6 @@ l10n_be_dimona_relation --> hr_employee : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 

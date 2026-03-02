@@ -13,73 +13,78 @@ tags: [odoo, enterprise, module]
 
 Let your employees share job positions and refer their friends
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 23
+- XML files with UI/data artifacts: 18
 - Views: 43
 - Actions: 22
 - Menus: 14
 - Rules (ir.rule): 11
 - Access CSV entries: 23
+- Controller units: 0
+- Frontend asset files: 8
 
-## Detected Models
-
-- `HrApplicant`
-- `HrRecruitmentStage`
-- `HrJob`
-- `hr.referral.alert`
-- `hr.referral.friend`
-- `hr.referral.level`
-- `hr.referral.onboarding`
-- `hr.referral.points`
-- `hr.referral.reward`
-- `ResCompany`
-- `ResUsers`
-- `UtmCampaign`
-- `UtmSource`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Employee Referral - Models and Relations
-class HrApplicant
-class HrRecruitmentStage
-class HrJob
-class "hr.referral.alert" as hr_referral_alert
-class "hr.referral.friend" as hr_referral_friend
-class "hr.referral.level" as hr_referral_level
-class "hr.referral.onboarding" as hr_referral_onboarding
-class "hr.referral.points" as hr_referral_points
-class "hr.referral.reward" as hr_referral_reward
-class ResCompany
-class ResUsers
-class UtmCampaign
-class UtmSource
-class "res.users" as res_users
-HrApplicant --> res_users : many2one
-HrApplicant --|> hr_referral_points : one2many
-HrApplicant --> hr_referral_friend : many2one
-class "hr.recruitment.stage" as hr_recruitment_stage
-HrApplicant --> hr_recruitment_stage : many2one
-class "utm.campaign" as utm_campaign
-HrJob --> utm_campaign : many2one
-class "res.company" as res_company
-hr_referral_alert --> res_company : many2one
-hr_referral_alert .. res_users : many2many
-hr_referral_onboarding --> res_company : many2one
-class "hr.applicant" as hr_applicant
-hr_referral_points --> hr_applicant : many2one
-hr_referral_points --> hr_referral_reward : many2one
-hr_referral_points --> res_users : many2one
-hr_referral_points --> hr_recruitment_stage : many2one
-hr_referral_points --> res_company : many2one
-hr_referral_reward --> res_users : many2one
-hr_referral_reward --> res_company : many2one
-ResUsers --> hr_referral_level : many2one
-ResUsers --|> hr_referral_points : one2many
-class "utm.source" as utm_source
-ResUsers --> utm_source : many2one
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Employee Referral - Generated Coverage
+component "Module Overview" as overview
+component "Models\n23" as models
+component "Views / XML\n43 views\n18 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n8 files" as frontend
+component "Security / Data\n11 rules\n23 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Enterprise Addons/hr_referral/Models|Models]] (23)
+- Views and XML: [[docs/Enterprise Addons/hr_referral/Views|Views]] (18 files)
+- Frontend: [[docs/Enterprise Addons/hr_referral/Frontend|Frontend]] (8 files)
+
+## Key models
+
+- `applicant.get.refuse.reason`
+- `hr.applicant`
+- `hr.job`
+- `hr.recruitment.report`
+- `hr.recruitment.stage`
+- `hr.referral.alert`
+- `hr.referral.alert.mail.wizard`
+- `hr.referral.campaign.wizard`
+- `hr.referral.friend`
+- `hr.referral.level`
+- `hr.referral.link.to.share`
+- `hr.referral.onboarding`
 
 ## Navigation
 
@@ -87,6 +92,7 @@ ResUsers --> utm_source : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

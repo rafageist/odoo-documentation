@@ -13,47 +13,76 @@ tags: [odoo, enterprise, module]
 
 Make and receive phone calls from within Odoo.
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 9
+- XML files with UI/data artifacts: 7
 - Views: 12
 - Actions: 3
 - Menus: 5
 - Rules (ir.rule): 4
 - Access CSV entries: 6
+- Controller units: 1
+- Frontend asset files: 75
 
-## Detected Models
-
-- `mail.activity`
-- `ResCountry`
-- `res.partner`
-- `ResUsers`
-- `ResUsersSettings`
-- `voip.call`
-- `voip.provider`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Phone - Models and Relations
-class "mail.activity" as mail_activity
-class ResCountry
-class "res.partner" as res_partner
-class ResUsers
-class ResUsersSettings
-class "voip.call" as voip_call
-class "voip.provider" as voip_provider
-ResUsers --> voip_call : many2one
-ResUsers --> voip_provider : many2one
-ResUsersSettings --> voip_provider : many2one
-voip_call --> res_partner : many2one
-class "res.users" as res_users
-voip_call --> res_users : many2one
-class "res.country" as res_country
-voip_call --> res_country : many2one
-class "res.company" as res_company
-voip_provider --> res_company : many2one
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Phone - Generated Coverage
+component "Module Overview" as overview
+component "Models\n9" as models
+component "Views / XML\n12 views\n7 files" as views
+component "Controllers\n2 routes" as controllers
+component "Frontend\n75 files" as frontend
+component "Security / Data\n4 rules\n6 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Enterprise Addons/voip/Models|Models]] (9)
+- Views and XML: [[docs/Enterprise Addons/voip/Views|Views]] (7 files)
+- Controllers: [[docs/Enterprise Addons/voip/Controllers|Controllers]] (1)
+- Frontend: [[docs/Enterprise Addons/voip/Frontend|Frontend]] (75 files)
+
+## Key models
+
+- `mail.activity`
+- `res.country`
+- `res.partner`
+- `res.users`
+- `res.users.settings`
+- `voip.call`
+- `voip.country.code.mixin`
+- `voip.provider`
+- `voip.queue.mixin`
 
 ## Navigation
 
@@ -61,6 +90,7 @@ voip_provider --> res_company : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

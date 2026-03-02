@@ -10,38 +10,71 @@ tags: [odoo, enterprise, module]
 - Source: enterprise/appointment_google_reserve
 - Dependencies: [[docs/Enterprise Addons/appointment/appointment|appointment]]
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 5
+- XML files with UI/data artifacts: 2
 - Views: 3
 - Actions: 1
 - Menus: 1
 - Rules (ir.rule): 0
 - Access CSV entries: 2
+- Controller units: 1
+- Frontend asset files: 0
 
-## Detected Models
-
-- `AppointmentResource`
-- `AppointmentType`
-- `CalendarEvent`
-- `google.reserve.merchant`
-- `ResourceCalendarLeaves`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Appointment Google Reserve - Models and Relations
-class AppointmentResource
-class AppointmentType
-class CalendarEvent
-class "google.reserve.merchant" as google_reserve_merchant
-class ResourceCalendarLeaves
-AppointmentType --> google_reserve_merchant : many2one
-class "appointment.type" as appointment_type
-google_reserve_merchant --|> appointment_type : one2many
-class "res.partner" as res_partner
-google_reserve_merchant --> res_partner : many2one
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Appointment Google Reserve - Generated Coverage
+component "Module Overview" as overview
+component "Models\n5" as models
+component "Views / XML\n3 views\n2 files" as views
+component "Controllers\n4 routes" as controllers
+component "Frontend\n0 files" as frontend
+component "Security / Data\n0 rules\n2 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Enterprise Addons/appointment_google_reserve/Models|Models]] (5)
+- Views and XML: [[docs/Enterprise Addons/appointment_google_reserve/Views|Views]] (2 files)
+- Controllers: [[docs/Enterprise Addons/appointment_google_reserve/Controllers|Controllers]] (1)
+
+## Key models
+
+- `appointment.resource`
+- `appointment.type`
+- `calendar.event`
+- `google.reserve.merchant`
+- `resource.calendar.leaves`
 
 ## Navigation
 
@@ -49,4 +82,5 @@ google_reserve_merchant --> res_partner : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 

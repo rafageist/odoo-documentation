@@ -9,27 +9,67 @@ tags: [odoo, community, module]
 - Source: odoo/addons/uom
 - Dependencies: base (not documented)
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 1
+- XML files with UI/data artifacts: 1
 - Views: 3
 - Actions: 1
 - Menus: 0
 - Rules (ir.rule): 0
 - Access CSV entries: 2
+- Controller units: 0
+- Frontend asset files: 4
 
-## Detected Models
-
-- `uom.uom`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Units of measure - Models and Relations
-class "uom.uom" as uom_uom
-uom_uom --> uom_uom : many2one
-uom_uom --|> uom_uom : one2many
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Units of measure - Generated Coverage
+component "Module Overview" as overview
+component "Models\n1" as models
+component "Views / XML\n3 views\n1 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n4 files" as frontend
+component "Security / Data\n0 rules\n2 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/uom/Models|Models]] (1)
+- Views and XML: [[docs/Community Addons/uom/Views|Views]] (1 files)
+- Frontend: [[docs/Community Addons/uom/Frontend|Frontend]] (4 files)
+
+## Key models
+
+- `uom.uom`
 
 ## Navigation
 
@@ -37,6 +77,7 @@ uom_uom --|> uom_uom : one2many
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

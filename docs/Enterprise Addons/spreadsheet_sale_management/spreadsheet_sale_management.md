@@ -10,40 +10,70 @@ tags: [odoo, enterprise, module]
 - Source: enterprise/spreadsheet_sale_management
 - Dependencies: [[docs/Enterprise Addons/spreadsheet_edition/spreadsheet_edition|spreadsheet_edition]], [[docs/Community Addons/sale_management/sale_management|sale_management]]
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 4
+- XML files with UI/data artifacts: 4
 - Views: 4
 - Actions: 1
 - Menus: 1
 - Rules (ir.rule): 8
 - Access CSV entries: 1
+- Controller units: 0
+- Frontend asset files: 11
 
-## Detected Models
-
-- `SaleOrder`
-- `sale.order.spreadsheet`
-- `SaleOrderTemplate`
-- `SpreadsheetCellThread`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Sale order spreadsheet - Models and Relations
-class SaleOrder
-class "sale.order.spreadsheet" as sale_order_spreadsheet
-class SaleOrderTemplate
-class SpreadsheetCellThread
-SaleOrder --> sale_order_spreadsheet : many2one
-SaleOrder --|> sale_order_spreadsheet : one2many
-SaleOrder --> sale_order_spreadsheet : many2one
-class "res.company" as res_company
-sale_order_spreadsheet --> res_company : many2one
-class "sale.order" as sale_order
-sale_order_spreadsheet --> sale_order : many2one
-SaleOrderTemplate --> sale_order_spreadsheet : many2one
-SpreadsheetCellThread --> sale_order_spreadsheet : many2one
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Sale order spreadsheet - Generated Coverage
+component "Module Overview" as overview
+component "Models\n4" as models
+component "Views / XML\n4 views\n4 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n11 files" as frontend
+component "Security / Data\n8 rules\n1 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Enterprise Addons/spreadsheet_sale_management/Models|Models]] (4)
+- Views and XML: [[docs/Enterprise Addons/spreadsheet_sale_management/Views|Views]] (4 files)
+- Frontend: [[docs/Enterprise Addons/spreadsheet_sale_management/Frontend|Frontend]] (11 files)
+
+## Key models
+
+- `sale.order`
+- `sale.order.spreadsheet`
+- `sale.order.template`
+- `spreadsheet.cell.thread`
 
 ## Navigation
 
@@ -51,4 +81,5 @@ SpreadsheetCellThread --> sale_order_spreadsheet : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 

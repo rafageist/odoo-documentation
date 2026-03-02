@@ -9,41 +9,71 @@ tags: [odoo, community, module]
 - Source: odoo/addons/event_product
 - Dependencies: [[docs/Community Addons/event/event|event]], [[docs/Community Addons/product/product|product]], [[docs/Community Addons/account/account|account]]
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 6
+- XML files with UI/data artifacts: 2
 - Views: 9
 - Actions: 0
 - Menus: 0
 - Rules (ir.rule): 0
 - Access CSV entries: 0
+- Controller units: 0
+- Frontend asset files: 0
 
-## Detected Models
-
-- `EventEvent`
-- `EventEventTicket`
-- `EventRegistration`
-- `EventTypeTicket`
-- `ProductProduct`
-- `ProductTemplate`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Events Product - Models and Relations
-class EventEvent
-class EventEventTicket
-class EventRegistration
-class EventTypeTicket
-class ProductProduct
-class ProductTemplate
-class "res.currency" as res_currency
-EventEvent --> res_currency : many2one
-class "product.product" as product_product
-EventTypeTicket --> product_product : many2one
-class "event.event.ticket" as event_event_ticket
-ProductProduct --|> event_event_ticket : one2many
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Events Product - Generated Coverage
+component "Module Overview" as overview
+component "Models\n6" as models
+component "Views / XML\n9 views\n2 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n0 files" as frontend
+component "Security / Data\n0 rules\n0 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/event_product/Models|Models]] (6)
+- Views and XML: [[docs/Community Addons/event_product/Views|Views]] (2 files)
+
+## Key models
+
+- `event.event`
+- `event.event.ticket`
+- `event.registration`
+- `event.type.ticket`
+- `product.product`
+- `product.template`
 
 ## Navigation
 
@@ -51,6 +81,7 @@ ProductProduct --|> event_event_ticket : one2many
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

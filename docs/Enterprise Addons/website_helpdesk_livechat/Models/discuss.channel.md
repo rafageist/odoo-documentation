@@ -1,0 +1,68 @@
+<!-- GENERATED:MODEL -->
+---
+tags: [odoo, enterprise, generated, model]
+---
+
+# discuss.channel
+
+- Module: [[docs/Enterprise Addons/website_helpdesk_livechat/website_helpdesk_livechat|website_helpdesk_livechat]]
+- Scope: Enterprise Addons
+- Defined in module: extension only
+- Source files: `models/discuss_channel.py`
+- Python classes: `DiscussChannel`
+
+## Field footprint
+
+- Detected fields: 2
+- Field types: `Boolean` x 1, `One2many` x 1
+- Relation fields: 1
+
+## Sample fields
+
+- `has_helpdesk_ticket`: `Boolean` (compute `_compute_has_helpdesk_ticket`, store `True`)
+- `ticket_ids`: `One2many` (comodel `helpdesk.ticket`)
+
+## Method hints
+
+- Detected methods: 5
+- Action methods: none
+- Compute methods: `_compute_has_helpdesk_ticket`
+- Onchange methods: none
+
+## Direct relation diagram
+
+```plantuml
+@startuml
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title discuss.channel - Direct Relations
+class "discuss.channel" as discuss_channel
+class "helpdesk.ticket" as helpdesk_ticket
+discuss_channel --|> helpdesk_ticket : ticket_ids
+@enduml
+```
+
+## Navigation
+
+- **Parent:** [[docs/Enterprise Addons/website_helpdesk_livechat/Models]]
+
+<!-- GENERATED:MODEL -->

@@ -14,162 +14,79 @@ tags: [odoo, enterprise, module]
 
 Manage your employee payroll
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 37
+- XML files with UI/data artifacts: 33
 - Views: 87
 - Actions: 52
 - Menus: 28
 - Rules (ir.rule): 16
 - Access CSV entries: 35
+- Controller units: 1
+- Frontend asset files: 60
 
-## Detected Models
+## Module map
 
-- `HrEmployee`
+```plantuml
+@startuml
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Payroll - Generated Coverage
+component "Module Overview" as overview
+component "Models\n37" as models
+component "Views / XML\n87 views\n33 files" as views
+component "Controllers\n1 routes" as controllers
+component "Frontend\n60 files" as frontend
+component "Security / Data\n16 rules\n35 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
+@enduml
+```
+
+## Detail notes
+
+- Models: [[docs/Enterprise Addons/hr_payroll/Models|Models]] (37)
+- Views and XML: [[docs/Enterprise Addons/hr_payroll/Views|Views]] (33 files)
+- Controllers: [[docs/Enterprise Addons/hr_payroll/Controllers|Controllers]] (1)
+- Frontend: [[docs/Enterprise Addons/hr_payroll/Frontend|Frontend]] (60 files)
+
+## Key models
+
+- `hr.employee`
 - `hr.payroll.dashboard.warning`
+- `hr.payroll.declaration.mixin`
+- `hr.payroll.edit.payslip.line`
+- `hr.payroll.edit.payslip.lines.wizard`
+- `hr.payroll.edit.payslip.worked.days.line`
 - `hr.payroll.employee.declaration`
 - `hr.payroll.headcount`
 - `hr.payroll.headcount.line`
 - `hr.payroll.headcount.working.rate`
-- `hr.payroll.structure`
-- `HrPayrollStructureType`
-- `hr.payslip`
-- `hr.payslip.input`
-- `hr.payslip.input.type`
-- `hr.payslip.line`
-- `hr.payslip.run`
-- `hr.payslip.worked_days`
-- `hr.rule.parameter.value`
-- `hr.rule.parameter`
-- `hr.salary.attachment`
-- `hr.salary.rule`
-- `hr.salary.rule.category`
-- `hr.salary.rule.section`
-- `HrVersion`
-- `HrWorkEntry`
-- `HrWorkEntryType`
+- `hr.payroll.index`
 - `hr.payroll.note`
-- `ResCompany`
-
-```plantuml
-@startuml
-!include ../../../templates/DiagramStyles.puml
-title Payroll - Models and Relations
-class HrEmployee
-class "hr.payroll.dashboard.warning" as hr_payroll_dashboard_warning
-class "hr.payroll.employee.declaration" as hr_payroll_employee_declaration
-class "hr.payroll.headcount" as hr_payroll_headcount
-class "hr.payroll.headcount.line" as hr_payroll_headcount_line
-class "hr.payroll.headcount.working.rate" as hr_payroll_headcount_working_rate
-class "hr.payroll.structure" as hr_payroll_structure
-class HrPayrollStructureType
-class "hr.payslip" as hr_payslip
-class "hr.payslip.input" as hr_payslip_input
-class "hr.payslip.input.type" as hr_payslip_input_type
-class "hr.payslip.line" as hr_payslip_line
-class "hr.payslip.run" as hr_payslip_run
-class "hr.payslip.worked_days" as hr_payslip_worked_days
-class "hr.rule.parameter.value" as hr_rule_parameter_value
-class "hr.rule.parameter" as hr_rule_parameter
-class "hr.salary.attachment" as hr_salary_attachment
-class "hr.salary.rule" as hr_salary_rule
-class "hr.salary.rule.category" as hr_salary_rule_category
-class "hr.salary.rule.section" as hr_salary_rule_section
-class HrVersion
-class HrWorkEntry
-class HrWorkEntryType
-class "hr.payroll.note" as hr_payroll_note
-class ResCompany
-class "res.currency" as res_currency
-HrEmployee --> res_currency : many2one
-HrEmployee --|> hr_payslip : one2many
-HrEmployee .. hr_salary_attachment : many2many
-class "res.country" as res_country
-hr_payroll_dashboard_warning --> res_country : many2one
-class "hr.employee" as hr_employee
-hr_payroll_employee_declaration --> hr_employee : many2one
-class "res.company" as res_company
-hr_payroll_employee_declaration --> res_company : many2one
-hr_payroll_headcount --> res_company : many2one
-hr_payroll_headcount --|> hr_payroll_headcount_line : one2many
-hr_payroll_headcount_line --> hr_payroll_headcount : many2one
-hr_payroll_headcount_line .. hr_payroll_headcount_working_rate : many2many
-class "hr.version" as hr_version
-hr_payroll_headcount_line --> hr_version : many2one
-class "hr.payroll.structure.type" as hr_payroll_structure_type
-hr_payroll_structure --> hr_payroll_structure_type : many2one
-hr_payroll_structure --> res_country : many2one
-hr_payroll_structure --|> hr_salary_rule : one2many
-class "ir.actions.report" as ir_actions_report
-hr_payroll_structure --> ir_actions_report : many2one
-class "hr.work.entry.type" as hr_work_entry_type
-hr_payroll_structure .. hr_work_entry_type : many2many
-hr_payroll_structure .. hr_payslip_input_type : many2many
-HrPayrollStructureType --|> hr_payroll_structure : one2many
-HrPayrollStructureType --> hr_payroll_structure : many2one
-HrPayrollStructureType --> hr_work_entry_type : many2one
-hr_payslip --> hr_payroll_structure : many2one
-hr_payslip --> hr_payroll_structure_type : many2one
-hr_payslip --> hr_employee : many2one
-class "hr.department" as hr_department
-hr_payslip --> hr_department : many2one
-class "hr.job" as hr_job
-hr_payslip --> hr_job : many2one
-hr_payslip --|> hr_payslip_line : one2many
-hr_payslip --> res_company : many2one
-hr_payslip --> res_country : many2one
-hr_payslip --|> hr_payslip_worked_days : one2many
-hr_payslip --|> hr_payslip_input : one2many
-hr_payslip --> hr_version : many2one
-hr_payslip --> hr_payslip_run : many2one
-hr_payslip .. hr_salary_attachment : many2many
-hr_payslip --> hr_payslip : many2one
-hr_payslip --|> hr_payslip : one2many
-hr_payslip_input --> hr_payslip : many2one
-hr_payslip_input --> hr_employee : many2one
-hr_payslip_input --> hr_payslip_input_type : many2one
-hr_payslip_input .. hr_payslip_input_type : many2many
-hr_payslip_input_type .. hr_payroll_structure : many2many
-hr_payslip_input_type --> res_country : many2one
-hr_payslip_line --> hr_payslip : many2one
-hr_payslip_line --> hr_salary_rule : many2one
-hr_payslip_line --> hr_version : many2one
-hr_payslip_line --> hr_employee : many2one
-hr_payslip_line --> res_currency : many2one
-hr_payslip_run --|> hr_payslip : one2many
-hr_payslip_run --> hr_payroll_structure : many2one
-hr_payslip_run --> res_company : many2one
-hr_payslip_run --> res_country : many2one
-hr_payslip_worked_days --> hr_payslip : many2one
-hr_payslip_worked_days --> hr_employee : many2one
-hr_payslip_worked_days --> hr_work_entry_type : many2one
-hr_payslip_worked_days --> res_currency : many2one
-hr_rule_parameter_value --> hr_rule_parameter : many2one
-hr_rule_parameter --> res_country : many2one
-hr_rule_parameter --|> hr_rule_parameter_value : one2many
-hr_rule_parameter --|> hr_salary_rule : one2many
-hr_salary_attachment .. hr_employee : many2many
-hr_salary_attachment --> res_company : many2one
-hr_salary_attachment --> res_currency : many2one
-hr_salary_attachment --> hr_payslip_input_type : many2one
-hr_salary_attachment .. hr_payslip : many2many
-hr_salary_rule --> hr_payroll_structure : many2one
-hr_salary_rule --> hr_salary_rule_category : many2one
-hr_salary_rule --> hr_payslip_input_type : many2one
-hr_salary_rule --> hr_payslip_input_type : many2one
-class "res.partner" as res_partner
-hr_salary_rule --> res_partner : many2one
-hr_salary_rule --> hr_salary_rule_section : many2one
-hr_salary_rule --> hr_salary_rule : many2one
-hr_salary_rule_category --> hr_salary_rule_category : many2one
-hr_salary_rule_category --|> hr_salary_rule_category : one2many
-hr_salary_rule_category --> res_country : many2one
-hr_salary_rule_section .. hr_payroll_structure : many2many
-class "resource.calendar" as resource_calendar
-HrVersion --> resource_calendar : many2one
-HrWorkEntryType .. hr_payroll_structure : many2many
-hr_payroll_note --> res_company : many2one
-@enduml
-```
 
 ## Navigation
 
@@ -177,4 +94,5 @@ hr_payroll_note --> res_company : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 

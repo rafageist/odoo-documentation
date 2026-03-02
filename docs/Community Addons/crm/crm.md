@@ -13,84 +13,79 @@ tags: [odoo, community, module]
 
 Track leads and close opportunities
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 22
+- XML files with UI/data artifacts: 23
 - Views: 55
 - Actions: 60
 - Menus: 27
 - Rules (ir.rule): 8
 - Access CSV entries: 32
+- Controller units: 1
+- Frontend asset files: 26
 
-## Detected Models
-
-- `CalendarEvent`
-- `crm.lead`
-- `crm.lead.scoring.frequency`
-- `crm.lead.scoring.frequency.field`
-- `crm.lost.reason`
-- `crm.recurring.plan`
-- `crm.stage`
-- `crm.team`
-- `CrmTeamMember`
-- `DigestDigest`
-- `IrConfig_Parameter`
-- `MailActivity`
-- `ResPartner`
-- `ResUsers`
-- `UtmCampaign`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title CRM - Models and Relations
-class CalendarEvent
-class "crm.lead" as crm_lead
-class "crm.lead.scoring.frequency" as crm_lead_scoring_frequency
-class "crm.lead.scoring.frequency.field" as crm_lead_scoring_frequency_field
-class "crm.lost.reason" as crm_lost_reason
-class "crm.recurring.plan" as crm_recurring_plan
-class "crm.stage" as crm_stage
-class "crm.team" as crm_team
-class CrmTeamMember
-class DigestDigest
-class IrConfig_Parameter
-class MailActivity
-class ResPartner
-class ResUsers
-class UtmCampaign
-CalendarEvent --> crm_lead : many2one
-class "res.users" as res_users
-crm_lead --> res_users : many2one
-class "res.company" as res_company
-crm_lead .. res_company : many2many
-crm_lead --> crm_team : many2one
-crm_lead --> res_company : many2one
-crm_lead --> crm_stage : many2one
-class "crm.tag" as crm_tag
-crm_lead .. crm_tag : many2many
-crm_lead --> crm_recurring_plan : many2one
-class "res.currency" as res_currency
-crm_lead --> res_currency : many2one
-class "res.partner" as res_partner
-crm_lead --> res_partner : many2one
-crm_lead --> res_partner : many2one
-class "res.lang" as res_lang
-crm_lead --> res_lang : many2one
-class "res.country.state" as res_country_state
-crm_lead --> res_country_state : many2one
-class "res.country" as res_country
-crm_lead --> res_country : many2one
-crm_lead --> crm_lost_reason : many2one
-class "calendar.event" as calendar_event
-crm_lead --|> calendar_event : one2many
-crm_lead .. crm_lead : many2many
-crm_lead_scoring_frequency --> crm_team : many2one
-class "ir.model.fields" as ir_model_fields
-crm_lead_scoring_frequency_field --> ir_model_fields : many2one
-crm_stage .. crm_team : many2many
-ResPartner --|> crm_lead : one2many
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title CRM - Generated Coverage
+component "Module Overview" as overview
+component "Models\n22" as models
+component "Views / XML\n55 views\n23 files" as views
+component "Controllers\n3 routes" as controllers
+component "Frontend\n26 files" as frontend
+component "Security / Data\n8 rules\n32 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/crm/Models|Models]] (22)
+- Views and XML: [[docs/Community Addons/crm/Views|Views]] (23 files)
+- Controllers: [[docs/Community Addons/crm/Controllers|Controllers]] (1)
+- Frontend: [[docs/Community Addons/crm/Frontend|Frontend]] (26 files)
+
+## Key models
+
+- `calendar.event`
+- `crm.activity.report`
+- `crm.lead`
+- `crm.lead.lost`
+- `crm.lead.pls.update`
+- `crm.lead.scoring.frequency`
+- `crm.lead.scoring.frequency.field`
+- `crm.lead2opportunity.partner`
+- `crm.lead2opportunity.partner.mass`
+- `crm.lost.reason`
+- `crm.merge.opportunity`
+- `crm.recurring.plan`
 
 ## Navigation
 
@@ -98,6 +93,7 @@ ResPartner --|> crm_lead : one2many
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

@@ -1,0 +1,69 @@
+<!-- GENERATED:MODEL -->
+---
+tags: [odoo, community, generated, model]
+---
+
+# mailing.sms.test
+
+- Module: [[docs/Community Addons/mass_mailing_sms/mass_mailing_sms|mass_mailing_sms]]
+- Scope: Community Addons
+- Defined in module: yes
+- Source files: `wizard/mailing_sms_test.py`
+- Python classes: `MailingSmsTest`
+- Description: Test SMS Mailing
+
+## Field footprint
+
+- Detected fields: 2
+- Field types: `Many2one` x 1, `Text` x 1
+- Relation fields: 1
+
+## Sample fields
+
+- `mailing_id`: `Many2one` (comodel `mailing.mailing`)
+- `numbers`: `Text`
+
+## Method hints
+
+- Detected methods: 3
+- Action methods: `action_send_sms`
+- Compute methods: none
+- Onchange methods: none
+
+## Direct relation diagram
+
+```plantuml
+@startuml
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title mailing.sms.test - Direct Relations
+class "mailing.sms.test" as mailing_sms_test
+class "mailing.mailing" as mailing_mailing
+mailing_sms_test --> mailing_mailing : mailing_id
+@enduml
+```
+
+## Navigation
+
+- **Parent:** [[docs/Community Addons/mass_mailing_sms/Models]]
+
+<!-- GENERATED:MODEL -->

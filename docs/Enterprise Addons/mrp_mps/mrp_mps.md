@@ -13,55 +13,77 @@ tags: [odoo, enterprise, module]
 
 Master Production Schedule
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 11
+- XML files with UI/data artifacts: 9
 - Views: 8
 - Actions: 2
 - Menus: 3
 - Rules (ir.rule): 1
 - Access CSV entries: 6
+- Controller units: 0
+- Frontend asset files: 15
 
-## Detected Models
-
-- `MrpBom`
-- `mrp.production.schedule`
-- `mrp.product.forecast`
-- `ProductProduct`
-- `ProductTemplate`
-- `PurchaseOrder`
-- `ResCompany`
-- `StockRule`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Master Production Schedule - Models and Relations
-class MrpBom
-class "mrp.production.schedule" as mrp_production_schedule
-class "mrp.product.forecast" as mrp_product_forecast
-class ProductProduct
-class ProductTemplate
-class PurchaseOrder
-class ResCompany
-class StockRule
-mrp_production_schedule --|> mrp_product_forecast : one2many
-class "res.company" as res_company
-mrp_production_schedule --> res_company : many2one
-class "product.product" as product_product
-mrp_production_schedule --> product_product : many2one
-class "product.template" as product_template
-mrp_production_schedule --> product_template : many2one
-class "product.category" as product_category
-mrp_production_schedule --> product_category : many2one
-class "uom.uom" as uom_uom
-mrp_production_schedule --> uom_uom : many2one
-class "stock.warehouse" as stock_warehouse
-mrp_production_schedule --> stock_warehouse : many2one
-class "mrp.bom" as mrp_bom
-mrp_production_schedule --> mrp_bom : many2one
-mrp_product_forecast --> mrp_production_schedule : many2one
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Master Production Schedule - Generated Coverage
+component "Module Overview" as overview
+component "Models\n11" as models
+component "Views / XML\n8 views\n9 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n15 files" as frontend
+component "Security / Data\n1 rules\n6 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Enterprise Addons/mrp_mps/Models|Models]] (11)
+- Views and XML: [[docs/Enterprise Addons/mrp_mps/Views|Views]] (9 files)
+- Frontend: [[docs/Enterprise Addons/mrp_mps/Frontend|Frontend]] (15 files)
+
+## Key models
+
+- `mrp.bom`
+- `mrp.mps.forecast.details`
+- `mrp.mps.forecast.suggestion`
+- `mrp.product.forecast`
+- `mrp.production.schedule`
+- `product.product`
+- `product.template`
+- `purchase.order`
+- `res.company`
+- `res.config.settings`
+- `stock.rule`
 
 ## Navigation
 
@@ -69,6 +91,7 @@ mrp_product_forecast --> mrp_production_schedule : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

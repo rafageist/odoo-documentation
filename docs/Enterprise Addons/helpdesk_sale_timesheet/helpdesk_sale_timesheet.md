@@ -13,41 +13,75 @@ tags: [odoo, enterprise, module]
 
 Project, Helpdesk, Timesheet and Sale Orders
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 10
+- XML files with UI/data artifacts: 8
 - Views: 10
 - Actions: 0
 - Menus: 0
 - Rules (ir.rule): 0
 - Access CSV entries: 1
+- Controller units: 0
+- Frontend asset files: 0
 
-## Detected Models
-
-- `AccountAnalyticLine`
-- `HelpdeskSla`
-- `HelpdeskTeam`
-- `HelpdeskTicket`
-- `SaleOrder`
-- `SaleOrderLine`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Sell Helpdesk Timesheet - Models and Relations
-class AccountAnalyticLine
-class HelpdeskSla
-class HelpdeskTeam
-class HelpdeskTicket
-class SaleOrder
-class SaleOrderLine
-class "product.template" as product_template
-HelpdeskSla .. product_template : many2many
-class "sale.order" as sale_order
-HelpdeskTicket --> sale_order : many2one
-class "sale.order.line" as sale_order_line
-HelpdeskTicket --> sale_order_line : many2one
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Sell Helpdesk Timesheet - Generated Coverage
+component "Module Overview" as overview
+component "Models\n10" as models
+component "Views / XML\n10 views\n8 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n0 files" as frontend
+component "Security / Data\n0 rules\n1 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Enterprise Addons/helpdesk_sale_timesheet/Models|Models]] (10)
+- Views and XML: [[docs/Enterprise Addons/helpdesk_sale_timesheet/Views|Views]] (8 files)
+
+## Key models
+
+- `account.analytic.line`
+- `helpdesk.sla`
+- `helpdesk.sla.report.analysis`
+- `helpdesk.team`
+- `helpdesk.ticket`
+- `helpdesk.ticket.convert.wizard`
+- `helpdesk.ticket.report.analysis`
+- `project.task.convert.wizard`
+- `sale.order`
+- `sale.order.line`
 
 ## Navigation
 
@@ -55,6 +89,7 @@ HelpdeskTicket --> sale_order_line : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

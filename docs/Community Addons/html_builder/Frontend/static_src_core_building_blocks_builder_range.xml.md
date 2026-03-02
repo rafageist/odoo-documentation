@@ -1,0 +1,23 @@
+<!-- GENERATED:FRONTEND -->
+---
+tags: [odoo, community, generated, frontend]
+---
+
+# static/src/core/building_blocks/builder_range.xml
+
+- Module: [[docs/Community Addons/html_builder/html_builder|html_builder]]
+- Scope: Community Addons
+- Asset kind: `xml`
+- Source file: `static/src/core/building_blocks/builder_range.xml`
+
+## Detected frontend signals
+
+- Component classes: none
+- Registry entries: none
+- Templates: `html_builder.BuilderRange`
+
+## Navigation
+
+- **Parent:** [[docs/Community Addons/html_builder/Frontend]]
+
+<!-- GENERATED:FRONTEND -->

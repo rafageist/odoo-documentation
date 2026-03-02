@@ -9,51 +9,76 @@ tags: [odoo, community, module]
 - Source: odoo/addons/l10n_it_edi
 - Dependencies: [[docs/Community Addons/l10n_it/l10n_it|l10n_it]], [[docs/Community Addons/account_edi_proxy_client/account_edi_proxy_client|account_edi_proxy_client]], [[docs/Community Addons/account_debit_note/account_debit_note|account_debit_note]]
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 10
+- XML files with UI/data artifacts: 5
 - Views: 13
 - Actions: 1
 - Menus: 1
 - Rules (ir.rule): 0
 - Access CSV entries: 2
+- Controller units: 0
+- Frontend asset files: 1
 
-## Detected Models
-
-- `Account_Edi_Proxy_ClientUser`
-- `AccountMove`
-- `AccountPaymentMethodLine`
-- `AccountTax`
-- `l10n_it.ddt`
-- `l10n_it.document.type`
-- `ResCompany`
-- `ResPartner`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Italy - E-invoicing - Models and Relations
-class Account_Edi_Proxy_ClientUser
-class AccountMove
-class AccountPaymentMethodLine
-class AccountTax
-class "l10n_it.ddt" as l10n_it_ddt
-class "l10n_it.document.type" as l10n_it_document_type
-class ResCompany
-class ResPartner
-AccountMove --> l10n_it_ddt : many2one
-AccountMove --> l10n_it_document_type : many2one
-class "account.move" as account_move
-l10n_it_ddt --|> account_move : one2many
-class "account_edi_proxy_client.user" as account_edi_proxy_client_user
-ResCompany --> account_edi_proxy_client_user : many2one
-class "account.journal" as account_journal
-ResCompany --> account_journal : many2one
-class "res.country.state" as res_country_state
-ResCompany --> res_country_state : many2one
-class "res.partner" as res_partner
-ResCompany --> res_partner : many2one
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Italy - E-invoicing - Generated Coverage
+component "Module Overview" as overview
+component "Models\n10" as models
+component "Views / XML\n13 views\n5 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n1 files" as frontend
+component "Security / Data\n0 rules\n2 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/l10n_it_edi/Models|Models]] (10)
+- Views and XML: [[docs/Community Addons/l10n_it_edi/Views|Views]] (5 files)
+- Frontend: [[docs/Community Addons/l10n_it_edi/Frontend|Frontend]] (1 files)
+
+## Key models
+
+- `account.move`
+- `account.move.send`
+- `account.payment.method.line`
+- `account.tax`
+- `account_edi_proxy_client.user`
+- `l10n_it.ddt`
+- `l10n_it.document.type`
+- `res.company`
+- `res.config.settings`
+- `res.partner`
 
 ## Navigation
 
@@ -61,6 +86,7 @@ ResCompany --> res_partner : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

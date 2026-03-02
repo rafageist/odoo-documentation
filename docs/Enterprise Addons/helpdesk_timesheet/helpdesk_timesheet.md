@@ -13,44 +13,76 @@ tags: [odoo, enterprise, module]
 
 Project, Tasks, Timesheet
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 10
+- XML files with UI/data artifacts: 9
 - Views: 25
 - Actions: 11
 - Menus: 0
 - Rules (ir.rule): 2
 - Access CSV entries: 5
+- Controller units: 0
+- Frontend asset files: 6
 
-## Detected Models
-
-- `AccountAnalyticLine`
-- `HelpdeskTeam`
-- `helpdesk.ticket`
-- `ProjectProject`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Helpdesk Timesheet - Models and Relations
-class AccountAnalyticLine
-class HelpdeskTeam
-class "helpdesk.ticket" as helpdesk_ticket
-class ProjectProject
-AccountAnalyticLine --> helpdesk_ticket : many2one
-class "project.project" as project_project
-HelpdeskTeam --> project_project : many2one
-class "uom.uom" as uom_uom
-HelpdeskTeam --> uom_uom : many2one
-helpdesk_ticket --> project_project : many2one
-class "account.analytic.line" as account_analytic_line
-helpdesk_ticket --|> account_analytic_line : one2many
-class "account.analytic.account" as account_analytic_account
-helpdesk_ticket --> account_analytic_account : many2one
-ProjectProject --|> helpdesk_ticket : one2many
-class "helpdesk.team" as helpdesk_team
-ProjectProject --|> helpdesk_team : one2many
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Helpdesk Timesheet - Generated Coverage
+component "Module Overview" as overview
+component "Models\n10" as models
+component "Views / XML\n25 views\n9 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n6 files" as frontend
+component "Security / Data\n2 rules\n5 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Enterprise Addons/helpdesk_timesheet/Models|Models]] (10)
+- Views and XML: [[docs/Enterprise Addons/helpdesk_timesheet/Views|Views]] (9 files)
+- Frontend: [[docs/Enterprise Addons/helpdesk_timesheet/Frontend|Frontend]] (6 files)
+
+## Key models
+
+- `account.analytic.line`
+- `helpdesk.sla.report.analysis`
+- `helpdesk.team`
+- `helpdesk.ticket`
+- `helpdesk.ticket.convert.wizard`
+- `helpdesk.ticket.report.analysis`
+- `hr_timesheet.merge.wizard`
+- `project.project`
+- `project.task.convert.wizard`
+- `timesheets.analysis.report`
 
 ## Navigation
 
@@ -58,6 +90,7 @@ ProjectProject --|> helpdesk_team : one2many
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

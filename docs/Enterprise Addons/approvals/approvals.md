@@ -13,69 +13,74 @@ tags: [odoo, enterprise, module]
 
 Create and validate approvals requests
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 8
+- XML files with UI/data artifacts: 7
 - Views: 13
 - Actions: 11
 - Menus: 12
 - Rules (ir.rule): 17
 - Access CSV entries: 14
+- Controller units: 0
+- Frontend asset files: 11
 
-## Detected Models
+## Module map
+
+```plantuml
+@startuml
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Approvals - Generated Coverage
+component "Module Overview" as overview
+component "Models\n8" as models
+component "Views / XML\n13 views\n7 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n11 files" as frontend
+component "Security / Data\n17 rules\n14 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
+@enduml
+```
+
+## Detail notes
+
+- Models: [[docs/Enterprise Addons/approvals/Models|Models]] (8)
+- Views and XML: [[docs/Enterprise Addons/approvals/Views|Views]] (7 files)
+- Frontend: [[docs/Enterprise Addons/approvals/Frontend|Frontend]] (11 files)
+
+## Key models
 
 - `approval.approver`
 - `approval.category`
 - `approval.category.approver`
 - `approval.product.line`
 - `approval.request`
-- `IrAttachment`
-- `MailActivity`
-- `MailActivityType`
-
-```plantuml
-@startuml
-!include ../../../templates/DiagramStyles.puml
-title Approvals - Models and Relations
-class "approval.approver" as approval_approver
-class "approval.category" as approval_category
-class "approval.category.approver" as approval_category_approver
-class "approval.product.line" as approval_product_line
-class "approval.request" as approval_request
-class IrAttachment
-class MailActivity
-class MailActivityType
-class "res.users" as res_users
-approval_approver --> res_users : many2one
-approval_approver .. res_users : many2many
-approval_approver --> approval_request : many2one
-class "res.company" as res_company
-approval_category --> res_company : many2one
-approval_category .. res_users : many2many
-approval_category --|> approval_category_approver : one2many
-class "ir.sequence" as ir_sequence
-approval_category --> ir_sequence : many2one
-approval_category_approver --> approval_category : many2one
-approval_category_approver --> res_company : many2one
-approval_category_approver --> res_users : many2one
-approval_category_approver .. res_users : many2many
-approval_product_line --> approval_request : many2one
-class "product.product" as product_product
-approval_product_line --> product_product : many2one
-class "uom.uom" as uom_uom
-approval_product_line --> uom_uom : many2one
-approval_request --> approval_category : many2one
-approval_request --|> approval_approver : one2many
-approval_request .. res_users : many2many
-class "res.partner" as res_partner
-approval_request --> res_partner : many2one
-approval_request --> res_users : many2one
-class "ir.attachment" as ir_attachment
-approval_request --|> ir_attachment : one2many
-approval_request --|> approval_product_line : one2many
-MailActivity --> approval_request : many2one
-MailActivity --> approval_approver : many2one
-@enduml
-```
+- `ir.attachment`
+- `mail.activity`
+- `mail.activity.type`
 
 ## Navigation
 
@@ -83,6 +88,7 @@ MailActivity --> approval_approver : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

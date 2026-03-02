@@ -13,129 +13,79 @@ tags: [odoo, community, module]
 
 Sell your products online
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 34
+- XML files with UI/data artifacts: 23
 - Views: 56
 - Actions: 28
 - Menus: 24
 - Rules (ir.rule): 6
 - Access CSV entries: 67
+- Controller units: 11
+- Frontend asset files: 115
 
-## Detected Models
-
-- `AccountMove`
-- `CrmTeam`
-- `delivery.carrier`
-- `DigestDigest`
-- `PaymentToken`
-- `ProductAttribute`
-- `ProductDocument`
-- `product.feed`
-- `product.image`
-- `ProductPricelist`
-- `ProductPricelistItem`
-- `ProductProduct`
-- `product.public.category`
-- `product.ribbon`
-- `product.tag`
-- `product.template`
-- `ProductTemplateAttributeLine`
-- `ProductTemplateAttributeValue`
-- `ResCompany`
-- `ResPartner`
-- `SaleOrder`
-- `SaleOrderLine`
-- `Website`
-- `website.base.unit`
-- `website.checkout.step`
-- `WebsiteMenu`
-- `website.sale.extra.field`
-- `WebsiteSnippetFilter`
-- `WebsiteTrack`
-- `WebsiteVisitor`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title eCommerce - Models and Relations
-class AccountMove
-class CrmTeam
-class "delivery.carrier" as delivery_carrier
-class DigestDigest
-class PaymentToken
-class ProductAttribute
-class ProductDocument
-class "product.feed" as product_feed
-class "product.image" as product_image
-class ProductPricelist
-class ProductPricelistItem
-class ProductProduct
-class "product.public.category" as product_public_category
-class "product.ribbon" as product_ribbon
-class "product.tag" as product_tag
-class "product.template" as product_template
-class ProductTemplateAttributeLine
-class ProductTemplateAttributeValue
-class ResCompany
-class ResPartner
-class SaleOrder
-class SaleOrderLine
-class Website
-class "website.base.unit" as website_base_unit
-class "website.checkout.step" as website_checkout_step
-class WebsiteMenu
-class "website.sale.extra.field" as website_sale_extra_field
-class WebsiteSnippetFilter
-class WebsiteTrack
-class WebsiteVisitor
-class website
-AccountMove --> website : many2one
-CrmTeam --|> website : one2many
-product_feed --> website : many2one
-class "product.pricelist" as product_pricelist
-product_feed --> product_pricelist : many2one
-class "res.lang" as res_lang
-product_feed --> res_lang : many2one
-product_feed .. product_public_category : many2many
-product_image --> product_template : many2one
-class "product.product" as product_product
-product_image --> product_product : many2one
-ProductPricelist --> website : many2one
-ProductProduct --> product_ribbon : many2one
-ProductProduct --|> product_image : one2many
-ProductProduct --> website_base_unit : many2one
-product_public_category --> product_public_category : many2one
-product_public_category --|> product_public_category : one2many
-product_public_category .. product_public_category : many2many
-product_public_category .. product_template : many2many
-product_template .. product_template : many2many
-product_template .. product_product : many2many
-product_template --> product_ribbon : many2one
-product_template .. product_public_category : many2many
-product_template --|> product_image : one2many
-product_template --> website_base_unit : many2one
-SaleOrder --> website : many2one
-class "sale.order.line" as sale_order_line
-SaleOrder --|> sale_order_line : one2many
-class "res.users" as res_users
-Website --> res_users : many2one
-class "crm.team" as crm_team
-Website --> crm_team : many2one
-class "mail.template" as mail_template
-Website --> mail_template : many2one
-Website --|> website_sale_extra_field : one2many
-class "res.currency" as res_currency
-Website --> res_currency : many2one
-Website --|> product_pricelist : one2many
-Website --> mail_template : many2one
-website_checkout_step --> website : many2one
-website_sale_extra_field --> website : many2one
-class "ir.model.fields" as ir_model_fields
-website_sale_extra_field --> ir_model_fields : many2one
-WebsiteTrack --> product_product : many2one
-WebsiteVisitor .. product_product : many2many
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title eCommerce - Generated Coverage
+component "Module Overview" as overview
+component "Models\n34" as models
+component "Views / XML\n56 views\n23 files" as views
+component "Controllers\n57 routes" as controllers
+component "Frontend\n115 files" as frontend
+component "Security / Data\n6 rules\n67 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/website_sale/Models|Models]] (34)
+- Views and XML: [[docs/Community Addons/website_sale/Views|Views]] (23 files)
+- Controllers: [[docs/Community Addons/website_sale/Controllers|Controllers]] (11)
+- Frontend: [[docs/Community Addons/website_sale/Frontend|Frontend]] (115 files)
+
+## Key models
+
+- `account.move`
+- `crm.team`
+- `delivery.carrier`
+- `digest.digest`
+- `ir.http`
+- `payment.token`
+- `product.attribute`
+- `product.document`
+- `product.feed`
+- `product.image`
+- `product.pricelist`
+- `product.pricelist.item`
 
 ## Navigation
 
@@ -143,6 +93,7 @@ WebsiteVisitor .. product_product : many2many
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

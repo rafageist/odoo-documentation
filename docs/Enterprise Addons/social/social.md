@@ -13,16 +13,67 @@ tags: [odoo, enterprise, module]
 
 Manage your social media and website visitors
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 13
+- XML files with UI/data artifacts: 11
 - Views: 23
 - Actions: 8
 - Menus: 15
 - Rules (ir.rule): 12
 - Access CSV entries: 21
+- Controller units: 0
+- Frontend asset files: 24
 
-## Detected Models
+## Module map
 
+```plantuml
+@startuml
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Social Marketing - Generated Coverage
+component "Module Overview" as overview
+component "Models\n13" as models
+component "Views / XML\n23 views\n11 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n24 files" as frontend
+component "Security / Data\n12 rules\n21 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
+@enduml
+```
+
+## Detail notes
+
+- Models: [[docs/Enterprise Addons/social/Models|Models]] (13)
+- Views and XML: [[docs/Enterprise Addons/social/Views|Views]] (11 files)
+- Frontend: [[docs/Enterprise Addons/social/Frontend|Frontend]] (24 files)
+
+## Key models
+
+- `res.config.settings`
 - `social.account`
 - `social.live.post`
 - `social.media`
@@ -32,59 +83,8 @@ Manage your social media and website visitors
 - `social.stream.post`
 - `social.stream.post.image`
 - `social.stream.type`
-- `UtmCampaign`
-- `UtmMedium`
-- `UtmSource`
-
-```plantuml
-@startuml
-!include ../../../templates/DiagramStyles.puml
-title Social Marketing - Models and Relations
-class "social.account" as social_account
-class "social.live.post" as social_live_post
-class "social.media" as social_media
-class "social.post" as social_post
-class "social.post.template" as social_post_template
-class "social.stream" as social_stream
-class "social.stream.post" as social_stream_post
-class "social.stream.post.image" as social_stream_post_image
-class "social.stream.type" as social_stream_type
-class UtmCampaign
-class UtmMedium
-class UtmSource
-social_account --> social_media : many2one
-class "utm.medium" as utm_medium
-social_account --> utm_medium : many2one
-class "res.company" as res_company
-social_account --> res_company : many2one
-social_live_post --> social_post : many2one
-social_live_post --> social_account : many2one
-class "ir.attachment" as ir_attachment
-social_live_post .. ir_attachment : many2many
-social_live_post --> res_company : many2one
-social_media --|> social_account : one2many
-social_media --|> social_stream_type : one2many
-social_post .. social_account : many2many
-social_post --> res_company : many2one
-social_post .. social_media : many2many
-social_post --|> social_live_post : one2many
-class "utm.campaign" as utm_campaign
-social_post --> utm_campaign : many2one
-social_post_template .. ir_attachment : many2many
-social_post_template .. social_account : many2many
-social_stream --> social_media : many2one
-social_stream --> social_account : many2one
-social_stream --> social_stream_type : many2one
-social_stream --|> social_stream_post : one2many
-social_stream --> res_company : many2one
-social_stream_post --> social_stream : many2one
-social_stream_post --> res_company : many2one
-social_stream_post --|> social_stream_post_image : one2many
-social_stream_post_image --> social_stream_post : many2one
-social_stream_type --> social_media : many2one
-UtmCampaign --|> social_post : one2many
-@enduml
-```
+- `utm.campaign`
+- `utm.medium`
 
 ## Navigation
 
@@ -92,6 +92,7 @@ UtmCampaign --|> social_post : one2many
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

@@ -13,73 +13,78 @@ tags: [odoo, community, module]
 
 The payment engine used by payment provider modules.
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 11
+- XML files with UI/data artifacts: 8
 - Views: 20
 - Actions: 5
 - Menus: 0
 - Rules (ir.rule): 5
 - Access CSV entries: 12
+- Controller units: 2
+- Frontend asset files: 6
 
-## Detected Models
+## Module map
 
+```plantuml
+@startuml
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Payment Engine - Generated Coverage
+component "Module Overview" as overview
+component "Models\n11" as models
+component "Views / XML\n20 views\n8 files" as views
+component "Controllers\n7 routes" as controllers
+component "Frontend\n6 files" as frontend
+component "Security / Data\n5 rules\n12 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
+@enduml
+```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/payment/Models|Models]] (11)
+- Views and XML: [[docs/Community Addons/payment/Views|Views]] (8 files)
+- Controllers: [[docs/Community Addons/payment/Controllers|Controllers]] (2)
+- Frontend: [[docs/Community Addons/payment/Frontend|Frontend]] (6 files)
+
+## Key models
+
+- `ir.http`
+- `payment.capture.wizard`
+- `payment.link.wizard`
 - `payment.method`
 - `payment.provider`
 - `payment.token`
 - `payment.transaction`
-- `ResCompany`
-- `ResCountry`
-- `ResPartner`
-
-```plantuml
-@startuml
-!include ../../../templates/DiagramStyles.puml
-title Payment Engine - Models and Relations
-class "payment.method" as payment_method
-class "payment.provider" as payment_provider
-class "payment.token" as payment_token
-class "payment.transaction" as payment_transaction
-class ResCompany
-class ResCountry
-class ResPartner
-payment_method --> payment_method : many2one
-payment_method --|> payment_method : one2many
-payment_method .. payment_provider : many2many
-class "res.country" as res_country
-payment_method .. res_country : many2many
-class "res.currency" as res_currency
-payment_method .. res_currency : many2many
-class "res.company" as res_company
-payment_provider --> res_company : many2one
-payment_provider .. payment_method : many2many
-class "ir.ui.view" as ir_ui_view
-payment_provider --> ir_ui_view : many2one
-payment_provider --> ir_ui_view : many2one
-payment_provider --> ir_ui_view : many2one
-payment_provider --> ir_ui_view : many2one
-payment_provider .. res_country : many2many
-payment_provider .. res_currency : many2many
-class "ir.module.module" as ir_module_module
-payment_provider --> ir_module_module : many2one
-payment_token --> payment_provider : many2one
-payment_token --> payment_method : many2one
-class "res.partner" as res_partner
-payment_token --> res_partner : many2one
-payment_token --|> payment_transaction : one2many
-payment_transaction --> payment_provider : many2one
-payment_transaction --> payment_method : many2one
-payment_transaction --> payment_method : many2one
-payment_transaction --> res_currency : many2one
-payment_transaction --> payment_token : many2one
-payment_transaction --> payment_transaction : many2one
-payment_transaction --|> payment_transaction : one2many
-payment_transaction --> res_partner : many2one
-class "res.country.state" as res_country_state
-payment_transaction --> res_country_state : many2one
-payment_transaction --> res_country : many2one
-ResPartner --|> payment_token : one2many
-@enduml
-```
+- `res.company`
+- `res.config.settings`
+- `res.country`
+- `res.partner`
 
 ## Navigation
 
@@ -87,6 +92,7 @@ ResPartner --|> payment_token : one2many
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

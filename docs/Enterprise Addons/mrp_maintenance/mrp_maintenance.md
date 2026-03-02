@@ -13,48 +13,72 @@ tags: [odoo, enterprise, module]
 
 Schedule and manage maintenance on machine and tools.
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 6
+- XML files with UI/data artifacts: 2
 - Views: 11
 - Actions: 3
 - Menus: 3
 - Rules (ir.rule): 0
 - Access CSV entries: 0
+- Controller units: 0
+- Frontend asset files: 2
 
-## Detected Models
-
-- `MaintenanceStage`
-- `mrp.workcenter`
-- `MaintenanceEquipment`
-- `MaintenanceRequest`
-- `MrpProduction`
-- `MrpWorkorder`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Maintenance - MRP - Models and Relations
-class MaintenanceStage
-class "mrp.workcenter" as mrp_workcenter
-class MaintenanceEquipment
-class MaintenanceRequest
-class MrpProduction
-class MrpWorkorder
-class "maintenance.equipment" as maintenance_equipment
-mrp_workcenter --|> maintenance_equipment : one2many
-class "maintenance.request" as maintenance_request
-mrp_workcenter --|> maintenance_request : one2many
-MaintenanceEquipment --> mrp_workcenter : many2one
-class "mrp.production" as mrp_production
-MaintenanceRequest --> mrp_production : many2one
-class "mrp.workorder" as mrp_workorder
-MaintenanceRequest --> mrp_workorder : many2one
-MaintenanceRequest --> mrp_workcenter : many2one
-class "resource.calendar.leaves" as resource_calendar_leaves
-MaintenanceRequest .. resource_calendar_leaves : many2many
-MrpProduction --|> maintenance_request : one2many
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Maintenance - MRP - Generated Coverage
+component "Module Overview" as overview
+component "Models\n6" as models
+component "Views / XML\n11 views\n2 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n2 files" as frontend
+component "Security / Data\n0 rules\n0 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Enterprise Addons/mrp_maintenance/Models|Models]] (6)
+- Views and XML: [[docs/Enterprise Addons/mrp_maintenance/Views|Views]] (2 files)
+- Frontend: [[docs/Enterprise Addons/mrp_maintenance/Frontend|Frontend]] (2 files)
+
+## Key models
+
+- `maintenance.equipment`
+- `maintenance.request`
+- `maintenance.stage`
+- `mrp.production`
+- `mrp.workcenter`
+- `mrp.workorder`
 
 ## Navigation
 
@@ -62,6 +86,7 @@ MrpProduction --|> maintenance_request : one2many
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

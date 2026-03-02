@@ -13,46 +13,73 @@ tags: [odoo, community, module]
 
 Allow shoppers to enlist products
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 6
+- XML files with UI/data artifacts: 1
 - Views: 0
 - Actions: 0
 - Menus: 0
 - Rules (ir.rule): 2
 - Access CSV entries: 4
+- Controller units: 2
+- Frontend asset files: 11
 
-## Detected Models
-
-- `product.wishlist`
-- `ResPartner`
-- `ProductTemplate`
-- `ProductProduct`
-- `ResUsers`
-- `Website`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Shopper's Wishlist - Models and Relations
-class "product.wishlist" as product_wishlist
-class ResPartner
-class ProductTemplate
-class ProductProduct
-class ResUsers
-class Website
-class "res.partner" as res_partner
-product_wishlist --> res_partner : many2one
-class "product.product" as product_product
-product_wishlist --> product_product : many2one
-class "res.currency" as res_currency
-product_wishlist --> res_currency : many2one
-class "product.pricelist" as product_pricelist
-product_wishlist --> product_pricelist : many2one
-class website
-product_wishlist --> website : many2one
-ResPartner --|> product_wishlist : one2many
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Shopper's Wishlist - Generated Coverage
+component "Module Overview" as overview
+component "Models\n6" as models
+component "Views / XML\n0 views\n1 files" as views
+component "Controllers\n5 routes" as controllers
+component "Frontend\n11 files" as frontend
+component "Security / Data\n2 rules\n4 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/website_sale_wishlist/Models|Models]] (6)
+- Views and XML: [[docs/Community Addons/website_sale_wishlist/Views|Views]] (1 files)
+- Controllers: [[docs/Community Addons/website_sale_wishlist/Controllers|Controllers]] (2)
+- Frontend: [[docs/Community Addons/website_sale_wishlist/Frontend|Frontend]] (11 files)
+
+## Key models
+
+- `product.product`
+- `product.template`
+- `product.wishlist`
+- `res.partner`
+- `res.users`
+- `website`
 
 ## Navigation
 
@@ -60,6 +87,7 @@ ResPartner --|> product_wishlist : one2many
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

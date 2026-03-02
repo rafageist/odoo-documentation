@@ -13,107 +13,79 @@ tags: [odoo, community, module]
 
 Purchase orders, tenders and agreements
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 18
+- XML files with UI/data artifacts: 13
 - Views: 40
 - Actions: 18
 - Menus: 18
 - Rules (ir.rule): 8
 - Access CSV entries: 35
+- Controller units: 1
+- Frontend asset files: 23
 
-## Detected Models
-
-- `AccountMove`
-- `AccountMoveLine`
-- `AccountTax`
-- `AccountAnalyticAccount`
-- `AccountAnalyticApplicability`
-- `IrActionsReport`
-- `ProductTemplate`
-- `ProductProduct`
-- `ProductSupplierinfo`
-- `purchase.bill.line.match`
-- `purchase.order`
-- `purchase.order.line`
-- `ResCompany`
-- `ResPartner`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Purchase - Models and Relations
-class AccountMove
-class AccountMoveLine
-class AccountTax
-class AccountAnalyticAccount
-class AccountAnalyticApplicability
-class IrActionsReport
-class ProductTemplate
-class ProductProduct
-class ProductSupplierinfo
-class "purchase.bill.line.match" as purchase_bill_line_match
-class "purchase.order" as purchase_order
-class "purchase.order.line" as purchase_order_line
-class ResCompany
-class ResPartner
-class "purchase.bill.union" as purchase_bill_union
-AccountMove --> purchase_bill_union : many2one
-AccountMove --> purchase_order : many2one
-AccountMoveLine --> purchase_order_line : many2one
-AccountMoveLine --> purchase_order : many2one
-purchase_bill_line_match --> purchase_order_line : many2one
-class "account.move.line" as account_move_line
-purchase_bill_line_match --> account_move_line : many2one
-class "res.company" as res_company
-purchase_bill_line_match --> res_company : many2one
-class "res.partner" as res_partner
-purchase_bill_line_match --> res_partner : many2one
-class "product.product" as product_product
-purchase_bill_line_match --> product_product : many2one
-class "uom.uom" as uom_uom
-purchase_bill_line_match --> uom_uom : many2one
-purchase_bill_line_match --> purchase_order : many2one
-class "account.move" as account_move
-purchase_bill_line_match --> account_move : many2one
-class "res.currency" as res_currency
-purchase_bill_line_match --> res_currency : many2one
-purchase_bill_line_match --> uom_uom : many2one
-purchase_order --> res_partner : many2one
-purchase_order --> res_partner : many2one
-purchase_order --> res_currency : many2one
-purchase_order --|> purchase_order_line : one2many
-purchase_order .. account_move : many2many
-class "account.fiscal.position" as account_fiscal_position
-purchase_order --> account_fiscal_position : many2one
-class "res.country" as res_country
-purchase_order --> res_country : many2one
-class "account.payment.term" as account_payment_term
-purchase_order --> account_payment_term : many2one
-class "account.incoterms" as account_incoterms
-purchase_order --> account_incoterms : many2one
-purchase_order --> product_product : many2one
-class "res.users" as res_users
-purchase_order --> res_users : many2one
-purchase_order --> res_company : many2one
-purchase_order .. purchase_order : many2many
-class "account.tax" as account_tax
-purchase_order_line .. account_tax : many2many
-purchase_order_line .. uom_uom : many2many
-purchase_order_line --> uom_uom : many2one
-purchase_order_line --> product_product : many2one
-purchase_order_line --> purchase_order : many2one
-purchase_order_line --> res_company : many2one
-purchase_order_line --|> account_move_line : one2many
-purchase_order_line --> res_partner : many2one
-class "product.supplierinfo" as product_supplierinfo
-purchase_order_line --> product_supplierinfo : many2one
-class "product.template.attribute.value" as product_template_attribute_value
-purchase_order_line .. product_template_attribute_value : many2many
-purchase_order_line --> purchase_order_line : many2one
-ResPartner --> res_currency : many2one
-ResPartner --> res_users : many2one
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Purchase - Generated Coverage
+component "Module Overview" as overview
+component "Models\n18" as models
+component "Views / XML\n40 views\n13 files" as views
+component "Controllers\n5 routes" as controllers
+component "Frontend\n23 files" as frontend
+component "Security / Data\n8 rules\n35 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/purchase/Models|Models]] (18)
+- Views and XML: [[docs/Community Addons/purchase/Views|Views]] (13 files)
+- Controllers: [[docs/Community Addons/purchase/Controllers|Controllers]] (1)
+- Frontend: [[docs/Community Addons/purchase/Frontend|Frontend]] (23 files)
+
+## Key models
+
+- `account.analytic.account`
+- `account.analytic.applicability`
+- `account.move`
+- `account.move.line`
+- `account.tax`
+- `bill.to.po.wizard`
+- `ir.actions.report`
+- `product.product`
+- `product.supplierinfo`
+- `product.template`
+- `purchase.bill.line.match`
+- `purchase.bill.union`
 
 ## Navigation
 
@@ -121,6 +93,7 @@ ResPartner --> res_users : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

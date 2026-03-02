@@ -13,15 +13,63 @@ tags: [odoo, community, module]
 
 SMS Tests: performances and tests specific to SMS
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 7
+- XML files with UI/data artifacts: 0
 - Views: 0
 - Actions: 0
 - Menus: 0
 - Rules (ir.rule): 0
 - Access CSV entries: 13
+- Controller units: 0
+- Frontend asset files: 0
 
-## Detected Models
+## Module map
+
+```plantuml
+@startuml
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title SMS Tests - Generated Coverage
+component "Module Overview" as overview
+component "Models\n7" as models
+component "Views / XML\n0 views\n0 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n0 files" as frontend
+component "Security / Data\n0 rules\n13 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
+@enduml
+```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/test_mail_sms/Models|Models]] (7)
+
+## Key models
 
 - `mail.test.sms`
 - `mail.test.sms.bl`
@@ -31,38 +79,13 @@ SMS Tests: performances and tests specific to SMS
 - `mail.test.sms.partner.2many`
 - `sms.test.nothread`
 
-```plantuml
-@startuml
-!include ../../../templates/DiagramStyles.puml
-title SMS Tests - Models and Relations
-class "mail.test.sms" as mail_test_sms
-class "mail.test.sms.bl" as mail_test_sms_bl
-class "mail.test.sms.bl.activity" as mail_test_sms_bl_activity
-class "mail.test.sms.bl.optout" as mail_test_sms_bl_optout
-class "mail.test.sms.partner" as mail_test_sms_partner
-class "mail.test.sms.partner.2many" as mail_test_sms_partner_2many
-class "sms.test.nothread" as sms_test_nothread
-class "res.partner" as res_partner
-mail_test_sms .. res_partner : many2many
-mail_test_sms --> res_partner : many2one
-class "res.country" as res_country
-mail_test_sms --> res_country : many2one
-mail_test_sms_bl --> res_partner : many2one
-mail_test_sms_bl_optout --> res_partner : many2one
-mail_test_sms_partner --> res_partner : many2one
-mail_test_sms_partner_2many .. res_partner : many2many
-class "res.company" as res_company
-sms_test_nothread --> res_company : many2one
-sms_test_nothread --> res_partner : many2one
-@enduml
-```
-
 ## Navigation
 
 - [[../Community Addons/Community Addons|Back to scope]]
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

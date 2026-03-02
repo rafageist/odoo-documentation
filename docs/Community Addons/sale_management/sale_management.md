@@ -13,51 +13,74 @@ tags: [odoo, community, module]
 
 From quotations to invoices
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 7
+- XML files with UI/data artifacts: 6
 - Views: 6
 - Actions: 1
 - Menus: 2
 - Rules (ir.rule): 1
 - Access CSV entries: 5
+- Controller units: 1
+- Frontend asset files: 5
 
-## Detected Models
-
-- `DigestDigest`
-- `ResCompany`
-- `SaleOrder`
-- `SaleOrderLine`
-- `sale.order.template`
-- `sale.order.template.line`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Sales - Models and Relations
-class DigestDigest
-class ResCompany
-class SaleOrder
-class SaleOrderLine
-class "sale.order.template" as sale_order_template
-class "sale.order.template.line" as sale_order_template_line
-ResCompany --> sale_order_template : many2one
-SaleOrder --> sale_order_template : many2one
-class "res.company" as res_company
-sale_order_template --> res_company : many2one
-class "mail.template" as mail_template
-sale_order_template --> mail_template : many2one
-sale_order_template --|> sale_order_template_line : one2many
-class "account.journal" as account_journal
-sale_order_template --> account_journal : many2one
-sale_order_template_line --> sale_order_template : many2one
-class "product.product" as product_product
-sale_order_template_line --> product_product : many2one
-class "uom.uom" as uom_uom
-sale_order_template_line .. uom_uom : many2many
-sale_order_template_line --> uom_uom : many2one
-sale_order_template_line --> sale_order_template_line : many2one
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Sales - Generated Coverage
+component "Module Overview" as overview
+component "Models\n7" as models
+component "Views / XML\n6 views\n6 files" as views
+component "Controllers\n1 routes" as controllers
+component "Frontend\n5 files" as frontend
+component "Security / Data\n1 rules\n5 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/sale_management/Models|Models]] (7)
+- Views and XML: [[docs/Community Addons/sale_management/Views|Views]] (6 files)
+- Controllers: [[docs/Community Addons/sale_management/Controllers|Controllers]] (1)
+- Frontend: [[docs/Community Addons/sale_management/Frontend|Frontend]] (5 files)
+
+## Key models
+
+- `digest.digest`
+- `res.company`
+- `res.config.settings`
+- `sale.order`
+- `sale.order.line`
+- `sale.order.template`
+- `sale.order.template.line`
 
 ## Navigation
 
@@ -65,6 +88,7 @@ sale_order_template_line --> sale_order_template_line : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

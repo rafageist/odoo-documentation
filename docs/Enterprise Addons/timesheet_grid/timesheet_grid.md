@@ -13,42 +13,78 @@ tags: [odoo, enterprise, module]
 
 Track employee time on tasks
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 13
+- XML files with UI/data artifacts: 10
 - Views: 33
 - Actions: 26
 - Menus: 3
 - Rules (ir.rule): 2
 - Access CSV entries: 2
+- Controller units: 0
+- Frontend asset files: 63
 
-## Detected Models
-
-- `account.analytic.line`
-- `HrEmployee`
-- `HrEmployeePublic`
-- `IrModuleModule`
-- `project.project`
-- `project.task`
-- `ResCompany`
-- `ResUsers`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Timesheets - Models and Relations
-class "account.analytic.line" as account_analytic_line
-class HrEmployee
-class HrEmployeePublic
-class IrModuleModule
-class "project.project" as project_project
-class "project.task" as project_task
-class ResCompany
-class ResUsers
-class "res.users" as res_users
-HrEmployee --> res_users : many2one
-HrEmployeePublic --> res_users : many2one
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Timesheets - Generated Coverage
+component "Module Overview" as overview
+component "Models\n13" as models
+component "Views / XML\n33 views\n10 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n63 files" as frontend
+component "Security / Data\n2 rules\n2 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Enterprise Addons/timesheet_grid/Models|Models]] (13)
+- Views and XML: [[docs/Enterprise Addons/timesheet_grid/Views|Views]] (10 files)
+- Frontend: [[docs/Enterprise Addons/timesheet_grid/Frontend|Frontend]] (63 files)
+
+## Key models
+
+- `account.analytic.line`
+- `hr.employee`
+- `hr.employee.public`
+- `hr.timesheet.stop.timer.confirmation.wizard`
+- `hr_timesheet.merge.wizard`
+- `ir.module.module`
+- `project.project`
+- `project.task`
+- `res.company`
+- `res.config.settings`
+- `res.users`
+- `timesheet.grid.mixin`
 
 ## Navigation
 
@@ -56,6 +92,7 @@ HrEmployeePublic --> res_users : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

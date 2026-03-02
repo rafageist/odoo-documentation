@@ -13,41 +13,73 @@ tags: [odoo, community, module]
 
 Website Test, mainly for module install/uninstall tests
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 6
+- XML files with UI/data artifacts: 3
 - Views: 10
 - Actions: 4
 - Menus: 1
 - Rules (ir.rule): 1
 - Access CSV entries: 19
+- Controller units: 1
+- Frontend asset files: 1
 
-## Detected Models
-
-- `Website`
-- `test.model`
-- `test.submodel`
-- `test.tag`
-- `test.model.multi.website`
-- `test.model.exposed`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Website Test - Models and Relations
-class Website
-class "test.model" as test_model
-class "test.submodel" as test_submodel
-class "test.tag" as test_tag
-class "test.model.multi.website" as test_model_multi_website
-class "test.model.exposed" as test_model_exposed
-test_model --|> test_submodel : one2many
-test_model --> test_tag : many2one
-test_submodel --> test_model : many2one
-test_submodel --> test_tag : many2one
-class website
-test_model_multi_website --> website : many2one
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Website Test - Generated Coverage
+component "Module Overview" as overview
+component "Models\n6" as models
+component "Views / XML\n10 views\n3 files" as views
+component "Controllers\n37 routes" as controllers
+component "Frontend\n1 files" as frontend
+component "Security / Data\n1 rules\n19 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/test_website/Models|Models]] (6)
+- Views and XML: [[docs/Community Addons/test_website/Views|Views]] (3 files)
+- Controllers: [[docs/Community Addons/test_website/Controllers|Controllers]] (1)
+- Frontend: [[docs/Community Addons/test_website/Frontend|Frontend]] (1 files)
+
+## Key models
+
+- `test.model`
+- `test.model.exposed`
+- `test.model.multi.website`
+- `test.submodel`
+- `test.tag`
+- `website`
 
 ## Navigation
 
@@ -55,6 +87,7 @@ test_model_multi_website --> website : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

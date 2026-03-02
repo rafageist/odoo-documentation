@@ -9,44 +9,70 @@ tags: [odoo, community, module]
 - Source: odoo/addons/onboarding
 - Dependencies: [[docs/Community Addons/web/web|web]]
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 4
+- XML files with UI/data artifacts: 2
 - Views: 4
 - Actions: 2
 - Menus: 2
 - Rules (ir.rule): 0
 - Access CSV entries: 12
+- Controller units: 0
+- Frontend asset files: 1
 
-## Detected Models
+## Module map
+
+```plantuml
+@startuml
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Onboarding Toolbox - Generated Coverage
+component "Module Overview" as overview
+component "Models\n4" as models
+component "Views / XML\n4 views\n2 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n1 files" as frontend
+component "Security / Data\n0 rules\n12 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
+@enduml
+```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/onboarding/Models|Models]] (4)
+- Views and XML: [[docs/Community Addons/onboarding/Views|Views]] (2 files)
+- Frontend: [[docs/Community Addons/onboarding/Frontend|Frontend]] (1 files)
+
+## Key models
 
 - `onboarding.onboarding`
 - `onboarding.onboarding.step`
 - `onboarding.progress`
 - `onboarding.progress.step`
-
-```plantuml
-@startuml
-!include ../../../templates/DiagramStyles.puml
-title Onboarding Toolbox - Models and Relations
-class "onboarding.onboarding" as onboarding_onboarding
-class "onboarding.onboarding.step" as onboarding_onboarding_step
-class "onboarding.progress" as onboarding_progress
-class "onboarding.progress.step" as onboarding_progress_step
-onboarding_onboarding .. onboarding_onboarding_step : many2many
-onboarding_onboarding --> onboarding_progress : many2one
-onboarding_onboarding --|> onboarding_progress : one2many
-onboarding_onboarding_step .. onboarding_onboarding : many2many
-onboarding_onboarding_step --> onboarding_progress_step : many2one
-onboarding_onboarding_step --|> onboarding_progress_step : one2many
-class "res.company" as res_company
-onboarding_progress --> res_company : many2one
-onboarding_progress --> onboarding_onboarding : many2one
-onboarding_progress .. onboarding_progress_step : many2many
-onboarding_progress_step .. onboarding_progress : many2many
-onboarding_progress_step --> onboarding_onboarding_step : many2one
-onboarding_progress_step --> res_company : many2one
-@enduml
-```
 
 ## Navigation
 
@@ -54,6 +80,7 @@ onboarding_progress_step --> res_company : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

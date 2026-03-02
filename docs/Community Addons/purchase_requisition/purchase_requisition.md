@@ -9,63 +9,76 @@ tags: [odoo, community, module]
 - Source: odoo/addons/purchase_requisition
 - Dependencies: [[docs/Community Addons/purchase/purchase|purchase]]
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 10
+- XML files with UI/data artifacts: 8
 - Views: 12
 - Actions: 4
 - Menus: 1
 - Rules (ir.rule): 2
 - Access CSV entries: 7
+- Controller units: 0
+- Frontend asset files: 4
 
-## Detected Models
-
-- `ProductSupplierinfo`
-- `ProductProduct`
-- `purchase.order.group`
-- `PurchaseOrder`
-- `PurchaseOrderLine`
-- `purchase.requisition`
-- `purchase.requisition.line`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Purchase Agreements - Models and Relations
-class ProductSupplierinfo
-class ProductProduct
-class "purchase.order.group" as purchase_order_group
-class PurchaseOrder
-class PurchaseOrderLine
-class "purchase.requisition" as purchase_requisition
-class "purchase.requisition.line" as purchase_requisition_line
-ProductSupplierinfo --> purchase_requisition : many2one
-ProductSupplierinfo --> purchase_requisition_line : many2one
-class "purchase.order" as purchase_order
-purchase_order_group --|> purchase_order : one2many
-PurchaseOrder --> purchase_requisition : many2one
-PurchaseOrder --> purchase_order_group : many2one
-PurchaseOrder --|> purchase_order : one2many
-class "res.partner" as res_partner
-purchase_requisition --> res_partner : many2one
-class "res.users" as res_users
-purchase_requisition --> res_users : many2one
-class "res.company" as res_company
-purchase_requisition --> res_company : many2one
-purchase_requisition --|> purchase_order : one2many
-purchase_requisition --|> purchase_requisition_line : one2many
-class "product.product" as product_product
-purchase_requisition --> product_product : many2one
-class "res.currency" as res_currency
-purchase_requisition --> res_currency : many2one
-purchase_requisition_line --> product_product : many2one
-class "uom.uom" as uom_uom
-purchase_requisition_line --> uom_uom : many2one
-purchase_requisition_line --> purchase_requisition : many2one
-purchase_requisition_line --> res_company : many2one
-class "product.supplierinfo" as product_supplierinfo
-purchase_requisition_line --|> product_supplierinfo : one2many
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Purchase Agreements - Generated Coverage
+component "Module Overview" as overview
+component "Models\n10" as models
+component "Views / XML\n12 views\n8 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n4 files" as frontend
+component "Security / Data\n2 rules\n7 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/purchase_requisition/Models|Models]] (10)
+- Views and XML: [[docs/Community Addons/purchase_requisition/Views|Views]] (8 files)
+- Frontend: [[docs/Community Addons/purchase_requisition/Frontend|Frontend]] (4 files)
+
+## Key models
+
+- `product.product`
+- `product.supplierinfo`
+- `purchase.order`
+- `purchase.order.group`
+- `purchase.order.line`
+- `purchase.requisition`
+- `purchase.requisition.alternative.warning`
+- `purchase.requisition.create.alternative`
+- `purchase.requisition.line`
+- `res.config.settings`
 
 ## Navigation
 
@@ -73,6 +86,7 @@ purchase_requisition_line --|> product_supplierinfo : one2many
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

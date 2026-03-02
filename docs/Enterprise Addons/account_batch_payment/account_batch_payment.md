@@ -10,45 +10,73 @@ tags: [odoo, enterprise, module]
 - Source: enterprise/account_batch_payment
 - Dependencies: [[docs/Community Addons/account/account|account]]
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 8
+- XML files with UI/data artifacts: 7
 - Views: 12
 - Actions: 4
 - Menus: 2
 - Rules (ir.rule): 1
 - Access CSV entries: 5
+- Controller units: 0
+- Frontend asset files: 0
 
-## Detected Models
-
-- `account.batch.payment`
-- `AccountJournal`
-- `AccountPayment`
-- `AccountPaymentMethod`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Batch Payment - Models and Relations
-class "account.batch.payment" as account_batch_payment
-class AccountJournal
-class AccountPayment
-class AccountPaymentMethod
-class "account.journal" as account_journal
-account_batch_payment --> account_journal : many2one
-class "res.company" as res_company
-account_batch_payment --> res_company : many2one
-class "account.payment" as account_payment
-account_batch_payment --|> account_payment : one2many
-class "res.currency" as res_currency
-account_batch_payment --> res_currency : many2one
-class "account.payment.method" as account_payment_method
-account_batch_payment --> account_payment_method : many2one
-account_batch_payment .. account_payment_method : many2many
-class "res.partner" as res_partner
-account_batch_payment .. res_partner : many2many
-AccountPayment --> account_batch_payment : many2one
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Batch Payment - Generated Coverage
+component "Module Overview" as overview
+component "Models\n8" as models
+component "Views / XML\n12 views\n7 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n0 files" as frontend
+component "Security / Data\n1 rules\n5 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Enterprise Addons/account_batch_payment/Models|Models]] (8)
+- Views and XML: [[docs/Enterprise Addons/account_batch_payment/Views|Views]] (7 files)
+
+## Key models
+
+- `account.batch.error.wizard`
+- `account.batch.error.wizard.line`
+- `account.batch.payment`
+- `account.create.batch.error.wizard`
+- `account.journal`
+- `account.payment`
+- `account.payment.method`
+- `report.account_batch_payment.print_batch_payment`
 
 ## Navigation
 
@@ -56,5 +84,6 @@ AccountPayment --> account_batch_payment : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 

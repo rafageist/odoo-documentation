@@ -14,77 +14,79 @@ tags: [odoo, community, module]
 
 Sponsors, Tracks, Agenda, Event News
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 13
+- XML files with UI/data artifacts: 11
 - Views: 26
 - Actions: 9
 - Menus: 6
 - Rules (ir.rule): 2
 - Access CSV entries: 19
+- Controller units: 2
+- Frontend asset files: 15
 
-## Detected Models
+## Module map
 
-- `EventEvent`
+```plantuml
+@startuml
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Advanced Events - Generated Coverage
+component "Module Overview" as overview
+component "Models\n13" as models
+component "Views / XML\n26 views\n11 files" as views
+component "Controllers\n12 routes" as controllers
+component "Frontend\n15 files" as frontend
+component "Security / Data\n2 rules\n19 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
+@enduml
+```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/website_event_track/Models|Models]] (13)
+- Views and XML: [[docs/Community Addons/website_event_track/Views|Views]] (11 files)
+- Controllers: [[docs/Community Addons/website_event_track/Controllers|Controllers]] (2)
+- Frontend: [[docs/Community Addons/website_event_track/Frontend|Frontend]] (15 files)
+
+## Key models
+
+- `event.event`
 - `event.track`
 - `event.track.location`
 - `event.track.stage`
 - `event.track.tag`
 - `event.track.tag.category`
 - `event.track.visitor`
-- `EventType`
-- `Website`
-- `WebsiteEventMenu`
-- `WebsiteMenu`
-- `WebsiteVisitor`
-
-```plantuml
-@startuml
-!include ../../../templates/DiagramStyles.puml
-title Advanced Events - Models and Relations
-class EventEvent
-class "event.track" as event_track
-class "event.track.location" as event_track_location
-class "event.track.stage" as event_track_stage
-class "event.track.tag" as event_track_tag
-class "event.track.tag.category" as event_track_tag_category
-class "event.track.visitor" as event_track_visitor
-class EventType
-class Website
-class WebsiteEventMenu
-class WebsiteMenu
-class WebsiteVisitor
-EventEvent --|> event_track : one2many
-class "website.event.menu" as website_event_menu
-EventEvent --|> website_event_menu : one2many
-EventEvent --|> website_event_menu : one2many
-EventEvent .. event_track_tag : many2many
-EventEvent .. event_track_tag : many2many
-class "event.event" as event_event
-event_track --> event_event : many2one
-class "res.users" as res_users
-event_track --> res_users : many2one
-class "res.company" as res_company
-event_track --> res_company : many2one
-event_track .. event_track_tag : many2many
-event_track --> event_track_stage : many2one
-class "res.partner" as res_partner
-event_track --> res_partner : many2one
-event_track --> event_track_location : many2one
-event_track --|> event_track_visitor : one2many
-class "website.visitor" as website_visitor
-event_track .. website_visitor : many2many
-class "mail.template" as mail_template
-event_track_stage --> mail_template : many2one
-event_track_tag .. event_track : many2many
-event_track_tag --> event_track_tag_category : many2one
-event_track_tag_category --|> event_track_tag : one2many
-event_track_visitor --> res_partner : many2one
-event_track_visitor --> website_visitor : many2one
-event_track_visitor --> event_track : many2one
-WebsiteVisitor --|> event_track_visitor : one2many
-WebsiteVisitor .. event_track : many2many
-@enduml
-```
+- `event.type`
+- `res.config.settings`
+- `website`
+- `website.event.menu`
+- `website.menu`
 
 ## Navigation
 
@@ -92,4 +94,5 @@ WebsiteVisitor .. event_track : many2many
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 

@@ -13,46 +13,74 @@ tags: [odoo, enterprise, module]
 
 Integrate WhatsApp in marketing campaigns
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 8
+- XML files with UI/data artifacts: 4
 - Views: 3
 - Actions: 1
 - Menus: 0
 - Rules (ir.rule): 0
 - Access CSV entries: 0
+- Controller units: 1
+- Frontend asset files: 0
 
-## Detected Models
-
-- `DiscussChannel`
-- `LinkTrackerClick`
-- `MarketingActivity`
-- `MarketingCampaign`
-- `MarketingTrace`
-- `WhatsappMessage`
-- `WhatsappTemplate`
-- `WhatsappTemplateButton`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title WhatsApp in Marketing Automation - Models and Relations
-class DiscussChannel
-class LinkTrackerClick
-class MarketingActivity
-class MarketingCampaign
-class MarketingTrace
-class WhatsappMessage
-class WhatsappTemplate
-class WhatsappTemplateButton
-class "whatsapp.message" as whatsapp_message
-LinkTrackerClick --> whatsapp_message : many2one
-class "whatsapp.template" as whatsapp_template
-MarketingActivity --> whatsapp_template : many2one
-MarketingTrace --> whatsapp_message : many2one
-class "marketing.trace" as marketing_trace
-WhatsappMessage --|> marketing_trace : one2many
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title WhatsApp in Marketing Automation - Generated Coverage
+component "Module Overview" as overview
+component "Models\n8" as models
+component "Views / XML\n3 views\n4 files" as views
+component "Controllers\n1 routes" as controllers
+component "Frontend\n0 files" as frontend
+component "Security / Data\n0 rules\n0 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Enterprise Addons/marketing_automation_whatsapp/Models|Models]] (8)
+- Views and XML: [[docs/Enterprise Addons/marketing_automation_whatsapp/Views|Views]] (4 files)
+- Controllers: [[docs/Enterprise Addons/marketing_automation_whatsapp/Controllers|Controllers]] (1)
+
+## Key models
+
+- `discuss.channel`
+- `link.tracker.click`
+- `marketing.activity`
+- `marketing.campaign`
+- `marketing.trace`
+- `whatsapp.message`
+- `whatsapp.template`
+- `whatsapp.template.button`
 
 ## Navigation
 
@@ -60,6 +88,7 @@ WhatsappMessage --|> marketing_trace : one2many
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

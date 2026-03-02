@@ -10,61 +10,77 @@ tags: [odoo, enterprise, module]
 - Source: enterprise/l10n_cl_edi
 - Dependencies: [[docs/Community Addons/l10n_cl/l10n_cl|l10n_cl]], [[docs/Community Addons/account_edi/account_edi|account_edi]], [[docs/Community Addons/account_debit_note/account_debit_note|account_debit_note]], [[docs/Community Addons/certificate/certificate|certificate]]
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 15
+- XML files with UI/data artifacts: 15
 - Views: 17
 - Actions: 3
 - Menus: 3
 - Rules (ir.rule): 1
 - Access CSV entries: 7
+- Controller units: 0
+- Frontend asset files: 0
 
-## Detected Models
-
-- `AccountJournal`
-- `account.move`
-- `CertificateCertificate`
-- `FetchmailServer`
-- `l10n_cl.company.activities`
-- `l10n_cl.dte.caf`
-- `l10n_cl.edi.reference`
-- `L10n_LatamDocumentType`
-- `AccountPaymentTerm`
-- `ResCompany`
-- `ResPartner`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Chile - E-invoicing - Models and Relations
-class AccountJournal
-class "account.move" as account_move
-class CertificateCertificate
-class FetchmailServer
-class "l10n_cl.company.activities" as l10n_cl_company_activities
-class "l10n_cl.dte.caf" as l10n_cl_dte_caf
-class "l10n_cl.edi.reference" as l10n_cl_edi_reference
-class L10n_LatamDocumentType
-class AccountPaymentTerm
-class ResCompany
-class ResPartner
-class "ir.attachment" as ir_attachment
-account_move --> ir_attachment : many2one
-account_move --> ir_attachment : many2one
-account_move --|> l10n_cl_edi_reference : one2many
-class "res.users" as res_users
-CertificateCertificate --> res_users : many2one
-class "l10n_latam.document.type" as l10n_latam_document_type
-l10n_cl_dte_caf --> l10n_latam_document_type : many2one
-class "res.company" as res_company
-l10n_cl_dte_caf --> res_company : many2one
-l10n_cl_edi_reference --> l10n_latam_document_type : many2one
-l10n_cl_edi_reference --> account_move : many2one
-L10n_LatamDocumentType --|> l10n_cl_dte_caf : one2many
-ResCompany .. l10n_cl_company_activities : many2many
-class "certificate.certificate" as certificate_certificate
-ResCompany --|> certificate_certificate : one2many
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Chile - E-invoicing - Generated Coverage
+component "Module Overview" as overview
+component "Models\n15" as models
+component "Views / XML\n17 views\n15 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n0 files" as frontend
+component "Security / Data\n1 rules\n7 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Enterprise Addons/l10n_cl_edi/Models|Models]] (15)
+- Views and XML: [[docs/Enterprise Addons/l10n_cl_edi/Views|Views]] (15 files)
+
+## Key models
+
+- `account.debit.note`
+- `account.journal`
+- `account.move`
+- `account.move.reversal`
+- `account.payment.term`
+- `certificate.certificate`
+- `fetchmail.server`
+- `l10n_cl.company.activities`
+- `l10n_cl.dte.caf`
+- `l10n_cl.edi.reference`
+- `l10n_cl.edi.util`
+- `l10n_latam.document.type`
 
 ## Navigation
 
@@ -72,4 +88,5 @@ ResCompany --|> certificate_certificate : one2many
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 

@@ -1,0 +1,37 @@
+<!-- GENERATED:MODEL -->
+---
+tags: [odoo, community, generated, model]
+---
+
+# account.tax
+
+- Module: [[docs/Community Addons/l10n_br/l10n_br|l10n_br]]
+- Scope: Community Addons
+- Defined in module: extension only
+- Source files: `models/account.py`
+- Python classes: `AccountTax`
+
+## Field footprint
+
+- Detected fields: 3
+- Field types: `Boolean` x 1, `Float` x 2
+- Relation fields: 0
+
+## Sample fields
+
+- `amount_mva`: `Float`
+- `base_reduction`: `Float`
+- `tax_discount`: `Boolean`
+
+## Method hints
+
+- Detected methods: 0
+- Action methods: none
+- Compute methods: none
+- Onchange methods: none
+
+## Navigation
+
+- **Parent:** [[docs/Community Addons/l10n_br/Models]]
+
+<!-- GENERATED:MODEL -->

@@ -9,29 +9,69 @@ tags: [odoo, community, module]
 - Source: odoo/addons/l10n_dk
 - Dependencies: [[docs/Community Addons/base_iban/base_iban|base_iban]], [[docs/Community Addons/base_vat/base_vat|base_vat]], [[docs/Community Addons/account/account|account]], [[docs/Community Addons/account_edi_ubl_cii/account_edi_ubl_cii|account_edi_ubl_cii]]
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 4
+- XML files with UI/data artifacts: 3
 - Views: 3
 - Actions: 0
 - Menus: 0
 - Rules (ir.rule): 0
 - Access CSV entries: 0
+- Controller units: 0
+- Frontend asset files: 0
 
-## Detected Models
-
-- `account.account`
-- `AccountJournal`
-- `ResPartner`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Denmark - Accounting - Models and Relations
-class "account.account" as account_account
-class AccountJournal
-class ResPartner
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Denmark - Accounting - Generated Coverage
+component "Module Overview" as overview
+component "Models\n4" as models
+component "Views / XML\n3 views\n3 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n0 files" as frontend
+component "Security / Data\n0 rules\n0 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/l10n_dk/Models|Models]] (4)
+- Views and XML: [[docs/Community Addons/l10n_dk/Views|Views]] (3 files)
+
+## Key models
+
+- `account.account`
+- `account.chart.template`
+- `account.journal`
+- `res.partner`
 
 ## Navigation
 
@@ -39,6 +79,7 @@ class ResPartner
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

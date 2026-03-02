@@ -13,117 +13,78 @@ tags: [odoo, community, module]
 
 Track your recruitment pipeline
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 27
+- XML files with UI/data artifacts: 20
 - Views: 46
 - Actions: 34
 - Menus: 28
 - Rules (ir.rule): 8
 - Access CSV entries: 31
+- Controller units: 0
+- Frontend asset files: 20
 
-## Detected Models
-
-- `CalendarEvent`
-- `DigestDigest`
-- `hr.applicant`
-- `hr.applicant.category`
-- `hr.applicant.refuse.reason`
-- `HrDepartment`
-- `HrEmployee`
-- `hr.job`
-- `hr.job.platform`
-- `hr.recruitment.degree`
-- `hr.recruitment.source`
-- `hr.recruitment.stage`
-- `hr.talent.pool`
-- `IrAttachment`
-- `IrUiMenu`
-- `MailActivityPlan`
-- `ResCompany`
-- `ResPartner`
-- `ResUsers`
-- `UtmCampaign`
-- `UtmSource`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Recruitment - Models and Relations
-class CalendarEvent
-class DigestDigest
-class "hr.applicant" as hr_applicant
-class "hr.applicant.category" as hr_applicant_category
-class "hr.applicant.refuse.reason" as hr_applicant_refuse_reason
-class HrDepartment
-class HrEmployee
-class "hr.job" as hr_job
-class "hr.job.platform" as hr_job_platform
-class "hr.recruitment.degree" as hr_recruitment_degree
-class "hr.recruitment.source" as hr_recruitment_source
-class "hr.recruitment.stage" as hr_recruitment_stage
-class "hr.talent.pool" as hr_talent_pool
-class IrAttachment
-class IrUiMenu
-class MailActivityPlan
-class ResCompany
-class ResPartner
-class ResUsers
-class UtmCampaign
-class UtmSource
-CalendarEvent --> hr_applicant : many2one
-class "res.partner" as res_partner
-hr_applicant --> res_partner : many2one
-hr_applicant --> hr_recruitment_degree : many2one
-class "hr.employee" as hr_employee
-hr_applicant --> hr_employee : many2one
-hr_applicant --> hr_recruitment_stage : many2one
-hr_applicant --> hr_recruitment_stage : many2one
-hr_applicant .. hr_applicant_category : many2many
-class "res.company" as res_company
-hr_applicant --> res_company : many2one
-class "res.users" as res_users
-hr_applicant --> res_users : many2one
-hr_applicant --> hr_job : many2one
-class "hr.department" as hr_department
-hr_applicant --> hr_department : many2one
-class "ir.attachment" as ir_attachment
-hr_applicant --|> ir_attachment : one2many
-hr_applicant --> hr_applicant_refuse_reason : many2one
-class "calendar.event" as calendar_event
-hr_applicant --|> calendar_event : one2many
-hr_applicant .. res_users : many2many
-hr_applicant .. hr_talent_pool : many2many
-hr_applicant --> hr_applicant : many2one
-class "mail.template" as mail_template
-hr_applicant_refuse_reason --> mail_template : many2one
-HrEmployee --|> hr_applicant : one2many
-hr_job --> res_partner : many2one
-hr_job --|> hr_applicant : one2many
-hr_job --> hr_employee : many2one
-hr_job --|> ir_attachment : one2many
-hr_job .. res_users : many2many
-hr_job .. res_users : many2many
-hr_job .. res_users : many2many
-class "res.partner.industry" as res_partner_industry
-hr_job --> res_partner_industry : many2one
-hr_job --> hr_recruitment_degree : many2one
-hr_job --|> hr_recruitment_source : one2many
-hr_recruitment_source --> hr_job : many2one
-class "mail.alias" as mail_alias
-hr_recruitment_source --> mail_alias : many2one
-class "utm.medium" as utm_medium
-hr_recruitment_source --> utm_medium : many2one
-class "utm.campaign" as utm_campaign
-hr_recruitment_source --> utm_campaign : many2one
-hr_recruitment_stage .. hr_job : many2many
-hr_recruitment_stage --> mail_template : many2one
-hr_talent_pool --> res_company : many2one
-hr_talent_pool --> res_users : many2one
-hr_talent_pool .. hr_applicant : many2many
-hr_talent_pool .. hr_applicant_category : many2many
-ResPartner --|> hr_applicant : one2many
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Recruitment - Generated Coverage
+component "Module Overview" as overview
+component "Models\n27" as models
+component "Views / XML\n46 views\n20 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n20 files" as frontend
+component "Security / Data\n8 rules\n31 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/hr_recruitment/Models|Models]] (27)
+- Views and XML: [[docs/Community Addons/hr_recruitment/Views|Views]] (20 files)
+- Frontend: [[docs/Community Addons/hr_recruitment/Frontend|Frontend]] (20 files)
+
+## Key models
+
+- `applicant.get.refuse.reason`
+- `applicant.send.mail`
+- `calendar.event`
+- `digest.digest`
+- `hr.applicant`
+- `hr.applicant.category`
+- `hr.applicant.refuse.reason`
+- `hr.department`
+- `hr.employee`
+- `hr.job`
+- `hr.job.platform`
+- `hr.recruitment.degree`
 
 ## Navigation
 
@@ -131,6 +92,7 @@ ResPartner --|> hr_applicant : one2many
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

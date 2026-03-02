@@ -1,0 +1,67 @@
+<!-- GENERATED:MODEL -->
+---
+tags: [odoo, community, generated, model]
+---
+
+# website.track
+
+- Module: [[docs/Community Addons/website_sale/website_sale|website_sale]]
+- Scope: Community Addons
+- Defined in module: extension only
+- Source files: `models/website_track.py`
+- Python classes: `WebsiteTrack`
+
+## Field footprint
+
+- Detected fields: 1
+- Field types: `Many2one` x 1
+- Relation fields: 1
+
+## Sample fields
+
+- `product_id`: `Many2one` (comodel `product.product`)
+
+## Method hints
+
+- Detected methods: 0
+- Action methods: none
+- Compute methods: none
+- Onchange methods: none
+
+## Direct relation diagram
+
+```plantuml
+@startuml
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title website.track - Direct Relations
+class "website.track" as website_track
+class "product.product" as product_product
+website_track --> product_product : product_id
+@enduml
+```
+
+## Navigation
+
+- **Parent:** [[docs/Community Addons/website_sale/Models]]
+
+<!-- GENERATED:MODEL -->

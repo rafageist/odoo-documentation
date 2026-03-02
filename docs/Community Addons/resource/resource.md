@@ -9,54 +9,73 @@ tags: [odoo, community, module]
 - Source: odoo/addons/resource
 - Dependencies: base (not documented), [[docs/Community Addons/web/web|web]]
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 7
+- XML files with UI/data artifacts: 6
 - Views: 12
 - Actions: 7
 - Menus: 4
 - Rules (ir.rule): 5
 - Access CSV entries: 8
+- Controller units: 0
+- Frontend asset files: 7
 
-## Detected Models
-
-- `resource.calendar`
-- `resource.calendar.attendance`
-- `resource.calendar.leaves`
-- `resource.resource`
-- `ResCompany`
-- `ResUsers`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Resource - Models and Relations
-class "resource.calendar" as resource_calendar
-class "resource.calendar.attendance" as resource_calendar_attendance
-class "resource.calendar.leaves" as resource_calendar_leaves
-class "resource.resource" as resource_resource
-class ResCompany
-class ResUsers
-resource_calendar --|> resource_calendar_attendance : one2many
-resource_calendar --|> resource_calendar_attendance : one2many
-resource_calendar --|> resource_calendar_attendance : one2many
-class "res.company" as res_company
-resource_calendar --> res_company : many2one
-resource_calendar --|> resource_calendar_leaves : one2many
-resource_calendar --|> resource_calendar_leaves : one2many
-resource_calendar_attendance --> resource_calendar : many2one
-resource_calendar_leaves --> res_company : many2one
-resource_calendar_leaves --> resource_calendar : many2one
-resource_calendar_leaves --> resource_resource : many2one
-resource_resource --> res_company : many2one
-class "res.users" as res_users
-resource_resource --> res_users : many2one
-resource_resource --> resource_calendar : many2one
-ResCompany --|> resource_calendar : one2many
-ResCompany --> resource_calendar : many2one
-ResUsers --|> resource_resource : one2many
-ResUsers --> resource_calendar : many2one
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Resource - Generated Coverage
+component "Module Overview" as overview
+component "Models\n7" as models
+component "Views / XML\n12 views\n6 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n7 files" as frontend
+component "Security / Data\n5 rules\n8 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/resource/Models|Models]] (7)
+- Views and XML: [[docs/Community Addons/resource/Views|Views]] (6 files)
+- Frontend: [[docs/Community Addons/resource/Frontend|Frontend]] (7 files)
+
+## Key models
+
+- `res.company`
+- `res.users`
+- `resource.calendar`
+- `resource.calendar.attendance`
+- `resource.calendar.leaves`
+- `resource.mixin`
+- `resource.resource`
 
 ## Navigation
 
@@ -64,6 +83,7 @@ ResUsers --> resource_calendar : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

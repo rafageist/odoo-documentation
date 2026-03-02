@@ -13,69 +13,77 @@ tags: [odoo, community, module]
 
 Manage a forum with FAQ and Q&A
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 10
+- XML files with UI/data artifacts: 9
 - Views: 14
 - Actions: 9
 - Menus: 7
 - Rules (ir.rule): 12
 - Access CSV entries: 15
+- Controller units: 2
+- Frontend asset files: 24
 
-## Detected Models
+## Module map
+
+```plantuml
+@startuml
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Forum - Generated Coverage
+component "Module Overview" as overview
+component "Models\n10" as models
+component "Views / XML\n14 views\n9 files" as views
+component "Controllers\n40 routes" as controllers
+component "Frontend\n24 files" as frontend
+component "Security / Data\n12 rules\n15 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
+@enduml
+```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/website_forum/Models|Models]] (10)
+- Views and XML: [[docs/Community Addons/website_forum/Views|Views]] (9 files)
+- Controllers: [[docs/Community Addons/website_forum/Controllers|Controllers]] (2)
+- Frontend: [[docs/Community Addons/website_forum/Frontend|Frontend]] (24 files)
+
+## Key models
 
 - `forum.forum`
 - `forum.post`
 - `forum.post.reason`
 - `forum.post.vote`
 - `forum.tag`
-- `GamificationChallenge`
-- `GamificationKarmaTracking`
-- `IrAttachment`
-- `ResUsers`
-- `Website`
-
-```plantuml
-@startuml
-!include ../../../templates/DiagramStyles.puml
-title Forum - Models and Relations
-class "forum.forum" as forum_forum
-class "forum.post" as forum_post
-class "forum.post.reason" as forum_post_reason
-class "forum.post.vote" as forum_post_vote
-class "forum.tag" as forum_tag
-class GamificationChallenge
-class GamificationKarmaTracking
-class IrAttachment
-class ResUsers
-class Website
-class "res.groups" as res_groups
-forum_forum --> res_groups : many2one
-forum_forum --|> forum_post : one2many
-forum_forum --> forum_post : many2one
-forum_forum --|> forum_tag : one2many
-forum_forum --|> forum_tag : one2many
-forum_forum --|> forum_tag : one2many
-forum_post --> forum_forum : many2one
-forum_post .. forum_tag : many2many
-class "res.users" as res_users
-forum_post --> res_users : many2one
-forum_post --> res_users : many2one
-forum_post --|> forum_post_vote : one2many
-forum_post .. res_users : many2many
-forum_post --> forum_post : many2one
-forum_post --|> forum_post : one2many
-forum_post --> res_users : many2one
-forum_post --> res_users : many2one
-forum_post --> forum_post_reason : many2one
-forum_post --> res_users : many2one
-forum_post_vote --> forum_post : many2one
-forum_post_vote --> res_users : many2one
-forum_post_vote --> forum_forum : many2one
-forum_post_vote --> res_users : many2one
-forum_tag --> forum_forum : many2one
-forum_tag .. forum_post : many2many
-@enduml
-```
+- `gamification.challenge`
+- `gamification.karma.tracking`
+- `ir.attachment`
+- `res.users`
+- `website`
 
 ## Navigation
 
@@ -83,6 +91,7 @@ forum_tag .. forum_post : many2many
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

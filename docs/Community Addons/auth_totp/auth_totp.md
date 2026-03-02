@@ -9,28 +9,70 @@ tags: [odoo, community, module]
 - Source: odoo/addons/auth_totp
 - Dependencies: [[docs/Community Addons/web/web|web]]
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 4
+- XML files with UI/data artifacts: 4
 - Views: 4
 - Actions: 1
 - Menus: 0
 - Rules (ir.rule): 4
 - Access CSV entries: 3
+- Controller units: 1
+- Frontend asset files: 0
 
-## Detected Models
-
-- `auth_totp.device`
-- `ResUsers`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Two-Factor Authentication (TOTP) - Models and Relations
-class "auth_totp.device" as auth_totp_device
-class ResUsers
-ResUsers --|> auth_totp_device : one2many
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Two-Factor Authentication (TOTP) - Generated Coverage
+component "Module Overview" as overview
+component "Models\n4" as models
+component "Views / XML\n4 views\n4 files" as views
+component "Controllers\n1 routes" as controllers
+component "Frontend\n0 files" as frontend
+component "Security / Data\n4 rules\n3 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/auth_totp/Models|Models]] (4)
+- Views and XML: [[docs/Community Addons/auth_totp/Views|Views]] (4 files)
+- Controllers: [[docs/Community Addons/auth_totp/Controllers|Controllers]] (1)
+
+## Key models
+
+- `auth.totp.rate.limit.log`
+- `auth_totp.device`
+- `auth_totp.wizard`
+- `res.users`
 
 ## Navigation
 
@@ -38,6 +80,7 @@ ResUsers --|> auth_totp_device : one2many
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

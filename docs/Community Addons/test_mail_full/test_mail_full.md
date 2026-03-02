@@ -13,15 +13,65 @@ tags: [odoo, community, module]
 
 Mail Tests: performances and tests specific to mail with all sub-modules
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 6
+- XML files with UI/data artifacts: 1
 - Views: 0
 - Actions: 0
 - Menus: 0
 - Rules (ir.rule): 2
 - Access CSV entries: 12
+- Controller units: 1
+- Frontend asset files: 0
 
-## Detected Models
+## Module map
+
+```plantuml
+@startuml
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Mail Tests (Full) - Generated Coverage
+component "Module Overview" as overview
+component "Models\n6" as models
+component "Views / XML\n0 views\n1 files" as views
+component "Controllers\n4 routes" as controllers
+component "Frontend\n0 files" as frontend
+component "Security / Data\n2 rules\n12 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
+@enduml
+```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/test_mail_full/Models|Models]] (6)
+- Views and XML: [[docs/Community Addons/test_mail_full/Views|Views]] (1 files)
+- Controllers: [[docs/Community Addons/test_mail_full/Controllers|Controllers]] (1)
+
+## Key models
 
 - `mail.test.portal`
 - `mail.test.portal.no.partner`
@@ -30,35 +80,13 @@ Mail Tests: performances and tests specific to mail with all sub-modules
 - `mail.test.rating.thread`
 - `mail.test.rating.thread.read`
 
-```plantuml
-@startuml
-!include ../../../templates/DiagramStyles.puml
-title Mail Tests (Full) - Models and Relations
-class "mail.test.portal" as mail_test_portal
-class "mail.test.portal.no.partner" as mail_test_portal_no_partner
-class "mail.test.portal.public.access.action" as mail_test_portal_public_access_action
-class "mail.test.rating" as mail_test_rating
-class "mail.test.rating.thread" as mail_test_rating_thread
-class "mail.test.rating.thread.read" as mail_test_rating_thread_read
-class "res.partner" as res_partner
-mail_test_portal --> res_partner : many2one
-class "res.users" as res_users
-mail_test_portal --> res_users : many2one
-class "res.company" as res_company
-mail_test_rating --> res_company : many2one
-mail_test_rating --> res_partner : many2one
-mail_test_rating --> res_users : many2one
-mail_test_rating_thread --> res_partner : many2one
-mail_test_rating_thread --> res_users : many2one
-@enduml
-```
-
 ## Navigation
 
 - [[../Community Addons/Community Addons|Back to scope]]
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

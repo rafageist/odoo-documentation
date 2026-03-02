@@ -13,112 +13,79 @@ tags: [odoo, community, module]
 
 Manage and publish an eLearning platform
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 20
+- XML files with UI/data artifacts: 17
 - Views: 50
 - Actions: 29
 - Menus: 15
 - Rules (ir.rule): 21
 - Access CSV entries: 41
+- Controller units: 2
+- Frontend asset files: 74
 
-## Detected Models
-
-- `GamificationChallenge`
-- `GamificationKarmaTracking`
-- `MailActivity`
-- `ResGroups`
-- `ResPartner`
-- `ResUsers`
-- `slide.channel`
-- `slide.channel.partner`
-- `slide.channel.tag.group`
-- `slide.channel.tag`
-- `slide.embed`
-- `slide.question`
-- `slide.answer`
-- `slide.slide`
-- `slide.slide.partner`
-- `slide.slide.resource`
-- `slide.tag`
-- `Website`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title eLearning - Models and Relations
-class GamificationChallenge
-class GamificationKarmaTracking
-class MailActivity
-class ResGroups
-class ResPartner
-class ResUsers
-class "slide.channel" as slide_channel
-class "slide.channel.partner" as slide_channel_partner
-class "slide.channel.tag.group" as slide_channel_tag_group
-class "slide.channel.tag" as slide_channel_tag
-class "slide.embed" as slide_embed
-class "slide.question" as slide_question
-class "slide.answer" as slide_answer
-class "slide.slide" as slide_slide
-class "slide.slide.partner" as slide_slide_partner
-class "slide.slide.resource" as slide_slide_resource
-class "slide.tag" as slide_tag
-class Website
-class "res.partner" as res_partner
-MailActivity --> res_partner : many2one
-ResPartner .. slide_channel : many2many
-ResPartner --|> slide_channel : one2many
-class "res.users" as res_users
-slide_channel --> res_users : many2one
-slide_channel .. slide_channel_tag : many2many
-slide_channel --|> slide_slide : one2many
-slide_channel --|> slide_slide : one2many
-slide_channel --|> slide_slide : one2many
-slide_channel --|> slide_slide_partner : one2many
-slide_channel --> slide_slide : many2one
-class "mail.template" as mail_template
-slide_channel --> mail_template : many2one
-slide_channel --> mail_template : many2one
-slide_channel --> mail_template : many2one
-slide_channel --> mail_template : many2one
-class "res.groups" as res_groups
-slide_channel .. res_groups : many2many
-slide_channel .. res_groups : many2many
-slide_channel --|> slide_channel_partner : one2many
-slide_channel --|> slide_channel_partner : one2many
-slide_channel .. res_partner : many2many
-slide_channel .. slide_channel : many2many
-slide_channel .. slide_channel : many2many
-slide_channel_partner --> slide_channel : many2one
-slide_channel_partner --> res_partner : many2one
-slide_channel_partner --> res_users : many2one
-class website
-slide_channel_partner --> website : many2one
-slide_channel_partner --> slide_slide : many2one
-slide_channel_tag_group --|> slide_channel_tag : one2many
-slide_channel_tag --> slide_channel_tag_group : many2one
-slide_channel_tag .. slide_channel : many2many
-slide_embed --> slide_slide : many2one
-slide_question --> slide_slide : many2one
-slide_question --|> slide_answer : one2many
-slide_answer --> slide_question : many2one
-slide_slide --> res_users : many2one
-slide_slide --> slide_channel : many2one
-slide_slide .. slide_tag : many2many
-slide_slide --> slide_slide : many2one
-slide_slide --|> slide_slide : one2many
-slide_slide .. res_partner : many2many
-slide_slide --|> slide_slide_partner : one2many
-slide_slide --> slide_slide_partner : many2one
-slide_slide --|> slide_question : one2many
-slide_slide --|> slide_slide_resource : one2many
-slide_slide --|> slide_embed : one2many
-slide_slide_partner --> slide_slide : many2one
-slide_slide_partner --> slide_channel : many2one
-slide_slide_partner --> res_partner : many2one
-slide_slide_resource --> slide_slide : many2one
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title eLearning - Generated Coverage
+component "Module Overview" as overview
+component "Models\n20" as models
+component "Views / XML\n50 views\n17 files" as views
+component "Controllers\n39 routes" as controllers
+component "Frontend\n74 files" as frontend
+component "Security / Data\n21 rules\n41 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/website_slides/Models|Models]] (20)
+- Views and XML: [[docs/Community Addons/website_slides/Views|Views]] (17 files)
+- Controllers: [[docs/Community Addons/website_slides/Controllers|Controllers]] (2)
+- Frontend: [[docs/Community Addons/website_slides/Frontend|Frontend]] (74 files)
+
+## Key models
+
+- `gamification.challenge`
+- `gamification.karma.tracking`
+- `mail.activity`
+- `res.config.settings`
+- `res.groups`
+- `res.partner`
+- `res.users`
+- `slide.answer`
+- `slide.channel`
+- `slide.channel.invite`
+- `slide.channel.partner`
+- `slide.channel.tag`
 
 ## Navigation
 
@@ -126,6 +93,7 @@ slide_slide_resource --> slide_slide : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

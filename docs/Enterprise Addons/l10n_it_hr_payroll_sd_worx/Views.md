@@ -1,0 +1,23 @@
+<!-- GENERATED:VIEWS -->
+---
+tags: [odoo, enterprise, generated, index]
+---
+
+# l10n_it_hr_payroll_sd_worx Views
+
+- Module: [[docs/Enterprise Addons/l10n_it_hr_payroll_sd_worx/l10n_it_hr_payroll_sd_worx|l10n_it_hr_payroll_sd_worx]]
+- Scope: Enterprise Addons
+- Generated items: 4
+
+## Items
+
+- [[docs/Enterprise Addons/l10n_it_hr_payroll_sd_worx/Views/views_hr_employee_views.xml|views/hr_employee_views.xml]]
+- [[docs/Enterprise Addons/l10n_it_hr_payroll_sd_worx/Views/views_hr_payroll_export_sdworx_view.xml|views/hr_payroll_export_sdworx_view.xml]]
+- [[docs/Enterprise Addons/l10n_it_hr_payroll_sd_worx/Views/views_hr_work_entry_type_views.xml|views/hr_work_entry_type_views.xml]]
+- [[docs/Enterprise Addons/l10n_it_hr_payroll_sd_worx/Views/views_res_config_settings_views.xml|views/res_config_settings_views.xml]]
+
+## Navigation
+
+- **Parent:** [[docs/Enterprise Addons/l10n_it_hr_payroll_sd_worx/l10n_it_hr_payroll_sd_worx]]
+
+<!-- GENERATED:VIEWS -->

@@ -13,67 +13,79 @@ tags: [odoo, community, module]
 
 Manage skills, knowledge and resume of your employees
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 14
+- XML files with UI/data artifacts: 11
 - Views: 36
 - Actions: 11
 - Menus: 9
 - Rules (ir.rule): 11
 - Access CSV entries: 20
+- Controller units: 1
+- Frontend asset files: 19
 
-## Detected Models
+## Module map
 
-- `HrEmployee`
-- `HrEmployeePublic`
+```plantuml
+@startuml
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Skills Management - Generated Coverage
+component "Module Overview" as overview
+component "Models\n14" as models
+component "Views / XML\n36 views\n11 files" as views
+component "Controllers\n1 routes" as controllers
+component "Frontend\n19 files" as frontend
+component "Security / Data\n11 rules\n20 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
+@enduml
+```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/hr_skills/Models|Models]] (14)
+- Views and XML: [[docs/Community Addons/hr_skills/Views|Views]] (11 files)
+- Controllers: [[docs/Community Addons/hr_skills/Controllers|Controllers]] (1)
+- Frontend: [[docs/Community Addons/hr_skills/Frontend|Frontend]] (19 files)
+
+## Key models
+
+- `hr.employee`
+- `hr.employee.cv.wizard`
+- `hr.employee.public`
 - `hr.employee.skill`
-- `HrJob`
+- `hr.individual.skill.mixin`
+- `hr.job`
 - `hr.job.skill`
 - `hr.resume.line`
 - `hr.resume.line.type`
 - `hr.skill`
 - `hr.skill.level`
 - `hr.skill.type`
-- `ResourceResource`
-
-```plantuml
-@startuml
-!include ../../../templates/DiagramStyles.puml
-title Skills Management - Models and Relations
-class HrEmployee
-class HrEmployeePublic
-class "hr.employee.skill" as hr_employee_skill
-class HrJob
-class "hr.job.skill" as hr_job_skill
-class "hr.resume.line" as hr_resume_line
-class "hr.resume.line.type" as hr_resume_line_type
-class "hr.skill" as hr_skill
-class "hr.skill.level" as hr_skill_level
-class "hr.skill.type" as hr_skill_type
-class ResourceResource
-HrEmployee --|> hr_resume_line : one2many
-HrEmployee --|> hr_employee_skill : one2many
-HrEmployee --|> hr_employee_skill : one2many
-HrEmployee .. hr_skill : many2many
-HrEmployee --|> hr_employee_skill : one2many
-HrEmployeePublic --|> hr_resume_line : one2many
-HrEmployeePublic --|> hr_employee_skill : one2many
-HrEmployeePublic --|> hr_employee_skill : one2many
-HrEmployeePublic --|> hr_employee_skill : one2many
-class "hr.employee" as hr_employee
-hr_employee_skill --> hr_employee : many2one
-HrJob --|> hr_job_skill : one2many
-HrJob --|> hr_job_skill : one2many
-HrJob .. hr_skill : many2many
-class "hr.job" as hr_job
-hr_job_skill --> hr_job : many2one
-hr_resume_line --> hr_employee : many2one
-hr_resume_line --> hr_resume_line_type : many2one
-hr_skill --> hr_skill_type : many2one
-hr_skill_level --> hr_skill_type : many2one
-hr_skill_type --|> hr_skill : one2many
-hr_skill_type --|> hr_skill_level : one2many
-@enduml
-```
 
 ## Navigation
 
@@ -81,6 +93,7 @@ hr_skill_type --|> hr_skill_level : one2many
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

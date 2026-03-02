@@ -13,57 +13,79 @@ tags: [odoo, enterprise, module]
 
 Implements the registered cash system, adhering to guidelines by FPS Finance.
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 15
+- XML files with UI/data artifacts: 7
 - Views: 15
 - Actions: 2
 - Menus: 1
 - Rules (ir.rule): 0
 - Access CSV entries: 2
+- Controller units: 3
+- Frontend asset files: 34
 
-## Detected Models
-
-- `AccountTax`
-- `HrEmployee`
-- `IrModuleModule`
-- `pos_blackbox_be.log`
-- `pos.blackbox.log.ip`
-- `PosCategory`
-- `PosConfig`
-- `PosOrder`
-- `PosOrderLine`
-- `PosSession`
-- `ProductTemplate`
-- `ResUsers`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Belgian Registered Cash Register - Models and Relations
-class AccountTax
-class HrEmployee
-class IrModuleModule
-class "pos_blackbox_be.log" as pos_blackbox_be_log
-class "pos.blackbox.log.ip" as pos_blackbox_log_ip
-class PosCategory
-class PosConfig
-class PosOrder
-class PosOrderLine
-class PosSession
-class ProductTemplate
-class ResUsers
-class "pos.session" as pos_session
-HrEmployee .. pos_session : many2many
-class "res.users" as res_users
-pos_blackbox_be_log --> res_users : many2one
-class "iot.device" as iot_device
-PosConfig --> iot_device : many2one
-PosSession .. res_users : many2many
-class "hr.employee" as hr_employee
-PosSession .. hr_employee : many2many
-ResUsers .. pos_session : many2many
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Belgian Registered Cash Register - Generated Coverage
+component "Module Overview" as overview
+component "Models\n15" as models
+component "Views / XML\n15 views\n7 files" as views
+component "Controllers\n7 routes" as controllers
+component "Frontend\n34 files" as frontend
+component "Security / Data\n0 rules\n2 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Enterprise Addons/pos_blackbox_be/Models|Models]] (15)
+- Views and XML: [[docs/Enterprise Addons/pos_blackbox_be/Views|Views]] (7 files)
+- Controllers: [[docs/Enterprise Addons/pos_blackbox_be/Controllers|Controllers]] (3)
+- Frontend: [[docs/Enterprise Addons/pos_blackbox_be/Frontend|Frontend]] (34 files)
+
+## Key models
+
+- `account.tax`
+- `hr.employee`
+- `ir.module.module`
+- `pos.blackbox.log.ip`
+- `pos.category`
+- `pos.config`
+- `pos.make.payment`
+- `pos.order`
+- `pos.order.line`
+- `pos.session`
+- `pos_blackbox_be.log`
+- `product.template`
 
 ## Navigation
 
@@ -71,6 +93,7 @@ ResUsers .. pos_session : many2many
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

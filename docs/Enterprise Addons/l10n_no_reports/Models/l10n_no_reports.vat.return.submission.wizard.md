@@ -1,0 +1,33 @@
+<!-- GENERATED:MODEL -->
+---
+tags: [odoo, enterprise, generated, model]
+---
+
+# l10n_no_reports.vat.return.submission.wizard
+
+- Module: [[docs/Enterprise Addons/l10n_no_reports/l10n_no_reports|l10n_no_reports]]
+- Scope: Enterprise Addons
+- Defined in module: yes
+- Source files: `wizard/vat_report_export.py`
+- Python classes: `L10n_No_ReportsPeriodicVatXmlExport`
+- Description: Norwegian Periodic VAT Report Export Wizard
+- Inherits: `account.return.submission.wizard`
+
+## Field footprint
+
+- Detected fields: 0
+- Field types: none
+- Relation fields: 0
+
+## Method hints
+
+- Detected methods: 1
+- Action methods: none
+- Compute methods: none
+- Onchange methods: none
+
+## Navigation
+
+- **Parent:** [[docs/Enterprise Addons/l10n_no_reports/Models]]
+
+<!-- GENERATED:MODEL -->

@@ -1,0 +1,25 @@
+<!-- GENERATED:CONTROLLER -->
+---
+tags: [odoo, community, generated, controller]
+---
+
+# CSVExport
+
+- Module: [[docs/Community Addons/web/web|web]]
+- Scope: Community Addons
+- Source file: `controllers/export.py`
+- Base classes: `ExportFormat`, `http.Controller`
+- Routes: 1
+
+## Routes
+
+### `web_export_csv`
+- Paths: `/web/export/csv`
+- Type: `http`
+- Auth: `user`
+
+## Navigation
+
+- **Parent:** [[docs/Community Addons/web/Controllers]]
+
+<!-- GENERATED:CONTROLLER -->

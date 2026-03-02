@@ -9,123 +9,79 @@ tags: [odoo, enterprise, module]
 - Source: enterprise/l10n_be_hr_payroll
 - Dependencies: [[docs/Community Addons/certificate/certificate|certificate]], [[docs/Enterprise Addons/hr_payroll/hr_payroll|hr_payroll]], [[docs/Community Addons/hr_work_entry_holidays/hr_work_entry_holidays|hr_work_entry_holidays]], [[docs/Enterprise Addons/hr_payroll_holidays/hr_payroll_holidays|hr_payroll_holidays]]
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 54
+- XML files with UI/data artifacts: 35
 - Views: 48
 - Actions: 43
 - Menus: 19
 - Rules (ir.rule): 9
 - Access CSV entries: 32
+- Controller units: 4
+- Frontend asset files: 5
 
-## Detected Models
-
-- `CertificateCertificate`
-- `HrDepartureReason`
-- `l10n_be.dmfa`
-- `l10n_be.dmfa.location.unit`
-- `HrEmployee`
-- `HrJob`
-- `HrLeave`
-- `HrLeaveAllocation`
-- `HrLeaveType`
-- `HrPayrollStructureType`
-- `HrPayslip`
-- `HrPayslipRun`
-- `HrPayslipWorkedDays`
-- `HrVersion`
-- `HrWorkEntry`
-- `HrWorkEntryType`
-- `IrUiMenu`
-- `l10n_be.273s`
-- `l10n_be.274_xx`
-- `l10n_be.274_xx.line`
-- `l10n_be.281_10`
-- `l10n_be.281_45`
-- `l10n.be.double.pay.recovery.line`
-- `l10n_be.individual.account`
-- `l10n.be.onss.declaration`
-- `l10n.be.onss.file`
-- `l10n_be.schedule.change.allocation`
-- `ResourceCalendar`
-- `ResCompany`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Belgium - Payroll - Models and Relations
-class CertificateCertificate
-class HrDepartureReason
-class "l10n_be.dmfa" as l10n_be_dmfa
-class "l10n_be.dmfa.location.unit" as l10n_be_dmfa_location_unit
-class HrEmployee
-class HrJob
-class HrLeave
-class HrLeaveAllocation
-class HrLeaveType
-class HrPayrollStructureType
-class HrPayslip
-class HrPayslipRun
-class HrPayslipWorkedDays
-class HrVersion
-class HrWorkEntry
-class HrWorkEntryType
-class IrUiMenu
-class "l10n_be.273s" as l10n_be_273s
-class "l10n_be.274_xx" as l10n_be_274_xx
-class "l10n_be.274_xx.line" as l10n_be_274_xx_line
-class "l10n_be.281_10" as l10n_be_281_10
-class "l10n_be.281_45" as l10n_be_281_45
-class "l10n.be.double.pay.recovery.line" as l10n_be_double_pay_recovery_line
-class "l10n_be.individual.account" as l10n_be_individual_account
-class "l10n.be.onss.declaration" as l10n_be_onss_declaration
-class "l10n.be.onss.file" as l10n_be_onss_file
-class "l10n_be.schedule.change.allocation" as l10n_be_schedule_change_allocation
-class ResourceCalendar
-class ResCompany
-class "res.company" as res_company
-l10n_be_dmfa --> res_company : many2one
-l10n_be_dmfa --|> l10n_be_onss_declaration : one2many
-l10n_be_dmfa_location_unit --> res_company : many2one
-class "res.partner" as res_partner
-l10n_be_dmfa_location_unit --> res_partner : many2one
-HrEmployee .. l10n_be_double_pay_recovery_line : many2many
-HrEmployee .. l10n_be_double_pay_recovery_line : many2many
-HrEmployee --|> l10n_be_double_pay_recovery_line : one2many
-l10n_be_273s --> res_company : many2one
-class "res.currency" as res_currency
-l10n_be_273s --> res_currency : many2one
-l10n_be_274_xx --|> l10n_be_274_xx_line : one2many
-l10n_be_274_xx --> res_company : many2one
-l10n_be_274_xx --> res_currency : many2one
-l10n_be_274_xx_line --> l10n_be_274_xx : many2one
-class "hr.employee" as hr_employee
-l10n_be_274_xx_line --> hr_employee : many2one
-l10n_be_274_xx_line --> res_company : many2one
-l10n_be_274_xx_line --> res_currency : many2one
-l10n_be_double_pay_recovery_line --> hr_employee : many2one
-l10n_be_double_pay_recovery_line --> res_company : many2one
-l10n_be_onss_declaration --> l10n_be_dmfa : many2one
-l10n_be_onss_declaration --> res_company : many2one
-l10n_be_onss_declaration --|> l10n_be_onss_file : one2many
-l10n_be_onss_file --> l10n_be_onss_declaration : many2one
-l10n_be_onss_file --> hr_employee : many2one
-l10n_be_onss_file --> res_company : many2one
-class "hr.version" as hr_version
-l10n_be_schedule_change_allocation --> hr_version : many2one
-class "hr.leave.allocation" as hr_leave_allocation
-l10n_be_schedule_change_allocation --> hr_leave_allocation : many2one
-class "resource.calendar" as resource_calendar
-l10n_be_schedule_change_allocation --> resource_calendar : many2one
-l10n_be_schedule_change_allocation --> resource_calendar : many2one
-ResCompany --|> l10n_be_dmfa_location_unit : one2many
-class "certificate.certificate" as certificate_certificate
-ResCompany --> certificate_certificate : many2one
-class "certificate.key" as certificate_key
-ResCompany --> certificate_key : many2one
-class "hr.leave.type" as hr_leave_type
-ResCompany --> hr_leave_type : many2one
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Belgium - Payroll - Generated Coverage
+component "Module Overview" as overview
+component "Models\n54" as models
+component "Views / XML\n48 views\n35 files" as views
+component "Controllers\n4 routes" as controllers
+component "Frontend\n5 files" as frontend
+component "Security / Data\n9 rules\n32 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Enterprise Addons/l10n_be_hr_payroll/Models|Models]] (54)
+- Views and XML: [[docs/Enterprise Addons/l10n_be_hr_payroll/Views|Views]] (35 files)
+- Controllers: [[docs/Enterprise Addons/l10n_be_hr_payroll/Controllers|Controllers]] (4)
+- Frontend: [[docs/Enterprise Addons/l10n_be_hr_payroll/Frontend|Frontend]] (5 files)
+
+## Key models
+
+- `certificate.certificate`
+- `hr.departure.reason`
+- `hr.employee`
+- `hr.job`
+- `hr.leave`
+- `hr.leave.allocation`
+- `hr.leave.type`
+- `hr.payroll.alloc.employee`
+- `hr.payroll.alloc.paid.leave`
+- `hr.payroll.structure.type`
+- `hr.payslip`
+- `hr.payslip.employee.depature.holiday.attests`
 
 ## Navigation
 
@@ -133,6 +89,7 @@ ResCompany --> hr_leave_type : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

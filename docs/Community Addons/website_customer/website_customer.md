@@ -13,32 +13,70 @@ tags: [odoo, community, module]
 
 Publish your customer references
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 3
+- XML files with UI/data artifacts: 2
 - Views: 4
 - Actions: 1
 - Menus: 1
 - Rules (ir.rule): 1
 - Access CSV entries: 6
+- Controller units: 1
+- Frontend asset files: 3
 
-## Detected Models
-
-- `ResPartner`
-- `res.partner.tag`
-- `Website`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Customer References - Models and Relations
-class ResPartner
-class "res.partner.tag" as res_partner_tag
-class Website
-ResPartner .. res_partner_tag : many2many
-class "res.partner" as res_partner
-res_partner_tag .. res_partner : many2many
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Customer References - Generated Coverage
+component "Module Overview" as overview
+component "Models\n3" as models
+component "Views / XML\n4 views\n2 files" as views
+component "Controllers\n2 routes" as controllers
+component "Frontend\n3 files" as frontend
+component "Security / Data\n1 rules\n6 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/website_customer/Models|Models]] (3)
+- Views and XML: [[docs/Community Addons/website_customer/Views|Views]] (2 files)
+- Controllers: [[docs/Community Addons/website_customer/Controllers|Controllers]] (1)
+- Frontend: [[docs/Community Addons/website_customer/Frontend|Frontend]] (3 files)
+
+## Key models
+
+- `res.partner`
+- `res.partner.tag`
+- `website`
 
 ## Navigation
 
@@ -46,6 +84,7 @@ res_partner_tag .. res_partner : many2many
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

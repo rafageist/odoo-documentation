@@ -9,39 +9,69 @@ tags: [odoo, enterprise, module]
 - Source: enterprise/test_ai_fields
 - Dependencies: [[docs/Enterprise Addons/ai_fields/ai_fields|ai_fields]]
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 5
+- XML files with UI/data artifacts: 0
 - Views: 0
 - Actions: 0
 - Menus: 0
 - Rules (ir.rule): 0
 - Access CSV entries: 5
+- Controller units: 0
+- Frontend asset files: 0
 
-## Detected Models
-
-- `test.ai.fields.parent`
-- `test.ai.fields.model`
-- `test.ai.fields.definition`
-- `test.ai.fields.no.ai`
-- `test.ai.read.model`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Test AI Field - Models and Relations
-class "test.ai.fields.parent" as test_ai_fields_parent
-class "test.ai.fields.model" as test_ai_fields_model
-class "test.ai.fields.definition" as test_ai_fields_definition
-class "test.ai.fields.no.ai" as test_ai_fields_no_ai
-class "test.ai.read.model" as test_ai_read_model
-test_ai_fields_model --> test_ai_fields_parent : many2one
-class "res.partner" as res_partner
-test_ai_fields_model --> res_partner : many2one
-test_ai_fields_model .. res_partner : many2many
-class "res.currency" as res_currency
-test_ai_read_model --> res_currency : many2one
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Test AI Field - Generated Coverage
+component "Module Overview" as overview
+component "Models\n5" as models
+component "Views / XML\n0 views\n0 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n0 files" as frontend
+component "Security / Data\n0 rules\n5 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Enterprise Addons/test_ai_fields/Models|Models]] (5)
+
+## Key models
+
+- `test.ai.fields.definition`
+- `test.ai.fields.model`
+- `test.ai.fields.no.ai`
+- `test.ai.fields.parent`
+- `test.ai.read.model`
 
 ## Navigation
 
@@ -49,6 +79,7 @@ test_ai_read_model --> res_currency : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

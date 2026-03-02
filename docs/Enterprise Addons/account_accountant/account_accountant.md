@@ -13,69 +13,78 @@ tags: [odoo, enterprise, module]
 
 Invoices, Payments, Follow-ups & Bank synchronization (Enterprise)
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 20
+- XML files with UI/data artifacts: 14
 - Views: 33
 - Actions: 14
 - Menus: 5
 - Rules (ir.rule): 0
 - Access CSV entries: 8
+- Controller units: 0
+- Frontend asset files: 46
 
-## Detected Models
-
-- `AccountAccount`
-- `account.bank.statement`
-- `account.bank.statement.line`
-- `account.fiscal.year`
-- `AccountJournal`
-- `AccountMove`
-- `AccountMoveLine`
-- `AccountPayment`
-- `AccountReconcileModel`
-- `AccountReconcileModelLine`
-- `AccountTax`
-- `DigestDigest`
-- `IrUiMenu`
-- `ResCompany`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Invoicing - Models and Relations
-class AccountAccount
-class "account.bank.statement" as account_bank_statement
-class "account.bank.statement.line" as account_bank_statement_line
-class "account.fiscal.year" as account_fiscal_year
-class AccountJournal
-class AccountMove
-class AccountMoveLine
-class AccountPayment
-class AccountReconcileModel
-class AccountReconcileModelLine
-class AccountTax
-class DigestDigest
-class IrUiMenu
-class ResCompany
-class "ir.attachment" as ir_attachment
-account_bank_statement_line --|> ir_attachment : one2many
-account_bank_statement_line --|> ir_attachment : one2many
-class "res.company" as res_company
-account_fiscal_year --> res_company : many2one
-class "account.move" as account_move
-AccountMove .. account_move : many2many
-AccountMove .. account_move : many2many
-class "res.users" as res_users
-AccountMove --> res_users : many2one
-AccountMoveLine --|> ir_attachment : one2many
-ResCompany --> res_users : many2one
-class "account.journal" as account_journal
-ResCompany --> account_journal : many2one
-class "account.account" as account_account
-ResCompany --> account_account : many2one
-ResCompany --> account_journal : many2one
-ResCompany --> account_account : many2one
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Invoicing - Generated Coverage
+component "Module Overview" as overview
+component "Models\n20" as models
+component "Views / XML\n33 views\n14 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n46 files" as frontend
+component "Security / Data\n0 rules\n8 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Enterprise Addons/account_accountant/Models|Models]] (20)
+- Views and XML: [[docs/Enterprise Addons/account_accountant/Views|Views]] (14 files)
+- Frontend: [[docs/Enterprise Addons/account_accountant/Frontend|Frontend]] (46 files)
+
+## Key models
+
+- `account.account`
+- `account.auto.reconcile.wizard`
+- `account.bank.statement`
+- `account.bank.statement.line`
+- `account.change.lock.date`
+- `account.chart.template`
+- `account.fiscal.year`
+- `account.journal`
+- `account.move`
+- `account.move.line`
+- `account.payment`
+- `account.reconcile.model`
 
 ## Navigation
 
@@ -83,6 +92,7 @@ ResCompany --> account_account : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

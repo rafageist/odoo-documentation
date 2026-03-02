@@ -9,37 +9,72 @@ tags: [odoo, community, module]
 - Source: odoo/addons/rating
 - Dependencies: [[docs/Community Addons/mail/mail|mail]]
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 5
+- XML files with UI/data artifacts: 2
 - Views: 9
 - Actions: 3
 - Menus: 1
 - Rules (ir.rule): 0
 - Access CSV entries: 4
+- Controller units: 1
+- Frontend asset files: 6
 
-## Detected Models
-
-- `MailMessage`
-- `rating.rating`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Customer Rating - Models and Relations
-class MailMessage
-class "rating.rating" as rating_rating
-MailMessage --|> rating_rating : one2many
-MailMessage --> rating_rating : many2one
-class "ir.model" as ir_model
-rating_rating --> ir_model : many2one
-rating_rating --> ir_model : many2one
-class "res.partner" as res_partner
-rating_rating --> res_partner : many2one
-rating_rating --> res_partner : many2one
-class "mail.message" as mail_message
-rating_rating --> mail_message : many2one
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Customer Rating - Generated Coverage
+component "Module Overview" as overview
+component "Models\n5" as models
+component "Views / XML\n9 views\n2 files" as views
+component "Controllers\n2 routes" as controllers
+component "Frontend\n6 files" as frontend
+component "Security / Data\n0 rules\n4 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/rating/Models|Models]] (5)
+- Views and XML: [[docs/Community Addons/rating/Views|Views]] (2 files)
+- Controllers: [[docs/Community Addons/rating/Controllers|Controllers]] (1)
+- Frontend: [[docs/Community Addons/rating/Frontend|Frontend]] (6 files)
+
+## Key models
+
+- `mail.message`
+- `mail.thread`
+- `rating.mixin`
+- `rating.parent.mixin`
+- `rating.rating`
 
 ## Navigation
 
@@ -47,6 +82,7 @@ rating_rating --> mail_message : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

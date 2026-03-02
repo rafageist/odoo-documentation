@@ -13,71 +13,79 @@ tags: [odoo, community, module]
 
 Sell based on timesheets
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 15
+- XML files with UI/data artifacts: 12
 - Views: 37
 - Actions: 24
 - Menus: 1
 - Rules (ir.rule): 2
 - Access CSV entries: 2
+- Controller units: 2
+- Frontend asset files: 2
 
-## Detected Models
-
-- `AccountMove`
-- `AccountMoveLine`
-- `HrEmployee`
-- `AccountAnalyticLine`
-- `ProductProduct`
-- `ProductTemplate`
-- `ProjectProject`
-- `project.sale.line.employee.map`
-- `ProjectTask`
-- `SaleOrder`
-- `SaleOrderLine`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Sales Timesheet - Models and Relations
-class AccountMove
-class AccountMoveLine
-class HrEmployee
-class AccountAnalyticLine
-class ProductProduct
-class ProductTemplate
-class ProjectProject
-class "project.sale.line.employee.map" as project_sale_line_employee_map
-class ProjectTask
-class SaleOrder
-class SaleOrderLine
-class "account.analytic.line" as account_analytic_line
-AccountMove --|> account_analytic_line : one2many
-class "uom.uom" as uom_uom
-AccountMove --> uom_uom : many2one
-class "res.partner" as res_partner
-AccountAnalyticLine --> res_partner : many2one
-class "account.move" as account_move
-AccountAnalyticLine --> account_move : many2one
-ProjectProject --|> project_sale_line_employee_map : one2many
-class "product.product" as product_product
-ProjectProject --> product_product : many2one
-class "project.project" as project_project
-project_sale_line_employee_map --> project_project : many2one
-class "hr.employee" as hr_employee
-project_sale_line_employee_map --> hr_employee : many2one
-project_sale_line_employee_map .. hr_employee : many2many
-class "sale.order.line" as sale_order_line
-project_sale_line_employee_map --> sale_order_line : many2one
-class "res.company" as res_company
-project_sale_line_employee_map --> res_company : many2one
-class "res.currency" as res_currency
-project_sale_line_employee_map --> res_currency : many2one
-project_sale_line_employee_map --> res_currency : many2one
-ProjectTask --> sale_order_line : many2one
-SaleOrder --> uom_uom : many2one
-SaleOrderLine --|> account_analytic_line : one2many
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Sales Timesheet - Generated Coverage
+component "Module Overview" as overview
+component "Models\n15" as models
+component "Views / XML\n37 views\n12 files" as views
+component "Controllers\n2 routes" as controllers
+component "Frontend\n2 files" as frontend
+component "Security / Data\n2 rules\n2 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/sale_timesheet/Models|Models]] (15)
+- Views and XML: [[docs/Community Addons/sale_timesheet/Views|Views]] (12 files)
+- Controllers: [[docs/Community Addons/sale_timesheet/Controllers|Controllers]] (2)
+- Frontend: [[docs/Community Addons/sale_timesheet/Frontend|Frontend]] (2 files)
+
+## Key models
+
+- `account.analytic.line`
+- `account.move`
+- `account.move.line`
+- `hr.employee`
+- `product.product`
+- `product.template`
+- `project.project`
+- `project.sale.line.employee.map`
+- `project.task`
+- `report.project.task.user`
+- `res.config.settings`
+- `sale.advance.payment.inv`
 
 ## Navigation
 
@@ -85,6 +93,7 @@ SaleOrderLine --|> account_analytic_line : one2many
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

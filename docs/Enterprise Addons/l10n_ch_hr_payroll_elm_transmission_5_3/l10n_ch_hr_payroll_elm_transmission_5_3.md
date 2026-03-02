@@ -10,53 +10,77 @@ tags: [odoo, enterprise, module]
 - Source: enterprise/l10n_ch_hr_payroll_elm_transmission_5_3
 - Dependencies: [[docs/Enterprise Addons/l10n_ch_hr_payroll/l10n_ch_hr_payroll|l10n_ch_hr_payroll]]
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 12
+- XML files with UI/data artifacts: 7
 - Views: 10
 - Actions: 1
 - Menus: 1
 - Rules (ir.rule): 0
 - Access CSV entries: 2
+- Controller units: 0
+- Frontend asset files: 0
 
-## Detected Models
-
-- `HrContract`
-- `HrEmployee`
-- `HrPayslip`
-- `L10nChCompensationFund`
-- `l10n.ch.caf.scale`
-- `L10nChHrEmployeeChildren`
-- `l10nChSicknessInsuranceLine`
-- `l10nChSicknessInsuranceLineRate`
-- `l10nChAdditionalAccidentInsuranceLine`
-- `l10nChAdditionalAccidentInsuranceLineRate`
-- `l10n.lpp.coordination.amount`
-- `l10nChLppInsurance`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Swissdec Certified Payroll ELM 5.3 - Models and Relations
-class HrContract
-class HrEmployee
-class HrPayslip
-class L10nChCompensationFund
-class "l10n.ch.caf.scale" as l10n_ch_caf_scale
-class L10nChHrEmployeeChildren
-class l10nChSicknessInsuranceLine
-class l10nChSicknessInsuranceLineRate
-class l10nChAdditionalAccidentInsuranceLine
-class l10nChAdditionalAccidentInsuranceLineRate
-class "l10n.lpp.coordination.amount" as l10n_lpp_coordination_amount
-class l10nChLppInsurance
-L10nChCompensationFund --|> l10n_ch_caf_scale : one2many
-class "l10n.ch.compensation.fund" as l10n_ch_compensation_fund
-l10n_ch_caf_scale --> l10n_ch_compensation_fund : many2one
-class "l10n.ch.lpp.insurance" as l10n_ch_lpp_insurance
-l10n_lpp_coordination_amount --> l10n_ch_lpp_insurance : many2one
-l10nChLppInsurance --|> l10n_lpp_coordination_amount : one2many
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Swissdec Certified Payroll ELM 5.3 - Generated Coverage
+component "Module Overview" as overview
+component "Models\n12" as models
+component "Views / XML\n10 views\n7 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n0 files" as frontend
+component "Security / Data\n0 rules\n2 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Enterprise Addons/l10n_ch_hr_payroll_elm_transmission_5_3/Models|Models]] (12)
+- Views and XML: [[docs/Enterprise Addons/l10n_ch_hr_payroll_elm_transmission_5_3/Views|Views]] (7 files)
+
+## Key models
+
+- `hr.employee`
+- `hr.payslip`
+- `hr.version`
+- `l10n.ch.additional.accident.insurance.line`
+- `l10n.ch.additional.accident.insurance.line.rate`
+- `l10n.ch.caf.scale`
+- `l10n.ch.compensation.fund`
+- `l10n.ch.hr.employee.children`
+- `l10n.ch.lpp.insurance`
+- `l10n.ch.sickness.insurance.line`
+- `l10n.ch.sickness.insurance.line.rate`
+- `l10n.lpp.coordination.amount`
 
 ## Navigation
 
@@ -64,4 +88,5 @@ l10nChLppInsurance --|> l10n_lpp_coordination_amount : one2many
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 

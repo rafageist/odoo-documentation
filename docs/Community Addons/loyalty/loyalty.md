@@ -13,81 +13,79 @@ tags: [odoo, community, module]
 
 Use discounts, gift card, eWallets and loyalty programs in different sales channels
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 13
+- XML files with UI/data artifacts: 11
 - Views: 16
 - Actions: 10
 - Menus: 0
 - Rules (ir.rule): 5
 - Access CSV entries: 8
+- Controller units: 1
+- Frontend asset files: 7
 
-## Detected Models
+## Module map
 
+```plantuml
+@startuml
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Coupons & Loyalty - Generated Coverage
+component "Module Overview" as overview
+component "Models\n13" as models
+component "Views / XML\n16 views\n11 files" as views
+component "Controllers\n2 routes" as controllers
+component "Frontend\n7 files" as frontend
+component "Security / Data\n5 rules\n8 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
+@enduml
+```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/loyalty/Models|Models]] (13)
+- Views and XML: [[docs/Community Addons/loyalty/Views|Views]] (11 files)
+- Controllers: [[docs/Community Addons/loyalty/Controllers|Controllers]] (1)
+- Frontend: [[docs/Community Addons/loyalty/Frontend|Frontend]] (7 files)
+
+## Key models
+
+- `base.partner.merge.automatic.wizard`
 - `loyalty.card`
+- `loyalty.card.update.balance`
+- `loyalty.generate.wizard`
 - `loyalty.history`
 - `loyalty.mail`
 - `loyalty.program`
 - `loyalty.reward`
 - `loyalty.rule`
-- `ProductPricelist`
-- `ProductProduct`
-- `ProductTemplate`
-- `ResPartner`
-
-```plantuml
-@startuml
-!include ../../../templates/DiagramStyles.puml
-title Coupons & Loyalty - Models and Relations
-class "loyalty.card" as loyalty_card
-class "loyalty.history" as loyalty_history
-class "loyalty.mail" as loyalty_mail
-class "loyalty.program" as loyalty_program
-class "loyalty.reward" as loyalty_reward
-class "loyalty.rule" as loyalty_rule
-class ProductPricelist
-class ProductProduct
-class ProductTemplate
-class ResPartner
-loyalty_card --> loyalty_program : many2one
-class "res.partner" as res_partner
-loyalty_card --> res_partner : many2one
-loyalty_card --|> loyalty_history : one2many
-loyalty_history --> loyalty_card : many2one
-loyalty_mail --> loyalty_program : many2one
-class "mail.template" as mail_template
-loyalty_mail --> mail_template : many2one
-class "res.company" as res_company
-loyalty_program --> res_company : many2one
-class "res.currency" as res_currency
-loyalty_program --> res_currency : many2one
-class "product.pricelist" as product_pricelist
-loyalty_program .. product_pricelist : many2many
-loyalty_program --|> loyalty_rule : one2many
-loyalty_program --|> loyalty_reward : one2many
-loyalty_program --|> loyalty_mail : one2many
-loyalty_program --> mail_template : many2one
-loyalty_program --|> loyalty_card : one2many
-class "product.product" as product_product
-loyalty_program --> product_product : many2one
-loyalty_reward --> loyalty_program : many2one
-loyalty_reward .. product_product : many2many
-class "product.category" as product_category
-loyalty_reward --> product_category : many2one
-class "product.tag" as product_tag
-loyalty_reward --> product_tag : many2one
-loyalty_reward .. product_product : many2many
-loyalty_reward --> product_product : many2one
-loyalty_reward --> product_product : many2one
-loyalty_reward --> product_tag : many2one
-loyalty_reward .. product_product : many2many
-class "uom.uom" as uom_uom
-loyalty_reward --> uom_uom : many2one
-loyalty_rule --> loyalty_program : many2one
-loyalty_rule .. product_product : many2many
-loyalty_rule --> product_category : many2one
-loyalty_rule --> product_tag : many2one
-@enduml
-```
+- `product.pricelist`
+- `product.product`
+- `product.template`
 
 ## Navigation
 
@@ -95,6 +93,7 @@ loyalty_rule --> product_tag : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

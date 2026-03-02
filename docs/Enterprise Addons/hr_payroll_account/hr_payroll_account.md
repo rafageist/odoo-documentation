@@ -9,65 +9,78 @@ tags: [odoo, enterprise, module]
 - Source: enterprise/hr_payroll_account
 - Dependencies: [[docs/Enterprise Addons/hr_payroll/hr_payroll|hr_payroll]], [[docs/Enterprise Addons/accountant/accountant|accountant]], [[docs/Community Addons/base_iban/base_iban|base_iban]]
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 16
+- XML files with UI/data artifacts: 9
 - Views: 12
 - Actions: 1
 - Menus: 0
 - Rules (ir.rule): 0
 - Access CSV entries: 0
+- Controller units: 0
+- Frontend asset files: 1
 
-## Detected Models
-
-- `AccountJournal`
-- `AccountMove`
-- `AccountMoveLine`
-- `AccountPayment`
-- `HrPayrollStructure`
-- `HrPayslip`
-- `HrPayslipLine`
-- `HrPayslipRun`
-- `hr.salary.rule`
-- `hr.version`
-- `ResCompany`
-- `ResPartnerBank`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Payroll Accounting - Models and Relations
-class AccountJournal
-class AccountMove
-class AccountMoveLine
-class AccountPayment
-class HrPayrollStructure
-class HrPayslip
-class HrPayslipLine
-class HrPayslipRun
-class "hr.salary.rule" as hr_salary_rule
-class "hr.version" as hr_version
-class ResCompany
-class ResPartnerBank
-class "hr.payslip" as hr_payslip
-AccountMove --|> hr_payslip : one2many
-class "res.partner.bank" as res_partner_bank
-AccountMoveLine --> res_partner_bank : many2one
-class "account.journal" as account_journal
-HrPayrollStructure --> account_journal : many2one
-HrPayslip --> account_journal : many2one
-class "account.move" as account_move
-HrPayslip --> account_move : many2one
-class "account.account.tag" as account_account_tag
-HrPayslipLine .. account_account_tag : many2many
-HrPayslipLine .. account_account_tag : many2many
-HrPayslipRun --> account_move : many2one
-class "account.account" as account_account
-hr_salary_rule --> account_account : many2one
-hr_salary_rule --> account_account : many2one
-hr_salary_rule .. account_account_tag : many2many
-hr_salary_rule .. account_account_tag : many2many
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Payroll Accounting - Generated Coverage
+component "Module Overview" as overview
+component "Models\n16" as models
+component "Views / XML\n12 views\n9 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n1 files" as frontend
+component "Security / Data\n0 rules\n0 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Enterprise Addons/hr_payroll_account/Models|Models]] (16)
+- Views and XML: [[docs/Enterprise Addons/hr_payroll_account/Views|Views]] (9 files)
+- Frontend: [[docs/Enterprise Addons/hr_payroll_account/Frontend|Frontend]] (1 files)
+
+## Key models
+
+- `account.chart.template`
+- `account.journal`
+- `account.move`
+- `account.move.line`
+- `account.payment`
+- `account.payment.register`
+- `hr.payroll.payment.report.wizard`
+- `hr.payroll.structure`
+- `hr.payslip`
+- `hr.payslip.line`
+- `hr.payslip.run`
+- `hr.salary.rule`
 
 ## Navigation
 
@@ -75,6 +88,7 @@ hr_salary_rule .. account_account_tag : many2many
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

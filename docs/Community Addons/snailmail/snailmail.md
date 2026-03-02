@@ -9,55 +9,74 @@ tags: [odoo, community, module]
 - Source: odoo/addons/snailmail
 - Dependencies: [[docs/Community Addons/iap_mail/iap_mail|iap_mail]], [[docs/Community Addons/mail/mail|mail]]
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 8
+- XML files with UI/data artifacts: 1
 - Views: 2
 - Actions: 1
 - Menus: 1
 - Rules (ir.rule): 0
 - Access CSV entries: 2
+- Controller units: 0
+- Frontend asset files: 6
 
-## Detected Models
-
-- `IrActionsReport`
-- `MailMessage`
-- `MailNotification`
-- `ResCompany`
-- `ResPartner`
-- `snailmail.letter`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Snail Mail - Models and Relations
-class IrActionsReport
-class MailMessage
-class MailNotification
-class ResCompany
-class ResPartner
-class "snailmail.letter" as snailmail_letter
-MailMessage --|> snailmail_letter : one2many
-MailNotification --> snailmail_letter : many2one
-class "res.users" as res_users
-snailmail_letter --> res_users : many2one
-class "res.partner" as res_partner
-snailmail_letter --> res_partner : many2one
-class "res.company" as res_company
-snailmail_letter --> res_company : many2one
-class "ir.actions.report" as ir_actions_report
-snailmail_letter --> ir_actions_report : many2one
-class "ir.attachment" as ir_attachment
-snailmail_letter --> ir_attachment : many2one
-class "mail.message" as mail_message
-snailmail_letter --> mail_message : many2one
-class "mail.notification" as mail_notification
-snailmail_letter --|> mail_notification : one2many
-class "res.country.state" as res_country_state
-snailmail_letter --> res_country_state : many2one
-class "res.country" as res_country
-snailmail_letter --> res_country : many2one
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Snail Mail - Generated Coverage
+component "Module Overview" as overview
+component "Models\n8" as models
+component "Views / XML\n2 views\n1 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n6 files" as frontend
+component "Security / Data\n0 rules\n2 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/snailmail/Models|Models]] (8)
+- Views and XML: [[docs/Community Addons/snailmail/Views|Views]] (1 files)
+- Frontend: [[docs/Community Addons/snailmail/Frontend|Frontend]] (6 files)
+
+## Key models
+
+- `ir.actions.report`
+- `mail.message`
+- `mail.notification`
+- `mail.thread`
+- `res.company`
+- `res.config.settings`
+- `res.partner`
+- `snailmail.letter`
 
 ## Navigation
 
@@ -65,6 +84,7 @@ snailmail_letter --> res_country : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

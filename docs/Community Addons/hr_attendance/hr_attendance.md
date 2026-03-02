@@ -13,64 +13,78 @@ tags: [odoo, community, module]
 
 Track employee attendance
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 11
+- XML files with UI/data artifacts: 7
 - Views: 22
 - Actions: 11
 - Menus: 12
 - Rules (ir.rule): 4
 - Access CSV entries: 8
+- Controller units: 1
+- Frontend asset files: 27
 
-## Detected Models
+## Module map
+
+```plantuml
+@startuml
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Attendances - Generated Coverage
+component "Module Overview" as overview
+component "Models\n11" as models
+component "Views / XML\n22 views\n7 files" as views
+component "Controllers\n13 routes" as controllers
+component "Frontend\n27 files" as frontend
+component "Security / Data\n4 rules\n8 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
+@enduml
+```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/hr_attendance/Models|Models]] (11)
+- Views and XML: [[docs/Community Addons/hr_attendance/Views|Views]] (7 files)
+- Controllers: [[docs/Community Addons/hr_attendance/Controllers|Controllers]] (1)
+- Frontend: [[docs/Community Addons/hr_attendance/Frontend|Frontend]] (27 files)
+
+## Key models
 
 - `hr.attendance`
 - `hr.attendance.overtime.line`
 - `hr.attendance.overtime.rule`
 - `hr.attendance.overtime.ruleset`
-- `HrEmployee`
-- `HrEmployeePublic`
+- `hr.employee`
+- `hr.employee.public`
 - `hr.version`
-- `ResCompany`
-- `ResUsers`
-
-```plantuml
-@startuml
-!include ../../../templates/DiagramStyles.puml
-title Attendances - Models and Relations
-class "hr.attendance" as hr_attendance
-class "hr.attendance.overtime.line" as hr_attendance_overtime_line
-class "hr.attendance.overtime.rule" as hr_attendance_overtime_rule
-class "hr.attendance.overtime.ruleset" as hr_attendance_overtime_ruleset
-class HrEmployee
-class HrEmployeePublic
-class "hr.version" as hr_version
-class ResCompany
-class ResUsers
-class "hr.employee" as hr_employee
-hr_attendance --> hr_employee : many2one
-class "hr.department" as hr_department
-hr_attendance --> hr_department : many2one
-hr_attendance --> hr_employee : many2one
-class "res.users" as res_users
-hr_attendance --> res_users : many2one
-hr_attendance .. hr_attendance_overtime_line : many2many
-hr_attendance_overtime_line --> hr_employee : many2one
-hr_attendance_overtime_line .. hr_attendance_overtime_rule : many2many
-class "resource.calendar" as resource_calendar
-hr_attendance_overtime_rule --> resource_calendar : many2one
-hr_attendance_overtime_rule --> hr_attendance_overtime_ruleset : many2one
-hr_attendance_overtime_ruleset --|> hr_attendance_overtime_rule : one2many
-class "res.company" as res_company
-hr_attendance_overtime_ruleset --> res_company : many2one
-class "res.country" as res_country
-hr_attendance_overtime_ruleset --> res_country : many2one
-HrEmployee --> res_users : many2one
-HrEmployee --|> hr_attendance : one2many
-HrEmployee --> hr_attendance : many2one
-HrEmployee --|> hr_attendance_overtime_line : one2many
-hr_version --> hr_attendance_overtime_ruleset : many2one
-@enduml
-```
+- `ir.http`
+- `res.company`
+- `res.config.settings`
+- `res.users`
 
 ## Navigation
 
@@ -78,6 +92,7 @@ hr_version --> hr_attendance_overtime_ruleset : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

@@ -13,64 +13,75 @@ tags: [odoo, community, module]
 
 Base Automation Tests: Ensure Flow Robustness
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 11
+- XML files with UI/data artifacts: 0
 - Views: 0
 - Actions: 0
 - Menus: 0
 - Rules (ir.rule): 0
 - Access CSV entries: 11
+- Controller units: 0
+- Frontend asset files: 0
 
-## Detected Models
+## Module map
+
+```plantuml
+@startuml
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Test - Base Automation - Generated Coverage
+component "Module Overview" as overview
+component "Models\n11" as models
+component "Views / XML\n0 views\n0 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n0 files" as frontend
+component "Security / Data\n0 rules\n11 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
+@enduml
+```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/test_base_automation/Models|Models]] (11)
+
+## Key models
 
 - `base.automation.lead.test`
 - `base.automation.lead.thread.test`
 - `base.automation.line.test`
 - `base.automation.link.test`
 - `base.automation.linked.test`
-- `test_base_automation.project`
-- `test_base_automation.task`
-- `test_base_automation.stage`
-- `test_base_automation.tag`
 - `base.automation.model.with.recname.char`
 - `base.automation.model.with.recname.m2o`
-
-```plantuml
-@startuml
-!include ../../../templates/DiagramStyles.puml
-title Test - Base Automation - Models and Relations
-class "base.automation.lead.test" as base_automation_lead_test
-class "base.automation.lead.thread.test" as base_automation_lead_thread_test
-class "base.automation.line.test" as base_automation_line_test
-class "base.automation.link.test" as base_automation_link_test
-class "base.automation.linked.test" as base_automation_linked_test
-class "test_base_automation.project" as test_base_automation_project
-class "test_base_automation.task" as test_base_automation_task
-class "test_base_automation.stage" as test_base_automation_stage
-class "test_base_automation.tag" as test_base_automation_tag
-class "base.automation.model.with.recname.char" as base_automation_model_with_recname_char
-class "base.automation.model.with.recname.m2o" as base_automation_model_with_recname_m2o
-class "res.users" as res_users
-base_automation_lead_test --> res_users : many2one
-base_automation_lead_test .. test_base_automation_tag : many2many
-class "res.partner" as res_partner
-base_automation_lead_test --> res_partner : many2one
-base_automation_lead_test --|> base_automation_line_test : one2many
-base_automation_lead_test --> test_base_automation_stage : many2one
-base_automation_lead_thread_test --> res_users : many2one
-base_automation_line_test --> base_automation_lead_test : many2one
-base_automation_line_test --> res_users : many2one
-base_automation_link_test --> base_automation_linked_test : many2one
-test_base_automation_project --|> test_base_automation_task : one2many
-test_base_automation_project --> test_base_automation_stage : many2one
-test_base_automation_project .. test_base_automation_tag : many2many
-test_base_automation_project .. res_users : many2many
-test_base_automation_task --> test_base_automation_task : many2one
-test_base_automation_task --> test_base_automation_project : many2one
-base_automation_model_with_recname_char --> res_users : many2one
-base_automation_model_with_recname_m2o --> base_automation_model_with_recname_char : many2one
-@enduml
-```
+- `test_base_automation.project`
+- `test_base_automation.stage`
+- `test_base_automation.tag`
+- `test_base_automation.task`
 
 ## Navigation
 
@@ -78,6 +89,7 @@ base_automation_model_with_recname_m2o --> base_automation_model_with_recname_ch
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

@@ -13,79 +13,79 @@ tags: [odoo, community, module]
 
 Schedule employees' meetings
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 18
+- XML files with UI/data artifacts: 9
 - Views: 18
 - Actions: 8
 - Menus: 8
 - Rules (ir.rule): 4
 - Access CSV entries: 15
+- Controller units: 1
+- Frontend asset files: 43
 
-## Detected Models
+## Module map
+
+```plantuml
+@startuml
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Calendar - Generated Coverage
+component "Module Overview" as overview
+component "Models\n18" as models
+component "Views / XML\n18 views\n9 files" as views
+component "Controllers\n10 routes" as controllers
+component "Frontend\n43 files" as frontend
+component "Security / Data\n4 rules\n15 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
+@enduml
+```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/calendar/Models|Models]] (18)
+- Views and XML: [[docs/Community Addons/calendar/Views|Views]] (9 files)
+- Controllers: [[docs/Community Addons/calendar/Controllers|Controllers]] (1)
+- Frontend: [[docs/Community Addons/calendar/Frontend|Frontend]] (43 files)
+
+## Key models
 
 - `calendar.alarm`
+- `calendar.alarm_manager`
 - `calendar.attendee`
 - `calendar.event`
 - `calendar.event.type`
 - `calendar.filters`
+- `calendar.popover.delete.wizard`
+- `calendar.provider.config`
 - `calendar.recurrence`
-- `DiscussChannel`
-- `MailActivity`
-- `MailActivityType`
-- `ResPartner`
-- `ResUsers`
-- `ResUsersSettings`
-
-```plantuml
-@startuml
-!include ../../../templates/DiagramStyles.puml
-title Calendar - Models and Relations
-class "calendar.alarm" as calendar_alarm
-class "calendar.attendee" as calendar_attendee
-class "calendar.event" as calendar_event
-class "calendar.event.type" as calendar_event_type
-class "calendar.filters" as calendar_filters
-class "calendar.recurrence" as calendar_recurrence
-class DiscussChannel
-class MailActivity
-class MailActivityType
-class ResPartner
-class ResUsers
-class ResUsersSettings
-class "mail.template" as mail_template
-calendar_alarm --> mail_template : many2one
-calendar_attendee --> calendar_event : many2one
-calendar_attendee --> calendar_recurrence : many2one
-class "res.partner" as res_partner
-calendar_attendee --> res_partner : many2one
-class "res.users" as res_users
-calendar_event --> res_users : many2one
-calendar_event --> res_partner : many2one
-class "discuss.channel" as discuss_channel
-calendar_event --> discuss_channel : many2one
-calendar_event .. calendar_event_type : many2many
-class "ir.model" as ir_model
-calendar_event --> ir_model : many2one
-class "mail.activity" as mail_activity
-calendar_event --|> mail_activity : one2many
-calendar_event --|> calendar_attendee : one2many
-calendar_event --> calendar_attendee : many2one
-calendar_event .. res_partner : many2many
-calendar_event .. res_partner : many2many
-calendar_event .. res_partner : many2many
-calendar_event .. calendar_alarm : many2many
-calendar_event --> calendar_recurrence : many2one
-calendar_filters --> res_users : many2one
-calendar_filters --> res_partner : many2one
-calendar_recurrence --> calendar_event : many2one
-calendar_recurrence --|> calendar_event : one2many
-class "ir.cron.trigger" as ir_cron_trigger
-calendar_recurrence --> ir_cron_trigger : many2one
-DiscussChannel --|> calendar_event : one2many
-MailActivity --> calendar_event : many2one
-ResPartner .. calendar_event : many2many
-@enduml
-```
+- `discuss.channel`
+- `ir.http`
+- `mail.activity`
 
 ## Navigation
 
@@ -93,6 +93,7 @@ ResPartner .. calendar_event : many2many
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

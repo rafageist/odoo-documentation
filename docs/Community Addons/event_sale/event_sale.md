@@ -9,48 +9,76 @@ tags: [odoo, community, module]
 - Source: odoo/addons/event_sale
 - Dependencies: [[docs/Community Addons/event_product/event_product|event_product]], [[docs/Community Addons/sale_management/sale_management|sale_management]]
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 10
+- XML files with UI/data artifacts: 8
 - Views: 12
 - Actions: 3
 - Menus: 1
 - Rules (ir.rule): 1
 - Access CSV entries: 4
+- Controller units: 0
+- Frontend asset files: 3
 
-## Detected Models
-
-- `EventEvent`
-- `EventRegistration`
-- `EventEventTicket`
-- `ProductTemplate`
-- `SaleOrder`
-- `SaleOrderLine`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Events Sales - Models and Relations
-class EventEvent
-class EventRegistration
-class EventEventTicket
-class ProductTemplate
-class SaleOrder
-class SaleOrderLine
-class "sale.order.line" as sale_order_line
-EventEvent --|> sale_order_line : one2many
-class "sale.order" as sale_order
-EventRegistration --> sale_order : many2one
-EventRegistration --> sale_order_line : many2one
-class "event.event" as event_event
-SaleOrderLine --> event_event : many2one
-class "event.slot" as event_slot
-SaleOrderLine --> event_slot : many2one
-class "event.event.ticket" as event_event_ticket
-SaleOrderLine --> event_event_ticket : many2one
-class "event.registration" as event_registration
-SaleOrderLine --|> event_registration : one2many
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Events Sales - Generated Coverage
+component "Module Overview" as overview
+component "Models\n10" as models
+component "Views / XML\n12 views\n8 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n3 files" as frontend
+component "Security / Data\n1 rules\n4 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/event_sale/Models|Models]] (10)
+- Views and XML: [[docs/Community Addons/event_sale/Views|Views]] (8 files)
+- Frontend: [[docs/Community Addons/event_sale/Frontend|Frontend]] (3 files)
+
+## Key models
+
+- `event.event`
+- `event.event.configurator`
+- `event.event.ticket`
+- `event.registration`
+- `event.sale.report`
+- `product.template`
+- `registration.editor`
+- `registration.editor.line`
+- `sale.order`
+- `sale.order.line`
 
 ## Navigation
 
@@ -58,6 +86,7 @@ SaleOrderLine --|> event_registration : one2many
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

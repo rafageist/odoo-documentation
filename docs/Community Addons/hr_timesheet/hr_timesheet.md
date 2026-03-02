@@ -13,74 +13,79 @@ tags: [odoo, community, module]
 
 Track employee time on tasks
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 17
+- XML files with UI/data artifacts: 15
 - Views: 54
 - Actions: 44
 - Menus: 11
 - Rules (ir.rule): 9
 - Access CSV entries: 7
+- Controller units: 1
+- Frontend asset files: 18
 
-## Detected Models
-
-- `account.analytic.line.calendar.employee`
-- `AccountAnalyticApplicability`
-- `HrEmployee`
-- `HrEmployeePublic`
-- `AccountAnalyticLine`
-- `IrUiMenu`
-- `ProjectCollaborator`
-- `ProjectProject`
-- `ProjectTask`
-- `ProjectUpdate`
-- `ResCompany`
-- `UomUom`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Task Logs - Models and Relations
-class "account.analytic.line.calendar.employee" as account_analytic_line_calendar_employee
-class AccountAnalyticApplicability
-class HrEmployee
-class HrEmployeePublic
-class AccountAnalyticLine
-class IrUiMenu
-class ProjectCollaborator
-class ProjectProject
-class ProjectTask
-class ProjectUpdate
-class ResCompany
-class UomUom
-class "res.users" as res_users
-account_analytic_line_calendar_employee --> res_users : many2one
-class "hr.employee" as hr_employee
-account_analytic_line_calendar_employee --> hr_employee : many2one
-class "project.task" as project_task
-AccountAnalyticLine --> project_task : many2one
-AccountAnalyticLine --> project_task : many2one
-class "project.project" as project_project
-AccountAnalyticLine --> project_project : many2one
-AccountAnalyticLine --> hr_employee : many2one
-class "hr.department" as hr_department
-AccountAnalyticLine --> hr_department : many2one
-AccountAnalyticLine --> hr_employee : many2one
-class "uom.uom" as uom_uom
-AccountAnalyticLine --> uom_uom : many2one
-class "project.milestone" as project_milestone
-AccountAnalyticLine --> project_milestone : many2one
-class "res.partner" as res_partner
-AccountAnalyticLine .. res_partner : many2many
-class "account.analytic.line" as account_analytic_line
-ProjectProject --|> account_analytic_line : one2many
-ProjectProject --> uom_uom : many2one
-ProjectTask --|> account_analytic_line : one2many
-ProjectUpdate --> uom_uom : many2one
-ResCompany --> uom_uom : many2one
-ResCompany --> uom_uom : many2one
-ResCompany --> project_project : many2one
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Task Logs - Generated Coverage
+component "Module Overview" as overview
+component "Models\n17" as models
+component "Views / XML\n54 views\n15 files" as views
+component "Controllers\n1 routes" as controllers
+component "Frontend\n18 files" as frontend
+component "Security / Data\n9 rules\n7 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/hr_timesheet/Models|Models]] (17)
+- Views and XML: [[docs/Community Addons/hr_timesheet/Views|Views]] (15 files)
+- Controllers: [[docs/Community Addons/hr_timesheet/Controllers|Controllers]] (1)
+- Frontend: [[docs/Community Addons/hr_timesheet/Frontend|Frontend]] (18 files)
+
+## Key models
+
+- `account.analytic.applicability`
+- `account.analytic.line`
+- `account.analytic.line.calendar.employee`
+- `hr.employee`
+- `hr.employee.delete.wizard`
+- `hr.employee.public`
+- `ir.http`
+- `ir.ui.menu`
+- `project.collaborator`
+- `project.project`
+- `project.task`
+- `project.update`
 
 ## Navigation
 
@@ -88,6 +93,7 @@ ResCompany --> project_project : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

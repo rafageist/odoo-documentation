@@ -13,110 +13,79 @@ tags: [odoo, enterprise, module]
 
 Send and request electronic signatures.
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 24
+- XML files with UI/data artifacts: 13
 - Views: 31
 - Actions: 13
 - Menus: 11
 - Rules (ir.rule): 25
 - Access CSV entries: 19
+- Controller units: 3
+- Frontend asset files: 95
 
-## Detected Models
+## Module map
 
-- `MailActivityType`
-- `ResCompany`
-- `ResPartner`
-- `ResUsers`
+```plantuml
+@startuml
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Sign - Generated Coverage
+component "Module Overview" as overview
+component "Models\n24" as models
+component "Views / XML\n31 views\n13 files" as views
+component "Controllers\n23 routes" as controllers
+component "Frontend\n95 files" as frontend
+component "Security / Data\n25 rules\n19 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
+@enduml
+```
+
+## Detail notes
+
+- Models: [[docs/Enterprise Addons/sign/Models|Models]] (24)
+- Views and XML: [[docs/Enterprise Addons/sign/Views|Views]] (13 files)
+- Controllers: [[docs/Enterprise Addons/sign/Controllers|Controllers]] (3)
+- Frontend: [[docs/Enterprise Addons/sign/Frontend|Frontend]] (95 files)
+
+## Key models
+
+- `ir.http`
+- `mail.activity.type`
+- `report.sign.green_savings_report`
+- `res.company`
+- `res.config.settings`
+- `res.partner`
+- `res.users`
 - `sign.completed.document`
 - `sign.document`
 - `sign.item`
 - `sign.item.option`
 - `sign.item.radio.set`
-- `sign.item.role`
-- `sign.item.type`
-- `sign.log`
-- `sign.request`
-- `sign.request.item`
-- `sign.request.item.value`
-- `sign.template`
-- `sign.template.tag`
-
-```plantuml
-@startuml
-!include ../../../templates/DiagramStyles.puml
-title Sign - Models and Relations
-class MailActivityType
-class ResCompany
-class ResPartner
-class ResUsers
-class "sign.completed.document" as sign_completed_document
-class "sign.document" as sign_document
-class "sign.item" as sign_item
-class "sign.item.option" as sign_item_option
-class "sign.item.radio.set" as sign_item_radio_set
-class "sign.item.role" as sign_item_role
-class "sign.item.type" as sign_item_type
-class "sign.log" as sign_log
-class "sign.request" as sign_request
-class "sign.request.item" as sign_request_item
-class "sign.request.item.value" as sign_request_item_value
-class "sign.template" as sign_template
-class "sign.template.tag" as sign_template_tag
-MailActivityType --> sign_template : many2one
-class "certificate.certificate" as certificate_certificate
-ResCompany --> certificate_certificate : many2one
-sign_completed_document --> sign_request : many2one
-sign_completed_document --> sign_document : many2one
-class "ir.attachment" as ir_attachment
-sign_document --> ir_attachment : many2one
-sign_document --> sign_template : many2one
-sign_document --|> sign_item : one2many
-sign_item --> sign_document : many2one
-sign_item --> sign_template : many2one
-sign_item --> sign_item_type : many2one
-sign_item --> sign_item_role : many2one
-sign_item .. sign_item_option : many2many
-sign_item --> sign_item_radio_set : many2one
-sign_item_radio_set --|> sign_item : one2many
-class "res.partner" as res_partner
-sign_item_role --> res_partner : many2one
-class "ir.model" as ir_model
-sign_item_type --> ir_model : many2one
-sign_log --> sign_request : many2one
-sign_log --> sign_request_item : many2one
-class "res.users" as res_users
-sign_log --> res_users : many2one
-sign_log --> res_partner : many2one
-sign_request --> sign_template : many2one
-sign_request --|> sign_request_item : one2many
-sign_request .. sign_document : many2many
-sign_request --|> sign_completed_document : one2many
-sign_request .. res_users : many2many
-class "res.company" as res_company
-sign_request --> res_company : many2one
-sign_request --|> sign_log : one2many
-sign_request .. sign_template_tag : many2many
-sign_request .. res_partner : many2many
-sign_request .. ir_attachment : many2many
-sign_request .. ir_attachment : many2many
-sign_request_item --> res_partner : many2one
-sign_request_item --> sign_request : many2one
-sign_request_item --|> sign_request_item_value : one2many
-sign_request_item --> sign_item_role : many2one
-sign_request_item_value --> sign_request_item : many2one
-sign_request_item_value --> sign_item : many2one
-sign_template --|> sign_document : one2many
-sign_template --|> sign_item : one2many
-sign_template .. res_users : many2many
-sign_template --> res_users : many2one
-sign_template --|> sign_request : one2many
-sign_template .. sign_template_tag : many2many
-sign_template .. res_users : many2many
-class "res.groups" as res_groups
-sign_template .. res_groups : many2many
-sign_template --> ir_model : many2one
-@enduml
-```
 
 ## Navigation
 
@@ -124,6 +93,7 @@ sign_template --> ir_model : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

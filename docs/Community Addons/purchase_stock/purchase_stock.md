@@ -13,85 +13,78 @@ tags: [odoo, community, module]
 
 Purchase Orders, Receipts, Vendor Bills for Stock
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 27
+- XML files with UI/data artifacts: 13
 - Views: 21
 - Actions: 1
 - Menus: 0
 - Rules (ir.rule): 0
 - Access CSV entries: 14
+- Controller units: 0
+- Frontend asset files: 15
 
-## Detected Models
-
-- `AccountMove`
-- `AccountMoveLine`
-- `ProductTemplate`
-- `ProductProduct`
-- `ProductSupplierinfo`
-- `PurchaseOrder`
-- `PurchaseOrderLine`
-- `ResCompany`
-- `ResPartner`
-- `StockPicking`
-- `StockWarehouse`
-- `StockWarehouseOrderpoint`
-- `StockLot`
-- `StockMove`
-- `StockReference`
-- `StockRule`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Purchase Stock - Models and Relations
-class AccountMove
-class AccountMoveLine
-class ProductTemplate
-class ProductProduct
-class ProductSupplierinfo
-class PurchaseOrder
-class PurchaseOrderLine
-class ResCompany
-class ResPartner
-class StockPicking
-class StockWarehouse
-class StockWarehouseOrderpoint
-class StockLot
-class StockMove
-class StockReference
-class StockRule
-class "purchase.order.line" as purchase_order_line
-ProductProduct --|> purchase_order_line : one2many
-class "stock.picking" as stock_picking
-PurchaseOrder .. stock_picking : many2many
-class "res.partner" as res_partner
-PurchaseOrder --> res_partner : many2one
-class "stock.picking.type" as stock_picking_type
-PurchaseOrder --> stock_picking_type : many2one
-class "stock.reference" as stock_reference
-PurchaseOrder .. stock_reference : many2many
-class "stock.move" as stock_move
-PurchaseOrderLine --|> stock_move : one2many
-class "stock.warehouse.orderpoint" as stock_warehouse_orderpoint
-PurchaseOrderLine --> stock_warehouse_orderpoint : many2one
-PurchaseOrderLine .. stock_move : many2many
-class "stock.location" as stock_location
-PurchaseOrderLine --> stock_location : many2one
-ResPartner --|> purchase_order_line : one2many
-class "purchase.order" as purchase_order
-StockPicking --> purchase_order : many2one
-class "stock.rule" as stock_rule
-StockWarehouse --> stock_rule : many2one
-class "product.supplierinfo" as product_supplierinfo
-StockWarehouseOrderpoint --> product_supplierinfo : many2one
-StockWarehouseOrderpoint --> res_partner : many2one
-StockWarehouseOrderpoint --> res_partner : many2one
-StockLot .. purchase_order : many2many
-StockMove --> purchase_order_line : many2one
-StockMove .. purchase_order_line : many2many
-StockReference .. purchase_order : many2many
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Purchase Stock - Generated Coverage
+component "Module Overview" as overview
+component "Models\n27" as models
+component "Views / XML\n21 views\n13 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n15 files" as frontend
+component "Security / Data\n0 rules\n14 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/purchase_stock/Models|Models]] (27)
+- Views and XML: [[docs/Community Addons/purchase_stock/Views|Views]] (13 files)
+- Frontend: [[docs/Community Addons/purchase_stock/Frontend|Frontend]] (15 files)
+
+## Key models
+
+- `account.move`
+- `account.move.line`
+- `product.product`
+- `product.replenish`
+- `product.supplierinfo`
+- `product.template`
+- `purchase.order`
+- `purchase.order.line`
+- `purchase.report`
+- `report.stock.report_stock_rule`
+- `res.company`
+- `res.config.settings`
 
 ## Navigation
 
@@ -99,6 +92,7 @@ StockReference .. purchase_order : many2many
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

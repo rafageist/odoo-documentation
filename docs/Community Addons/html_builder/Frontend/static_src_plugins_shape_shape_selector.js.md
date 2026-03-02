@@ -1,0 +1,23 @@
+<!-- GENERATED:FRONTEND -->
+---
+tags: [odoo, community, generated, frontend]
+---
+
+# static/src/plugins/shape/shape_selector.js
+
+- Module: [[docs/Community Addons/html_builder/html_builder|html_builder]]
+- Scope: Community Addons
+- Asset kind: `js`
+- Source file: `static/src/plugins/shape/shape_selector.js`
+
+## Detected frontend signals
+
+- Component classes: `ShapeSelector`
+- Registry entries: none
+- Templates: none
+
+## Navigation
+
+- **Parent:** [[docs/Community Addons/html_builder/Frontend]]
+
+<!-- GENERATED:FRONTEND -->

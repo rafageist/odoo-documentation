@@ -9,41 +9,70 @@ tags: [odoo, enterprise, module]
 - Source: enterprise/account_budget
 - Dependencies: [[docs/Enterprise Addons/accountant/accountant|accountant]]
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 5
+- XML files with UI/data artifacts: 6
 - Views: 15
 - Actions: 4
 - Menus: 2
 - Rules (ir.rule): 3
 - Access CSV entries: 7
+- Controller units: 0
+- Frontend asset files: 0
 
-## Detected Models
-
-- `AccountAnalyticAccount`
-- `budget.analytic`
-- `budget.line`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Budget Management - Models and Relations
-class AccountAnalyticAccount
-class "budget.analytic" as budget_analytic
-class "budget.line" as budget_line
-AccountAnalyticAccount --|> budget_line : one2many
-budget_analytic --> budget_analytic : many2one
-budget_analytic --|> budget_analytic : one2many
-class "res.users" as res_users
-budget_analytic --> res_users : many2one
-budget_analytic --|> budget_line : one2many
-class "res.company" as res_company
-budget_analytic --> res_company : many2one
-budget_line --> budget_analytic : many2one
-class "res.currency" as res_currency
-budget_line --> res_currency : many2one
-budget_line --> res_company : many2one
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Budget Management - Generated Coverage
+component "Module Overview" as overview
+component "Models\n5" as models
+component "Views / XML\n15 views\n6 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n0 files" as frontend
+component "Security / Data\n3 rules\n7 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Enterprise Addons/account_budget/Models|Models]] (5)
+- Views and XML: [[docs/Enterprise Addons/account_budget/Views|Views]] (6 files)
+
+## Key models
+
+- `account.analytic.account`
+- `budget.analytic`
+- `budget.line`
+- `budget.report`
+- `budget.split.wizard`
 
 ## Navigation
 
@@ -51,6 +80,7 @@ budget_line --> res_company : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

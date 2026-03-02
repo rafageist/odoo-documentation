@@ -13,40 +13,70 @@ tags: [odoo, community, module]
 
 Surveys
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 5
+- XML files with UI/data artifacts: 5
 - Views: 8
 - Actions: 1
 - Menus: 1
 - Rules (ir.rule): 14
 - Access CSV entries: 15
+- Controller units: 0
+- Frontend asset files: 0
 
-## Detected Models
-
-- `HrApplicant`
-- `HrJob`
-- `SurveySurvey`
-- `SurveyUser_Input`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Hr Recruitment Interview Forms - Models and Relations
-class HrApplicant
-class HrJob
-class SurveySurvey
-class SurveyUser_Input
-class "survey.survey" as survey_survey
-HrApplicant --> survey_survey : many2one
-class "survey.user_input" as survey_user_input
-HrApplicant --|> survey_user_input : one2many
-HrJob --> survey_survey : many2one
-class "hr.job" as hr_job
-SurveySurvey --|> hr_job : one2many
-class "hr.applicant" as hr_applicant
-SurveyUser_Input --> hr_applicant : many2one
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Hr Recruitment Interview Forms - Generated Coverage
+component "Module Overview" as overview
+component "Models\n5" as models
+component "Views / XML\n8 views\n5 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n0 files" as frontend
+component "Security / Data\n14 rules\n15 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/hr_recruitment_survey/Models|Models]] (5)
+- Views and XML: [[docs/Community Addons/hr_recruitment_survey/Views|Views]] (5 files)
+
+## Key models
+
+- `hr.applicant`
+- `hr.job`
+- `survey.invite`
+- `survey.survey`
+- `survey.user_input`
 
 ## Navigation
 
@@ -54,6 +84,7 @@ SurveyUser_Input --> hr_applicant : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

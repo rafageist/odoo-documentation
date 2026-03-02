@@ -13,93 +13,78 @@ tags: [odoo, community, module]
 
 Inventory, Logistic, Valuation, Accounting
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 24
+- XML files with UI/data artifacts: 14
 - Views: 19
 - Actions: 5
 - Menus: 0
 - Rules (ir.rule): 2
 - Access CSV entries: 9
+- Controller units: 0
+- Frontend asset files: 18
 
-## Detected Models
-
-- `AccountAccount`
-- `AccountMove`
-- `AccountMoveLine`
-- `AccountAnalyticPlan`
-- `AccountAnalyticAccount`
-- `ProductTemplate`
-- `ProductProduct`
-- `ProductCategory`
-- `product.value`
-- `ResCompany`
-- `StockLocation`
-- `StockLot`
-- `StockMove`
-- `StockMoveLine`
-- `StockPicking`
-- `StockPickingType`
-- `StockQuant`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title WMS Accounting - Models and Relations
-class AccountAccount
-class AccountMove
-class AccountMoveLine
-class AccountAnalyticPlan
-class AccountAnalyticAccount
-class ProductTemplate
-class ProductProduct
-class ProductCategory
-class "product.value" as product_value
-class ResCompany
-class StockLocation
-class StockLot
-class StockMove
-class StockMoveLine
-class StockPicking
-class StockPickingType
-class StockQuant
-class "account.account" as account_account
-AccountAccount --> account_account : many2one
-AccountAccount --> account_account : many2one
-class "stock.move" as stock_move
-AccountMove --|> stock_move : one2many
-class "account.move.line" as account_move_line
-AccountMoveLine --> account_move_line : many2one
-ProductTemplate --> account_account : many2one
-class "res.currency" as res_currency
-ProductProduct --> res_currency : many2one
-class "account.journal" as account_journal
-ProductCategory --> account_journal : many2one
-ProductCategory --> account_account : many2one
-ProductCategory --> account_account : many2one
-class "product.product" as product_product
-product_value --> product_product : many2one
-class "stock.lot" as stock_lot
-product_value --> stock_lot : many2one
-product_value --> stock_move : many2one
-class "res.company" as res_company
-product_value --> res_company : many2one
-product_value --> res_currency : many2one
-class "res.users" as res_users
-product_value --> res_users : many2one
-ResCompany --> account_journal : many2one
-ResCompany --> account_account : many2one
-ResCompany --> account_account : many2one
-ResCompany --> account_account : many2one
-StockLocation --> account_account : many2one
-StockLot --> res_currency : many2one
-StockMove --> res_currency : many2one
-class "account.analytic.line" as account_analytic_line
-StockMove .. account_analytic_line : many2many
-class "account.move" as account_move
-StockMove --> account_move : many2one
-StockQuant --> res_currency : many2one
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title WMS Accounting - Generated Coverage
+component "Module Overview" as overview
+component "Models\n24" as models
+component "Views / XML\n19 views\n14 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n18 files" as frontend
+component "Security / Data\n2 rules\n9 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/stock_account/Models|Models]] (24)
+- Views and XML: [[docs/Community Addons/stock_account/Views|Views]] (14 files)
+- Frontend: [[docs/Community Addons/stock_account/Frontend|Frontend]] (18 files)
+
+## Key models
+
+- `account.account`
+- `account.analytic.account`
+- `account.analytic.plan`
+- `account.chart.template`
+- `account.move`
+- `account.move.line`
+- `product.category`
+- `product.product`
+- `product.template`
+- `product.value`
+- `res.company`
+- `res.config.settings`
 
 ## Navigation
 
@@ -107,6 +92,7 @@ StockQuant --> res_currency : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

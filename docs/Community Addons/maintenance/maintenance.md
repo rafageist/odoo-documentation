@@ -13,56 +13,73 @@ tags: [odoo, community, module]
 
 Track equipment and manage maintenance requests
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 7
+- XML files with UI/data artifacts: 4
 - Views: 25
 - Actions: 14
 - Menus: 17
 - Rules (ir.rule): 8
 - Access CSV entries: 10
+- Controller units: 0
+- Frontend asset files: 7
 
-## Detected Models
-
-- `maintenance.stage`
-- `maintenance.equipment.category`
-- `maintenance.equipment`
-- `maintenance.request`
-- `maintenance.team`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Maintenance - Models and Relations
-class "maintenance.stage" as maintenance_stage
-class "maintenance.equipment.category" as maintenance_equipment_category
-class "maintenance.equipment" as maintenance_equipment
-class "maintenance.request" as maintenance_request
-class "maintenance.team" as maintenance_team
-class "res.company" as res_company
-maintenance_equipment_category --> res_company : many2one
-class "res.users" as res_users
-maintenance_equipment_category --> res_users : many2one
-maintenance_equipment_category --|> maintenance_equipment : one2many
-maintenance_equipment_category --|> maintenance_request : one2many
-maintenance_equipment --> res_users : many2one
-maintenance_equipment --> maintenance_equipment_category : many2one
-class "res.partner" as res_partner
-maintenance_equipment --> res_partner : many2one
-maintenance_equipment --|> maintenance_request : one2many
-maintenance_request --> res_company : many2one
-maintenance_request --> res_users : many2one
-maintenance_request --> maintenance_equipment_category : many2one
-maintenance_request --> maintenance_equipment : many2one
-maintenance_request --> res_users : many2one
-maintenance_request --> maintenance_stage : many2one
-maintenance_request --> maintenance_team : many2one
-maintenance_team --> res_company : many2one
-maintenance_team .. res_users : many2many
-maintenance_team --|> maintenance_request : one2many
-maintenance_team --|> maintenance_equipment : one2many
-maintenance_team --|> maintenance_request : one2many
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Maintenance - Generated Coverage
+component "Module Overview" as overview
+component "Models\n7" as models
+component "Views / XML\n25 views\n4 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n7 files" as frontend
+component "Security / Data\n8 rules\n10 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/maintenance/Models|Models]] (7)
+- Views and XML: [[docs/Community Addons/maintenance/Views|Views]] (4 files)
+- Frontend: [[docs/Community Addons/maintenance/Frontend|Frontend]] (7 files)
+
+## Key models
+
+- `maintenance.equipment`
+- `maintenance.equipment.category`
+- `maintenance.mixin`
+- `maintenance.request`
+- `maintenance.stage`
+- `maintenance.team`
+- `res.config.settings`
 
 ## Navigation
 
@@ -70,6 +87,7 @@ maintenance_team --|> maintenance_request : one2many
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

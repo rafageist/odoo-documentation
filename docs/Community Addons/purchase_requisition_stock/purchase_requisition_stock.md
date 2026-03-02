@@ -9,43 +9,72 @@ tags: [odoo, community, module]
 - Source: odoo/addons/purchase_requisition_stock
 - Dependencies: [[docs/Community Addons/purchase_requisition/purchase_requisition|purchase_requisition]], [[docs/Community Addons/purchase_stock/purchase_stock|purchase_stock]]
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 7
+- XML files with UI/data artifacts: 2
 - Views: 3
 - Actions: 0
 - Menus: 0
 - Rules (ir.rule): 0
 - Access CSV entries: 3
+- Controller units: 0
+- Frontend asset files: 0
 
-## Detected Models
-
-- `PurchaseOrder`
-- `PurchaseOrderLine`
-- `PurchaseRequisition`
-- `PurchaseRequisitionLine`
-- `StockRule`
-- `StockMove`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Purchase Requisition Stock - Models and Relations
-class PurchaseOrder
-class PurchaseOrderLine
-class PurchaseRequisition
-class PurchaseRequisitionLine
-class StockRule
-class StockMove
-class "stock.warehouse" as stock_warehouse
-PurchaseRequisition --> stock_warehouse : many2one
-class "stock.picking.type" as stock_picking_type
-PurchaseRequisition --> stock_picking_type : many2one
-class "stock.move" as stock_move
-PurchaseRequisitionLine --> stock_move : many2one
-class "purchase.requisition.line" as purchase_requisition_line
-StockMove --|> purchase_requisition_line : one2many
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Purchase Requisition Stock - Generated Coverage
+component "Module Overview" as overview
+component "Models\n7" as models
+component "Views / XML\n3 views\n2 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n0 files" as frontend
+component "Security / Data\n0 rules\n3 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/purchase_requisition_stock/Models|Models]] (7)
+- Views and XML: [[docs/Community Addons/purchase_requisition_stock/Views|Views]] (2 files)
+
+## Key models
+
+- `purchase.order`
+- `purchase.order.line`
+- `purchase.requisition`
+- `purchase.requisition.create.alternative`
+- `purchase.requisition.line`
+- `stock.move`
+- `stock.rule`
 
 ## Navigation
 
@@ -53,6 +82,7 @@ StockMove --|> purchase_requisition_line : one2many
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

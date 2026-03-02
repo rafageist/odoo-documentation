@@ -9,31 +9,68 @@ tags: [odoo, community, module]
 - Source: odoo/addons/l10n_id_pos
 - Dependencies: [[docs/Community Addons/l10n_id/l10n_id|l10n_id]], [[docs/Community Addons/point_of_sale/point_of_sale|point_of_sale]]
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 3
+- XML files with UI/data artifacts: 0
 - Views: 0
 - Actions: 0
 - Menus: 0
 - Rules (ir.rule): 0
 - Access CSV entries: 0
+- Controller units: 0
+- Frontend asset files: 2
 
-## Detected Models
-
-- `PosOrder`
-- `PosPaymentMethod`
-- `L10n_IdQrisTransaction`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Indonesia - Point of Sale - Models and Relations
-class PosOrder
-class PosPaymentMethod
-class L10n_IdQrisTransaction
-class "l10n_id.qris.transaction" as l10n_id_qris_transaction
-PosOrder .. l10n_id_qris_transaction : many2many
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Indonesia - Point of Sale - Generated Coverage
+component "Module Overview" as overview
+component "Models\n3" as models
+component "Views / XML\n0 views\n0 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n2 files" as frontend
+component "Security / Data\n0 rules\n0 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/l10n_id_pos/Models|Models]] (3)
+- Frontend: [[docs/Community Addons/l10n_id_pos/Frontend|Frontend]] (2 files)
+
+## Key models
+
+- `l10n_id.qris.transaction`
+- `pos.order`
+- `pos.payment.method`
 
 ## Navigation
 
@@ -41,6 +78,7 @@ PosOrder .. l10n_id_qris_transaction : many2many
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

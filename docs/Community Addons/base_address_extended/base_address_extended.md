@@ -13,34 +13,68 @@ tags: [odoo, community, module]
 
 Add extra fields on addresses
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 3
+- XML files with UI/data artifacts: 3
 - Views: 5
 - Actions: 1
 - Menus: 1
 - Rules (ir.rule): 0
 - Access CSV entries: 2
+- Controller units: 0
+- Frontend asset files: 0
 
-## Detected Models
-
-- `res.city`
-- `ResCountry`
-- `ResPartner`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Extended Addresses - Models and Relations
-class "res.city" as res_city
-class ResCountry
-class ResPartner
-class "res.country" as res_country
-res_city --> res_country : many2one
-class "res.country.state" as res_country_state
-res_city --> res_country_state : many2one
-ResPartner --> res_city : many2one
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Extended Addresses - Generated Coverage
+component "Module Overview" as overview
+component "Models\n3" as models
+component "Views / XML\n5 views\n3 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n0 files" as frontend
+component "Security / Data\n0 rules\n2 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/base_address_extended/Models|Models]] (3)
+- Views and XML: [[docs/Community Addons/base_address_extended/Views|Views]] (3 files)
+
+## Key models
+
+- `res.city`
+- `res.country`
+- `res.partner`
 
 ## Navigation
 
@@ -48,6 +82,7 @@ ResPartner --> res_city : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

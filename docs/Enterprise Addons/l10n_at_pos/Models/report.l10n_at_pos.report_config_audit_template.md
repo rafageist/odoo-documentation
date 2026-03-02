@@ -1,0 +1,32 @@
+<!-- GENERATED:MODEL -->
+---
+tags: [odoo, enterprise, generated, model]
+---
+
+# report.l10n_at_pos.report_config_audit_template
+
+- Module: [[docs/Enterprise Addons/l10n_at_pos/l10n_at_pos|l10n_at_pos]]
+- Scope: Enterprise Addons
+- Defined in module: yes
+- Source files: `models/pos_config.py`
+- Python classes: `ReportL10nAtPosConfigAuditTemplate`
+- Description: Get DEP7 Report for Session.
+
+## Field footprint
+
+- Detected fields: 0
+- Field types: none
+- Relation fields: 0
+
+## Method hints
+
+- Detected methods: 1
+- Action methods: none
+- Compute methods: none
+- Onchange methods: none
+
+## Navigation
+
+- **Parent:** [[docs/Enterprise Addons/l10n_at_pos/Models]]
+
+<!-- GENERATED:MODEL -->

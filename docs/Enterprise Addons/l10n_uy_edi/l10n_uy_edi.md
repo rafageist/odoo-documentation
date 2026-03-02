@@ -9,55 +9,76 @@ tags: [odoo, enterprise, module]
 - Source: enterprise/l10n_uy_edi
 - Dependencies: [[docs/Community Addons/l10n_uy/l10n_uy|l10n_uy]]
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 11
+- XML files with UI/data artifacts: 7
 - Views: 11
 - Actions: 1
 - Menus: 2
 - Rules (ir.rule): 1
 - Access CSV entries: 2
+- Controller units: 0
+- Frontend asset files: 0
 
-## Detected Models
-
-- `AccountJournal`
-- `AccountMove`
-- `AccountMoveLine`
-- `L10nLatamDocumentType`
-- `l10n_uy_edi.addenda`
-- `l10n_uy_edi.document`
-- `ResCompany`
-- `ResPartner`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Uruguay - Electronic Invoice - Models and Relations
-class AccountJournal
-class AccountMove
-class AccountMoveLine
-class L10nLatamDocumentType
-class "l10n_uy_edi.addenda" as l10n_uy_edi_addenda
-class "l10n_uy_edi.document" as l10n_uy_edi_document
-class ResCompany
-class ResPartner
-AccountMove --> l10n_uy_edi_document : many2one
-AccountMove .. l10n_uy_edi_addenda : many2many
-class "ir.attachment" as ir_attachment
-AccountMove --> ir_attachment : many2one
-AccountMoveLine .. l10n_uy_edi_addenda : many2many
-class "res.company" as res_company
-l10n_uy_edi_addenda --> res_company : many2one
-class "account.move" as account_move
-l10n_uy_edi_document --> account_move : many2one
-l10n_uy_edi_document --> ir_attachment : many2one
-class "l10n_latam.document.type" as l10n_latam_document_type
-l10n_uy_edi_document --> l10n_latam_document_type : many2one
-l10n_uy_edi_document --> res_company : many2one
-class "res.partner" as res_partner
-l10n_uy_edi_document --> res_partner : many2one
-ResCompany --|> l10n_uy_edi_addenda : one2many
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Uruguay - Electronic Invoice - Generated Coverage
+component "Module Overview" as overview
+component "Models\n11" as models
+component "Views / XML\n11 views\n7 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n0 files" as frontend
+component "Security / Data\n1 rules\n2 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Enterprise Addons/l10n_uy_edi/Models|Models]] (11)
+- Views and XML: [[docs/Enterprise Addons/l10n_uy_edi/Views|Views]] (7 files)
+
+## Key models
+
+- `account.journal`
+- `account.move`
+- `account.move.line`
+- `account.move.send`
+- `account.move.send.wizard`
+- `l10n_latam.document.type`
+- `l10n_uy_edi.addenda`
+- `l10n_uy_edi.document`
+- `res.company`
+- `res.config.settings`
+- `res.partner`
 
 ## Navigation
 
@@ -65,6 +86,7 @@ ResCompany --|> l10n_uy_edi_addenda : one2many
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

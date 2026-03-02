@@ -13,47 +13,77 @@ tags: [odoo, enterprise, module]
 
 Schedule and track onsite operations, invoice time and material
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 10
+- XML files with UI/data artifacts: 6
 - Views: 15
 - Actions: 21
 - Menus: 2
 - Rules (ir.rule): 0
 - Access CSV entries: 0
+- Controller units: 2
+- Frontend asset files: 7
 
-## Detected Models
-
-- `AccountAnalyticLine`
-- `ProductProduct`
-- `ProductTemplate`
-- `ProjectProject`
-- `ProjectSaleLineEmployeeMap`
-- `ProjectTask`
-- `SaleOrder`
-- `SaleOrderLine`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Field Service - Sale - Models and Relations
-class AccountAnalyticLine
-class ProductProduct
-class ProductTemplate
-class ProjectProject
-class ProjectSaleLineEmployeeMap
-class ProjectTask
-class SaleOrder
-class SaleOrderLine
-class "product.product" as product_product
-ProjectSaleLineEmployeeMap --> product_product : many2one
-class "res.currency" as res_currency
-ProjectTask --> res_currency : many2one
-class "product.pricelist" as product_pricelist
-ProjectTask --> product_pricelist : many2one
-class "project.task" as project_task
-SaleOrder --> project_task : many2one
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Field Service - Sale - Generated Coverage
+component "Module Overview" as overview
+component "Models\n10" as models
+component "Views / XML\n15 views\n6 files" as views
+component "Controllers\n4 routes" as controllers
+component "Frontend\n7 files" as frontend
+component "Security / Data\n0 rules\n0 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Enterprise Addons/industry_fsm_sale/Models|Models]] (10)
+- Views and XML: [[docs/Enterprise Addons/industry_fsm_sale/Views|Views]] (6 files)
+- Controllers: [[docs/Enterprise Addons/industry_fsm_sale/Controllers|Controllers]] (2)
+- Frontend: [[docs/Enterprise Addons/industry_fsm_sale/Frontend|Frontend]] (7 files)
+
+## Key models
+
+- `account.analytic.line`
+- `product.product`
+- `product.template`
+- `project.project`
+- `project.sale.line.employee.map`
+- `project.task`
+- `report.project.task.user.fsm`
+- `sale.advance.payment.inv`
+- `sale.order`
+- `sale.order.line`
 
 ## Navigation
 
@@ -61,6 +91,7 @@ SaleOrder --> project_task : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

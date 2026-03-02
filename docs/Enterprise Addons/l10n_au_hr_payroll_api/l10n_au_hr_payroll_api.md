@@ -9,59 +9,77 @@ tags: [odoo, enterprise, module]
 - Source: enterprise/l10n_au_hr_payroll_api
 - Dependencies: [[docs/Enterprise Addons/l10n_au_hr_payroll_account/l10n_au_hr_payroll_account|l10n_au_hr_payroll_account]], [[docs/Community Addons/account_edi_proxy_client/account_edi_proxy_client|account_edi_proxy_client]], [[docs/Community Addons/auth_timeout/auth_timeout|auth_timeout]]
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 18
+- XML files with UI/data artifacts: 9
 - Views: 12
 - Actions: 1
 - Menus: 2
 - Rules (ir.rule): 2
 - Access CSV entries: 4
+- Controller units: 0
+- Frontend asset files: 0
 
-## Detected Models
-
-- `AccountEdiProxyClientUser`
-- `hr.employee`
-- `Payslip`
-- `IrAttachment`
-- `l10n_au.audit.log`
-- `l10n_au.employer.registration`
-- `L10n_AuSTP`
-- `L10n_auSuperStream`
-- `L10n_auSuperStreamLine`
-- `L10n_AuSuperFund`
-- `res.company`
-- `res.groups`
-- `res.partner.bank`
-- `res.users`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Australia - Payroll with API - Models and Relations
-class AccountEdiProxyClientUser
-class "hr.employee" as hr_employee
-class Payslip
-class IrAttachment
-class "l10n_au.audit.log" as l10n_au_audit_log
-class "l10n_au.employer.registration" as l10n_au_employer_registration
-class L10n_AuSTP
-class L10n_auSuperStream
-class L10n_auSuperStreamLine
-class L10n_AuSuperFund
-class "res.company" as res_company
-class "res.groups" as res_groups
-class "res.partner.bank" as res_partner_bank
-class "res.users" as res_users
-l10n_au_audit_log --> res_company : many2one
-l10n_au_employer_registration --> res_company : many2one
-class "l10n_au.super.stream.line" as l10n_au_super_stream_line
-L10n_auSuperStreamLine --> l10n_au_super_stream_line : many2one
-class "account_edi_proxy_client.user" as account_edi_proxy_client_user
-res_company --> account_edi_proxy_client_user : many2one
-res_company --|> l10n_au_employer_registration : one2many
-res_company --> l10n_au_employer_registration : many2one
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Australia - Payroll with API - Generated Coverage
+component "Module Overview" as overview
+component "Models\n18" as models
+component "Views / XML\n12 views\n9 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n0 files" as frontend
+component "Security / Data\n2 rules\n4 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Enterprise Addons/l10n_au_hr_payroll_api/Models|Models]] (18)
+- Views and XML: [[docs/Enterprise Addons/l10n_au_hr_payroll_api/Views|Views]] (9 files)
+
+## Key models
+
+- `account_edi_proxy_client.user`
+- `hr.employee`
+- `hr.payslip`
+- `ir.attachment`
+- `l10n_au.audit.log`
+- `l10n_au.audit.logging.mixin`
+- `l10n_au.employer.registration`
+- `l10n_au.payroll.register.wizard`
+- `l10n_au.stp`
+- `l10n_au.super.fund`
+- `l10n_au.super.stream`
+- `l10n_au.super.stream.line`
 
 ## Navigation
 
@@ -69,6 +87,7 @@ res_company --> l10n_au_employer_registration : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

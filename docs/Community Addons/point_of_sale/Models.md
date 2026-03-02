@@ -1,0 +1,87 @@
+<!-- GENERATED:MODELS -->
+---
+tags: [odoo, community, generated, index]
+---
+
+# point_of_sale Models
+
+- Module: [[docs/Community Addons/point_of_sale/point_of_sale|point_of_sale]]
+- Scope: Community Addons
+- Generated items: 68
+
+## Items
+
+- [[docs/Community Addons/point_of_sale/Models/account.bank.statement.line|account.bank.statement.line]]
+- [[docs/Community Addons/point_of_sale/Models/account.cash.rounding|account.cash.rounding]]
+- [[docs/Community Addons/point_of_sale/Models/account.fiscal.position|account.fiscal.position]]
+- [[docs/Community Addons/point_of_sale/Models/account.journal|account.journal]]
+- [[docs/Community Addons/point_of_sale/Models/account.move|account.move]]
+- [[docs/Community Addons/point_of_sale/Models/account.move.line|account.move.line]]
+- [[docs/Community Addons/point_of_sale/Models/account.payment|account.payment]]
+- [[docs/Community Addons/point_of_sale/Models/account.tax|account.tax]]
+- [[docs/Community Addons/point_of_sale/Models/account.tax.group|account.tax.group]]
+- [[docs/Community Addons/point_of_sale/Models/barcode.rule|barcode.rule]]
+- [[docs/Community Addons/point_of_sale/Models/decimal.precision|decimal.precision]]
+- [[docs/Community Addons/point_of_sale/Models/digest.digest|digest.digest]]
+- [[docs/Community Addons/point_of_sale/Models/ir.http|ir.http]]
+- [[docs/Community Addons/point_of_sale/Models/ir.module.module|ir.module.module]]
+- [[docs/Community Addons/point_of_sale/Models/ir.sequence|ir.sequence]]
+- [[docs/Community Addons/point_of_sale/Models/pos.bill|pos.bill]]
+- [[docs/Community Addons/point_of_sale/Models/pos.bus.mixin|pos.bus.mixin]]
+- [[docs/Community Addons/point_of_sale/Models/pos.category|pos.category]]
+- [[docs/Community Addons/point_of_sale/Models/pos.close.session.wizard|pos.close.session.wizard]]
+- [[docs/Community Addons/point_of_sale/Models/pos.config|pos.config]]
+- [[docs/Community Addons/point_of_sale/Models/pos.confirmation.wizard|pos.confirmation.wizard]]
+- [[docs/Community Addons/point_of_sale/Models/pos.daily.sales.reports.wizard|pos.daily.sales.reports.wizard]]
+- [[docs/Community Addons/point_of_sale/Models/pos.details.wizard|pos.details.wizard]]
+- [[docs/Community Addons/point_of_sale/Models/pos.load.mixin|pos.load.mixin]]
+- [[docs/Community Addons/point_of_sale/Models/pos.make.invoice|pos.make.invoice]]
+- [[docs/Community Addons/point_of_sale/Models/pos.make.payment|pos.make.payment]]
+- [[docs/Community Addons/point_of_sale/Models/pos.note|pos.note]]
+- [[docs/Community Addons/point_of_sale/Models/pos.order|pos.order]]
+- [[docs/Community Addons/point_of_sale/Models/pos.order.line|pos.order.line]]
+- [[docs/Community Addons/point_of_sale/Models/pos.pack.operation.lot|pos.pack.operation.lot]]
+- [[docs/Community Addons/point_of_sale/Models/pos.payment|pos.payment]]
+- [[docs/Community Addons/point_of_sale/Models/pos.payment.method|pos.payment.method]]
+- [[docs/Community Addons/point_of_sale/Models/pos.preset|pos.preset]]
+- [[docs/Community Addons/point_of_sale/Models/pos.printer|pos.printer]]
+- [[docs/Community Addons/point_of_sale/Models/pos.session|pos.session]]
+- [[docs/Community Addons/point_of_sale/Models/product.attribute|product.attribute]]
+- [[docs/Community Addons/point_of_sale/Models/product.attribute.custom.value|product.attribute.custom.value]]
+- [[docs/Community Addons/point_of_sale/Models/product.category|product.category]]
+- [[docs/Community Addons/point_of_sale/Models/product.combo|product.combo]]
+- [[docs/Community Addons/point_of_sale/Models/product.combo.item|product.combo.item]]
+- [[docs/Community Addons/point_of_sale/Models/product.pricelist|product.pricelist]]
+- [[docs/Community Addons/point_of_sale/Models/product.pricelist.item|product.pricelist.item]]
+- [[docs/Community Addons/point_of_sale/Models/product.product|product.product]]
+- [[docs/Community Addons/point_of_sale/Models/product.tag|product.tag]]
+- [[docs/Community Addons/point_of_sale/Models/product.template|product.template]]
+- [[docs/Community Addons/point_of_sale/Models/product.template.attribute.exclusion|product.template.attribute.exclusion]]
+- [[docs/Community Addons/point_of_sale/Models/product.template.attribute.line|product.template.attribute.line]]
+- [[docs/Community Addons/point_of_sale/Models/product.template.attribute.value|product.template.attribute.value]]
+- [[docs/Community Addons/point_of_sale/Models/product.uom|product.uom]]
+- [[docs/Community Addons/point_of_sale/Models/report.point_of_sale.report_invoice|report.point_of_sale.report_invoice]]
+- [[docs/Community Addons/point_of_sale/Models/report.point_of_sale.report_saledetails|report.point_of_sale.report_saledetails]]
+- [[docs/Community Addons/point_of_sale/Models/report.pos.order|report.pos.order]]
+- [[docs/Community Addons/point_of_sale/Models/res.company|res.company]]
+- [[docs/Community Addons/point_of_sale/Models/res.config.settings|res.config.settings]]
+- [[docs/Community Addons/point_of_sale/Models/res.country|res.country]]
+- [[docs/Community Addons/point_of_sale/Models/res.country.state|res.country.state]]
+- [[docs/Community Addons/point_of_sale/Models/res.currency|res.currency]]
+- [[docs/Community Addons/point_of_sale/Models/res.lang|res.lang]]
+- [[docs/Community Addons/point_of_sale/Models/res.partner|res.partner]]
+- [[docs/Community Addons/point_of_sale/Models/res.users|res.users]]
+- [[docs/Community Addons/point_of_sale/Models/resource.calendar.attendance|resource.calendar.attendance]]
+- [[docs/Community Addons/point_of_sale/Models/stock.move|stock.move]]
+- [[docs/Community Addons/point_of_sale/Models/stock.picking|stock.picking]]
+- [[docs/Community Addons/point_of_sale/Models/stock.picking.type|stock.picking.type]]
+- [[docs/Community Addons/point_of_sale/Models/stock.reference|stock.reference]]
+- [[docs/Community Addons/point_of_sale/Models/stock.rule|stock.rule]]
+- [[docs/Community Addons/point_of_sale/Models/stock.warehouse|stock.warehouse]]
+- [[docs/Community Addons/point_of_sale/Models/uom.uom|uom.uom]]
+
+## Navigation
+
+- **Parent:** [[docs/Community Addons/point_of_sale/point_of_sale]]
+
+<!-- GENERATED:MODELS -->

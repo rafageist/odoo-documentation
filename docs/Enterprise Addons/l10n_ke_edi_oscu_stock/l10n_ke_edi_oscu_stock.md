@@ -15,62 +15,77 @@ tags: [odoo, enterprise, module]
             Kenya eTIMS Device EDI Stock Integration
         
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 12
+- XML files with UI/data artifacts: 7
 - Views: 12
 - Actions: 2
 - Menus: 1
 - Rules (ir.rule): 1
 - Access CSV entries: 2
+- Controller units: 0
+- Frontend asset files: 0
 
-## Detected Models
-
-- `AccountMove`
-- `AccountMoveLine`
-- `l10n_ke_edi.customs.import`
-- `ProductTemplate`
-- `ProductProduct`
-- `PurchaseOrder`
-- `PurchaseOrderLine`
-- `ResCompany`
-- `StockMove`
-- `StockPicking`
-- `StockQuant`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Kenya ETIMS EDI Stock Integration - Models and Relations
-class AccountMove
-class AccountMoveLine
-class "l10n_ke_edi.customs.import" as l10n_ke_edi_customs_import
-class ProductTemplate
-class ProductProduct
-class PurchaseOrder
-class PurchaseOrderLine
-class ResCompany
-class StockMove
-class StockPicking
-class StockQuant
-class "res.country" as res_country
-l10n_ke_edi_customs_import --> res_country : many2one
-l10n_ke_edi_customs_import --> res_country : many2one
-class "l10n_ke_edi_oscu.code" as l10n_ke_edi_oscu_code
-l10n_ke_edi_customs_import --> l10n_ke_edi_oscu_code : many2one
-l10n_ke_edi_customs_import --> l10n_ke_edi_oscu_code : many2one
-class "uom.uom" as uom_uom
-l10n_ke_edi_customs_import --> uom_uom : many2one
-class "product.product" as product_product
-l10n_ke_edi_customs_import --> product_product : many2one
-class "res.company" as res_company
-l10n_ke_edi_customs_import --> res_company : many2one
-class "purchase.order" as purchase_order
-l10n_ke_edi_customs_import --> purchase_order : many2one
-class "res.partner" as res_partner
-l10n_ke_edi_customs_import --> res_partner : many2one
-PurchaseOrder --|> l10n_ke_edi_customs_import : one2many
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Kenya ETIMS EDI Stock Integration - Generated Coverage
+component "Module Overview" as overview
+component "Models\n12" as models
+component "Views / XML\n12 views\n7 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n0 files" as frontend
+component "Security / Data\n1 rules\n2 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Enterprise Addons/l10n_ke_edi_oscu_stock/Models|Models]] (12)
+- Views and XML: [[docs/Enterprise Addons/l10n_ke_edi_oscu_stock/Views|Views]] (7 files)
+
+## Key models
+
+- `account.move`
+- `account.move.line`
+- `l10n_ke_edi.customs.import`
+- `product.product`
+- `product.template`
+- `purchase.order`
+- `purchase.order.line`
+- `res.company`
+- `stock.move`
+- `stock.picking`
+- `stock.quant`
+- `stock.return.picking`
 
 ## Navigation
 
@@ -78,6 +93,7 @@ PurchaseOrder --|> l10n_ke_edi_customs_import : one2many
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

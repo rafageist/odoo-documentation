@@ -9,44 +9,76 @@ tags: [odoo, enterprise, module]
 - Source: enterprise/l10n_ar_edi
 - Dependencies: [[docs/Community Addons/l10n_ar/l10n_ar|l10n_ar]], [[docs/Community Addons/certificate/certificate|certificate]]
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 10
+- XML files with UI/data artifacts: 10
 - Views: 11
 - Actions: 3
 - Menus: 3
 - Rules (ir.rule): 0
 - Access CSV entries: 3
+- Controller units: 1
+- Frontend asset files: 0
 
-## Detected Models
-
-- `AccountJournal`
-- `AccountMove`
-- `CertificateCertificate`
-- `l10n_ar.afipws.connection`
-- `ProductTemplate`
-- `ResCompany`
-- `ResCurrency`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Argentinean Electronic Invoicing - Models and Relations
-class AccountJournal
-class AccountMove
-class CertificateCertificate
-class "l10n_ar.afipws.connection" as l10n_ar_afipws_connection
-class ProductTemplate
-class ResCompany
-class ResCurrency
-class "res.company" as res_company
-l10n_ar_afipws_connection --> res_company : many2one
-ResCompany --|> l10n_ar_afipws_connection : one2many
-class "certificate.key" as certificate_key
-ResCompany --> certificate_key : many2one
-class "certificate.certificate" as certificate_certificate
-ResCompany --> certificate_certificate : many2one
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Argentinean Electronic Invoicing - Generated Coverage
+component "Module Overview" as overview
+component "Models\n10" as models
+component "Views / XML\n11 views\n10 files" as views
+component "Controllers\n1 routes" as controllers
+component "Frontend\n0 files" as frontend
+component "Security / Data\n0 rules\n3 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Enterprise Addons/l10n_ar_edi/Models|Models]] (10)
+- Views and XML: [[docs/Enterprise Addons/l10n_ar_edi/Views|Views]] (10 files)
+- Controllers: [[docs/Enterprise Addons/l10n_ar_edi/Controllers|Controllers]] (1)
+
+## Key models
+
+- `account.journal`
+- `account.move`
+- `account.move.reversal`
+- `certificate.certificate`
+- `l10n_ar.afipws.connection`
+- `l10n_ar_afip.ws.consult`
+- `product.template`
+- `res.company`
+- `res.config.settings`
+- `res.currency`
 
 ## Navigation
 
@@ -54,6 +86,7 @@ ResCompany --> certificate_certificate : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

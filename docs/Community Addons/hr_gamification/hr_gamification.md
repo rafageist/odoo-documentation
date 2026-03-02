@@ -9,43 +9,72 @@ tags: [odoo, community, module]
 - Source: odoo/addons/hr_gamification
 - Dependencies: [[docs/Community Addons/gamification/gamification|gamification]], [[docs/Community Addons/hr/hr|hr]]
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 6
+- XML files with UI/data artifacts: 4
 - Views: 6
 - Actions: 5
 - Menus: 4
 - Rules (ir.rule): 4
 - Access CSV entries: 5
+- Controller units: 0
+- Frontend asset files: 2
 
-## Detected Models
-
-- `GamificationBadgeUser`
-- `GamificationBadge`
-- `HrEmployee`
-- `HrEmployeePublic`
-- `ResUsers`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title HR Gamification - Models and Relations
-class GamificationBadgeUser
-class GamificationBadge
-class HrEmployee
-class HrEmployeePublic
-class ResUsers
-class "hr.employee" as hr_employee
-GamificationBadgeUser --> hr_employee : many2one
-class "gamification.goal" as gamification_goal
-HrEmployee --|> gamification_goal : one2many
-class "gamification.badge.user" as gamification_badge_user
-HrEmployee --|> gamification_badge_user : one2many
-HrEmployee --|> gamification_badge_user : one2many
-HrEmployeePublic --|> gamification_badge_user : one2many
-ResUsers --|> gamification_goal : one2many
-ResUsers --|> gamification_badge_user : one2many
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title HR Gamification - Generated Coverage
+component "Module Overview" as overview
+component "Models\n6" as models
+component "Views / XML\n6 views\n4 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n2 files" as frontend
+component "Security / Data\n4 rules\n5 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/hr_gamification/Models|Models]] (6)
+- Views and XML: [[docs/Community Addons/hr_gamification/Views|Views]] (4 files)
+- Frontend: [[docs/Community Addons/hr_gamification/Frontend|Frontend]] (2 files)
+
+## Key models
+
+- `gamification.badge`
+- `gamification.badge.user`
+- `gamification.badge.user.wizard`
+- `hr.employee`
+- `hr.employee.public`
+- `res.users`
 
 ## Navigation
 
@@ -53,6 +82,7 @@ ResUsers --|> gamification_badge_user : one2many
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

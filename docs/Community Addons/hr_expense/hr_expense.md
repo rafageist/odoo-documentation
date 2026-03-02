@@ -13,90 +13,78 @@ tags: [odoo, community, module]
 
 Submit, validate and reinvoice employee expenses
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 21
+- XML files with UI/data artifacts: 14
 - Views: 32
 - Actions: 21
 - Menus: 11
 - Rules (ir.rule): 12
 - Access CSV entries: 14
+- Controller units: 0
+- Frontend asset files: 16
 
-## Detected Models
-
-- `AccountMove`
-- `AccountMoveLine`
-- `AccountPayment`
-- `AccountTax`
-- `AccountAnalyticApplicability`
-- `AccountAnalyticAccount`
-- `HrDepartment`
-- `HrEmployee`
-- `HrEmployeePublic`
-- `hr.expense`
-- `IrActionsReport`
-- `ProductProduct`
-- `ProductTemplate`
-- `ResCompany`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Expenses - Models and Relations
-class AccountMove
-class AccountMoveLine
-class AccountPayment
-class AccountTax
-class AccountAnalyticApplicability
-class AccountAnalyticAccount
-class HrDepartment
-class HrEmployee
-class HrEmployeePublic
-class "hr.expense" as hr_expense
-class IrActionsReport
-class ProductProduct
-class ProductTemplate
-class ResCompany
-AccountMove --|> hr_expense : one2many
-AccountMoveLine --> hr_expense : many2one
-class "res.users" as res_users
-HrEmployee --> res_users : many2one
-HrEmployeePublic --> res_users : many2one
-class "hr.employee" as hr_employee
-hr_expense --> hr_employee : many2one
-class "hr.department" as hr_department
-hr_expense --> hr_department : many2one
-hr_expense --> res_users : many2one
-class "res.company" as res_company
-hr_expense --> res_company : many2one
-class "product.product" as product_product
-hr_expense --> product_product : many2one
-class "uom.uom" as uom_uom
-hr_expense --> uom_uom : many2one
-class "ir.attachment" as ir_attachment
-hr_expense --|> ir_attachment : one2many
-hr_expense .. hr_expense : many2many
-hr_expense .. hr_expense : many2many
-hr_expense --> hr_expense : many2one
-class "res.currency" as res_currency
-hr_expense --> res_currency : many2one
-hr_expense --> res_currency : many2one
-class "account.journal" as account_journal
-hr_expense --> account_journal : many2one
-class "account.payment.method.line" as account_payment_method_line
-hr_expense .. account_payment_method_line : many2many
-hr_expense --> account_payment_method_line : many2one
-class "account.move" as account_move
-hr_expense --> account_move : many2one
-class "res.partner" as res_partner
-hr_expense --> res_partner : many2one
-class "account.account" as account_account
-hr_expense --> account_account : many2one
-class "account.tax" as account_tax
-hr_expense .. account_tax : many2many
-ResCompany --> account_journal : many2one
-ResCompany .. account_payment_method_line : many2many
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Expenses - Generated Coverage
+component "Module Overview" as overview
+component "Models\n21" as models
+component "Views / XML\n32 views\n14 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n16 files" as frontend
+component "Security / Data\n12 rules\n14 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/hr_expense/Models|Models]] (21)
+- Views and XML: [[docs/Community Addons/hr_expense/Views|Views]] (14 files)
+- Frontend: [[docs/Community Addons/hr_expense/Frontend|Frontend]] (16 files)
+
+## Key models
+
+- `account.analytic.account`
+- `account.analytic.applicability`
+- `account.move`
+- `account.move.line`
+- `account.payment`
+- `account.payment.register`
+- `account.tax`
+- `hr.department`
+- `hr.employee`
+- `hr.employee.public`
+- `hr.expense`
+- `hr.expense.approve.duplicate`
 
 ## Navigation
 
@@ -104,6 +92,7 @@ ResCompany .. account_payment_method_line : many2many
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

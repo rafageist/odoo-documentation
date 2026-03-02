@@ -1,0 +1,38 @@
+<!-- GENERATED:FRONTEND -->
+---
+tags: [odoo, enterprise, generated, index]
+---
+
+# sale_timesheet_enterprise Frontend
+
+- Module: [[docs/Enterprise Addons/sale_timesheet_enterprise/sale_timesheet_enterprise|sale_timesheet_enterprise]]
+- Scope: Enterprise Addons
+- Generated items: 19
+
+## Items
+
+- [[docs/Enterprise Addons/sale_timesheet_enterprise/Frontend/static_src_components_many2one_avatar_rank_field_many2one_avatar_rank_field.js|static/src/components/many2one_avatar_rank_field/many2one_avatar_rank_field.js]]
+- [[docs/Enterprise Addons/sale_timesheet_enterprise/Frontend/static_src_components_many2one_avatar_rank_field_many2one_avatar_rank_field.xml|static/src/components/many2one_avatar_rank_field/many2one_avatar_rank_field.xml]]
+- [[docs/Enterprise Addons/sale_timesheet_enterprise/Frontend/static_src_components_timesheet_leaderboard_timesheet_leaderboard.js|static/src/components/timesheet_leaderboard/timesheet_leaderboard.js]]
+- [[docs/Enterprise Addons/sale_timesheet_enterprise/Frontend/static_src_components_timesheet_leaderboard_timesheet_leaderboard.xml|static/src/components/timesheet_leaderboard/timesheet_leaderboard.xml]]
+- [[docs/Enterprise Addons/sale_timesheet_enterprise/Frontend/static_src_components_timesheet_overtime_indication_timesheet_overtime_indication.js|static/src/components/timesheet_overtime_indication/timesheet_overtime_indication.js]]
+- [[docs/Enterprise Addons/sale_timesheet_enterprise/Frontend/static_src_services_timesheet_leaderboard_service.js|static/src/services/timesheet_leaderboard_service.js]]
+- [[docs/Enterprise Addons/sale_timesheet_enterprise/Frontend/static_src_views_patch_renderer.js|static/src/views/patch_renderer.js]]
+- [[docs/Enterprise Addons/sale_timesheet_enterprise/Frontend/static_src_views_timesheet_analysis_pivot_timesheet_analysis_pivot_model.js|static/src/views/timesheet_analysis_pivot/timesheet_analysis_pivot_model.js]]
+- [[docs/Enterprise Addons/sale_timesheet_enterprise/Frontend/static_src_views_timesheet_analysis_pivot_timesheet_analysis_pivot_view.js|static/src/views/timesheet_analysis_pivot/timesheet_analysis_pivot_view.js]]
+- [[docs/Enterprise Addons/sale_timesheet_enterprise/Frontend/static_src_views_timesheet_grid_timesheet_grid_model.js|static/src/views/timesheet_grid/timesheet_grid_model.js]]
+- [[docs/Enterprise Addons/sale_timesheet_enterprise/Frontend/static_src_views_timesheet_leaderboard_dialog_timesheet_leaderboard_dialog.js|static/src/views/timesheet_leaderboard_dialog/timesheet_leaderboard_dialog.js]]
+- [[docs/Enterprise Addons/sale_timesheet_enterprise/Frontend/static_src_views_timesheet_leaderboard_dialog_timesheet_leaderboard_dialog.xml|static/src/views/timesheet_leaderboard_dialog/timesheet_leaderboard_dialog.xml]]
+- [[docs/Enterprise Addons/sale_timesheet_enterprise/Frontend/static_src_views_timesheet_leaderboard_timer_grid_timesheet_leaderboard_timer_grid_model.js|static/src/views/timesheet_leaderboard_timer_grid/timesheet_leaderboard_timer_grid_model.js]]
+- [[docs/Enterprise Addons/sale_timesheet_enterprise/Frontend/static_src_views_timesheet_leaderboard_timer_grid_timesheet_leaderboard_timer_grid_renderer.js|static/src/views/timesheet_leaderboard_timer_grid/timesheet_leaderboard_timer_grid_renderer.js]]
+- [[docs/Enterprise Addons/sale_timesheet_enterprise/Frontend/static_src_views_timesheet_leaderboard_timer_grid_timesheet_leaderboard_timer_grid_renderer.xml|static/src/views/timesheet_leaderboard_timer_grid/timesheet_leaderboard_timer_grid_renderer.xml]]
+- [[docs/Enterprise Addons/sale_timesheet_enterprise/Frontend/static_src_views_timesheet_leaderboard_timer_kanban_timesheet_leaderboard_timer_kanban_renderer.js|static/src/views/timesheet_leaderboard_timer_kanban/timesheet_leaderboard_timer_kanban_renderer.js]]
+- [[docs/Enterprise Addons/sale_timesheet_enterprise/Frontend/static_src_views_timesheet_leaderboard_timer_kanban_timesheet_leaderboard_timer_kanban_renderer.xml|static/src/views/timesheet_leaderboard_timer_kanban/timesheet_leaderboard_timer_kanban_renderer.xml]]
+- [[docs/Enterprise Addons/sale_timesheet_enterprise/Frontend/static_src_views_timesheet_leaderboard_timer_list_timesheet_leaderboard_timer_list_renderer.js|static/src/views/timesheet_leaderboard_timer_list/timesheet_leaderboard_timer_list_renderer.js]]
+- [[docs/Enterprise Addons/sale_timesheet_enterprise/Frontend/static_src_views_timesheet_leaderboard_timer_list_timesheet_leaderboard_timer_list_renderer.xml|static/src/views/timesheet_leaderboard_timer_list/timesheet_leaderboard_timer_list_renderer.xml]]
+
+## Navigation
+
+- **Parent:** [[docs/Enterprise Addons/sale_timesheet_enterprise/sale_timesheet_enterprise]]
+
+<!-- GENERATED:FRONTEND -->

@@ -13,96 +13,79 @@ tags: [odoo, enterprise, module]
 
 Generate recurring invoices and manage renewals
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 27
+- XML files with UI/data artifacts: 22
 - Views: 53
 - Actions: 45
 - Menus: 22
 - Rules (ir.rule): 9
 - Access CSV entries: 19
+- Controller units: 2
+- Frontend asset files: 13
 
-## Detected Models
-
-- `AccountMove`
-- `AccountMoveLine`
-- `PaymentProvider`
-- `PaymentToken`
-- `PaymentTransaction`
-- `ProductPricelist`
-- `ProductPricelistItem`
-- `ProductProduct`
-- `ProductTemplate`
-- `ResPartner`
-- `sale.order`
-- `sale.order.close.reason`
-- `SaleOrderLine`
-- `sale.order.log`
-- `SaleOrderTemplate`
-- `SaleOrderTemplateLine`
-- `sale.subscription.plan`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Subscriptions - Models and Relations
-class AccountMove
-class AccountMoveLine
-class PaymentProvider
-class PaymentToken
-class PaymentTransaction
-class ProductPricelist
-class ProductPricelistItem
-class ProductProduct
-class ProductTemplate
-class ResPartner
-class "sale.order" as sale_order
-class "sale.order.close.reason" as sale_order_close_reason
-class SaleOrderLine
-class "sale.order.log" as sale_order_log
-class SaleOrderTemplate
-class SaleOrderTemplateLine
-class "sale.subscription.plan" as sale_subscription_plan
-AccountMoveLine --> sale_order : many2one
-class "product.pricelist.item" as product_pricelist_item
-ProductPricelist --|> product_pricelist_item : one2many
-ProductPricelistItem --> sale_subscription_plan : many2one
-ProductProduct --|> product_pricelist_item : one2many
-ProductTemplate --|> product_pricelist_item : one2many
-ProductTemplate --|> product_pricelist_item : one2many
-sale_order --> sale_subscription_plan : many2one
-sale_order --> sale_order : many2one
-sale_order --> sale_order : many2one
-sale_order --|> sale_order : one2many
-sale_order --> sale_order_close_reason : many2one
-class "payment.token" as payment_token
-sale_order --> payment_token : many2one
-class "res.users" as res_users
-sale_order --> res_users : many2one
-class "res.partner" as res_partner
-sale_order --> res_partner : many2one
-sale_order --|> sale_order_log : one2many
-sale_order --> sale_order : many2one
-sale_order .. res_users : many2many
-class "sale.order.line" as sale_order_line
-SaleOrderLine --> sale_order_line : many2one
-sale_order_log --> sale_order : many2one
-sale_order_log --> res_users : many2one
-class "crm.team" as crm_team
-sale_order_log --> crm_team : many2one
-sale_order_log --> sale_subscription_plan : many2one
-class "res.company" as res_company
-sale_order_log --> res_company : many2one
-class "res.currency" as res_currency
-sale_order_log --> res_currency : many2one
-sale_order_log --> sale_order : many2one
-SaleOrderTemplate --> sale_subscription_plan : many2one
-sale_subscription_plan --> res_company : many2one
-sale_subscription_plan .. sale_subscription_plan : many2many
-class "mail.template" as mail_template
-sale_subscription_plan --> mail_template : many2one
-sale_subscription_plan --|> product_pricelist_item : one2many
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Subscriptions - Generated Coverage
+component "Module Overview" as overview
+component "Models\n27" as models
+component "Views / XML\n53 views\n22 files" as views
+component "Controllers\n16 routes" as controllers
+component "Frontend\n13 files" as frontend
+component "Security / Data\n9 rules\n19 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Enterprise Addons/sale_subscription/Models|Models]] (27)
+- Views and XML: [[docs/Enterprise Addons/sale_subscription/Views|Views]] (22 files)
+- Controllers: [[docs/Enterprise Addons/sale_subscription/Controllers|Controllers]] (2)
+- Frontend: [[docs/Enterprise Addons/sale_subscription/Frontend|Frontend]] (13 files)
+
+## Key models
+
+- `account.move`
+- `account.move.line`
+- `account.move.send`
+- `ir.http`
+- `payment.link.wizard`
+- `payment.provider`
+- `payment.token`
+- `payment.transaction`
+- `product.pricelist`
+- `product.pricelist.item`
+- `product.product`
+- `product.template`
 
 ## Navigation
 
@@ -110,6 +93,7 @@ sale_subscription_plan --|> product_pricelist_item : one2many
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

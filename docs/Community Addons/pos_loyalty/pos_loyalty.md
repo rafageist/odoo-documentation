@@ -13,62 +13,78 @@ tags: [odoo, community, module]
 
 Use Coupons, Gift Cards and Loyalty programs in Point of Sale
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 13
+- XML files with UI/data artifacts: 6
 - Views: 6
 - Actions: 0
 - Menus: 2
 - Rules (ir.rule): 0
 - Access CSV entries: 13
+- Controller units: 0
+- Frontend asset files: 19
 
-## Detected Models
-
-- `BarcodeRule`
-- `loyalty.card`
-- `LoyaltyMail`
-- `loyalty.program`
-- `loyalty.reward`
-- `loyalty.rule`
-- `PosConfig`
-- `PosOrder`
-- `PosOrderLine`
-- `PosSession`
-- `ProductProduct`
-- `ProductTemplate`
-- `ResPartner`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Point of Sale - Coupons & Loyalty - Models and Relations
-class BarcodeRule
-class "loyalty.card" as loyalty_card
-class LoyaltyMail
-class "loyalty.program" as loyalty_program
-class "loyalty.reward" as loyalty_reward
-class "loyalty.rule" as loyalty_rule
-class PosConfig
-class PosOrder
-class PosOrderLine
-class PosSession
-class ProductProduct
-class ProductTemplate
-class ResPartner
-class "pos.order" as pos_order
-loyalty_card --> pos_order : many2one
-class "res.partner" as res_partner
-loyalty_card --> res_partner : many2one
-class "ir.actions.report" as ir_actions_report
-LoyaltyMail --> ir_actions_report : many2one
-class "pos.config" as pos_config
-loyalty_program .. pos_config : many2many
-loyalty_program --> ir_actions_report : many2one
-class "product.product" as product_product
-loyalty_rule .. product_product : many2many
-PosOrderLine --> loyalty_reward : many2one
-PosOrderLine --> loyalty_card : many2one
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Point of Sale - Coupons & Loyalty - Generated Coverage
+component "Module Overview" as overview
+component "Models\n13" as models
+component "Views / XML\n6 views\n6 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n19 files" as frontend
+component "Security / Data\n0 rules\n13 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/pos_loyalty/Models|Models]] (13)
+- Views and XML: [[docs/Community Addons/pos_loyalty/Views|Views]] (6 files)
+- Frontend: [[docs/Community Addons/pos_loyalty/Frontend|Frontend]] (19 files)
+
+## Key models
+
+- `barcode.rule`
+- `loyalty.card`
+- `loyalty.mail`
+- `loyalty.program`
+- `loyalty.reward`
+- `loyalty.rule`
+- `pos.config`
+- `pos.order`
+- `pos.order.line`
+- `pos.session`
+- `product.product`
+- `product.template`
 
 ## Navigation
 
@@ -76,6 +92,7 @@ PosOrderLine --> loyalty_card : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

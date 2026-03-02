@@ -1,0 +1,87 @@
+<!-- GENERATED:FRONTEND -->
+---
+tags: [odoo, enterprise, generated, index]
+---
+
+# planning Frontend
+
+- Module: [[docs/Enterprise Addons/planning/planning|planning]]
+- Scope: Enterprise Addons
+- Generated items: 68
+
+## Items
+
+- [[docs/Enterprise Addons/planning/Frontend/static_src_components_address_recurrency_confirmation_dialog_address_recurrency_confirmation_dialog.js|static/src/components/address_recurrency_confirmation_dialog/address_recurrency_confirmation_dialog.js]]
+- [[docs/Enterprise Addons/planning/Frontend/static_src_components_address_recurrency_confirmation_dialog_address_recurrency_confirmation_dialog.xml|static/src/components/address_recurrency_confirmation_dialog/address_recurrency_confirmation_dialog.xml]]
+- [[docs/Enterprise Addons/planning/Frontend/static_src_components_avatar_card_employee_avatar_card_employee_patch.js|static/src/components/avatar_card_employee/avatar_card_employee_patch.js]]
+- [[docs/Enterprise Addons/planning/Frontend/static_src_components_avatar_card_resource_avatar_card_resource_popover.xml|static/src/components/avatar_card_resource/avatar_card_resource_popover.xml]]
+- [[docs/Enterprise Addons/planning/Frontend/static_src_components_avatar_card_resource_avatar_card_resource_popover_patch.js|static/src/components/avatar_card_resource/avatar_card_resource_popover_patch.js]]
+- [[docs/Enterprise Addons/planning/Frontend/static_src_components_conflicting_slot_ids_field_conflicting_slot_ids_field.js|static/src/components/conflicting_slot_ids_field/conflicting_slot_ids_field.js]]
+- [[docs/Enterprise Addons/planning/Frontend/static_src_components_conflicting_slot_ids_field_conflicting_slot_ids_field.xml|static/src/components/conflicting_slot_ids_field/conflicting_slot_ids_field.xml]]
+- [[docs/Enterprise Addons/planning/Frontend/static_src_components_planned_date_range_with_allocated_hours_planned_date_range_with_allocated_hours.js|static/src/components/planned_date_range_with_allocated_hours/planned_date_range_with_allocated_hours.js]]
+- [[docs/Enterprise Addons/planning/Frontend/static_src_components_planned_date_range_with_allocated_hours_planned_date_range_with_allocated_hours.xml|static/src/components/planned_date_range_with_allocated_hours/planned_date_range_with_allocated_hours.xml]]
+- [[docs/Enterprise Addons/planning/Frontend/static_src_js_planning_calendar_front.js|static/src/js/planning_calendar_front.js]]
+- [[docs/Enterprise Addons/planning/Frontend/static_src_js_tours_planning.js|static/src/js/tours/planning.js]]
+- [[docs/Enterprise Addons/planning/Frontend/static_src_views_fields_many2many_avatar_resource_many2many_avatar_resource_field.js|static/src/views/fields/many2many_avatar_resource/many2many_avatar_resource_field.js]]
+- [[docs/Enterprise Addons/planning/Frontend/static_src_views_fields_many2one_avatar_resource_many2one_avatar_resource_field.xml|static/src/views/fields/many2one_avatar_resource/many2one_avatar_resource_field.xml]]
+- [[docs/Enterprise Addons/planning/Frontend/static_src_views_fields_many2one_avatar_resource_many2one_avatar_resource_field_patch.js|static/src/views/fields/many2one_avatar_resource/many2one_avatar_resource_field_patch.js]]
+- [[docs/Enterprise Addons/planning/Frontend/static_src_views_planning_calendar_common_planning_calendar_common_popover.js|static/src/views/planning_calendar/common/planning_calendar_common_popover.js]]
+- [[docs/Enterprise Addons/planning/Frontend/static_src_views_planning_calendar_common_planning_calendar_common_popover.xml|static/src/views/planning_calendar/common/planning_calendar_common_popover.xml]]
+- [[docs/Enterprise Addons/planning/Frontend/static_src_views_planning_calendar_common_planning_calendar_common_renderer.js|static/src/views/planning_calendar/common/planning_calendar_common_renderer.js]]
+- [[docs/Enterprise Addons/planning/Frontend/static_src_views_planning_calendar_planning_ask_recurrence_update_planning_ask_recurrence_update_dialog.js|static/src/views/planning_calendar/planning_ask_recurrence_update/planning_ask_recurrence_update_dialog.js]]
+- [[docs/Enterprise Addons/planning/Frontend/static_src_views_planning_calendar_planning_ask_recurrence_update_planning_ask_recurrence_update_dialog.xml|static/src/views/planning_calendar/planning_ask_recurrence_update/planning_ask_recurrence_update_dialog.xml]]
+- [[docs/Enterprise Addons/planning/Frontend/static_src_views_planning_calendar_planning_ask_recurrence_update_planning_ask_recurrence_update_hook.js|static/src/views/planning_calendar/planning_ask_recurrence_update/planning_ask_recurrence_update_hook.js]]
+- [[docs/Enterprise Addons/planning/Frontend/static_src_views_planning_calendar_planning_calendar_controller.js|static/src/views/planning_calendar/planning_calendar_controller.js]]
+- [[docs/Enterprise Addons/planning/Frontend/static_src_views_planning_calendar_planning_calendar_controller.xml|static/src/views/planning_calendar/planning_calendar_controller.xml]]
+- [[docs/Enterprise Addons/planning/Frontend/static_src_views_planning_calendar_planning_calendar_model.js|static/src/views/planning_calendar/planning_calendar_model.js]]
+- [[docs/Enterprise Addons/planning/Frontend/static_src_views_planning_calendar_planning_calendar_renderer.js|static/src/views/planning_calendar/planning_calendar_renderer.js]]
+- [[docs/Enterprise Addons/planning/Frontend/static_src_views_planning_calendar_planning_calendar_side_panel_planning_calendar_side_panel.js|static/src/views/planning_calendar/planning_calendar_side_panel/planning_calendar_side_panel.js]]
+- [[docs/Enterprise Addons/planning/Frontend/static_src_views_planning_calendar_planning_calendar_side_panel_planning_calendar_side_panel.xml|static/src/views/planning_calendar/planning_calendar_side_panel/planning_calendar_side_panel.xml]]
+- [[docs/Enterprise Addons/planning/Frontend/static_src_views_planning_calendar_planning_calendar_view.js|static/src/views/planning_calendar/planning_calendar_view.js]]
+- [[docs/Enterprise Addons/planning/Frontend/static_src_views_planning_calendar_planning_filter_section_planning_calendar_filter_section.js|static/src/views/planning_calendar/planning_filter_section/planning_calendar_filter_section.js]]
+- [[docs/Enterprise Addons/planning/Frontend/static_src_views_planning_calendar_planning_filter_section_planning_calendar_filter_section.xml|static/src/views/planning_calendar/planning_filter_section/planning_calendar_filter_section.xml]]
+- [[docs/Enterprise Addons/planning/Frontend/static_src_views_planning_contract_gantt_planning_contract_gantt_model.js|static/src/views/planning_contract_gantt/planning_contract_gantt_model.js]]
+- [[docs/Enterprise Addons/planning/Frontend/static_src_views_planning_contract_gantt_planning_contract_gantt_renderer.js|static/src/views/planning_contract_gantt/planning_contract_gantt_renderer.js]]
+- [[docs/Enterprise Addons/planning/Frontend/static_src_views_planning_form_planning_form_view.js|static/src/views/planning_form/planning_form_view.js]]
+- [[docs/Enterprise Addons/planning/Frontend/static_src_views_planning_gantt_planning_employee_avatar.js|static/src/views/planning_gantt/planning_employee_avatar.js]]
+- [[docs/Enterprise Addons/planning/Frontend/static_src_views_planning_gantt_planning_employee_avatar.xml|static/src/views/planning_gantt/planning_employee_avatar.xml]]
+- [[docs/Enterprise Addons/planning/Frontend/static_src_views_planning_gantt_planning_gantt_controller.js|static/src/views/planning_gantt/planning_gantt_controller.js]]
+- [[docs/Enterprise Addons/planning/Frontend/static_src_views_planning_gantt_planning_gantt_controller.xml|static/src/views/planning_gantt/planning_gantt_controller.xml]]
+- [[docs/Enterprise Addons/planning/Frontend/static_src_views_planning_gantt_planning_gantt_model.js|static/src/views/planning_gantt/planning_gantt_model.js]]
+- [[docs/Enterprise Addons/planning/Frontend/static_src_views_planning_gantt_planning_gantt_renderer.js|static/src/views/planning_gantt/planning_gantt_renderer.js]]
+- [[docs/Enterprise Addons/planning/Frontend/static_src_views_planning_gantt_planning_gantt_renderer.xml|static/src/views/planning_gantt/planning_gantt_renderer.xml]]
+- [[docs/Enterprise Addons/planning/Frontend/static_src_views_planning_gantt_planning_gantt_renderer_controls.js|static/src/views/planning_gantt/planning_gantt_renderer_controls.js]]
+- [[docs/Enterprise Addons/planning/Frontend/static_src_views_planning_gantt_planning_gantt_renderer_controls.xml|static/src/views/planning_gantt/planning_gantt_renderer_controls.xml]]
+- [[docs/Enterprise Addons/planning/Frontend/static_src_views_planning_gantt_planning_gantt_row_progress_bar.js|static/src/views/planning_gantt/planning_gantt_row_progress_bar.js]]
+- [[docs/Enterprise Addons/planning/Frontend/static_src_views_planning_gantt_planning_gantt_row_progress_bar.xml|static/src/views/planning_gantt/planning_gantt_row_progress_bar.xml]]
+- [[docs/Enterprise Addons/planning/Frontend/static_src_views_planning_gantt_planning_gantt_view.js|static/src/views/planning_gantt/planning_gantt_view.js]]
+- [[docs/Enterprise Addons/planning/Frontend/static_src_views_planning_gantt_planning_material_role.js|static/src/views/planning_gantt/planning_material_role.js]]
+- [[docs/Enterprise Addons/planning/Frontend/static_src_views_planning_gantt_planning_material_role.xml|static/src/views/planning_gantt/planning_material_role.xml]]
+- [[docs/Enterprise Addons/planning/Frontend/static_src_views_planning_gantt_planning_split_tool.js|static/src/views/planning_gantt/planning_split_tool.js]]
+- [[docs/Enterprise Addons/planning/Frontend/static_src_views_planning_gantt_planning_split_tool.xml|static/src/views/planning_gantt/planning_split_tool.xml]]
+- [[docs/Enterprise Addons/planning/Frontend/static_src_views_planning_graph_planning_graph.js|static/src/views/planning_graph/planning_graph.js]]
+- [[docs/Enterprise Addons/planning/Frontend/static_src_views_planning_graph_planning_graph_model.js|static/src/views/planning_graph/planning_graph_model.js]]
+- [[docs/Enterprise Addons/planning/Frontend/static_src_views_planning_hooks.js|static/src/views/planning_hooks.js]]
+- [[docs/Enterprise Addons/planning/Frontend/static_src_views_planning_kanban_planning_kanban.js|static/src/views/planning_kanban/planning_kanban.js]]
+- [[docs/Enterprise Addons/planning/Frontend/static_src_views_planning_kanban_planning_kanban_controller.js|static/src/views/planning_kanban/planning_kanban_controller.js]]
+- [[docs/Enterprise Addons/planning/Frontend/static_src_views_planning_pivot_planning_pivot.js|static/src/views/planning_pivot/planning_pivot.js]]
+- [[docs/Enterprise Addons/planning/Frontend/static_src_views_planning_pivot_planning_pivot_model.js|static/src/views/planning_pivot/planning_pivot_model.js]]
+- [[docs/Enterprise Addons/planning/Frontend/static_src_views_planning_relational_model.js|static/src/views/planning_relational_model.js]]
+- [[docs/Enterprise Addons/planning/Frontend/static_src_views_planning_search_model.js|static/src/views/planning_search_model.js]]
+- [[docs/Enterprise Addons/planning/Frontend/static_src_views_planning_slot_analysis_graph_planning_slot_analysis_graph_renderer.js|static/src/views/planning_slot_analysis_graph/planning_slot_analysis_graph_renderer.js]]
+- [[docs/Enterprise Addons/planning/Frontend/static_src_views_planning_slot_analysis_graph_planning_slot_analysis_graph_view.js|static/src/views/planning_slot_analysis_graph/planning_slot_analysis_graph_view.js]]
+- [[docs/Enterprise Addons/planning/Frontend/static_src_views_planning_slot_analysis_pivot_planning_slot_analysis_pivot_renderer.js|static/src/views/planning_slot_analysis_pivot/planning_slot_analysis_pivot_renderer.js]]
+- [[docs/Enterprise Addons/planning/Frontend/static_src_views_planning_slot_analysis_pivot_planning_slot_analysis_pivot_view.js|static/src/views/planning_slot_analysis_pivot/planning_slot_analysis_pivot_view.js]]
+- [[docs/Enterprise Addons/planning/Frontend/static_src_views_planning_slot_analysis_renderer_mixin.js|static/src/views/planning_slot_analysis_renderer_mixin.js]]
+- [[docs/Enterprise Addons/planning/Frontend/static_src_views_planning_tree_planning_tree.js|static/src/views/planning_tree/planning_tree.js]]
+- [[docs/Enterprise Addons/planning/Frontend/static_src_views_planning_tree_planning_tree_controller.js|static/src/views/planning_tree/planning_tree_controller.js]]
+- [[docs/Enterprise Addons/planning/Frontend/static_src_views_resource_form_resource_form_controller.js|static/src/views/resource_form/resource_form_controller.js]]
+- [[docs/Enterprise Addons/planning/Frontend/static_src_views_resource_form_resource_form_view.js|static/src/views/resource_form/resource_form_view.js]]
+- [[docs/Enterprise Addons/planning/Frontend/static_src_views_resource_list_resource_list_controller.js|static/src/views/resource_list/resource_list_controller.js]]
+- [[docs/Enterprise Addons/planning/Frontend/static_src_views_resource_list_resource_list_view.js|static/src/views/resource_list/resource_list_view.js]]
+
+## Navigation
+
+- **Parent:** [[docs/Enterprise Addons/planning/planning]]
+
+<!-- GENERATED:FRONTEND -->

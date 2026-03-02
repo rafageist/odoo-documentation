@@ -13,94 +13,79 @@ tags: [odoo, enterprise, module]
 
 Create and customize your Odoo apps
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 36
+- XML files with UI/data artifacts: 10
 - Views: 17
 - Actions: 8
 - Menus: 3
 - Rules (ir.rule): 2
 - Access CSV entries: 10
+- Controller units: 4
+- Frontend asset files: 197
 
-## Detected Models
+## Module map
 
+```plantuml
+@startuml
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Studio - Generated Coverage
+component "Module Overview" as overview
+component "Models\n36" as models
+component "Views / XML\n17 views\n10 files" as views
+component "Controllers\n32 routes" as controllers
+component "Frontend\n197 files" as frontend
+component "Security / Data\n2 rules\n10 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
+@enduml
+```
+
+## Detail notes
+
+- Models: [[docs/Enterprise Addons/web_studio/Models|Models]] (36)
+- Views and XML: [[docs/Enterprise Addons/web_studio/Views|Views]] (10 files)
+- Controllers: [[docs/Enterprise Addons/web_studio/Controllers|Controllers]] (4)
+- Frontend: [[docs/Enterprise Addons/web_studio/Frontend|Frontend]] (197 files)
+
+## Key models
+
+- `base`
 - `base.automation`
-- `ir.actions.actions`
+- `base.module.uninstall`
 - `ir.actions.act_window`
 - `ir.actions.act_window.view`
+- `ir.actions.actions`
 - `ir.actions.report`
 - `ir.actions.server`
 - `ir.default`
 - `ir.filters`
+- `ir.http`
 - `ir.model`
-- `ir.model.fields`
-- `ir.model.access`
-- `IrModelData`
-- `IrModuleModule`
-- `ir.rule`
-- `ir.ui.menu`
-- `ir.ui.view`
-- `MailActivity`
-- `mail.template`
-- `report.paperformat`
-- `ResCompany`
-- `res.groups`
-- `studio.approval.rule.approver`
-- `studio.approval.rule`
-- `studio.approval.entry`
-- `studio.approval.request`
-- `studio.export.model`
-
-```plantuml
-@startuml
-!include ../../../templates/DiagramStyles.puml
-title Studio - Models and Relations
-class "base.automation" as base_automation
-class "ir.actions.actions" as ir_actions_actions
-class "ir.actions.act_window" as ir_actions_act_window
-class "ir.actions.act_window.view" as ir_actions_act_window_view
-class "ir.actions.report" as ir_actions_report
-class "ir.actions.server" as ir_actions_server
-class "ir.default" as ir_default
-class "ir.filters" as ir_filters
-class "ir.model" as ir_model
-class "ir.model.fields" as ir_model_fields
-class "ir.model.access" as ir_model_access
-class IrModelData
-class IrModuleModule
-class "ir.rule" as ir_rule
-class "ir.ui.menu" as ir_ui_menu
-class "ir.ui.view" as ir_ui_view
-class MailActivity
-class "mail.template" as mail_template
-class "report.paperformat" as report_paperformat
-class ResCompany
-class "res.groups" as res_groups
-class "studio.approval.rule.approver" as studio_approval_rule_approver
-class "studio.approval.rule" as studio_approval_rule
-class "studio.approval.entry" as studio_approval_entry
-class "studio.approval.request" as studio_approval_request
-class "studio.export.model" as studio_export_model
-MailActivity --> studio_approval_request : many2one
-class "res.users" as res_users
-studio_approval_rule_approver --> res_users : many2one
-studio_approval_rule_approver --> studio_approval_rule : many2one
-studio_approval_rule --> ir_model : many2one
-studio_approval_rule --> ir_actions_actions : many2one
-studio_approval_rule .. res_users : many2many
-studio_approval_rule --|> studio_approval_rule_approver : one2many
-studio_approval_rule --> res_groups : many2one
-studio_approval_rule .. res_users : many2many
-studio_approval_rule --|> studio_approval_entry : one2many
-studio_approval_entry --> res_users : many2one
-studio_approval_entry --> studio_approval_rule : many2one
-studio_approval_entry --> ir_actions_actions : many2one
-class "mail.activity" as mail_activity
-studio_approval_request --> mail_activity : many2one
-studio_approval_request --> studio_approval_rule : many2one
-studio_export_model --> ir_model : many2one
-studio_export_model .. ir_model_fields : many2many
-@enduml
-```
 
 ## Navigation
 
@@ -108,6 +93,7 @@ studio_export_model .. ir_model_fields : many2many
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

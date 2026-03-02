@@ -13,107 +13,79 @@ tags: [odoo, community, module]
 
 Allocate time off and follow leave requests
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 27
+- XML files with UI/data artifacts: 19
 - Views: 70
 - Actions: 42
 - Menus: 19
 - Rules (ir.rule): 26
 - Access CSV entries: 27
+- Controller units: 1
+- Frontend asset files: 66
 
-## Detected Models
-
-- `CalendarEvent`
-- `HrDepartment`
-- `HrEmployee`
-- `HrEmployeePublic`
-- `hr.leave`
-- `hr.leave.accrual.plan`
-- `hr.leave.accrual.level`
-- `hr.leave.allocation`
-- `hr.leave.mandatory.day`
-- `hr.leave.type`
-- `HrVersion`
-- `MailActivityType`
-- `MailMessageSubtype`
-- `ResourceCalendarLeaves`
-- `ResourceCalendar`
-- `ResourceResource`
-- `ResPartner`
-- `ResUsers`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Time Off - Models and Relations
-class CalendarEvent
-class HrDepartment
-class HrEmployee
-class HrEmployeePublic
-class "hr.leave" as hr_leave
-class "hr.leave.accrual.plan" as hr_leave_accrual_plan
-class "hr.leave.accrual.level" as hr_leave_accrual_level
-class "hr.leave.allocation" as hr_leave_allocation
-class "hr.leave.mandatory.day" as hr_leave_mandatory_day
-class "hr.leave.type" as hr_leave_type
-class HrVersion
-class MailActivityType
-class MailMessageSubtype
-class ResourceCalendarLeaves
-class ResourceCalendar
-class ResourceResource
-class ResPartner
-class ResUsers
-class "res.users" as res_users
-HrEmployee --> res_users : many2one
-HrEmployee --> hr_leave_type : many2one
-HrEmployeePublic --> res_users : many2one
-hr_leave --> res_users : many2one
-hr_leave --> hr_leave_type : many2one
-class "hr.employee" as hr_employee
-hr_leave --> hr_employee : many2one
-class "res.company" as res_company
-hr_leave --> res_company : many2one
-class "hr.department" as hr_department
-hr_leave --> hr_department : many2one
-class "resource.calendar" as resource_calendar
-hr_leave --> resource_calendar : many2one
-class "calendar.event" as calendar_event
-hr_leave --> calendar_event : many2one
-hr_leave --> hr_employee : many2one
-hr_leave --> hr_employee : many2one
-class "ir.attachment" as ir_attachment
-hr_leave --|> ir_attachment : one2many
-hr_leave .. ir_attachment : many2many
-hr_leave_accrual_plan --> hr_leave_type : many2one
-hr_leave_accrual_plan --|> hr_leave_accrual_level : one2many
-hr_leave_accrual_plan --|> hr_leave_allocation : one2many
-hr_leave_accrual_plan --> res_company : many2one
-hr_leave_accrual_level --> hr_leave_accrual_plan : many2one
-hr_leave_allocation --> hr_leave_type : many2one
-hr_leave_allocation --> hr_employee : many2one
-hr_leave_allocation --> hr_employee : many2one
-hr_leave_allocation --> hr_employee : many2one
-hr_leave_allocation --> hr_employee : many2one
-hr_leave_allocation --> hr_department : many2one
-hr_leave_allocation --> hr_leave_accrual_plan : many2one
-hr_leave_mandatory_day --> res_company : many2one
-hr_leave_mandatory_day --> resource_calendar : many2one
-hr_leave_mandatory_day .. hr_department : many2many
-class "hr.job" as hr_job
-hr_leave_mandatory_day .. hr_job : many2many
-hr_leave_type --> ir_attachment : many2one
-hr_leave_type --> res_company : many2one
-class "res.country" as res_country
-hr_leave_type --> res_country : many2one
-hr_leave_type .. res_users : many2many
-class "mail.message.subtype" as mail_message_subtype
-hr_leave_type --> mail_message_subtype : many2one
-hr_leave_type --> mail_message_subtype : many2one
-hr_leave_type --|> hr_leave_accrual_plan : one2many
-ResourceCalendarLeaves --> hr_leave : many2one
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Time Off - Generated Coverage
+component "Module Overview" as overview
+component "Models\n27" as models
+component "Views / XML\n70 views\n19 files" as views
+component "Controllers\n5 routes" as controllers
+component "Frontend\n66 files" as frontend
+component "Security / Data\n26 rules\n27 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/hr_holidays/Models|Models]] (27)
+- Views and XML: [[docs/Community Addons/hr_holidays/Views|Views]] (19 files)
+- Controllers: [[docs/Community Addons/hr_holidays/Controllers|Controllers]] (1)
+- Frontend: [[docs/Community Addons/hr_holidays/Frontend|Frontend]] (66 files)
+
+## Key models
+
+- `calendar.event`
+- `hr.department`
+- `hr.departure.wizard`
+- `hr.employee`
+- `hr.employee.public`
+- `hr.holidays.cancel.leave`
+- `hr.holidays.summary.employee`
+- `hr.leave`
+- `hr.leave.accrual.level`
+- `hr.leave.accrual.plan`
+- `hr.leave.allocation`
+- `hr.leave.allocation.generate.multi.wizard`
 
 ## Navigation
 
@@ -121,6 +93,7 @@ ResourceCalendarLeaves --> hr_leave : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

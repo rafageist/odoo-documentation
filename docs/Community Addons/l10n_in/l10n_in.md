@@ -9,79 +9,78 @@ tags: [odoo, community, module]
 - Source: odoo/addons/l10n_in
 - Dependencies: [[docs/Community Addons/account_tax_python/account_tax_python|account_tax_python]], [[docs/Community Addons/base_vat/base_vat|base_vat]], [[docs/Community Addons/account_debit_note/account_debit_note|account_debit_note]], [[docs/Community Addons/account/account|account]], [[docs/Community Addons/iap/iap|iap]]
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 18
+- XML files with UI/data artifacts: 17
 - Views: 27
 - Actions: 3
 - Menus: 2
 - Rules (ir.rule): 0
 - Access CSV entries: 6
+- Controller units: 0
+- Frontend asset files: 4
 
-## Detected Models
-
-- `AccountAccount`
-- `AccountMove`
-- `AccountMoveLine`
-- `AccountPayment`
-- `AccountTax`
-- `ResCompany`
-- `IapAccount`
-- `l10n_in.pan.entity`
-- `AccountReport`
-- `l10n_in.section.alert`
-- `l10n_in.port.code`
-- `ProductTemplate`
-- `ResCountryState`
-- `ResPartner`
-- `UomUom`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Indian - Accounting - Models and Relations
-class AccountAccount
-class AccountMove
-class AccountMoveLine
-class AccountPayment
-class AccountTax
-class ResCompany
-class IapAccount
-class "l10n_in.pan.entity" as l10n_in_pan_entity
-class AccountReport
-class "l10n_in.section.alert" as l10n_in_section_alert
-class "l10n_in.port.code" as l10n_in_port_code
-class ProductTemplate
-class ResCountryState
-class ResPartner
-class UomUom
-AccountAccount --> l10n_in_section_alert : many2one
-class "res.country.state" as res_country_state
-AccountMove --> res_country_state : many2one
-AccountMove --> l10n_in_port_code : many2one
-class "res.partner" as res_partner
-AccountMove --> res_partner : many2one
-class "account.move" as account_move
-AccountMove --> account_move : many2one
-class "account.payment" as account_payment
-AccountMove --> account_payment : many2one
-AccountMove --|> account_move : one2many
-class "account.move.line" as account_move_line
-AccountMove --|> account_move_line : one2many
-AccountPayment --|> account_move : one2many
-AccountTax --> l10n_in_section_alert : many2one
-class "account.account" as account_account
-ResCompany --> account_account : many2one
-class "account.journal" as account_journal
-ResCompany --> account_journal : many2one
-l10n_in_pan_entity --|> res_partner : one2many
-class "account.tax" as account_tax
-l10n_in_section_alert --|> account_tax : one2many
-class "account.report.line" as account_report_line
-l10n_in_section_alert --> account_report_line : many2one
-l10n_in_port_code --> res_country_state : many2one
-ResPartner --> l10n_in_pan_entity : many2one
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Indian - Accounting - Generated Coverage
+component "Module Overview" as overview
+component "Models\n18" as models
+component "Views / XML\n27 views\n17 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n4 files" as frontend
+component "Security / Data\n0 rules\n6 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/l10n_in/Models|Models]] (18)
+- Views and XML: [[docs/Community Addons/l10n_in/Views|Views]] (17 files)
+- Frontend: [[docs/Community Addons/l10n_in/Frontend|Frontend]] (4 files)
+
+## Key models
+
+- `account.account`
+- `account.chart.template`
+- `account.move`
+- `account.move.line`
+- `account.payment`
+- `account.report`
+- `account.tax`
+- `iap.account`
+- `l10n_in.pan.entity`
+- `l10n_in.port.code`
+- `l10n_in.section.alert`
+- `l10n_in.withhold.wizard`
 
 ## Navigation
 
@@ -89,6 +88,7 @@ ResPartner --> l10n_in_pan_entity : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

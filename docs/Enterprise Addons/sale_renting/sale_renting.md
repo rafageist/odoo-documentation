@@ -13,51 +13,79 @@ tags: [odoo, enterprise, module]
 
 Manage rental contracts, deliveries and returns
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 12
+- XML files with UI/data artifacts: 12
 - Views: 26
 - Actions: 25
 - Menus: 13
 - Rules (ir.rule): 1
 - Access CSV entries: 11
+- Controller units: 2
+- Frontend asset files: 7
 
-## Detected Models
-
-- `ProductPricelist`
-- `product.pricing`
-- `ProductProduct`
-- `ProductTemplate`
-- `ResCompany`
-- `SaleOrder`
-- `SaleOrderLine`
-- `sale.temporal.recurrence`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Rental - Models and Relations
-class ProductPricelist
-class "product.pricing" as product_pricing
-class ProductProduct
-class ProductTemplate
-class ResCompany
-class SaleOrder
-class SaleOrderLine
-class "sale.temporal.recurrence" as sale_temporal_recurrence
-ProductPricelist --|> product_pricing : one2many
-product_pricing --> sale_temporal_recurrence : many2one
-class "res.currency" as res_currency
-product_pricing --> res_currency : many2one
-class "product.template" as product_template
-product_pricing --> product_template : many2one
-class "product.product" as product_product
-product_pricing .. product_product : many2many
-class "product.pricelist" as product_pricelist
-product_pricing --> product_pricelist : many2one
-ProductTemplate --|> product_pricing : one2many
-ResCompany --> product_product : many2one
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Rental - Generated Coverage
+component "Module Overview" as overview
+component "Models\n12" as models
+component "Views / XML\n26 views\n12 files" as views
+component "Controllers\n5 routes" as controllers
+component "Frontend\n7 files" as frontend
+component "Security / Data\n1 rules\n11 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Enterprise Addons/sale_renting/Models|Models]] (12)
+- Views and XML: [[docs/Enterprise Addons/sale_renting/Views|Views]] (12 files)
+- Controllers: [[docs/Enterprise Addons/sale_renting/Controllers|Controllers]] (2)
+- Frontend: [[docs/Enterprise Addons/sale_renting/Frontend|Frontend]] (7 files)
+
+## Key models
+
+- `product.pricelist`
+- `product.pricing`
+- `product.product`
+- `product.template`
+- `rental.order.wizard`
+- `rental.order.wizard.line`
+- `res.company`
+- `res.config.settings`
+- `sale.order`
+- `sale.order.line`
+- `sale.rental.report`
+- `sale.temporal.recurrence`
 
 ## Navigation
 
@@ -65,6 +93,7 @@ ResCompany --> product_product : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

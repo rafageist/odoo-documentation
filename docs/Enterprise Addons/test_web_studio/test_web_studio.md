@@ -13,15 +13,63 @@ tags: [odoo, enterprise, module]
 
 Web studio Test
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 6
+- XML files with UI/data artifacts: 0
 - Views: 0
 - Actions: 0
 - Menus: 0
 - Rules (ir.rule): 0
 - Access CSV entries: 6
+- Controller units: 0
+- Frontend asset files: 0
 
-## Detected Models
+## Module map
+
+```plantuml
+@startuml
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Web Studio Tests - Generated Coverage
+component "Module Overview" as overview
+component "Models\n6" as models
+component "Views / XML\n0 views\n0 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n0 files" as frontend
+component "Security / Data\n0 rules\n6 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
+@enduml
+```
+
+## Detail notes
+
+- Models: [[docs/Enterprise Addons/test_web_studio/Models|Models]] (6)
+
+## Key models
 
 - `test.studio.model_action`
 - `test.studio.model_action2`
@@ -30,37 +78,13 @@ Web studio Test
 - `test.studio_export.model2`
 - `test.studio_export.model3`
 
-```plantuml
-@startuml
-!include ../../../templates/DiagramStyles.puml
-title Web Studio Tests - Models and Relations
-class "test.studio.model_action" as test_studio_model_action
-class "test.studio.model_action2" as test_studio_model_action2
-class "test.studio.model_action3" as test_studio_model_action3
-class "test.studio_export.model1" as test_studio_export_model1
-class "test.studio_export.model2" as test_studio_export_model2
-class "test.studio_export.model3" as test_studio_export_model3
-class "res.currency" as res_currency
-test_studio_model_action --> res_currency : many2one
-class "res.partner" as res_partner
-test_studio_model_action --> res_partner : many2one
-test_studio_model_action3 --> test_studio_model_action : many2one
-class "ir.attachment" as ir_attachment
-test_studio_export_model1 --> ir_attachment : many2one
-test_studio_export_model1 --|> ir_attachment : one2many
-test_studio_export_model1 --> test_studio_export_model2 : many2one
-test_studio_export_model2 --> test_studio_export_model2 : many2one
-test_studio_export_model2 --> test_studio_export_model3 : many2one
-test_studio_export_model3 --> test_studio_export_model1 : many2one
-@enduml
-```
-
 ## Navigation
 
 - [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

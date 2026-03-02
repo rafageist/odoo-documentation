@@ -1,0 +1,32 @@
+<!-- GENERATED:VIEWFILE -->
+---
+tags: [odoo, community, generated, views]
+---
+
+# views/res_config_settings_view.xml
+
+- Module: [[docs/Community Addons/certificate/certificate|certificate]]
+- Scope: Community Addons
+- Source file: `views/res_config_settings_view.xml`
+- Views: 1
+- Actions: 0
+- Menus: 0
+- Rules: 0
+
+## View records
+
+### `res_config_settings_view_form`
+- Name: res.config.settings.view.form.inherit.certificate
+- Model: `res.config.settings`
+- Type: inferred from arch
+- Inherits: `base.res_config_settings_view_form`
+- Root tag: `xpath`
+- Field references: 0
+- Buttons: `%(certificate.certificate_certificate_action_view_list)d`, `%(certificate.certificate_key_action_view_list)d`
+- XPath or positional patches: 1
+
+## Navigation
+
+- **Parent:** [[docs/Community Addons/certificate/Views]]
+
+<!-- GENERATED:VIEWFILE -->

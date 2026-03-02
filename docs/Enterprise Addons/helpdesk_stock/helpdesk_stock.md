@@ -13,36 +13,71 @@ tags: [odoo, enterprise, module]
 
 Project, Tasks, Stock
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 6
+- XML files with UI/data artifacts: 3
 - Views: 4
 - Actions: 0
 - Menus: 0
 - Rules (ir.rule): 0
 - Access CSV entries: 0
+- Controller units: 0
+- Frontend asset files: 0
 
-## Detected Models
-
-- `HelpdeskTicket`
-- `StockPicking`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Helpdesk Stock - Models and Relations
-class HelpdeskTicket
-class StockPicking
-class "product.product" as product_product
-HelpdeskTicket --> product_product : many2one
-HelpdeskTicket .. product_product : many2many
-class "stock.lot" as stock_lot
-HelpdeskTicket --> stock_lot : many2one
-class "stock.picking" as stock_picking
-HelpdeskTicket .. stock_picking : many2many
-class "helpdesk.ticket" as helpdesk_ticket
-StockPicking --> helpdesk_ticket : many2one
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Helpdesk Stock - Generated Coverage
+component "Module Overview" as overview
+component "Models\n6" as models
+component "Views / XML\n4 views\n3 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n0 files" as frontend
+component "Security / Data\n0 rules\n0 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Enterprise Addons/helpdesk_stock/Models|Models]] (6)
+- Views and XML: [[docs/Enterprise Addons/helpdesk_stock/Views|Views]] (3 files)
+
+## Key models
+
+- `helpdesk.sla.report.analysis`
+- `helpdesk.ticket`
+- `helpdesk.ticket.report.analysis`
+- `stock.picking`
+- `stock.return.picking`
+- `stock.return.picking.line`
 
 ## Navigation
 
@@ -50,6 +85,7 @@ StockPicking --> helpdesk_ticket : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

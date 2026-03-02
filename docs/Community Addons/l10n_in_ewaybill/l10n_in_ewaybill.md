@@ -9,47 +9,73 @@ tags: [odoo, community, module]
 - Source: odoo/addons/l10n_in_ewaybill
 - Dependencies: [[docs/Community Addons/l10n_in/l10n_in|l10n_in]]
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 8
+- XML files with UI/data artifacts: 6
 - Views: 5
 - Actions: 2
 - Menus: 0
 - Rules (ir.rule): 1
 - Access CSV entries: 4
+- Controller units: 0
+- Frontend asset files: 0
 
-## Detected Models
-
-- `AccountMove`
-- `l10n.in.ewaybill.type`
-- `IrAttachment`
-- `l10n.in.ewaybill`
-- `ResCompany`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Indian - E-waybill - Models and Relations
-class AccountMove
-class "l10n.in.ewaybill.type" as l10n_in_ewaybill_type
-class IrAttachment
-class "l10n.in.ewaybill" as l10n_in_ewaybill
-class ResCompany
-AccountMove --|> l10n_in_ewaybill : one2many
-class "account.move" as account_move
-l10n_in_ewaybill --> account_move : many2one
-class "res.company" as res_company
-l10n_in_ewaybill --> res_company : many2one
-class "res.partner" as res_partner
-l10n_in_ewaybill --> res_partner : many2one
-l10n_in_ewaybill --> res_partner : many2one
-l10n_in_ewaybill --> res_partner : many2one
-l10n_in_ewaybill --> res_partner : many2one
-l10n_in_ewaybill --> l10n_in_ewaybill_type : many2one
-l10n_in_ewaybill --> res_partner : many2one
-class "ir.attachment" as ir_attachment
-l10n_in_ewaybill --> ir_attachment : many2one
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Indian - E-waybill - Generated Coverage
+component "Module Overview" as overview
+component "Models\n8" as models
+component "Views / XML\n5 views\n6 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n0 files" as frontend
+component "Security / Data\n1 rules\n4 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/l10n_in_ewaybill/Models|Models]] (8)
+- Views and XML: [[docs/Community Addons/l10n_in_ewaybill/Views|Views]] (6 files)
+
+## Key models
+
+- `account.chart.template`
+- `account.move`
+- `ir.attachment`
+- `l10n.in.ewaybill`
+- `l10n.in.ewaybill.cancel`
+- `l10n.in.ewaybill.type`
+- `res.company`
+- `res.config.settings`
 
 ## Navigation
 
@@ -57,6 +83,7 @@ l10n_in_ewaybill --> ir_attachment : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

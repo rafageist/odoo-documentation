@@ -13,55 +13,77 @@ tags: [odoo, community, module]
 
 E-invoicing using MyInvois
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 14
+- XML files with UI/data artifacts: 11
 - Views: 12
 - Actions: 2
 - Menus: 0
 - Rules (ir.rule): 1
 - Access CSV entries: 7
+- Controller units: 0
+- Frontend asset files: 0
 
-## Detected Models
-
-- `AccountEdiProxyClientUser`
-- `AccountMove`
-- `AccountMoveLine`
-- `AccountTax`
-- `l10n_my_edi.industry_classification`
-- `myinvois.document`
-- `ProductTemplate`
-- `ResCompany`
-- `ResPartner`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Malaysia - E-invoicing - Models and Relations
-class AccountEdiProxyClientUser
-class AccountMove
-class AccountMoveLine
-class AccountTax
-class "l10n_my_edi.industry_classification" as l10n_my_edi_industry_classification
-class "myinvois.document" as myinvois_document
-class ProductTemplate
-class ResCompany
-class ResPartner
-AccountMove .. myinvois_document : many2many
-class "res.company" as res_company
-myinvois_document --> res_company : many2one
-class "res.currency" as res_currency
-myinvois_document --> res_currency : many2one
-class "ir.attachment" as ir_attachment
-myinvois_document --> ir_attachment : many2one
-class "account.move" as account_move
-myinvois_document .. account_move : many2many
-class "account_edi_proxy_client.user" as account_edi_proxy_client_user
-ResCompany --> account_edi_proxy_client_user : many2one
-class "account.journal" as account_journal
-ResCompany --> account_journal : many2one
-ResPartner --> l10n_my_edi_industry_classification : many2one
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Malaysia - E-invoicing - Generated Coverage
+component "Module Overview" as overview
+component "Models\n14" as models
+component "Views / XML\n12 views\n11 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n0 files" as frontend
+component "Security / Data\n1 rules\n7 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/l10n_my_edi/Models|Models]] (14)
+- Views and XML: [[docs/Community Addons/l10n_my_edi/Views|Views]] (11 files)
+
+## Key models
+
+- `account.edi.xml.ubl_myinvois_my`
+- `account.move`
+- `account.move.line`
+- `account.move.send`
+- `account.tax`
+- `account_edi_proxy_client.user`
+- `l10n_my_edi.industry_classification`
+- `myinvois.consolidate.invoice.wizard`
+- `myinvois.document`
+- `myinvois.document.status.update.wizard`
+- `product.template`
+- `res.company`
 
 ## Navigation
 
@@ -69,6 +91,7 @@ ResPartner --> l10n_my_edi_industry_classification : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

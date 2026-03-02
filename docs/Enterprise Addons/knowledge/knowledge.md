@@ -13,17 +13,68 @@ tags: [odoo, enterprise, module]
 
 Centralize, manage, share and grow your knowledge library
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 11
+- XML files with UI/data artifacts: 9
 - Views: 28
 - Actions: 27
 - Menus: 12
 - Rules (ir.rule): 14
 - Access CSV entries: 29
+- Controller units: 5
+- Frontend asset files: 182
 
-## Detected Models
+## Module map
 
-- `IrAttachment`
+```plantuml
+@startuml
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Knowledge - Generated Coverage
+component "Module Overview" as overview
+component "Models\n11" as models
+component "Views / XML\n28 views\n9 files" as views
+component "Controllers\n8 routes" as controllers
+component "Frontend\n182 files" as frontend
+component "Security / Data\n14 rules\n29 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
+@enduml
+```
+
+## Detail notes
+
+- Models: [[docs/Enterprise Addons/knowledge/Models|Models]] (11)
+- Views and XML: [[docs/Enterprise Addons/knowledge/Views|Views]] (9 files)
+- Controllers: [[docs/Enterprise Addons/knowledge/Controllers|Controllers]] (5)
+- Frontend: [[docs/Enterprise Addons/knowledge/Frontend|Frontend]] (182 files)
+
+## Key models
+
+- `ir.attachment`
 - `knowledge.article`
 - `knowledge.article.favorite`
 - `knowledge.article.member`
@@ -31,47 +82,9 @@ Centralize, manage, share and grow your knowledge library
 - `knowledge.article.template.category`
 - `knowledge.article.thread`
 - `knowledge.cover`
-- `ResPartner`
-- `ResUsers`
-
-```plantuml
-@startuml
-!include ../../../templates/DiagramStyles.puml
-title Knowledge - Models and Relations
-class IrAttachment
-class "knowledge.article" as knowledge_article
-class "knowledge.article.favorite" as knowledge_article_favorite
-class "knowledge.article.member" as knowledge_article_member
-class "knowledge.article.stage" as knowledge_article_stage
-class "knowledge.article.template.category" as knowledge_article_template_category
-class "knowledge.article.thread" as knowledge_article_thread
-class "knowledge.cover" as knowledge_cover
-class ResPartner
-class ResUsers
-knowledge_article --> knowledge_cover : many2one
-knowledge_article --> knowledge_article : many2one
-knowledge_article --|> knowledge_article_member : one2many
-knowledge_article --> knowledge_article : many2one
-knowledge_article --|> knowledge_article : one2many
-knowledge_article --> knowledge_article : many2one
-knowledge_article --> knowledge_article_stage : many2one
-class "res.users" as res_users
-knowledge_article --> res_users : many2one
-knowledge_article --|> knowledge_article_favorite : one2many
-knowledge_article --> knowledge_article_template_category : many2one
-knowledge_article --> knowledge_article : many2one
-knowledge_article_favorite --> knowledge_article : many2one
-knowledge_article_favorite --> res_users : many2one
-knowledge_article_member --> knowledge_article : many2one
-class "res.partner" as res_partner
-knowledge_article_member --> res_partner : many2one
-knowledge_article_stage --> knowledge_article : many2one
-knowledge_article_thread --> knowledge_article : many2one
-class "ir.attachment" as ir_attachment
-knowledge_cover --> ir_attachment : many2one
-knowledge_cover --|> knowledge_article : one2many
-@enduml
-```
+- `knowledge.invite`
+- `res.partner`
+- `res.users`
 
 ## Navigation
 
@@ -79,6 +92,7 @@ knowledge_cover --|> knowledge_article : one2many
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

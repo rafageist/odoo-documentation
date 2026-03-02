@@ -13,41 +13,70 @@ tags: [odoo, community, module]
 
 Spreadsheet
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 3
+- XML files with UI/data artifacts: 3
 - Views: 5
 - Actions: 2
 - Menus: 4
 - Rules (ir.rule): 4
 - Access CSV entries: 5
+- Controller units: 2
+- Frontend asset files: 21
 
-## Detected Models
+## Module map
+
+```plantuml
+@startuml
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Spreadsheet dashboard - Generated Coverage
+component "Module Overview" as overview
+component "Models\n3" as models
+component "Views / XML\n5 views\n3 files" as views
+component "Controllers\n4 routes" as controllers
+component "Frontend\n21 files" as frontend
+component "Security / Data\n4 rules\n5 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
+@enduml
+```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/spreadsheet_dashboard/Models|Models]] (3)
+- Views and XML: [[docs/Community Addons/spreadsheet_dashboard/Views|Views]] (3 files)
+- Controllers: [[docs/Community Addons/spreadsheet_dashboard/Controllers|Controllers]] (2)
+- Frontend: [[docs/Community Addons/spreadsheet_dashboard/Frontend|Frontend]] (21 files)
+
+## Key models
 
 - `spreadsheet.dashboard`
 - `spreadsheet.dashboard.group`
 - `spreadsheet.dashboard.share`
-
-```plantuml
-@startuml
-!include ../../../templates/DiagramStyles.puml
-title Spreadsheet dashboard - Models and Relations
-class "spreadsheet.dashboard" as spreadsheet_dashboard
-class "spreadsheet.dashboard.group" as spreadsheet_dashboard_group
-class "spreadsheet.dashboard.share" as spreadsheet_dashboard_share
-spreadsheet_dashboard --> spreadsheet_dashboard_group : many2one
-class "res.company" as res_company
-spreadsheet_dashboard .. res_company : many2many
-class "res.groups" as res_groups
-spreadsheet_dashboard .. res_groups : many2many
-class "res.users" as res_users
-spreadsheet_dashboard .. res_users : many2many
-class "ir.model" as ir_model
-spreadsheet_dashboard .. ir_model : many2many
-spreadsheet_dashboard_group --|> spreadsheet_dashboard : one2many
-spreadsheet_dashboard_group --|> spreadsheet_dashboard : one2many
-spreadsheet_dashboard_share --> spreadsheet_dashboard : many2one
-@enduml
-```
 
 ## Navigation
 
@@ -55,6 +84,7 @@ spreadsheet_dashboard_share --> spreadsheet_dashboard : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

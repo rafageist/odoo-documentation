@@ -9,31 +9,73 @@ tags: [odoo, enterprise, module]
 - Source: enterprise/l10n_de_reports
 - Dependencies: [[docs/Community Addons/l10n_de/l10n_de|l10n_de]], [[docs/Enterprise Addons/account_reports/account_reports|account_reports]]
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 8
+- XML files with UI/data artifacts: 3
 - Views: 3
 - Actions: 0
 - Menus: 1
 - Rules (ir.rule): 0
 - Access CSV entries: 0
+- Controller units: 0
+- Frontend asset files: 0
 
-## Detected Models
-
-- `AccountMove`
-- `ResCompany`
-- `ResPartner`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Germany - Accounting Reports - Models and Relations
-class AccountMove
-class ResCompany
-class ResPartner
-class "account.account" as account_account
-AccountMove --> account_account : many2one
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Germany - Accounting Reports - Generated Coverage
+component "Module Overview" as overview
+component "Models\n8" as models
+component "Views / XML\n3 views\n3 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n0 files" as frontend
+component "Security / Data\n0 rules\n0 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Enterprise Addons/l10n_de_reports/Models|Models]] (8)
+- Views and XML: [[docs/Enterprise Addons/l10n_de_reports/Views|Views]] (3 files)
+
+## Key models
+
+- `account.chart.template`
+- `account.general.ledger.report.handler`
+- `account.move`
+- `l10n_de.ec.sales.report.handler`
+- `l10n_de.tax.report.handler`
+- `res.company`
+- `res.config.settings`
+- `res.partner`
 
 ## Navigation
 
@@ -41,6 +83,7 @@ AccountMove --> account_account : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

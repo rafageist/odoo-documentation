@@ -9,35 +9,77 @@ tags: [odoo, community, module]
 - Source: odoo/addons/l10n_hu_edi
 - Dependencies: [[docs/Community Addons/account_debit_note/account_debit_note|account_debit_note]], [[docs/Community Addons/base_iban/base_iban|base_iban]], [[docs/Community Addons/l10n_hu/l10n_hu|l10n_hu]]
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 13
+- XML files with UI/data artifacts: 9
 - Views: 10
 - Actions: 1
 - Menus: 2
 - Rules (ir.rule): 0
 - Access CSV entries: 2
+- Controller units: 0
+- Frontend asset files: 0
 
-## Detected Models
-
-- `AccountMove`
-- `AccountTax`
-- `ProductTemplate`
-- `ResCompany`
-- `ResPartner`
-- `UomUom`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Hungary - E-invoicing - Models and Relations
-class AccountMove
-class AccountTax
-class ProductTemplate
-class ResCompany
-class ResPartner
-class UomUom
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Hungary - E-invoicing - Generated Coverage
+component "Module Overview" as overview
+component "Models\n13" as models
+component "Views / XML\n10 views\n9 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n0 files" as frontend
+component "Security / Data\n0 rules\n2 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/l10n_hu_edi/Models|Models]] (13)
+- Views and XML: [[docs/Community Addons/l10n_hu_edi/Views|Views]] (9 files)
+
+## Key models
+
+- `account.chart.template`
+- `account.debit.note`
+- `account.move`
+- `account.move.reversal`
+- `account.move.send`
+- `account.tax`
+- `l10n_hu_edi.cancellation`
+- `l10n_hu_edi.tax_audit_export`
+- `product.template`
+- `res.company`
+- `res.config.settings`
+- `res.partner`
 
 ## Navigation
 
@@ -45,6 +87,7 @@ class UomUom
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

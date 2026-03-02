@@ -1,0 +1,46 @@
+<!-- GENERATED:FRONTEND -->
+---
+tags: [odoo, enterprise, generated, index]
+---
+
+# account_online_synchronization Frontend
+
+- Module: [[docs/Enterprise Addons/account_online_synchronization/account_online_synchronization|account_online_synchronization]]
+- Scope: Enterprise Addons
+- Generated items: 27
+
+## Items
+
+- [[docs/Enterprise Addons/account_online_synchronization/Frontend/static_src_components_account_duplicate_transaction_account_duplicate_transaction_form.js|static/src/components/account_duplicate_transaction/account_duplicate_transaction_form.js]]
+- [[docs/Enterprise Addons/account_online_synchronization/Frontend/static_src_components_account_duplicate_transaction_account_duplicate_transaction_hook.js|static/src/components/account_duplicate_transaction/account_duplicate_transaction_hook.js]]
+- [[docs/Enterprise Addons/account_online_synchronization/Frontend/static_src_components_account_duplicate_transaction_account_duplicate_transaction_service.js|static/src/components/account_duplicate_transaction/account_duplicate_transaction_service.js]]
+- [[docs/Enterprise Addons/account_online_synchronization/Frontend/static_src_components_account_duplicate_transaction_account_duplicate_transactions_x2many.js|static/src/components/account_duplicate_transaction/account_duplicate_transactions_x2many.js]]
+- [[docs/Enterprise Addons/account_online_synchronization/Frontend/static_src_components_account_duplicate_transaction_account_duplicate_transactions_x2many.xml|static/src/components/account_duplicate_transaction/account_duplicate_transactions_x2many.xml]]
+- [[docs/Enterprise Addons/account_online_synchronization/Frontend/static_src_components_bank_configure_bank_configure.js|static/src/components/bank_configure/bank_configure.js]]
+- [[docs/Enterprise Addons/account_online_synchronization/Frontend/static_src_components_bank_configure_bank_configure.xml|static/src/components/bank_configure/bank_configure.xml]]
+- [[docs/Enterprise Addons/account_online_synchronization/Frontend/static_src_components_bank_reconciliation_fetch_missing_transactions_cog_menu.js|static/src/components/bank_reconciliation/fetch_missing_transactions_cog_menu.js]]
+- [[docs/Enterprise Addons/account_online_synchronization/Frontend/static_src_components_bank_reconciliation_fetch_missing_transactions_cog_menu.xml|static/src/components/bank_reconciliation/fetch_missing_transactions_cog_menu.xml]]
+- [[docs/Enterprise Addons/account_online_synchronization/Frontend/static_src_components_bank_reconciliation_find_duplicate_transactions_cog_menu.js|static/src/components/bank_reconciliation/find_duplicate_transactions_cog_menu.js]]
+- [[docs/Enterprise Addons/account_online_synchronization/Frontend/static_src_components_bank_reconciliation_find_duplicate_transactions_cog_menu.xml|static/src/components/bank_reconciliation/find_duplicate_transactions_cog_menu.xml]]
+- [[docs/Enterprise Addons/account_online_synchronization/Frontend/static_src_components_bank_reconciliation_kanban_renderer.js|static/src/components/bank_reconciliation/kanban_renderer.js]]
+- [[docs/Enterprise Addons/account_online_synchronization/Frontend/static_src_components_bank_reconciliation_kanban_renderer.xml|static/src/components/bank_reconciliation/kanban_renderer.xml]]
+- [[docs/Enterprise Addons/account_online_synchronization/Frontend/static_src_components_bank_reconciliation_statement_summary_statement_summary.js|static/src/components/bank_reconciliation/statement_summary/statement_summary.js]]
+- [[docs/Enterprise Addons/account_online_synchronization/Frontend/static_src_components_bank_reconciliation_statement_summary_statement_summary.xml|static/src/components/bank_reconciliation/statement_summary/statement_summary.xml]]
+- [[docs/Enterprise Addons/account_online_synchronization/Frontend/static_src_components_connected_until_widget_connected_until_widget.js|static/src/components/connected_until_widget/connected_until_widget.js]]
+- [[docs/Enterprise Addons/account_online_synchronization/Frontend/static_src_components_connected_until_widget_connected_until_widget.xml|static/src/components/connected_until_widget/connected_until_widget.xml]]
+- [[docs/Enterprise Addons/account_online_synchronization/Frontend/static_src_components_journal_create_wizard_journal_create_wizard.js|static/src/components/journal_create_wizard/journal_create_wizard.js]]
+- [[docs/Enterprise Addons/account_online_synchronization/Frontend/static_src_components_online_account_radio_online_account_radio.js|static/src/components/online_account_radio/online_account_radio.js]]
+- [[docs/Enterprise Addons/account_online_synchronization/Frontend/static_src_components_online_account_radio_online_account_radio.xml|static/src/components/online_account_radio/online_account_radio.xml]]
+- [[docs/Enterprise Addons/account_online_synchronization/Frontend/static_src_components_refresh_spin_journal_widget_refresh_spin_journal_widget.js|static/src/components/refresh_spin_journal_widget/refresh_spin_journal_widget.js]]
+- [[docs/Enterprise Addons/account_online_synchronization/Frontend/static_src_components_refresh_spin_journal_widget_refresh_spin_journal_widget.xml|static/src/components/refresh_spin_journal_widget/refresh_spin_journal_widget.xml]]
+- [[docs/Enterprise Addons/account_online_synchronization/Frontend/static_src_components_views_account_online_authorization_kanban.js|static/src/components/views/account_online_authorization_kanban.js]]
+- [[docs/Enterprise Addons/account_online_synchronization/Frontend/static_src_components_views_account_online_authorization_kanban_controller.xml|static/src/components/views/account_online_authorization_kanban_controller.xml]]
+- [[docs/Enterprise Addons/account_online_synchronization/Frontend/static_src_hooks_bank_institutions_hook.js|static/src/hooks/bank_institutions_hook.js]]
+- [[docs/Enterprise Addons/account_online_synchronization/Frontend/static_src_interactions_online_sync_portal.js|static/src/interactions/online_sync_portal.js]]
+- [[docs/Enterprise Addons/account_online_synchronization/Frontend/static_src_js_odoo_fin_connector.js|static/src/js/odoo_fin_connector.js]]
+
+## Navigation
+
+- **Parent:** [[docs/Enterprise Addons/account_online_synchronization/account_online_synchronization]]
+
+<!-- GENERATED:FRONTEND -->

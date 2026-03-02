@@ -9,46 +9,73 @@ tags: [odoo, community, module]
 - Source: odoo/addons/l10n_es_edi_tbai
 - Dependencies: [[docs/Community Addons/l10n_es/l10n_es|l10n_es]], [[docs/Community Addons/certificate/certificate|certificate]]
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 8
+- XML files with UI/data artifacts: 6
 - Views: 6
 - Actions: 1
 - Menus: 3
 - Rules (ir.rule): 1
 - Access CSV entries: 1
+- Controller units: 0
+- Frontend asset files: 0
 
-## Detected Models
-
-- `AccountMove`
-- `AccountMoveLine`
-- `CertificateCertificate`
-- `l10n_es_edi_tbai.document`
-- `ResCompany`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Spain - TicketBAI - Models and Relations
-class AccountMove
-class AccountMoveLine
-class CertificateCertificate
-class "l10n_es_edi_tbai.document" as l10n_es_edi_tbai_document
-class ResCompany
-AccountMove --> l10n_es_edi_tbai_document : many2one
-AccountMove --> l10n_es_edi_tbai_document : many2one
-class "account.move" as account_move
-AccountMove .. account_move : many2many
-class "ir.attachment" as ir_attachment
-l10n_es_edi_tbai_document --> ir_attachment : many2one
-class "res.company" as res_company
-l10n_es_edi_tbai_document --> res_company : many2one
-class "certificate.certificate" as certificate_certificate
-ResCompany --> certificate_certificate : many2one
-ResCompany --|> certificate_certificate : one2many
-class "ir.sequence" as ir_sequence
-ResCompany --> ir_sequence : many2one
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Spain - TicketBAI - Generated Coverage
+component "Module Overview" as overview
+component "Models\n8" as models
+component "Views / XML\n6 views\n6 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n0 files" as frontend
+component "Security / Data\n1 rules\n1 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/l10n_es_edi_tbai/Models|Models]] (8)
+- Views and XML: [[docs/Community Addons/l10n_es_edi_tbai/Views|Views]] (6 files)
+
+## Key models
+
+- `account.move`
+- `account.move.line`
+- `account.move.reversal`
+- `account.move.send`
+- `certificate.certificate`
+- `l10n_es_edi_tbai.document`
+- `res.company`
+- `res.config.settings`
 
 ## Navigation
 
@@ -56,6 +83,7 @@ ResCompany --> ir_sequence : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

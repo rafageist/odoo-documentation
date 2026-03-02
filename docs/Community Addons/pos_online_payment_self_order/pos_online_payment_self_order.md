@@ -13,33 +13,72 @@ tags: [odoo, community, module]
 
 Support online payment in self-order
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 5
+- XML files with UI/data artifacts: 1
 - Views: 1
 - Actions: 0
 - Menus: 0
 - Rules (ir.rule): 0
 - Access CSV entries: 0
+- Controller units: 1
+- Frontend asset files: 5
 
-## Detected Models
-
-- `PaymentTransaction`
-- `PosConfig`
-- `PosOrder`
-- `PosPaymentMethod`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title POS Self-Order / Online Payment - Models and Relations
-class PaymentTransaction
-class PosConfig
-class PosOrder
-class PosPaymentMethod
-class "pos.payment.method" as pos_payment_method
-PosConfig --> pos_payment_method : many2one
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title POS Self-Order / Online Payment - Generated Coverage
+component "Module Overview" as overview
+component "Models\n5" as models
+component "Views / XML\n1 views\n1 files" as views
+component "Controllers\n2 routes" as controllers
+component "Frontend\n5 files" as frontend
+component "Security / Data\n0 rules\n0 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/pos_online_payment_self_order/Models|Models]] (5)
+- Views and XML: [[docs/Community Addons/pos_online_payment_self_order/Views|Views]] (1 files)
+- Controllers: [[docs/Community Addons/pos_online_payment_self_order/Controllers|Controllers]] (1)
+- Frontend: [[docs/Community Addons/pos_online_payment_self_order/Frontend|Frontend]] (5 files)
+
+## Key models
+
+- `payment.transaction`
+- `pos.config`
+- `pos.order`
+- `pos.payment.method`
+- `res.config.settings`
 
 ## Navigation
 
@@ -47,6 +86,7 @@ PosConfig --> pos_payment_method : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

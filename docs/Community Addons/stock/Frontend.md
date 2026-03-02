@@ -1,0 +1,85 @@
+<!-- GENERATED:FRONTEND -->
+---
+tags: [odoo, community, generated, index]
+---
+
+# stock Frontend
+
+- Module: [[docs/Community Addons/stock/stock|stock]]
+- Scope: Community Addons
+- Generated items: 66
+
+## Items
+
+- [[docs/Community Addons/stock/Frontend/static_src_client_actions_multi_print.js|static/src/client_actions/multi_print.js]]
+- [[docs/Community Addons/stock/Frontend/static_src_client_actions_stock_traceability_report_backend.js|static/src/client_actions/stock_traceability_report_backend.js]]
+- [[docs/Community Addons/stock/Frontend/static_src_client_actions_stock_traceability_report_backend.xml|static/src/client_actions/stock_traceability_report_backend.xml]]
+- [[docs/Community Addons/stock/Frontend/static_src_components_reception_report_line_stock_reception_report_line.js|static/src/components/reception_report_line/stock_reception_report_line.js]]
+- [[docs/Community Addons/stock/Frontend/static_src_components_reception_report_line_stock_reception_report_line.xml|static/src/components/reception_report_line/stock_reception_report_line.xml]]
+- [[docs/Community Addons/stock/Frontend/static_src_components_reception_report_main_stock_reception_report_main.js|static/src/components/reception_report_main/stock_reception_report_main.js]]
+- [[docs/Community Addons/stock/Frontend/static_src_components_reception_report_main_stock_reception_report_main.xml|static/src/components/reception_report_main/stock_reception_report_main.xml]]
+- [[docs/Community Addons/stock/Frontend/static_src_components_reception_report_table_stock_reception_report_table.js|static/src/components/reception_report_table/stock_reception_report_table.js]]
+- [[docs/Community Addons/stock/Frontend/static_src_components_reception_report_table_stock_reception_report_table.xml|static/src/components/reception_report_table/stock_reception_report_table.xml]]
+- [[docs/Community Addons/stock/Frontend/static_src_components_stock_overview_stock_overview.js|static/src/components/stock_overview/stock_overview.js]]
+- [[docs/Community Addons/stock/Frontend/static_src_fields_stock_action_field.js|static/src/fields/stock_action_field.js]]
+- [[docs/Community Addons/stock/Frontend/static_src_fields_stock_action_field.xml|static/src/fields/stock_action_field.xml]]
+- [[docs/Community Addons/stock/Frontend/static_src_fields_stock_move_line_x2_many_field.js|static/src/fields/stock_move_line_x2_many_field.js]]
+- [[docs/Community Addons/stock/Frontend/static_src_picking_type_dashboard_graph_picking_type_dashboard_graph_field.js|static/src/picking_type_dashboard_graph/picking_type_dashboard_graph_field.js]]
+- [[docs/Community Addons/stock/Frontend/static_src_stock_forecasted_forecasted_buttons.js|static/src/stock_forecasted/forecasted_buttons.js]]
+- [[docs/Community Addons/stock/Frontend/static_src_stock_forecasted_forecasted_buttons.xml|static/src/stock_forecasted/forecasted_buttons.xml]]
+- [[docs/Community Addons/stock/Frontend/static_src_stock_forecasted_forecasted_details.js|static/src/stock_forecasted/forecasted_details.js]]
+- [[docs/Community Addons/stock/Frontend/static_src_stock_forecasted_forecasted_details.xml|static/src/stock_forecasted/forecasted_details.xml]]
+- [[docs/Community Addons/stock/Frontend/static_src_stock_forecasted_forecasted_graph.js|static/src/stock_forecasted/forecasted_graph.js]]
+- [[docs/Community Addons/stock/Frontend/static_src_stock_forecasted_forecasted_graph.xml|static/src/stock_forecasted/forecasted_graph.xml]]
+- [[docs/Community Addons/stock/Frontend/static_src_stock_forecasted_forecasted_header.js|static/src/stock_forecasted/forecasted_header.js]]
+- [[docs/Community Addons/stock/Frontend/static_src_stock_forecasted_forecasted_header.xml|static/src/stock_forecasted/forecasted_header.xml]]
+- [[docs/Community Addons/stock/Frontend/static_src_stock_forecasted_forecasted_warehouse_filter.js|static/src/stock_forecasted/forecasted_warehouse_filter.js]]
+- [[docs/Community Addons/stock/Frontend/static_src_stock_forecasted_forecasted_warehouse_filter.xml|static/src/stock_forecasted/forecasted_warehouse_filter.xml]]
+- [[docs/Community Addons/stock/Frontend/static_src_stock_forecasted_stock_forecasted.js|static/src/stock_forecasted/stock_forecasted.js]]
+- [[docs/Community Addons/stock/Frontend/static_src_stock_forecasted_stock_forecasted.xml|static/src/stock_forecasted/stock_forecasted.xml]]
+- [[docs/Community Addons/stock/Frontend/static_src_stock_warehouse_service.js|static/src/stock_warehouse_service.js]]
+- [[docs/Community Addons/stock/Frontend/static_src_views_list_inventory_report_list_model.js|static/src/views/list/inventory_report_list_model.js]]
+- [[docs/Community Addons/stock/Frontend/static_src_views_list_inventory_report_list_view.js|static/src/views/list/inventory_report_list_view.js]]
+- [[docs/Community Addons/stock/Frontend/static_src_views_list_stock_add_package_list_view.js|static/src/views/list/stock_add_package_list_view.js]]
+- [[docs/Community Addons/stock/Frontend/static_src_views_list_stock_report_list_view.js|static/src/views/list/stock_report_list_view.js]]
+- [[docs/Community Addons/stock/Frontend/static_src_views_picking_form_stock_move_one2many.js|static/src/views/picking_form/stock_move_one2many.js]]
+- [[docs/Community Addons/stock/Frontend/static_src_views_picking_form_stock_move_product_label.js|static/src/views/picking_form/stock_move_product_label.js]]
+- [[docs/Community Addons/stock/Frontend/static_src_views_picking_form_stock_move_product_label.xml|static/src/views/picking_form/stock_move_product_label.xml]]
+- [[docs/Community Addons/stock/Frontend/static_src_views_search_stock_orderpoint_search_model.js|static/src/views/search/stock_orderpoint_search_model.js]]
+- [[docs/Community Addons/stock/Frontend/static_src_views_search_stock_orderpoint_search_panel.js|static/src/views/search/stock_orderpoint_search_panel.js]]
+- [[docs/Community Addons/stock/Frontend/static_src_views_search_stock_orderpoint_search_panel.xml|static/src/views/search/stock_orderpoint_search_panel.xml]]
+- [[docs/Community Addons/stock/Frontend/static_src_views_search_stock_report_search_model.js|static/src/views/search/stock_report_search_model.js]]
+- [[docs/Community Addons/stock/Frontend/static_src_views_search_stock_report_search_panel.js|static/src/views/search/stock_report_search_panel.js]]
+- [[docs/Community Addons/stock/Frontend/static_src_views_search_stock_report_search_panel.xml|static/src/views/search/stock_report_search_panel.xml]]
+- [[docs/Community Addons/stock/Frontend/static_src_views_stock_empty_list_help.js|static/src/views/stock_empty_list_help.js]]
+- [[docs/Community Addons/stock/Frontend/static_src_views_stock_empty_list_help.xml|static/src/views/stock_empty_list_help.xml]]
+- [[docs/Community Addons/stock/Frontend/static_src_views_stock_orderpoint_list_controller.js|static/src/views/stock_orderpoint_list_controller.js]]
+- [[docs/Community Addons/stock/Frontend/static_src_views_stock_orderpoint_list_view.js|static/src/views/stock_orderpoint_list_view.js]]
+- [[docs/Community Addons/stock/Frontend/static_src_views_stock_orderpoint_list_view.xml|static/src/views/stock_orderpoint_list_view.xml]]
+- [[docs/Community Addons/stock/Frontend/static_src_widgets_counted_quantity_widget.js|static/src/widgets/counted_quantity_widget.js]]
+- [[docs/Community Addons/stock/Frontend/static_src_widgets_forced_placeholder.js|static/src/widgets/forced_placeholder.js]]
+- [[docs/Community Addons/stock/Frontend/static_src_widgets_forced_placeholder.xml|static/src/widgets/forced_placeholder.xml]]
+- [[docs/Community Addons/stock/Frontend/static_src_widgets_forecast_widget.js|static/src/widgets/forecast_widget.js]]
+- [[docs/Community Addons/stock/Frontend/static_src_widgets_forecast_widget.xml|static/src/widgets/forecast_widget.xml]]
+- [[docs/Community Addons/stock/Frontend/static_src_widgets_generate_serial.js|static/src/widgets/generate_serial.js]]
+- [[docs/Community Addons/stock/Frontend/static_src_widgets_json_widget.js|static/src/widgets/json_widget.js]]
+- [[docs/Community Addons/stock/Frontend/static_src_widgets_json_widget.xml|static/src/widgets/json_widget.xml]]
+- [[docs/Community Addons/stock/Frontend/static_src_widgets_lots_dialog.xml|static/src/widgets/lots_dialog.xml]]
+- [[docs/Community Addons/stock/Frontend/static_src_widgets_many2many_barcode_tags.js|static/src/widgets/many2many_barcode_tags.js]]
+- [[docs/Community Addons/stock/Frontend/static_src_widgets_popover_widget.js|static/src/widgets/popover_widget.js]]
+- [[docs/Community Addons/stock/Frontend/static_src_widgets_popover_widget.xml|static/src/widgets/popover_widget.xml]]
+- [[docs/Community Addons/stock/Frontend/static_src_widgets_stock_package_m2m.js|static/src/widgets/stock_package_m2m.js]]
+- [[docs/Community Addons/stock/Frontend/static_src_widgets_stock_package_m2o.js|static/src/widgets/stock_package_m2o.js]]
+- [[docs/Community Addons/stock/Frontend/static_src_widgets_stock_package_m2o.xml|static/src/widgets/stock_package_m2o.xml]]
+- [[docs/Community Addons/stock/Frontend/static_src_widgets_stock_pick_from.js|static/src/widgets/stock_pick_from.js]]
+- [[docs/Community Addons/stock/Frontend/static_src_widgets_stock_pick_from.xml|static/src/widgets/stock_pick_from.xml]]
+- [[docs/Community Addons/stock/Frontend/static_src_widgets_stock_rescheduling_popover.js|static/src/widgets/stock_rescheduling_popover.js]]
+- [[docs/Community Addons/stock/Frontend/static_src_widgets_stock_rescheduling_popover.xml|static/src/widgets/stock_rescheduling_popover.xml]]
+- [[docs/Community Addons/stock/Frontend/static_src_xml_inventory_lines.xml|static/src/xml/inventory_lines.xml]]
+- [[docs/Community Addons/stock/Frontend/static_src_xml_report_stock_reception.xml|static/src/xml/report_stock_reception.xml]]
+
+## Navigation
+
+- **Parent:** [[docs/Community Addons/stock/stock]]
+
+<!-- GENERATED:FRONTEND -->

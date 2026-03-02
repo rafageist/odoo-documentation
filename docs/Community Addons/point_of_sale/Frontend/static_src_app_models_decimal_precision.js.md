@@ -1,0 +1,23 @@
+<!-- GENERATED:FRONTEND -->
+---
+tags: [odoo, community, generated, frontend]
+---
+
+# static/src/app/models/decimal_precision.js
+
+- Module: [[docs/Community Addons/point_of_sale/point_of_sale|point_of_sale]]
+- Scope: Community Addons
+- Asset kind: `js`
+- Source file: `static/src/app/models/decimal_precision.js`
+
+## Detected frontend signals
+
+- Component classes: `DecimalPrecision`
+- Registry entries: none
+- Templates: none
+
+## Navigation
+
+- **Parent:** [[docs/Community Addons/point_of_sale/Frontend]]
+
+<!-- GENERATED:FRONTEND -->

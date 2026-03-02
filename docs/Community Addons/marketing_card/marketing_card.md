@@ -13,48 +13,74 @@ tags: [odoo, community, module]
 
 Generate dynamic shareable cards
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 8
+- XML files with UI/data artifacts: 6
 - Views: 8
 - Actions: 3
 - Menus: 4
 - Rules (ir.rule): 2
 - Access CSV entries: 9
+- Controller units: 1
+- Frontend asset files: 0
 
-## Detected Models
+## Module map
+
+```plantuml
+@startuml
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Marketing Card - Generated Coverage
+component "Module Overview" as overview
+component "Models\n8" as models
+component "Views / XML\n8 views\n6 files" as views
+component "Controllers\n3 routes" as controllers
+component "Frontend\n0 files" as frontend
+component "Security / Data\n2 rules\n9 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
+@enduml
+```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/marketing_card/Models|Models]] (8)
+- Views and XML: [[docs/Community Addons/marketing_card/Views|Views]] (6 files)
+- Controllers: [[docs/Community Addons/marketing_card/Controllers|Controllers]] (1)
+
+## Key models
 
 - `card.campaign`
 - `card.campaign.tag`
 - `card.card`
 - `card.template`
-- `IrModel`
-- `MailingMailing`
-- `UtmSource`
-
-```plantuml
-@startuml
-!include ../../../templates/DiagramStyles.puml
-title Marketing Card - Models and Relations
-class "card.campaign" as card_campaign
-class "card.campaign.tag" as card_campaign_tag
-class "card.card" as card_card
-class "card.template" as card_template
-class IrModel
-class MailingMailing
-class UtmSource
-class "mailing.mailing" as mailing_mailing
-card_campaign --|> mailing_mailing : one2many
-card_campaign --|> card_card : one2many
-card_campaign --> card_template : many2one
-class "link.tracker" as link_tracker
-card_campaign --> link_tracker : many2one
-card_campaign .. card_campaign_tag : many2many
-class "res.users" as res_users
-card_campaign --> res_users : many2one
-card_card --> card_campaign : many2one
-MailingMailing --> card_campaign : many2one
-@enduml
-```
+- `ir.model`
+- `mail.compose.message`
+- `mailing.mailing`
+- `utm.source`
 
 ## Navigation
 
@@ -62,6 +88,7 @@ MailingMailing --> card_campaign : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

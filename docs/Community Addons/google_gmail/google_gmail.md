@@ -9,29 +9,71 @@ tags: [odoo, community, module]
 - Source: odoo/addons/google_gmail
 - Dependencies: [[docs/Community Addons/mail/mail|mail]]
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 5
+- XML files with UI/data artifacts: 3
 - Views: 3
 - Actions: 0
 - Menus: 0
 - Rules (ir.rule): 0
 - Access CSV entries: 0
+- Controller units: 1
+- Frontend asset files: 0
 
-## Detected Models
-
-- `fetchmail.server`
-- `ir.mail_server`
-- `ResUsers`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Google Gmail - Models and Relations
-class "fetchmail.server" as fetchmail_server
-class "ir.mail_server" as ir_mail_server
-class ResUsers
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Google Gmail - Generated Coverage
+component "Module Overview" as overview
+component "Models\n5" as models
+component "Views / XML\n3 views\n3 files" as views
+component "Controllers\n2 routes" as controllers
+component "Frontend\n0 files" as frontend
+component "Security / Data\n0 rules\n0 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/google_gmail/Models|Models]] (5)
+- Views and XML: [[docs/Community Addons/google_gmail/Views|Views]] (3 files)
+- Controllers: [[docs/Community Addons/google_gmail/Controllers|Controllers]] (1)
+
+## Key models
+
+- `fetchmail.server`
+- `google.gmail.mixin`
+- `ir.mail_server`
+- `res.config.settings`
+- `res.users`
 
 ## Navigation
 
@@ -39,6 +81,7 @@ class ResUsers
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

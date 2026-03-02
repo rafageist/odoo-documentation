@@ -9,57 +9,77 @@ tags: [odoo, enterprise, module]
 - Source: enterprise/l10n_mx_edi_extended
 - Dependencies: [[docs/Enterprise Addons/l10n_mx_edi/l10n_mx_edi|l10n_mx_edi]], [[docs/Community Addons/base_address_extended/base_address_extended|base_address_extended]]
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 12
+- XML files with UI/data artifacts: 8
 - Views: 9
 - Actions: 0
 - Menus: 0
 - Rules (ir.rule): 0
 - Access CSV entries: 2
+- Controller units: 0
+- Frontend asset files: 0
 
-## Detected Models
-
-- `AccountJournal`
-- `AccountMove`
-- `AccountMoveLine`
-- `L10n_Mx_EdiDocument`
-- `l10n_mx_edi.res.locality`
-- `l10n_mx_edi.tariff.fraction`
-- `ProductTemplate`
-- `ResCity`
-- `ResCompany`
-- `ResPartner`
-- `UomUom`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title EDI for Mexico (Advanced Features) - Models and Relations
-class AccountJournal
-class AccountMove
-class AccountMoveLine
-class L10n_Mx_EdiDocument
-class "l10n_mx_edi.res.locality" as l10n_mx_edi_res_locality
-class "l10n_mx_edi.tariff.fraction" as l10n_mx_edi_tariff_fraction
-class ProductTemplate
-class ResCity
-class ResCompany
-class ResPartner
-class UomUom
-class "res.partner" as res_partner
-AccountJournal --> res_partner : many2one
-class "uom.uom" as uom_uom
-AccountMoveLine --> uom_uom : many2one
-class "res.country" as res_country
-l10n_mx_edi_res_locality --> res_country : many2one
-class "res.country.state" as res_country_state
-l10n_mx_edi_res_locality --> res_country_state : many2one
-ProductTemplate --> l10n_mx_edi_tariff_fraction : many2one
-ProductTemplate --> uom_uom : many2one
-ResCompany --> l10n_mx_edi_res_locality : many2one
-ResPartner --> l10n_mx_edi_res_locality : many2one
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title EDI for Mexico (Advanced Features) - Generated Coverage
+component "Module Overview" as overview
+component "Models\n12" as models
+component "Views / XML\n9 views\n8 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n0 files" as frontend
+component "Security / Data\n0 rules\n2 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Enterprise Addons/l10n_mx_edi_extended/Models|Models]] (12)
+- Views and XML: [[docs/Enterprise Addons/l10n_mx_edi_extended/Views|Views]] (8 files)
+
+## Key models
+
+- `account.journal`
+- `account.move`
+- `account.move.line`
+- `l10n_mx_edi.document`
+- `l10n_mx_edi.res.locality`
+- `l10n_mx_edi.tariff.fraction`
+- `product.template`
+- `res.city`
+- `res.company`
+- `res.config.settings`
+- `res.partner`
+- `uom.uom`
 
 ## Navigation
 
@@ -67,6 +87,7 @@ ResPartner --> l10n_mx_edi_res_locality : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

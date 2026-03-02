@@ -9,66 +9,77 @@ tags: [odoo, enterprise, module]
 - Source: enterprise/account_asset
 - Dependencies: [[docs/Enterprise Addons/accountant/accountant|accountant]]
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 11
+- XML files with UI/data artifacts: 8
 - Views: 14
 - Actions: 7
 - Menus: 4
 - Rules (ir.rule): 2
 - Access CSV entries: 6
+- Controller units: 0
+- Frontend asset files: 6
 
-## Detected Models
-
-- `AccountAccount`
-- `account.asset`
-- `AccountReport`
-- `account.asset.group`
-- `AccountMove`
-- `AccountMoveLine`
-- `AccountReturn`
-- `ResCompany`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Assets Management - Models and Relations
-class AccountAccount
-class "account.asset" as account_asset
-class AccountReport
-class "account.asset.group" as account_asset_group
-class AccountMove
-class AccountMoveLine
-class AccountReturn
-class ResCompany
-AccountAccount .. account_asset : many2many
-class "res.company" as res_company
-account_asset --> res_company : many2one
-class "res.currency" as res_currency
-account_asset --> res_currency : many2one
-class "account.account" as account_account
-account_asset --> account_account : many2one
-account_asset --> account_asset_group : many2one
-account_asset --> account_account : many2one
-account_asset --> account_account : many2one
-class "account.journal" as account_journal
-account_asset --> account_journal : many2one
-class "account.move" as account_move
-account_asset --|> account_move : one2many
-class "account.move.line" as account_move_line
-account_asset .. account_move_line : many2many
-account_asset --> account_asset : many2one
-account_asset --> account_asset : many2one
-account_asset --|> account_asset : one2many
-account_asset --|> account_asset : one2many
-account_asset_group --> res_company : many2one
-account_asset_group --|> account_asset : one2many
-AccountMove --> account_asset : many2one
-AccountMove --|> account_asset : one2many
-AccountMoveLine .. account_asset : many2many
-ResCompany --> account_account : many2one
-ResCompany --> account_account : many2one
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Assets Management - Generated Coverage
+component "Module Overview" as overview
+component "Models\n11" as models
+component "Views / XML\n14 views\n8 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n6 files" as frontend
+component "Security / Data\n2 rules\n6 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Enterprise Addons/account_asset/Models|Models]] (11)
+- Views and XML: [[docs/Enterprise Addons/account_asset/Views|Views]] (8 files)
+- Frontend: [[docs/Enterprise Addons/account_asset/Frontend|Frontend]] (6 files)
+
+## Key models
+
+- `account.account`
+- `account.asset`
+- `account.asset.group`
+- `account.asset.report.handler`
+- `account.chart.template`
+- `account.move`
+- `account.move.line`
+- `account.report`
+- `account.return`
+- `asset.modify`
+- `res.company`
 
 ## Navigation
 
@@ -76,6 +87,7 @@ ResCompany --> account_account : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

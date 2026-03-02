@@ -1,0 +1,23 @@
+<!-- GENERATED:FRONTEND -->
+---
+tags: [odoo, enterprise, generated, frontend]
+---
+
+# static/src/override/web/control_panel.js
+
+- Module: [[docs/Enterprise Addons/pos_appointment/pos_appointment|pos_appointment]]
+- Scope: Enterprise Addons
+- Asset kind: `js`
+- Source file: `static/src/override/web/control_panel.js`
+
+## Detected frontend signals
+
+- Component classes: none
+- Registry entries: none
+- Templates: none
+
+## Navigation
+
+- **Parent:** [[docs/Enterprise Addons/pos_appointment/Frontend]]
+
+<!-- GENERATED:FRONTEND -->

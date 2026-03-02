@@ -1,0 +1,23 @@
+<!-- GENERATED:FRONTEND -->
+---
+tags: [odoo, enterprise, generated, frontend]
+---
+
+# static/src/app/screens/product_screen/control_buttons/select_partner_button/select_partner_button.xml
+
+- Module: [[docs/Enterprise Addons/pos_settle_due/pos_settle_due|pos_settle_due]]
+- Scope: Enterprise Addons
+- Asset kind: `xml`
+- Source file: `static/src/app/screens/product_screen/control_buttons/select_partner_button/select_partner_button.xml`
+
+## Detected frontend signals
+
+- Component classes: none
+- Registry entries: none
+- Templates: none
+
+## Navigation
+
+- **Parent:** [[docs/Enterprise Addons/pos_settle_due/Frontend]]
+
+<!-- GENERATED:FRONTEND -->

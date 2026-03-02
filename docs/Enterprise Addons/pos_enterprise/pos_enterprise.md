@@ -13,76 +13,79 @@ tags: [odoo, enterprise, module]
 
 Advanced features for PoS
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 20
+- XML files with UI/data artifacts: 6
 - Views: 12
 - Actions: 5
 - Menus: 3
 - Rules (ir.rule): 1
 - Access CSV entries: 9
+- Controller units: 1
+- Frontend asset files: 26
 
-## Detected Models
+## Module map
 
-- `PosCategory`
-- `PosConfig`
-- `PosOrder`
-- `PosOrderLine`
+```plantuml
+@startuml
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Point of Sale enterprise - Generated Coverage
+component "Module Overview" as overview
+component "Models\n20" as models
+component "Views / XML\n12 views\n6 files" as views
+component "Controllers\n1 routes" as controllers
+component "Frontend\n26 files" as frontend
+component "Security / Data\n1 rules\n9 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
+@enduml
+```
+
+## Detail notes
+
+- Models: [[docs/Enterprise Addons/pos_enterprise/Models|Models]] (20)
+- Views and XML: [[docs/Enterprise Addons/pos_enterprise/Views|Views]] (6 files)
+- Controllers: [[docs/Enterprise Addons/pos_enterprise/Controllers|Controllers]] (1)
+- Frontend: [[docs/Enterprise Addons/pos_enterprise/Frontend|Frontend]] (26 files)
+
+## Key models
+
+- `pos.category`
+- `pos.config`
+- `pos.load.mixin`
+- `pos.order`
+- `pos.order.line`
 - `pos.prep.display`
 - `pos.prep.line`
 - `pos.prep.order`
 - `pos.prep.stage`
 - `pos.prep.state`
-- `PosPreset`
-- `PosSession`
-- `product.attribute`
-- `product.template.attribute.value`
-- `product.attribute.custom.value`
-- `ProductProduct`
-- `ResourceCalendarAttendance`
-
-```plantuml
-@startuml
-!include ../../../templates/DiagramStyles.puml
-title Point of Sale enterprise - Models and Relations
-class PosCategory
-class PosConfig
-class PosOrder
-class PosOrderLine
-class "pos.prep.display" as pos_prep_display
-class "pos.prep.line" as pos_prep_line
-class "pos.prep.order" as pos_prep_order
-class "pos.prep.stage" as pos_prep_stage
-class "pos.prep.state" as pos_prep_state
-class PosPreset
-class PosSession
-class "product.attribute" as product_attribute
-class "product.template.attribute.value" as product_template_attribute_value
-class "product.attribute.custom.value" as product_attribute_custom_value
-class ProductProduct
-class ResourceCalendarAttendance
-class "res.company" as res_company
-pos_prep_display --> res_company : many2one
-class "pos.config" as pos_config
-pos_prep_display .. pos_config : many2many
-class "pos.category" as pos_category
-pos_prep_display .. pos_category : many2many
-pos_prep_display --|> pos_prep_stage : one2many
-pos_prep_line --> pos_prep_order : many2one
-class "product.product" as product_product
-pos_prep_line --> product_product : many2one
-pos_prep_line .. product_template_attribute_value : many2many
-pos_prep_line --|> pos_prep_line : one2many
-pos_prep_line --> pos_prep_line : many2one
-class "pos.order.line" as pos_order_line
-pos_prep_line --> pos_order_line : many2one
-class "pos.order" as pos_order
-pos_prep_order --> pos_order : many2one
-pos_prep_order --|> pos_prep_line : one2many
-pos_prep_stage --> pos_prep_display : many2one
-pos_prep_state --> pos_prep_line : many2one
-pos_prep_state --> pos_prep_stage : many2one
-@enduml
-```
+- `pos.preparation.display.reset.wizard`
+- `pos.preset`
 
 ## Navigation
 
@@ -90,6 +93,7 @@ pos_prep_state --> pos_prep_stage : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

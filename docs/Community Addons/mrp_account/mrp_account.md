@@ -13,67 +13,78 @@ tags: [odoo, community, module]
 
 Analytic accounting in Manufacturing
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 17
+- XML files with UI/data artifacts: 7
 - Views: 9
 - Actions: 4
 - Menus: 0
 - Rules (ir.rule): 0
 - Access CSV entries: 6
+- Controller units: 0
+- Frontend asset files: 3
 
-## Detected Models
-
-- `AccountMove`
-- `AccountMoveLine`
-- `AccountAnalyticAccount`
-- `AccountAnalyticLine`
-- `AccountAnalyticApplicability`
-- `MrpProduction`
-- `mrp.workcenter`
-- `MrpWorkcenterProductivity`
-- `MrpWorkorder`
-- `ProductTemplate`
-- `ProductProduct`
-- `ProductCategory`
-- `StockMove`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Accounting - MRP - Models and Relations
-class AccountMove
-class AccountMoveLine
-class AccountAnalyticAccount
-class AccountAnalyticLine
-class AccountAnalyticApplicability
-class MrpProduction
-class "mrp.workcenter" as mrp_workcenter
-class MrpWorkcenterProductivity
-class MrpWorkorder
-class ProductTemplate
-class ProductProduct
-class ProductCategory
-class StockMove
-class "mrp.production" as mrp_production
-AccountMove .. mrp_production : many2many
-AccountAnalyticAccount .. mrp_production : many2many
-class "mrp.bom" as mrp_bom
-AccountAnalyticAccount .. mrp_bom : many2many
-AccountAnalyticAccount .. mrp_workcenter : many2many
-class "account.move" as account_move
-MrpProduction .. account_move : many2many
-class "account.analytic.account" as account_analytic_account
-mrp_workcenter .. account_analytic_account : many2many
-class "account.account" as account_account
-mrp_workcenter --> account_account : many2one
-class "account.move.line" as account_move_line
-MrpWorkcenterProductivity --> account_move_line : many2one
-class "account.analytic.line" as account_analytic_line
-MrpWorkorder .. account_analytic_line : many2many
-MrpWorkorder .. account_analytic_line : many2many
-ProductCategory --> account_account : many2one
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Accounting - MRP - Generated Coverage
+component "Module Overview" as overview
+component "Models\n17" as models
+component "Views / XML\n9 views\n7 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n3 files" as frontend
+component "Security / Data\n0 rules\n6 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/mrp_account/Models|Models]] (17)
+- Views and XML: [[docs/Community Addons/mrp_account/Views|Views]] (7 files)
+- Frontend: [[docs/Community Addons/mrp_account/Frontend|Frontend]] (3 files)
+
+## Key models
+
+- `account.analytic.account`
+- `account.analytic.applicability`
+- `account.analytic.line`
+- `account.move`
+- `account.move.line`
+- `mrp.account.wip.accounting`
+- `mrp.account.wip.accounting.line`
+- `mrp.production`
+- `mrp.workcenter`
+- `mrp.workcenter.productivity`
+- `mrp.workorder`
+- `product.category`
 
 ## Navigation
 
@@ -81,6 +92,7 @@ ProductCategory --> account_account : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

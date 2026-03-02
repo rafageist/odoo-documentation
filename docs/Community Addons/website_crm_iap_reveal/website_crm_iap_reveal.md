@@ -13,52 +13,69 @@ tags: [odoo, community, module]
 
 Generate Leads/Opportunities from your website's traffic
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 4
+- XML files with UI/data artifacts: 5
 - Views: 14
 - Actions: 2
 - Menus: 2
 - Rules (ir.rule): 4
 - Access CSV entries: 4
+- Controller units: 0
+- Frontend asset files: 0
 
-## Detected Models
-
-- `CrmLead`
-- `crm.reveal.rule`
-- `crm.reveal.view`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Lead Generation From Website Visits - Models and Relations
-class CrmLead
-class "crm.reveal.rule" as crm_reveal_rule
-class "crm.reveal.view" as crm_reveal_view
-CrmLead --> crm_reveal_rule : many2one
-class "res.country" as res_country
-crm_reveal_rule .. res_country : many2many
-class website
-crm_reveal_rule --> website : many2one
-class "res.country.state" as res_country_state
-crm_reveal_rule .. res_country_state : many2many
-class "crm.iap.lead.industry" as crm_iap_lead_industry
-crm_reveal_rule .. crm_iap_lead_industry : many2many
-class "crm.iap.lead.role" as crm_iap_lead_role
-crm_reveal_rule --> crm_iap_lead_role : many2one
-crm_reveal_rule .. crm_iap_lead_role : many2many
-class "crm.iap.lead.seniority" as crm_iap_lead_seniority
-crm_reveal_rule --> crm_iap_lead_seniority : many2one
-class "crm.team" as crm_team
-crm_reveal_rule --> crm_team : many2one
-class "crm.tag" as crm_tag
-crm_reveal_rule .. crm_tag : many2many
-class "res.users" as res_users
-crm_reveal_rule --> res_users : many2one
-class "crm.lead" as crm_lead
-crm_reveal_rule --|> crm_lead : one2many
-crm_reveal_view --> crm_reveal_rule : many2one
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Lead Generation From Website Visits - Generated Coverage
+component "Module Overview" as overview
+component "Models\n4" as models
+component "Views / XML\n14 views\n5 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n0 files" as frontend
+component "Security / Data\n4 rules\n4 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/website_crm_iap_reveal/Models|Models]] (4)
+- Views and XML: [[docs/Community Addons/website_crm_iap_reveal/Views|Views]] (5 files)
+
+## Key models
+
+- `crm.lead`
+- `crm.reveal.rule`
+- `crm.reveal.view`
+- `ir.http`
 
 ## Navigation
 
@@ -66,6 +83,7 @@ crm_reveal_view --> crm_reveal_rule : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

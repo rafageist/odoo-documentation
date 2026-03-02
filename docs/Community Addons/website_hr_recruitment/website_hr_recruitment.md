@@ -13,33 +13,72 @@ tags: [odoo, community, module]
 
 Manage your online hiring process
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 5
+- XML files with UI/data artifacts: 5
 - Views: 10
 - Actions: 3
 - Menus: 1
 - Rules (ir.rule): 4
 - Access CSV entries: 4
+- Controller units: 1
+- Frontend asset files: 11
 
-## Detected Models
-
-- `HrApplicant`
-- `HrDepartment`
-- `hr.job`
-- `HrRecruitmentSource`
-- `Website`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Online Jobs - Models and Relations
-class HrApplicant
-class HrDepartment
-class "hr.job" as hr_job
-class HrRecruitmentSource
-class Website
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Online Jobs - Generated Coverage
+component "Module Overview" as overview
+component "Models\n5" as models
+component "Views / XML\n10 views\n5 files" as views
+component "Controllers\n6 routes" as controllers
+component "Frontend\n11 files" as frontend
+component "Security / Data\n4 rules\n4 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/website_hr_recruitment/Models|Models]] (5)
+- Views and XML: [[docs/Community Addons/website_hr_recruitment/Views|Views]] (5 files)
+- Controllers: [[docs/Community Addons/website_hr_recruitment/Controllers|Controllers]] (1)
+- Frontend: [[docs/Community Addons/website_hr_recruitment/Frontend|Frontend]] (11 files)
+
+## Key models
+
+- `hr.applicant`
+- `hr.department`
+- `hr.job`
+- `hr.recruitment.source`
+- `website`
 
 ## Navigation
 
@@ -47,6 +86,7 @@ class Website
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

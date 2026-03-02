@@ -13,46 +13,73 @@ tags: [odoo, community, module]
 
 Quizzes on tracks
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 6
+- XML files with UI/data artifacts: 7
 - Views: 14
 - Actions: 2
 - Menus: 2
 - Rules (ir.rule): 0
 - Access CSV entries: 3
+- Controller units: 2
+- Frontend asset files: 3
 
-## Detected Models
-
-- `EventEvent`
-- `event.quiz`
-- `event.quiz.question`
-- `event.quiz.answer`
-- `EventTrack`
-- `EventTrackVisitor`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Quizzes on Tracks - Models and Relations
-class EventEvent
-class "event.quiz" as event_quiz
-class "event.quiz.question" as event_quiz_question
-class "event.quiz.answer" as event_quiz_answer
-class EventTrack
-class EventTrackVisitor
-event_quiz --|> event_quiz_question : one2many
-class "event.track" as event_track
-event_quiz --> event_track : many2one
-class "event.event" as event_event
-event_quiz --> event_event : many2one
-event_quiz_question --> event_quiz : many2one
-event_quiz_question --|> event_quiz_answer : one2many
-event_quiz_question --|> event_quiz_answer : one2many
-event_quiz_answer --> event_quiz_question : many2one
-EventTrack --> event_quiz : many2one
-EventTrack --|> event_quiz : one2many
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Quizzes on Tracks - Generated Coverage
+component "Module Overview" as overview
+component "Models\n6" as models
+component "Views / XML\n14 views\n7 files" as views
+component "Controllers\n5 routes" as controllers
+component "Frontend\n3 files" as frontend
+component "Security / Data\n0 rules\n3 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/website_event_track_quiz/Models|Models]] (6)
+- Views and XML: [[docs/Community Addons/website_event_track_quiz/Views|Views]] (7 files)
+- Controllers: [[docs/Community Addons/website_event_track_quiz/Controllers|Controllers]] (2)
+- Frontend: [[docs/Community Addons/website_event_track_quiz/Frontend|Frontend]] (3 files)
+
+## Key models
+
+- `event.event`
+- `event.quiz`
+- `event.quiz.answer`
+- `event.quiz.question`
+- `event.track`
+- `event.track.visitor`
 
 ## Navigation
 
@@ -60,6 +87,7 @@ EventTrack --|> event_quiz : one2many
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

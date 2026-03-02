@@ -13,76 +13,79 @@ tags: [odoo, enterprise, module]
 
 Create and manage company expense cards via Stripe
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 19
+- XML files with UI/data artifacts: 12
 - Views: 17
 - Actions: 2
 - Menus: 2
 - Rules (ir.rule): 5
 - Access CSV entries: 10
+- Controller units: 1
+- Frontend asset files: 13
 
-## Detected Models
-
-- `AccountBankStatementLine`
-- `AccountJournal`
-- `AccountPayment`
-- `AccountPaymentMethodLine`
-- `hr.employee`
-- `HrExpense`
-- `hr.expense.stripe.card`
-- `product.mcc.stripe.tag`
-- `ProductProduct`
-- `ResCompany`
-- `ResUsers`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Expense cards - Models and Relations
-class AccountBankStatementLine
-class AccountJournal
-class AccountPayment
-class AccountPaymentMethodLine
-class "hr.employee" as hr_employee
-class HrExpense
-class "hr.expense.stripe.card" as hr_expense_stripe_card
-class "product.mcc.stripe.tag" as product_mcc_stripe_tag
-class ProductProduct
-class ResCompany
-class ResUsers
-AccountJournal --|> hr_expense_stripe_card : one2many
-AccountPaymentMethodLine --|> hr_expense_stripe_card : one2many
-HrExpense --> hr_expense_stripe_card : many2one
-HrExpense --> product_mcc_stripe_tag : many2one
-class "res.company" as res_company
-hr_expense_stripe_card --> res_company : many2one
-class "res.partner" as res_partner
-hr_expense_stripe_card --> res_partner : many2one
-hr_expense_stripe_card --> hr_employee : many2one
-class "account.journal" as account_journal
-hr_expense_stripe_card --> account_journal : many2one
-hr_expense_stripe_card --> res_partner : many2one
-class "res.users" as res_users
-hr_expense_stripe_card --> res_users : many2one
-hr_expense_stripe_card .. product_mcc_stripe_tag : many2many
-class "res.country" as res_country
-hr_expense_stripe_card .. res_country : many2many
-class "hr.expense" as hr_expense
-hr_expense_stripe_card --|> hr_expense : one2many
-class "account.payment.method.line" as account_payment_method_line
-hr_expense_stripe_card --> account_payment_method_line : many2one
-class "product.product" as product_product
-product_mcc_stripe_tag --> product_product : many2one
-ProductProduct --|> product_mcc_stripe_tag : one2many
-ResCompany --> account_journal : many2one
-class "res.currency" as res_currency
-ResCompany --> res_currency : many2one
-class "certificate.key" as certificate_key
-ResCompany --> certificate_key : many2one
-ResCompany --> certificate_key : many2one
-ResUsers --|> hr_expense_stripe_card : one2many
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Expense cards - Generated Coverage
+component "Module Overview" as overview
+component "Models\n19" as models
+component "Views / XML\n17 views\n12 files" as views
+component "Controllers\n1 routes" as controllers
+component "Frontend\n13 files" as frontend
+component "Security / Data\n5 rules\n10 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Enterprise Addons/hr_expense_stripe/Models|Models]] (19)
+- Views and XML: [[docs/Enterprise Addons/hr_expense_stripe/Views|Views]] (12 files)
+- Controllers: [[docs/Enterprise Addons/hr_expense_stripe/Controllers|Controllers]] (1)
+- Frontend: [[docs/Enterprise Addons/hr_expense_stripe/Frontend|Frontend]] (13 files)
+
+## Key models
+
+- `account.bank.statement.line`
+- `account.chart.template`
+- `account.journal`
+- `account.payment`
+- `account.payment.method.line`
+- `account.payment.register`
+- `hr.employee`
+- `hr.expense`
+- `hr.expense.split`
+- `hr.expense.stripe.card`
+- `hr.expense.stripe.card.block.wizard`
+- `hr.expense.stripe.card.receive.wizard`
 
 ## Navigation
 
@@ -90,6 +93,7 @@ ResUsers --|> hr_expense_stripe_card : one2many
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

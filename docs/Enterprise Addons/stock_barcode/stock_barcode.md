@@ -13,62 +13,79 @@ tags: [odoo, enterprise, module]
 
 Use barcode scanners to process logistics operations
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 18
+- XML files with UI/data artifacts: 12
 - Views: 20
 - Actions: 8
 - Menus: 1
 - Rules (ir.rule): 0
 - Access CSV entries: 1
+- Controller units: 1
+- Frontend asset files: 37
 
-## Detected Models
-
-- `ProductProduct`
-- `ProductUom`
-- `ResPartner`
-- `StockLocation`
-- `StockLot`
-- `StockMove`
-- `StockMoveLine`
-- `StockPackage`
-- `StockPackageType`
-- `StockPicking`
-- `StockPickingType`
-- `StockQuant`
-- `stock.scrap`
-- `StockWarehouse`
-- `UomUom`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Barcode - Models and Relations
-class ProductProduct
-class ProductUom
-class ResPartner
-class StockLocation
-class StockLot
-class StockMove
-class StockMoveLine
-class StockPackage
-class StockPackageType
-class StockPicking
-class StockPickingType
-class StockQuant
-class "stock.scrap" as stock_scrap
-class StockWarehouse
-class UomUom
-class "stock.location" as stock_location
-StockMoveLine --> stock_location : many2one
-StockMoveLine --> stock_location : many2one
-class "stock.quant" as stock_quant
-StockMoveLine --|> stock_quant : one2many
-class "uom.uom" as uom_uom
-StockMoveLine --> uom_uom : many2one
-class "stock.package" as stock_package
-StockMoveLine --> stock_package : many2one
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Barcode - Generated Coverage
+component "Module Overview" as overview
+component "Models\n18" as models
+component "Views / XML\n20 views\n12 files" as views
+component "Controllers\n10 routes" as controllers
+component "Frontend\n37 files" as frontend
+component "Security / Data\n0 rules\n1 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Enterprise Addons/stock_barcode/Models|Models]] (18)
+- Views and XML: [[docs/Enterprise Addons/stock_barcode/Views|Views]] (12 files)
+- Controllers: [[docs/Enterprise Addons/stock_barcode/Controllers|Controllers]] (1)
+- Frontend: [[docs/Enterprise Addons/stock_barcode/Frontend|Frontend]] (37 files)
+
+## Key models
+
+- `product.product`
+- `product.uom`
+- `res.config.settings`
+- `res.partner`
+- `stock.backorder.confirmation`
+- `stock.location`
+- `stock.lot`
+- `stock.move`
+- `stock.move.line`
+- `stock.package`
+- `stock.package.type`
+- `stock.picking`
 
 ## Navigation
 
@@ -76,6 +93,7 @@ StockMoveLine --> stock_package : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

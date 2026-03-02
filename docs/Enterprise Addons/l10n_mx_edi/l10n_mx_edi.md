@@ -13,69 +13,78 @@ tags: [odoo, enterprise, module]
 
 Mexican Localization for EDI documents
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 21
+- XML files with UI/data artifacts: 16
 - Views: 21
 - Actions: 4
 - Menus: 2
 - Rules (ir.rule): 0
 - Access CSV entries: 8
+- Controller units: 0
+- Frontend asset files: 1
 
-## Detected Models
-
-- `AccountJournal`
-- `AccountMove`
-- `AccountMoveLine`
-- `AccountPayment`
-- `IrAttachment`
-- `l10n_mx_edi.addenda`
-- `l10n_mx_edi.document`
-- `l10n_mx_edi.payment.method`
-- `ProductTemplate`
-- `ResBank`
-- `ResCompany`
-- `ResCountry`
-- `ResCurrency`
-- `ResPartner`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title EDI for Mexico - Models and Relations
-class AccountJournal
-class AccountMove
-class AccountMoveLine
-class AccountPayment
-class IrAttachment
-class "l10n_mx_edi.addenda" as l10n_mx_edi_addenda
-class "l10n_mx_edi.document" as l10n_mx_edi_document
-class "l10n_mx_edi.payment.method" as l10n_mx_edi_payment_method
-class ProductTemplate
-class ResBank
-class ResCompany
-class ResCountry
-class ResCurrency
-class ResPartner
-AccountJournal --> l10n_mx_edi_payment_method : many2one
-AccountMove .. l10n_mx_edi_document : many2many
-AccountMove --|> l10n_mx_edi_document : one2many
-AccountMove --|> l10n_mx_edi_document : one2many
-class "ir.attachment" as ir_attachment
-AccountMove --> ir_attachment : many2one
-class "account.move" as account_move
-AccountMove --> account_move : many2one
-class "certificate.certificate" as certificate_certificate
-AccountMove --> certificate_certificate : many2one
-AccountMove --> l10n_mx_edi_payment_method : many2one
-AccountMove .. l10n_mx_edi_addenda : many2many
-l10n_mx_edi_document .. account_move : many2many
-l10n_mx_edi_document --> account_move : many2one
-l10n_mx_edi_document --> ir_attachment : many2one
-ResCompany --|> certificate_certificate : one2many
-ResPartner .. l10n_mx_edi_addenda : many2many
-ResPartner --> l10n_mx_edi_payment_method : many2one
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title EDI for Mexico - Generated Coverage
+component "Module Overview" as overview
+component "Models\n21" as models
+component "Views / XML\n21 views\n16 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n1 files" as frontend
+component "Security / Data\n0 rules\n8 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Enterprise Addons/l10n_mx_edi/Models|Models]] (21)
+- Views and XML: [[docs/Enterprise Addons/l10n_mx_edi/Views|Views]] (16 files)
+- Frontend: [[docs/Enterprise Addons/l10n_mx_edi/Frontend|Frontend]] (1 files)
+
+## Key models
+
+- `account.journal`
+- `account.move`
+- `account.move.line`
+- `account.move.reversal`
+- `account.move.send`
+- `account.payment`
+- `account.payment.register`
+- `ir.attachment`
+- `l10n_mx_edi.addenda`
+- `l10n_mx_edi.document`
+- `l10n_mx_edi.global_invoice.create`
+- `l10n_mx_edi.invoice.cancel`
 
 ## Navigation
 
@@ -83,6 +92,7 @@ ResPartner --> l10n_mx_edi_payment_method : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

@@ -1,0 +1,85 @@
+<!-- GENERATED:FRONTEND -->
+---
+tags: [odoo, community, generated, index]
+---
+
+# hr_holidays Frontend
+
+- Module: [[docs/Community Addons/hr_holidays/hr_holidays|hr_holidays]]
+- Scope: Community Addons
+- Generated items: 66
+
+## Items
+
+- [[docs/Community Addons/hr_holidays/Frontend/static_src_types_models.d.ts|static/src/@types/models.d.ts]]
+- [[docs/Community Addons/hr_holidays/Frontend/static_src_avatar_card_popover_patch.xml|static/src/avatar_card_popover_patch.xml]]
+- [[docs/Community Addons/hr_holidays/Frontend/static_src_avatar_card_resource_popover.xml|static/src/avatar_card_resource_popover.xml]]
+- [[docs/Community Addons/hr_holidays/Frontend/static_src_avatar_card_resource_popover_patch.js|static/src/avatar_card_resource_popover_patch.js]]
+- [[docs/Community Addons/hr_holidays/Frontend/static_src_components_accrual_level_accrual_levels.js|static/src/components/accrual_level/accrual_levels.js]]
+- [[docs/Community Addons/hr_holidays/Frontend/static_src_components_accrual_level_accrual_levels.xml|static/src/components/accrual_level/accrual_levels.xml]]
+- [[docs/Community Addons/hr_holidays/Frontend/static_src_components_day_selection_day_selection.js|static/src/components/day_selection/day_selection.js]]
+- [[docs/Community Addons/hr_holidays/Frontend/static_src_components_float_time_selection_float_time_selection.js|static/src/components/float_time_selection/float_time_selection.js]]
+- [[docs/Community Addons/hr_holidays/Frontend/static_src_components_float_time_selection_float_time_selection.xml|static/src/components/float_time_selection/float_time_selection.xml]]
+- [[docs/Community Addons/hr_holidays/Frontend/static_src_components_float_time_selection_float_time_selection_popover.js|static/src/components/float_time_selection/float_time_selection_popover.js]]
+- [[docs/Community Addons/hr_holidays/Frontend/static_src_components_float_time_selection_float_time_selection_popover.xml|static/src/components/float_time_selection/float_time_selection_popover.xml]]
+- [[docs/Community Addons/hr_holidays/Frontend/static_src_components_hr_presence_status_hr_presence_status.js|static/src/components/hr_presence_status/hr_presence_status.js]]
+- [[docs/Community Addons/hr_holidays/Frontend/static_src_core_common_types_models.d.ts|static/src/core/common/@types/models.d.ts]]
+- [[docs/Community Addons/hr_holidays/Frontend/static_src_core_common_composer_patch.xml|static/src/core/common/composer_patch.xml]]
+- [[docs/Community Addons/hr_holidays/Frontend/static_src_core_common_hr_employee_model_patch.js|static/src/core/common/hr_employee_model_patch.js]]
+- [[docs/Community Addons/hr_holidays/Frontend/static_src_core_common_res_users_model_patch.js|static/src/core/common/res_users_model_patch.js]]
+- [[docs/Community Addons/hr_holidays/Frontend/static_src_dashboard_time_off_card.js|static/src/dashboard/time_off_card.js]]
+- [[docs/Community Addons/hr_holidays/Frontend/static_src_dashboard_time_off_card.xml|static/src/dashboard/time_off_card.xml]]
+- [[docs/Community Addons/hr_holidays/Frontend/static_src_dashboard_time_off_dashboard.js|static/src/dashboard/time_off_dashboard.js]]
+- [[docs/Community Addons/hr_holidays/Frontend/static_src_dashboard_time_off_dashboard.xml|static/src/dashboard/time_off_dashboard.xml]]
+- [[docs/Community Addons/hr_holidays/Frontend/static_src_discuss_core_common_channel_member_list_patch.xml|static/src/discuss/core/common/channel_member_list_patch.xml]]
+- [[docs/Community Addons/hr_holidays/Frontend/static_src_discuss_core_public_web_discuss_command_palette_patch.xml|static/src/discuss/core/public_web/discuss_command_palette_patch.xml]]
+- [[docs/Community Addons/hr_holidays/Frontend/static_src_discuss_core_public_web_discuss_sidebar_categories_patch.xml|static/src/discuss/core/public_web/discuss_sidebar_categories_patch.xml]]
+- [[docs/Community Addons/hr_holidays/Frontend/static_src_im_status_patch.xml|static/src/im_status_patch.xml]]
+- [[docs/Community Addons/hr_holidays/Frontend/static_src_leave_stats_leave_stats.js|static/src/leave_stats/leave_stats.js]]
+- [[docs/Community Addons/hr_holidays/Frontend/static_src_leave_stats_leave_stats.xml|static/src/leave_stats/leave_stats.xml]]
+- [[docs/Community Addons/hr_holidays/Frontend/static_src_radio_image_field_radio_image_field.js|static/src/radio_image_field/radio_image_field.js]]
+- [[docs/Community Addons/hr_holidays/Frontend/static_src_radio_image_field_radio_image_field.xml|static/src/radio_image_field/radio_image_field.xml]]
+- [[docs/Community Addons/hr_holidays/Frontend/static_src_res_partner_model_patch.js|static/src/res_partner_model_patch.js]]
+- [[docs/Community Addons/hr_holidays/Frontend/static_src_store_service_patch.js|static/src/store_service_patch.js]]
+- [[docs/Community Addons/hr_holidays/Frontend/static_src_thread_patch.xml|static/src/thread_patch.xml]]
+- [[docs/Community Addons/hr_holidays/Frontend/static_src_tours_hr_holidays_tour.js|static/src/tours/hr_holidays_tour.js]]
+- [[docs/Community Addons/hr_holidays/Frontend/static_src_tours_hr_leave_type_tour.js|static/src/tours/hr_leave_type_tour.js]]
+- [[docs/Community Addons/hr_holidays/Frontend/static_src_views_calendar_calendar_controller.js|static/src/views/calendar/calendar_controller.js]]
+- [[docs/Community Addons/hr_holidays/Frontend/static_src_views_calendar_calendar_controller.xml|static/src/views/calendar/calendar_controller.xml]]
+- [[docs/Community Addons/hr_holidays/Frontend/static_src_views_calendar_calendar_filter_panel_calendar_mobile_filter_panel.js|static/src/views/calendar/calendar_filter_panel/calendar_mobile_filter_panel.js]]
+- [[docs/Community Addons/hr_holidays/Frontend/static_src_views_calendar_calendar_filter_panel_calendar_mobile_filter_panel.xml|static/src/views/calendar/calendar_filter_panel/calendar_mobile_filter_panel.xml]]
+- [[docs/Community Addons/hr_holidays/Frontend/static_src_views_calendar_calendar_model.js|static/src/views/calendar/calendar_model.js]]
+- [[docs/Community Addons/hr_holidays/Frontend/static_src_views_calendar_calendar_renderer.js|static/src/views/calendar/calendar_renderer.js]]
+- [[docs/Community Addons/hr_holidays/Frontend/static_src_views_calendar_calendar_renderer.xml|static/src/views/calendar/calendar_renderer.xml]]
+- [[docs/Community Addons/hr_holidays/Frontend/static_src_views_calendar_calendar_side_panel_calendar_side_panel.js|static/src/views/calendar/calendar_side_panel/calendar_side_panel.js]]
+- [[docs/Community Addons/hr_holidays/Frontend/static_src_views_calendar_calendar_side_panel_calendar_side_panel.xml|static/src/views/calendar/calendar_side_panel/calendar_side_panel.xml]]
+- [[docs/Community Addons/hr_holidays/Frontend/static_src_views_calendar_calendar_view.js|static/src/views/calendar/calendar_view.js]]
+- [[docs/Community Addons/hr_holidays/Frontend/static_src_views_calendar_common_calendar_common_popover.js|static/src/views/calendar/common/calendar_common_popover.js]]
+- [[docs/Community Addons/hr_holidays/Frontend/static_src_views_calendar_common_calendar_common_popover.xml|static/src/views/calendar/common/calendar_common_popover.xml]]
+- [[docs/Community Addons/hr_holidays/Frontend/static_src_views_calendar_common_calendar_common_renderer.js|static/src/views/calendar/common/calendar_common_renderer.js]]
+- [[docs/Community Addons/hr_holidays/Frontend/static_src_views_calendar_filter_section_calendar_filter_section.js|static/src/views/calendar/filter_section/calendar_filter_section.js]]
+- [[docs/Community Addons/hr_holidays/Frontend/static_src_views_calendar_filter_section_calendar_filter_section.xml|static/src/views/calendar/filter_section/calendar_filter_section.xml]]
+- [[docs/Community Addons/hr_holidays/Frontend/static_src_views_calendar_year_calendar_year_popover.js|static/src/views/calendar/year/calendar_year_popover.js]]
+- [[docs/Community Addons/hr_holidays/Frontend/static_src_views_calendar_year_calendar_year_popover.xml|static/src/views/calendar/year/calendar_year_popover.xml]]
+- [[docs/Community Addons/hr_holidays/Frontend/static_src_views_calendar_year_calendar_year_renderer.js|static/src/views/calendar/year/calendar_year_renderer.js]]
+- [[docs/Community Addons/hr_holidays/Frontend/static_src_views_graph_hr_holidays_graph_controller.xml|static/src/views/graph/hr_holidays_graph_controller.xml]]
+- [[docs/Community Addons/hr_holidays/Frontend/static_src_views_graph_hr_holidays_graph_model.js|static/src/views/graph/hr_holidays_graph_model.js]]
+- [[docs/Community Addons/hr_holidays/Frontend/static_src_views_graph_hr_holidays_graph_renderer.js|static/src/views/graph/hr_holidays_graph_renderer.js]]
+- [[docs/Community Addons/hr_holidays/Frontend/static_src_views_graph_hr_holidays_graph_view.js|static/src/views/graph/hr_holidays_graph_view.js]]
+- [[docs/Community Addons/hr_holidays/Frontend/static_src_views_hooks.js|static/src/views/hooks.js]]
+- [[docs/Community Addons/hr_holidays/Frontend/static_src_views_kanban_kanban_controller.js|static/src/views/kanban/kanban_controller.js]]
+- [[docs/Community Addons/hr_holidays/Frontend/static_src_views_kanban_kanban_renderer.js|static/src/views/kanban/kanban_renderer.js]]
+- [[docs/Community Addons/hr_holidays/Frontend/static_src_views_kanban_kanban_renderer.xml|static/src/views/kanban/kanban_renderer.xml]]
+- [[docs/Community Addons/hr_holidays/Frontend/static_src_views_kanban_kanban_view.js|static/src/views/kanban/kanban_view.js]]
+- [[docs/Community Addons/hr_holidays/Frontend/static_src_views_list_holidays_list_controller.js|static/src/views/list/holidays_list_controller.js]]
+- [[docs/Community Addons/hr_holidays/Frontend/static_src_views_list_holidays_list_controller.xml|static/src/views/list/holidays_list_controller.xml]]
+- [[docs/Community Addons/hr_holidays/Frontend/static_src_views_view_dialog_allocation_form_view_dialog.js|static/src/views/view_dialog/allocation_form_view_dialog.js]]
+- [[docs/Community Addons/hr_holidays/Frontend/static_src_views_view_dialog_allocation_form_view_dialog.xml|static/src/views/view_dialog/allocation_form_view_dialog.xml]]
+- [[docs/Community Addons/hr_holidays/Frontend/static_src_views_view_dialog_form_view_dialog.js|static/src/views/view_dialog/form_view_dialog.js]]
+- [[docs/Community Addons/hr_holidays/Frontend/static_src_views_view_dialog_form_view_dialog.xml|static/src/views/view_dialog/form_view_dialog.xml]]
+
+## Navigation
+
+- **Parent:** [[docs/Community Addons/hr_holidays/hr_holidays]]
+
+<!-- GENERATED:FRONTEND -->

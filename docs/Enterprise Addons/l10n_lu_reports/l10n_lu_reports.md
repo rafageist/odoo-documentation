@@ -9,42 +9,78 @@ tags: [odoo, enterprise, module]
 - Source: enterprise/l10n_lu_reports
 - Dependencies: [[docs/Community Addons/l10n_lu/l10n_lu|l10n_lu]], [[docs/Enterprise Addons/account_asset/account_asset|account_asset]], [[docs/Enterprise Addons/account_reports/account_reports|account_reports]], [[docs/Enterprise Addons/account_saft/account_saft|account_saft]]
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 23
+- XML files with UI/data artifacts: 12
 - Views: 8
 - Actions: 5
 - Menus: 2
 - Rules (ir.rule): 1
 - Access CSV entries: 9
+- Controller units: 0
+- Frontend asset files: 3
 
-## Detected Models
-
-- `AccountReport`
-- `AccountReturn`
-- `account.return.type`
-- `l10n_lu.stored.intra.report`
-- `IrAttachment`
-- `l10n_lu_reports.report.appendix.expenditures`
-- `ResCompany`
-- `ResPartner`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Luxembourg - Accounting Reports - Models and Relations
-class AccountReport
-class AccountReturn
-class "account.return.type" as account_return_type
-class "l10n_lu.stored.intra.report" as l10n_lu_stored_intra_report
-class IrAttachment
-class "l10n_lu_reports.report.appendix.expenditures" as l10n_lu_reports_report_appendix_expenditures
-class ResCompany
-class ResPartner
-class "res.company" as res_company
-l10n_lu_stored_intra_report --> res_company : many2one
-l10n_lu_reports_report_appendix_expenditures --> res_company : many2one
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Luxembourg - Accounting Reports - Generated Coverage
+component "Module Overview" as overview
+component "Models\n23" as models
+component "Views / XML\n8 views\n12 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n3 files" as frontend
+component "Security / Data\n1 rules\n9 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Enterprise Addons/l10n_lu_reports/Models|Models]] (23)
+- Views and XML: [[docs/Enterprise Addons/l10n_lu_reports/Views|Views]] (12 files)
+- Frontend: [[docs/Enterprise Addons/l10n_lu_reports/Frontend|Frontend]] (3 files)
+
+## Key models
+
+- `account.chart.template`
+- `account.general.ledger.report.handler`
+- `account.report`
+- `account.return`
+- `account.return.type`
+- `ir.attachment`
+- `l10n_lu.annual.tax.report.handler`
+- `l10n_lu.appendix.a.tax.report.handler`
+- `l10n_lu.appendix.opex.tax.report.handler`
+- `l10n_lu.ec.sales.report.handler`
+- `l10n_lu.generate.accounts.report`
+- `l10n_lu.generate.asset.report`
 
 ## Navigation
 
@@ -52,6 +88,7 @@ l10n_lu_reports_report_appendix_expenditures --> res_company : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

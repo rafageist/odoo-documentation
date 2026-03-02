@@ -13,91 +13,78 @@ tags: [odoo, community, module]
 
 Manage your fleet and track car costs
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 16
+- XML files with UI/data artifacts: 9
 - Views: 51
 - Actions: 15
 - Menus: 21
 - Rules (ir.rule): 9
 - Access CSV entries: 24
+- Controller units: 0
+- Frontend asset files: 1
 
-## Detected Models
+## Module map
+
+```plantuml
+@startuml
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Fleet - Generated Coverage
+component "Module Overview" as overview
+component "Models\n16" as models
+component "Views / XML\n51 views\n9 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n1 files" as frontend
+component "Security / Data\n9 rules\n24 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
+@enduml
+```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/fleet/Models|Models]] (16)
+- Views and XML: [[docs/Community Addons/fleet/Views|Views]] (9 files)
+- Frontend: [[docs/Community Addons/fleet/Frontend|Frontend]] (1 files)
+
+## Key models
 
 - `fleet.service.type`
 - `fleet.vehicle`
 - `fleet.vehicle.assignation.log`
+- `fleet.vehicle.cost.report`
 - `fleet.vehicle.log.contract`
 - `fleet.vehicle.log.services`
 - `fleet.vehicle.model`
 - `fleet.vehicle.model.brand`
 - `fleet.vehicle.model.category`
 - `fleet.vehicle.odometer`
-- `fleet.vehicle.state`
-- `fleet.vehicle.tag`
-- `MailActivityType`
-
-```plantuml
-@startuml
-!include ../../../templates/DiagramStyles.puml
-title Fleet - Models and Relations
-class "fleet.service.type" as fleet_service_type
-class "fleet.vehicle" as fleet_vehicle
-class "fleet.vehicle.assignation.log" as fleet_vehicle_assignation_log
-class "fleet.vehicle.log.contract" as fleet_vehicle_log_contract
-class "fleet.vehicle.log.services" as fleet_vehicle_log_services
-class "fleet.vehicle.model" as fleet_vehicle_model
-class "fleet.vehicle.model.brand" as fleet_vehicle_model_brand
-class "fleet.vehicle.model.category" as fleet_vehicle_model_category
-class "fleet.vehicle.odometer" as fleet_vehicle_odometer
-class "fleet.vehicle.state" as fleet_vehicle_state
-class "fleet.vehicle.tag" as fleet_vehicle_tag
-class MailActivityType
-class "res.users" as res_users
-fleet_vehicle --> res_users : many2one
-class "res.company" as res_company
-fleet_vehicle --> res_company : many2one
-class "res.currency" as res_currency
-fleet_vehicle --> res_currency : many2one
-class "res.country" as res_country
-fleet_vehicle --> res_country : many2one
-class "res.partner" as res_partner
-fleet_vehicle --> res_partner : many2one
-fleet_vehicle --> res_partner : many2one
-fleet_vehicle --> fleet_vehicle_model : many2one
-fleet_vehicle --> fleet_vehicle_model_brand : many2one
-fleet_vehicle --|> fleet_vehicle_assignation_log : one2many
-fleet_vehicle --|> fleet_vehicle_log_services : one2many
-fleet_vehicle --|> fleet_vehicle_log_contract : one2many
-fleet_vehicle --> fleet_vehicle_state : many2one
-fleet_vehicle .. fleet_vehicle_tag : many2many
-fleet_vehicle --> fleet_vehicle_model_category : many2one
-fleet_vehicle_assignation_log --> fleet_vehicle : many2one
-fleet_vehicle_assignation_log --> res_partner : many2one
-fleet_vehicle_log_contract --> fleet_vehicle : many2one
-fleet_vehicle_log_contract --> fleet_service_type : many2one
-fleet_vehicle_log_contract --> res_company : many2one
-fleet_vehicle_log_contract --> res_currency : many2one
-fleet_vehicle_log_contract --> res_users : many2one
-fleet_vehicle_log_contract --> res_partner : many2one
-fleet_vehicle_log_contract .. fleet_service_type : many2many
-fleet_vehicle_log_services --> fleet_vehicle : many2one
-fleet_vehicle_log_services --> fleet_vehicle_model : many2one
-fleet_vehicle_log_services --> fleet_vehicle_model_brand : many2one
-fleet_vehicle_log_services --> res_users : many2one
-fleet_vehicle_log_services --> fleet_vehicle_odometer : many2one
-fleet_vehicle_log_services --> res_company : many2one
-fleet_vehicle_log_services --> res_currency : many2one
-fleet_vehicle_log_services --> res_partner : many2one
-fleet_vehicle_log_services --> res_partner : many2one
-fleet_vehicle_log_services --> fleet_service_type : many2one
-fleet_vehicle_model --> fleet_vehicle_model_brand : many2one
-fleet_vehicle_model --> fleet_vehicle_model_category : many2one
-fleet_vehicle_model .. res_partner : many2many
-fleet_vehicle_model_brand --|> fleet_vehicle_model : one2many
-fleet_vehicle_odometer --> fleet_vehicle : many2one
-fleet_vehicle_odometer --> res_partner : many2one
-@enduml
-```
+- `fleet.vehicle.odometer.report`
+- `fleet.vehicle.send.mail`
 
 ## Navigation
 
@@ -105,6 +92,7 @@ fleet_vehicle_odometer --> res_partner : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

@@ -13,104 +13,79 @@ tags: [odoo, enterprise, module]
 
 Allow people to book meetings in your agenda
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 14
+- XML files with UI/data artifacts: 14
 - Views: 38
 - Actions: 14
 - Menus: 16
 - Rules (ir.rule): 13
 - Access CSV entries: 29
+- Controller units: 5
+- Frontend asset files: 57
 
-## Detected Models
+## Module map
+
+```plantuml
+@startuml
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Appointments - Generated Coverage
+component "Module Overview" as overview
+component "Models\n14" as models
+component "Views / XML\n38 views\n14 files" as views
+component "Controllers\n25 routes" as controllers
+component "Frontend\n57 files" as frontend
+component "Security / Data\n13 rules\n29 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
+@enduml
+```
+
+## Detail notes
+
+- Models: [[docs/Enterprise Addons/appointment/Models|Models]] (14)
+- Views and XML: [[docs/Enterprise Addons/appointment/Views|Views]] (14 files)
+- Controllers: [[docs/Enterprise Addons/appointment/Controllers|Controllers]] (5)
+- Frontend: [[docs/Enterprise Addons/appointment/Frontend|Frontend]] (57 files)
+
+## Key models
 
 - `appointment.answer`
 - `appointment.answer.input`
 - `appointment.booking.line`
 - `appointment.invite`
+- `appointment.manage.leaves`
 - `appointment.question`
 - `appointment.resource`
 - `appointment.slot`
 - `appointment.type`
-- `CalendarAlarm`
-- `CalendarAttendee`
-- `CalendarEvent`
-- `ResPartner`
-- `AppointmentType`
-
-```plantuml
-@startuml
-!include ../../../templates/DiagramStyles.puml
-title Appointments - Models and Relations
-class "appointment.answer" as appointment_answer
-class "appointment.answer.input" as appointment_answer_input
-class "appointment.booking.line" as appointment_booking_line
-class "appointment.invite" as appointment_invite
-class "appointment.question" as appointment_question
-class "appointment.resource" as appointment_resource
-class "appointment.slot" as appointment_slot
-class "appointment.type" as appointment_type
-class CalendarAlarm
-class CalendarAttendee
-class CalendarEvent
-class ResPartner
-class AppointmentType
-appointment_answer --> appointment_question : many2one
-appointment_answer_input --> appointment_question : many2one
-appointment_answer_input --> appointment_answer : many2one
-appointment_answer_input --> appointment_type : many2one
-class "calendar.event" as calendar_event
-appointment_answer_input --> calendar_event : many2one
-class "res.partner" as res_partner
-appointment_answer_input --> res_partner : many2one
-appointment_booking_line --> appointment_resource : many2one
-class "res.users" as res_users
-appointment_booking_line --> res_users : many2one
-appointment_booking_line --> appointment_type : many2one
-appointment_booking_line --> calendar_event : many2one
-appointment_invite --> appointment_invite : many2one
-appointment_invite .. appointment_type : many2many
-appointment_invite .. appointment_resource : many2many
-appointment_invite .. res_users : many2many
-appointment_invite .. appointment_resource : many2many
-appointment_invite .. res_users : many2many
-appointment_invite --|> calendar_event : one2many
-appointment_question .. appointment_type : many2many
-appointment_question --|> appointment_answer : one2many
-appointment_question --|> appointment_answer_input : one2many
-appointment_resource .. appointment_resource : many2many
-appointment_resource .. appointment_resource : many2many
-appointment_resource .. appointment_resource : many2many
-appointment_resource .. appointment_type : many2many
-appointment_slot --> appointment_type : many2one
-appointment_slot .. res_users : many2many
-appointment_slot .. appointment_resource : many2many
-appointment_type --> res_partner : many2one
-class "mail.template" as mail_template
-appointment_type --> mail_template : many2one
-appointment_type --> mail_template : many2one
-class "res.country" as res_country
-appointment_type .. res_country : many2many
-appointment_type .. appointment_question : many2many
-class "calendar.alarm" as calendar_alarm
-appointment_type .. calendar_alarm : many2many
-appointment_type --|> appointment_slot : one2many
-appointment_type .. res_users : many2many
-appointment_type .. appointment_resource : many2many
-appointment_type .. appointment_invite : many2many
-appointment_type --|> calendar_event : one2many
-CalendarEvent --|> appointment_answer_input : one2many
-CalendarEvent --> appointment_type : many2one
-CalendarEvent --> appointment_invite : many2one
-CalendarEvent .. appointment_resource : many2many
-CalendarEvent .. appointment_resource : many2many
-CalendarEvent --|> appointment_booking_line : one2many
-CalendarEvent .. res_partner : many2many
-CalendarEvent --> res_users : many2one
-CalendarEvent --> res_partner : many2one
-CalendarEvent .. appointment_resource : many2many
-ResPartner .. calendar_event : many2many
-@enduml
-```
+- `calendar.alarm`
+- `calendar.attendee`
+- `calendar.event`
 
 ## Navigation
 
@@ -118,6 +93,7 @@ ResPartner .. calendar_event : many2many
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

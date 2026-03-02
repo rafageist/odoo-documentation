@@ -13,40 +13,71 @@ tags: [odoo, enterprise, module]
 
 PLM for workorder
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 6
+- XML files with UI/data artifacts: 1
 - Views: 1
 - Actions: 0
 - Menus: 0
 - Rules (ir.rule): 0
 - Access CSV entries: 0
+- Controller units: 0
+- Frontend asset files: 0
 
-## Detected Models
-
-- `MrpEco`
-- `MrpEcoRoutingChange`
-- `MrpProduction`
-- `QualityCheck`
-- `QualityPoint`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title PLM for workorder - Models and Relations
-class MrpEco
-class MrpEcoRoutingChange
-class MrpProduction
-class QualityCheck
-class QualityPoint
-class "mrp.eco.routing.change" as mrp_eco_routing_change
-MrpEco --|> mrp_eco_routing_change : one2many
-MrpEco --|> mrp_eco_routing_change : one2many
-class "quality.point" as quality_point
-MrpEcoRoutingChange --> quality_point : many2one
-class "quality.point.test_type" as quality_point_test_type
-MrpEcoRoutingChange --> quality_point_test_type : many2one
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title PLM for workorder - Generated Coverage
+component "Module Overview" as overview
+component "Models\n6" as models
+component "Views / XML\n1 views\n1 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n0 files" as frontend
+component "Security / Data\n0 rules\n0 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Enterprise Addons/mrp_workorder_plm/Models|Models]] (6)
+- Views and XML: [[docs/Enterprise Addons/mrp_workorder_plm/Views|Views]] (1 files)
+
+## Key models
+
+- `mrp.eco`
+- `mrp.eco.routing.change`
+- `mrp.production`
+- `propose.change`
+- `quality.check`
+- `quality.point`
 
 ## Navigation
 
@@ -54,6 +85,7 @@ MrpEcoRoutingChange --> quality_point_test_type : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

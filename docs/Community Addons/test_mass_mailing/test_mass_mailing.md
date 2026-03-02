@@ -13,57 +13,76 @@ tags: [odoo, community, module]
 
 Mass Mail Tests: feature and performance tests for mass mailing
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 12
+- XML files with UI/data artifacts: 0
 - Views: 0
 - Actions: 0
 - Menus: 0
 - Rules (ir.rule): 0
 - Access CSV entries: 20
+- Controller units: 0
+- Frontend asset files: 0
 
-## Detected Models
-
-- `mailing.test.customer`
-- `mailing.test.simple`
-- `mailing.test.utm`
-- `mailing.test.blacklist`
-- `mailing.test.optout`
-- `mailing.test.partner`
-- `mailing.performance`
-- `mailing.performance.blacklist`
-- `mailing.test.partner.unstored`
-- `utm.test.source.mixin`
-- `utm.test.source.mixin.other`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Mass Mail Tests - Models and Relations
-class "mailing.test.customer" as mailing_test_customer
-class "mailing.test.simple" as mailing_test_simple
-class "mailing.test.utm" as mailing_test_utm
-class "mailing.test.blacklist" as mailing_test_blacklist
-class "mailing.test.optout" as mailing_test_optout
-class "mailing.test.partner" as mailing_test_partner
-class "mailing.performance" as mailing_performance
-class "mailing.performance.blacklist" as mailing_performance_blacklist
-class "mailing.test.partner.unstored" as mailing_test_partner_unstored
-class "utm.test.source.mixin" as utm_test_source_mixin
-class "utm.test.source.mixin.other" as utm_test_source_mixin_other
-class "res.partner" as res_partner
-mailing_test_customer --> res_partner : many2one
-mailing_test_blacklist --> res_partner : many2one
-class "res.users" as res_users
-mailing_test_blacklist --> res_users : many2one
-mailing_test_optout --> res_partner : many2one
-mailing_test_optout --> res_users : many2one
-mailing_test_partner --> res_partner : many2one
-mailing_performance_blacklist --> res_users : many2one
-class "mail.test.container" as mail_test_container
-mailing_performance_blacklist --> mail_test_container : many2one
-mailing_test_partner_unstored --> res_partner : many2one
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Mass Mail Tests - Generated Coverage
+component "Module Overview" as overview
+component "Models\n12" as models
+component "Views / XML\n0 views\n0 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n0 files" as frontend
+component "Security / Data\n0 rules\n20 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/test_mass_mailing/Models|Models]] (12)
+
+## Key models
+
+- `ir.qweb`
+- `mailing.performance`
+- `mailing.performance.blacklist`
+- `mailing.test.blacklist`
+- `mailing.test.customer`
+- `mailing.test.optout`
+- `mailing.test.partner`
+- `mailing.test.partner.unstored`
+- `mailing.test.simple`
+- `mailing.test.utm`
+- `utm.test.source.mixin`
+- `utm.test.source.mixin.other`
 
 ## Navigation
 
@@ -71,6 +90,7 @@ mailing_test_partner_unstored --> res_partner : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

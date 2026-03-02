@@ -10,38 +10,76 @@ tags: [odoo, enterprise, module]
 - Source: enterprise/l10n_nl_reports
 - Dependencies: [[docs/Community Addons/l10n_nl/l10n_nl|l10n_nl]], [[docs/Enterprise Addons/account_reports/account_reports|account_reports]], [[docs/Community Addons/certificate/certificate|certificate]]
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 11
+- XML files with UI/data artifacts: 8
 - Views: 6
 - Actions: 2
 - Menus: 1
 - Rules (ir.rule): 0
 - Access CSV entries: 5
+- Controller units: 0
+- Frontend asset files: 0
 
-## Detected Models
-
-- `AccountReturn`
-- `l10n_nl_reports.sbr.status.service`
-- `ResCompany`
-- `ResUsers`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Netherlands - Accounting Reports - Models and Relations
-class AccountReturn
-class "l10n_nl_reports.sbr.status.service" as l10n_nl_reports_sbr_status_service
-class ResCompany
-class ResUsers
-class "res.company" as res_company
-l10n_nl_reports_sbr_status_service --> res_company : many2one
-class "account.move" as account_move
-l10n_nl_reports_sbr_status_service --> account_move : many2one
-class "certificate.certificate" as certificate_certificate
-ResCompany --> certificate_certificate : many2one
-ResCompany --> certificate_certificate : many2one
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Netherlands - Accounting Reports - Generated Coverage
+component "Module Overview" as overview
+component "Models\n11" as models
+component "Views / XML\n6 views\n8 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n0 files" as frontend
+component "Security / Data\n0 rules\n5 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Enterprise Addons/l10n_nl_reports/Models|Models]] (11)
+- Views and XML: [[docs/Enterprise Addons/l10n_nl_reports/Views|Views]] (8 files)
+
+## Key models
+
+- `account.general.ledger.report.handler`
+- `account.return`
+- `l10n_nl_reports.ec.sales.report.handler`
+- `l10n_nl_reports.sbr.icp.wizard`
+- `l10n_nl_reports.sbr.status.service`
+- `l10n_nl_reports.sbr.tax.report.wizard`
+- `l10n_nl_reports.tax.report.handler`
+- `l10n_nl_reports.vat.pay.wizard`
+- `res.company`
+- `res.config.settings`
+- `res.users`
 
 ## Navigation
 
@@ -49,4 +87,5 @@ ResCompany --> certificate_certificate : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 

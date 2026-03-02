@@ -13,85 +13,79 @@ tags: [odoo, enterprise, module]
 
 Collect, organize and share documents.
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 24
+- XML files with UI/data artifacts: 19
 - Views: 28
 - Actions: 13
 - Menus: 9
 - Rules (ir.rule): 11
 - Access CSV entries: 25
+- Controller units: 3
+- Frontend asset files: 159
 
-## Detected Models
+## Module map
+
+```plantuml
+@startuml
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Documents - Generated Coverage
+component "Module Overview" as overview
+component "Models\n24" as models
+component "Views / XML\n28 views\n19 files" as views
+component "Controllers\n18 routes" as controllers
+component "Frontend\n159 files" as frontend
+component "Security / Data\n11 rules\n25 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
+@enduml
+```
+
+## Detail notes
+
+- Models: [[docs/Enterprise Addons/documents/Models|Models]] (24)
+- Views and XML: [[docs/Enterprise Addons/documents/Views|Views]] (19 files)
+- Controllers: [[docs/Enterprise Addons/documents/Controllers|Controllers]] (3)
+- Frontend: [[docs/Enterprise Addons/documents/Frontend|Frontend]] (159 files)
+
+## Key models
 
 - `documents.access`
 - `documents.access.tracking`
 - `documents.document`
+- `documents.link_to_record_wizard`
+- `documents.mixin`
+- `documents.operation`
 - `documents.redirect`
+- `documents.request_wizard`
+- `documents.sharing`
+- `documents.sharing.access`
 - `documents.tag`
-- `IrActionsServer`
-- `IrAttachment`
-- `IrEmbeddedActions`
-- `MailActivity`
-- `MailActivityType`
-- `Company`
-- `ResPartner`
-- `ResUsers`
-
-```plantuml
-@startuml
-!include ../../../templates/DiagramStyles.puml
-title Documents - Models and Relations
-class "documents.access" as documents_access
-class "documents.access.tracking" as documents_access_tracking
-class "documents.document" as documents_document
-class "documents.redirect" as documents_redirect
-class "documents.tag" as documents_tag
-class IrActionsServer
-class IrAttachment
-class IrEmbeddedActions
-class MailActivity
-class MailActivityType
-class Company
-class ResPartner
-class ResUsers
-documents_access --> documents_document : many2one
-class "res.partner" as res_partner
-documents_access --> res_partner : many2one
-class "res.users" as res_users
-documents_access_tracking --> res_users : many2one
-class "ir.attachment" as ir_attachment
-documents_document --> ir_attachment : many2one
-documents_document .. ir_attachment : many2many
-documents_document --> documents_document : many2one
-documents_document --> res_users : many2one
-documents_document --|> documents_document : one2many
-documents_document .. res_users : many2many
-documents_document .. documents_tag : many2many
-documents_document --> res_partner : many2one
-documents_document --> res_users : many2one
-documents_document --> res_users : many2one
-class "mail.activity" as mail_activity
-documents_document --> mail_activity : many2one
-documents_document --> res_partner : many2one
-documents_document --|> documents_access : one2many
-documents_document --> documents_document : many2one
-documents_document --|> documents_document : one2many
-class "res.company" as res_company
-documents_document --> res_company : many2one
-class "mail.activity.type" as mail_activity_type
-documents_document --> mail_activity_type : many2one
-documents_document --> res_users : many2one
-class "ir.embedded.actions" as ir_embedded_actions
-documents_document .. ir_embedded_actions : many2many
-documents_document .. documents_tag : many2many
-documents_redirect --> documents_document : many2one
-documents_tag .. documents_document : many2many
-IrAttachment --|> documents_document : one2many
-MailActivityType .. documents_tag : many2many
-MailActivityType --> documents_document : many2one
-ResPartner --|> documents_document : one2many
-@enduml
-```
+- `documents.unlink.mixin`
 
 ## Navigation
 
@@ -99,6 +93,7 @@ ResPartner --|> documents_document : one2many
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

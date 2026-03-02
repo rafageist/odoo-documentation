@@ -13,15 +13,65 @@ tags: [odoo, enterprise, module]
 
 Easily format text data across multiple records. Find duplicate records and easily merge them.
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 10
+- XML files with UI/data artifacts: 10
 - Views: 19
 - Actions: 8
 - Menus: 6
 - Rules (ir.rule): 2
 - Access CSV entries: 8
+- Controller units: 0
+- Frontend asset files: 4
 
-## Detected Models
+## Module map
+
+```plantuml
+@startuml
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Data Cleaning - Generated Coverage
+component "Module Overview" as overview
+component "Models\n10" as models
+component "Views / XML\n19 views\n10 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n4 files" as frontend
+component "Security / Data\n2 rules\n8 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
+@enduml
+```
+
+## Detail notes
+
+- Models: [[docs/Enterprise Addons/data_cleaning/Models|Models]] (10)
+- Views and XML: [[docs/Enterprise Addons/data_cleaning/Views|Views]] (10 files)
+- Frontend: [[docs/Enterprise Addons/data_cleaning/Frontend|Frontend]] (4 files)
+
+## Key models
 
 - `data_cleaning.model`
 - `data_cleaning.record`
@@ -30,50 +80,9 @@ Easily format text data across multiple records. Find duplicate records and easi
 - `data_merge.model`
 - `data_merge.record`
 - `data_merge.rule`
-- `IrModel`
-- `ResPartner`
-
-```plantuml
-@startuml
-!include ../../../templates/DiagramStyles.puml
-title Data Cleaning - Models and Relations
-class "data_cleaning.model" as data_cleaning_model
-class "data_cleaning.record" as data_cleaning_record
-class "data_cleaning.rule" as data_cleaning_rule
-class "data_merge.group" as data_merge_group
-class "data_merge.model" as data_merge_model
-class "data_merge.record" as data_merge_record
-class "data_merge.rule" as data_merge_rule
-class IrModel
-class ResPartner
-class "ir.model" as ir_model
-data_cleaning_model --> ir_model : many2one
-data_cleaning_model --|> data_cleaning_rule : one2many
-class "res.users" as res_users
-data_cleaning_model .. res_users : many2many
-data_cleaning_record .. data_cleaning_rule : many2many
-class "ir.model.fields" as ir_model_fields
-data_cleaning_record --> ir_model_fields : many2one
-data_cleaning_record --> data_cleaning_model : many2one
-class "res.country" as res_country
-data_cleaning_record --> res_country : many2one
-class "res.company" as res_company
-data_cleaning_record --> res_company : many2one
-data_cleaning_rule --> data_cleaning_model : many2one
-data_cleaning_rule --> ir_model_fields : many2one
-data_merge_group --> data_merge_model : many2one
-data_merge_group --|> data_merge_record : one2many
-data_merge_model --> ir_model : many2one
-data_merge_model --|> data_merge_rule : one2many
-data_merge_model .. res_users : many2many
-data_merge_record --> data_merge_group : many2one
-data_merge_record --> res_company : many2one
-data_merge_rule --> data_merge_model : many2one
-data_merge_rule --> ir_model_fields : many2one
-class "ir.actions.server" as ir_actions_server
-IrModel --> ir_actions_server : many2one
-@enduml
-```
+- `ir.attachment.report`
+- `ir.model`
+- `res.partner`
 
 ## Navigation
 
@@ -81,6 +90,7 @@ IrModel --> ir_actions_server : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

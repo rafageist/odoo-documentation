@@ -13,71 +13,79 @@ tags: [odoo, community, module]
 
 Addon for the POS App that allows customers to view the menu on their smartphone.
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 19
+- XML files with UI/data artifacts: 10
 - Views: 12
 - Actions: 2
 - Menus: 0
 - Rules (ir.rule): 0
 - Access CSV entries: 2
+- Controller units: 3
+- Frontend asset files: 87
 
-## Detected Models
-
-- `mail.template`
-- `PosCategory`
-- `PosConfig`
-- `PosOrderLine`
-- `PosOrder`
-- `PosPaymentMethod`
-- `PosPreset`
-- `RestaurantTable`
-- `RestaurantFloor`
-- `pos_self_order.custom_link`
-- `PosSession`
-- `ProductTemplate`
-- `ProductProduct`
-- `ProductTag`
-- `res.country`
-- `ResPartner`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title POS Self Order - Models and Relations
-class "mail.template" as mail_template
-class PosCategory
-class PosConfig
-class PosOrderLine
-class PosOrder
-class PosPaymentMethod
-class PosPreset
-class RestaurantTable
-class RestaurantFloor
-class "pos_self_order.custom_link" as pos_self_order_custom_link
-class PosSession
-class ProductTemplate
-class ProductProduct
-class ProductTag
-class "res.country" as res_country
-class ResPartner
-class "pos.config" as pos_config
-PosCategory .. pos_config : many2many
-class "res.lang" as res_lang
-PosConfig --> res_lang : many2one
-PosConfig .. res_lang : many2many
-class "ir.attachment" as ir_attachment
-PosConfig .. ir_attachment : many2many
-PosConfig .. ir_attachment : many2many
-class "res.users" as res_users
-PosConfig --> res_users : many2one
-class "product.combo" as product_combo
-PosOrderLine --> product_combo : many2one
-class "restaurant.table" as restaurant_table
-PosOrder --> restaurant_table : many2one
-PosPreset --> mail_template : many2one
-pos_self_order_custom_link .. pos_config : many2many
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title POS Self Order - Generated Coverage
+component "Module Overview" as overview
+component "Models\n19" as models
+component "Views / XML\n12 views\n10 files" as views
+component "Controllers\n13 routes" as controllers
+component "Frontend\n87 files" as frontend
+component "Security / Data\n0 rules\n2 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/pos_self_order/Models|Models]] (19)
+- Views and XML: [[docs/Community Addons/pos_self_order/Views|Views]] (10 files)
+- Controllers: [[docs/Community Addons/pos_self_order/Controllers|Controllers]] (3)
+- Frontend: [[docs/Community Addons/pos_self_order/Frontend|Frontend]] (87 files)
+
+## Key models
+
+- `ir.http`
+- `mail.template`
+- `pos.category`
+- `pos.config`
+- `pos.load.mixin`
+- `pos.order`
+- `pos.order.line`
+- `pos.payment.method`
+- `pos.preset`
+- `pos.session`
+- `pos_self_order.custom_link`
+- `product.product`
 
 ## Navigation
 
@@ -85,6 +93,7 @@ pos_self_order_custom_link .. pos_config : many2many
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

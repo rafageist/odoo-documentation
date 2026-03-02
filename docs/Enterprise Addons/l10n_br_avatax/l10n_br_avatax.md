@@ -9,58 +9,77 @@ tags: [odoo, enterprise, module]
 - Source: enterprise/l10n_br_avatax
 - Dependencies: [[docs/Community Addons/iap/iap|iap]], [[docs/Community Addons/l10n_br/l10n_br|l10n_br]], [[docs/Enterprise Addons/account_external_tax/account_external_tax|account_external_tax]]
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 15
+- XML files with UI/data artifacts: 13
 - Views: 16
 - Actions: 4
 - Menus: 3
 - Rules (ir.rule): 1
 - Access CSV entries: 8
+- Controller units: 0
+- Frontend asset files: 0
 
-## Detected Models
+## Module map
 
-- `AccountFiscalPosition`
-- `AccountMove`
-- `AccountMoveLine`
-- `AccountTax`
+```plantuml
+@startuml
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Avatax Brazil - Generated Coverage
+component "Module Overview" as overview
+component "Models\n15" as models
+component "Views / XML\n16 views\n13 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n0 files" as frontend
+component "Security / Data\n1 rules\n8 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
+@enduml
+```
+
+## Detail notes
+
+- Models: [[docs/Enterprise Addons/l10n_br_avatax/Models|Models]] (15)
+- Views and XML: [[docs/Enterprise Addons/l10n_br_avatax/Views|Views]] (13 files)
+
+## Key models
+
+- `account.chart.template`
+- `account.external.tax.mixin`
+- `account.fiscal.position`
+- `account.move`
+- `account.move.line`
+- `account.tax`
 - `l10n_br.cnae.code`
 - `l10n_br.ncm.code`
 - `l10n_br.operation.type`
 - `l10n_br.service.code`
-- `ProductProduct`
-- `ProductTemplate`
-- `ResCompany`
-- `ResPartner`
-
-```plantuml
-@startuml
-!include ../../../templates/DiagramStyles.puml
-title Avatax Brazil - Models and Relations
-class AccountFiscalPosition
-class AccountMove
-class AccountMoveLine
-class AccountTax
-class "l10n_br.cnae.code" as l10n_br_cnae_code
-class "l10n_br.ncm.code" as l10n_br_ncm_code
-class "l10n_br.operation.type" as l10n_br_operation_type
-class "l10n_br.service.code" as l10n_br_service_code
-class ProductProduct
-class ProductTemplate
-class ResCompany
-class ResPartner
-AccountMoveLine --> l10n_br_operation_type : many2one
-l10n_br_ncm_code --> l10n_br_cnae_code : many2one
-class "res.city" as res_city
-l10n_br_service_code --> res_city : many2one
-class "res.company" as res_company
-l10n_br_service_code --> res_company : many2one
-ProductTemplate --> l10n_br_ncm_code : many2one
-ProductTemplate --> l10n_br_service_code : many2one
-ProductTemplate .. l10n_br_service_code : many2many
-ProductTemplate --> res_city : many2one
-ResCompany --> l10n_br_cnae_code : many2one
-@enduml
-```
+- `product.product`
+- `product.template`
 
 ## Navigation
 
@@ -68,6 +87,7 @@ ResCompany --> l10n_br_cnae_code : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

@@ -9,153 +9,79 @@ tags: [odoo, community, module]
 - Source: odoo/addons/product
 - Dependencies: base (not documented), [[docs/Community Addons/mail/mail|mail]], [[docs/Community Addons/uom/uom|uom]]
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 33
+- XML files with UI/data artifacts: 20
 - Views: 60
 - Actions: 24
 - Menus: 0
 - Rules (ir.rule): 6
 - Access CSV entries: 38
+- Controller units: 3
+- Frontend asset files: 23
 
-## Detected Models
+## Module map
 
-- `IrAttachment`
+```plantuml
+@startuml
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Products & Pricelists - Generated Coverage
+component "Module Overview" as overview
+component "Models\n33" as models
+component "Views / XML\n60 views\n20 files" as views
+component "Controllers\n4 routes" as controllers
+component "Frontend\n23 files" as frontend
+component "Security / Data\n6 rules\n38 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
+@enduml
+```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/product/Models|Models]] (33)
+- Views and XML: [[docs/Community Addons/product/Views|Views]] (20 files)
+- Controllers: [[docs/Community Addons/product/Controllers|Controllers]] (3)
+- Frontend: [[docs/Community Addons/product/Frontend|Frontend]] (23 files)
+
+## Key models
+
+- `ir.attachment`
 - `product.attribute`
 - `product.attribute.custom.value`
 - `product.attribute.value`
+- `product.catalog.mixin`
 - `product.category`
 - `product.combo`
 - `product.combo.item`
 - `product.document`
+- `product.label.layout`
 - `product.pricelist`
 - `product.pricelist.item`
-- `product.product`
-- `product.supplierinfo`
-- `product.tag`
-- `product.template`
-- `product.template.attribute.exclusion`
-- `product.template.attribute.line`
-- `product.template.attribute.value`
-- `product.uom`
-- `ResCompany`
-- `ResCountryGroup`
-- `ResCurrency`
-- `ResPartner`
-- `UomUom`
-
-```plantuml
-@startuml
-!include ../../../templates/DiagramStyles.puml
-title Products & Pricelists - Models and Relations
-class IrAttachment
-class "product.attribute" as product_attribute
-class "product.attribute.custom.value" as product_attribute_custom_value
-class "product.attribute.value" as product_attribute_value
-class "product.category" as product_category
-class "product.combo" as product_combo
-class "product.combo.item" as product_combo_item
-class "product.document" as product_document
-class "product.pricelist" as product_pricelist
-class "product.pricelist.item" as product_pricelist_item
-class "product.product" as product_product
-class "product.supplierinfo" as product_supplierinfo
-class "product.tag" as product_tag
-class "product.template" as product_template
-class "product.template.attribute.exclusion" as product_template_attribute_exclusion
-class "product.template.attribute.line" as product_template_attribute_line
-class "product.template.attribute.value" as product_template_attribute_value
-class "product.uom" as product_uom
-class ResCompany
-class ResCountryGroup
-class ResCurrency
-class ResPartner
-class UomUom
-product_attribute --|> product_attribute_value : one2many
-product_attribute --|> product_template_attribute_value : one2many
-product_attribute --|> product_template_attribute_line : one2many
-product_attribute .. product_template : many2many
-product_attribute_custom_value --> product_template_attribute_value : many2one
-product_attribute_value --> product_attribute : many2one
-product_attribute_value .. product_template_attribute_line : many2many
-product_category --> product_category : many2one
-product_category --|> product_category : one2many
-class "res.company" as res_company
-product_combo --> res_company : many2one
-product_combo --|> product_combo_item : one2many
-class "res.currency" as res_currency
-product_combo --> res_currency : many2one
-product_combo_item --> product_combo : many2one
-product_combo_item --> product_product : many2one
-product_combo_item --> res_currency : many2one
-class "ir.attachment" as ir_attachment
-product_document --> ir_attachment : many2one
-product_pricelist --> res_currency : many2one
-product_pricelist --> res_company : many2one
-class "res.country.group" as res_country_group
-product_pricelist .. res_country_group : many2many
-product_pricelist --|> product_pricelist_item : one2many
-product_pricelist_item --> product_pricelist : many2one
-product_pricelist_item --> res_company : many2one
-product_pricelist_item --> res_currency : many2one
-product_pricelist_item --> product_category : many2one
-product_pricelist_item --> product_template : many2one
-product_pricelist_item --> product_product : many2one
-product_pricelist_item --> product_pricelist : many2one
-product_product --> product_template : many2one
-product_product --|> product_uom : one2many
-product_product .. product_template_attribute_value : many2many
-product_product .. product_template_attribute_value : many2many
-product_product --|> product_pricelist_item : one2many
-product_product --|> product_document : one2many
-product_product .. product_tag : many2many
-product_product .. product_tag : many2many
-class "res.partner" as res_partner
-product_supplierinfo --> res_partner : many2one
-class "uom.uom" as uom_uom
-product_supplierinfo --> uom_uom : many2one
-product_supplierinfo --> res_company : many2one
-product_supplierinfo --> res_currency : many2one
-product_supplierinfo --> product_product : many2one
-product_supplierinfo --> product_template : many2one
-product_tag .. product_template : many2many
-product_tag .. product_product : many2many
-product_tag .. product_product : many2many
-product_template .. product_combo : many2many
-product_template --> product_category : many2one
-product_template --> res_currency : many2one
-product_template --> res_currency : many2one
-product_template --> uom_uom : many2one
-product_template .. uom_uom : many2many
-product_template --> res_company : many2one
-product_template --|> product_supplierinfo : one2many
-product_template --|> product_supplierinfo : one2many
-product_template --|> product_template_attribute_line : one2many
-product_template .. product_template_attribute_line : many2many
-product_template --|> product_product : one2many
-product_template --> product_product : many2one
-product_template --|> product_pricelist_item : one2many
-product_template --|> product_document : one2many
-product_template .. product_tag : many2many
-product_template_attribute_exclusion --> product_template_attribute_value : many2one
-product_template_attribute_exclusion --> product_template : many2one
-product_template_attribute_exclusion .. product_template_attribute_value : many2many
-product_template_attribute_line --> product_template : many2one
-product_template_attribute_line --> product_attribute : many2one
-product_template_attribute_line .. product_attribute_value : many2many
-product_template_attribute_line --|> product_template_attribute_value : one2many
-product_template_attribute_value --> product_attribute_value : many2one
-product_template_attribute_value --> product_template_attribute_line : many2one
-product_template_attribute_value --|> product_template_attribute_exclusion : one2many
-product_template_attribute_value .. product_product : many2many
-product_uom --> uom_uom : many2one
-product_uom --> product_product : many2one
-product_uom --> res_company : many2one
-ResCountryGroup .. product_pricelist : many2many
-ResPartner --> product_pricelist : many2one
-ResPartner --> product_pricelist : many2one
-UomUom --|> product_uom : one2many
-@enduml
-```
 
 ## Navigation
 
@@ -163,6 +89,7 @@ UomUom --|> product_uom : one2many
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

@@ -9,35 +9,72 @@ tags: [odoo, community, module]
 - Source: odoo/addons/l10n_uy
 - Dependencies: [[docs/Community Addons/account/account|account]], [[docs/Community Addons/l10n_latam_invoice_document/l10n_latam_invoice_document|l10n_latam_invoice_document]], [[docs/Community Addons/l10n_latam_base/l10n_latam_base|l10n_latam_base]]
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 7
+- XML files with UI/data artifacts: 1
 - Views: 1
 - Actions: 0
 - Menus: 0
 - Rules (ir.rule): 0
 - Access CSV entries: 0
+- Controller units: 0
+- Frontend asset files: 0
 
-## Detected Models
-
-- `AccountMove`
-- `AccountTax`
-- `L10n_LatamDocumentType`
-- `L10n_LatamIdentificationType`
-- `ResCompany`
-- `ResPartner`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Uruguay - Accounting - Models and Relations
-class AccountMove
-class AccountTax
-class L10n_LatamDocumentType
-class L10n_LatamIdentificationType
-class ResCompany
-class ResPartner
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Uruguay - Accounting - Generated Coverage
+component "Module Overview" as overview
+component "Models\n7" as models
+component "Views / XML\n1 views\n1 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n0 files" as frontend
+component "Security / Data\n0 rules\n0 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/l10n_uy/Models|Models]] (7)
+- Views and XML: [[docs/Community Addons/l10n_uy/Views|Views]] (1 files)
+
+## Key models
+
+- `account.chart.template`
+- `account.move`
+- `account.tax`
+- `l10n_latam.document.type`
+- `l10n_latam.identification.type`
+- `res.company`
+- `res.partner`
 
 ## Navigation
 
@@ -45,6 +82,7 @@ class ResPartner
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

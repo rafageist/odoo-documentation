@@ -13,38 +13,69 @@ tags: [odoo, enterprise, module]
 
 Quality Management with Repair
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 4
+- XML files with UI/data artifacts: 2
 - Views: 3
 - Actions: 0
 - Menus: 0
 - Rules (ir.rule): 0
 - Access CSV entries: 0
+- Controller units: 0
+- Frontend asset files: 0
 
-## Detected Models
-
-- `QualityPoint`
-- `QualityCheck`
-- `QualityAlert`
-- `RepairOrder`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Repair features for Quality Control - Models and Relations
-class QualityPoint
-class QualityCheck
-class QualityAlert
-class RepairOrder
-class "repair.order" as repair_order
-QualityCheck --> repair_order : many2one
-QualityAlert --> repair_order : many2one
-class "quality.check" as quality_check
-RepairOrder --|> quality_check : one2many
-class "quality.alert" as quality_alert
-RepairOrder --|> quality_alert : one2many
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Repair features for Quality Control - Generated Coverage
+component "Module Overview" as overview
+component "Models\n4" as models
+component "Views / XML\n3 views\n2 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n0 files" as frontend
+component "Security / Data\n0 rules\n0 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Enterprise Addons/quality_repair/Models|Models]] (4)
+- Views and XML: [[docs/Enterprise Addons/quality_repair/Views|Views]] (2 files)
+
+## Key models
+
+- `quality.alert`
+- `quality.check`
+- `quality.point`
+- `repair.order`
 
 ## Navigation
 
@@ -52,6 +83,7 @@ RepairOrder --|> quality_alert : one2many
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

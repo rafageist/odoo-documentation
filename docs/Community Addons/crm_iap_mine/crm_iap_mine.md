@@ -13,53 +13,72 @@ tags: [odoo, community, module]
 
 Generate Leads/Opportunities based on country, industries, size, etc.
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 6
+- XML files with UI/data artifacts: 4
 - Views: 8
 - Actions: 1
 - Menus: 2
 - Rules (ir.rule): 0
 - Access CSV entries: 5
+- Controller units: 0
+- Frontend asset files: 1
 
-## Detected Models
+## Module map
+
+```plantuml
+@startuml
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Lead Generation - Generated Coverage
+component "Module Overview" as overview
+component "Models\n6" as models
+component "Views / XML\n8 views\n4 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n1 files" as frontend
+component "Security / Data\n0 rules\n5 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
+@enduml
+```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/crm_iap_mine/Models|Models]] (6)
+- Views and XML: [[docs/Community Addons/crm_iap_mine/Views|Views]] (4 files)
+- Frontend: [[docs/Community Addons/crm_iap_mine/Frontend|Frontend]] (1 files)
+
+## Key models
 
 - `crm.iap.lead.helpers`
 - `crm.iap.lead.industry`
 - `crm.iap.lead.mining.request`
 - `crm.iap.lead.role`
 - `crm.iap.lead.seniority`
-- `CrmLead`
-
-```plantuml
-@startuml
-!include ../../../templates/DiagramStyles.puml
-title Lead Generation - Models and Relations
-class "crm.iap.lead.helpers" as crm_iap_lead_helpers
-class "crm.iap.lead.industry" as crm_iap_lead_industry
-class "crm.iap.lead.mining.request" as crm_iap_lead_mining_request
-class "crm.iap.lead.role" as crm_iap_lead_role
-class "crm.iap.lead.seniority" as crm_iap_lead_seniority
-class CrmLead
-class "crm.team" as crm_team
-crm_iap_lead_mining_request --> crm_team : many2one
-class "res.users" as res_users
-crm_iap_lead_mining_request --> res_users : many2one
-class "crm.tag" as crm_tag
-crm_iap_lead_mining_request .. crm_tag : many2many
-class "crm.lead" as crm_lead
-crm_iap_lead_mining_request --|> crm_lead : one2many
-class "res.country" as res_country
-crm_iap_lead_mining_request .. res_country : many2many
-class "res.country.state" as res_country_state
-crm_iap_lead_mining_request .. res_country_state : many2many
-crm_iap_lead_mining_request --|> res_country_state : one2many
-crm_iap_lead_mining_request .. crm_iap_lead_industry : many2many
-crm_iap_lead_mining_request --> crm_iap_lead_role : many2one
-crm_iap_lead_mining_request .. crm_iap_lead_role : many2many
-crm_iap_lead_mining_request --> crm_iap_lead_seniority : many2one
-CrmLead --> crm_iap_lead_mining_request : many2one
-@enduml
-```
+- `crm.lead`
 
 ## Navigation
 
@@ -67,6 +86,7 @@ CrmLead --> crm_iap_lead_mining_request : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

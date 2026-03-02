@@ -13,82 +13,73 @@ tags: [odoo, enterprise, module]
 
 Basic Feature for Quality
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 8
+- XML files with UI/data artifacts: 2
 - Views: 5
 - Actions: 0
 - Menus: 0
 - Rules (ir.rule): 4
 - Access CSV entries: 20
+- Controller units: 0
+- Frontend asset files: 0
 
-## Detected Models
-
-- `quality.point.test_type`
-- `quality.point`
-- `quality.alert.team`
-- `quality.reason`
-- `quality.tag`
-- `quality.alert.stage`
-- `quality.check`
-- `quality.alert`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Quality Base - Models and Relations
-class "quality.point.test_type" as quality_point_test_type
-class "quality.point" as quality_point
-class "quality.alert.team" as quality_alert_team
-class "quality.reason" as quality_reason
-class "quality.tag" as quality_tag
-class "quality.alert.stage" as quality_alert_stage
-class "quality.check" as quality_check
-class "quality.alert" as quality_alert
-quality_point --> quality_alert_team : many2one
-class "product.product" as product_product
-quality_point .. product_product : many2many
-class "product.category" as product_category
-quality_point .. product_category : many2many
-class "stock.picking.type" as stock_picking_type
-quality_point .. stock_picking_type : many2many
-class "res.company" as res_company
-quality_point --> res_company : many2one
-class "res.users" as res_users
-quality_point --> res_users : many2one
-quality_point --|> quality_check : one2many
-quality_point --> quality_point_test_type : many2one
-class "stock.location" as stock_location
-quality_point .. stock_location : many2many
-quality_alert_team --> res_company : many2one
-quality_alert_stage .. quality_alert_team : many2many
-quality_check --> quality_point : many2one
-quality_check --> product_product : many2one
-class "stock.picking" as stock_picking
-quality_check --> stock_picking : many2one
-class "stock.lot" as stock_lot
-quality_check .. stock_lot : many2many
-quality_check --> res_users : many2one
-quality_check --> quality_alert_team : many2one
-quality_check --> res_company : many2one
-quality_check --|> quality_alert : one2many
-quality_check --> quality_point_test_type : many2one
-quality_check --> stock_location : many2one
-quality_alert --> quality_alert_stage : many2one
-quality_alert --> res_company : many2one
-quality_alert --> quality_reason : many2one
-quality_alert .. quality_tag : many2many
-quality_alert --> stock_picking : many2one
-quality_alert --> res_users : many2one
-quality_alert --> quality_alert_team : many2one
-class "res.partner" as res_partner
-quality_alert --> res_partner : many2one
-quality_alert --> quality_check : many2one
-class "product.template" as product_template
-quality_alert --> product_template : many2one
-quality_alert --> product_product : many2one
-quality_alert .. stock_lot : many2many
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Quality Base - Generated Coverage
+component "Module Overview" as overview
+component "Models\n8" as models
+component "Views / XML\n5 views\n2 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n0 files" as frontend
+component "Security / Data\n4 rules\n20 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Enterprise Addons/quality/Models|Models]] (8)
+- Views and XML: [[docs/Enterprise Addons/quality/Views|Views]] (2 files)
+
+## Key models
+
+- `quality.alert`
+- `quality.alert.stage`
+- `quality.alert.team`
+- `quality.check`
+- `quality.point`
+- `quality.point.test_type`
+- `quality.reason`
+- `quality.tag`
 
 ## Navigation
 
@@ -96,6 +87,7 @@ quality_alert .. stock_lot : many2many
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

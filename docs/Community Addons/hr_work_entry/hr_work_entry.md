@@ -13,56 +13,75 @@ tags: [odoo, community, module]
 
 Manage work entries
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 9
+- XML files with UI/data artifacts: 6
 - Views: 19
 - Actions: 4
 - Menus: 0
 - Rules (ir.rule): 3
 - Access CSV entries: 6
+- Controller units: 0
+- Frontend asset files: 22
 
-## Detected Models
-
-- `HrEmployee`
-- `hr.user.work.entry.employee`
-- `HrVersion`
-- `hr.work.entry`
-- `hr.work.entry.type`
-- `ResourceCalendar`
-- `ResourceCalendarAttendance`
-- `ResourceCalendarLeaves`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Work Entries - Models and Relations
-class HrEmployee
-class "hr.user.work.entry.employee" as hr_user_work_entry_employee
-class HrVersion
-class "hr.work.entry" as hr_work_entry
-class "hr.work.entry.type" as hr_work_entry_type
-class ResourceCalendar
-class ResourceCalendarAttendance
-class ResourceCalendarLeaves
-class "res.users" as res_users
-hr_user_work_entry_employee --> res_users : many2one
-class "hr.employee" as hr_employee
-hr_user_work_entry_employee --> hr_employee : many2one
-hr_work_entry --> hr_employee : many2one
-class "hr.version" as hr_version
-hr_work_entry --> hr_version : many2one
-hr_work_entry --> hr_work_entry_type : many2one
-class "res.company" as res_company
-hr_work_entry --> res_company : many2one
-class "hr.department" as hr_department
-hr_work_entry --> hr_department : many2one
-class "res.country" as res_country
-hr_work_entry --> res_country : many2one
-hr_work_entry_type --> res_country : many2one
-ResourceCalendarAttendance --> hr_work_entry_type : many2one
-ResourceCalendarLeaves --> hr_work_entry_type : many2one
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Work Entries - Generated Coverage
+component "Module Overview" as overview
+component "Models\n9" as models
+component "Views / XML\n19 views\n6 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n22 files" as frontend
+component "Security / Data\n3 rules\n6 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/hr_work_entry/Models|Models]] (9)
+- Views and XML: [[docs/Community Addons/hr_work_entry/Views|Views]] (6 files)
+- Frontend: [[docs/Community Addons/hr_work_entry/Frontend|Frontend]] (22 files)
+
+## Key models
+
+- `hr.employee`
+- `hr.user.work.entry.employee`
+- `hr.version`
+- `hr.work.entry`
+- `hr.work.entry.regeneration.wizard`
+- `hr.work.entry.type`
+- `resource.calendar`
+- `resource.calendar.attendance`
+- `resource.calendar.leaves`
 
 ## Navigation
 
@@ -70,6 +89,7 @@ ResourceCalendarLeaves --> hr_work_entry_type : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

@@ -1,0 +1,23 @@
+<!-- GENERATED:FRONTEND -->
+---
+tags: [odoo, community, generated, frontend]
+---
+
+# static/src/js/sale_action_helper/sale_action_helper_dialog.xml
+
+- Module: [[docs/Community Addons/sale/sale|sale]]
+- Scope: Community Addons
+- Asset kind: `xml`
+- Source file: `static/src/js/sale_action_helper/sale_action_helper_dialog.xml`
+
+## Detected frontend signals
+
+- Component classes: none
+- Registry entries: none
+- Templates: `sale.SaleActionHelperDialog`
+
+## Navigation
+
+- **Parent:** [[docs/Community Addons/sale/Frontend]]
+
+<!-- GENERATED:FRONTEND -->

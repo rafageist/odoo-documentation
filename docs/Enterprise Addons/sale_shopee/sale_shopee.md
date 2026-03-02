@@ -13,55 +13,74 @@ tags: [odoo, enterprise, module]
 
 Import Shopee orders and sync deliveries
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 8
+- XML files with UI/data artifacts: 7
 - Views: 13
 - Actions: 6
 - Menus: 3
 - Rules (ir.rule): 2
 - Access CSV entries: 3
+- Controller units: 1
+- Frontend asset files: 0
 
-## Detected Models
-
-- `ProductProduct`
-- `ResPartner`
-- `SaleOrder`
-- `shopee.account`
-- `shopee.item`
-- `shopee.shop`
-- `StockMove`
-- `StockPicking`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Shopee Connector - Models and Relations
-class ProductProduct
-class ResPartner
-class SaleOrder
-class "shopee.account" as shopee_account
-class "shopee.item" as shopee_item
-class "shopee.shop" as shopee_shop
-class StockMove
-class StockPicking
-SaleOrder --> shopee_shop : many2one
-class "res.company" as res_company
-shopee_account .. res_company : many2many
-shopee_account --|> shopee_shop : one2many
-shopee_item --> shopee_shop : many2one
-class "product.product" as product_product
-shopee_item --> product_product : many2one
-shopee_shop --> shopee_account : many2one
-shopee_shop --|> shopee_item : one2many
-class "res.users" as res_users
-shopee_shop --> res_users : many2one
-class "crm.team" as crm_team
-shopee_shop --> crm_team : many2one
-shopee_shop --> res_company : many2one
-class "stock.location" as stock_location
-shopee_shop --> stock_location : many2one
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Shopee Connector - Generated Coverage
+component "Module Overview" as overview
+component "Models\n8" as models
+component "Views / XML\n13 views\n7 files" as views
+component "Controllers\n1 routes" as controllers
+component "Frontend\n0 files" as frontend
+component "Security / Data\n2 rules\n3 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Enterprise Addons/sale_shopee/Models|Models]] (8)
+- Views and XML: [[docs/Enterprise Addons/sale_shopee/Views|Views]] (7 files)
+- Controllers: [[docs/Enterprise Addons/sale_shopee/Controllers|Controllers]] (1)
+
+## Key models
+
+- `product.product`
+- `res.partner`
+- `sale.order`
+- `shopee.account`
+- `shopee.item`
+- `shopee.shop`
+- `stock.move`
+- `stock.picking`
 
 ## Navigation
 
@@ -69,6 +88,7 @@ shopee_shop --> stock_location : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

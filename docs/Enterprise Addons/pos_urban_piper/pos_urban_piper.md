@@ -9,69 +9,79 @@ tags: [odoo, enterprise, module]
 - Source: enterprise/pos_urban_piper
 - Dependencies: [[docs/Enterprise Addons/pos_enterprise/pos_enterprise|pos_enterprise]], [[docs/Community Addons/pos_discount/pos_discount|pos_discount]]
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 16
+- XML files with UI/data artifacts: 5
 - Views: 7
 - Actions: 0
 - Menus: 0
 - Rules (ir.rule): 0
 - Access CSV entries: 7
+- Controller units: 1
+- Frontend asset files: 28
 
-## Detected Models
-
-- `IrConfig_Parameter`
-- `PosCategory`
-- `PosConfig`
-- `pos.delivery.provider`
-- `PosOrder`
-- `PosPayment`
-- `PosPaymentMethod`
-- `PosPrepDisplay`
-- `PosPrepOrder`
-- `PosSession`
-- `ProductTemplate`
-- `ProductPricelist`
-- `product.urban.piper.status`
-- `ResCompany`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Point of Sale - UrbanPiper - Models and Relations
-class IrConfig_Parameter
-class PosCategory
-class PosConfig
-class "pos.delivery.provider" as pos_delivery_provider
-class PosOrder
-class PosPayment
-class PosPaymentMethod
-class PosPrepDisplay
-class PosPrepOrder
-class PosSession
-class ProductTemplate
-class ProductPricelist
-class "product.urban.piper.status" as product_urban_piper_status
-class ResCompany
-class "product.pricelist" as product_pricelist
-PosConfig --> product_pricelist : many2one
-class "account.fiscal.position" as account_fiscal_position
-PosConfig --> account_fiscal_position : many2one
-class "pos.payment.method" as pos_payment_method
-PosConfig .. pos_payment_method : many2many
-PosConfig .. pos_delivery_provider : many2many
-class "res.country" as res_country
-pos_delivery_provider .. res_country : many2many
-PosOrder --> pos_delivery_provider : many2one
-PosPaymentMethod --> pos_delivery_provider : many2one
-class "pos.config" as pos_config
-ProductTemplate .. pos_config : many2many
-ProductTemplate .. pos_delivery_provider : many2many
-ProductTemplate --|> product_urban_piper_status : one2many
-product_urban_piper_status --> pos_config : many2one
-class "product.template" as product_template
-product_urban_piper_status --> product_template : many2one
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Point of Sale - UrbanPiper - Generated Coverage
+component "Module Overview" as overview
+component "Models\n16" as models
+component "Views / XML\n7 views\n5 files" as views
+component "Controllers\n1 routes" as controllers
+component "Frontend\n28 files" as frontend
+component "Security / Data\n0 rules\n7 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Enterprise Addons/pos_urban_piper/Models|Models]] (16)
+- Views and XML: [[docs/Enterprise Addons/pos_urban_piper/Views|Views]] (5 files)
+- Controllers: [[docs/Enterprise Addons/pos_urban_piper/Controllers|Controllers]] (1)
+- Frontend: [[docs/Enterprise Addons/pos_urban_piper/Frontend|Frontend]] (28 files)
+
+## Key models
+
+- `ir.config_parameter`
+- `pos.category`
+- `pos.config`
+- `pos.delivery.provider`
+- `pos.order`
+- `pos.payment`
+- `pos.payment.method`
+- `pos.prep.display`
+- `pos.prep.order`
+- `pos.session`
+- `pos.urbanpiper.test.order.wizard`
+- `product.pricelist`
 
 ## Navigation
 
@@ -79,6 +89,7 @@ product_urban_piper_status --> product_template : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

@@ -13,74 +13,79 @@ tags: [odoo, community, module]
 
 Subcontract Productions
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 18
+- XML files with UI/data artifacts: 10
 - Views: 20
 - Actions: 1
 - Menus: 0
 - Rules (ir.rule): 13
 - Access CSV entries: 16
+- Controller units: 1
+- Frontend asset files: 13
 
-## Detected Models
-
-- `MrpBom`
-- `MrpProduction`
-- `ProductSupplierinfo`
-- `ProductProduct`
-- `ResCompany`
-- `ResPartner`
-- `StockLocation`
-- `StockMove`
-- `StockMoveLine`
-- `StockPicking`
-- `StockQuant`
-- `StockRule`
-- `StockWarehouse`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title MRP Subcontracting - Models and Relations
-class MrpBom
-class MrpProduction
-class ProductSupplierinfo
-class ProductProduct
-class ResCompany
-class ResPartner
-class StockLocation
-class StockMove
-class StockMoveLine
-class StockPicking
-class StockQuant
-class StockRule
-class StockWarehouse
-class "res.partner" as res_partner
-MrpBom .. res_partner : many2many
-class "stock.move.line" as stock_move_line
-MrpProduction --|> stock_move_line : one2many
-MrpProduction --> res_partner : many2one
-class "product.product" as product_product
-MrpProduction .. product_product : many2many
-class "stock.location" as stock_location
-ResCompany --> stock_location : many2one
-ResPartner --> stock_location : many2one
-class "mrp.bom" as mrp_bom
-ResPartner .. mrp_bom : many2many
-class "mrp.production" as mrp_production
-ResPartner .. mrp_production : many2many
-class "stock.picking" as stock_picking
-ResPartner .. stock_picking : many2many
-StockLocation --|> res_partner : one2many
-class "stock.rule" as stock_rule
-StockWarehouse --> stock_rule : many2one
-StockWarehouse --> stock_rule : many2one
-class "stock.route" as stock_route
-StockWarehouse --> stock_route : many2one
-class "stock.picking.type" as stock_picking_type
-StockWarehouse --> stock_picking_type : many2one
-StockWarehouse --> stock_picking_type : many2one
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title MRP Subcontracting - Generated Coverage
+component "Module Overview" as overview
+component "Models\n18" as models
+component "Views / XML\n20 views\n10 files" as views
+component "Controllers\n3 routes" as controllers
+component "Frontend\n13 files" as frontend
+component "Security / Data\n13 rules\n16 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/mrp_subcontracting/Models|Models]] (18)
+- Views and XML: [[docs/Community Addons/mrp_subcontracting/Views|Views]] (10 files)
+- Controllers: [[docs/Community Addons/mrp_subcontracting/Controllers|Controllers]] (1)
+- Frontend: [[docs/Community Addons/mrp_subcontracting/Frontend|Frontend]] (13 files)
+
+## Key models
+
+- `change.production.qty`
+- `mrp.bom`
+- `mrp.production`
+- `mrp.production.serials`
+- `product.product`
+- `product.supplierinfo`
+- `report.mrp.report_bom_structure`
+- `res.company`
+- `res.partner`
+- `stock.location`
+- `stock.move`
+- `stock.move.line`
 
 ## Navigation
 
@@ -88,6 +93,7 @@ StockWarehouse --> stock_picking_type : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

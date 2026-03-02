@@ -9,78 +9,79 @@ tags: [odoo, enterprise, module]
 - Source: enterprise/l10n_ec_edi
 - Dependencies: [[docs/Community Addons/account_edi/account_edi|account_edi]], [[docs/Community Addons/certificate/certificate|certificate]], [[docs/Community Addons/l10n_ec/l10n_ec|l10n_ec]]
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 17
+- XML files with UI/data artifacts: 13
 - Views: 15
 - Actions: 3
 - Menus: 2
 - Rules (ir.rule): 2
 - Access CSV entries: 6
+- Controller units: 1
+- Frontend asset files: 1
 
-## Detected Models
-
-- `AccountEdiFormat`
-- `AccountJournal`
-- `AccountMove`
-- `AccountMoveLine`
-- `AccountTax`
-- `CertificateCertificate`
-- `l10n_ec.reimbursement`
-- `l10n_ec.taxpayer.type`
-- `ProductTemplate`
-- `ResCompany`
-- `ResCountry`
-- `ResPartner`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Ecuadorian Accounting EDI - Models and Relations
-class AccountEdiFormat
-class AccountJournal
-class AccountMove
-class AccountMoveLine
-class AccountTax
-class CertificateCertificate
-class "l10n_ec.reimbursement" as l10n_ec_reimbursement
-class "l10n_ec.taxpayer.type" as l10n_ec_taxpayer_type
-class ProductTemplate
-class ResCompany
-class ResCountry
-class ResPartner
-class "account.move.line" as account_move_line
-AccountMove .. account_move_line : many2many
-AccountMove --|> account_move_line : one2many
-class "account.move" as account_move
-AccountMove .. account_move : many2many
-AccountMove --|> l10n_ec_reimbursement : one2many
-AccountMoveLine --> account_move : many2one
-l10n_ec_reimbursement --> account_move : many2one
-class "res.partner" as res_partner
-l10n_ec_reimbursement --> res_partner : many2one
-class "l10n_latam.identification.type" as l10n_latam_identification_type
-l10n_ec_reimbursement --> l10n_latam_identification_type : many2one
-class "res.country" as res_country
-l10n_ec_reimbursement --> res_country : many2one
-class "l10n_latam.document.type" as l10n_latam_document_type
-l10n_ec_reimbursement --> l10n_latam_document_type : many2one
-class "account.tax" as account_tax
-l10n_ec_reimbursement --> account_tax : many2one
-l10n_ec_taxpayer_type --> account_tax : many2one
-l10n_ec_taxpayer_type --> account_tax : many2one
-l10n_ec_taxpayer_type --> account_tax : many2one
-ProductTemplate --> account_tax : many2one
-class "certificate.certificate" as certificate_certificate
-ResCompany --> certificate_certificate : many2one
-ResCompany --> account_tax : many2one
-ResCompany --> account_tax : many2one
-ResCompany --> account_tax : many2one
-class "account.account" as account_account
-ResCompany --> account_account : many2one
-ResCompany --> account_account : many2one
-ResPartner --> l10n_ec_taxpayer_type : many2one
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Ecuadorian Accounting EDI - Generated Coverage
+component "Module Overview" as overview
+component "Models\n17" as models
+component "Views / XML\n15 views\n13 files" as views
+component "Controllers\n2 routes" as controllers
+component "Frontend\n1 files" as frontend
+component "Security / Data\n2 rules\n6 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Enterprise Addons/l10n_ec_edi/Models|Models]] (17)
+- Views and XML: [[docs/Enterprise Addons/l10n_ec_edi/Views|Views]] (13 files)
+- Controllers: [[docs/Enterprise Addons/l10n_ec_edi/Controllers|Controllers]] (1)
+- Frontend: [[docs/Enterprise Addons/l10n_ec_edi/Frontend|Frontend]] (1 files)
+
+## Key models
+
+- `account.chart.template`
+- `account.edi.format`
+- `account.journal`
+- `account.move`
+- `account.move.line`
+- `account.move.send`
+- `account.tax`
+- `certificate.certificate`
+- `l10n_ec.reimbursement`
+- `l10n_ec.taxpayer.type`
+- `l10n_ec.wizard.account.withhold`
+- `l10n_ec.wizard.account.withhold.line`
 
 ## Navigation
 
@@ -88,6 +89,7 @@ ResPartner --> l10n_ec_taxpayer_type : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

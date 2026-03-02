@@ -13,47 +13,70 @@ tags: [odoo, enterprise, module]
 
 Manage skills of your employees during an appraisal process
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 4
+- XML files with UI/data artifacts: 7
 - Views: 14
 - Actions: 2
 - Menus: 2
 - Rules (ir.rule): 5
 - Access CSV entries: 4
+- Controller units: 0
+- Frontend asset files: 4
 
-## Detected Models
-
-- `HrAppraisal`
-- `HrAppraisalGoal`
-- `hr.appraisal.goal.skill`
-- `hr.appraisal.skill`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Appraisal - Skills - Models and Relations
-class HrAppraisal
-class HrAppraisalGoal
-class "hr.appraisal.goal.skill" as hr_appraisal_goal_skill
-class "hr.appraisal.skill" as hr_appraisal_skill
-class "hr.job" as hr_job
-HrAppraisal --> hr_job : many2one
-HrAppraisal --|> hr_appraisal_skill : one2many
-HrAppraisal --|> hr_appraisal_skill : one2many
-HrAppraisalGoal --|> hr_appraisal_goal_skill : one2many
-HrAppraisalGoal --|> hr_appraisal_goal_skill : one2many
-class "hr.appraisal.goal" as hr_appraisal_goal
-hr_appraisal_goal_skill --> hr_appraisal_goal : many2one
-class "hr.appraisal" as hr_appraisal
-hr_appraisal_skill --> hr_appraisal : many2one
-class "hr.skill.level" as hr_skill_level
-hr_appraisal_skill --> hr_skill_level : many2one
-hr_appraisal_skill --> hr_skill_level : many2one
-class "hr.employee" as hr_employee
-hr_appraisal_skill .. hr_employee : many2many
-hr_appraisal_skill .. hr_appraisal_goal : many2many
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Appraisal - Skills - Generated Coverage
+component "Module Overview" as overview
+component "Models\n4" as models
+component "Views / XML\n14 views\n7 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n4 files" as frontend
+component "Security / Data\n5 rules\n4 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Enterprise Addons/hr_appraisal_skills/Models|Models]] (4)
+- Views and XML: [[docs/Enterprise Addons/hr_appraisal_skills/Views|Views]] (7 files)
+- Frontend: [[docs/Enterprise Addons/hr_appraisal_skills/Frontend|Frontend]] (4 files)
+
+## Key models
+
+- `hr.appraisal`
+- `hr.appraisal.goal`
+- `hr.appraisal.goal.skill`
+- `hr.appraisal.skill`
 
 ## Navigation
 
@@ -61,6 +84,7 @@ hr_appraisal_skill .. hr_appraisal_goal : many2many
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

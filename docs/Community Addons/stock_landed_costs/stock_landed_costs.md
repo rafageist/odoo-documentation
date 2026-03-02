@@ -13,68 +13,75 @@ tags: [odoo, community, module]
 
 Landed Costs
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 10
+- XML files with UI/data artifacts: 5
 - Views: 8
 - Actions: 1
 - Menus: 1
 - Rules (ir.rule): 1
 - Access CSV entries: 3
+- Controller units: 0
+- Frontend asset files: 0
 
-## Detected Models
-
-- `AccountMove`
-- `AccountMoveLine`
-- `ProductTemplate`
-- `PurchaseOrderLine`
-- `ResCompany`
-- `stock.landed.cost`
-- `stock.landed.cost.lines`
-- `stock.valuation.adjustment.lines`
-- `StockMove`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title WMS Landed Costs - Models and Relations
-class AccountMove
-class AccountMoveLine
-class ProductTemplate
-class PurchaseOrderLine
-class ResCompany
-class "stock.landed.cost" as stock_landed_cost
-class "stock.landed.cost.lines" as stock_landed_cost_lines
-class "stock.valuation.adjustment.lines" as stock_valuation_adjustment_lines
-class StockMove
-AccountMove --|> stock_landed_cost : one2many
-class "account.journal" as account_journal
-ResCompany --> account_journal : many2one
-class "stock.picking" as stock_picking
-stock_landed_cost .. stock_picking : many2many
-stock_landed_cost --|> stock_landed_cost_lines : one2many
-stock_landed_cost --|> stock_valuation_adjustment_lines : one2many
-class "account.move" as account_move
-stock_landed_cost --> account_move : many2one
-stock_landed_cost --> account_journal : many2one
-class "res.company" as res_company
-stock_landed_cost --> res_company : many2one
-stock_landed_cost --> account_move : many2one
-class "res.currency" as res_currency
-stock_landed_cost --> res_currency : many2one
-stock_landed_cost_lines --> stock_landed_cost : many2one
-class "product.product" as product_product
-stock_landed_cost_lines --> product_product : many2one
-class "account.account" as account_account
-stock_landed_cost_lines --> account_account : many2one
-stock_landed_cost_lines --> res_currency : many2one
-stock_valuation_adjustment_lines --> stock_landed_cost : many2one
-stock_valuation_adjustment_lines --> stock_landed_cost_lines : many2one
-class "stock.move" as stock_move
-stock_valuation_adjustment_lines --> stock_move : many2one
-stock_valuation_adjustment_lines --> product_product : many2one
-stock_valuation_adjustment_lines --> res_currency : many2one
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title WMS Landed Costs - Generated Coverage
+component "Module Overview" as overview
+component "Models\n10" as models
+component "Views / XML\n8 views\n5 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n0 files" as frontend
+component "Security / Data\n1 rules\n3 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/stock_landed_costs/Models|Models]] (10)
+- Views and XML: [[docs/Community Addons/stock_landed_costs/Views|Views]] (5 files)
+
+## Key models
+
+- `account.move`
+- `account.move.line`
+- `product.template`
+- `purchase.order.line`
+- `res.company`
+- `res.config.settings`
+- `stock.landed.cost`
+- `stock.landed.cost.lines`
+- `stock.move`
+- `stock.valuation.adjustment.lines`
 
 ## Navigation
 
@@ -82,6 +89,7 @@ stock_valuation_adjustment_lines --> res_currency : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

@@ -9,30 +9,70 @@ tags: [odoo, community, module]
 - Source: odoo/addons/auth_oauth
 - Dependencies: base (not documented), [[docs/Community Addons/web/web|web]], [[docs/Community Addons/base_setup/base_setup|base_setup]], [[docs/Community Addons/auth_signup/auth_signup|auth_signup]]
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 4
+- XML files with UI/data artifacts: 2
 - Views: 3
 - Actions: 1
 - Menus: 1
 - Rules (ir.rule): 0
 - Access CSV entries: 1
+- Controller units: 2
+- Frontend asset files: 0
 
-## Detected Models
-
-- `auth.oauth.provider`
-- `IrConfig_Parameter`
-- `ResUsers`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title OAuth2 Authentication - Models and Relations
-class "auth.oauth.provider" as auth_oauth_provider
-class IrConfig_Parameter
-class ResUsers
-ResUsers --> auth_oauth_provider : many2one
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title OAuth2 Authentication - Generated Coverage
+component "Module Overview" as overview
+component "Models\n4" as models
+component "Views / XML\n3 views\n2 files" as views
+component "Controllers\n3 routes" as controllers
+component "Frontend\n0 files" as frontend
+component "Security / Data\n0 rules\n1 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/auth_oauth/Models|Models]] (4)
+- Views and XML: [[docs/Community Addons/auth_oauth/Views|Views]] (2 files)
+- Controllers: [[docs/Community Addons/auth_oauth/Controllers|Controllers]] (2)
+
+## Key models
+
+- `auth.oauth.provider`
+- `ir.config_parameter`
+- `res.config.settings`
+- `res.users`
 
 ## Navigation
 
@@ -40,6 +80,7 @@ ResUsers --> auth_oauth_provider : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

@@ -13,34 +13,69 @@ tags: [odoo, enterprise, module]
 
 Ticketing, Support, Slides
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 3
+- XML files with UI/data artifacts: 2
 - Views: 2
 - Actions: 0
 - Menus: 0
 - Rules (ir.rule): 0
 - Access CSV entries: 0
+- Controller units: 1
+- Frontend asset files: 0
 
-## Detected Models
-
-- `HelpdeskTeam`
-- `SlideChannel`
-- `SlideSlide`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Website Slides Helpdesk - Models and Relations
-class HelpdeskTeam
-class SlideChannel
-class SlideSlide
-class "slide.channel" as slide_channel
-HelpdeskTeam .. slide_channel : many2many
-HelpdeskTeam .. slide_channel : many2many
-class "helpdesk.team" as helpdesk_team
-SlideChannel .. helpdesk_team : many2many
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Website Slides Helpdesk - Generated Coverage
+component "Module Overview" as overview
+component "Models\n3" as models
+component "Views / XML\n2 views\n2 files" as views
+component "Controllers\n1 routes" as controllers
+component "Frontend\n0 files" as frontend
+component "Security / Data\n0 rules\n0 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Enterprise Addons/website_helpdesk_slides/Models|Models]] (3)
+- Views and XML: [[docs/Enterprise Addons/website_helpdesk_slides/Views|Views]] (2 files)
+- Controllers: [[docs/Enterprise Addons/website_helpdesk_slides/Controllers|Controllers]] (1)
+
+## Key models
+
+- `helpdesk.team`
+- `slide.channel`
+- `slide.slide`
 
 ## Navigation
 
@@ -48,6 +83,7 @@ SlideChannel .. helpdesk_team : many2many
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

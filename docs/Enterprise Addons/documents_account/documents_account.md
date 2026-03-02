@@ -13,52 +13,78 @@ tags: [odoo, enterprise, module]
 
 Invoices from Documents
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 11
+- XML files with UI/data artifacts: 8
 - Views: 10
 - Actions: 20
 - Menus: 0
 - Rules (ir.rule): 1
 - Access CSV entries: 2
+- Controller units: 1
+- Frontend asset files: 5
 
-## Detected Models
-
-- `AccountJournal`
-- `account.move`
-- `AccountReport`
-- `documents.account.folder.setting`
-- `DocumentsDocument`
-- `IrActionsServer`
-- `IrAttachment`
-- `ResCompany`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Documents - Accounting - Models and Relations
-class AccountJournal
-class "account.move" as account_move
-class AccountReport
-class "documents.account.folder.setting" as documents_account_folder_setting
-class DocumentsDocument
-class IrActionsServer
-class IrAttachment
-class ResCompany
-class "account.bank.statement.line" as account_bank_statement_line
-account_move --> account_bank_statement_line : many2one
-class "res.company" as res_company
-documents_account_folder_setting --> res_company : many2one
-class "account.journal" as account_journal
-documents_account_folder_setting --> account_journal : many2one
-class "documents.document" as documents_document
-documents_account_folder_setting --> documents_document : many2one
-class "documents.tag" as documents_tag
-documents_account_folder_setting .. documents_tag : many2many
-IrActionsServer --> account_journal : many2one
-IrActionsServer .. account_journal : many2many
-ResCompany --> documents_document : many2one
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Documents - Accounting - Generated Coverage
+component "Module Overview" as overview
+component "Models\n11" as models
+component "Views / XML\n10 views\n8 files" as views
+component "Controllers\n1 routes" as controllers
+component "Frontend\n5 files" as frontend
+component "Security / Data\n1 rules\n2 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Enterprise Addons/documents_account/Models|Models]] (11)
+- Views and XML: [[docs/Enterprise Addons/documents_account/Views|Views]] (8 files)
+- Controllers: [[docs/Enterprise Addons/documents_account/Controllers|Controllers]] (1)
+- Frontend: [[docs/Enterprise Addons/documents_account/Frontend|Frontend]] (5 files)
+
+## Key models
+
+- `account.journal`
+- `account.move`
+- `account.report`
+- `account_reports.export.wizard`
+- `account_reports.export.wizard.format`
+- `documents.account.folder.setting`
+- `documents.document`
+- `ir.actions.server`
+- `ir.attachment`
+- `res.company`
+- `res.config.settings`
 
 ## Navigation
 
@@ -66,6 +92,7 @@ ResCompany --> documents_document : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

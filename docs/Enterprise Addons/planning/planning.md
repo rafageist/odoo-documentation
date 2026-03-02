@@ -13,66 +13,79 @@ tags: [odoo, enterprise, module]
 
 Manage your employees' schedule
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 15
+- XML files with UI/data artifacts: 10
 - Views: 51
 - Actions: 40
 - Menus: 14
 - Rules (ir.rule): 9
 - Access CSV entries: 17
+- Controller units: 1
+- Frontend asset files: 68
 
-## Detected Models
-
-- `HrEmployee`
-- `HrEmployeePublic`
-- `planning.calendar.resource`
-- `planning.planning`
-- `planning.recurrency`
-- `planning.role`
-- `planning.slot`
-- `planning.slot.template`
-- `ResourceResource`
-- `ResCompany`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Planning - Models and Relations
-class HrEmployee
-class HrEmployeePublic
-class "planning.calendar.resource" as planning_calendar_resource
-class "planning.planning" as planning_planning
-class "planning.recurrency" as planning_recurrency
-class "planning.role" as planning_role
-class "planning.slot" as planning_slot
-class "planning.slot.template" as planning_slot_template
-class ResourceResource
-class ResCompany
-class "res.users" as res_users
-planning_calendar_resource --> res_users : many2one
-class "resource.resource" as resource_resource
-planning_calendar_resource --> resource_resource : many2one
-class "res.company" as res_company
-planning_planning --> res_company : many2one
-planning_recurrency --|> planning_slot : one2many
-planning_recurrency --> res_company : many2one
-planning_role .. resource_resource : many2many
-planning_slot --> resource_resource : many2one
-class "hr.employee" as hr_employee
-planning_slot --> hr_employee : many2one
-planning_slot --> res_users : many2one
-planning_slot --> res_company : many2one
-planning_slot --> planning_role : many2one
-planning_slot .. planning_slot : many2many
-planning_slot .. planning_slot_template : many2many
-planning_slot --> planning_slot_template : many2one
-planning_slot --> planning_slot_template : many2one
-planning_slot --> planning_recurrency : many2one
-planning_slot_template --> planning_role : many2one
-ResourceResource .. planning_role : many2many
-ResourceResource --> planning_role : many2one
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Planning - Generated Coverage
+component "Module Overview" as overview
+component "Models\n15" as models
+component "Views / XML\n51 views\n10 files" as views
+component "Controllers\n10 routes" as controllers
+component "Frontend\n68 files" as frontend
+component "Security / Data\n9 rules\n17 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Enterprise Addons/planning/Models|Models]] (15)
+- Views and XML: [[docs/Enterprise Addons/planning/Views|Views]] (10 files)
+- Controllers: [[docs/Enterprise Addons/planning/Controllers|Controllers]] (1)
+- Frontend: [[docs/Enterprise Addons/planning/Frontend|Frontend]] (68 files)
+
+## Key models
+
+- `hr.departure.wizard`
+- `hr.employee`
+- `hr.employee.public`
+- `planning.analysis.report`
+- `planning.calendar.resource`
+- `planning.planning`
+- `planning.preview`
+- `planning.recurrency`
+- `planning.role`
+- `planning.send`
+- `planning.slot`
+- `planning.slot.template`
 
 ## Navigation
 
@@ -80,6 +93,7 @@ ResourceResource --> planning_role : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

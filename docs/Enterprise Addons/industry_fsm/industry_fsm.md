@@ -13,49 +13,79 @@ tags: [odoo, enterprise, module]
 
 Schedule and track onsite operations, time and material
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 17
+- XML files with UI/data artifacts: 12
 - Views: 55
 - Actions: 150
 - Menus: 21
 - Rules (ir.rule): 2
 - Access CSV entries: 4
+- Controller units: 1
+- Frontend asset files: 31
 
-## Detected Models
-
-- `AccountAnalyticLine`
-- `IrActionsReport`
-- `IrUiMenu`
-- `ProjectProject`
-- `ProjectTask`
-- `ProjectTaskRecurrence`
-- `ProjectTaskType`
-- `RatingRating`
-- `ResCompany`
-- `ResPartner`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Field Service - Models and Relations
-class AccountAnalyticLine
-class IrActionsReport
-class IrUiMenu
-class ProjectProject
-class ProjectTask
-class ProjectTaskRecurrence
-class ProjectTaskType
-class RatingRating
-class ResCompany
-class ResPartner
-class "res.country" as res_country
-ProjectTask --> res_country : many2one
-class "res.country.state" as res_country_state
-ProjectTask --> res_country_state : many2one
-class "project.project" as project_project
-RatingRating --> project_project : many2one
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Field Service - Generated Coverage
+component "Module Overview" as overview
+component "Models\n17" as models
+component "Views / XML\n55 views\n12 files" as views
+component "Controllers\n2 routes" as controllers
+component "Frontend\n31 files" as frontend
+component "Security / Data\n2 rules\n4 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Enterprise Addons/industry_fsm/Models|Models]] (17)
+- Views and XML: [[docs/Enterprise Addons/industry_fsm/Views|Views]] (12 files)
+- Controllers: [[docs/Enterprise Addons/industry_fsm/Controllers|Controllers]] (1)
+- Frontend: [[docs/Enterprise Addons/industry_fsm/Frontend|Frontend]] (31 files)
+
+## Key models
+
+- `account.analytic.line`
+- `base.document.layout`
+- `hr.timesheet.stop.timer.confirmation.wizard`
+- `ir.actions.report`
+- `ir.ui.menu`
+- `project.project`
+- `project.task`
+- `project.task.recurrence`
+- `project.task.stop.timers.wizard`
+- `project.task.stop.timers.wizard.line`
+- `project.task.type`
+- `rating.rating`
 
 ## Navigation
 
@@ -63,6 +93,7 @@ RatingRating --> project_project : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

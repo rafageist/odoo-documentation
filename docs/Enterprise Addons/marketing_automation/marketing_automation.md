@@ -13,71 +13,77 @@ tags: [odoo, enterprise, module]
 
 Build automated mailing campaigns
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 11
+- XML files with UI/data artifacts: 11
 - Views: 21
 - Actions: 13
 - Menus: 8
 - Rules (ir.rule): 0
 - Access CSV entries: 6
+- Controller units: 0
+- Frontend asset files: 14
 
-## Detected Models
-
-- `MailingMailing`
-- `MailingTrace`
-- `marketing.activity`
-- `marketing.campaign`
-- `marketing.participant`
-- `marketing.trace`
-- `UtmCampaign`
-- `UtmSource`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Marketing Automation - Models and Relations
-class MailingMailing
-class MailingTrace
-class "marketing.activity" as marketing_activity
-class "marketing.campaign" as marketing_campaign
-class "marketing.participant" as marketing_participant
-class "marketing.trace" as marketing_trace
-class UtmCampaign
-class UtmSource
-MailingMailing --|> marketing_activity : one2many
-MailingTrace --> marketing_trace : many2one
-class "mailing.mailing" as mailing_mailing
-marketing_activity --> mailing_mailing : many2one
-class "ir.actions.server" as ir_actions_server
-marketing_activity --> ir_actions_server : many2one
-marketing_activity --> marketing_campaign : many2one
-class "utm.campaign" as utm_campaign
-marketing_activity --> utm_campaign : many2one
-class "ir.model" as ir_model
-marketing_activity --> ir_model : many2one
-marketing_activity --> marketing_activity : many2one
-marketing_activity .. marketing_activity : many2many
-marketing_activity --|> marketing_activity : one2many
-marketing_activity --|> marketing_trace : one2many
-marketing_campaign --> utm_campaign : many2one
-marketing_campaign --> ir_model : many2one
-class "ir.model.fields" as ir_model_fields
-marketing_campaign --> ir_model_fields : many2one
-class "mailing.filter" as mailing_filter
-marketing_campaign --> mailing_filter : many2one
-marketing_campaign --|> marketing_activity : one2many
-marketing_campaign --|> marketing_participant : one2many
-marketing_participant --> marketing_campaign : many2one
-marketing_participant --> ir_model : many2one
-marketing_participant --|> marketing_trace : one2many
-marketing_trace --> marketing_participant : many2one
-marketing_trace --> marketing_activity : many2one
-marketing_trace --> marketing_trace : many2one
-marketing_trace --|> marketing_trace : one2many
-class "mailing.trace" as mailing_trace
-marketing_trace --|> mailing_trace : one2many
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Marketing Automation - Generated Coverage
+component "Module Overview" as overview
+component "Models\n11" as models
+component "Views / XML\n21 views\n11 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n14 files" as frontend
+component "Security / Data\n0 rules\n6 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Enterprise Addons/marketing_automation/Models|Models]] (11)
+- Views and XML: [[docs/Enterprise Addons/marketing_automation/Views|Views]] (11 files)
+- Frontend: [[docs/Enterprise Addons/marketing_automation/Frontend|Frontend]] (14 files)
+
+## Key models
+
+- `mail.compose.message`
+- `mailing.mailing`
+- `mailing.trace`
+- `mailing.trace.report`
+- `marketing.activity`
+- `marketing.campaign`
+- `marketing.campaign.test`
+- `marketing.participant`
+- `marketing.trace`
+- `utm.campaign`
+- `utm.source`
 
 ## Navigation
 
@@ -85,6 +91,7 @@ marketing_trace --|> mailing_trace : one2many
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

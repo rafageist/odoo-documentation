@@ -9,27 +9,69 @@ tags: [odoo, community, module]
 - Source: odoo/addons/hr_homeworking_calendar
 - Dependencies: [[docs/Community Addons/hr_homeworking/hr_homeworking|hr_homeworking]], [[docs/Community Addons/calendar/calendar|calendar]]
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 3
+- XML files with UI/data artifacts: 2
 - Views: 1
 - Actions: 1
 - Menus: 0
 - Rules (ir.rule): 2
 - Access CSV entries: 1
+- Controller units: 0
+- Frontend asset files: 7
 
-## Detected Models
-
-- `HrEmployee`
-- `ResPartner`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Remote Work with calendar - Models and Relations
-class HrEmployee
-class ResPartner
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Remote Work with calendar - Generated Coverage
+component "Module Overview" as overview
+component "Models\n3" as models
+component "Views / XML\n1 views\n2 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n7 files" as frontend
+component "Security / Data\n2 rules\n1 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/hr_homeworking_calendar/Models|Models]] (3)
+- Views and XML: [[docs/Community Addons/hr_homeworking_calendar/Views|Views]] (2 files)
+- Frontend: [[docs/Community Addons/hr_homeworking_calendar/Frontend|Frontend]] (7 files)
+
+## Key models
+
+- `homework.location.wizard`
+- `hr.employee`
+- `res.partner`
 
 ## Navigation
 
@@ -37,6 +79,7 @@ class ResPartner
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

@@ -10,35 +10,69 @@ tags: [odoo, enterprise, module]
 - Source: enterprise/l10n_be_hr_payroll_account
 - Dependencies: [[docs/Enterprise Addons/l10n_be_hr_payroll/l10n_be_hr_payroll|l10n_be_hr_payroll]], [[docs/Enterprise Addons/hr_payroll_account/hr_payroll_account|hr_payroll_account]], [[docs/Community Addons/l10n_be/l10n_be|l10n_be]]
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 4
+- XML files with UI/data artifacts: 2
 - Views: 2
 - Actions: 0
 - Menus: 0
 - Rules (ir.rule): 0
 - Access CSV entries: 0
+- Controller units: 0
+- Frontend asset files: 0
 
-## Detected Models
-
-- `l10n_be.274_xx`
-- `ResCompany`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Belgium - Payroll with Accounting - Models and Relations
-class "l10n_be.274_xx" as l10n_be_274_xx
-class ResCompany
-class "account.move" as account_move
-l10n_be_274_xx --> account_move : many2one
-class "account.account" as account_account
-ResCompany --> account_account : many2one
-ResCompany --> account_account : many2one
-ResCompany --> account_account : many2one
-class "account.journal" as account_journal
-ResCompany --> account_journal : many2one
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Belgium - Payroll with Accounting - Generated Coverage
+component "Module Overview" as overview
+component "Models\n4" as models
+component "Views / XML\n2 views\n2 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n0 files" as frontend
+component "Security / Data\n0 rules\n0 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Enterprise Addons/l10n_be_hr_payroll_account/Models|Models]] (4)
+- Views and XML: [[docs/Enterprise Addons/l10n_be_hr_payroll_account/Views|Views]] (2 files)
+
+## Key models
+
+- `account.chart.template`
+- `l10n_be.274_xx`
+- `res.company`
+- `res.config.settings`
 
 ## Navigation
 
@@ -46,5 +80,6 @@ ResCompany --> account_journal : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 

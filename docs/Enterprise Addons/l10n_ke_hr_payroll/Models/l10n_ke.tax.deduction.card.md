@@ -1,0 +1,37 @@
+<!-- GENERATED:MODEL -->
+---
+tags: [odoo, enterprise, generated, model]
+---
+
+# l10n_ke.tax.deduction.card
+
+- Module: [[docs/Enterprise Addons/l10n_ke_hr_payroll/l10n_ke_hr_payroll|l10n_ke_hr_payroll]]
+- Scope: Enterprise Addons
+- Defined in module: yes
+- Source files: `models/l10n_ke_tax_deduction_card.py`
+- Python classes: `L10n_KeTaxDeductionCard`
+- Description: HR Tax Deduction Card Report By Employee
+- Inherits: `hr.payroll.declaration.mixin`
+
+## Field footprint
+
+- Detected fields: 1
+- Field types: `Char` x 1
+- Relation fields: 0
+
+## Sample fields
+
+- `name`: `Char` (compute `_compute_name`, store `True`)
+
+## Method hints
+
+- Detected methods: 6
+- Action methods: `action_generate_declarations`
+- Compute methods: `_compute_name`
+- Onchange methods: none
+
+## Navigation
+
+- **Parent:** [[docs/Enterprise Addons/l10n_ke_hr_payroll/Models]]
+
+<!-- GENERATED:MODEL -->

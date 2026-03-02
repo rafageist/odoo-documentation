@@ -9,45 +9,71 @@ tags: [odoo, enterprise, module]
 - Source: enterprise/account_transfer
 - Dependencies: [[docs/Enterprise Addons/account_accountant/account_accountant|account_accountant]]
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 6
+- XML files with UI/data artifacts: 2
 - Views: 4
 - Actions: 2
 - Menus: 1
 - Rules (ir.rule): 1
 - Access CSV entries: 6
+- Controller units: 0
+- Frontend asset files: 0
 
-## Detected Models
-
-- `AccountJournal`
-- `AccountMove`
-- `AccountMoveLine`
-- `account.transfer.model`
-- `account.transfer.model.line`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Account Transfers - Models and Relations
-class AccountJournal
-class AccountMove
-class AccountMoveLine
-class "account.transfer.model" as account_transfer_model
-class "account.transfer.model.line" as account_transfer_model_line
-AccountMove --> account_transfer_model : many2one
-class "account.journal" as account_journal
-account_transfer_model --> account_journal : many2one
-class "res.company" as res_company
-account_transfer_model --> res_company : many2one
-class "account.account" as account_account
-account_transfer_model .. account_account : many2many
-account_transfer_model --|> account_transfer_model_line : one2many
-class "account.move" as account_move
-account_transfer_model --|> account_move : one2many
-account_transfer_model_line --> account_transfer_model : many2one
-account_transfer_model_line --> account_account : many2one
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Account Transfers - Generated Coverage
+component "Module Overview" as overview
+component "Models\n6" as models
+component "Views / XML\n4 views\n2 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n0 files" as frontend
+component "Security / Data\n1 rules\n6 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Enterprise Addons/account_transfer/Models|Models]] (6)
+- Views and XML: [[docs/Enterprise Addons/account_transfer/Views|Views]] (2 files)
+
+## Key models
+
+- `account.chart.template`
+- `account.journal`
+- `account.move`
+- `account.move.line`
+- `account.transfer.model`
+- `account.transfer.model.line`
 
 ## Navigation
 
@@ -55,6 +81,7 @@ account_transfer_model_line --> account_account : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

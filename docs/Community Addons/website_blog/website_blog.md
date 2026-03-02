@@ -13,46 +13,73 @@ tags: [odoo, community, module]
 
 Publish blog posts, announces, news
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 6
+- XML files with UI/data artifacts: 5
 - Views: 12
 - Actions: 7
 - Menus: 5
 - Rules (ir.rule): 2
 - Access CSV entries: 16
+- Controller units: 1
+- Frontend asset files: 18
 
-## Detected Models
-
-- `Website`
-- `blog.blog`
-- `blog.tag.category`
-- `blog.tag`
-- `blog.post`
-- `WebsiteSnippetFilter`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Blog - Models and Relations
-class Website
-class "blog.blog" as blog_blog
-class "blog.tag.category" as blog_tag_category
-class "blog.tag" as blog_tag
-class "blog.post" as blog_post
-class WebsiteSnippetFilter
-blog_blog --|> blog_post : one2many
-blog_tag_category --|> blog_tag : one2many
-blog_tag --> blog_tag_category : many2one
-blog_tag .. blog_post : many2many
-class "res.partner" as res_partner
-blog_post --> res_partner : many2one
-blog_post --> blog_blog : many2one
-blog_post .. blog_tag : many2many
-class "res.users" as res_users
-blog_post --> res_users : many2one
-blog_post --> res_users : many2one
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Blog - Generated Coverage
+component "Module Overview" as overview
+component "Models\n6" as models
+component "Views / XML\n12 views\n5 files" as views
+component "Controllers\n4 routes" as controllers
+component "Frontend\n18 files" as frontend
+component "Security / Data\n2 rules\n16 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/website_blog/Models|Models]] (6)
+- Views and XML: [[docs/Community Addons/website_blog/Views|Views]] (5 files)
+- Controllers: [[docs/Community Addons/website_blog/Controllers|Controllers]] (1)
+- Frontend: [[docs/Community Addons/website_blog/Frontend|Frontend]] (18 files)
+
+## Key models
+
+- `blog.blog`
+- `blog.post`
+- `blog.tag`
+- `blog.tag.category`
+- `website`
+- `website.snippet.filter`
 
 ## Navigation
 
@@ -60,6 +87,7 @@ blog_post --> res_users : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

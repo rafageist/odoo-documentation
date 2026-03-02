@@ -13,49 +13,77 @@ tags: [odoo, enterprise, module]
 
 This module is used for Online bank synchronization.
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 10
+- XML files with UI/data artifacts: 9
 - Views: 13
 - Actions: 1
 - Menus: 1
 - Rules (ir.rule): 2
 - Access CSV entries: 11
+- Controller units: 2
+- Frontend asset files: 27
 
-## Detected Models
-
-- `AccountBankStatementLine`
-- `AccountJournal`
-- `account.online.account`
-- `account.online.link`
-- `ResCompany`
-- `ResPartner`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Online Bank Statement Synchronization - Models and Relations
-class AccountBankStatementLine
-class AccountJournal
-class "account.online.account" as account_online_account
-class "account.online.link" as account_online_link
-class ResCompany
-class ResPartner
-AccountBankStatementLine --> account_online_account : many2one
-AccountBankStatementLine --> account_online_link : many2one
-AccountJournal --> account_online_account : many2one
-AccountJournal --> account_online_link : many2one
-account_online_account --> account_online_link : many2one
-class "account.journal" as account_journal
-account_online_account --|> account_journal : one2many
-class "res.company" as res_company
-account_online_account --> res_company : many2one
-class "res.currency" as res_currency
-account_online_account --> res_currency : many2one
-account_online_link --|> account_online_account : one2many
-account_online_link --> res_company : many2one
-account_online_link --|> account_journal : one2many
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Online Bank Statement Synchronization - Generated Coverage
+component "Module Overview" as overview
+component "Models\n10" as models
+component "Views / XML\n13 views\n9 files" as views
+component "Controllers\n3 routes" as controllers
+component "Frontend\n27 files" as frontend
+component "Security / Data\n2 rules\n11 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Enterprise Addons/account_online_synchronization/Models|Models]] (10)
+- Views and XML: [[docs/Enterprise Addons/account_online_synchronization/Views|Views]] (9 files)
+- Controllers: [[docs/Enterprise Addons/account_online_synchronization/Controllers|Controllers]] (2)
+- Frontend: [[docs/Enterprise Addons/account_online_synchronization/Frontend|Frontend]] (27 files)
+
+## Key models
+
+- `account.bank.selection`
+- `account.bank.statement.line`
+- `account.bank.statement.line.transient`
+- `account.duplicate.transaction.wizard`
+- `account.journal`
+- `account.missing.transaction.wizard`
+- `account.online.account`
+- `account.online.link`
+- `res.company`
+- `res.partner`
 
 ## Navigation
 
@@ -63,6 +91,7 @@ account_online_link --|> account_journal : one2many
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

@@ -13,85 +13,78 @@ tags: [odoo, enterprise, module]
 
 Assess your employees
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 15
+- XML files with UI/data artifacts: 13
 - Views: 37
 - Actions: 18
 - Menus: 12
 - Rules (ir.rule): 14
 - Access CSV entries: 15
+- Controller units: 0
+- Frontend asset files: 30
 
-## Detected Models
+## Module map
+
+```plantuml
+@startuml
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Appraisals - Generated Coverage
+component "Module Overview" as overview
+component "Models\n15" as models
+component "Views / XML\n37 views\n13 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n30 files" as frontend
+component "Security / Data\n14 rules\n15 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
+@enduml
+```
+
+## Detail notes
+
+- Models: [[docs/Enterprise Addons/hr_appraisal/Models|Models]] (15)
+- Views and XML: [[docs/Enterprise Addons/hr_appraisal/Views|Views]] (13 files)
+- Frontend: [[docs/Enterprise Addons/hr_appraisal/Frontend|Frontend]] (30 files)
+
+## Key models
 
 - `hr.appraisal`
+- `hr.appraisal.campaign.wizard`
 - `hr.appraisal.goal`
 - `hr.appraisal.goal.tag`
 - `hr.appraisal.note`
 - `hr.appraisal.template`
-- `HrDepartment`
-- `HrEmployee`
-- `HrEmployeePublic`
-- `MailTemplate`
-- `ResCompany`
-- `ResUsers`
-
-```plantuml
-@startuml
-!include ../../../templates/DiagramStyles.puml
-title Appraisals - Models and Relations
-class "hr.appraisal" as hr_appraisal
-class "hr.appraisal.goal" as hr_appraisal_goal
-class "hr.appraisal.goal.tag" as hr_appraisal_goal_tag
-class "hr.appraisal.note" as hr_appraisal_note
-class "hr.appraisal.template" as hr_appraisal_template
-class HrDepartment
-class HrEmployee
-class HrEmployeePublic
-class MailTemplate
-class ResCompany
-class ResUsers
-class "hr.employee" as hr_employee
-hr_appraisal --> hr_employee : many2one
-class "res.users" as res_users
-hr_appraisal --> res_users : many2one
-class "res.company" as res_company
-hr_appraisal --> res_company : many2one
-class "hr.department" as hr_department
-hr_appraisal --> hr_department : many2one
-class "hr.job" as hr_job
-hr_appraisal --> hr_job : many2one
-hr_appraisal --> hr_appraisal : many2one
-hr_appraisal --> hr_appraisal_template : many2one
-hr_appraisal .. hr_employee : many2many
-hr_appraisal .. hr_employee : many2many
-hr_appraisal --> hr_appraisal_note : many2one
-hr_appraisal --> hr_appraisal : many2one
-hr_appraisal_goal .. hr_employee : many2many
-hr_appraisal_goal .. hr_employee : many2many
-hr_appraisal_goal --> res_company : many2one
-hr_appraisal_goal .. hr_employee : many2many
-hr_appraisal_goal .. hr_department : many2many
-hr_appraisal_goal .. hr_job : many2many
-hr_appraisal_goal .. hr_appraisal_goal_tag : many2many
-hr_appraisal_goal --> hr_appraisal_goal : many2one
-hr_appraisal_goal --> hr_appraisal_goal : many2one
-hr_appraisal_goal --|> hr_appraisal_goal : one2many
-hr_appraisal_note --> res_company : many2one
-hr_appraisal_template --> res_company : many2one
-hr_appraisal_template .. hr_department : many2many
-HrDepartment .. hr_appraisal_template : many2many
-class "res.partner" as res_partner
-HrEmployee --> res_partner : many2one
-HrEmployee --|> hr_appraisal : one2many
-HrEmployee .. hr_appraisal_goal : many2many
-HrEmployee --> hr_appraisal : many2one
-HrEmployeePublic --> res_users : many2one
-HrEmployeePublic --> hr_appraisal : many2one
-ResCompany --|> hr_appraisal_note : one2many
-class "mail.template" as mail_template
-ResCompany --> mail_template : many2one
-@enduml
-```
+- `hr.department`
+- `hr.departure.wizard`
+- `hr.employee`
+- `hr.employee.public`
+- `mail.template`
+- `request.appraisal`
 
 ## Navigation
 
@@ -99,6 +92,7 @@ ResCompany --> mail_template : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

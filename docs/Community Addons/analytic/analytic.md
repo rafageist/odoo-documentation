@@ -9,57 +9,74 @@ tags: [odoo, community, module]
 - Source: odoo/addons/analytic
 - Dependencies: base (not documented), [[docs/Community Addons/mail/mail|mail]], [[docs/Community Addons/uom/uom|uom]]
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 8
+- XML files with UI/data artifacts: 5
 - Views: 15
 - Actions: 6
 - Menus: 0
 - Rules (ir.rule): 4
 - Access CSV entries: 5
+- Controller units: 0
+- Frontend asset files: 9
 
-## Detected Models
-
-- `account.analytic.account`
-- `account.analytic.distribution.model`
-- `account.analytic.line`
-- `account.analytic.plan`
-- `account.analytic.applicability`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Analytic Accounting - Models and Relations
-class "account.analytic.account" as account_analytic_account
-class "account.analytic.distribution.model" as account_analytic_distribution_model
-class "account.analytic.line" as account_analytic_line
-class "account.analytic.plan" as account_analytic_plan
-class "account.analytic.applicability" as account_analytic_applicability
-account_analytic_account --> account_analytic_plan : many2one
-account_analytic_account --> account_analytic_plan : many2one
-account_analytic_account --|> account_analytic_line : one2many
-class "res.company" as res_company
-account_analytic_account --> res_company : many2one
-class "res.partner" as res_partner
-account_analytic_account --> res_partner : many2one
-account_analytic_distribution_model --> res_partner : many2one
-class "res.partner.category" as res_partner_category
-account_analytic_distribution_model --> res_partner_category : many2one
-account_analytic_distribution_model --> res_company : many2one
-class "uom.uom" as uom_uom
-account_analytic_line --> uom_uom : many2one
-account_analytic_line --> res_partner : many2one
-class "res.users" as res_users
-account_analytic_line --> res_users : many2one
-account_analytic_line --> res_company : many2one
-account_analytic_plan --> account_analytic_plan : many2one
-account_analytic_plan --> account_analytic_plan : many2one
-account_analytic_plan --|> account_analytic_plan : one2many
-account_analytic_plan --|> account_analytic_account : one2many
-account_analytic_plan --|> account_analytic_applicability : one2many
-account_analytic_applicability --> account_analytic_plan : many2one
-account_analytic_applicability --> res_company : many2one
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Analytic Accounting - Generated Coverage
+component "Module Overview" as overview
+component "Models\n8" as models
+component "Views / XML\n15 views\n5 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n9 files" as frontend
+component "Security / Data\n4 rules\n5 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/analytic/Models|Models]] (8)
+- Views and XML: [[docs/Community Addons/analytic/Views|Views]] (5 files)
+- Frontend: [[docs/Community Addons/analytic/Frontend|Frontend]] (9 files)
+
+## Key models
+
+- `account.analytic.account`
+- `account.analytic.applicability`
+- `account.analytic.distribution.model`
+- `account.analytic.line`
+- `account.analytic.plan`
+- `analytic.mixin`
+- `analytic.plan.fields.mixin`
+- `res.config.settings`
 
 ## Navigation
 
@@ -67,6 +84,7 @@ account_analytic_applicability --> res_company : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

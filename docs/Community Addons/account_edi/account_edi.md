@@ -9,43 +9,73 @@ tags: [odoo, community, module]
 - Source: odoo/addons/account_edi
 - Dependencies: [[docs/Community Addons/account/account|account]]
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 8
+- XML files with UI/data artifacts: 3
 - Views: 8
 - Actions: 1
 - Menus: 0
 - Rules (ir.rule): 0
 - Access CSV entries: 4
+- Controller units: 0
+- Frontend asset files: 0
 
-## Detected Models
-
-- `account.edi.document`
-- `account.edi.format`
-- `AccountJournal`
-- `AccountMove`
-- `IrActionsReport`
-- `IrAttachment`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Import/Export Invoices From XML/PDF - Models and Relations
-class "account.edi.document" as account_edi_document
-class "account.edi.format" as account_edi_format
-class AccountJournal
-class AccountMove
-class IrActionsReport
-class IrAttachment
-class "account.move" as account_move
-account_edi_document --> account_move : many2one
-account_edi_document --> account_edi_format : many2one
-class "ir.attachment" as ir_attachment
-account_edi_document --> ir_attachment : many2one
-AccountJournal .. account_edi_format : many2many
-AccountJournal .. account_edi_format : many2many
-AccountMove --|> account_edi_document : one2many
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Import/Export Invoices From XML/PDF - Generated Coverage
+component "Module Overview" as overview
+component "Models\n8" as models
+component "Views / XML\n8 views\n3 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n0 files" as frontend
+component "Security / Data\n0 rules\n4 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/account_edi/Models|Models]] (8)
+- Views and XML: [[docs/Community Addons/account_edi/Views|Views]] (3 files)
+
+## Key models
+
+- `account.edi.document`
+- `account.edi.format`
+- `account.journal`
+- `account.move`
+- `account.move.send`
+- `account.resequence.wizard`
+- `ir.actions.report`
+- `ir.attachment`
 
 ## Navigation
 
@@ -53,6 +83,7 @@ AccountMove --|> account_edi_document : one2many
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

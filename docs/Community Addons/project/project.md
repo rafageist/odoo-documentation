@@ -13,122 +13,79 @@ tags: [odoo, community, module]
 
 Organize and plan your projects
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 28
+- XML files with UI/data artifacts: 25
 - Views: 112
 - Actions: 109
 - Menus: 19
 - Rules (ir.rule): 31
 - Access CSV entries: 54
+- Controller units: 1
+- Frontend asset files: 155
 
-## Detected Models
+## Module map
 
-- `AccountAnalyticAccount`
-- `DigestDigest`
-- `IrUiMenu`
-- `MailMessage`
+```plantuml
+@startuml
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Project - Generated Coverage
+component "Module Overview" as overview
+component "Models\n28" as models
+component "Views / XML\n112 views\n25 files" as views
+component "Controllers\n9 routes" as controllers
+component "Frontend\n155 files" as frontend
+component "Security / Data\n31 rules\n54 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
+@enduml
+```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/project/Models|Models]] (28)
+- Views and XML: [[docs/Community Addons/project/Views|Views]] (25 files)
+- Controllers: [[docs/Community Addons/project/Controllers|Controllers]] (1)
+- Frontend: [[docs/Community Addons/project/Frontend|Frontend]] (155 files)
+
+## Key models
+
+- `account.analytic.account`
+- `digest.digest`
+- `ir.ui.menu`
+- `mail.message`
+- `portal.share`
 - `project.collaborator`
 - `project.milestone`
 - `project.project`
 - `project.project.stage`
+- `project.project.stage.delete.wizard`
 - `project.role`
-- `project.tags`
-- `project.task`
-- `project.task.recurrence`
-- `project.task.stage.personal`
-- `project.task.type`
-- `project.update`
-- `ResPartner`
-- `ResUsers`
-
-```plantuml
-@startuml
-!include ../../../templates/DiagramStyles.puml
-title Project - Models and Relations
-class AccountAnalyticAccount
-class DigestDigest
-class IrUiMenu
-class MailMessage
-class "project.collaborator" as project_collaborator
-class "project.milestone" as project_milestone
-class "project.project" as project_project
-class "project.project.stage" as project_project_stage
-class "project.role" as project_role
-class "project.tags" as project_tags
-class "project.task" as project_task
-class "project.task.recurrence" as project_task_recurrence
-class "project.task.stage.personal" as project_task_stage_personal
-class "project.task.type" as project_task_type
-class "project.update" as project_update
-class ResPartner
-class ResUsers
-AccountAnalyticAccount --|> project_project : one2many
-project_collaborator --> project_project : many2one
-class "res.partner" as res_partner
-project_collaborator --> res_partner : many2one
-project_milestone --> project_project : many2one
-project_milestone --|> project_task : one2many
-project_project --> res_partner : many2one
-class "res.company" as res_company
-project_project --> res_company : many2one
-class "res.currency" as res_currency
-project_project --> res_currency : many2one
-class "account.analytic.account" as account_analytic_account
-project_project --> account_analytic_account : many2one
-class "res.users" as res_users
-project_project .. res_users : many2many
-project_project --|> project_task : one2many
-class "resource.calendar" as resource_calendar
-project_project --> resource_calendar : many2one
-project_project .. project_task_type : many2many
-project_project --|> project_task : one2many
-project_project --> res_users : many2one
-project_project .. project_tags : many2many
-project_project --|> project_collaborator : one2many
-project_project --> project_project_stage : many2one
-project_project --|> project_update : one2many
-project_project --> project_update : many2one
-project_project --|> project_milestone : one2many
-project_project --> project_milestone : many2one
-class "mail.template" as mail_template
-project_project_stage --> mail_template : many2one
-project_project_stage --> res_company : many2one
-project_tags .. project_project : many2many
-project_tags .. project_task : many2many
-project_task --> project_task_type : many2one
-project_task .. project_tags : many2many
-project_task --> project_project : many2one
-project_task .. project_role : many2many
-project_task .. res_users : many2many
-project_task .. project_task_type : many2many
-project_task --> project_task_stage_personal : many2one
-project_task --> project_task_type : many2one
-project_task --> res_partner : many2one
-project_task --> res_company : many2one
-class "ir.attachment" as ir_attachment
-project_task --|> ir_attachment : one2many
-project_task --> ir_attachment : many2one
-project_task --> project_task : many2one
-project_task --|> project_task : one2many
-project_task --> project_milestone : many2one
-project_task .. project_task : many2many
-project_task .. project_task : many2many
-project_task --> project_task_recurrence : many2one
-project_task_recurrence --|> project_task : one2many
-project_task_stage_personal --> project_task : many2one
-project_task_stage_personal --> res_users : many2one
-project_task_stage_personal --> project_task_type : many2one
-project_task_type .. project_project : many2many
-project_task_type --> mail_template : many2one
-project_task_type --> mail_template : many2one
-project_task_type --> res_users : many2one
-project_update --> res_users : many2one
-project_update --> project_project : many2one
-ResPartner --|> project_project : one2many
-ResPartner --|> project_task : one2many
-ResUsers .. project_project : many2many
-@enduml
-```
+- `project.share.collaborator.wizard`
 
 ## Navigation
 
@@ -136,6 +93,7 @@ ResUsers .. project_project : many2many
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

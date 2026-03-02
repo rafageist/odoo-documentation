@@ -9,39 +9,74 @@ tags: [odoo, enterprise, module]
 - Source: enterprise/l10n_ro_saft
 - Dependencies: [[docs/Community Addons/l10n_ro/l10n_ro|l10n_ro]], [[docs/Enterprise Addons/account_saft/account_saft|account_saft]], [[docs/Enterprise Addons/account_asset/account_asset|account_asset]]
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 9
+- XML files with UI/data artifacts: 5
 - Views: 7
 - Actions: 0
 - Menus: 0
 - Rules (ir.rule): 0
 - Access CSV entries: 3
+- Controller units: 0
+- Frontend asset files: 0
 
-## Detected Models
-
-- `AccountAsset`
-- `l10n_ro_saft.account.asset.category`
-- `AccountMove`
-- `AccountTax`
-- `l10n_ro_saft.tax.type`
-- `ResCompany`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Romanian SAF-T Export - Models and Relations
-class AccountAsset
-class "l10n_ro_saft.account.asset.category" as l10n_ro_saft_account_asset_category
-class AccountMove
-class AccountTax
-class "l10n_ro_saft.tax.type" as l10n_ro_saft_tax_type
-class ResCompany
-AccountAsset --> l10n_ro_saft_account_asset_category : many2one
-class "account.asset" as account_asset
-l10n_ro_saft_account_asset_category --|> account_asset : one2many
-AccountTax --> l10n_ro_saft_tax_type : many2one
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Romanian SAF-T Export - Generated Coverage
+component "Module Overview" as overview
+component "Models\n9" as models
+component "Views / XML\n7 views\n5 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n0 files" as frontend
+component "Security / Data\n0 rules\n3 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Enterprise Addons/l10n_ro_saft/Models|Models]] (9)
+- Views and XML: [[docs/Enterprise Addons/l10n_ro_saft/Views|Views]] (5 files)
+
+## Key models
+
+- `account.asset`
+- `account.chart.template`
+- `account.general.ledger.report.handler`
+- `account.move`
+- `account.tax`
+- `l10n_ro_saft.account.asset.category`
+- `l10n_ro_saft.tax.type`
+- `res.company`
+- `res.config.settings`
 
 ## Navigation
 
@@ -49,6 +84,7 @@ AccountTax --> l10n_ro_saft_tax_type : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

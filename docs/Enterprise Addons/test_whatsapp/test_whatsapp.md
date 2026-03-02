@@ -13,15 +13,63 @@ tags: [odoo, enterprise, module]
 
 WhatsApp Tests
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 6
+- XML files with UI/data artifacts: 0
 - Views: 0
 - Actions: 0
 - Menus: 0
 - Rules (ir.rule): 0
 - Access CSV entries: 11
+- Controller units: 0
+- Frontend asset files: 0
 
-## Detected Models
+## Module map
+
+```plantuml
+@startuml
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title WhatsApp Tests - Generated Coverage
+component "Module Overview" as overview
+component "Models\n6" as models
+component "Views / XML\n0 views\n0 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n0 files" as frontend
+component "Security / Data\n0 rules\n11 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
+@enduml
+```
+
+## Detail notes
+
+- Models: [[docs/Enterprise Addons/test_whatsapp/Models|Models]] (6)
+
+## Key models
 
 - `whatsapp.test.base`
 - `whatsapp.test.nothread`
@@ -30,40 +78,13 @@ WhatsApp Tests
 - `whatsapp.test.selection`
 - `whatsapp.test.timezone`
 
-```plantuml
-@startuml
-!include ../../../templates/DiagramStyles.puml
-title WhatsApp Tests - Models and Relations
-class "whatsapp.test.base" as whatsapp_test_base
-class "whatsapp.test.nothread" as whatsapp_test_nothread
-class "whatsapp.test.nothread.noname" as whatsapp_test_nothread_noname
-class "whatsapp.test.responsible" as whatsapp_test_responsible
-class "whatsapp.test.selection" as whatsapp_test_selection
-class "whatsapp.test.timezone" as whatsapp_test_timezone
-class "res.country" as res_country
-whatsapp_test_base --> res_country : many2one
-class "res.partner" as res_partner
-whatsapp_test_base --> res_partner : many2one
-whatsapp_test_base .. res_partner : many2many
-class "res.users" as res_users
-whatsapp_test_base --> res_users : many2one
-whatsapp_test_base --> whatsapp_test_selection : many2one
-whatsapp_test_nothread --> res_country : many2one
-whatsapp_test_nothread --> res_partner : many2one
-whatsapp_test_nothread --> res_users : many2one
-whatsapp_test_nothread_noname --> res_country : many2one
-whatsapp_test_nothread_noname --> res_partner : many2one
-whatsapp_test_nothread_noname --> res_users : many2one
-whatsapp_test_responsible .. res_users : many2many
-@enduml
-```
-
 ## Navigation
 
 - [[../Enterprise Addons/Enterprise Addons|Back to scope]]
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

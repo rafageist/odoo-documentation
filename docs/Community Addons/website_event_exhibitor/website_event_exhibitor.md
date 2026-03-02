@@ -13,45 +13,73 @@ tags: [odoo, community, module]
 
 Event: manage sponsors and exhibitors
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 6
+- XML files with UI/data artifacts: 5
 - Views: 9
 - Actions: 3
 - Menus: 1
 - Rules (ir.rule): 1
 - Access CSV entries: 5
+- Controller units: 1
+- Frontend asset files: 5
 
-## Detected Models
-
-- `EventEvent`
-- `event.sponsor`
-- `event.sponsor.type`
-- `EventType`
-- `Website`
-- `WebsiteEventMenu`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Event Exhibitors - Models and Relations
-class EventEvent
-class "event.sponsor" as event_sponsor
-class "event.sponsor.type" as event_sponsor_type
-class EventType
-class Website
-class WebsiteEventMenu
-EventEvent --|> event_sponsor : one2many
-class "website.event.menu" as website_event_menu
-EventEvent --|> website_event_menu : one2many
-class "event.event" as event_event
-event_sponsor --> event_event : many2one
-event_sponsor --> event_sponsor_type : many2one
-class "res.partner" as res_partner
-event_sponsor --> res_partner : many2one
-class "res.country" as res_country
-event_sponsor --> res_country : many2one
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Event Exhibitors - Generated Coverage
+component "Module Overview" as overview
+component "Models\n6" as models
+component "Views / XML\n9 views\n5 files" as views
+component "Controllers\n3 routes" as controllers
+component "Frontend\n5 files" as frontend
+component "Security / Data\n1 rules\n5 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/website_event_exhibitor/Models|Models]] (6)
+- Views and XML: [[docs/Community Addons/website_event_exhibitor/Views|Views]] (5 files)
+- Controllers: [[docs/Community Addons/website_event_exhibitor/Controllers|Controllers]] (1)
+- Frontend: [[docs/Community Addons/website_event_exhibitor/Frontend|Frontend]] (5 files)
+
+## Key models
+
+- `event.event`
+- `event.sponsor`
+- `event.sponsor.type`
+- `event.type`
+- `website`
+- `website.event.menu`
 
 ## Navigation
 
@@ -59,6 +87,7 @@ event_sponsor --> res_country : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

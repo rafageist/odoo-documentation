@@ -1,0 +1,32 @@
+<!-- GENERATED:VIEWFILE -->
+---
+tags: [odoo, enterprise, generated, views]
+---
+
+# views/res_config_settings_views.xml
+
+- Module: [[docs/Enterprise Addons/planning/planning|planning]]
+- Scope: Enterprise Addons
+- Source file: `views/res_config_settings_views.xml`
+- Views: 1
+- Actions: 0
+- Menus: 0
+- Rules: 0
+
+## View records
+
+### `res_config_settings_view_form`
+- Name: res.config.settings.view.form.inherit.planning
+- Model: `res.config.settings`
+- Type: inferred from arch
+- Inherits: `base.res_config_settings_view_form`
+- Root tag: `xpath`
+- Field references: 4
+- Sample fields: `module_project_forecast`, `planning_employee_unavailabilities`, `planning_generation_interval`, `planning_self_unassign_days_before`
+- XPath or positional patches: 1
+
+## Navigation
+
+- **Parent:** [[docs/Enterprise Addons/planning/Views]]
+
+<!-- GENERATED:VIEWFILE -->

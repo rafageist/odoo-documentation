@@ -13,101 +13,79 @@ tags: [odoo, enterprise, module]
 
 Work Orders, Planning, Stock Reports.
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 20
+- XML files with UI/data artifacts: 13
 - Views: 44
 - Actions: 18
 - Menus: 6
 - Rules (ir.rule): 0
 - Access CSV entries: 2
+- Controller units: 1
+- Frontend asset files: 54
 
-## Detected Models
-
-- `HrEmployee`
-- `mrp.bom`
-- `MrpProduction`
-- `mrp.workcenter`
-- `MrpWorkcenterProductivity`
-- `mrp.workorder`
-- `QualityPointTest_Type`
-- `MrpRoutingWorkcenter`
-- `QualityPoint`
-- `QualityAlert`
-- `QualityCheck`
-- `StockMove`
-- `StockMoveLine`
-- `StockPickingType`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title MRP II - Models and Relations
-class HrEmployee
-class "mrp.bom" as mrp_bom
-class MrpProduction
-class "mrp.workcenter" as mrp_workcenter
-class MrpWorkcenterProductivity
-class "mrp.workorder" as mrp_workorder
-class QualityPointTest_Type
-class MrpRoutingWorkcenter
-class QualityPoint
-class QualityAlert
-class QualityCheck
-class StockMove
-class StockMoveLine
-class StockPickingType
-class "quality.check" as quality_check
-MrpProduction --|> quality_check : one2many
-class "hr.employee" as hr_employee
-MrpProduction .. hr_employee : many2many
-mrp_workcenter .. hr_employee : many2many
-MrpWorkcenterProductivity --> hr_employee : many2one
-class "quality.point" as quality_point
-mrp_workorder .. quality_point : many2many
-mrp_workorder --|> quality_check : one2many
-mrp_workorder .. quality_check : many2many
-mrp_workorder .. quality_check : many2many
-class "quality.alert" as quality_alert
-mrp_workorder --|> quality_alert : one2many
-mrp_workorder --> quality_check : many2one
-class "quality.point.test_type" as quality_point_test_type
-mrp_workorder --> quality_point_test_type : many2one
-mrp_workorder --> hr_employee : many2one
-mrp_workorder .. hr_employee : many2many
-mrp_workorder .. hr_employee : many2many
-mrp_workorder .. hr_employee : many2many
-MrpRoutingWorkcenter --|> quality_point : one2many
-class "stock.picking.type" as stock_picking_type
-MrpRoutingWorkcenter --|> stock_picking_type : one2many
-class "mrp.routing.workcenter" as mrp_routing_workcenter
-QualityPoint --> mrp_routing_workcenter : many2one
-class "product.product" as product_product
-QualityPoint --|> product_product : one2many
-QualityPoint --|> product_product : one2many
-QualityPoint --> quality_point_test_type : many2one
-QualityPoint --> product_product : many2one
-QualityAlert --> mrp_workorder : many2one
-QualityAlert --> mrp_workcenter : many2one
-class "mrp.production" as mrp_production
-QualityAlert --> mrp_production : many2one
-QualityCheck --> mrp_workorder : many2one
-QualityCheck --> mrp_workcenter : many2one
-QualityCheck --> mrp_production : many2one
-QualityCheck --> quality_check : many2one
-QualityCheck --> quality_check : many2one
-class "stock.move" as stock_move
-QualityCheck --> stock_move : many2one
-QualityCheck --> product_product : many2one
-class "uom.uom" as uom_uom
-QualityCheck --> uom_uom : many2one
-class "stock.lot" as stock_lot
-QualityCheck .. stock_lot : many2many
-QualityCheck --> hr_employee : many2one
-StockMove --|> quality_check : one2many
-class "stock.move.line" as stock_move_line
-StockMove --|> stock_move_line : one2many
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title MRP II - Generated Coverage
+component "Module Overview" as overview
+component "Models\n20" as models
+component "Views / XML\n44 views\n13 files" as views
+component "Controllers\n1 routes" as controllers
+component "Frontend\n54 files" as frontend
+component "Security / Data\n0 rules\n2 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Enterprise Addons/mrp_workorder/Models|Models]] (20)
+- Views and XML: [[docs/Enterprise Addons/mrp_workorder/Views|Views]] (13 files)
+- Controllers: [[docs/Enterprise Addons/mrp_workorder/Controllers|Controllers]] (1)
+- Frontend: [[docs/Enterprise Addons/mrp_workorder/Frontend|Frontend]] (54 files)
+
+## Key models
+
+- `change.production.qty`
+- `hr.employee`
+- `mrp.bom`
+- `mrp.production`
+- `mrp.production.backorder`
+- `mrp.routing.workcenter`
+- `mrp.workcenter`
+- `mrp.workcenter.productivity`
+- `mrp.workorder`
+- `mrp_production.additional.workorder`
+- `propose.change`
+- `quality.alert`
 
 ## Navigation
 
@@ -115,6 +93,7 @@ StockMove --|> stock_move_line : one2many
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

@@ -9,55 +9,74 @@ tags: [odoo, community, module]
 - Source: odoo/addons/stock_picking_batch
 - Dependencies: [[docs/Community Addons/stock/stock|stock]]
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 8
+- XML files with UI/data artifacts: 9
 - Views: 22
 - Actions: 9
 - Menus: 3
 - Rules (ir.rule): 1
 - Access CSV entries: 3
+- Controller units: 0
+- Frontend asset files: 1
 
-## Detected Models
-
-- `StockMove`
-- `StockMoveLine`
-- `StockPickingType`
-- `StockPicking`
-- `stock.picking.batch`
-- `StockWarehouse`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Warehouse Management: Batch Transfer - Models and Relations
-class StockMove
-class StockMoveLine
-class StockPickingType
-class StockPicking
-class "stock.picking.batch" as stock_picking_batch
-class StockWarehouse
-class "product.category" as product_category
-StockPickingType .. product_category : many2many
-class "stock.location" as stock_location
-StockPickingType .. stock_location : many2many
-StockPicking --> stock_picking_batch : many2one
-class "res.users" as res_users
-stock_picking_batch --> res_users : many2one
-class "res.company" as res_company
-stock_picking_batch --> res_company : many2one
-class "stock.picking" as stock_picking
-stock_picking_batch --|> stock_picking : one2many
-stock_picking_batch --|> stock_picking : one2many
-class "stock.move" as stock_move
-stock_picking_batch --|> stock_move : one2many
-class "stock.move.line" as stock_move_line
-stock_picking_batch --|> stock_move_line : one2many
-class "stock.picking.type" as stock_picking_type
-stock_picking_batch --> stock_picking_type : many2one
-class "stock.warehouse" as stock_warehouse
-stock_picking_batch --> stock_warehouse : many2one
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Warehouse Management: Batch Transfer - Generated Coverage
+component "Module Overview" as overview
+component "Models\n8" as models
+component "Views / XML\n22 views\n9 files" as views
+component "Controllers\n0 routes" as controllers
+component "Frontend\n1 files" as frontend
+component "Security / Data\n1 rules\n3 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/stock_picking_batch/Models|Models]] (8)
+- Views and XML: [[docs/Community Addons/stock_picking_batch/Views|Views]] (9 files)
+- Frontend: [[docs/Community Addons/stock_picking_batch/Frontend|Frontend]] (1 files)
+
+## Key models
+
+- `stock.add.to.wave`
+- `stock.move`
+- `stock.move.line`
+- `stock.picking`
+- `stock.picking.batch`
+- `stock.picking.to.batch`
+- `stock.picking.type`
+- `stock.warehouse`
 
 ## Navigation
 
@@ -65,6 +84,7 @@ stock_picking_batch --> stock_warehouse : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

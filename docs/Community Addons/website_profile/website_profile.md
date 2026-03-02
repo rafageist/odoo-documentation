@@ -13,29 +13,70 @@ tags: [odoo, community, module]
 
 Access the website profile of the users
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 3
+- XML files with UI/data artifacts: 2
 - Views: 2
 - Actions: 0
 - Menus: 0
 - Rules (ir.rule): 0
 - Access CSV entries: 1
+- Controller units: 1
+- Frontend asset files: 6
 
-## Detected Models
-
-- `gamification.badge`
-- `ResUsers`
-- `Website`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Website profile - Models and Relations
-class "gamification.badge" as gamification_badge
-class ResUsers
-class Website
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Website profile - Generated Coverage
+component "Module Overview" as overview
+component "Models\n3" as models
+component "Views / XML\n2 views\n2 files" as views
+component "Controllers\n8 routes" as controllers
+component "Frontend\n6 files" as frontend
+component "Security / Data\n0 rules\n1 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/website_profile/Models|Models]] (3)
+- Views and XML: [[docs/Community Addons/website_profile/Views|Views]] (2 files)
+- Controllers: [[docs/Community Addons/website_profile/Controllers|Controllers]] (1)
+- Frontend: [[docs/Community Addons/website_profile/Frontend|Frontend]] (6 files)
+
+## Key models
+
+- `gamification.badge`
+- `res.users`
+- `website`
 
 ## Navigation
 
@@ -43,6 +84,7 @@ class Website
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

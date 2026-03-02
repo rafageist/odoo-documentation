@@ -1,0 +1,35 @@
+<!-- GENERATED:MODEL -->
+---
+tags: [odoo, enterprise, generated, model]
+---
+
+# res.config.settings
+
+- Module: [[docs/Enterprise Addons/l10n_be_hr_payroll_fleet/l10n_be_hr_payroll_fleet|l10n_be_hr_payroll_fleet]]
+- Scope: Enterprise Addons
+- Defined in module: extension only
+- Source files: `models/res_config_settings.py`
+- Python classes: `ResConfigSettings`
+
+## Field footprint
+
+- Detected fields: 1
+- Field types: `Integer` x 1
+- Relation fields: 0
+
+## Sample fields
+
+- `max_unused_cars`: `Integer`
+
+## Method hints
+
+- Detected methods: 0
+- Action methods: none
+- Compute methods: none
+- Onchange methods: none
+
+## Navigation
+
+- **Parent:** [[docs/Enterprise Addons/l10n_be_hr_payroll_fleet/Models]]
+
+<!-- GENERATED:MODEL -->

@@ -13,53 +13,78 @@ tags: [odoo, community, module]
 
 Enable customers to pay invoices on the portal and post payments when transactions are processed.
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 11
+- XML files with UI/data artifacts: 11
 - Views: 9
 - Actions: 1
 - Menus: 4
 - Rules (ir.rule): 1
 - Access CSV entries: 3
+- Controller units: 2
+- Frontend asset files: 3
 
-## Detected Models
-
-- `AccountJournal`
-- `AccountMove`
-- `AccountPayment`
-- `AccountPaymentMethod`
-- `AccountPaymentMethodLine`
-- `PaymentProvider`
-- `PaymentTransaction`
+## Module map
 
 ```plantuml
 @startuml
-!include ../../../templates/DiagramStyles.puml
-title Payment - Account - Models and Relations
-class AccountJournal
-class AccountMove
-class AccountPayment
-class AccountPaymentMethod
-class AccountPaymentMethodLine
-class PaymentProvider
-class PaymentTransaction
-class "payment.transaction" as payment_transaction
-AccountMove .. payment_transaction : many2many
-AccountMove .. payment_transaction : many2many
-AccountPayment --> payment_transaction : many2one
-class "payment.token" as payment_token
-AccountPayment --> payment_token : many2one
-AccountPayment .. payment_token : many2many
-class "account.payment" as account_payment
-AccountPayment --> account_payment : many2one
-class "payment.provider" as payment_provider
-AccountPaymentMethodLine --> payment_provider : many2one
-class "account.journal" as account_journal
-PaymentProvider --> account_journal : many2one
-PaymentTransaction --> account_payment : many2one
-class "account.move" as account_move
-PaymentTransaction .. account_move : many2many
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Payment - Account - Generated Coverage
+component "Module Overview" as overview
+component "Models\n11" as models
+component "Views / XML\n9 views\n11 files" as views
+component "Controllers\n5 routes" as controllers
+component "Frontend\n3 files" as frontend
+component "Security / Data\n1 rules\n3 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
 @enduml
 ```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/account_payment/Models|Models]] (11)
+- Views and XML: [[docs/Community Addons/account_payment/Views|Views]] (11 files)
+- Controllers: [[docs/Community Addons/account_payment/Controllers|Controllers]] (2)
+- Frontend: [[docs/Community Addons/account_payment/Frontend|Frontend]] (3 files)
+
+## Key models
+
+- `account.journal`
+- `account.move`
+- `account.payment`
+- `account.payment.method`
+- `account.payment.method.line`
+- `account.payment.register`
+- `payment.link.wizard`
+- `payment.provider`
+- `payment.refund.wizard`
+- `payment.transaction`
+- `res.config.settings`
 
 ## Navigation
 
@@ -67,6 +92,7 @@ PaymentTransaction .. account_move : many2many
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

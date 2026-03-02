@@ -13,82 +13,78 @@ tags: [odoo, community, module]
 
 Send your surveys or share them live.
 
-## XML Artifacts (detected)
+## Generated coverage
 
+- Models: 11
+- XML files with UI/data artifacts: 10
 - Views: 23
 - Actions: 8
 - Menus: 7
 - Rules (ir.rule): 12
 - Access CSV entries: 22
+- Controller units: 2
+- Frontend asset files: 39
 
-## Detected Models
+## Module map
 
-- `GamificationBadge`
-- `GamificationChallenge`
-- `ResLang`
-- `ResPartner`
+```plantuml
+@startuml
+!define ODOO_COLOR_PRIMARY #714B67
+!define ODOO_COLOR_ACCENT #875A7B
+!define ODOO_COLOR_BG #FAF7FA
+
+skinparam backgroundColor ODOO_COLOR_BG
+skinparam defaultTextAlignment left
+skinparam ArrowColor ODOO_COLOR_ACCENT
+skinparam ClassBackgroundColor white
+skinparam ClassBorderColor ODOO_COLOR_PRIMARY
+skinparam ComponentBackgroundColor white
+skinparam ComponentBorderColor ODOO_COLOR_PRIMARY
+skinparam NoteBackgroundColor #FFF8FF
+skinparam NoteBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBorderColor ODOO_COLOR_ACCENT
+skinparam SequenceLifeLineBackgroundColor #FFFFFF
+skinparam SequenceParticipantBorderColor ODOO_COLOR_PRIMARY
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam sequence {
+  ArrowColor ODOO_COLOR_ACCENT
+  ActorBorderColor ODOO_COLOR_PRIMARY
+}
+title Surveys - Generated Coverage
+component "Module Overview" as overview
+component "Models\n11" as models
+component "Views / XML\n23 views\n10 files" as views
+component "Controllers\n22 routes" as controllers
+component "Frontend\n39 files" as frontend
+component "Security / Data\n12 rules\n22 ACL rows" as security
+overview --> models
+overview --> views
+overview --> controllers
+overview --> frontend
+overview --> security
+@enduml
+```
+
+## Detail notes
+
+- Models: [[docs/Community Addons/survey/Models|Models]] (11)
+- Views and XML: [[docs/Community Addons/survey/Views|Views]] (10 files)
+- Controllers: [[docs/Community Addons/survey/Controllers|Controllers]] (2)
+- Frontend: [[docs/Community Addons/survey/Frontend|Frontend]] (39 files)
+
+## Key models
+
+- `gamification.badge`
+- `gamification.challenge`
+- `ir.http`
+- `res.lang`
+- `res.partner`
+- `survey.invite`
 - `survey.question`
 - `survey.question.answer`
 - `survey.survey`
 - `survey.user_input`
 - `survey.user_input.line`
-- `SurveySurvey`
-
-```plantuml
-@startuml
-!include ../../../templates/DiagramStyles.puml
-title Surveys - Models and Relations
-class GamificationBadge
-class GamificationChallenge
-class ResLang
-class ResPartner
-class "survey.question" as survey_question
-class "survey.question.answer" as survey_question_answer
-class "survey.survey" as survey_survey
-class "survey.user_input" as survey_user_input
-class "survey.user_input.line" as survey_user_input_line
-class SurveySurvey
-GamificationBadge --|> survey_survey : one2many
-GamificationBadge --> survey_survey : many2one
-survey_question --> survey_survey : many2one
-survey_question --|> survey_question : one2many
-survey_question --> survey_question : many2one
-survey_question --|> survey_question_answer : one2many
-survey_question --|> survey_question_answer : one2many
-survey_question --|> survey_user_input_line : one2many
-survey_question .. survey_question : many2many
-survey_question .. survey_question : many2many
-survey_question .. survey_question_answer : many2many
-survey_question_answer --> survey_question : many2one
-survey_question_answer --> survey_question : many2one
-class "res.lang" as res_lang
-survey_survey .. res_lang : many2many
-class "res.users" as res_users
-survey_survey --> res_users : many2one
-survey_survey .. res_users : many2many
-survey_survey --|> survey_question : one2many
-survey_survey --|> survey_question : one2many
-survey_survey --|> survey_question : one2many
-survey_survey --|> survey_user_input : one2many
-class "mail.template" as mail_template
-survey_survey --> mail_template : many2one
-class "gamification.badge" as gamification_badge
-survey_survey --> gamification_badge : many2one
-survey_survey --> survey_question : many2one
-survey_user_input --> survey_survey : many2one
-survey_user_input --> res_lang : many2one
-survey_user_input --> survey_question : many2one
-class "res.partner" as res_partner
-survey_user_input --> res_partner : many2one
-survey_user_input --|> survey_user_input_line : one2many
-survey_user_input .. survey_question : many2many
-survey_user_input_line --> survey_user_input : many2one
-survey_user_input_line --> survey_question : many2one
-survey_user_input_line --> res_lang : many2one
-survey_user_input_line --> survey_question_answer : many2one
-survey_user_input_line --> survey_question_answer : many2one
-@enduml
-```
 
 ## Navigation
 
@@ -96,6 +92,7 @@ survey_user_input_line --> survey_question_answer : many2one
 - [[../../docs/docs|Back to docs]]
 
 <!-- GENERATED:MODULE -->
+
 
 
 

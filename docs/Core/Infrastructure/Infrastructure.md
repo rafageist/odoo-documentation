@@ -11,6 +11,7 @@ status: active
 - `[[docs/Core/Infrastructure/Security]]`
 - `[[docs/Core/Infrastructure/Files]]`
 - `[[docs/Core/Infrastructure/Bus]]`
+- `[[docs/Core/Infrastructure/Community Q&A]]`
 
 ## Focus
 - Runtime behavior shared across modules
@@ -21,6 +22,7 @@ status: active
 - **Parent:** [[docs/Core/Core]]
 ## Children
 - [[docs/Core/Infrastructure/Bus]]
+- [[docs/Core/Infrastructure/Community Q&A]]
 - [[docs/Core/Infrastructure/Files]]
 - [[docs/Core/Infrastructure/ORM]]
 - [[docs/Core/Infrastructure/Reports]]

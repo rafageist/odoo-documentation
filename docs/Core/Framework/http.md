@@ -27,6 +27,7 @@ status: active
 - Keep controllers thin. Route handlers should validate input, shape the HTTP response, and delegate business rules to models or services.
 - Prefer explicit auth and readonly flags. Odoo 19 uses `readonly=True` on many web endpoints to keep read-only RPC flows cheap and predictable.
 - Document `/jsonrpc` as legacy compatibility, not as the preferred integration surface. Odoo 19 still ships it, but the core marks `/xmlrpc`, `/xmlrpc/2`, and `/jsonrpc` as deprecated for removal in Odoo 20.
+- Server configuration now revolves around `http_port`. If a legacy `xmlrpc_port` setting appears to be ignored during local setup, that is expected in the current codebase.
 
 ## Related notes
 - `[[docs/Core/Framework/views]]` for server-side view architecture and inheritance.

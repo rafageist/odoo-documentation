@@ -30,6 +30,18 @@ status: active
 - [[Odoo 19/Community Addons/Technical/Technical|Technical]] (6)
 - [[Odoo 19/Community Addons/Website/Website|Website]] (55)
 
+## Curated Odoo 19 notes
+- [[Odoo 19/Community Addons/account_edi/account_edi|account_edi]] for invoice EDI lifecycle and retry mechanics.
+- [[Odoo 19/Community Addons/sale_management/sale_management|sale_management]] for quotation templates, portal-facing sales flows, and pricing side effects.
+- [[Odoo 19/Community Addons/project/project|project]] for service delivery, portal collaboration, and access-heavy task management.
+- [[Odoo 19/Community Addons/hr_attendance/hr_attendance|hr_attendance]] for kiosk attendance capture, overtime rulesets, and device-facing flows.
+- [[Odoo 19/Community Addons/stock/stock|stock]] for warehouse execution, reservations, replenishment, and move orchestration.
+- [[Odoo 19/Community Addons/website_sale/website_sale|website_sale]] for storefront checkout, pricing, delivery, and session-driven commerce behavior.
+
+## Pending analysis queue
+- Extend the same depth to `purchase_stock`, `mrp`, `helpdesk`, and the technical stack around `api_doc` when those areas become active priorities.
+- Odoo 18 comparison notes were retired on 2026-03-02, so follow-up work should deepen Odoo 19 behavior instead of rebuilding a parallel legacy tree.
+
 ## Context links
 - Version map: `[[Odoo 19/Odoo 19]]`
 - Shared runtime and master data: `[[Odoo 19/Core/Core]]`

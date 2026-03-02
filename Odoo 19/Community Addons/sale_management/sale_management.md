@@ -67,4 +67,28 @@ sale_order_template_line --> sale_order_template_line : many2one
 
 <!-- GENERATED:MODULE -->
 
+## Curated analysis
+
+### Functional role
+- Turns the lower-level `sale` module into the app-facing sales workspace with quotation templates, digest metrics, and portal refinements for commercial teams.
+- The dedicated template models let teams standardize optional products, descriptions, and invoicing defaults before an order is confirmed.
+
+### Operational footprint
+- Core logic lives in `sale_order.py`, `sale_order_line.py`, and the template models; these files shape how commercial defaults reach the quotation.
+- Security is not trivial: `security/sale_management_security.xml` adds a template-specific group and company rule, while portal templates extend the customer-facing order review.
+
+### Evidence
+- Source files: `odoo19/addons/sale_management/models/sale_order.py`, `odoo19/addons/sale_management/models/sale_order_template.py`, `odoo19/addons/sale_management/models/res_config_settings.py`
+- UI and security: `odoo19/addons/sale_management/views/sale_order_template_views.xml`, `odoo19/addons/sale_management/views/sale_order_views.xml`, `odoo19/addons/sale_management/security/sale_management_security.xml`
+- Tests: `odoo19/addons/sale_management/tests/test_sale_order.py`, `odoo19/addons/sale_management/tests/test_sale_ui.py`
+
+### Related notes
+- `[[Odoo 19/Community Addons/sale/sale|sale]]`
+- `[[Odoo 19/Community Addons/website_sale/website_sale|website_sale]]`
+
+### Risks and follow-up
+- Template-heavy deployments need strong pricing governance because pricelists, optional products, and journal defaults interact before the user notices inconsistencies.
+- Portal customizations should be validated together with `website_sale` and payment flows when the sales channel is public-facing.
+- Odoo 18 comparison backlog was retired on 2026-03-02; keep this note focused on Odoo 19 behavior.
+
 

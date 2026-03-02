@@ -55,4 +55,28 @@ AccountMove --|> account_edi_document : one2many
 
 <!-- GENERATED:MODULE -->
 
+## Curated analysis
+
+### Functional role
+- Provides the generic EDI document lifecycle used by invoice export and vendor-bill import before country-specific addons plug in their own formats.
+- `account.edi.document` tracks status, attachment linkage, and retries per move, while `account.edi.format` defines the pluggable contract used by downstream localization modules.
+
+### Operational footprint
+- Extends `account.move`, `account.journal`, `ir.attachment`, `ir.actions.report`, and `account.move.send`, so posting and sending invoices can create or refresh EDI artifacts automatically.
+- `data/cron.xml` schedules network retries and asynchronous work for formats that should not finish inside the posting transaction.
+
+### Evidence
+- Source files: `odoo19/addons/account_edi/models/account_edi_document.py`, `odoo19/addons/account_edi/models/account_edi_format.py`, `odoo19/addons/account_edi/models/account_move.py`
+- UI and automation: `odoo19/addons/account_edi/views/account_move_views.xml`, `odoo19/addons/account_edi/views/account_journal_views.xml`, `odoo19/addons/account_edi/data/cron.xml`
+- Tests: `odoo19/addons/account_edi/tests/test_edi.py`, `odoo19/addons/account_edi/tests/test_import_vendor_bill.py`
+
+### Related notes
+- `[[Odoo 19/Community Addons/account/account|account]]`
+- `[[Odoo 19/Core/Infrastructure/Files]]`
+
+### Risks and follow-up
+- Journal configuration and format-specific addons decide whether a document is emitted synchronously or stays pending for cron retry.
+- Support teams need to inspect both the invoice and the related EDI documents because provider failures surface in the EDI state machine, not only in accounting UI messages.
+- Odoo 18 comparison backlog was retired on 2026-03-02; keep this note focused on Odoo 19 behavior.
+
 

@@ -12,6 +12,7 @@ status: active
 - Entry-point docs, templates, and generator workflow rewritten for the Odoo 19 source repos in this workspace.
 - Templates now define optional sections, generated-note editing rules, and reusable diagram examples.
 - Odoo 19 root and scope indexes now include a runtime map, navigation context, and follow-up core tickets.
+- Community addon notes now include curated analysis for finance, sales, services, HR, inventory, and ecommerce coverage.
 
 ## Navigation
 - **Parent:** [[Welcome]]

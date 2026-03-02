@@ -80,4 +80,28 @@ hr_version --> hr_attendance_overtime_ruleset : many2one
 
 <!-- GENERATED:MODULE -->
 
+## Curated analysis
+
+### Functional role
+- `hr_attendance` covers employee check-in and check-out, but in practice it is also the kiosk entry point, a barcode-enabled device flow, and the base for overtime computation.
+- The overtime models and rulesets turn raw punches into policy-aware attendance outcomes that HR managers can audit and correct.
+
+### Operational footprint
+- `hr_attendance.py` and the overtime model files drive employee state, worked hours, extra-hours logic, and auto-check-out behavior.
+- The public kiosk flow is exposed through `controllers/main.py`, while `data/hr_attendance_data.xml` schedules automatic check-out and absence handling.
+
+### Evidence
+- Source files: `odoo19/addons/hr_attendance/models/hr_attendance.py`, `odoo19/addons/hr_attendance/models/hr_attendance_overtime_rule.py`, `odoo19/addons/hr_attendance/models/hr_attendance_overtime_ruleset.py`
+- UI, security, and automation: `odoo19/addons/hr_attendance/views/hr_attendance_view.xml`, `odoo19/addons/hr_attendance/security/hr_attendance_security.xml`, `odoo19/addons/hr_attendance/data/hr_attendance_data.xml`
+- Tests: `odoo19/addons/hr_attendance/tests/test_hr_attendance_process.py`, `odoo19/addons/hr_attendance/tests/test_hr_attendance_overtime.py`, `odoo19/addons/hr_attendance/tests/test_hr_attendance_kiosk.py`
+
+### Related notes
+- `[[Odoo 19/Community Addons/hr/hr|hr]]`
+- `[[Odoo 19/Core/Infrastructure/Security]]`
+
+### Risks and follow-up
+- Timezone handling, kiosk devices, and overtime thresholds are the failure hotspots; they need to be validated together, not in isolation.
+- Shared or public kiosks require extra care around user identification, barcode devices, and access groups because the module exposes both HR and operational data.
+- Odoo 18 comparison backlog was retired on 2026-03-02; keep this note focused on Odoo 19 behavior.
+
 

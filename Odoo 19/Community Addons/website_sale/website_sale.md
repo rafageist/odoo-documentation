@@ -145,3 +145,27 @@ WebsiteVisitor .. product_product : many2many
 
 <!-- GENERATED:MODULE -->
 
+## Curated analysis
+
+### Functional role
+- `website_sale` is the public commerce layer that turns products, prices, delivery methods, and payment-ready orders into a storefront experience.
+- It is not just a website skin over `sale`; it adds website-specific pricing, checkout steps, product feeds, ribbons, visitor tracking, and cart/session behavior.
+
+### Operational footprint
+- The controller layer is broad: cart, checkout, delivery, payment, variant resolution, product configurator, reorder, and feeds each have their own entry point.
+- The model layer extends both website and sales concepts, especially around `website.py`, `sale_order.py`, pricelists, and product presentation metadata.
+
+### Evidence
+- Source files: `odoo19/addons/website_sale/controllers/cart.py`, `odoo19/addons/website_sale/controllers/payment.py`, `odoo19/addons/website_sale/models/website.py`, `odoo19/addons/website_sale/models/sale_order.py`
+- UI and frontend: `odoo19/addons/website_sale/views/templates.xml`, `odoo19/addons/website_sale/views/website_views.xml`, `odoo19/addons/website_sale/models/product_pricelist.py`
+- Tests: `odoo19/addons/website_sale/tests/test_address.py`, `odoo19/addons/website_sale/tests/test_website_sale_pricelist.py`, `odoo19/addons/website_sale/tests/test_website_sale_product_configurator.py`
+
+### Related notes
+- `[[Odoo 19/Community Addons/sale_management/sale_management|sale_management]]`
+- `[[Odoo 19/Community Addons/website/website|website]]`
+
+### Risks and follow-up
+- Anonymous sessions, multi-company pricelists, taxes, and delivery costs interact in checkout, so storefront bugs often trace back to configuration rather than controller code alone.
+- Product configurator and pricing behavior should always be tested with the same website, fiscal position, and visitor state that production users will actually have.
+- Odoo 18 comparison backlog was retired on 2026-03-02; keep this note focused on Odoo 19 behavior.
+

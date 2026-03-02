@@ -339,3 +339,27 @@ stock_warehouse --|> stock_route : one2many
 
 <!-- GENERATED:MODULE -->
 
+## Curated analysis
+
+### Functional role
+- `stock` is the warehouse execution engine for Odoo 19: locations, moves, move lines, quants, pickings, routes, replenishment, lots, packages, and warehouses all converge here.
+- Many downstream modules feel independent, but they usually inherit or orchestrate the state machine implemented by this addon.
+
+### Operational footprint
+- `stock_move.py`, `stock_picking.py`, and `stock_quant.py` form the operational backbone for reservations, transfers, validation, and on-hand stock visibility.
+- The module has a very dense UI and security surface; `views/stock_picking_views.xml` and `security/stock_security.xml` are central when tracing permissions and operator flows.
+
+### Evidence
+- Source files: `odoo19/addons/stock/models/stock_move.py`, `odoo19/addons/stock/models/stock_picking.py`, `odoo19/addons/stock/models/stock_quant.py`
+- UI and security: `odoo19/addons/stock/views/stock_picking_views.xml`, `odoo19/addons/stock/security/stock_security.xml`
+- Tests: `odoo19/addons/stock/tests/test_move2.py`, `odoo19/addons/stock/tests/test_generate_serial_numbers.py`
+
+### Related notes
+- `[[Odoo 19/Core/Processes/Inventory/Inventory]]`
+- `[[Odoo 19/Core/Master Data/product_product]]`
+
+### Risks and follow-up
+- Route, warehouse, and location configuration errors propagate fast because the same move network drives replenishment, picking, and valuation side effects.
+- Serial and lot handling should be validated with the exact picking configuration in use because reservation behavior changes once traceability becomes mandatory.
+- Odoo 18 comparison backlog was retired on 2026-03-02; keep this note focused on Odoo 19 behavior.
+

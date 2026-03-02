@@ -138,4 +138,28 @@ ResUsers .. project_project : many2many
 
 <!-- GENERATED:MODULE -->
 
+## Curated analysis
+
+### Functional role
+- `project` is the services execution workspace: projects, tasks, updates, milestones, roles, collaborators, and portal sharing all converge here.
+- It is one of the clearest examples of a module that mixes business flow, mail/thread behavior, ratings, portal access, and reporting in the same functional surface.
+
+### Operational footprint
+- `project_project.py`, `project_task.py`, and `project_update.py` hold the core orchestration for project state, task lifecycle, and stakeholder updates.
+- The module ships broad UI and security coverage, including burndown reporting, sharing views, cron data, and a dense set of record rules in `security/project_security.xml`.
+
+### Evidence
+- Source files: `odoo19/addons/project/models/project_project.py`, `odoo19/addons/project/models/project_task.py`, `odoo19/addons/project/models/project_update.py`
+- UI and automation: `odoo19/addons/project/views/project_project_views.xml`, `odoo19/addons/project/views/project_task_views.xml`, `odoo19/addons/project/data/ir_cron_data.xml`
+- Security and tests: `odoo19/addons/project/security/project_security.xml`, `odoo19/addons/project/tests/test_access_rights.py`, `odoo19/addons/project/tests/test_burndown_chart.py`
+
+### Related notes
+- `[[Odoo 19/Core/Processes/Projects/Projects]]`
+- `[[Odoo 19/Community Addons/portal/portal|portal]]`
+
+### Risks and follow-up
+- Access control is a first-class concern here; portal sharing and collaborator rules need to be reviewed before exposing customer projects externally.
+- The analytic-account link means configuration mistakes can leak into billing, profitability, and resource reporting even when users think they are only moving tasks.
+- Odoo 18 comparison backlog was retired on 2026-03-02; keep this note focused on Odoo 19 behavior.
+
 

@@ -35,11 +35,13 @@ core_services --> providers : callbacks, APIs, mail, payments
 - `[[docs/Core/Core]]` for framework behavior, shared models, integrations, and transversal processes.
 - `[[docs/Community Addons/Community Addons]]` for standard addons shipped in the active source tree.
 - `[[docs/Enterprise Addons/Enterprise Addons]]` for enterprise-only addons and extensions.
+- `[[docs/Glossary/Glossary]]` for business vocabulary that developers need to map back to Odoo models and workflows.
 
 ## Documentation strategy
 - Start in `Core` when the question is about runtime behavior, shared models, or infrastructure reused across many modules.
 - Start in `Community Addons` when the behavior is delivered by a standard addon under `odoo19/addons`.
 - Start in `Enterprise Addons` when the feature depends on the enterprise snapshot in this workspace.
+- Start in `Glossary` when the requirement is written in business language and you first need to resolve what Odoo concept or model it refers to.
 - Keep manual analysis outside generated module blocks so the generator can refresh evidence without destroying curated notes.
 
 ## Source alignment
@@ -62,3 +64,4 @@ core_services --> providers : callbacks, APIs, mail, payments
 - [[docs/Core/Core]]
 - [[docs/Community Addons/Community Addons]]
 - [[docs/Enterprise Addons/Enterprise Addons]]
+- [[docs/Glossary/Glossary]]

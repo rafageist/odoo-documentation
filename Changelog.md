@@ -15,6 +15,7 @@ status: active
 - Community addon notes now include curated analysis for finance, sales, services, HR, inventory, and ecommerce coverage.
 - Enterprise addon notes now include curated analysis for finance, analytics, documents, knowledge, barcode flows, and Mexico EDI compliance.
 - The canonical tree moved to `docs/`, `templates/` was normalized to lowercase, and the standalone licensing note was removed because it had no tooling dependency.
+- A `docs/Glossary/` branch was added to bridge business vocabulary with technical notes, along with a reusable glossary template and wikilink guidance in the playbook.
 
 ## Navigation
 - **Parent:** [[Welcome]]

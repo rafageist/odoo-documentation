@@ -1,12 +1,11 @@
 ---
-tags: [odoo, tags, v19]
+tags: [odoo, tags]
 ---
 
 # Tag Taxonomy
 
 ## Required baseline
 - `odoo`
-- `v19`
 
 ## Scope tags
 - `core`

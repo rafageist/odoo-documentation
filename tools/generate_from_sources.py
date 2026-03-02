@@ -6,6 +6,10 @@ import os
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
+DOCS_DIR = "docs"
+DOCS_NOTE = f"{DOCS_DIR}/docs"
+TEMPLATES_DIR = "templates"
+
 
 def read_env_or_arg(name: str, arg: Optional[str]) -> Optional[Path]:
     value = arg or os.environ.get(name)
@@ -24,12 +28,12 @@ def discover_enterprise_root(workspace_root: Path) -> Optional[Path]:
 
 def default_paths(repo_root: Path) -> Dict[str, Optional[Path]]:
     workspace_root = repo_root.parent
-    odoo19_root = workspace_root / "odoo19"
+    odoo_root = workspace_root / "odoo19"
     enterprise_root = discover_enterprise_root(workspace_root)
     return {
-        "o19": odoo19_root if odoo19_root.exists() else None,
-        "o19c": (odoo19_root / "addons") if (odoo19_root / "addons").exists() else None,
-        "o19e": enterprise_root,
+        "odoo": odoo_root if odoo_root.exists() else None,
+        "community": (odoo_root / "addons") if (odoo_root / "addons").exists() else None,
+        "enterprise": enterprise_root,
     }
 
 
@@ -253,11 +257,11 @@ def scan_addons(addons_root: Path) -> List[Path]:
 
 
 def compute_output_path(scope: str, module_name: str, output_root: Path) -> Path:
-    return output_root / "Odoo 19" / scope / module_name / f"{module_name}.md"
+    return output_root / DOCS_DIR / scope / module_name / f"{module_name}.md"
 
 
 def link_target(scope: str, module_name: str) -> str:
-    return f"Odoo 19/{scope}/{module_name}/{module_name}"
+    return f"{DOCS_DIR}/{scope}/{module_name}/{module_name}"
 
 
 def ensure_dir(path: Path) -> None:
@@ -326,7 +330,7 @@ def write_module_note(
     summary = metadata.get("summary") or ""
     models = scan_models(module_dir)
     xml_info = scan_xml(module_dir)
-    tags = ["odoo", "v19", "community" if scope == "Community Addons" else "enterprise", "module"]
+    tags = ["odoo", "community" if scope == "Community Addons" else "enterprise", "module"]
 
     lines: List[str] = [
         "<!-- GENERATED:MODULE -->",
@@ -336,7 +340,6 @@ def write_module_note(
         "",
         f"# {name}",
         "",
-        "- Version: v19",
         f"- Scope: {scope}",
     ]
 
@@ -369,7 +372,7 @@ def write_module_note(
         lines.extend(["", "## Detected Models", ""])
         for model in models:
             lines.append(f"- `{model.model_name or model.py_class}`")
-        lines.extend(["", "```plantuml", "@startuml", "!include ../../../Templates/DiagramStyles.puml", f"title {name} - Models and Relations"])
+        lines.extend(["", "```plantuml", "@startuml", f"!include ../../../{TEMPLATES_DIR}/DiagramStyles.puml", f"title {name} - Models and Relations"])
         defined = set()
         for model in models:
             label = model.model_name or model.py_class
@@ -398,7 +401,7 @@ def write_module_note(
             "## Navigation",
             "",
             f"- [[../{scope}/{scope}|Back to scope]]",
-            "- [[../../Odoo 19/Odoo 19|Back to version]]",
+            f"- [[../../{DOCS_NOTE}|Back to docs]]",
             "",
             "<!-- GENERATED:MODULE -->",
             "",
@@ -423,10 +426,10 @@ def write_module_note(
 
 def write_category_note(output_root: Path, scope: str, category: str, module_names: List[str]) -> None:
     scope_tag = "community" if scope == "Community Addons" else "enterprise"
-    note_path = output_root / "Odoo 19" / scope / category / f"{category}.md"
+    note_path = output_root / DOCS_DIR / scope / category / f"{category}.md"
     lines: List[str] = [
         "---",
-        f"tags: [odoo, v19, {scope_tag}, index, category]",
+        f"tags: [odoo, {scope_tag}, index, category]",
         "---",
         "",
         f"# {category}",
@@ -439,18 +442,18 @@ def write_category_note(output_root: Path, scope: str, category: str, module_nam
     ]
     for module_name in sorted(module_names):
         lines.append(f"- [[{link_target(scope, module_name)}|{module_name}]]")
-    lines.extend(["", "## Navigation", "", f"- [[../{scope}|Back to scope]]", "- [[../../Odoo 19/Odoo 19|Back to version]]", ""])
+    lines.extend(["", "## Navigation", "", f"- [[../{scope}|Back to scope]]", f"- [[../../{DOCS_NOTE}|Back to docs]]", ""])
     ensure_dir(note_path)
     note_path.write_text("\n".join(lines), encoding="utf-8")
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Generate Odoo 19 documentation notes from local sources")
-    parser.add_argument("--o19")
-    parser.add_argument("--o19c")
-    parser.add_argument("--o19e")
+    parser = argparse.ArgumentParser(description="Generate documentation notes from local Odoo sources")
+    parser.add_argument("--odoo")
+    parser.add_argument("--community-addons")
+    parser.add_argument("--enterprise-addons")
     parser.add_argument("--output", default=str(Path(__file__).resolve().parents[1]))
-    parser.add_argument("--scan", action="store_true", help="Scan local sources and refresh Odoo 19 addon notes")
+    parser.add_argument("--scan", action="store_true", help="Scan local sources and refresh addon notes")
     parser.add_argument("--overwrite", action="store_true", help="Replace generated module sections instead of appending them")
     args = parser.parse_args()
 
@@ -461,16 +464,16 @@ def main() -> None:
     output_root = Path(args.output)
     config = default_paths(output_root)
     overrides = {
-        "o19": read_env_or_arg("ODOO19_PATH", args.o19),
-        "o19c": read_env_or_arg("ODOO19_COMMUNITY_ADDONS", args.o19c),
-        "o19e": read_env_or_arg("ODOO19_ENTERPRISE_ADDONS", args.o19e),
+        "odoo": read_env_or_arg("ODOO_PATH", args.odoo),
+        "community": read_env_or_arg("ODOO_COMMUNITY_ADDONS", args.community_addons),
+        "enterprise": read_env_or_arg("ODOO_ENTERPRISE_ADDONS", args.enterprise_addons),
     }
     for key, value in overrides.items():
         if value is not None:
             config[key] = value
 
     entries: List[Dict[str, Any]] = []
-    for scope, addons_root in (("Community Addons", config.get("o19c")), ("Enterprise Addons", config.get("o19e"))):
+    for scope, addons_root in (("Community Addons", config.get("community")), ("Enterprise Addons", config.get("enterprise"))):
         if not addons_root:
             continue
         for module_dir in scan_addons(addons_root):
@@ -493,8 +496,8 @@ def main() -> None:
         scope = entry["scope"]
         module_dir = entry["path"]
         output_path = compute_output_path(scope, entry["name"], output_root)
-        source_label = "odoo19" if scope == "Community Addons" else "enterprise19"
-        source_base = config.get("o19") if scope == "Community Addons" else config.get("o19e")
+        source_label = "odoo" if scope == "Community Addons" else "enterprise"
+        source_base = config.get("odoo") if scope == "Community Addons" else config.get("enterprise")
         dep_links: List[str] = []
         for dependency in entry["meta"].get("depends") or []:
             dependency_scope = scope_lookup["Community Addons"].get(dependency) or scope_lookup["Enterprise Addons"].get(dependency)

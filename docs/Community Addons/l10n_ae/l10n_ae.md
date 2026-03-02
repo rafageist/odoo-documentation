@@ -1,0 +1,42 @@
+<!-- GENERATED:MODULE -->
+---
+tags: [odoo, community, module]
+---
+
+# United Arab Emirates - Accounting
+
+- Scope: Community Addons
+- Source: odoo/addons/l10n_ae
+- Dependencies: [[docs/Community Addons/account/account|account]], [[docs/Community Addons/l10n_gcc_invoice/l10n_gcc_invoice|l10n_gcc_invoice]]
+
+## XML Artifacts (detected)
+
+- Views: 1
+- Actions: 0
+- Menus: 0
+- Rules (ir.rule): 0
+- Access CSV entries: 0
+
+## Detected Models
+
+- `AccountMove`
+
+```plantuml
+@startuml
+!include ../../../templates/DiagramStyles.puml
+title United Arab Emirates - Accounting - Models and Relations
+class AccountMove
+@enduml
+```
+
+## Navigation
+
+- [[../Community Addons/Community Addons|Back to scope]]
+- [[../../docs/docs|Back to docs]]
+
+<!-- GENERATED:MODULE -->
+
+
+
+
+

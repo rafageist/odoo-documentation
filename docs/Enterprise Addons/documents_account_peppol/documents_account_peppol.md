@@ -1,0 +1,50 @@
+<!-- GENERATED:MODULE -->
+---
+tags: [odoo, enterprise, module]
+---
+
+# Documents - Import from Peppol
+
+- Scope: Enterprise Addons
+- Source: enterprise/documents_account_peppol
+- Dependencies: [[docs/Community Addons/account_peppol/account_peppol|account_peppol]], [[docs/Enterprise Addons/documents/documents|documents]]
+
+## Summary
+
+Documents from Peppol
+
+## XML Artifacts (detected)
+
+- Views: 1
+- Actions: 0
+- Menus: 0
+- Rules (ir.rule): 0
+- Access CSV entries: 0
+
+## Detected Models
+
+- `Account_Edi_Proxy_ClientUser`
+- `ResCompany`
+
+```plantuml
+@startuml
+!include ../../../templates/DiagramStyles.puml
+title Documents - Import from Peppol - Models and Relations
+class Account_Edi_Proxy_ClientUser
+class ResCompany
+class "documents.document" as documents_document
+ResCompany --> documents_document : many2one
+class "documents.tag" as documents_tag
+ResCompany .. documents_tag : many2many
+@enduml
+```
+
+## Navigation
+
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
+- [[../../docs/docs|Back to docs]]
+
+<!-- GENERATED:MODULE -->
+
+
+

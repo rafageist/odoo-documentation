@@ -1,18 +1,18 @@
 ---
-tags: [overview, odoo, v19]
+tags: [overview, odoo]
 status: active
 ---
 
-# Odoo 19 Knowledge Vault
+# Odoo Knowledge Vault
 
-This vault documents Odoo 19 only. The goal is to keep a single, code-backed source of truth for core internals, community addons, and enterprise addons.
+This vault documents one active Odoo version at a time. The goal is to keep a single, code-backed source of truth for core internals, community addons, and enterprise addons.
 
 ## Start here
 - `[[Index]]` for the repository map
-- `[[Odoo 19/Odoo 19]]` for the product-level entry point
+- `[[docs/docs]]` for the documentation entry point
 - `[[Documentation Playbook]]` for the writing workflow
 - `[[CONFIG]]` for local source paths and generator usage
-- `[[Templates/Module Documentation Template]]` for canonical module notes
+- `[[templates/Module Documentation Template]]` for canonical module notes
 
 ## Working principles
 - Every important claim should point back to Python, XML, CSV, tests, or manifests.
@@ -21,7 +21,6 @@ This vault documents Odoo 19 only. The goal is to keep a single, code-backed sou
 - `odoo-skills` is a reference source for examples, patterns, and vocabulary, not a replacement for reading the actual module code.
 
 ## Supporting spaces
-- `[[Licensing/Enterprise Guide]]`
 - `[[TAGS]]`
 - `[[Changelog]]`
 

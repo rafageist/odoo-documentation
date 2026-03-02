@@ -1,0 +1,145 @@
+<!-- GENERATED:MODULE -->
+---
+tags: [odoo, community, module]
+---
+
+# Events Organization
+
+- Scope: Community Addons
+- Source: odoo/addons/event
+- Dependencies: [[docs/Community Addons/barcodes/barcodes|barcodes]], [[docs/Community Addons/base_setup/base_setup|base_setup]], [[docs/Community Addons/mail/mail|mail]], [[docs/Community Addons/phone_validation/phone_validation|phone_validation]], [[docs/Community Addons/portal/portal|portal]], [[docs/Community Addons/utm/utm|utm]]
+
+## Summary
+
+Trainings, Conferences, Meetings, Exhibitions, Registrations
+
+## XML Artifacts (detected)
+
+- Views: 49
+- Actions: 23
+- Menus: 18
+- Rules (ir.rule): 3
+- Access CSV entries: 37
+
+## Detected Models
+
+- `event.event`
+- `event.mail`
+- `event.mail.registration`
+- `event.mail.slot`
+- `event.question`
+- `event.question.answer`
+- `event.registration`
+- `event.registration.answer`
+- `event.slot`
+- `event.stage`
+- `event.tag.category`
+- `event.tag`
+- `event.event.ticket`
+- `event.type`
+- `event.type.mail`
+- `event.type.ticket`
+- `MailTemplate`
+- `ResPartner`
+
+```plantuml
+@startuml
+!include ../../../templates/DiagramStyles.puml
+title Events Organization - Models and Relations
+class "event.event" as event_event
+class "event.mail" as event_mail
+class "event.mail.registration" as event_mail_registration
+class "event.mail.slot" as event_mail_slot
+class "event.question" as event_question
+class "event.question.answer" as event_question_answer
+class "event.registration" as event_registration
+class "event.registration.answer" as event_registration_answer
+class "event.slot" as event_slot
+class "event.stage" as event_stage
+class "event.tag.category" as event_tag_category
+class "event.tag" as event_tag
+class "event.event.ticket" as event_event_ticket
+class "event.type" as event_type
+class "event.type.mail" as event_type_mail
+class "event.type.ticket" as event_type_ticket
+class MailTemplate
+class ResPartner
+class "res.users" as res_users
+event_event --> res_users : many2one
+class "res.company" as res_company
+event_event --> res_company : many2one
+class "res.partner" as res_partner
+event_event --> res_partner : many2one
+event_event --> event_type : many2one
+event_event --|> event_mail : one2many
+event_event .. event_tag : many2many
+event_event --> event_stage : many2one
+event_event --|> event_registration : one2many
+event_event --|> event_slot : one2many
+event_event --|> event_event_ticket : one2many
+event_event --> res_partner : many2one
+event_event --> res_partner : many2one
+class "res.country" as res_country
+event_event --> res_country : many2one
+event_event .. event_question : many2many
+event_event .. event_question : many2many
+event_event .. event_question : many2many
+event_mail --> event_event : many2one
+event_mail --> event_registration : many2one
+event_mail --|> event_mail_registration : one2many
+event_mail --|> event_mail_slot : one2many
+event_mail_registration --> event_mail : many2one
+event_mail_registration --> event_registration : many2one
+event_mail_slot --> event_slot : many2one
+event_mail_slot --> event_mail : many2one
+event_mail_slot --> event_registration : many2one
+event_question .. event_type : many2many
+event_question .. event_event : many2many
+event_question --|> event_question_answer : one2many
+event_question_answer --> event_question : many2one
+event_registration --> event_event : many2one
+event_registration --> event_slot : many2one
+event_registration --> event_event_ticket : many2one
+class "utm.campaign" as utm_campaign
+event_registration --> utm_campaign : many2one
+class "utm.source" as utm_source
+event_registration --> utm_source : many2one
+class "utm.medium" as utm_medium
+event_registration --> utm_medium : many2one
+event_registration --> res_partner : many2one
+event_registration --> res_company : many2one
+event_registration --|> event_registration_answer : one2many
+event_registration --|> event_registration_answer : one2many
+event_registration --|> event_mail_registration : one2many
+event_registration_answer --> event_question : many2one
+event_registration_answer --> event_registration : many2one
+event_registration_answer --> res_partner : many2one
+event_registration_answer --> event_event : many2one
+event_registration_answer --> event_question_answer : many2one
+event_slot --> event_event : many2one
+event_slot --|> event_registration : one2many
+event_tag_category --|> event_tag : one2many
+event_tag --> event_tag_category : many2one
+event_event_ticket --> event_event : many2one
+event_event_ticket --> res_company : many2one
+event_event_ticket --|> event_registration : one2many
+event_type --|> event_type_ticket : one2many
+event_type .. event_tag : many2many
+event_type --|> event_type_mail : one2many
+event_type .. event_question : many2many
+event_type_mail --> event_type : many2one
+event_type_ticket --> event_type : many2one
+@enduml
+```
+
+## Navigation
+
+- [[../Community Addons/Community Addons|Back to scope]]
+- [[../../docs/docs|Back to docs]]
+
+<!-- GENERATED:MODULE -->
+
+
+
+
+

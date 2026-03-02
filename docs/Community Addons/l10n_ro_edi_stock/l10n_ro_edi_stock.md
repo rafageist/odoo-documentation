@@ -1,0 +1,52 @@
+<!-- GENERATED:MODULE -->
+---
+tags: [odoo, community, module]
+---
+
+# Romania - E-Transport
+
+- Scope: Community Addons
+- Source: odoo/addons/l10n_ro_edi_stock
+- Dependencies: [[docs/Community Addons/stock_delivery/stock_delivery|stock_delivery]], [[docs/Community Addons/l10n_ro_edi/l10n_ro_edi|l10n_ro_edi]], [[docs/Community Addons/stock_picking_batch/stock_picking_batch|stock_picking_batch]]
+
+## XML Artifacts (detected)
+
+- Views: 5
+- Actions: 0
+- Menus: 0
+- Rules (ir.rule): 0
+- Access CSV entries: 0
+
+## Detected Models
+
+- `DeliveryCarrier`
+- `L10nRoEdiStockDocument`
+- `Picking`
+
+```plantuml
+@startuml
+!include ../../../templates/DiagramStyles.puml
+title Romania - E-Transport - Models and Relations
+class DeliveryCarrier
+class L10nRoEdiStockDocument
+class Picking
+class "res.partner" as res_partner
+DeliveryCarrier --> res_partner : many2one
+class "stock.picking" as stock_picking
+L10nRoEdiStockDocument --> stock_picking : many2one
+class "l10n_ro_edi.document" as l10n_ro_edi_document
+Picking --|> l10n_ro_edi_document : one2many
+@enduml
+```
+
+## Navigation
+
+- [[../Community Addons/Community Addons|Back to scope]]
+- [[../../docs/docs|Back to docs]]
+
+<!-- GENERATED:MODULE -->
+
+
+
+
+

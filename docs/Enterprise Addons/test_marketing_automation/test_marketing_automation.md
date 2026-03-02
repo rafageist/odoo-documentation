@@ -1,0 +1,58 @@
+<!-- GENERATED:MODULE -->
+---
+tags: [odoo, enterprise, module]
+---
+
+# Marketing Automation Tests
+
+- Scope: Enterprise Addons
+- Source: enterprise/test_marketing_automation
+- Dependencies: [[docs/Enterprise Addons/marketing_automation/marketing_automation|marketing_automation]], [[docs/Enterprise Addons/marketing_automation_sms/marketing_automation_sms|marketing_automation_sms]], [[docs/Enterprise Addons/marketing_automation_whatsapp/marketing_automation_whatsapp|marketing_automation_whatsapp]], [[docs/Community Addons/test_mail/test_mail|test_mail]], [[docs/Enterprise Addons/test_mail_enterprise/test_mail_enterprise|test_mail_enterprise]], [[docs/Community Addons/test_mail_full/test_mail_full|test_mail_full]], [[docs/Community Addons/test_mail_sms/test_mail_sms|test_mail_sms]], [[docs/Community Addons/test_mass_mailing/test_mass_mailing|test_mass_mailing]]
+
+## Summary
+
+Test Suite for Automated Marketing Campaigns
+
+## XML Artifacts (detected)
+
+- Views: 0
+- Actions: 0
+- Menus: 0
+- Rules (ir.rule): 0
+- Access CSV entries: 4
+
+## Detected Models
+
+- `marketing.test`
+- `marketing.test.performance`
+- `marketing.test.utm`
+- `marketing.test.sms`
+
+```plantuml
+@startuml
+!include ../../../templates/DiagramStyles.puml
+title Marketing Automation Tests - Models and Relations
+class "marketing.test" as marketing_test
+class "marketing.test.performance" as marketing_test_performance
+class "marketing.test.utm" as marketing_test_utm
+class "marketing.test.sms" as marketing_test_sms
+class "res.partner" as res_partner
+marketing_test --> res_partner : many2one
+class "res.company" as res_company
+marketing_test_performance --> res_company : many2one
+marketing_test_performance --> res_partner : many2one
+marketing_test_utm --> res_partner : many2one
+marketing_test_sms --> res_partner : many2one
+@enduml
+```
+
+## Navigation
+
+- [[../Enterprise Addons/Enterprise Addons|Back to scope]]
+- [[../../docs/docs|Back to docs]]
+
+<!-- GENERATED:MODULE -->
+
+
+
+

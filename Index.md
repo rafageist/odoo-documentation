@@ -1,28 +1,27 @@
 ---
-tags: [odoo, index, v19]
+tags: [odoo, index]
 ---
 
 # Index
 
 ## Main entry points
 - `[[Welcome]]`
-- `[[Odoo 19/Odoo 19]]`
+- `[[docs/docs]]`
 - `[[Documentation Playbook]]`
 - `[[CONFIG]]`
 - `[[TAGS]]`
 
-## Odoo 19 map
-- `[[Odoo 19/Core/Core]]`
-- `[[Odoo 19/Community Addons/Community Addons]]`
-- `[[Odoo 19/Enterprise Addons/Enterprise Addons]]`
+## Documentation map
+- `[[docs/Core/Core]]`
+- `[[docs/Community Addons/Community Addons]]`
+- `[[docs/Enterprise Addons/Enterprise Addons]]`
 
 ## Working assets
-- `[[Templates/Module Documentation Template]]`
-- `[[Templates/Model Documentation Template]]`
-- `[[Templates/Service Documentation Template]]`
-- `[[Templates/Business Process Template]]`
-- `[[Templates/Diagram Examples]]`
-- `[[Licensing/Enterprise Guide]]`
+- `[[templates/Module Documentation Template]]`
+- `[[templates/Model Documentation Template]]`
+- `[[templates/Service Documentation Template]]`
+- `[[templates/Business Process Template]]`
+- `[[templates/Diagram Examples]]`
 - `[[Changelog]]`
 
 ## Local source repositories

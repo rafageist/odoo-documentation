@@ -1,0 +1,70 @@
+---
+tags: [odoo, enterprise, index, category]
+---
+
+# HR
+
+- Scope: Enterprise Addons
+- Modules: 54
+
+## Modules
+
+- [[docs/Enterprise Addons/approvals/approvals|approvals]]
+- [[docs/Enterprise Addons/approvals_purchase/approvals_purchase|approvals_purchase]]
+- [[docs/Enterprise Addons/approvals_purchase_stock/approvals_purchase_stock|approvals_purchase_stock]]
+- [[docs/Enterprise Addons/base_automation_hr/base_automation_hr|base_automation_hr]]
+- [[docs/Enterprise Addons/documents_l10n_be_hr_payroll/documents_l10n_be_hr_payroll|documents_l10n_be_hr_payroll]]
+- [[docs/Enterprise Addons/documents_l10n_ch_hr_payroll/documents_l10n_ch_hr_payroll|documents_l10n_ch_hr_payroll]]
+- [[docs/Enterprise Addons/documents_l10n_hk_hr_payroll/documents_l10n_hk_hr_payroll|documents_l10n_hk_hr_payroll]]
+- [[docs/Enterprise Addons/documents_l10n_ke_hr_payroll/documents_l10n_ke_hr_payroll|documents_l10n_ke_hr_payroll]]
+- [[docs/Enterprise Addons/frontdesk/frontdesk|frontdesk]]
+- [[docs/Enterprise Addons/hr_appraisal/hr_appraisal|hr_appraisal]]
+- [[docs/Enterprise Addons/hr_appraisal_skills/hr_appraisal_skills|hr_appraisal_skills]]
+- [[docs/Enterprise Addons/hr_appraisal_survey/hr_appraisal_survey|hr_appraisal_survey]]
+- [[docs/Enterprise Addons/hr_attendance_gantt/hr_attendance_gantt|hr_attendance_gantt]]
+- [[docs/Enterprise Addons/hr_contract_salary/hr_contract_salary|hr_contract_salary]]
+- [[docs/Enterprise Addons/hr_contract_salary_holidays/hr_contract_salary_holidays|hr_contract_salary_holidays]]
+- [[docs/Enterprise Addons/hr_contract_salary_payroll/hr_contract_salary_payroll|hr_contract_salary_payroll]]
+- [[docs/Enterprise Addons/hr_expense_extract/hr_expense_extract|hr_expense_extract]]
+- [[docs/Enterprise Addons/hr_expense_predict_product/hr_expense_predict_product|hr_expense_predict_product]]
+- [[docs/Enterprise Addons/hr_expense_stripe/hr_expense_stripe|hr_expense_stripe]]
+- [[docs/Enterprise Addons/hr_expense_stripe_demo/hr_expense_stripe_demo|hr_expense_stripe_demo]]
+- [[docs/Enterprise Addons/hr_gantt/hr_gantt|hr_gantt]]
+- [[docs/Enterprise Addons/hr_holidays_gantt/hr_holidays_gantt|hr_holidays_gantt]]
+- [[docs/Enterprise Addons/hr_mobile/hr_mobile|hr_mobile]]
+- [[docs/Enterprise Addons/hr_payroll/hr_payroll|hr_payroll]]
+- [[docs/Enterprise Addons/hr_payroll_account/hr_payroll_account|hr_payroll_account]]
+- [[docs/Enterprise Addons/hr_payroll_account_iso20022/hr_payroll_account_iso20022|hr_payroll_account_iso20022]]
+- [[docs/Enterprise Addons/hr_payroll_attendance/hr_payroll_attendance|hr_payroll_attendance]]
+- [[docs/Enterprise Addons/hr_payroll_expense/hr_payroll_expense|hr_payroll_expense]]
+- [[docs/Enterprise Addons/hr_payroll_fleet/hr_payroll_fleet|hr_payroll_fleet]]
+- [[docs/Enterprise Addons/hr_payroll_holidays/hr_payroll_holidays|hr_payroll_holidays]]
+- [[docs/Enterprise Addons/hr_payroll_planning/hr_payroll_planning|hr_payroll_planning]]
+- [[docs/Enterprise Addons/hr_payroll_sale_commission/hr_payroll_sale_commission|hr_payroll_sale_commission]]
+- [[docs/Enterprise Addons/hr_recruitment_ai/hr_recruitment_ai|hr_recruitment_ai]]
+- [[docs/Enterprise Addons/hr_recruitment_extract/hr_recruitment_extract|hr_recruitment_extract]]
+- [[docs/Enterprise Addons/hr_recruitment_integration_base/hr_recruitment_integration_base|hr_recruitment_integration_base]]
+- [[docs/Enterprise Addons/hr_recruitment_integration_monster/hr_recruitment_integration_monster|hr_recruitment_integration_monster]]
+- [[docs/Enterprise Addons/hr_recruitment_integration_skills_monster/hr_recruitment_integration_skills_monster|hr_recruitment_integration_skills_monster]]
+- [[docs/Enterprise Addons/hr_recruitment_integration_website/hr_recruitment_integration_website|hr_recruitment_integration_website]]
+- [[docs/Enterprise Addons/hr_recruitment_integration_website_monster/hr_recruitment_integration_website_monster|hr_recruitment_integration_website_monster]]
+- [[docs/Enterprise Addons/hr_recruitment_reports/hr_recruitment_reports|hr_recruitment_reports]]
+- [[docs/Enterprise Addons/hr_recruitment_sign/hr_recruitment_sign|hr_recruitment_sign]]
+- [[docs/Enterprise Addons/hr_referral/hr_referral|hr_referral]]
+- [[docs/Enterprise Addons/hr_sign/hr_sign|hr_sign]]
+- [[docs/Enterprise Addons/hr_work_entry_attendance/hr_work_entry_attendance|hr_work_entry_attendance]]
+- [[docs/Enterprise Addons/hr_work_entry_enterprise/hr_work_entry_enterprise|hr_work_entry_enterprise]]
+- [[docs/Enterprise Addons/hr_work_entry_holidays_enterprise/hr_work_entry_holidays_enterprise|hr_work_entry_holidays_enterprise]]
+- [[docs/Enterprise Addons/hr_work_entry_planning/hr_work_entry_planning|hr_work_entry_planning]]
+- [[docs/Enterprise Addons/hr_work_entry_planning_attendance/hr_work_entry_planning_attendance|hr_work_entry_planning_attendance]]
+- [[docs/Enterprise Addons/test_l10n_be_hr_payroll_account/test_l10n_be_hr_payroll_account|test_l10n_be_hr_payroll_account]]
+- [[docs/Enterprise Addons/test_l10n_hk_hr_payroll_account/test_l10n_hk_hr_payroll_account|test_l10n_hk_hr_payroll_account]]
+- [[docs/Enterprise Addons/test_l10n_us_hr_payroll_account/test_l10n_us_hr_payroll_account|test_l10n_us_hr_payroll_account]]
+- [[docs/Enterprise Addons/voip_hr/voip_hr|voip_hr]]
+- [[docs/Enterprise Addons/voip_hr_recruitment/voip_hr_recruitment|voip_hr_recruitment]]
+- [[docs/Enterprise Addons/whatsapp_hr_referral/whatsapp_hr_referral|whatsapp_hr_referral]]
+
+## Navigation
+
+- [[../Enterprise Addons|Back to scope]]
+- [[../../docs/docs|Back to docs]]

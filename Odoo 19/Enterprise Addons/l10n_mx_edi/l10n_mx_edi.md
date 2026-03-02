@@ -85,3 +85,27 @@ ResPartner --> l10n_mx_edi_payment_method : many2one
 
 <!-- GENERATED:MODULE -->
 
+## Curated analysis
+
+### Functional role
+- `l10n_mx_edi` adds Mexican CFDI generation, signing, cancellation, download, and payment complement handling on top of accounting.
+- It sits on both compliance and operational accounting, because journals, invoices, payments, addendas, and provider credentials all participate in the workflow.
+
+### Operational footprint
+- `account_move.py`, `account_journal.py`, and `l10n_mx_edi_document.py` drive most of the compliance logic, while XML data files load CFDI 4.0 and payment complement templates.
+- The module also adds cron work, addenda support, certificate handling, and wizard flows for cancellation and global invoice creation.
+
+### Evidence
+- Source files: `enterprise19/l10n_mx_edi/models/account_move.py`, `enterprise19/l10n_mx_edi/models/account_journal.py`, `enterprise19/l10n_mx_edi/models/l10n_mx_edi_document.py`
+- Compliance data and views: `enterprise19/l10n_mx_edi/data/4.0/cfdi.xml`, `enterprise19/l10n_mx_edi/data/ir_cron.xml`, `enterprise19/l10n_mx_edi/views/account_move_view.xml`
+- Tests: `enterprise19/l10n_mx_edi/tests/test_account_move.py`, `enterprise19/l10n_mx_edi/tests/test_cfdi_download.py`, `enterprise19/l10n_mx_edi/tests/test_cfdi_invoice_documents.py`
+
+### Related notes
+- `[[Odoo 19/Community Addons/account_edi/account_edi|account_edi]]`
+- `[[Odoo 19/Community Addons/l10n_mx/l10n_mx|l10n_mx]]`
+
+### Rollout and migration concerns
+- PAC credentials, certificates, SAT cancellation rules, and XML templates must be validated before production issuance because failures block legal invoicing, not just an optional integration.
+- Cutover plans should include payment complements, public invoices, rounding scenarios, and locked-period cancellation tests, since those are explicitly covered by the module test suite.
+- Odoo 18 comparison backlog was retired on 2026-03-02; keep this note focused on Odoo 19 behavior.
+

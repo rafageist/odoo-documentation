@@ -81,3 +81,27 @@ knowledge_cover --|> knowledge_article : one2many
 
 <!-- GENERATED:MODULE -->
 
+## Curated analysis
+
+### Functional role
+- `knowledge` is the enterprise article system for internal documentation, structured playbooks, and collaborative long-form notes.
+- The hierarchy, membership, favorites, stages, and covers are all first-class models, which makes this module closer to a governed content platform than to a simple wiki.
+
+### Operational footprint
+- `knowledge_article.py` is the main content model, while the companion files handle membership, favorites, stages, covers, and invite flows.
+- Security is central: `security/ir_rule.xml` enforces article visibility and writer/reader rules, and the hooks create private article scaffolding per user.
+
+### Evidence
+- Source files: `enterprise19/knowledge/models/knowledge_article.py`, `enterprise19/knowledge/models/knowledge_cover.py`, `enterprise19/knowledge/wizard/knowledge_invite.py`
+- UI and data: `enterprise19/knowledge/views/knowledge_article_views.xml`, `enterprise19/knowledge/data/knowledge_article_stage_data.xml`, `enterprise19/knowledge/security/ir_rule.xml`
+- Tests: `enterprise19/knowledge/tests/test_knowledge_article_business.py`, `enterprise19/knowledge/tests/test_knowledge_article_constraints.py`, `enterprise19/knowledge/tests/test_knowledge_article_sequence.py`
+
+### Related notes
+- `[[Odoo 19/Enterprise Addons/documents/documents|documents]]`
+- `[[Odoo 19/Community Addons/mail/mail|mail]]`
+
+### Rollout and migration concerns
+- Hierarchical constraints and membership rules need to be validated before importing or restructuring a large article tree, because the model actively protects against invalid parentage.
+- Heavy frontend customization and shared editing patterns mean rollout should include user training, permission reviews, and article-template governance.
+- Odoo 18 comparison backlog was retired on 2026-03-02; keep this note focused on Odoo 19 behavior.
+

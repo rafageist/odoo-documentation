@@ -161,3 +161,27 @@ ResPartner --|> res_company : one2many
 
 <!-- GENERATED:MODULE -->
 
+## Curated analysis
+
+### Functional role
+- `account_reports` is the enterprise reporting engine for accounting: financial statements, tax returns, budgets, audit checks, exports, and scheduled distribution all live here.
+- The same addon also carries the workflow layer around return creation, submission, and review, so it sits between analytics and statutory compliance.
+
+### Operational footprint
+- `account_report.py` and `account_return.py` define the core report and return abstractions; wizard files handle sending, export, multicurrency revaluation, and fiscal-year actions.
+- The module auto-installs with `account_accountant`, ships cron jobs for report delivery, and loads a broad catalog of XML report definitions.
+
+### Evidence
+- Source files: `enterprise19/account_reports/models/account_report.py`, `enterprise19/account_reports/models/account_return.py`, `enterprise19/account_reports/models/budget.py`
+- Report definitions and automation: `enterprise19/account_reports/data/balance_sheet.xml`, `enterprise19/account_reports/data/account_return_data.xml`, `enterprise19/account_reports/data/report_send_cron.xml`
+- Tests: `enterprise19/account_reports/tests/test_account_reports_filters.py`, `enterprise19/account_reports/tests/test_account_reports_journal_filter.py`, `enterprise19/account_reports/tests/test_account_reports_annotations_export.py`
+
+### Related notes
+- `[[Odoo 19/Enterprise Addons/account_asset/account_asset|account_asset]]`
+- `[[Odoo 19/Core/Infrastructure/Reports]]`
+
+### Rollout and migration concerns
+- Multi-company and branch setups need extra validation because journal filters, groupings, and return definitions can change what users think they are exporting.
+- Return templates and scheduled deliveries should be reviewed as part of the activation checklist, not after go-live, because they affect compliance and stakeholder communication immediately.
+- Odoo 18 comparison backlog was retired on 2026-03-02; keep this note focused on Odoo 19 behavior.
+

@@ -78,3 +78,27 @@ ResCompany --> account_account : many2one
 
 <!-- GENERATED:MODULE -->
 
+## Curated analysis
+
+### Functional role
+- `account_asset` adds the fixed-asset lifecycle on top of accounting: asset recognition, depreciation schedules, revaluation, disposal, and audit-oriented reporting.
+- Asset groups and report handlers make the module operationally closer to a finance control surface than to a simple master-data addon.
+
+### Operational footprint
+- `account_asset.py` contains the main depreciation logic, while `account_move.py` bridges posted entries and asset creation.
+- The module also ships a dedicated report handler, an asset modification wizard, and a template download controller for bulk asset loading.
+
+### Evidence
+- Source files: `enterprise19/account_asset/models/account_asset.py`, `enterprise19/account_asset/models/account_move.py`, `enterprise19/account_asset/models/account_assets_report.py`
+- UI and automation: `enterprise19/account_asset/views/account_asset_views.xml`, `enterprise19/account_asset/views/account_asset_group_views.xml`, `enterprise19/account_asset/wizard/asset_modify.py`
+- Security and tests: `enterprise19/account_asset/security/account_asset_security.xml`, `enterprise19/account_asset/tests/test_account_asset.py`, `enterprise19/account_asset/tests/test_reevaluation_asset.py`
+
+### Related notes
+- `[[Odoo 19/Enterprise Addons/account_reports/account_reports|account_reports]]`
+- `[[Odoo 19/Core/Master Data/res_company]]`
+
+### Rollout and migration concerns
+- Activating this module on a live database requires validated company accounts, journals, and depreciation policies before importing or generating any asset entries.
+- Reevaluation and disposal flows create accounting side effects that finance teams usually expect to review in both journals and reports, so cutover plans need reconciliation checkpoints.
+- Odoo 18 comparison backlog was retired on 2026-03-02; keep this note focused on Odoo 19 behavior.
+

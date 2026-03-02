@@ -33,6 +33,18 @@ status: active
 ## Supporting note
 - `[[Licensing/Enterprise Guide]]`
 
+## Curated Odoo 19 notes
+- [[Odoo 19/Enterprise Addons/account_asset/account_asset|account_asset]] for fixed assets, depreciation, and asset-specific accounting controls.
+- [[Odoo 19/Enterprise Addons/account_reports/account_reports|account_reports]] for financial reports, statutory returns, budgets, and scheduled report delivery.
+- [[Odoo 19/Enterprise Addons/documents/documents|documents]] for attachment governance, sharing, requests, and operator workflows.
+- [[Odoo 19/Enterprise Addons/knowledge/knowledge|knowledge]] for hierarchical article management and permission-heavy collaboration.
+- [[Odoo 19/Enterprise Addons/stock_barcode/stock_barcode|stock_barcode]] for mobile warehouse execution, GS1 scans, and operator-speed logistics.
+- [[Odoo 19/Enterprise Addons/l10n_mx_edi/l10n_mx_edi|l10n_mx_edi]] for Mexican CFDI generation, cancellation, and PAC-driven compliance.
+
+## Pending analysis queue
+- Extend the same depth to `helpdesk`, `planning`, `quality`, and additional enterprise localizations when those domains become active workstreams.
+- Odoo 18 comparison notes were retired on 2026-03-02, so future enterprise work should deepen Odoo 19 rollout and compliance details instead of restoring a legacy branch.
+
 ## Context links
 - Version map: `[[Odoo 19/Odoo 19]]`
 - Shared runtime and master data: `[[Odoo 19/Core/Core]]`

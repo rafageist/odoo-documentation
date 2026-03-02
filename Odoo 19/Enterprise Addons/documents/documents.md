@@ -101,3 +101,27 @@ ResPartner --|> documents_document : one2many
 
 <!-- GENERATED:MODULE -->
 
+## Curated analysis
+
+### Functional role
+- `documents` turns `ir.attachment` into an enterprise document workspace with folders, tags, requests, sharing links, and access tracking.
+- It is as much a governance layer as a UI module because it redefines how attachments are organized, exposed, and audited.
+
+### Operational footprint
+- `documents_document.py`, `documents_access.py`, and `ir_attachment.py` are the core files for document records, sharing rules, and attachment behavior.
+- Controllers and wizards cover portal access, document requests, bulk operations, and sharing flows, while cron and data files preload tags, aliases, and request behavior.
+
+### Evidence
+- Source files: `enterprise19/documents/models/documents_document.py`, `enterprise19/documents/models/documents_access.py`, `enterprise19/documents/models/ir_attachment.py`
+- UI and flows: `enterprise19/documents/views/documents_document_views.xml`, `enterprise19/documents/views/documents_access_views.xml`, `enterprise19/documents/wizard/documents_sharing.py`
+- Tests: `enterprise19/documents/tests/test_documents_access.py`, `enterprise19/documents/tests/test_attachment_access.py`, `enterprise19/documents/tests/test_attachment_split.py`
+
+### Related notes
+- `[[Odoo 19/Core/Infrastructure/Files]]`
+- `[[Odoo 19/Enterprise Addons/knowledge/knowledge|knowledge]]`
+
+### Rollout and migration concerns
+- Document permissions must be reviewed before importing historical attachments because access propagation and portal exposure are built into the model, not layered on later.
+- PDF split and merge operations change attachment ownership and traceability, so retention and audit expectations should be validated during rollout.
+- Odoo 18 comparison backlog was retired on 2026-03-02; keep this note focused on Odoo 19 behavior.
+

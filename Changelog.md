@@ -13,6 +13,7 @@ status: active
 - Templates now define optional sections, generated-note editing rules, and reusable diagram examples.
 - Odoo 19 root and scope indexes now include a runtime map, navigation context, and follow-up core tickets.
 - Community addon notes now include curated analysis for finance, sales, services, HR, inventory, and ecommerce coverage.
+- Enterprise addon notes now include curated analysis for finance, analytics, documents, knowledge, barcode flows, and Mexico EDI compliance.
 
 ## Navigation
 - **Parent:** [[Welcome]]

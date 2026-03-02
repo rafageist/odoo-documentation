@@ -8,6 +8,7 @@ status: active
 ## Topics
 - `[[docs/Core/Framework/base]]`
 - `[[docs/Core/Framework/web]]`
+- `[[docs/Core/Framework/views]]`
 - `[[docs/Core/Framework/mail]]`
 - `[[docs/Core/Framework/auth]]`
 - `[[docs/Core/Framework/http]]`
@@ -15,6 +16,7 @@ status: active
 ## Focus
 - ORM and base model behavior
 - Web client and OWL-facing framework pieces
+- View architecture, inheritance, and UI contracts
 - Authentication, session, and request lifecycle
 - Mail stack as shared platform infrastructure
 
@@ -25,4 +27,5 @@ status: active
 - [[docs/Core/Framework/base]]
 - [[docs/Core/Framework/http]]
 - [[docs/Core/Framework/mail]]
+- [[docs/Core/Framework/views]]
 - [[docs/Core/Framework/web]]

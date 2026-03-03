@@ -9,6 +9,7 @@ status: active
 - `[[docs/Core/Infrastructure/ORM]]`
 - `[[docs/Core/Infrastructure/Reports]]`
 - `[[docs/Core/Infrastructure/Security]]`
+- `[[docs/Core/Infrastructure/Import Export]]`
 - `[[docs/Core/Infrastructure/Files]]`
 - `[[docs/Core/Infrastructure/Bus]]`
 - `[[docs/Core/Infrastructure/Community Q&A]]`
@@ -24,6 +25,7 @@ status: active
 - [[docs/Core/Infrastructure/Bus]]
 - [[docs/Core/Infrastructure/Community Q&A]]
 - [[docs/Core/Infrastructure/Files]]
+- [[docs/Core/Infrastructure/Import Export]]
 - [[docs/Core/Infrastructure/ORM]]
 - [[docs/Core/Infrastructure/Reports]]
 - [[docs/Core/Infrastructure/Security]]

@@ -10,6 +10,7 @@ status: active
 - Community answers are never treated as source of truth by themselves; each accepted item here has been rechecked against the current Odoo 19 code in this workspace.
 - Use `tools/extract_telegram_odoo19.py` to refresh candidate threads before curating new entries.
 - For topic-driven curation, prefer structured extraction such as `python tools/extract_telegram_odoo19.py --topic website --topic owl --topic website_sale --format json`.
+- For backlog triage, use scoring to surface the best candidates first, for example `python tools/extract_telegram_odoo19.py --topic security --topic import_export --format json --min-score 10`.
 
 ## Archive boundary
 - The earliest explicit Odoo 19 mention found in the current archive set is on `2024-10-10` in the historical export.
@@ -63,6 +64,17 @@ status: active
   - `odoo19/addons/website/models/theme_models.py` also keeps `_header_templates` as an explicit whitelist for theme reset and toggle logic.
 - Documentation impact: declaring a new `template_header_*` view and depending on `website` is necessary but not sufficient; custom header templates also need builder option integration if they should appear and behave like first-class presets.
 - Related notes: `[[docs/Core/Framework/web]]`
+
+### Importing activities can fail because import stays inside the normal security model
+- Community prompt: an Odoo 19 developer could not import activities even as a system administrator, and the useful replies pointed at security policy, sample export/import, and record rules.
+- Validated conclusion: the standard import flow does not bypass access control; once the file is parsed, the import path delegates to normal ORM loading, so ACLs, record rules, and company filters can still block the operation.
+- Evidence:
+  - `addons/base_import/models/base_import.py` documents that the wizard ultimately loads data through the model `load()` method.
+  - `odoo/orm/models.py` runs both `export_data()` and `load()` through `fix_import_export_id_paths(...)`, which is why exporting a valid sample is a practical way to confirm importable field paths.
+  - `odoo/orm/models.py` implements access evaluation in `check_access()` / `_check_access()`, starting with `ir.model.access` and then applying `ir.rule._compute_domain(...)`.
+  - `check_access_rule()` remains only as a deprecated wrapper, so Odoo 19 documentation should explain access failures in terms of `check_access()`.
+- Documentation impact: when a user says "import is broken", first separate parser/mapping problems from security problems. A re-exported sample that still fails on re-import is a strong signal to inspect custom rules, grants, and company isolation.
+- Related notes: `[[docs/Core/Infrastructure/Import Export]]`, `[[docs/Core/Infrastructure/Security]]`
 
 ## Curation rule
 - If a Telegram answer cannot be tied back to code, tests, or official documentation, keep it out of canonical notes and leave it as an extraction candidate only.

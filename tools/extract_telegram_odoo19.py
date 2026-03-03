@@ -16,6 +16,22 @@ TOPIC_PATTERNS = {
     "security": r"(?i)record rule|record rules|ir\.rule|access rule|access rights|acl|security",
     "import_export": r"(?i)\bimport\b|\bexport\b|csv|xlsx|external id|base_import",
 }
+THREAD_SIGNAL_PATTERNS = {
+    "record rules": re.compile(r"(?i)record rule|record rules|ir\.rule"),
+    "security policy": re.compile(r"(?i)security|permission|grant|access error|access rights|acl"),
+    "import pipeline": re.compile(r"(?i)\bimport\b|base_import|import activit"),
+    "export pipeline": re.compile(r"(?i)\bexport\b|export_data"),
+}
+LOW_SIGNAL_PATTERNS = {
+    "generic support reply": re.compile(r"(?i)\bsend code\b|\bfix your code\b|\bcheck .*documentation\b"),
+    "marketplace or hiring noise": re.compile(r"(?i)\bhire\b|\bconsultant\b|\bfreelancer\b"),
+}
+EXTERNAL_ID_FALSE_POSITIVE_PATTERN = re.compile(
+    r"(?i)invalid external identifier|external id same|website\.snippet_options|view:\s*form"
+)
+IMPORT_EXPORT_SIGNAL_PATTERN = re.compile(
+    r"(?i)\bimport\b|\bexport\b|csv|xlsx|ods|base_import|export_data|import activit"
+)
 
 
 @dataclass
@@ -132,12 +148,63 @@ def match_topics(text: str, topics: list[tuple[str, re.Pattern[str]]]) -> list[s
     return [name for name, pattern in topics if pattern.search(text)]
 
 
+def score_thread(thread_messages: list[Message], matched_topics: list[str], explicit_match_count: int) -> tuple[int, list[str]]:
+    combined_text = "\n".join(item.text for item in thread_messages)
+    score = 0
+    reasons: list[str] = []
+
+    if explicit_match_count:
+        points = explicit_match_count * 4
+        score += points
+        reasons.append(f"+{points} explicit Odoo 19 mention(s)")
+
+    if matched_topics:
+        points = len(matched_topics) * 3
+        score += points
+        reasons.append(f"+{points} matched topic(s): {', '.join(matched_topics)}")
+
+    reply_count = max(0, len(thread_messages) - 1)
+    if reply_count:
+        points = min(reply_count, 3)
+        score += points
+        reasons.append(f"+{points} thread depth from replies")
+
+    technical_hits = [
+        label for label, compiled_pattern in THREAD_SIGNAL_PATTERNS.items() if compiled_pattern.search(combined_text)
+    ]
+    if technical_hits:
+        points = len(technical_hits) * 2
+        score += points
+        reasons.append(f"+{points} technical anchors: {', '.join(technical_hits)}")
+
+    penalties = [label for label, compiled_pattern in LOW_SIGNAL_PATTERNS.items() if compiled_pattern.search(combined_text)]
+    if penalties:
+        points = len(penalties) * 2
+        score -= points
+        reasons.append(f"-{points} low-signal markers: {', '.join(penalties)}")
+
+    if (
+        "import_export" in matched_topics
+        and EXTERNAL_ID_FALSE_POSITIVE_PATTERN.search(combined_text)
+        and not IMPORT_EXPORT_SIGNAL_PATTERN.search(combined_text)
+    ):
+        score -= 4
+        reasons.append("-4 External ID false-positive penalty")
+
+    if len(thread_messages) == 1:
+        score -= 1
+        reasons.append("-1 single-message thread")
+
+    return score, reasons
+
+
 def build_thread_report(
     messages: dict[int, Message],
     pattern: re.Pattern[str],
     after: str | None,
     limit: int,
     topics: list[tuple[str, re.Pattern[str]]],
+    min_score: int | None,
 ) -> dict:
     children = build_children(messages)
 
@@ -184,6 +251,10 @@ def build_thread_report(
                 "text": item.text,
             })
 
+        score, score_reasons = score_thread(thread_messages, matched_topics, explicit_match_count)
+        if min_score is not None and score < min_score:
+            continue
+
         thread_payloads.append({
             "root_id": root_id,
             "root_date": thread_messages[0].date,
@@ -192,9 +263,12 @@ def build_thread_report(
             "message_count": len(thread_messages),
             "explicit_match_count": explicit_match_count,
             "matched_topics": matched_topics,
+            "score": score,
+            "score_reasons": score_reasons,
             "messages": message_payloads,
         })
 
+    thread_payloads.sort(key=lambda item: (-item["score"], item["root_date"], item["root_id"]))
     report = {
         "summary": {
             "messages_scanned": len(messages),
@@ -203,6 +277,7 @@ def build_thread_report(
             "topic_filtered_threads": len(thread_payloads),
             "topics_requested": [name for name, _pattern in topics],
             "after": after,
+            "min_score": min_score,
         },
         "threads": thread_payloads[:limit],
     }
@@ -213,6 +288,8 @@ def build_thread_report(
             "export_name": first_candidate.export_name,
             "author": first_candidate.author,
         }
+    if thread_payloads:
+        report["summary"]["top_score"] = thread_payloads[0]["score"]
     return report
 
 
@@ -230,6 +307,10 @@ def build_markdown(report: dict, excerpt_length: int) -> str:
         lines.append(f"- Topic filters: {', '.join(summary['topics_requested'])}")
     if summary.get("after"):
         lines.append(f"- Date floor: {summary['after']}")
+    if summary.get("min_score") is not None:
+        lines.append(f"- Minimum score: {summary['min_score']}")
+    if summary.get("top_score") is not None:
+        lines.append(f"- Top score: {summary['top_score']}")
     earliest = summary.get("earliest_explicit_mention")
     if earliest:
         lines.append(
@@ -246,6 +327,9 @@ def build_markdown(report: dict, excerpt_length: int) -> str:
         lines.append("")
         if thread["matched_topics"]:
             lines.append(f"- Matched topics: {', '.join(thread['matched_topics'])}")
+        lines.append(f"- Score: {thread['score']}")
+        for reason in thread["score_reasons"]:
+            lines.append(f"- Score reason: {reason}")
         lines.append(f"- Messages in thread: {thread['message_count']}")
         lines.append(f"- Explicit Odoo 19 matches in thread: {thread['explicit_match_count']}")
         lines.append("")
@@ -273,6 +357,7 @@ def main() -> None:
     parser.add_argument("--topic-pattern", action="append", default=[], metavar="NAME=REGEX", help="Add a custom named topic filter.")
     parser.add_argument("--format", choices=("markdown", "json"), default="markdown", help="Output format.")
     parser.add_argument("--excerpt-length", type=int, default=500, help="Maximum characters per message in markdown output.")
+    parser.add_argument("--min-score", type=int, help="Only keep threads whose computed score is at least this value.")
     parser.add_argument("--list-topics", action="store_true", help="Print available topic filters and exit.")
     parser.add_argument("--output", help="Write output to this path instead of stdout.")
     args = parser.parse_args()
@@ -287,7 +372,7 @@ def main() -> None:
 
     messages = load_messages(root)
     topics = compile_topic_filters(args.topic, args.topic_pattern)
-    report = build_thread_report(messages, re.compile(args.pattern), args.after, args.limit, topics)
+    report = build_thread_report(messages, re.compile(args.pattern), args.after, args.limit, topics, args.min_score)
     if args.format == "json":
         output_text = json.dumps(report, indent=2, ensure_ascii=False)
     else:

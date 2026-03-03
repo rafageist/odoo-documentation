@@ -1,4 +1,3 @@
-<!-- GENERATED:VIEWFILE -->
 ---
 tags: [odoo, community, generated, views]
 ---
@@ -29,4 +28,3 @@ tags: [odoo, community, generated, views]
 
 - **Parent:** [[docs/Community Addons/account_check_printing/Views]]
 
-<!-- GENERATED:VIEWFILE -->

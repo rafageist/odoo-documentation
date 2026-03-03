@@ -1,4 +1,3 @@
-<!-- GENERATED:VIEWFILE -->
 ---
 tags: [odoo, community, generated, views]
 ---
@@ -39,4 +38,3 @@ tags: [odoo, community, generated, views]
 
 - **Parent:** [[docs/Community Addons/mass_mailing_slides/Views]]
 
-<!-- GENERATED:VIEWFILE -->

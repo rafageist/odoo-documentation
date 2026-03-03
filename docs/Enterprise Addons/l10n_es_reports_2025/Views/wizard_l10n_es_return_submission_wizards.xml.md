@@ -1,4 +1,3 @@
-<!-- GENERATED:VIEWFILE -->
 ---
 tags: [odoo, enterprise, generated, views]
 ---
@@ -96,4 +95,3 @@ tags: [odoo, enterprise, generated, views]
 
 - **Parent:** [[docs/Enterprise Addons/l10n_es_reports_2025/Views]]
 
-<!-- GENERATED:VIEWFILE -->

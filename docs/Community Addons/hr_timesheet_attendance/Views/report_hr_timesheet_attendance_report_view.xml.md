@@ -1,4 +1,3 @@
-<!-- GENERATED:VIEWFILE -->
 ---
 tags: [odoo, community, generated, views]
 ---
@@ -56,4 +55,3 @@ tags: [odoo, community, generated, views]
 
 - **Parent:** [[docs/Community Addons/hr_timesheet_attendance/Views]]
 
-<!-- GENERATED:VIEWFILE -->

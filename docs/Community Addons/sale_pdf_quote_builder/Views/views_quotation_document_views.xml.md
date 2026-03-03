@@ -1,4 +1,3 @@
-<!-- GENERATED:VIEWFILE -->
 ---
 tags: [odoo, community, generated, views]
 ---
@@ -60,4 +59,3 @@ tags: [odoo, community, generated, views]
 
 - **Parent:** [[docs/Community Addons/sale_pdf_quote_builder/Views]]
 
-<!-- GENERATED:VIEWFILE -->

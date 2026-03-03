@@ -1,4 +1,3 @@
-<!-- GENERATED:VIEWFILE -->
 ---
 tags: [odoo, enterprise, generated, views]
 ---
@@ -39,4 +38,3 @@ tags: [odoo, enterprise, generated, views]
 
 - **Parent:** [[docs/Enterprise Addons/mrp_workorder_iot/Views]]
 
-<!-- GENERATED:VIEWFILE -->

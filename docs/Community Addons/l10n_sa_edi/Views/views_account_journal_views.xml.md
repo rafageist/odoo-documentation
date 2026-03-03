@@ -1,4 +1,3 @@
-<!-- GENERATED:VIEWFILE -->
 ---
 tags: [odoo, community, generated, views]
 ---
@@ -40,4 +39,3 @@ tags: [odoo, community, generated, views]
 
 - **Parent:** [[docs/Community Addons/l10n_sa_edi/Views]]
 
-<!-- GENERATED:VIEWFILE -->

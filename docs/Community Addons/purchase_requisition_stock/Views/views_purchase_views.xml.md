@@ -1,4 +1,3 @@
-<!-- GENERATED:VIEWFILE -->
 ---
 tags: [odoo, community, generated, views]
 ---
@@ -39,4 +38,3 @@ tags: [odoo, community, generated, views]
 
 - **Parent:** [[docs/Community Addons/purchase_requisition_stock/Views]]
 
-<!-- GENERATED:VIEWFILE -->

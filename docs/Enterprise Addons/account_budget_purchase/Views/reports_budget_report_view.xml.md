@@ -1,4 +1,3 @@
-<!-- GENERATED:VIEWFILE -->
 ---
 tags: [odoo, enterprise, generated, views]
 ---
@@ -58,4 +57,3 @@ tags: [odoo, enterprise, generated, views]
 
 - **Parent:** [[docs/Enterprise Addons/account_budget_purchase/Views]]
 
-<!-- GENERATED:VIEWFILE -->

@@ -1,4 +1,3 @@
-<!-- GENERATED:VIEWFILE -->
 ---
 tags: [odoo, enterprise, generated, views]
 ---
@@ -57,4 +56,3 @@ tags: [odoo, enterprise, generated, views]
 
 - **Parent:** [[docs/Enterprise Addons/planning_holidays/Views]]
 
-<!-- GENERATED:VIEWFILE -->

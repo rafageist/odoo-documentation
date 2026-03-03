@@ -1,4 +1,3 @@
-<!-- GENERATED:VIEWFILE -->
 ---
 tags: [odoo, enterprise, generated, views]
 ---
@@ -25,4 +24,3 @@ tags: [odoo, enterprise, generated, views]
 
 - **Parent:** [[docs/Enterprise Addons/l10n_us_check_printing/Views]]
 
-<!-- GENERATED:VIEWFILE -->

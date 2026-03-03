@@ -1,4 +1,3 @@
-<!-- GENERATED:VIEWFILE -->
 ---
 tags: [odoo, community, generated, views]
 ---
@@ -64,4 +63,3 @@ tags: [odoo, community, generated, views]
 
 - **Parent:** [[docs/Community Addons/point_of_sale/Views]]
 
-<!-- GENERATED:VIEWFILE -->

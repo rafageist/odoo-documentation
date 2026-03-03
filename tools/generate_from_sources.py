@@ -899,7 +899,7 @@ def write_module_note(
             "",
         ]
     )
-    write_generated_note(path, "<!-- GENERATED:MODULE -->", lines, overwrite=overwrite)
+    #write_generated_note(path, "<!-- GENERATED:MODULE -->", lines, overwrite=overwrite)
 
 
 def write_section_index(
@@ -930,7 +930,7 @@ def write_section_index(
     for label, note_name in items:
         lines.append(f"- [[{detail_item_link(analysis.scope, analysis.module_name, section, note_name)}|{label}]]")
     lines.extend(["", "## Navigation", "", f"- **Parent:** [[{link_target(analysis.scope, analysis.module_name)}]]", ""])
-    write_generated_note(path, f"<!-- GENERATED:{section.upper()} -->", lines, overwrite=overwrite)
+    #write_generated_note(path, f"<!-- GENERATED:{section.upper()} -->", lines, overwrite=overwrite)
 
 
 def write_model_notes(analysis: ModuleAnalysis, output_root: Path, scope_tag: str, overwrite: bool = False) -> None:
@@ -1018,7 +1018,7 @@ def write_model_notes(analysis: ModuleAnalysis, output_root: Path, scope_tag: st
             lines.extend(["", "## Direct relation diagram", "", *plantuml_block(output_root, relation_diagram)])
 
         lines.extend(["", "## Navigation", "", f"- **Parent:** [[{detail_link(analysis.scope, analysis.module_name, MODEL_SECTION)}]]", ""])
-        write_generated_note(path, "<!-- GENERATED:MODEL -->", lines, overwrite=overwrite)
+        #write_generated_note(path, "<!-- GENERATED:MODEL -->", lines, overwrite=overwrite)
 
     write_section_index(analysis, output_root, MODEL_SECTION, index_items, scope_tag, overwrite=overwrite)
 
@@ -1076,7 +1076,7 @@ def write_view_notes(analysis: ModuleAnalysis, output_root: Path, scope_tag: str
             lines.append("")
 
         lines.extend(["## Navigation", "", f"- **Parent:** [[{detail_link(analysis.scope, analysis.module_name, VIEW_SECTION)}]]", ""])
-        write_generated_note(path, "<!-- GENERATED:VIEWFILE -->", lines, overwrite=overwrite)
+        #write_generated_note(path, "<!-- GENERATED:VIEWFILE -->", lines, overwrite=overwrite)
 
     write_section_index(analysis, output_root, VIEW_SECTION, index_items, scope_tag, overwrite=overwrite)
 
@@ -1115,7 +1115,7 @@ def write_controller_notes(analysis: ModuleAnalysis, output_root: Path, scope_ta
                 lines.append(f"- Readonly: `{route.readonly}`")
             lines.append("")
         lines.extend(["## Navigation", "", f"- **Parent:** [[{detail_link(analysis.scope, analysis.module_name, CONTROLLER_SECTION)}]]", ""])
-        write_generated_note(path, "<!-- GENERATED:CONTROLLER -->", lines, overwrite=overwrite)
+        #write_generated_note(path, "<!-- GENERATED:CONTROLLER -->", lines, overwrite=overwrite)
 
     write_section_index(analysis, output_root, CONTROLLER_SECTION, index_items, scope_tag, overwrite=overwrite)
 
@@ -1148,7 +1148,7 @@ def write_frontend_notes(analysis: ModuleAnalysis, output_root: Path, scope_tag:
             f"- **Parent:** [[{detail_link(analysis.scope, analysis.module_name, FRONTEND_SECTION)}]]",
             "",
         ]
-        write_generated_note(path, "<!-- GENERATED:FRONTEND -->", lines, overwrite=overwrite)
+        #write_generated_note(path, "<!-- GENERATED:FRONTEND -->", lines, overwrite=overwrite)
 
     write_section_index(analysis, output_root, FRONTEND_SECTION, index_items, scope_tag, overwrite=overwrite)
 

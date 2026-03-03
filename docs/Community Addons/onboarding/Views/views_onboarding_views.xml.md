@@ -1,4 +1,3 @@
-<!-- GENERATED:VIEWFILE -->
 ---
 tags: [odoo, community, generated, views]
 ---
@@ -62,4 +61,3 @@ tags: [odoo, community, generated, views]
 
 - **Parent:** [[docs/Community Addons/onboarding/Views]]
 
-<!-- GENERATED:VIEWFILE -->

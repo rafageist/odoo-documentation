@@ -1,4 +1,3 @@
-<!-- GENERATED:VIEWFILE -->
 ---
 tags: [odoo, community, generated, views]
 ---
@@ -51,4 +50,3 @@ tags: [odoo, community, generated, views]
 
 - **Parent:** [[docs/Community Addons/l10n_ro_edi_stock_batch/Views]]
 
-<!-- GENERATED:VIEWFILE -->

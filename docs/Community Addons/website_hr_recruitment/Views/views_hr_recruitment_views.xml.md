@@ -1,4 +1,3 @@
-<!-- GENERATED:VIEWFILE -->
 ---
 tags: [odoo, community, generated, views]
 ---
@@ -59,4 +58,3 @@ tags: [odoo, community, generated, views]
 
 - **Parent:** [[docs/Community Addons/website_hr_recruitment/Views]]
 
-<!-- GENERATED:VIEWFILE -->

@@ -1,4 +1,3 @@
-<!-- GENERATED:VIEWFILE -->
 ---
 tags: [odoo, community, generated, views]
 ---
@@ -32,4 +31,3 @@ tags: [odoo, community, generated, views]
 
 - **Parent:** [[docs/Community Addons/spreadsheet_dashboard_im_livechat/Views]]
 
-<!-- GENERATED:VIEWFILE -->

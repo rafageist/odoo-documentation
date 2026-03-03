@@ -1,4 +1,3 @@
-<!-- GENERATED:VIEWFILE -->
 ---
 tags: [odoo, enterprise, generated, views]
 ---
@@ -55,4 +54,3 @@ tags: [odoo, enterprise, generated, views]
 
 - **Parent:** [[docs/Enterprise Addons/l10n_be_hr_payroll_dimona_auto/Views]]
 
-<!-- GENERATED:VIEWFILE -->

@@ -1,4 +1,3 @@
-<!-- GENERATED:VIEWFILE -->
 ---
 tags: [odoo, enterprise, generated, views]
 ---
@@ -59,4 +58,3 @@ tags: [odoo, enterprise, generated, views]
 
 - **Parent:** [[docs/Enterprise Addons/website_crm_iap_reveal_enterprise/Views]]
 
-<!-- GENERATED:VIEWFILE -->

@@ -1,4 +1,3 @@
-<!-- GENERATED:VIEWFILE -->
 ---
 tags: [odoo, community, generated, views]
 ---
@@ -79,4 +78,3 @@ tags: [odoo, community, generated, views]
 
 - **Parent:** [[docs/Community Addons/website_event_exhibitor/Views]]
 
-<!-- GENERATED:VIEWFILE -->

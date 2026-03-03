@@ -30,6 +30,7 @@ status: active
 - Server configuration now revolves around `http_port`. If a legacy `xmlrpc_port` setting appears to be ignored during local setup, that is expected in the current codebase.
 
 ## Related notes
+- `[[docs/Core/Framework/Runtime Lifecycle]]` for the end-to-end ingress, dispatch, retry, and ORM handoff.
 - `[[docs/Core/Framework/views]]` for server-side view architecture and inheritance.
 - `[[docs/Community Addons/http_routing/http_routing|http_routing]]` for multilingual URLs, slugs, and frontend error pages.
 - `[[docs/Community Addons/api_doc/api_doc|api_doc]]` for a concrete JSON documentation surface built on top of controllers.

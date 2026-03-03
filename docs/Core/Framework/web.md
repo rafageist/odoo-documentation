@@ -14,11 +14,13 @@ status: active
 - `addons/web/__manifest__.py` is the canonical map of the client payload. It defines backend, frontend, minimal frontend, lazy backend, report, and test bundles.
 - The backend bundle includes `web/static/src/core/**/*`, `web/static/src/views/**/*`, and `web/static/src/webclient/**/*`, which makes `web` the runtime shell for most business views.
 - Graph and pivot code are moved into lazy backend assets, so those view types are loaded on demand instead of in the initial backend payload.
+- `web.assets_web` is the backend bootstrap bundle. It extends `web.assets_backend` and adds `web/static/src/main.js` plus `web/static/src/start.js`, which is the handoff into the OWL `WebClient`.
 
 ## Extension points verified in source
 - Services are registered through `registry.category("services")`. Core examples in Odoo 19 include `orm`, `http`, `notification`, `dialog`, `ui`, and `view`.
 - View implementations are registered through `registry.category("views")`. Core registrations include `list`, `form`, `kanban`, and `calendar`.
 - The server/client contract is route-driven: controllers such as `/web/dataset/call_kw` and `/web/action/load` feed the client with model data, action metadata, and view payloads.
+- The first backend page render injects `odoo.__session_info__`, and the mounted client uses that payload to initialize cache keys, menus, user flags, and the service graph.
 
 ## Public website boundary
 - Public website pages are not just the backend web client mounted on `/shop`; Odoo 19 uses a separate frontend model built around QWeb markup plus `registry.category("public.interactions")`.
@@ -40,6 +42,7 @@ status: active
 ## Related notes
 - `[[docs/Core/Framework/views]]` for XML view architecture, inheritance, and RNG-backed attributes.
 - `[[docs/Core/Framework/http]]` for route types, request dispatch, and auth boundaries.
+- `[[docs/Core/Framework/Runtime Lifecycle]]` for the page bootstrap and RPC hydration sequence behind `/odoo`.
 - `[[docs/Community Addons/website_sale/website_sale|website_sale]]` for storefront-specific runtime behavior and controller surface.
 
 ## Navigation

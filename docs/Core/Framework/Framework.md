@@ -12,6 +12,7 @@ status: active
 - `[[docs/Core/Framework/mail]]`
 - `[[docs/Core/Framework/auth]]`
 - `[[docs/Core/Framework/http]]`
+- `[[docs/Core/Framework/Runtime Lifecycle]]`
 
 ## Focus
 - ORM and base model behavior
@@ -27,5 +28,6 @@ status: active
 - [[docs/Core/Framework/base]]
 - [[docs/Core/Framework/http]]
 - [[docs/Core/Framework/mail]]
+- [[docs/Core/Framework/Runtime Lifecycle]]
 - [[docs/Core/Framework/views]]
 - [[docs/Core/Framework/web]]

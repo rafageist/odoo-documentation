@@ -20,8 +20,11 @@ status: active
   - `auth="none"` is for routes that must run before normal database or session bootstrap.
   - `auth="public"` uses the public website user when no authenticated user is present.
   - `auth="user"` assumes an authenticated session.
+  - `auth="bearer"` validates an API key and defaults to stateless session handling.
 - `type="http"` is the route type for HTML pages, redirects, file streams, and template rendering.
 - `type="jsonrpc"` is the route type used by most web client endpoints in Odoo 19, including `/web/dataset/call_kw`, `/web/action/load`, and `/web/session/*`.
+- `type="json2"` also exists in the dispatcher layer for raw JSON requests that should return normal HTTP status codes instead of a JSON-RPC envelope.
+- `X-Odoo-Database` can select the target database for a stateless request path. When used without a compatible session cookie, the session stays non-persistent.
 
 ## Design guidance
 - Keep controllers thin. Route handlers should validate input, shape the HTTP response, and delegate business rules to models or services.
@@ -32,6 +35,7 @@ status: active
 ## Related notes
 - `[[docs/Core/Framework/Runtime Lifecycle]]` for the end-to-end ingress, dispatch, retry, and ORM handoff.
 - `[[docs/Core/Framework/views]]` for server-side view architecture and inheritance.
+- `[[docs/Core/Integrations/HTTP and RPC Contracts]]` for transport-level auth, payload, and failure expectations.
 - `[[docs/Community Addons/http_routing/http_routing|http_routing]]` for multilingual URLs, slugs, and frontend error pages.
 - `[[docs/Community Addons/api_doc/api_doc|api_doc]]` for a concrete JSON documentation surface built on top of controllers.
 

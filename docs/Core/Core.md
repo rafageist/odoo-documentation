@@ -21,10 +21,12 @@ status: active
 - Primary source tree: `odoo19/odoo` and `odoo19/addons`
 - Typical files: `odoo/http.py`, `odoo/orm/*`, `odoo/addons/base/models/*`, and shared services in core addons
 
-## Active follow-up tickets
+## Recently delivered
 - Issue `#39`: framework runtime lifecycle
-- Issue `#40`: master data deep dives
 - Issue `#41`: core integration contracts
+
+## Active follow-up tickets
+- Issue `#40`: master data deep dives
 
 ## Context links
 - Documentation map: `[[docs/docs]]`
